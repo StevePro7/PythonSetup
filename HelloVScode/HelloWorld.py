@@ -1,1 +1,1 @@
-print('Hello World from    LINUX!!')
+print('Hello World from my new LINUX!!')
