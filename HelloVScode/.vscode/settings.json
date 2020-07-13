@@ -1,5 +1,4 @@
 {
-    "python.envFile": "${workspaceFolder}/.env",
-    "python.pythonPath": "${env:WORKSPACE_FOLDER}",
+    "python.envFile": "E:\\GitHub\\StevePro7\\PythonSetup\\HelloVScode\\.env",
     "python.linting.enabled": true
 }
