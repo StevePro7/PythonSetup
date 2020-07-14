@@ -1,5 +1,7 @@
 import unittest
-from MyPackage.MyFoo import MyBar
+#from MyPackage.MyFoo import MyBar
+#import MyFoo
+from tests.MyFoo import * 
 
 class TestMyFoo(unittest.TestCase):
     def test_lang(self):

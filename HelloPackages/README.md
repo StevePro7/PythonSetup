@@ -73,3 +73,11 @@ cd E:\GitHub\StevePro7\PythonSetup\HelloPackages\PyCharm\01-PackageExample
 pip install MyPackage/.
 
 python -m unittest discover MyPackage
+python -m unittest discover example_pkg
+
+
+Launch VS Code
+Open folder
+D:\Azure\Galileo-driver
+pip install driver/.
+python -m unittest discover driver
