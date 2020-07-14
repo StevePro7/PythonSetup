@@ -56,5 +56,6 @@ print(a)
 FINALLY
 terminal
 cd 01-PackageExample
+
 pip install example_pkg/.
 python -m unittest discover example_pkg
