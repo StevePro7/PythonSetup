@@ -59,3 +59,17 @@ cd 01-PackageExample
 
 pip install example_pkg/.
 python -m unittest discover example_pkg
+
+
+14/07/2020
+from MyPackage.MyFoo import MyBar
+works
+
+but this doesn't
+from MyFoo import MyBar
+
+PyCharm terminal
+cd E:\GitHub\StevePro7\PythonSetup\HelloPackages\PyCharm\01-PackageExample
+pip install MyPackage/.
+
+python -m unittest discover MyPackage
