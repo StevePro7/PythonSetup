@@ -125,3 +125,15 @@ Reference:
 https://stackoverflow.com/questions/50966876/vs-code-code-runner-doesnt-work-with-virtualenvs
 
 Finally not sure if this is all because I don't have virtualenvs setup for project
+
+
+IMPORTANT
+when change settings.json file and .env file
+ensure that we close VS Code and re-open
+so that will be prompted to access PYTHONPATH 
+going forward
+
+
+VS Code on MAC
+Could not create temporary directory: Permission denied
+https://github.com/Microsoft/vscode/issues/63869
