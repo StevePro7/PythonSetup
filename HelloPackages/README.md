@@ -109,6 +109,9 @@ will this work?
 https://stackoverflow.com/questions/53653083/how-to-correctly-set-pythonpath-for-visual-studio-code
 
 
+IMPORTANT
+
+
 This VS Code sample works for unit tssts 
 E:\GitHub\StevePro7\PythonSetup\HelloPackages\VScode\03-PackageExample
 
@@ -143,3 +146,18 @@ https://github.com/Microsoft/vscode/issues/63869
 General
 04-PackageExample
 E:\GitHub\StevePro7\PythonSetup\HelloPackages
+
+Launch PyCharm
+open
+E:\GitHub\StevePro7\PythonSetup\HelloPackages\04-PackageExample
+from driver.src.module import getAge
+
+Terminal
+(base) E:\GitHub\StevePro7\PythonSetup\HelloPackages\04-PackageExample>
+python -m  unittest discover driver
+
+
+IMPORTANT
+if in PyCharm the smart intellisense is annoying you then disable
+File | Settings | Tools | Terminal
+Smart command handling		UNCHECK
