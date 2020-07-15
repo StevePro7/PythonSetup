@@ -137,3 +137,9 @@ going forward
 VS Code on MAC
 Could not create temporary directory: Permission denied
 https://github.com/Microsoft/vscode/issues/63869
+
+
+
+General
+04-PackageExample
+E:\GitHub\StevePro7\PythonSetup\HelloPackages
