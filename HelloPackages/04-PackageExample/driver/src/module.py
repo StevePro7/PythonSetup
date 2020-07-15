@@ -4,6 +4,6 @@ def getAge():
     return 625
    
 def getWgt():
-    return 70 
+    return 75
     
 print('hello test!!')
