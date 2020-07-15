@@ -1,7 +1,7 @@
-# https://binx.io/blog/2020/03/05/setting-python-source-folders-vscode
+# https://stackoverflow.com/questions/53653083/how-to-correctly-set-pythonpath-for-visual-studio-code
 
 def getAge():
     return 14
     
     
-print('hi thre')
+print('hello there')
