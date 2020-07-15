@@ -81,3 +81,10 @@ Open folder
 D:\Azure\Galileo-driver
 pip install driver/.
 python -m unittest discover driver
+
+
+15/07/2020
+E:\GitHub\StevePro7\PythonSetup\HelloPackages\VScode\02-PackageExample
+
+follow example here to get src + teste in VS Code
+https://binx.io/blog/2020/03/05/setting-python-source-folders-vscode
