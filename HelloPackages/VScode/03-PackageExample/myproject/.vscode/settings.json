@@ -1,4 +1,7 @@
 {
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${env:PYTHONPATH};${workspaceFolder}/src;${workspaceFolder}/tests"
+    },
     "python.envFile": "${workspaceFolder}/.env",
     "python.testing.unittestArgs": [
         "-v",
