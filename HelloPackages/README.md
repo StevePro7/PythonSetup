@@ -107,3 +107,21 @@ https://code.visualstudio.com/docs/python/environments#_environment-variable-def
 How to correctly set PYTHONPATH for Visual Studio Code
 will this work?
 https://stackoverflow.com/questions/53653083/how-to-correctly-set-pythonpath-for-visual-studio-code
+
+
+This VS Code sample works for unit tssts 
+E:\GitHub\StevePro7\PythonSetup\HelloPackages\VScode\03-PackageExample
+
+But the code runner Ctrl + Alt + N still failed
+unless I change the following to global settings.json
+
+"code-runner.runInTerminal": true,
+
+and code runner works although we get the fluff
+maybe if I set 
+terminal.integrated.shell.windows
+
+Reference:
+https://stackoverflow.com/questions/50966876/vs-code-code-runner-doesnt-work-with-virtualenvs
+
+Finally not sure if this is all because I don't have virtualenvs setup for project
