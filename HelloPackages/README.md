@@ -88,3 +88,22 @@ E:\GitHub\StevePro7\PythonSetup\HelloPackages\VScode\02-PackageExample
 
 follow example here to get src + teste in VS Code
 https://binx.io/blog/2020/03/05/setting-python-source-folders-vscode
+
+
+PyCharm
+open E:\GitHub\StevePro7\PythonSetup\HelloPackages\PyCharm\02-PackageExample
+
+Terminal
+(base) E:\GitHub\StevePro7\PythonSetup\HelloPackages\PyCharm\02-PackageExample>
+
+pip install project/.
+python -m unittest discover project
+
+
+Use of the PYTHONPATH variable
+https://code.visualstudio.com/docs/python/environments#_environment-variable-definitions-file
+
+
+How to correctly set PYTHONPATH for Visual Studio Code
+will this work?
+https://stackoverflow.com/questions/53653083/how-to-correctly-set-pythonpath-for-visual-studio-code
