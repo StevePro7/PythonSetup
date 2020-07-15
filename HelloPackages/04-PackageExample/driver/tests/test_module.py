@@ -6,7 +6,7 @@ from driver.src.module import getWgt
 class TestMyFoo(unittest.TestCase):
     def test_lang(self):
         age = getAge()
-        self.assertEqual(age, 10)
+        self.assertEqual(age, 20)
         
     def test_weight(self):
         wgt = getWgt()
