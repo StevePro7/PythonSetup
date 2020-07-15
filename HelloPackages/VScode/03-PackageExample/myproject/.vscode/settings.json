@@ -1,0 +1,16 @@
+{
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "E:\\GitHub\StevePro7\PythonSetup\HelloPackages\VScode\02-PackageExample\project",
+    },
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./project",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true
+}
