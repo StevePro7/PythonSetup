@@ -155,7 +155,7 @@ from driver.src.module import getAge
 Terminal
 (base) E:\GitHub\StevePro7\PythonSetup\HelloPackages\04-PackageExample>
 python -m  unittest discover driver
-
+pip install driver/.
 
 IMPORTANT
 if in PyCharm the smart intellisense is annoying you then disable
@@ -164,4 +164,22 @@ Smart command handling		UNCHECK
 
 
 Terminal
+pip install driver/.Launch PyCharm
+open
+E:\GitHub\StevePro7\PythonSetup\HelloPackages\04-PackageExample
+from driver.src.module import getAge
+
+
+
+
+Launch VS Code
+open
+E:\GitHub\StevePro7\PythonSetup\HelloPackages\04-PackageExample
+from driver.src.module import getAge
+
+Terminal
+python -m  unittest discover driver
 pip install driver/.
+
+if unittest cause problem then may have to install to get running first time
+if unittest cause problem then may have to install to get running first time
