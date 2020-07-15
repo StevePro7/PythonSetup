@@ -161,3 +161,7 @@ IMPORTANT
 if in PyCharm the smart intellisense is annoying you then disable
 File | Settings | Tools | Terminal
 Smart command handling		UNCHECK
+
+
+Terminal
+pip install driver/.

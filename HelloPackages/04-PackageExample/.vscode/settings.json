@@ -12,7 +12,7 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./tests",
+        "./driver",
         "-p",
         "test_*.py"
     ],
