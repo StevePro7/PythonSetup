@@ -1,4 +1,4 @@
-"""Docstring1"""
+""" Source code module """
 def add_one(number):
-    """Docstring2"""
+    """ Function simply increments number """
     return number + 1

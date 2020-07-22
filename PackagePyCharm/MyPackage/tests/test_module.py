@@ -1,12 +1,12 @@
-"""Docstring1"""
+""" Unit test module """
 import unittest
 from MyPackage.src.module import add_one
 
 class TestSimple(unittest.TestCase):
 
-    """Docstring3"""
+    """ Unit Test class """
     def test_add_one(self):
-        """Docstring3"""
+        """ Test increment function """
         result = add_one(5)
         self.assertEqual(result, 6)
 
