@@ -1,6 +1,8 @@
 """ Unit test module """
 import unittest
+
 from MyPackage.src.module import add_one
+
 
 class TestSimple(unittest.TestCase):
 
