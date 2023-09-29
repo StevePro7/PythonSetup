@@ -11,5 +11,7 @@ x = tf.keras.layers.Conv2D(32, 3, activation="relu", strides=2, padding="same")(
 x = tf.keras.layers.Conv2D(64, 3, activation="relu", strides=2, padding="same")(x)
 x = tf.keras.layers.Flatten()(x)
 
+# Decoder
+latent_input = tf.keras.Input(shape=(latent_dim,))
 
-print("22")
+print("33")
