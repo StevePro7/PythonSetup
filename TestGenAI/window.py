@@ -22,6 +22,9 @@ x = tf.keras.layers.Conv2DTranspose(32, 3, activation="relu", strides=2, padding
 decoder_outputs = tf.keras.layers.Conv2DTranspose(1, 3, activation="sigmoid", padding="same")(x)
 decoder = tf.keras.Model(latent_inputs, decoder_outputs, name="decoder")
 
+print(tf.__version__)
+
+"""
 # VAE
 vae_inputs = encoder_inputs
 vae_outputs = decoder(encoder(encoder_inputs))
@@ -42,3 +45,4 @@ for i, ax in enumerate(axes):
     ax.axis("off")
 
 plt.show()
+"""
