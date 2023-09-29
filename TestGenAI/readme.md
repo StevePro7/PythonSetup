@@ -17,3 +17,11 @@ https://stackoverflow.com/questions/41415629/importerror-no-module-named-tensorf
 cd venv\Scripts
 activate
 pip3 install tensorflow
+
+
+Tensorflow
+SSE
+Streaming SIMD Extensions
+
+SIMD
+Single Instruction Multiple Data
