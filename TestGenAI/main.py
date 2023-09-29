@@ -2,13 +2,14 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+#Define the VAE model
+latent_dim = 64
+
+# Encoder
+encoder_inputs = tf.keras.Input(shape=(28, 28, 1))
+x = tf.keras.layers.Conv2D(32, 3, activation="relu", strides=2, padding="same")(encoder_inputs)
+x = tf.keras.layers.Conv2D(64, 3, activation="relu", strides=2, padding="same")(x)
+x = tf.keras.layers.Flatten()(x)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('matplotlib')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print("22")
