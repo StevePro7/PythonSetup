@@ -1,6 +1,6 @@
-import numpy as np
+#import numpy as np
 import tensorflow as tf
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 # Define the VAE model
 latent_dim = 64
@@ -22,6 +22,7 @@ x = tf.keras.layers.Conv2DTranspose(32, 3, activation="relu", strides=2, padding
 decoder_outputs = tf.keras.layers.Conv2DTranspose(1, 3, activation="sigmoid", padding="same")(x)
 decoder = tf.keras.Model(latent_inputs, decoder_outputs, name="decoder")
 
+print("hello stevepro")
 print(tf.__version__)
 
 """
