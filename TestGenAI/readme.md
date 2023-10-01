@@ -30,3 +30,7 @@ Single Instruction Multiple Data
 pip3 freeze > requirements.txt
 pip3 install -r .\requirements.txt 
 python.exe -m pip install --upgrade pip
+
+
+Terminal
+python windows.py
