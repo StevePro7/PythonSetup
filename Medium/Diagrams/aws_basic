@@ -1,0 +1,10 @@
+digraph "aws basic" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="aws basic" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	"36c4ab2c9ae6459bbbd25fda89cc69ed" [label=lb height=1.9 image="D:\GitHub\StevePro9\PythonSetup\Medium\Diagrams\venv\Lib\site-packages\resources/aws/network\elastic-load-balancing.png" shape=none]
+	"0727c966df794281a2048ba41a401b90" [label=web height=1.9 image="D:\GitHub\StevePro9\PythonSetup\Medium\Diagrams\venv\Lib\site-packages\resources/aws/compute\ec2.png" shape=none]
+	"36c4ab2c9ae6459bbbd25fda89cc69ed" -> "0727c966df794281a2048ba41a401b90" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"7d0f5f2facdb4c7795f5c4a740dfee35" [label=db height=1.9 image="D:\GitHub\StevePro9\PythonSetup\Medium\Diagrams\venv\Lib\site-packages\resources/aws/database\rds.png" shape=none]
+	"0727c966df794281a2048ba41a401b90" -> "7d0f5f2facdb4c7795f5c4a740dfee35" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}
