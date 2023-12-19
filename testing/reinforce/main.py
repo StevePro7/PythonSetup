@@ -5,7 +5,7 @@ from stable_baselines3.common.callbacks import CheckpointCallback, EvalCallback
 from stable_baselines3.common.vec_env import SubprocVecEnv, VecFrameStack, VecTransposeImage
 
 if __name__ == "__main__":
-    env_name = "SpaceInvadersNoFrameskip-v4"  # change to another Atari game if you want
+    env_name = "SpaceInvadersNoFrameskip.zip"  # change to another Atari game if you want
     env = SubprocVecEnv([lambda: AtariWrapper(gym.make(env_name)) for _ in range(4)])  # train 4 game envs in parallel, scale down images for faster training
     env = VecFrameStack(env, n_stack=4)  # don't only use a still image for training, but the last 4 frames
     env = VecTransposeImage(env)  # technical magic for putting the channels of the animation in the first coordinate, i.e., turning HxWxC into CxHxW
