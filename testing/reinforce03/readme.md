@@ -5,3 +5,6 @@ https://analyticsindiamag.com/hands-on-guide-reinforcement-learning-openai-gymre
 
 import retro
 pip3 install gym-retro
+
+ERROR on Windows
+did not install
