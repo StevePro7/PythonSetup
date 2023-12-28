@@ -7,6 +7,9 @@ def print_hi(name):
     done = False
     while not done:
         env.render()
+        obs, rew, done, info = env.step(env.action_space.sample())
+        if done:
+            env.reset()
 
     env.close()
 
