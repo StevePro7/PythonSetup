@@ -27,3 +27,11 @@ Importing Strider-Genesis
 Imported 1 games
 
 COMPLETE
+
+
+env.render()
+ModuleNotFoundError: No module named 'gym.envs.classic_control.rendering'
+
+SOLUTION??
+https://stackoverflow.com/questions/71973392/importerror-cannot-import-rendering-from-gym-envs-classic-control
+pip3 install gym==0.21.0
