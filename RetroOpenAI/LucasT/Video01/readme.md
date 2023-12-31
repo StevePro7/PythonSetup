@@ -1,6 +1,10 @@
 LucasT Video01
 31-Dec-2023
 
+Introduction and Setup - EP1 - Open-AI and NEAT Tutorial
+https://www.youtube.com/watch?v=CFa6NhLgeL0
+
+
 PyCharm | New project
 
 Name		Video01
