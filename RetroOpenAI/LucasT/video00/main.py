@@ -1,5 +1,13 @@
 import neat
 import retro
+import numpy
+import cv2
+import pickle
+
+
+config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
+                     neat.DefaultSpeciesSet, neat.DefaultStagnation,
+                     'config-feedforward')
 
 
 env = retro.make(game='SonicTheHedgehog2-Genesis', state='AquaticRuinZone.Act2')
