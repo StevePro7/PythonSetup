@@ -12,11 +12,49 @@ parser.add_argument('--obs-type', '-o', default='image', choices=['image', 'ram'
 parser.add_argument('--players', '-p', type=int, default=1, help='number of players/agents (default: 1)')
 args = parser.parse_args()
 
-print('beg')
-print(args.state)
-#print(retro.State.DEFAULT)
-print('end')
 
-env = retro.make(game='SonicTheHedgehog2-Genesis', state='HillTopZone.Act1')
-env.reset()
-env.render()
+env = retro.make(game='SonicTheHedgehog2-Genesis', state='AquaticRuinZone.Act2')
+verbosity = 1
+
+try:
+    while True:
+        ob = env.reset()
+        t = 0
+        totrew = [0] * args.players
+        while True:
+            ac = env.action_space.sample()
+            ob, rew, done, info = env.step(ac)
+            t += 1
+            if t % 10 == 0:
+                if verbosity > 1:
+                    infostr = ''
+                    if info:
+                        infostr = ', info: ' + ', '.join(['%s=%i' % (k, v) for k, v in info.items()])
+                    print(('t=%i' % t) + infostr)
+                env.render()
+            if args.players == 1:
+                rew = [rew]
+            for i, r in enumerate(rew):
+                totrew[i] += r
+                if verbosity > 0:
+                    if r > 0:
+                        print('t=%i p=%i got reward: %g, current reward: %g' % (t, i, r, totrew[i]))
+                    if r < 0:
+                        print('t=%i p=%i got penalty: %g, current reward: %g' % (t, i, r, totrew[i]))
+            if done:
+                env.render()
+                try:
+                    if verbosity >= 0:
+                        if args.players > 1:
+                            print("done! total reward: time=%i, reward=%r" % (t, totrew))
+                        else:
+                            print("done! total reward: time=%i, reward=%d" % (t, totrew[0]))
+                        input("press enter to continue")
+                        print()
+                    else:
+                        input("")
+                except EOFError:
+                    exit(0)
+                break
+except KeyboardInterrupt:
+    exit(0)

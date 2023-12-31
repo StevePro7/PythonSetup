@@ -22,14 +22,3 @@ pip3 install gym-retro
 
 python3 -m retro.import /home/stevepro/SEGA/ROMs/
 
-Importing ShinobiIIIReturnOfTheNinjaMaster-Genesis
-Importing StreetsOfRage2-Genesis
-Importing Strider-Genesis
-Importing SonicTheHedgehog2-Genesis
-
-
-SonicTheHedgehog2-Genesis
-/home/stevepro/GitHubX/openai/retro/retro/data/stable/SonicTheHedgehog-Genesis
-
-
-
