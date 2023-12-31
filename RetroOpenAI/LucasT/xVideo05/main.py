@@ -4,7 +4,7 @@ import cv2
 import neat
 import pickle
 
-env = retro.make(game='SonicTheHedgehog2-Genesis', state='AquaticRuinZone.Act1')
+env = retro.make(game='SonicTheHedgehog2-Genesis', state='AquaticRuinZone.Act2')
 
 imgarray = []
 
