@@ -1,16 +1,22 @@
-# This is a sample Python script.
+import argparse
+import retro
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+parser = argparse.ArgumentParser()
+parser.add_argument('--game', default='SonicTheHedgehog-Genesis', help='the name or path for the game to run')
+parser.add_argument('--state', help='the initial state file to load, minus the extension')
+parser.add_argument('--scenario', '-s', default='scenario', help='the scenario file to load, minus the extension')
+parser.add_argument('--record', '-r', action='store_true', help='record bk2 movies')
+parser.add_argument('--verbose', '-v', action='count', default=1, help='increase verbosity (can be specified multiple times)')
+parser.add_argument('--quiet', '-q', action='count', default=0, help='decrease verbosity (can be specified multiple times)')
+parser.add_argument('--obs-type', '-o', default='image', choices=['image', 'ram'], help='the observation type, either `image` (default) or `ram`')
+parser.add_argument('--players', '-p', type=int, default=1, help='number of players/agents (default: 1)')
+args = parser.parse_args()
 
+print('beg')
+print(args.state)
+#print(retro.State.DEFAULT)
+print('end')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+env = retro.make(game='SonicTheHedgehog2-Genesis', state='HillTopZone.Act1')
+env.reset()
+env.render()
