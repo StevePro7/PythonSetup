@@ -2,11 +2,15 @@ anNOTES
 06-Jan-2024
 
 
+01.
+almeister
+https://github.com/almeister/Arkanoid
+
+
+02.
 https://github.com/wkeeling/arkanoid
 https://github.com/wkeeling/arkanoid/blob/master/arkanoid/sprites/enemy.py
 
 
-almesiter
-
-
+03.
 https://github.com/tsixta/arkanoid
