@@ -267,7 +267,7 @@ class Level:
 
 
     def __move_ball(self, game, screen, elapsed_time):
-        #print self.board.bonus
+        ##print self.board.bonus
         ret = [self.ball.last_drawn_rectangle]
         self.__set_bricks_around_ball_to_redraw()
         #  resolve collisions
@@ -364,7 +364,7 @@ class Level:
                     elif command == CommandTypes.noop:
                         pass
                     else:
-                        print "Warning: Unknown command: ", command
+                        print('stuff')# "Warning: Unknown command: ", command
 
     def __eval_command(self, command, parameters, time):
         if command == CommandTypes.change_brick_type and self.bricks[parameters[0]][parameters[1]].type != 0:
