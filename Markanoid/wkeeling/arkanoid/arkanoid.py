@@ -1,9 +1,13 @@
+import logging
+
+from arkanoid.game import Arkanoid
 
 
-def print_hi(name):
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+logging.basicConfig()
+LOG = logging.getLogger('arkanoid')
+LOG.setLevel(logging.DEBUG)
 
 
 if __name__ == '__main__':
-    print_hi('PyCharm!!')
-
+    arkanoid = Arkanoid()
+    arkanoid.main_loop()
