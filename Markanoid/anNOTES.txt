@@ -1,0 +1,12 @@
+anNOTES
+06-Jan-2024
+
+
+https://github.com/wkeeling/arkanoid
+https://github.com/wkeeling/arkanoid/blob/master/arkanoid/sprites/enemy.py
+
+
+almesiter
+
+
+https://github.com/tsixta/arkanoid
