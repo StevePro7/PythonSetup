@@ -13,3 +13,14 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 
 python arkanoid.py
+
+
+IMPORTANT
+could not get the Dockerfile working because 
+the references to debian jessie have archived
+
+reference:
+https://stackoverflow.com/questions/46406847/docker-how-to-add-backports-to-sources-list-via-dockerfile
+
+Tried different deb-src URI but continued to get the message
+you must add deb-src URIs to sources.list
