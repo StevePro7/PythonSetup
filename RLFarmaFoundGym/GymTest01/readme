@@ -1,0 +1,23 @@
+readme
+08-Jan-2024
+
+main.py
+import gymnasium as gym
+
+ModuleNotFoundError: No module named 'gymnasium'
+pip install gymnasium
+
+FYI:
+Gymnasium
+letest = 0.29.1
+
+
+copied requirements.txt
+~/GithubX/Farama-Foundation/Gymnasium/docs
+pip install -r requirements.txt
+
+
+gymnasium.error.DependencyNotInstalled: Box2D is not installed, run `pip install gymnasium[box2d]`
+
+pip install Box2D
+2.3.10

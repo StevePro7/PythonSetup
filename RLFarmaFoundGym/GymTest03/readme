@@ -1,0 +1,21 @@
+readme
+08-Jan-2024
+
+copied requirements.txt
+~/GithubX/Farama-Foundation/Gymnasium/docs
+
+pip install -r requirements.txt
+//pip install gymnasium[box2d]
+
+pip install gymnasium
+pip install Box2D
+
+
+IMPORTANT
+Box2D docs say should be able to install package like this
+pip install gymnasium[box2d]
+
+But I get error so just install the 2x packages separately
+
+pip install gymnasium
+pip install Box2D
