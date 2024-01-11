@@ -1,0 +1,7 @@
+11-Jan-2024
+
+https://gymnasium.farama.org
+https://gymnasium.farama.org/environments/toy_text/taxi
+
+pip install -r requirements.txt
+pip install gymnasium

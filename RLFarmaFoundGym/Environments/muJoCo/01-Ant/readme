@@ -1,0 +1,11 @@
+11-Jan-2024
+
+https://gymnasium.farama.org
+https://gymnasium.farama.org/environments/mujoco/ant
+
+pip install -r requirements.txt
+pip install gymnasium
+pip install mujoco
+
+ERROR
+AttributeError: 'mujoco._structs.MjData' object has no attribute 'solver_iter'
