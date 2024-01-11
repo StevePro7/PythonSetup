@@ -1,0 +1,11 @@
+11-Jan-2024
+
+https://gymnasium.farama.org
+https://gymnasium.farama.org/environments/atari
+
+pip install -r requirements.txt
+pip install gymnasium
+
+
+    raise error.NamespaceNotFound(f"Namespace {ns} not found. {suggestion_msg}")
+gymnasium.error.NamespaceNotFound: Namespace ALE not found. Have you installed the proper package for ALE?
