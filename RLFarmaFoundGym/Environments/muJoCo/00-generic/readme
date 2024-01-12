@@ -1,0 +1,7 @@
+11-Jan-2024
+
+https://gymnasium.farama.org
+
+pip install -r requirements.txt
+pip install gymnasium
+pip install mujoco==2.3.0
