@@ -1,7 +1,7 @@
 11-Jan-2024
 
 https://gymnasium.farama.org
-https://gymnasium.farama.org/environments/atari
+https://gymnasium.farama.org/environments/atari/adventure
 
 pip install -r requirements.txt
 pip install gymnasium
