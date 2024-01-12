@@ -1,6 +1,7 @@
 import gymnasium as gym
 
 name="LunarLander-v2"
+name="BipedalWalker-v3"
 
 try:
     env = gym.make(name, render_mode="human")
