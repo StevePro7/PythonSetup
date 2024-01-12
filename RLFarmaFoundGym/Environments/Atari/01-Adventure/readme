@@ -5,7 +5,19 @@ https://gymnasium.farama.org/environments/atari
 
 pip install -r requirements.txt
 pip install gymnasium
+#pip install atari
 
-
+ERROR
     raise error.NamespaceNotFound(f"Namespace {ns} not found. {suggestion_msg}")
 gymnasium.error.NamespaceNotFound: Namespace ALE not found. Have you installed the proper package for ALE?
+
+
+Python Packages
+atari-py
+
+
+ERROR
+pip install gymnasium[atari]
+gymnasium.error.Error: We're Unable to find the game "Adventure". Note: Gymnasium no longer distributes ROMs. If you own a license to use the necessary ROMs for research purposes you can download them via `pip install gymnasium[accept-rom-license]`. Otherwise, you should try importing "Adventure" via the command `ale-import-roms`. If you believe this is a mistake perhaps your copy of "Adventure" is unsupported. To check if this is the case try providing the environment variable `PYTHONWARNINGS=default::ImportWarning:ale_py.roms`. For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+
+pip install gymnasium[accept-rom-license]
