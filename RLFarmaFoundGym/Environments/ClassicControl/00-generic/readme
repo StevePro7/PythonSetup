@@ -1,7 +1,8 @@
-11-Jan-2024
+CLASSIC CONTROL
+12-Jan-2024
 
 https://gymnasium.farama.org
-https://gymnasium.farama.org/environments/classic_control/acrobot
+https://gymnasium.farama.org/environments/classic_control
 
 pip install -r requirements.txt
 pip install gymnasium

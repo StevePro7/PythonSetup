@@ -1,10 +1,11 @@
-11-Jan-2024
+ATARI
+12-Jan-2024
 
 https://gymnasium.farama.org
-https://gymnasium.farama.org/environments/atari/breakout
+https://gymnasium.farama.org/environments/atari
 
 pip install -r requirements.txt
 pip install gymnasium
 
 pip install gymnasium[atari]
-pip install gymnasium[accept-rom-license]b
+pip install gymnasium[accept-rom-license]

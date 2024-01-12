@@ -1,8 +1,8 @@
-11-Jan-2024
+TOY TEXT
+12-Jan-2024
 
 https://gymnasium.farama.org
-https://gymnasium.farama.org/environments/box2d
+https://gymnasium.farama.org/environments/toy_text
 
 pip install -r requirements.txt
 pip install gymnasium
-pip install Box2D
