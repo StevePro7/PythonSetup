@@ -5,7 +5,13 @@ https://gymnasium.farama.org/environments/mujoco/ant
 
 pip install -r requirements.txt
 pip install gymnasium
-pip install mujoco
+#pip install mujoco
+pip install mujoco==2.3.0
 
 ERROR
+bottomleft, "Solver iterations", str(self.data.solver_iter + 1)
 AttributeError: 'mujoco._structs.MjData' object has no attribute 'solver_iter'
+
+SOLN
+https://stackoverflow.com/questions/77438425/mujoco-structs-mjdata-object-has-no-attribute-solver-iter
+pip install mujoco==2.3.0
