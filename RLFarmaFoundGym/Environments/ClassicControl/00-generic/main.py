@@ -1,15 +1,22 @@
 import gymnasium as gym
 
-name='Acrobot-v1'
-name='CartPole-v1'
-env = gym.make(name, render_mode="human")
-observation, info = env.reset()
+try:
+    #name = 'Acrobot-v1'
+    #name = 'CartPole-v1'
+    #name = 'MountainCarContinuous-v0'
+    #name = 'MountainCar-v0'
+    name = "Pendulum-v1"
 
-for _ in range(1000):
-    action = env.action_space.sample()  # agent policy that uses the observation and info
-    observation, reward, terminated, truncated, info = env.step(action)
+    env = gym.make(name, render_mode="human")
+    observation, info = env.reset()
 
-    if terminated or truncated:
-        observation, info = env.reset()
+    for _ in range(1000):
+        action = env.action_space.sample()  # agent policy that uses the observation and info
+        _, reward, terminated, truncated, _ = env.step(action)
 
-env.close()
+        if terminated or truncated:
+            observation, info = env.reset()
+
+    env.close()
+except KeyboardInterrupt:
+    exit(0)
