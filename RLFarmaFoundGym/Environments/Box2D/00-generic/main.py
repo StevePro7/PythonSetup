@@ -1,7 +1,8 @@
 import gymnasium as gym
 
-name="LunarLander-v2"
-name="BipedalWalker-v3"
+name = "BipedalWalker-v3"
+name = "CarRacing-v2"
+name = "LunarLander-v2"
 
 try:
     env = gym.make(name, render_mode="human")
@@ -16,4 +17,4 @@ try:
 
     env.close()
 except KeyboardInterrupt:
-        exit(0)
+    exit(0)
