@@ -1,7 +1,7 @@
 import gymnasium as gym
 
-#name="ALE/Breakout-v5"
-name="ALE/Krull-v5"
+
+name = "ALE/Zaxxon-v5"
 
 try:
     env = gym.make(name, render_mode="human")
@@ -16,4 +16,5 @@ try:
 
     env.close()
 except KeyboardInterrupt:
-        exit(0)
+    exit(0)
+    
