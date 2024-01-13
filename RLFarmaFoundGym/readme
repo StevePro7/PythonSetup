@@ -9,3 +9,15 @@ An API standard for reinforcement learning with a diverse collection of referenc
 Environments
 
 Box2D
+
+
+
+Inotify Watches Limit (Linux)
+https://intellij-support.jetbrains.com/hc/en-us/articles/15268113529362-Inotify-Watches-Limit-Linux
+
+cd /etc/sysctl.d/
+touch idea.conf
+echo "fs.inotify.max_user_watches = 524288" >> idea.conf
+sudo sysctl -p --system
+
+Restart PyCharm
