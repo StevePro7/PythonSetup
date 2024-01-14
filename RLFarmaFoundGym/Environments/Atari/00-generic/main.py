@@ -1,6 +1,6 @@
 import gymnasium as gym
 
-name = "ALE/Et-v5"
+name = "ALE/Robotank-v5"
 
 try:
     env = gym.make(name, render_mode="human")
