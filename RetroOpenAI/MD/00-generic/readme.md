@@ -37,3 +37,4 @@ A. sha1sum Strider-Genesis.md
 
 SonicTheHedgehog-Genesis
 69e102855d4389c3fd1a8f3dc7d193f8eee5fe5b
+6ddb7de1e17e7f6cdb88927bd906352030daa194
