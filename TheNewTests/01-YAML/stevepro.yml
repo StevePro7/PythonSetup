@@ -1,0 +1,13 @@
+data:
+  file_path: XYZ
+model:
+  iterations: 10 
+  input_model_path: ABC
+  dropout: 1
+  comp_start: 2
+  comp_stop: 4
+  comp_compound: 8
+validation:
+  prop: 25
+  seed: None
+model_path: ZYX
