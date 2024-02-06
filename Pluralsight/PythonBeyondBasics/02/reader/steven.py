@@ -13,6 +13,3 @@ class Reader:
         opener = extension_map.get(extension, open)
         self.f = opener(filename, 'rt')
         print(self.f)
-
-    def foo(self):
-        print('foo')
