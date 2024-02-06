@@ -1,4 +1,5 @@
-from reader import steven
+#from reader import steven
+import reader
 
-r = steven.Reader("foo.txt")
+r = reader.Reader("foo.txt")
 r.foo()
