@@ -21,3 +21,12 @@ echo "fs.inotify.max_user_watches = 524288" >> idea.conf
 sudo sysctl -p --system
 
 Restart PyCharm
+
+
+IMPORTANT
+Why Reinforcement Learning is the future and will play a key role in the development of AGI
+https://murat-durmus.medium.com/why-reinforcement-learning-is-the-future-and-will-play-a-key-role-in-the-development-of-agi-ae6af466ab87
+
+example Python script that leverages frozen lake example from Toy Text
+and attempts to learning
+AGI = Artificial General Intelligence
