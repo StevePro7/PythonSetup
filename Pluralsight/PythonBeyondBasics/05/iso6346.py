@@ -3,7 +3,7 @@ ISO 6346 shipping container codes.
 """
 
 
-def create(owner_code, serial, category='U'):
+def create(owner_code: str, serial: str, category: str='U') -> str:
     """Create an ISO 6346 shipping container code.
 
     Args:
