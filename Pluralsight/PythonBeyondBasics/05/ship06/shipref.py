@@ -1,26 +1,29 @@
-from ship04.shipcon import ShippingContainer
+from ship06.shipcon import ShippingContainer
 import iso6346
 
 
-class RefrigeratorShippingContainer(ShippingContainer):
+class RefrigeratedShippingContainer(ShippingContainer):
+
     MAX_CELSIUS = 4.0
     FRIDGE_VOLUME_FT3 = 10
 
     @staticmethod
     def _make_bic_code(owner_code, serial):
-        return iso6346.create(owner_code=owner_code, serial=str(serial).zfill(6), category='R')
+        return iso6346.create(owner_code=owner_code,
+                              serial=str(serial).zfill(6),
+                              category='R')
 
     @staticmethod
     def _c_to_f(celsius):
-        return celsius * 9 / 5 + 32
+        return celsius * 9/5 + 32
 
     @staticmethod
     def _f_to_c(fahrenheit):
-        return (fahrenheit - 32) * 5 / 9
+        return (fahrenheit - 32) * 5/9
 
-    def __init__(self, owner_code, contents, celsius):
-        super().__init__(owner_code, contents)
-        self._celsius = celsius
+    def __init__(self, owner_code, length_ft, contents, celsius):
+        super().__init__(owner_code, length_ft, contents)
+        self.celsius = celsius
 
     @property
     def celsius(self):
@@ -28,14 +31,18 @@ class RefrigeratorShippingContainer(ShippingContainer):
 
     @celsius.setter
     def celsius(self, value):
-        if value > RefrigeratorShippingContainer.MAX_CELSIUS:
-            raise ValueError("Temp too hot!")
+        if value > RefrigeratedShippingContainer.MAX_CELSIUS:
+            raise ValueError("Temperature too hot!")
         self._celsius = value
 
     @property
     def fahrenheit(self):
-        return RefrigeratorShippingContainer._c_to_f(self._celsius)
+        return RefrigeratedShippingContainer._c_to_f(self.celsius)
 
     @fahrenheit.setter
     def fahrenheit(self, value):
-        self.celsius = RefrigeratorShippingContainer._f_to_c(value)
+        self.celsius = RefrigeratedShippingContainer._f_to_c(value)
+
+    @property
+    def volume_ft3(self):
+        return super().volume_ft3 - RefrigeratedShippingContainer.FRIDGE_VOLUME_FT3
