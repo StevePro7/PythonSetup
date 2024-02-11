@@ -30,3 +30,15 @@ UnicodeDecodeError does and UnicodeError is base class of UnicodeDecodeError
 
 Q. How do I know?
 A. Debug ahd help(e) typed in the Debug console window
+
+
+Python type hints
+https://docs.python.org/3/library/typing.html
+
+
+Python
+methods beginning with underscore = private
+Variables with a single underscore are considered "weakly private" in Python.
+While no restrictions are enforced, it is a convention to indicate that these
+Variables are intended for internal use within the class or module and should
+not be accessed directly from outside i.e. violate encapsulation
