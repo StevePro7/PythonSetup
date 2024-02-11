@@ -6,10 +6,10 @@ class Transaction:
 
     def __init__(self, conn: Connection):
         self.conn: Connection = conn
-        self.xid: int = conn._start_transaciton()
+        self.xid: int = conn.start_transaction()
 
     def commit(self):
-        self.conn._commit_transaction(self.xid)
+        self.conn.commit_transaction(self.xid)
 
     def rollback(self):
         self.conn.rollback_transaction(self.xid)

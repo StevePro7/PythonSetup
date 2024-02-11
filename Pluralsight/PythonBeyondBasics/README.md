@@ -42,3 +42,19 @@ Variables with a single underscore are considered "weakly private" in Python.
 While no restrictions are enforced, it is a convention to indicate that these
 Variables are intended for internal use within the class or module and should
 not be accessed directly from outside i.e. violate encapsulation
+
+
+Python naming conventions
+https://www.techversantinfotech.com/python-naming-conventions-points-you-should-know
+
+def public_method():
+def _protected_method():
+def __private_method();
+
+packages	should be lowercase
+methods 	should be lowercase
+classes		should be Pascalcase	CapWord
+
+
+Python methods: instance vs. class vs. static
+https://realpython.com/instance-class-and-static-methods-demystified
