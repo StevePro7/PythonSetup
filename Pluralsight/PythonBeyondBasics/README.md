@@ -69,3 +69,17 @@ Python ellipsis (...) is a versatile object that
 - enhances type hinting
 - simplifies indexing multidimensional arrays
 - indicates unfinished code parts
+
+
+IMPORTANT
+Statement seems to have no effect
+
+before
+    def test_index_one_beyond_the_beginning(self):
+        with self.assertRaises(IndexError):
+            self.s[-6]
+			
+after
+    def test_index_one_beyond_the_beginning(self):
+        with self.assertRaises(IndexError):
+            _ = self.s[-6]
