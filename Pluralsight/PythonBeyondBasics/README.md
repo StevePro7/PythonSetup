@@ -58,3 +58,14 @@ classes		should be Pascalcase	CapWord
 
 Python methods: instance vs. class vs. static
 https://realpython.com/instance-class-and-static-methods-demystified
+
+
+Python ellipsis
+https://medium.com/@mycodingmantras/demystifying-python-ellipsis-unleashing-the-power-of-the-three-dots-cad7fed70b4c
+
+Python ellipsis (...) is a versatile object that 
+- serves as a placeholder
+- aids in array slicing
+- enhances type hinting
+- simplifies indexing multidimensional arrays
+- indicates unfinished code parts
