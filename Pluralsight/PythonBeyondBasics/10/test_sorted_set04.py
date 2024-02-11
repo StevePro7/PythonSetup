@@ -14,7 +14,7 @@ class TestIterableProtocol(unittest.TestCase):
         self.assertEqual(next(i), 2)
         self.assertEqual(next(i), 7)
         self.assertEqual(next(i), 9)
-        self.assertRaises(StopIteration, lambda : next(i))
+        self.assertRaises(StopIteration, lambda: next(i))
 
     def test_for_loop(self):
         index: int = 0
