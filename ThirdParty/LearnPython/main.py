@@ -1,17 +1,34 @@
-import numpy as np
+import pandas as pd
 
-# Create 2 new lists height and weight
-height = [1.87,  1.87, 1.82, 1.91, 1.90, 1.85]
-weight = [81.65, 97.52, 95.25, 92.98, 86.18, 88.45]
 
 def main():
-    np_height = np.array(height)
-    np_weight = np.array(weight)
+    # Import the cars.csv data: cars
+    cars = pd.read_csv('cars.csv', index_col=0)
 
-    bmi = np_weight / np_height ** 2
-    print(bmi)
-    print(bmi[bmi>24])
-    
+    # Print out cars
+    print(cars)
+
+    # Print out country column as Pandas Series
+    print(cars['cars_per_cap'])
+
+    # Print out country column as Pandas DataFrame
+    print(cars[['cars_per_cap']])
+
+    # Print out DataFrame with country and drives_right columns
+    print(cars[['cars_per_cap', 'country']])
+
+    # Print out first 4 observations
+    print(cars[0:4])
+
+    # Print out fifth and sixth observation
+    print(cars[4:6])
+
+    # Print out observation for Japan
+    print(cars.iloc[2])
+
+    # Print out observations for Australia and Egypt
+    print(cars.loc[['AUS', 'EG']])
+
 
 if __name__ == '__main__':
     main()
