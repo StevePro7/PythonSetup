@@ -1,13 +1,22 @@
-# This is a sample Python script.
+# driver program
+from point import Point2D
+from table import Table
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+def main():
+    p = Point2D(123, 456)
+    print(f"circle at {str(p)}")
+    print(f"circle at {repr(p)}")
+    print(f"{Point2D(1, 2)}")
+    print(f"{Point2D(1, 2):r}")
+
+    table = Table(['First name', 'Last name'],
+                  ['Fred', 'George', 'Scooby'],
+                  ['Flintsone', 'Jetson', 'Doo'])
+    print(repr(table))
+    print()
+    print(str(table))
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    main()
