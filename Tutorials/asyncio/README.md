@@ -38,7 +38,18 @@ asyncio.run()
 responsible for getting event loop, running tasks until they are marked complete
 forces execution by scheduling the main() coroutine [future objecdt] for execution on event loop
 
+IMPORTANT
+don't use requests package in asynchronous code because requests is built on top of urllib
+which uses Python http and socket modules AND socket operations are blocking [synchronous]
  
+instead
+aiohttp		requests
+aiofiles	file appends
+
+asyncio.gather()
+put a collection of coroutines [futures] into a single future - thus return future object
+result of gather() will be a list of the results across the inputs
+
 
 countasync
 1s vs. 3s
