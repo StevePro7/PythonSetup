@@ -7,3 +7,7 @@
 PyCharm
 no intellisense
 maybe because an older version of Python??
+
+
+AttributeError: module 'tensorflow' has no attribute 'placeholder'
+
