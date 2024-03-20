@@ -8,6 +8,7 @@ ModuleNotFoundError: No module named 'tensorflow'
 pip install tensorflow
 
 pip install pandas
+pip install scikit-learn
 
 pip install tensorflow
 pip install --upgrade pip
