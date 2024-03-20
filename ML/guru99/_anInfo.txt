@@ -2,3 +2,8 @@
 
 26/12/2018
 /home/stevepro/Bitbucket/SteveProXNA/actionstuff/Python/ML
+
+
+PyCharm
+no intellisense
+maybe because an older version of Python??
