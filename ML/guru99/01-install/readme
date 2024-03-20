@@ -1,0 +1,17 @@
+readme
+20-Mar-2024
+
+pip install keras
+ModuleNotFoundError: No module named 'numpy'
+pip install numpy
+ModuleNotFoundError: No module named 'tensorflow'
+pip install tensorflow
+
+pip install pandas
+
+pip install tensorflow
+pip install --upgrade pip
+
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
