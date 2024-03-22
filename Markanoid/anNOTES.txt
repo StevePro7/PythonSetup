@@ -10,7 +10,7 @@ https://github.com/almeister/Arkanoid
 02.
 https://github.com/wkeeling/arkanoid
 https://github.com/wkeeling/arkanoid/blob/master/arkanoid/sprites/enemy.py
-
+cd ~/GitHub/StevePro9/PythonSetup/Markanoid/wkeeling/arkanoid
 
 03.
 https://github.com/tsixta/arkanoid
