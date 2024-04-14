@@ -30,6 +30,7 @@ helm create hello-world
 Creates hello-world direhectory with all the corresponding Helm files
 
 UPDATE
+mv hello-world helm
 helm/Chart.yaml
 helm/templates/deployment.yaml
 helm/templates/service.yaml
@@ -38,6 +39,28 @@ helm/values.yaml
 curl http://192.168.15.50:30088
 curl: (7) Failed to connect to 192.168.15.50 port 30088: Connection refused
 
-helm install hello-world — namespace hello-world — create-namespace ./hello-world  
+helm install hello-world --namespace hello-world --create-namespace ./helm
 
 curl http://192.168.15.50:30088
+curl: (7) Failed to connect to 192.168.15.50 port 30088: Connection refused
+
+Get the application URL by running these commands:
+export NODE_PORT=$(kubectl get --namespace hello-world -o jsonpath="{.spec.ports[0].nodePort}" services hello-world)
+export NODE_IP=$(kubectl get nodes --namespace hello-world -o jsonpath="{.items[0].status.addresses[0].address}")
+echo http://$NODE_IP:$NODE_PORT
+
+
+NOTE
+first time did not work because the appVerion in Chart.yaml did not match
+so get ImagePullBackOff
+Failed to pull image "hello-world:1.16.0": rpc error:
+
+RETRY
+helm install hello-world --namespace hello-world --create-namespace ./helm
+
+export NODE_PORT=$(kubectl get --namespace hello-world -o jsonpath="{.spec.ports[0].nodePort}" services hello-world)
+export NODE_IP=$(kubectl get nodes --namespace hello-world -o jsonpath="{.items[0].status.addresses[0].address}")
+echo http://$NODE_IP:$NODE_PORT
+
+curl http://192.168.15.50:30088
+Hello World (Python)! (up 0:00:32)
