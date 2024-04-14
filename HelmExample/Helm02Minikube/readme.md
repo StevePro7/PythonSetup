@@ -28,3 +28,16 @@ kubectl delete namespace hello-world
 helm create hello-world
 
 Creates hello-world direhectory with all the corresponding Helm files
+
+UPDATE
+helm/Chart.yaml
+helm/templates/deployment.yaml
+helm/templates/service.yaml
+helm/values.yaml
+
+curl http://192.168.15.50:30088
+curl: (7) Failed to connect to 192.168.15.50 port 30088: Connection refused
+
+helm install hello-world — namespace hello-world — create-namespace ./hello-world  
+
+curl http://192.168.15.50:30088
