@@ -1,0 +1,12 @@
+readme
+19-Apr-2024
+
+Edit config
+Environment variables
+TEST_INPUT=adriana
+Hello, 'adriana'
+
+OR
+export TEST_INPUT=suzanne
+python main.py
+Hello, 'suzanne'
