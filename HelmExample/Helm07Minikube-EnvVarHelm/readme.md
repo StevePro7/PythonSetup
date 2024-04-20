@@ -47,4 +47,23 @@ echo http://$NODE_IP:$NODE_PORT
 
 
 curl http://192.168.15.50:30088
-Hello World 'MY_VALUE_ABC'! (up 0:00:38)
+Hello World 'STEVEPRO_STUDIOS'! (up 0:00:38)
+
+
+
+values.dev
+HELM
+kubectl delete namespace hello-world
+helm create hello-world
+
+curl http://192.168.15.50:30088
+curl: (7) Failed to connect to 192.168.15.50 port 30088: Connection refused
+
+COMMAND
+helm install hello-world -f helm/values.dev.yaml --namespace hello-world --create-namespace ./helm
+
+curl http://192.168.15.50:30088
+Hello World 'STEVEPRO_STUDIOS_DEVELOPMENT'! (up 0:00:39)
+
+So takes all values from values.yaml but overrides in helm/values.dev.yaml where it can!
+Success
