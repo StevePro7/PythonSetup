@@ -20,3 +20,7 @@ curl http://192.168.15.50:32168
 TODO couldn't get env vars passed into endpoint
 Reference
 https://stackoverflow.com/questions/31964031/using-environment-variables-in-curl-command-unix
+
+curl localhost:8080 -d '{"TEST_INPUT":"splat"}'
+
+curl -k -X GET -H 'Content-Type: application/json' -d '{"TEST_INPUT":"splat"}' 
