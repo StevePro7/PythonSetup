@@ -17,6 +17,9 @@ spec:
         - name: hello-world
           image: hello-world:0.1.0
           imagePullPolicy: Never
+          env:
+            - name: MY_VATX
+              value: MY_VALUEX
           ports:
             - containerPort: 8080
           livenessProbe:

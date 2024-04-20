@@ -15,7 +15,7 @@ def elapsed():
 
 @app.route('/')
 def root():
-    name: str = os.getenv('MY_VATS')
+    name: str = os.getenv('MY_VATX')
     return "Hello World '%s'! (up %s)\n" % (name, elapsed())
 
 if __name__ == "__main__":

@@ -19,7 +19,10 @@ kubectl apply -f k8s-namespace.yml
 kubectl apply -f k8s-deployment.yml
 kubectl apply -f k8s-service.yml
 
-minikube service hello-world -n hello-world
+kubectl exec pod/hello-world-6456d6d86b-7vhtd -- printenv 
+MY_VATX=MY_VALUEX
+
+minikube service hello-world -n hello-world --url
 curl http://192.168.15.50:30088
 
 
