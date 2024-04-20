@@ -24,7 +24,7 @@ service:
   nodePort: 30088
 
 env:
-  value: MY_VALUE_ABC
+  value: STEVEPRO_STUDIOS
 
 ingress:
   enabled: false

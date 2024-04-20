@@ -10,14 +10,8 @@ HELM
 kubectl delete namespace hello-world
 helm create hello-world
 
-//Creates hello-world direhectory with all the corresponding Helm files
-
-UPDATE
-mv hello-world helm
-helm/Chart.yaml
-helm/templates/deployment.yaml
-helm/templates/service.yaml
-helm/values.yaml
+OUTPUT
+create top-level directory 'hello-world'
 
 curl http://192.168.15.50:30088
 curl: (7) Failed to connect to 192.168.15.50 port 30088: Connection refused
@@ -25,9 +19,22 @@ curl: (7) Failed to connect to 192.168.15.50 port 30088: Connection refused
 COMMAND
 helm install hello-world --namespace hello-world --create-namespace ./helm
 
-Error: INSTALLATION FAILED: YAML parse error on hello-world/templates/deployment.yaml: error converting YAML to JSON: yaml: invalid map key: map[interface {}]interface {}{".Values.env.value":interface {}(nil)}
-SOLN
-value: {{ .Values.env.value }}
+IMPORTANT - here is where the namespace is created!!
+--namespace hello-world
+
+
+NAME: hello-world
+LAST DEPLOYED: Sat Apr 20 13:33:36 2024
+NAMESPACE: hello-world
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+
+
+kubectl get events
+18s         Warning   FailedCreate        replicaset/hello-world-57f6d8f5dd   Error creating: pods "hello-world-57f6d8f5dd-" is forbidden: error looking up service account hello-world/hello-world: serviceaccount "hello-world" not found
+
+Obv. must need serviceaccout
 
 
 curl http://192.168.15.50:30088
