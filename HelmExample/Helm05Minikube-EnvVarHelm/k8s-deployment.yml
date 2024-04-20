@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testwebapi
+  namespace: env-vars
+spec:
+  selector:
+    matchLabels:
+      app: testwebapi
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: testwebapi
+    spec:
+      containers:
+        - name: testwebapi
+          image: helloworldpython:latest
+          imagePullPolicy: Never
+          env:
+            - name: MY_VATS
+              value: MY_VALUES
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
