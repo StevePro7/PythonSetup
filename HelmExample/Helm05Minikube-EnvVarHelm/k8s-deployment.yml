@@ -1,28 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: testwebapi
-  namespace: env-vars
+  name: hello-world
+  namespace: hello-world
 spec:
   selector:
     matchLabels:
-      app: testwebapi
+      app: hello-world
   replicas: 1
   template:
     metadata:
       labels:
-        app: testwebapi
+        app: hello-world
     spec:
       containers:
-        - name: testwebapi
-          image: helloworldpython:latest
+        - name: hello-world
+          image: hello-world:0.1.0
           imagePullPolicy: Never
-          env:
-            - name: MY_VATS
-              value: MY_VALUES
-          resources:
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
           ports:
             - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080

@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-import time
 import os
+import time
 from flask import Flask
 app = Flask(__name__)
 
@@ -16,7 +16,6 @@ def elapsed():
 @app.route('/')
 def root():
     name: str = os.getenv('MY_VATS')
-    #name = 'bob'
     return "Hello World '%s'! (up %s)\n" % (name, elapsed())
 
 if __name__ == "__main__":
