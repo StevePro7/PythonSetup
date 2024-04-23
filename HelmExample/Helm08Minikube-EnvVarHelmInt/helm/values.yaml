@@ -23,7 +23,7 @@ service:
   port: 8080
   nodePort: 30088
 
-gw_port: '"8001"'
+gw_port: '"1972"'
 
 ingress:
   enabled: false

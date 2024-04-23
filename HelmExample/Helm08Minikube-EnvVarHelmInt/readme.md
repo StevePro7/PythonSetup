@@ -1,6 +1,9 @@
 readme
 14-Apr-2023
 
+helm environment variables integer example
+https://github.com/helm/helm/issues/4775
+
 follow on from previous example but use their YAML files then replace with Helm
 https://siweheee.medium.com/deploy-your-programs-onto-minikube-with-docker-and-helm-a68097e8d545    
 
