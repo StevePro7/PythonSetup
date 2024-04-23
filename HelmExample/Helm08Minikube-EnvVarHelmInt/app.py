@@ -16,7 +16,8 @@ def elapsed():
 @app.route('/')
 def root():
     name: str = os.getenv('MY_VATX')
-    return "Hello World '%s'! (up %s)\n" % (name, elapsed())
+    valu: int = int(name)
+    return "Hello World '%d'! (up %s)\n" % (valu, elapsed())
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8080)
