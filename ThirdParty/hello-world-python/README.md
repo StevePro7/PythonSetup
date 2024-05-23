@@ -33,7 +33,7 @@ Update Dockerfile
 docker build --pull --rm -f "Dockerfile" -t helloworldpython:latest "." 
 
 
-kind cluster create
+kind create cluster
 touch Kubernetes.yaml
 
 kind load docker-image helloworldpython:latest
