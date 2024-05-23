@@ -1,0 +1,103 @@
+https://chatgpt.com
+23-May-2024
+
+python flask api kubernetes example mac
+brew install python
+pip install Flask
+brew install minikube
+brew install kubectl
+
+
+app.py
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return jsonify(message="Hello, World!")
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
+
+requirements.txt
+Flask==2.0.3
+
+
+Dockerfile
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Make port 5000 available to the world outside this container
+EXPOSE 5000
+
+# Define environment variable
+ENV NAME World
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+
+
+docker build -t flask-api .
+docker run -p 5000:5000 flask-api
+
+kind create cluster --name flask-cluster
+
+
+deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-api-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask-api
+  template:
+    metadata:
+      labels:
+        app: flask-api
+    spec:
+      containers:
+      - name: flask-api
+        image: flask-api:latest
+        ports:
+        - containerPort: 5000
+
+
+service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-api-service
+spec:
+  selector:
+    app: flask-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: NodePort
+
+
+
+K8s
+kind load docker-image flask-api --name flask-cluster
+
+NAME                TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+flask-api-service   NodePort   10.96.125.239   <none>        80:XXXX/TCP    1m
+
+
+kubectl port-forward service/flask-api-service 8080:80
+Then access the API at http://localhost:8080
