@@ -1,0 +1,224 @@
+https://chatgpt.com
+23-May-2024
+
+python flask api alembic postgresql seed database dockerfile
+
+python flask api kubernetes example mac
+brew install python
+pip install Flask
+brew install minikube
+brew install kubectl
+
+
+
+flask_api/
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── config.py
+│   └── seed.py
+├── alembic/
+│   ├── env.py
+│   ├── script.py.mako
+│   ├── versions/
+│   └── README
+├── alembic.ini
+├── Dockerfile
+├── docker-compose.yml
+└── requirements.txt
+
+
+app/init.py:
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
+
+def create_app():
+    app = Flask(__name__)
+    app.config.from_object('app.config.Config')
+    
+    db.init_app(app)
+    
+    with app.app_context():
+        from . import routes
+        db.create_all()
+    
+    return app
+
+
+app/models.py:
+from . import db
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+
+    def __repr__(self):
+        return f'<User {self.username}>'
+
+
+app/routes.py:
+from flask import jsonify
+from . import db
+from .models import User
+from flask import current_app as app
+
+@app.route('/')
+def index():
+    users = User.query.all()
+    return jsonify(users=[user.username for user in users])
+
+
+app/config.py:
+import os
+
+class Config:
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql://user:password@db/dbname')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+
+app/seed.py:
+from . import db
+from .models import User
+
+def seed_data():
+    db.session.add(User(username='user1'))
+    db.session.add(User(username='user2'))
+    db.session.commit()
+
+
+ALEMBIC
+alembic.ini
+[alembic]
+script_location = alembic
+
+[alembic:environment]
+sqlalchemy.url = postgresql://user:password@db/dbname
+
+
+
+alembic/env.py:
+from __future__ import with_statement
+from alembic import context
+from sqlalchemy import engine_from_config, pool
+from logging.config import fileConfig
+import os
+import sys
+
+sys.path.append(os.getcwd())
+from app import create_app, db
+
+config = context.config
+fileConfig(config.config_file_name)
+
+app = create_app()
+app.app_context().push()
+
+target_metadata = db.metadata
+
+def run_migrations_offline():
+    url = config.get_main_option("sqlalchemy.url")
+    context.configure(url=url, target_metadata=target_metadata, literal_binds=True)
+    with context.begin_transaction():
+        context.run_migrations()
+
+def run_migrations_online():
+    connectable = engine_from_config(config.get_section(config.config_ini_section), prefix="sqlalchemy.", poolclass=pool.NullPool)
+    with connectable.connect() as connection:
+        context.configure(connection=connection, target_metadata=target_metadata)
+        with context.begin_transaction():
+            context.run_migrations()
+
+if context.is_offline_mode():
+    run_migrations_offline()
+else:
+    run_migrations_online()
+
+
+requirements.txt
+Flask==2.0.3
+SQLAlchemy==1.4.31
+psycopg2-binary==2.9.3
+alembic==1.7.5
+
+
+Dockerfile
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+ENV FLASK_APP=app
+ENV FLASK_RUN_HOST=0.0.0.0
+
+CMD ["sh", "-c", "flask db upgrade && python -m flask seed && flask run"]
+
+
+docker-compose.yml
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dbname
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    command: flask run --host=0.0.0.0
+    environment:
+      FLASK_APP: app
+      FLASK_ENV: development
+      DATABASE_URL: postgresql://user:password@db/dbname
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+
+
+Alembic init + migrate
+alembic init alembic
+
+alembic revision --autogenerate -m "Initial migration"
+alembic upgrade head
+
+
+Seed DB
+app/seed.pyfrom app import create_app, db
+from app.models import User
+
+def seed_data():
+    db.session.add(User(username='user1'))
+    db.session.add(User(username='user2'))
+    db.session.commit()
+
+if __name__ == "__main__":
+    app = create_app()
+    with app.app_context():
+        seed_data()
+
+
+Build + run
+docker-compose build
+docker-compose up
+
+http://localhost:5000
+
+
+Summary
+This setup includes:
+
+A Flask application configured with SQLAlchemy and Alembic for database migrations.
+A PostgreSQL database running in a Docker container.
+Seeding the database with initial data.
+Docker Compose to manage multi-container Docker applications.
+This setup can be extended and modified to add more features and complexity as needed.
