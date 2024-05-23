@@ -1,0 +1,38 @@
+https://chatgpt.com
+23-May-2024
+
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  DOCKER_IMAGE: $CI_REGISTRY_IMAGE
+
+before_script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+build:
+  stage: build
+  script:
+    - docker build -t $DOCKER_IMAGE:latest .
+    - docker push $DOCKER_IMAGE:latest
+
+test:
+  stage: test
+  script:
+    - docker run -d --name flask-api-test $DOCKER_IMAGE:latest
+    - docker exec flask-api-test pytest
+    - docker stop flask-api-test
+    - docker rm flask-api-test
+
+deploy:
+  stage: deploy
+  script:
+    - kubectl apply -f kubernetes/deployment.yaml
+    - kubectl apply -f kubernetes/service.yaml
+  environment:
+    name: production
+    url: http://your-production-url
+  only:
+    - master
