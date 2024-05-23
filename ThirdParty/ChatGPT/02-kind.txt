@@ -51,7 +51,7 @@ CMD ["python", "app.py"]
 docker build -t flask-api .
 docker run -p 5000:5000 flask-api
 
-minikube start
+kind create cluster --name flask-cluster
 
 
 deployment.yaml
@@ -88,14 +88,16 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 5000
-  type: LoadBalancer
+  type: NodePort
+
 
 
 K8s
-eval $(minikube docker-env)
-docker build -t flask-api .
+kind load docker-image flask-api --name flask-cluster
 
-kubectl apply -f k8s/deployment.yaml
-kubectl apply -f k8s/service.yaml
+NAME                TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+flask-api-service   NodePort   10.96.125.239   <none>        80:XXXX/TCP    1m
 
-minikube service flask-api-service --url
+
+kubectl port-forward service/flask-api-service 8080:80
+Then access the API at http://localhost:8080
