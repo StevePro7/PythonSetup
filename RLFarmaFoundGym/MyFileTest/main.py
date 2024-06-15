@@ -14,19 +14,23 @@ if __name__ == '__main__':
     lines = content.splitlines()
     for line in lines:
         if len(line.strip()) == 0:
-            name: str = str(valu).zfill(2)
+            name: str = str(valu).zfill(3)
             with open(f'files/{name}.txt', 'a') as file:
                 for l in list:
                     file.write(l)
                     file.write('\n')
                 list = []
+                print(valu)
                 valu += 1
         else:
             list.append(line)
 
     if len(list) > 0:
-        name: str = str(valu).zfill(2)
+        name: str = str(valu).zfill(3)
         with open(f'files/{name}.txt', 'a') as file:
             for l in list:
                 file.write(l)
                 file.write('\n')
+
+    print(valu)
+    print('the end')
