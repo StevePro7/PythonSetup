@@ -8,17 +8,25 @@ def get_content():
 
 
 if __name__ == '__main__':
-    count = 1
+    valu = 1
     list = []
     content = get_content()
     lines = content.splitlines()
     for line in lines:
         if len(line.strip()) == 0:
-            with open('example.txt', 'a') as file:
+            name: str = str(valu).zfill(2)
+            with open(f'files/{name}.txt', 'a') as file:
                 for l in list:
                     file.write(l)
                     file.write('\n')
                 list = []
+                valu += 1
         else:
             list.append(line)
-        print(line)
+
+    if len(list) > 0:
+        name: str = str(valu).zfill(2)
+        with open(f'files/{name}.txt', 'a') as file:
+            for l in list:
+                file.write(l)
+                file.write('\n')
