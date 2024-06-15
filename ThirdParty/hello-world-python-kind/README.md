@@ -30,5 +30,5 @@ kubectl port-forward service/flask-api-service 8080:80
 curl http://localhost:8080
 
 kubectl delete -f Kubernetes.yaml
-kind delete cluster
+kind delete cluster --name flask-cluster
 
