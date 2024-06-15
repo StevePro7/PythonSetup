@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: testwebapi
+  name: flask-api-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: testwebapi
+      app: flask-api
   template:
     metadata:
       labels:
-        app: testwebapi
+        app: flask-api
     spec:
       containers:
-        - name: testwebapi
-          image: helloworldpython:latest
+        - name: flask-api
+          image: flask-api:latest
           imagePullPolicy: Never
           resources:
             limits:
@@ -26,12 +26,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: testwebapi-service
+  name: flask-api-service
 spec:
+  selector:
+    app: flask-api
   type: NodePort
   ports:
-    - name: http
-      port: 8082
+    - protocol: TCP
+      port: 80
       targetPort: 8080
-  selector:
-    app: testwebapi
