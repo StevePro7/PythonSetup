@@ -13,10 +13,14 @@ New project
 hello-world-python-kind
 /home/stevepro/GitHub/StevePro9/PythonSetup/ThirdParty
 
+pip install -r requirements.
 
-Load into VS Code
+Run program
+curl http://127.0.0.1:8080
+
+DOCKER
 docker build --pull --rm -f "Dockerfile" -t helloworldpython:latest "."
-docker run --rm -d -p 8080:8080/tcp helloworldpython:latest 
+docker run --rm -d -p 8080:8080/tcp helloworldpython:latest
 
 
 
