@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
         - name: flask-api
-          image: flask-api:latest
-          imagePullPolicy: Never
+          image: steveproxna/flask-api:1.0
+          imagePullPolicy: IfNotPresent
           resources:
             limits:
               memory: "128Mi"
