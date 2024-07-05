@@ -18,3 +18,13 @@ numpy==1.26.4
 scipy==1.12.0
 
 pip install --upgrade pip
+
+
+PKL
+https://marketplace.visualstudio.com/items?itemName=Percy.vscode-pydata-viewer
+
+https://stackoverflow.com/questions/63379164/how-do-i-access-data-from-python-files-pkl-pickle
+import pickle
+
+with open(path, "rb") as f:
+    content = pickle.load(f)
