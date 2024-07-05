@@ -10,4 +10,11 @@ https://github.com/rolmez/Customer-Churn-Project
 pip install -r requirements.txt
 
 
-No matching distribution found for contourpy==1.2.0
+contourpy==1.2.0
+llvmlite==0.42.0
+matplotlib=3.7.5
+numba==0.59.0
+numpy==1.26.4
+scipy==1.12.0
+
+pip install --upgrade pip
