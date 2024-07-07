@@ -42,3 +42,11 @@ http://localhost:8501/
 03.
 fast-api.py
 python fast-api.py
+
+http://127.0.0.1:5000/docs
+
+04.
+predict.py
+
+05.
+docker build -t churn-prediction-app .
