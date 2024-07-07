@@ -50,3 +50,4 @@ predict.py
 
 05.
 docker build -t churn-prediction-app .
+docker run -it churn-prediction-app
