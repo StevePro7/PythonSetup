@@ -31,5 +31,14 @@ with open(path, "rb") as f:
     content = pickle.load(f)
 
 
-
+01.
 train_model.py
+
+02.
+streamlit-app.py
+streamlit run /home/stevepro/GitHub/StevePro9/PythonSetup/Medium/MLChurnPrediction/src/streamlit-app.py
+http://localhost:8501/
+
+03.
+fast-api.py
+python fast-api.py
