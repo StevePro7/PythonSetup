@@ -24,6 +24,7 @@ PKL
 https://marketplace.visualstudio.com/items?itemName=Percy.vscode-pydata-viewer
 
 https://stackoverflow.com/questions/63379164/how-do-i-access-data-from-python-files-pkl-pickle
+#pip install pickle-mixin
 import pickle
 
 with open(path, "rb") as f:
