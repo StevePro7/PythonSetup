@@ -29,3 +29,7 @@ import pickle
 
 with open(path, "rb") as f:
     content = pickle.load(f)
+
+
+
+train_model.py
