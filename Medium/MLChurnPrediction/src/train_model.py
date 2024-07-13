@@ -81,6 +81,3 @@ if not os.path.exists(model_dir):
 
 model_path = os.path.join(model_dir, "catboost_model.cbm")
 cat_model.save_model(model_path)
-
-
-print('SGB train_model the_end')
