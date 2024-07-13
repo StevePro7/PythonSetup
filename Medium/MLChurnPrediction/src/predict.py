@@ -75,6 +75,3 @@ if __name__ == "__main__":
     formatted_churn_probability = "{:.2%}".format(churn_probability.item())
 
     print(f"Churn Probability: {formatted_churn_probability}")
-
-
-print('SGB predict the_end')
