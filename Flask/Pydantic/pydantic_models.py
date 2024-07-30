@@ -17,6 +17,3 @@ class Employee(BaseModel):
     salary: float
     department: Department
     elected_benefits: bool
-
-
-print('hi py2')
