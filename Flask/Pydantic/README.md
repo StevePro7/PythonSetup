@@ -30,3 +30,12 @@ The Field class allows you to customize and add metadata to your model’s field
 main20.py
 pydantic_core._pydantic_core.ValidationError: 3 validation errors for Employee
 name
+
+
+Annotated
+allows developers to declare the type of a reference and provide additional information related to it
+
+
+Managing Settings
+Base Settings has all same functionalities as BaseModel
+However BaseSettings model initializer will try to read any fiedls not passed as keyword arguments from environment variables
