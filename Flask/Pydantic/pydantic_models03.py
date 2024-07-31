@@ -2,7 +2,7 @@
 from datetime import date
 from uuid import UUID, uuid4
 from enum import Enum
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, field_validator
 
 class Department(Enum):
     HR = "HR"
@@ -18,6 +18,7 @@ class Employee(BaseModel):
     salary: float = Field(alias="compensation", gt=0, repr=False)
     department: Department
     elected_benefits: bool
+
     @field_validator("date_of_birth")
     @classmethod
     def check_valid_age(cls, date_of_birth: date) -> date:
