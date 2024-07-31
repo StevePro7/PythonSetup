@@ -1,8 +1,15 @@
-# Using Validation Decorators to Validate Functions
+Customizing Settings With SettingsConfigDict
 from pydantic import HttpUrl, Field
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class AppConfig(BaseSettings):
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        case_sensitive=True,
+        extra="forbid"
+    )
+
     database_host = HttpUrl
     database_user: str = Field(min_length=5)
     database_password: str = Field(min_length=20)
@@ -10,4 +17,4 @@ class AppConfig(BaseSettings):
 
 
 # from settings_management import AppConfig
-# pydantic_core._pydantic_core.ValidationError: 4 validation errors for AppConfig
+# OK
