@@ -11,3 +11,7 @@ pip install --upgrade pip
 
 gymnasium
 0.29.1
+
+Box2D
+pip install gymnasium[box2d]
+pip install --upgrade pip

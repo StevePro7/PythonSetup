@@ -1,6 +1,11 @@
 import gymnasium as gym
 
-name = "FrozenLake-v1"
+#name = "FrozenLake-v1"
+#name = "BipedalWalker-v3"
+#name = "Blackjack-v1"
+#name = "Ant-v4"
+name = "ALE/UpNDown-v5"
+
 try:
     env = gym.make(name, render_mode="human")
     observation, info = env.reset()
