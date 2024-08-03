@@ -1,7 +1,7 @@
 import retro
 
-#name = "Strider-Genesis"
-name = "SonicTheHedgehog-Genesis"
+name = "Strider-Genesis"
+#name = "SonicTheHedgehog-Genesis"
 
 try:
     env = retro.make(game=name, record='.')
