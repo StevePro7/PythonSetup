@@ -10,3 +10,17 @@ Notes
 
 
 pip install -r requirements.txt
+
+F5
+curl http://0.0.0.0:8000
+sudo fuser -k 8000/tcp
+
+OR run and hotload changes
+uvicorn main:app --reload
+
+NB:
+org. file says this but is deprecated
+@app.on_event("startup")
+
+Use lifespan instead as per 
+https://fastapi.tiangolo.com/advanced/events
