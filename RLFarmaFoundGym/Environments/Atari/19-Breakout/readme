@@ -5,6 +5,14 @@ https://gymnasium.farama.org/environments/atari/breakout
 
 pip install -r requirements.txt
 pip install gymnasium
-
 pip install gymnasium[atari]
 pip install gymnasium[accept-rom-license]
+pip install --upgrade pip
+
+IMPORTANT
+03-Aug-2024
+
+I used the latest docs/requirements.txt file
+and all still worked OK
+e.g.
+https://github.com/Farama-Foundation/Gymnasium/blob/main/docs/requirements.txt
