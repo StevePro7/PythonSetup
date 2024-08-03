@@ -7,3 +7,6 @@ https://github.com/DEENUU1/property-aggregator
 
 Notes
 /home/stevepro/Bitbucket/SteveProXNA/actionstuff/MediumDigest/2023/Python/FastAPI.txt
+
+
+pip install -r requirements.txt
