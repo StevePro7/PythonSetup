@@ -1,10 +1,10 @@
 import gymnasium as gym
 
-name = 'Acrobot-v1'
+#name = 'Acrobot-v1'
 #name = 'CartPole-v1'
 #name = 'MountainCarContinuous-v0'
 #name = 'MountainCar-v0'
-#name = "Pendulum-v1"
+name = "Pendulum-v1"
 
 try:
     env = gym.make(name, render_mode="human")
