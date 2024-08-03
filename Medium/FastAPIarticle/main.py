@@ -18,7 +18,7 @@ from utils.init_db import create_tables
 async def lifespan(app: FastAPI):
     # Startup event
     print("Application startup")
-    #create_tables()
+    create_tables()
     yield
     # Shutdown event
     print("Application shutdown")

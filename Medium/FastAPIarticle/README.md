@@ -24,3 +24,14 @@ org. file says this but is deprecated
 
 Use lifespan instead as per 
 https://fastapi.tiangolo.com/advanced/events
+
+
+SQLite for Linux
+https://sqlitebrowser.org/dl/#linux
+
+sudo apt-get update
+sudo apt-get install sqlitebrowser
+
+create_tables()
+right click database.db
+Open in | Open in Associated Application
