@@ -35,3 +35,20 @@ sudo apt-get install sqlitebrowser
 create_tables()
 right click database.db
 Open in | Open in Associated Application
+
+
+UPDATE code
+F5
+http://0.0.0.0:8000/docs
+
+
+http://0.0.0.0:8000/api/v1/location/city
+http://0.0.0.0:8000/api/v1/location/region
+
+
+Postman
+POST
+Body | raw | JSON
+{
+    "name": "Dublin"
+}
