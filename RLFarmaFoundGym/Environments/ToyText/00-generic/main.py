@@ -1,8 +1,8 @@
 import gymnasium as gym
 
-name = "Blackjack-v1"
+#name = "Blackjack-v1"
 #name = "Taxi-v3"
-#name = "CliffWalking-v0"
+name = "CliffWalking-v0"
 #name = "FrozenLake-v1"
 
 try:
