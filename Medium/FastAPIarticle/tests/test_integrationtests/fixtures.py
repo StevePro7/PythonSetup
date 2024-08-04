@@ -32,3 +32,16 @@ def city(client, region):
 
     city = CityRepository(db_session).create(CityInput(name="Auckland", region_id=region.id))
     return city
+
+
+@pytest.fixture(scope="function")
+def user_admin_access_token(client):
+    test_client, _ = client
+
+    #data = {'grant_type': '', 'username': 'XXXX', 'password': 'XXXX', 'scope': '', 'client_id': '', 'client_secret': ''}
+    # access_token = test_client.post(
+    #     "/api/v1/user/login",
+    #     data=data,
+    # ).json()["access_token"]
+    #return access_token
+    return "personal_access_token"
