@@ -1,5 +1,5 @@
 from pydantic import BaseModel, UUID4, Field
-from .region_schema import RegionOutput
+from region_schema import RegionOutput
 
 
 class CityInput(BaseModel):

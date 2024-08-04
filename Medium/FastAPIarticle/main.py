@@ -1,24 +1,6 @@
 from fastapi import FastAPI
-from starlette.middleware.cors import CORSMiddleware
-from config.settings import settings
-from routers.api import router
 from utils.init_db import create_tables
-#from tasks.celery_worker import create_notifications
-from config.database import get_db
 from contextlib import asynccontextmanager
-
-# from routers.api import router # add this later
-from utils.init_db import create_tables
-
-# @app.on_event("startup")
-# def on_startup() -> None:
-#     """
-#     Initializes the database tables when the application starts up.
-#     """
-#     create_tables()
-# # app.include_router(router)
-
-
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -26,26 +8,16 @@ async def lifespan(app: FastAPI):
     print("Application startup")
     create_tables()
     yield
-    # Shutdown event
     print("Application shutdown")
 
-origins = ["*"]
-app = FastAPI(lifespan=lifespan)
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-app.include_router(router)
 
 #app = FastAPI(debug=True, title="Tutorial")
-# @app.get("/")
-# async def read_root():
-#     return {"Hello": "World"}
+app = FastAPI(debug=True, title="Tutorial", lifespan=lifespan)
+
+
+@app.get("/")
+async def read_root():
+    return {"Hello": "World"}
 
 if __name__ == "__main__":
     import uvicorn
