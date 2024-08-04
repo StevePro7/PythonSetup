@@ -1,9 +1,9 @@
 Gym Test 01
 03-Aug-2024
 
-Aleksandar Haber	TODO check
-Intro to Atari Game OpenAI Gym Environment - Reinforcement Learning for Computer Games
-https://www.youtube.com/watch?v=tkDIb8yl69g
+Aleksandar Haber	- second code example following on from 01
+#Intro to Atari Game OpenAI Gym Environment - Reinforcement Learning for Computer Games	[Breakout]
+#https://www.youtube.com/watch?v=tkDIb8yl69g
 
 Repeat but use the new FF Gymnasium instead
 pip install -r requirements.txt
