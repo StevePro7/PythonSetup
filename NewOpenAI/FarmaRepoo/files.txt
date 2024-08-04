@@ -1,5 +1,5 @@
 01.
-ClassicControlname = "Acrobot-v1"
+ClassicControl
 name = "Acrobot-v1"
 name = "CartPole-v1"
 name = "MountainCarContinuous-v0"
@@ -23,7 +23,7 @@ name = "LunarLander-v2"
 
 
 04.
-muJoCo
+MuJoCo
 name = "Ant-v4"
 name = "HalfCheetah-v4"
 name = "Hopper-v4"
