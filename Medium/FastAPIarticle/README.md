@@ -1,4 +1,12 @@
 Fast API — Repository Pattern and Service Layer
+04-Aug-2024
+
+Re-build - setup folder structure - all Python packages
+pip install -r requirements.txt
+config/databse.py
+models/region.py
+models/city.py
+
 03-Aug-2024
 
 https://medium.com/@kacperwlodarczyk/fast-api-repository-pattern-and-service-layer-dad43354f07a
@@ -52,3 +60,4 @@ Body | raw | JSON
 {
     "name": "Dublin"
 }
+
