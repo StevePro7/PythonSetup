@@ -6,9 +6,13 @@ pip install -r requirements.txt
 config/databse.py
 models/region.py
 models/city.py
+utils/init_db.py
+schemas/region_schema.py
+schemas/city_schema.py
+main.py
+
 
 03-Aug-2024
-
 https://medium.com/@kacperwlodarczyk/fast-api-repository-pattern-and-service-layer-dad43354f07a
 
 https://github.com/DEENUU1/property-aggregator
