@@ -39,7 +39,7 @@ class CityService:
     def get_all(self) -> List[CityOutput]:
         return self.repository.get_all()
 
-    def update(self, _id: UUID4, data: CityInput ):
+    def update(self, _id: UUID4, data: CityInput):
         if not self.repository.city_exists_by_id(_id):
             raise HTTPException(status_code=http.HTTPStatus.NOT_FOUND, detail=f"City '{_id}' not found")
         city = self.repository.get_by_id(_id)
