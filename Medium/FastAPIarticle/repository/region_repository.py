@@ -10,7 +10,7 @@ class RegionRepository:
         self.session = session
 
     def create(self, data: RegionInput) -> RegionOutput:
-        region = Region(**data.model_dump(exclude_none=True))
+        region: Region = Region(**data.model_dump(exclude_none=True))
         self.session.add(region)
         self.session.commit()
         self.session.refresh(region)

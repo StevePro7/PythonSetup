@@ -12,7 +12,7 @@ class CityRepository:
         self.session = session
 
     def create(self, data: CityInput) -> CityInDb:
-        city = City(**data.model_dump(exclude_none=True))
+        city: City = City(**data.model_dump(exclude_none=True))
         self.session.add(city)
         self.session.commit()
         self.session.refresh(city)
