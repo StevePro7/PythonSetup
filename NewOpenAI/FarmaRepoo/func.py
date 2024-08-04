@@ -1,6 +1,6 @@
 import gymnasium as gym
 
-def print_hi(name: str) -> None:
+def run_game(name: str) -> None:
     try:
         env = gym.make(name, render_mode="human")
         observation, info = env.reset()

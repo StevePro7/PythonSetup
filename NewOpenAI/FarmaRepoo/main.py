@@ -1,17 +1,7 @@
-from func import print_hi
+from func import run_game
 
-name = "Ant-v4"
-name = "HalfCheetah-v4"
-name = "Hopper-v4"
-name = "Humanoid-v4"
-name = "HumanoidStandup-v4"
-name = "InvertedDoublePendulum-v4"
-name = "InvertedPendulum-v4"
-name = "Pusher-v4"
-name = "Reacher-v4"
-name = "Swimmer-v4"
-name = "Walker2d-v4"
+name = "ALE/Tetris-v5"
 
 if __name__ == '__main__':
-    print_hi(name=name)
+    run_game(name=name)
 
