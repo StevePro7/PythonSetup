@@ -83,3 +83,12 @@ Body | raw | JSON
     "name": "Dublin"
 }
 
+
+
+Extra for experts
+HTTP status code
+http.HTTPStatus
+
+200     OK
+400     BAD_REQUEST
+404     NOT_FOUND
