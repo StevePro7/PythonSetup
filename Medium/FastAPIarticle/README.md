@@ -90,5 +90,7 @@ HTTP status code
 http.HTTPStatus
 
 200     OK
+201     CREATED
+204     NO_CONTENT
 400     BAD_REQUEST
 404     NOT_FOUND
