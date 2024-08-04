@@ -7,5 +7,6 @@ def create_tables():
     """
     Creates all database tables defined in the application.
     """
+    Base.metadata.create_all(bind=engine)
     Region.metadata.create_all(bind=engine)
     City.metadata.create_all(bind=engine)

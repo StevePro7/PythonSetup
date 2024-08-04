@@ -3,6 +3,8 @@ Fast API — Repository Pattern and Service Layer
 
 Re-build - setup folder structure - all Python packages
 pip install -r requirements.txt
+
+Basic FastAPI project
 config/databse.py
 models/region.py
 models/city.py
@@ -10,7 +12,23 @@ utils/init_db.py
 schemas/region_schema.py
 schemas/city_schema.py
 main.py
+F5 or uvicorn main:app --reload
 
+Repository
+abstracts the data access layer
+repository/region_repository.py
+repository/city_repository.py
+
+Service
+layer acts as intermediary btwn API endpoints and repository layer
+service/region_service.py
+service/city_service.py
+
+Routers
+define API endpoints using FastAPI routers
+router/v1/region.py
+router/v1/city.py
+router/api.py
 
 03-Aug-2024
 https://medium.com/@kacperwlodarczyk/fast-api-repository-pattern-and-service-layer-dad43354f07a
