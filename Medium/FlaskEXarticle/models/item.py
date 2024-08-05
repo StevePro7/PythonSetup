@@ -18,7 +18,7 @@ class ItemModel(db.Model):
         self.store_id = store_id
 
     def __repr__(self):
-        return 'ItemModel(name=%s, price=%s,store_id=%s)' % (self.name, self.price, self.store_id)
+        return 'ItemModel(name=%s, price=%s, store_id=%s)' % (self.name, self.price, self.store_id)
 
     def json(self):
         return {'name': self.name, 'price': self.price}
