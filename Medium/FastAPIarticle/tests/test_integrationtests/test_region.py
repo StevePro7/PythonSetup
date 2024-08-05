@@ -7,7 +7,7 @@ def test_success_return_status_code_201_create_region(client, user_admin_access_
     response = test_client.post(
         "api/v1/location/region",
         json={
-            "name": "Auckland"
+            "name": "NorthIs"
         },
         headers={"Authorization": f"Bearer {user_admin_access_token}"}
     )
@@ -38,7 +38,7 @@ def test_error_return_status_code_401_create_region_annoymous_user(client) -> No
     response = test_client.post(
         "api/v1/location/region",
         json={
-            "name": "Auckland"
+            "name": "NorthIs"
         }
     )
     assert response.status_code == http.HTTPStatus.CREATED          # UNAUTHORIZED - not implemented Authentication
@@ -50,7 +50,7 @@ def test_error_return_status_code_403_create_region_user_account(client, user_ad
     response = test_client.post(
         "api/v1/location/region",
         json={
-            "name": "Auckland"
+            "name": "NorthIs"
         },
         headers={"Authorization": f"Bearer {user_admin_access_token}"}
     )
@@ -105,7 +105,7 @@ def test_success_return_status_code_200_update_region(client, user_admin_access_
     response = test_client.put(
         f"api/v1/location/region/{region.id}",
         json={
-            "name": "Wellington"
+            "name": "SouthIs"
         },
         headers={"Authorization": f"Bearer {user_admin_access_token}"}
     )
@@ -118,7 +118,7 @@ def test_error_return_status_code_401_update_region_annoymous_user(client, regio
     response = test_client.put(
         f"api/v1/location/region/{region.id}",
         json={
-            "name": "Auckland"
+            "name": "NorthIs"
         }
     )
     assert response.status_code == http.HTTPStatus.OK       # UNAUTHORIZED - not implemented Authentication
@@ -134,7 +134,7 @@ def test_error_return_status_code_404_update_region_region_does_not_exists(
     response = test_client.put(
         f"api/v1/location/region/279dcf76-a100-48b2-9fd4-f891d5093f4c",
         json={
-            "name": "Wellington"
+            "name": "SouthIs"
         },
         headers={"Authorization": f"Bearer {user_admin_access_token}"}
     )

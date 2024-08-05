@@ -21,7 +21,7 @@ def create_city(
     return _service.create(data)
 
 
-@router.get("/region/{region_id", status_code=http.HTTPStatus.OK, response_model=List[CityOutput])
+@router.get("/region/{region_id}", status_code=http.HTTPStatus.OK, response_model=List[CityOutput])
 def get_cities_by_region(region_id: UUID4, session: Session = Depends(get_db)):
     _service = CityService(session)
     return _service.get_all_by_region(region_id)
@@ -42,7 +42,7 @@ def delete_city(
     _service.delete(_id)
 
 
-@router.put("/{_id", status_code=http.HTTPStatus.OK, response_model=CityInput)
+@router.put("/{_id}", status_code=http.HTTPStatus.OK, response_model=CityInput)
 def update_city(
         _id: UUID4,
         data: CityInput,
