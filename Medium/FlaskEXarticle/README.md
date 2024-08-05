@@ -41,3 +41,20 @@ SQLAlchemyAutoSchema
 
 Marshmallow
 Nested(ItemSchema, many=True)
+
+Blueprints
+but are set direct in app.py
+
+from marshmallow import ValidationError
+
+app.config['SQLALCHEMY_DATABASE_URI']
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['PROPAGATE_EXCEPTIONS'] = True
+
+@app.before_first_request
+@api.errorhandler(ValidationError)
+
+
+TEST
+curl -X GET "http://localhost:5000/api/items" -H "accept: application/json"
+curl -X GET "http://localhost:5000/api/stores" -H "accept: application/json"

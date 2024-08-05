@@ -1,16 +1,16 @@
+import http
 from flask import Flask, Blueprint, jsonify
 from flask_restplus import Api
 from ma import ma
 from db import db
-
 from resources.store import Store, StoreList, store_ns, stores_ns
 from resources.item import Item, ItemList, items_ns, item_ns
 from marshmallow import ValidationError
 
 app = Flask(__name__)
-bluePrint = Blueprint('api', __name__, url_prefix='/api')
-api = Api(bluePrint, doc='/doc', title='Sample Flask-RestPlus Application')
-app.register_blueprint(bluePrint)
+blueprint = Blueprint('api', __name__, url_prefix='/api')
+api = Api(blueprint, doc='/doc', title='Sample Flask-RestPlus Application')
+app.register_blueprint(blueprint)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
@@ -28,7 +28,7 @@ def create_tables():
 
 @api.errorhandler(ValidationError)
 def handle_validation_error(error):
-    return jsonify(error.messages), 400
+    return jsonify(error.messages), http.HTTPStatus.BAD_REQUEST
 
 
 item_ns.add_resource(Item, '/<int:_id>')
