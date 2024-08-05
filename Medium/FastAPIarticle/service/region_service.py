@@ -23,7 +23,7 @@ class RegionService:
         if not self.repository.region_exists_by_id(_id):
             raise HTTPException(status_code=http.HTTPStatus.NOT_FOUND, detail=f"Region '{_id}' not found")
         region = self.repository.get_by_id(_id)
-        return self.repository.delete(_id)
+        return self.repository.delete(region)
 
     def update(self, _id: UUID4, data: RegionInput) -> RegionInput:
         if not self.repository.region_exists_by_id(_id):
