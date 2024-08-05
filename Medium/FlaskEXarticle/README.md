@@ -56,5 +56,34 @@ app.config['PROPAGATE_EXCEPTIONS'] = True
 
 
 TEST
-curl -X GET "http://localhost:5000/api/items" -H "accept: application/json"
-curl -X GET "http://localhost:5000/api/stores" -H "accept: application/json"
+curl -X GET "http://localhost:8080/api/items" -H "accept: application/json"
+curl -X GET "http://localhost:8080/api/stores" -H "accept: application/json"
+
+
+https://gitlab.com/SteveProXNA/gitlabcheatsheet
+
+Docker
+docker build --pull --rm -f "Dockerfile" -t flask-api:latest "."
+docker run --rm -it -p 8080:8080/tcp flask-api:latest
+docker logs -f <conteinar_id>
+
+docker logs -f <conteinar_id>
+curl http://localhost:8080/api/items
+curl http://127.0.0.1:8080/api/items
+curl -X GET "http://127.0.0.1:8080/api/items" -H "accept: application/json"
+curl -X GET "http://localhost:8080/api/stores" -H "accept: application/json"
+docker stop <conteinar_id>
+
+
+K8s
+kind create cluster --name flask-cluster
+kubectl create ns test-ns
+kubectl config set-context --current --namespace=test-ns
+kind load docker-image flask-api:latest --name flask-cluster
+kubectl apply -f Kubernetes.yaml
+kubectl logs -f pod/flask-api-deployment-<pod_id>
+kubectl port-forward service/flask-api-service 8080:80
+curl -X GET "http://127.0.0.1:8080/api/items" -H "accept: application/json"
+curl -X GET "http://localhost:8080/api/stores" -H "accept: application/json"
+kubectl delete -f Kubernetes.yaml
+kind delete cluster --name flask-cluster
