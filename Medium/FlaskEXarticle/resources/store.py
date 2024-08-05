@@ -1,8 +1,8 @@
 from flask import request
 from flask_restplus import Resource, fields, Namespace
-
 from models.store import StoreModel
 from schemas.store import StoreSchema
+import http
 
 STORE_NOT_FOUND = "Store not found."
 STORE_ALREADY_EXISTS = "Store '{}' Already exists."
@@ -25,21 +25,21 @@ class Store(Resource):
         store_data = StoreModel.find_by_id(_id)
         if store_data:
             return store_schema.dump(store_data)
-        return {'message': STORE_NOT_FOUND}, 404
+        return {'message': STORE_NOT_FOUND}, http.HTTPStatus.NOT_FOUND
 
     @staticmethod
     def delete(_id):
         store_data = StoreModel.find_by_id(_id)
         if store_data:
             store_data.delete_from_db()
-            return {'message': "Store Deleted successfully"}, 200
-        return {'message': STORE_NOT_FOUND}, 404
+            return {'message': "Store Deleted successfully"}, http.HTTPStatus.OK
+        return {'message': STORE_NOT_FOUND}, http.HTTPStatus.NOT_FOUND
 
 
 class StoreList(Resource):
     @stores_ns.doc('Get all the Stores')
     def get(self):
-        return store_list_schema.dump(StoreModel.find_all()), 200
+        return store_list_schema.dump(StoreModel.find_all()), http.HTTPStatus.OK
 
     @stores_ns.expect(store)
     @stores_ns.doc('Create a Store')
@@ -47,9 +47,9 @@ class StoreList(Resource):
         store_json = request.get_json()
         name = store_json['name']
         if StoreModel.find_by_name(name):
-            return {'message': STORE_ALREADY_EXISTS.format(name)}, 400
+            return {'message': STORE_ALREADY_EXISTS.format(name)}, http.HTTPStatus.BAD_REQUEST
 
         store_data = store_schema.load(store_json)
         store_data.save_to_db()
 
-        return store_schema.dump(store_data), 201
+        return store_schema.dump(store_data), http.HTTPStatus.CREATED
