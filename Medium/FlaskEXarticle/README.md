@@ -30,3 +30,14 @@ marshmallow-sqlalchemy==0.24.1  1.0.0
 NO 
 Pydantic
 pytest
+
+
+CHECK
+models
+@classmethod
+
+schema
+SQLAlchemyAutoSchema
+
+Marshmallow
+Nested(ItemSchema, many=True)
