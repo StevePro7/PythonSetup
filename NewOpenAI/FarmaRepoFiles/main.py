@@ -1,3 +1,4 @@
+dirX: str = "MuJoCo"
 
 def get_lines(dirX: str) -> list:
     file: str = f"{dirX}/files.txt"
@@ -17,13 +18,12 @@ def put_file(dirX, name: str):
         fh.writelines(f"run_game({name})\n")
 
 if __name__ == '__main__':
-    dirX: str = "Box2D"
     lines: list = get_lines(dirX)
     for line in lines:
         line = line.strip()
-        #print(line)
-
-    put_file(dirX, 'name = "BipedalWalker-v3"')
-    print(lines)
+        print(line)
+        if line == dirX:
+            continue
+        put_file(dirX, line)
 
 

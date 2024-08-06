@@ -1,3 +1,3 @@
 from func import run_game
 
-run_game("BipedalWalker-v3")
+run_game(name = "BipedalWalker-v3")
