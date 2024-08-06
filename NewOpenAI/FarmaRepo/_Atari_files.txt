@@ -1,4 +1,3 @@
-Atari
 name = "ALE/Adventure-v5"
 name = "ALE/AirRaid-v5"
 name = "ALE/Alien-v5"
