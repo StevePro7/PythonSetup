@@ -1,16 +1,29 @@
-# This is a sample Python script.
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+def get_lines(dirX: str) -> list:
+    file: str = f"{dirX}/files.txt"
+    with open(file, 'r') as fh:
+        lines = fh.readlines()
+    return lines
 
 
-# Press the green button in the gutter to run the script.
+def put_file(dirX, name: str):
+    text = name.replace('"', '')
+    text = text.replace(' ', '')
+    text = text.replace('name=', '')
+    file: str = f"{dirX}/{text}.py"
+    with open(file, 'w') as fh:
+        fh.write("from func import run_game\n")
+        fh.write("\n")
+        fh.writelines(f"run_game({name})\n")
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    dirX: str = "Box2D"
+    lines: list = get_lines(dirX)
+    for line in lines:
+        line = line.strip()
+        #print(line)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    put_file(dirX, 'name = "BipedalWalker-v3"')
+    print(lines)
+
+
