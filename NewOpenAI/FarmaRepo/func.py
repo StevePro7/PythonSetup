@@ -1,6 +1,11 @@
 import gymnasium as gym
 
 def run_game(name: str) -> None:
+    """
+    This is the file
+    :param name: Name of the video game
+    :return: None
+    """
     try:
         env = gym.make(name, render_mode="human")
         observation, info = env.reset()
