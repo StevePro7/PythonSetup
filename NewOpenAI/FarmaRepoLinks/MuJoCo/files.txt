@@ -1,12 +1,11 @@
-MuJoCo
-name = "Ant-v4"
-name = "HalfCheetah-v4"
-name = "Hopper-v4"
-name = "Humanoid-v4"
-name = "HumanoidStandup-v4"
-name = "InvertedDoublePendulum-v4"
-name = "InvertedPendulum-v4"
-name = "Pusher-v4"
-name = "Reacher-v4"
-name = "Swimmer-v4"
-name = "Walker2d-v4"
+Ant-v4
+HalfCheetah-v4
+Hopper-v4
+Humanoid-v4
+HumanoidStandup-v4
+InvertedDoublePendulum-v4
+InvertedPendulum-v4
+Pusher-v4
+Reacher-v4
+Swimmer-v4
+Walker2d-v4

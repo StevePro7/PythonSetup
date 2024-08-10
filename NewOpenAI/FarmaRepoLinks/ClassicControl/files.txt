@@ -1,6 +1,5 @@
-ClassicControl
-name = "Acrobot-v1"
-name = "CartPole-v1"
-name = "MountainCarContinuous-v0"
-name = "MountainCar-v0"
-name = "Pendulum-v1"
+Acrobot-v1
+CartPole-v1
+MountainCarContinuous-v0
+MountainCar-v0
+Pendulum-v1

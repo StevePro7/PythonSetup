@@ -1,4 +1,3 @@
-Box2D
-name = "BipedalWalker-v3"
-name = "CarRacing-v2"
-name = "LunarLander-v2"
+BipedalWalker-v3
+CarRacing-v2
+LunarLander-v2

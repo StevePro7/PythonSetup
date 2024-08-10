@@ -1,5 +1,4 @@
-ToyText
-name = "Blackjack-v1"
-name = "Taxi-v3"
-name = "CliffWalking-v0"
-name = "FrozenLake-v1"
+Blackjack-v1
+Taxi-v3
+CliffWalking-v0
+FrozenLake-v1
