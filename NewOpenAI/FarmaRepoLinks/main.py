@@ -1,9 +1,8 @@
-from help import Environments
-from help import Folders
+import game
 
-key: int = Environments.ATARI.value
+key = game.Environments.ATARI
 
-folder: str = Folders[key]
+folder: str = game.Folders[key]
 print(folder)
 
 file: str = f"{folder}/files.txt"
