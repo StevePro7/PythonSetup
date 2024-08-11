@@ -1,4 +1,4 @@
-#Acrobot-v1
+Acrobot-v1
 #CartPole-v1
 #MountainCarContinuous-v0
 #MountainCar-v0
