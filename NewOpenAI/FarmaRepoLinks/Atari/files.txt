@@ -37,7 +37,7 @@
 #ALE/FlagCapture-v5
 #ALE/Freeway-v5
 #ALE/Frogger-v5
-ALE/Frostbite-v5
+#ALE/Frostbite-v5
 #ALE/Galaxian-v5
 #ALE/Gopher-v5
 #ALE/Gravitar-v5
