@@ -2,10 +2,10 @@ import file
 import func
 import game
 
-#key = game.Environments.ATARI
+key = game.Environments.ATARI
 #key = game.Environments.BOX_2D
 #key = game.Environments.CLASSIC_CONTROL
-key = game.Environments.MUJO_CO
+#key = game.Environments.MUJO_CO
 #key = game.Environments.TOY_TEXT
 
 
