@@ -1,13 +1,7 @@
 Farma Git repo
 04-Aug-2024
 
-New project
-FarmaRepo
-~/GitHub/StevePro9/PythonSetup/NewOpenAI
 
-source bin activate
-
-copy FF docs requirements.txt local
 pip install -r requirements.txt
 pip install --upgrade pip
 
