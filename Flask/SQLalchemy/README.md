@@ -187,6 +187,38 @@ ForeignKeyConstraint
 Ex03a
 
 
-Emitting DDL to the Database¶
+Emitting DDL to the Database
 metadata_obj.create_all(engine)
 Ex03a
+
+
+Migration tools
+long term DB schema management use schema management tool like Alembic
+which builds upon SQL Alchemy = better choice = can manage + orchestrate
+process of incrementally altering fixed DB schema over time as design of
+application changes
+
+
+Using ORM Declarative Forms to Define Table Metadata
+ORM
+provides facade around Table declaration process = Declarative Table
+same as Table but includes ORM "mapped class"
+
+allows use to declare our user-defined classes and Table metadata at once
+
+
+Establishing a Declarative Base
+Ex03b
+
+ORM mapped class
+Declarative base refers to MetaData collection created automatically
+Base.metadata
+
+registry
+central "mapper configuration" unit in SQL Alchemy ORM
+Base.registry
+
+
+Declaring Mapped Classes
+define ORM mapped classes
+illustrate modern form of Declarative driven from PEP 484 type "Mapped" annotations
