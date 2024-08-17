@@ -220,6 +220,12 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Python version to use for compiling modules
+PYBIND11_PYTHON_VERSION:STRING=
+
+//Path to a program.
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3.10
+
 //Path to a program.
 ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 
@@ -231,6 +237,9 @@ Test02_BINARY_DIR:STATIC=/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/Test
 
 //Value Computed by CMake
 Test02_SOURCE_DIR:STATIC=/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/Test02
+
+//The directory containing a CMake configuration file for pybind11.
+pybind11_DIR:PATH=/usr/lib/cmake/pybind11
 
 
 ########################
@@ -388,8 +397,29 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python3
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.9][cfound components: Interpreter ][v3.9.5()]
+//Details about finding PythonInterp
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3.10][v()]
+//ADVANCED property for variable: PYTHON_EXECUTABLE
+PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_nproc
 ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+_Python3_EXECUTABLE:INTERNAL=/usr/bin/python3.9
+//Path to a file.
+_Python3_INCLUDE_DIR:INTERNAL=/usr/include/python3.8
+//Python3 Properties
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;5;64;;cpython-39-x86_64-linux-gnu;/usr/lib/python3.9;/usr/lib/python3.9;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=a40be8c2fcb8cff70b008e09b37f6755
+//Path to a library.
+_Python3_LIBRARY_RELEASE:INTERNAL=/usr/lib/x86_64-linux-gnu/libpython3.8.so
+//Path to a program.
+_Python_EXECUTABLE:INTERNAL=/usr/bin/python2.7
+//Python Properties
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;2;7;18;64;;;/usr/lib/python2.7;/usr/lib/python2.7;/usr/lib/python2.7/dist-packages;/usr/lib/python2.7/dist-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=16768a6c06607e2379d45c1badff7943
+//Path to a library.
+_Python_LIBRARY_RELEASE:INTERNAL=_Python_LIBRARY_RELEASE-NOTFOUND
 

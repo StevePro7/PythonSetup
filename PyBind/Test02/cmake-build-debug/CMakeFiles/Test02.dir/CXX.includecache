@@ -9,4 +9,6 @@
 /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/Test02/main.cpp
 iostream
 -
+pybind11/pybind11.h
+-
 
