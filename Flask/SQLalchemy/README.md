@@ -162,3 +162,31 @@ gets new Connection object from the Engine next time it executes SQL against DB
 
 See also    README02.md
 https://docs.sqlalchemy.org/en/20/orm/session_basics.html#id1
+
+
+Database Metadata
+https://docs.sqlalchemy.org/en/20/tutorial/metadata.html
+Metadata
+Table
+Column
+
+Ex03
+Metadata accessed via ORM-centric registry OR
+Declarative Base base class
+so same Metadata object shared amongy ORM Table objects
+
+Components of Table
+Column objects accessed via associative array located at Table.c
+
+
+Declaring Simple Constraints
+e.g.
+PrimaryKeyConstraint
+ForeignKeyConstraint
+
+Ex03a
+
+
+Emitting DDL to the Database¶
+metadata_obj.create_all(engine)
+Ex03a
