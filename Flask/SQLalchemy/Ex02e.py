@@ -1,8 +1,7 @@
-from sqlalchemy import Engine, create_engine, TextClause, CursorResult
-from sqlalchemy import text
+from sqlalchemy import Engine, create_engine, text, TextClause
+from sqlalchemy.orm import Session
 
 engine: Engine = create_engine("sqlite+pysqlite:///:memory:", echo=True)
-
 with engine.connect() as conn:
     table: TextClause = text("CREATE TABLE some_table (x int, y int)")
     conn.execute(table)
@@ -11,11 +10,8 @@ with engine.connect() as conn:
     param: list = [{"x": 1, "y": 1}, {"x": 2, "y": 4}]
     conn.execute(store, param)
 
-    sql: TextClause = text("SELECT x, y FROM some_table")
-    result: CursorResult = conn.execute(sql)
-    for row in result:
-        print(f"x: {row.x} y: {row.y}")
-
-    #for x, y in result:
-    #    print(f"X: {x} Y: {y}")
-
+    stmt: TextClause = text("SELECT x, y FROM some_table WHERE y > :y ORDER BY x, y")
+    with Session(engine) as session:
+        result = session.execute(stmt, {"y": 0})
+        for row in result:
+            print(f"x: {row.x}  y: {row.y}")

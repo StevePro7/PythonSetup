@@ -133,3 +133,12 @@ conn.execute(
     text("INSERT INTO some_table (x, y) VALUES (:x, :y)"),
     [{"x": 11, "y": 12}, {"x": 13, "y": 14}],
 )
+
+
+Executing with an ORM Session
+
+Session
+transactional / database interactive object when using ORM
+refers to Core Connection internally which it uses to emit SQL
+
+Follow previous examples with connection but now with ORM session
