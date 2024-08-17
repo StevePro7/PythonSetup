@@ -361,3 +361,46 @@ all objects added to Session are in state "detached"
 
 Avoid detached state
 Session.expire_on_commit = False
+
+
+Working with ORM Related Objects
+https://docs.sqlalchemy.org/en/20/tutorial/orm_related_objects.html
+
+relationship()
+linkage btwn two different mapped classes OR
+linkage from mapped class to itself [self-referential]
+e.g.
+Ex04a
+addresses: Mapped[List["Address"]] = relationship(back_populates="user")
+user: Mapped[User] = relationship(back_populates="addresses")
+
+relationship back_populates
+two relationships considered to be complimentary to each other
+
+
+Persisting and Loading Relationships
+list not mutated = not appended OR not extended
+
+transient = changes not actually associated with the object yet
+
+
+Cascading Objects into the Session
+objects transient state until they are associated with a Session object
+
+session.add( obj )
+save-update-cascade
+pending state
+
+
+Loader Strategies
+lazy loading is one of the most famous ORM patterns
+implicit queries may cause errors when no longer DB transaction
+or when using alternative concurrency patterns like asyncio
+
+Loader Strategies SELECT statements using Select.options()
+
+WILL STOP HERE - not really so relevant to our use case
+
+
+Further reading
+https://docs.sqlalchemy.org/en/20/tutorial/further_reading.html
