@@ -255,3 +255,109 @@ Base.metadata.create_all(engine))
 Table Reflection
 how to generate Table objects from existing DB
 some_table = Table("some_table", metadata_obj, autoload_with=engine)
+
+
+Working with Data
+https://docs.sqlalchemy.org/en/20/tutorial/data.html
+
+ORM
+select use Session.scalars()
+
+Subqueries and CTEs
+Common Table Expression
+used in a similar way as a subquery but includes additional features
+
+Working with SQL Functions
+
+Window Functions
+SQL aggregate function which calculates aggregate value over the rows
+being returned in a group as the individual result rows are processed
+
+
+Data Manipulation with the ORM
+https://docs.sqlalchemy.org/en/20/tutorial/orm_data_manipulation.html#tutorial-inserting-orm
+
+ORM
+Session
+Declarative forms tod define Table Metadata - setup ORM mappings
+
+Insert by adding object entries to Session and then persist to DB via flush()
+
+Ex04
+transient state
+two objects are not associated with any DB state
+yet to be associated with a Session object that can generate INSERT statements
+
+Ex04a
+pending state
+two objects added to Session => session.add()
+
+session.new
+IdentitySet
+Python set that hashes on object identity 
+
+Flushing
+Session makes use of pattern: "unit of work"
+accumulate changes one at a time but does not communcate them to the DB until needed
+
+flush()
+emit SQL to database to push the current set of changes
+session.flush()
+
+
+NOTE
+some database backends such as postgresql-psycopg2 can INSERT many rows at once
+while still being able to retrieve the primary key values
+
+
+Getting Objects by Primary Key from the Identity Map
+
+identity map
+in-memory store that links all objects currently loaded in memory to primary key identity
+
+Session.get()
+
+
+Committing
+session.commit()
+
+detached state
+use the object after closing the Session
+
+
+Updating ORM Objects using the Unit of Work pattern
+
+Python object acts as a proxy for the row in the database
+DB row in terms of the current transaction
+
+
+Deleting ORM Objects using the Unit of Work pattern
+
+cascade
+work more efficiently by allowing the database to handle related rows automatically
+
+
+Bulk / Multi Row INSERT, upsert, UPDATE and DELETE
+
+Rolling Back
+Session.rollback()
+
+NB:
+object.__dict__
+{'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x...>}
+
+SQL Alchemy internal state object
+
+
+Closing a Session
+session.close()
+
+releases the connection resources to the connection pool
+cancelling out [i.e. rolling back] any transactions in progress
+
+expunges all objects from Session
+i.e.
+all objects added to Session are in state "detached"
+
+Avoid detached state
+Session.expire_on_commit = False
