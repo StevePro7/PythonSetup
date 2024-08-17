@@ -222,3 +222,36 @@ Base.registry
 Declaring Mapped Classes
 define ORM mapped classes
 illustrate modern form of Declarative driven from PEP 484 type "Mapped" annotations
+
+Ex03c
+ORM Mapped classes
+available for ORM persistence + query operations
+
+DeclarativeBase.__tablename__
+
+vs.
+DeclarativeBase.__table__           imperative table
+
+mapped_column()                     details OR
+Mapped()
+
+nullable = Optional
+relationship
+
+NB:
+__init__()
+automatically given
+accepts all attribute names as optional keyword args
+
+
+Emitting DDL to the database from an ORM mapping¶
+ORM mapped classes refer to Table objects contained within MetaData collection
+emitting DDL given Declarative Base
+
+Ex03c
+Base.metadata.create_all(engine))
+
+
+Table Reflection
+how to generate Table objects from existing DB
+some_table = Table("some_table", metadata_obj, autoload_with=engine)
