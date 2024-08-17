@@ -67,3 +67,69 @@ if we want to commit data then we need to call Conneciton.commit()
 
 
 Committing Changes
+Ex02a
+commit as you go
+vs.
+Engine.begin()
+begin once
+Ex02b
+
+Prefer "begin once" but tutorial uses "commit as you go"
+
+
+Basics of Statement Execution
+CORE
+Connection.execute()
+text()              returns Result      
+
+ORM
+Session.execute()
+result rows delivered using same Result interface [CORE]
+
+
+Fetching Rows
+Ex02c
+
+IMPORTANT
+engine.connect()        ROLLBACK     if no commit()
+engine.begin()          COMMIT
+
+Result
+rows                    named tuples
+
+Tuple assignment
+for x, y in result:
+
+Integer index
+for row in result:
+    x = row[0]
+
+Attribute name
+for row in result:
+    y = row.y
+
+Mapping access
+for dict_row in result.mappings():
+    x = dict_row["x"]
+
+
+Sending Parameters
+bound parameter syntax
+:y      colon format
+":y"    actual value
+
+REMEMBER
+here we separate input from param
+
+
+Sending Multiple Parameters
+pass a list of dictionary objects instead of a single dictionary
+thus single SQL statement invoked multiple times - once for each parameter set
+
+style = executemany
+NB: we have already seen this with INSERT the data prior
+e.g.
+conn.execute(
+    text("INSERT INTO some_table (x, y) VALUES (:x, :y)"),
+    [{"x": 11, "y": 12}, {"x": 13, "y": 14}],
+)
