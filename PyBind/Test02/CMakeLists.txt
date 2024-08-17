@@ -5,10 +5,9 @@ project(Test02)
 
 add_executable(Test02 main.cpp)
 
-set(Python3_FIND_UNVERSIONED_NAMES NEVER)
-find_package(Python3)
-#find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
-find_package(pybind11)
+#find_package(Python3 3.8 REQUIRED COMPONENTS Interpreter Development)
+find_package(Python 3.9.5 REQUIRED COMPONENTS Interpreter Development)
+find_package(pybind11 REQUIRED)
 
 #pybind11_add_module(example main.cpp)
 #target_include_directories(example PRIVATE ${Python3_INCLUDE_DIRS})

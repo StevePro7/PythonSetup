@@ -397,8 +397,10 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.8.10(3.8.10)]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.9][cfound components: Interpreter ][v3.9.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.9][cfound components: Interpreter ][v3.9.5(3.8)]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3.10][v()]
 //ADVANCED property for variable: PYTHON_EXECUTABLE
@@ -416,10 +418,10 @@ _Python3_INTERPRETER_SIGNATURE:INTERNAL=a40be8c2fcb8cff70b008e09b37f6755
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=/usr/lib/x86_64-linux-gnu/libpython3.8.so
 //Path to a program.
-_Python_EXECUTABLE:INTERNAL=/usr/bin/python2.7
+_Python_EXECUTABLE:INTERNAL=/usr/bin/python3.9
 //Python Properties
-_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;2;7;18;64;;;/usr/lib/python2.7;/usr/lib/python2.7;/usr/lib/python2.7/dist-packages;/usr/lib/python2.7/dist-packages
-_Python_INTERPRETER_SIGNATURE:INTERNAL=16768a6c06607e2379d45c1badff7943
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;5;64;;cpython-39-x86_64-linux-gnu;/usr/lib/python3.9;/usr/lib/python3.9;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=a40be8c2fcb8cff70b008e09b37f6755
 //Path to a library.
 _Python_LIBRARY_RELEASE:INTERNAL=_Python_LIBRARY_RELEASE-NOTFOUND
 
