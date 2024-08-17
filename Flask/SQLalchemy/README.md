@@ -118,6 +118,7 @@ bound parameter syntax
 :y      colon format
 ":y"    actual value
 
+Ex02d
 REMEMBER
 here we separate input from param
 
@@ -142,3 +143,22 @@ transactional / database interactive object when using ORM
 refers to Core Connection internally which it uses to emit SQL
 
 Follow previous examples with connection but now with ORM session
+
+Ex02e
+replace
+with engine.connect() as conn:
+with Session(engine) as session:
+
+make use of Session.execute() method like Connection.execute() method
+
+Session also "commit as you go" Session.commit()
+e.g.
+text UPDATE
+Ex02f
+
+Session
+does not hold onto Connection object after transaction completes
+gets new Connection object from the Engine next time it executes SQL against DB
+
+See also    README02.md
+https://docs.sqlalchemy.org/en/20/orm/session_basics.html#id1
