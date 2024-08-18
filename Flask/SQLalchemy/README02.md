@@ -50,7 +50,7 @@ Egnie.begin()
 
 
 Flusing
-SAVEPOINT is issued when 
+https://docs.sqlalchemy.org/en/20/orm/cascades.htmlNT is issued when 
 Session.begin_nested()
 
 IMPORTANT
@@ -58,9 +58,6 @@ flush process always occurs when transactional methods occur
 Session.commit()
 Session.begin_nested()
 
-//Transactions and Connection Management
-//https://docs.sqlalchemy.org/en/20/orm/session_transaction.html
-//session.begin_nested()
 
 
 FAQs
@@ -83,3 +80,65 @@ Session is intended to be used in a non-concurrent fashion i.e.
 Session instance should be used in only one thread [task] at a time
 
 scoped_session approach can provide "thread local" Sesison object
+
+
+State Management
+https://docs.sqlalchemy.org/en/20/orm/session_state_management.html
+
+Transient           no database identity
+Pending             session.add()
+Persistent          present in session and database
+Deleted             deleted within flush
+Detached            previous record in DB but not in session
+
+
+Cascades
+https://docs.sqlalchemy.org/en/20/orm/cascades.html
+e.g.
+delete cascade with many-to-many relationships
+ON DELETE cascade with ORM relationships
+
+
+Transactions and Connection Management
+https://docs.sqlalchemy.org/en/20/orm/session_transaction.html
+
+Using SAVEPOINT
+SAVEPOINT transactions supported by underlying engine using this method:
+session.begin_nested()
+
+Pattern ideal for PostgreSQL catching IntegrityError to detect duplicate rows
+Normally abort entire transaction when error raised however when using
+SAVEPOINT the outer transaction is maintained
+Thus data is persisted into DB even with "duplicate primary key" record skipped
+without rolling back the entire operation
+
+
+sessionmaker    vs. Engine
+Session         vs. Connection
+
+Transaction Isolation level
+READ UNCOMMITTED
+READ COMMITTED      
+REPEATABLE READ     default
+SERIALIZABLE
+
+
+Contextual/Thread-local Sessions
+https://docs.sqlalchemy.org/en/20/orm/contextual.html
+
+Reference
+When do I construct a Session, when do I commit it, and when do I close it?
+https://docs.sqlalchemy.org/en/20/orm/session_basics.html#session-faq-whentocreate
+
+Introduce concept of "session scopes"
+Web applications link scope of a DB Session to the web request
+
+scoped_session
+
+
+Tracking queries, object and Session Changes with Events
+https://docs.sqlalchemy.org/en/20/orm/session_events.html
+
+
+Session API
+https://docs.sqlalchemy.org/en/20/orm/session_api.html
