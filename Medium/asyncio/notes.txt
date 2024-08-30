@@ -50,3 +50,21 @@ execute multiple functions concurrently
 
 
 Fetching Web Pages (Concurrent I/O Tasks)
+aiohttp
+could not install on Windows
+
+
+Reading Files (Concurrent I/O Tasks)
+pip install aiofiles
+could not install on Windows
+
+
+Mixing Async and Sync: A Hybrid Approach
+uses:
+integration with legacy code
+working with blocking I/O
+i.e. blocking network or file read/write [I/O] calls
+CPU bound tasks
+
+
+The Future() Object
