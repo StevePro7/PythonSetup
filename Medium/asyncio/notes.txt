@@ -42,3 +42,11 @@ any object with __await__() method
 e.g.
 async def
 but include asycio Tasks, Futures etc.
+
+
+IMPORTANT
+asyncio.gather()
+execute multiple functions concurrently
+
+
+Fetching Web Pages (Concurrent I/O Tasks)
