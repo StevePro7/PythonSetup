@@ -1,3 +1,4 @@
+# pip install aiofiles
 import asyncio
 import aiofiles
 
@@ -11,7 +12,7 @@ async def read_all_async(filepaths):
     return await asyncio.gather(*tasks)
 
 async def main():
-    filepaths = ['file1.txt', 'file2.txt']
+    filepaths = ['files/file1.txt', 'files/file2.txt']
     data = await read_all_async(filepaths)
     print(data)
 

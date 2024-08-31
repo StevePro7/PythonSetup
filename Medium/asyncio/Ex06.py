@@ -5,6 +5,6 @@ def read_file_sync(filepath):
 def read_all_sync(filepaths):
     return [read_file_sync(filepath) for filepath in filepaths]
 
-filepaths = ['file1.txt', 'file2.txt']
+filepaths = ['files/file1.txt', 'files/file2.txt']
 data = read_all_sync(filepaths)
 print(data)
