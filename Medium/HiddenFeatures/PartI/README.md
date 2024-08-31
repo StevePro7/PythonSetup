@@ -2,6 +2,9 @@ Python: Hidden Features — part 1
 31-Aug-2024
 
 
+https://pravash-techie.medium.com/python-hidden-features-part-1-3d9817a0385e
+
+
 1. Function Objects
 Everything in Python is an object including functions
 
