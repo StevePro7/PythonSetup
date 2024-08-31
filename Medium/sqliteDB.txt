@@ -1,0 +1,12 @@
+sqlite DB
+31-Aug-2024
+
+FastAPIarticle
+settings.py
+SQLITE_CONNECTION_STRING: Optional[str] = "sqlite:///database.db"  # os.getenv("SQLITE_CONNECTION_STRING")
+SQLITE_CONNECTION_STRING=sqlite:///sqlite.db
+
+
+FlaskEXarticle
+app.py
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
