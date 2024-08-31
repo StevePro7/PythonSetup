@@ -1,0 +1,9 @@
+an Manifest
+31-Aug-2024
+
+Python: Hidden Features — part 1
+https://pravash-techie.medium.com/python-hidden-features-part-1-3d9817a0385e
+
+
+Python: Hidden Features — part 2
+https://pravash-techie.medium.com/python-hidden-features-part-2-7d59bbef57ae
