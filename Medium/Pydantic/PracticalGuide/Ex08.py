@@ -1,9 +1,8 @@
-from pydantic import BaseModel, ConfigDict, AliasGenerator, AliasPath
-
+from pydantic import AliasGenerator, AliasPath, BaseModel, ConfigDict
 
 aliases = {
     "first_name": AliasPath("name", "first_name"),
-    "last_name": AliasPath("name",  "last_name")
+    "last_name": AliasPath("name", "last_name"),
 }
 
 
@@ -18,7 +17,9 @@ class FirstNameChoices(BaseModel):
     last_name: str
 
 
-obj = FirstNameChoices(**{"name":{"first_name": "marc", "last_name": "Nealer"},"title":"Master Of All"})
+obj = FirstNameChoices(
+    **{"name": {"first_name": "marc", "last_name": "Nealer"}, "title": "Master Of All"}
+)
 print(obj)
 
 # OUTPUT

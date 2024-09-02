@@ -1,6 +1,7 @@
-from pydantic import BaseModel
-from typing import Union, Optional, List, Dict
 from datetime import datetime
+from typing import Dict, List, Optional, Union
+
+from pydantic import BaseModel
 
 
 class MyFirstModel(BaseModel):

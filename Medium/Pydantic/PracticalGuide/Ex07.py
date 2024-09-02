@@ -1,9 +1,8 @@
-from pydantic import BaseModel, ConfigDict, AliasGenerator, AliasChoices
-
+from pydantic import AliasChoices, AliasGenerator, BaseModel, ConfigDict
 
 aliases = {
     "first_name": AliasChoices("fname", "surname", "forename", "first_name"),
-    "last_name": AliasChoices("lname", "family_name", "last_name")
+    "last_name": AliasChoices("lname", "family_name", "last_name"),
 }
 
 

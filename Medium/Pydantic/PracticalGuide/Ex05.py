@@ -1,5 +1,6 @@
-from pydantic import BaseModel, model_validator, ValidationError
-from typing import Union, Any
+from typing import Any, Union
+
+from pydantic import BaseModel, ValidationError, model_validator
 
 
 class AllOptionalAfterModel(BaseModel):

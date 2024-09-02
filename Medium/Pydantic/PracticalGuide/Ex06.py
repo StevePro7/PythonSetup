@@ -14,7 +14,7 @@ class Tree(BaseModel):
     kind: str
 
 
-t = Tree.model_validate({'AGE': 12, 'HEIGHT': 1.2, 'KIND': 'oak'})
+t = Tree.model_validate({"AGE": 12, "HEIGHT": 1.2, "KIND": "oak"})
 print(t.model_dump(by_alias=True))
 
 # OUTPUT
