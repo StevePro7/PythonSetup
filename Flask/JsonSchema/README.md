@@ -11,3 +11,9 @@ python deserialize json dict to custom object
 
 02.
 is there not a python framework like marshmallow that will do the custom_decoder for me
+
+1. Install Marshmallow
+pip install marshmallow
+2. Define Your Custom Class and Schema
+3. Deserialize the JSON:
+
