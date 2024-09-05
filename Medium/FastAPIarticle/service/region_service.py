@@ -19,6 +19,9 @@ class RegionService:
     def get_all(self) -> List[Optional[RegionOutput]]:
         return self.repository.get_all()
 
+    def get_by_id(self,  _id: UUID4) -> Optional[RegionOutput]:
+        return self.repository.get_by_id(_id)
+
     def delete(self, _id: UUID4) -> bool:
         if not self.repository.region_exists_by_id(_id):
             raise HTTPException(status_code=http.HTTPStatus.NOT_FOUND, detail=f"Region '{_id}' not found")

@@ -28,6 +28,11 @@ def get_regions(session: Session = Depends(get_db)) -> List[RegionOutput]:
     _service = RegionService(session)
     return _service.get_all()
 
+@router.get("/{_id}", status_code=http.HTTPStatus.OK, response_model=RegionOutput)
+def get_region(_id: UUID4, session: Session = Depends(get_db)) -> RegionOutput:
+    _service = RegionService(session)
+    region: RegionOutput = _service.get_by_id(_id)
+    return region
 
 @router.delete("/{_id}", status_code=http.HTTPStatus.NO_CONTENT)
 def delete_region(
