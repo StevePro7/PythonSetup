@@ -88,3 +88,13 @@ curl -X POST 'http://localhost:8000/sub' \
     "x": 6,
     "y": 1
 }'
+
+
+Summary
+celery routes tasks to dedicated queues
+
+effective when you need to develop service w/
+complex solution and prioritize scalability and maintainability
+
+Official documentation
+https://docs.celeryq.dev/en/latest/userguide/routing.html
