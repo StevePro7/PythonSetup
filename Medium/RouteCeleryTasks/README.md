@@ -44,8 +44,11 @@ pip install --upgrade pip
 docker run -p 6379:6379 redis
 
 
-NB:
-want to try ruff also
+NB: want to try ruff also
+
+pip install ruff
+pip freeze > requirements.txt
+
 
 ruff check .
 ruff format .
