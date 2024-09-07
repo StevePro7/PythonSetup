@@ -1,11 +1,11 @@
-from fastapi import FastAPI
 from celery import Celery
+from fastapi import FastAPI
 from pydantic import BaseModel
-
 
 app = FastAPI()
 
 celery = Celery("api", broker="redis://localhost:6379/0")
+
 
 class Param(BaseModel):
     x: int

@@ -48,3 +48,7 @@ NB:
 want to try ruff also
 
 ruff check .
+ruff format .
+
+ruff check --select I --fix
+# SORTS imports
