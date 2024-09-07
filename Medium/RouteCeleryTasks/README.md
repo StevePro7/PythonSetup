@@ -55,3 +55,36 @@ ruff format .
 
 ruff check --select I --fix
 # SORTS imports
+
+
+producer.py
+consumer.py
+
+
+Start the API application   producer
+uvicorn producer:app --log-level info
+
+
+Start workers   consumers   specify queues individually
+celery --app consumer worker --loglevel=info --queues addition
+celery --app consumer worker --loglevel=info --queues subtract
+
+
+Test the API
+
+ADD
+curl -X POST 'http://localhost:8000/add' \
+-H 'Content-Type: application/json' \
+-d '{
+    "x": 2,
+    "y": 4
+}'
+
+
+SUB
+curl -X POST 'http://localhost:8000/sub' \
+-H 'Content-Type: application/json' \
+-d '{
+    "x": 6,
+    "y": 1
+}'
