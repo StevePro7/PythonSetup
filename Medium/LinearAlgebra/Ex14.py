@@ -1,6 +1,5 @@
 import numpy as np
 
-
 # Dot Product of Two Vectors
 v1 = np.array([1, 2])
 v2 = np.array([2, 3])

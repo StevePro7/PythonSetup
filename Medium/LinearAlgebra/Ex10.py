@@ -1,6 +1,6 @@
 import numpy as np
-from func import print_matrix
 
+from func import print_matrix
 
 # Diagonal Matrix
 D = np.diag([1, 2, 3])

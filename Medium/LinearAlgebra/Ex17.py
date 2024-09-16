@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 # Scalar Multiplication of a Vector
 scalar = 3
 v = np.array([1, 2])

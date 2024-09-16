@@ -1,6 +1,6 @@
 import numpy as np
-from func import print_matrix
 
+from func import print_matrix
 
 # Rank 1 Matrix
 A_rank1 = np.array([[1, 2], [1, 2]])

@@ -1,4 +1,5 @@
 import numpy as np
+
 from func import print_matrix
 
 # Inverse of a Matrix

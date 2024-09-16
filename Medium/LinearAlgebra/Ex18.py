@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 # Linear Transformation of a Square
 T = np.array([[1, 2], [2, 1]])  # Transformation matrix
 square = np.array([[0, 0, 1, 1, 0], [0, 1, 1, 0, 0]])  # Original square

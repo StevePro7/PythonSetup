@@ -1,6 +1,5 @@
 import numpy as np
 
-
 # Singular Matrix
 A = np.array([[1, 2], [2, 4]])  # This matrix is singular
 

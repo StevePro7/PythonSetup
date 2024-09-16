@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from func import print_matrix
 
+from func import print_matrix
 
 # Eigenvectors and Eigenvalues
 A = np.array([[1, 2], [2, 3]])
