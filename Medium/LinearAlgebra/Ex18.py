@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from func import print_matrix
 
 
 # Linear Transformation of a Square

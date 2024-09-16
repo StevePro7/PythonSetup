@@ -1,5 +1,4 @@
 import numpy as np
-from func import print_matrix
 
 
 # Singular Matrix

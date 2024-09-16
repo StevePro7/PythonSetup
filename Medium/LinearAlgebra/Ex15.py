@@ -1,5 +1,4 @@
 import numpy as np
-from scipy.linalg import null_space
 from func import print_matrix
 
 
