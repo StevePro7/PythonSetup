@@ -9,6 +9,7 @@ https://deepnote.com/workspace/benthecoder-1aa3f71b-c5ea-44d1-ba14-b7fe4c5507d7/
 pip install --upgrade pip
 pip install numpy
 pip install matplotlib
+pip install scipy
 
 
 UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
