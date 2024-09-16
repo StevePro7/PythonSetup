@@ -17,12 +17,19 @@ origin = [0, 0]
 
 # Plot each eigenvector
 for i in range(len(eigenvalues)):
-    ax.quiver(*origin, eigenvectors[0, i], eigenvectors[1, i], scale=3, scale_units='xy', angles='xy')
+    ax.quiver(
+        *origin,
+        eigenvectors[0, i],
+        eigenvectors[1, i],
+        scale=3,
+        scale_units="xy",
+        angles="xy",
+    )
 
 ax.set_xlim(-1, 1)
 ax.set_ylim(-1, 1)
-ax.set_aspect('equal')
+ax.set_aspect("equal")
 ax.grid(True)
-ax.set_title('Eigenvectors of A')
+ax.set_title("Eigenvectors of A")
 
 plt.show()
