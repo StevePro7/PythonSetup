@@ -2,3 +2,14 @@ Why Using Python Generators will improve your code quality
 24-Sep-2024
 
 https://python.plainenglish.io/a-comprehensive-guide-to-python-generators-4ee268586004
+
+
+Generators are a type of iterable, like lists or tuple
+
+
+Generator Expressions
+Generator expressions are similar to list comprehensions but use parentheses instead of square brackets
+
+numbers = (x**2 for x in range(10))
+for num in numbers:
+    print(num)ds
