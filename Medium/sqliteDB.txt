@@ -10,3 +10,12 @@ SQLITE_CONNECTION_STRING=sqlite:///sqlite.db
 FlaskEXarticle
 app.py
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+
+
+
+IMPORTANT
+Simplifying Database Interactions in Python with the Repository Pattern and SQLAlchemy
+https://ryan-zheng.medium.com/simplifying-database-interactions-in-python-with-the-repository-pattern-and-sqlalchemy-22baecae8d84
+
+Repository pattern
+middleman between the application code and the database
