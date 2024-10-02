@@ -1,0 +1,9 @@
+Sms
+name = "AlienSyndrome-Sms"
+name = "BladeEagle-Sms"
+name = "DickTracy-Sms"
+name = "JamesPond2CodenameRoboCod-Sms"
+name = "RType-Sms"
+name = "Shinobi-Sms"
+name = "SonicTheHedgehog-Sms"
+name = "TransBot-Sms"

@@ -1,0 +1,9 @@
+Genesis
+name = "AlteredBeast-Genesis"
+name = "Flicky-Genesis"
+name = "GhoulsnGhosts-Genesis"
+name = "RevengeOfShinobi-Genesis"
+name = "SonicTheHedgehog2-Genesis"
+name = "SonicTheHedgehog3-Genesis"
+name = "StreetsOfRage2-Genesis"
+name = "Strider-Genesis"
