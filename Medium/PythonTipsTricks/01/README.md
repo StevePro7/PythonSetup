@@ -26,3 +26,14 @@ end result is the same except classes can explore OOP concepts
 
 
 04. Save memory with generators
+generator pattern allows you to get values lazily (on demand)
+thus saving memory usage
+
+If you have a large list then consider using generators to save memory
+NB:
+generator expression == generator comprehension
+
+04b. generator function
+statement that returns lazy iterator to iterate over values on demand
+very useful for large sequence of values and don't need to store them all in memory
+
