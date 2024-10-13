@@ -41,3 +41,32 @@ object-orientated code in Python
 04. Pickling and Unpickling
 Pickling    process of serializing Python object into byte stream saved to file
 Unpickling  reverse process byte stream is converted back into Python object
+
+pickle.dump()   save binary data
+pickle.load()   load binary data
+
+Security
+be cautious when unpickling data from untrusted sources as it can potentially
+execute arbitrary code
+
+Efficiency
+Pickling is efficient for simple data types but can be slower and less
+portable compared to other serialization formats like JSON
+
+Pickling is esp. useful when you want to save state of an object and
+reload it later without losing any information
+
+
+06. Invert Magic function
+__invert__ is a special method in Python also known as the bitwise NOT
+magic method
+7. 
+It is used to implement bitwise NOT operator (~) for objects that support it
+When you appled the ~ operator to an object Python auto calls __invert__()
+method passing the object itself as the argument
+
+The method should return a new object that represents bitwise inversion
+of the original one
+
+__invert__ demos how objects can be customized for objects that do not support
+the bitwise NOT operation offering flexibility in handling such operators
