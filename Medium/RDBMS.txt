@@ -1,0 +1,299 @@
+The Ultimate Guide to Relational Databases for Backend Developers
+16-Oct-2024
+
+https://blog.devgenius.io/the-ultimate-guide-to-relational-databases-for-backend-developers-42b1efb492b0
+
+
+
+DDL	Data Definition Language
+CREATE
+ALTER
+DROP
+TRUNCATE
+
+
+DML	Data Manipulation Language
+INSERT
+UPDATE
+DELETE
+
+
+DDL	Data Query Language
+SELECT
+Joins
+Aggregations
+Subqueries
+
+
+DCL	Data Control Language
+GRANT
+REVOKE
+
+
+TCL	Transaction Control Language
+BEGIN	START TRANSACTION
+COMMIT
+ROLLBACK
+SAVEPOINT
+
+
+Additional import SQL concepts
+WHERE clause
+ORDER BY 
+GROUP BY
+HAVING
+LIMIT		OFFSET
+DISTINCT
+
+
+DB schemas
+Conceptual	high view of entire DB structure
+Logical		description of data structure independent of DB Mgt system
+Physical	description of DB design implemented by DBMS
+
+
+INNER JOIN
+returns only rows where match in both tables
+
+LEFT JOIN
+return all rows from left table and matched rows on right
+
+RIGHT JOIN
+return all rows from right table and matched rows on left 
+
+FULL OUTER JOIN
+return all rows where match in either left or right table
+
+
+CTEs
+Common Table Expressions
+provide a way to write auxiliary statements for use in larger query
+can make complex queries more readable and maintainable
+
+
+Windows functions
+perform calculations across a set of rows that are related to current row
+
+ROW_NUMBER()
+RANK(), DENSE_RANK()
+LAG(), LEAD()
+
+Be aware of Recursive and Full-Text search queries
+ts_rank
+to_tsvector
+to_tsquery
+
+
+Indexes
+B-tree		balanced tree
+most common + default
+efficient for equality and range queries
+
+Hash
+optimized for equality comparisons
+not suitable for range queries
+
+Convering
+include all columns referenced in a query
+
+
+Index best practices
+index columns used frequently in WHERE, JOIN, ORDER BY clauses
+consider cardinality of column (number or distinct values)
+
+composite index
+create multi-column index and place the most selective column first
+
+
+Query Execution plans
+look out for
+Scan methods	sequential [full], index scan, index-only scan
+join types	nested loop, hash join, merge join
+
+
+IMPORTANT
+Avoid wildcard characters at beginning of LIKE patterhs
+-- Inefficient
+SELECT * FROM customers WHERE last_name LIKE '%son';
+
+-- More efficient
+SELECT * FROM customers WHERE last_name LIKE 'John%';
+
+
+Use EXISTS instead of IN for subqueries
+-- Often more efficient
+SELECT * FROM orders o
+WHERE EXISTS (SELECT 1 FROM customers c WHERE c.id = o.customer_id AND c.status = 'active');
+
+
+Avoid functions on indexed columns in WHERE clauses
+-- Inefficient, won't use index
+SELECT * FROM orders WHERE YEAR(order_date) = 2023;
+
+-- More efficient
+SELECT * FROM orders WHERE order_date >= '2023-01-01' AND order_date < '2024-01-01';
+
+
+Use UNION ALL instead of UNION when duplicate removal isn't necc
+
+Consider replacing subqueries with JOINs where possible
+
+SELECT only columns you need to reduce I/O and network traffic
+
+Use LIMIT for pagination
+
+Partition very large tables
+
+
+MONITORING
+identify slow queries
+
+Postgres	pg_stat statements
+rebuild indexes periodically
+
+
+Concurrency
+Dirty reqd
+Non-repeatable read
+Phantom read
+Lost update
+
+
+SECURITY
+Principle of Least Privilege
+review + audit user permissions
+use roles to group related permissions
+revoke unnecessary permissions promptly
+
+Encryption at rest
+Encryption in transit	SSL/TLS
+ssl = on
+ssl_cert_file = 'server.crt'
+ssl_key_file = 'server.key'
+
+Column-Level encryption
+
+
+SCALABILITY
+Vertical	Up
+Horizontal	Out
+Partitioning
+Sharding
+
+Cache
+Query + Object + Distributed
+
+Connection Pooling
+
+Read-Write split	Master [write] Slave [reads]
+
+Asynchronous Processing	Python + Celery
+
+
+Postgres
+Autovacuum		TODO?
+Parallel Query Execution
+
+Profiling tools
+pgBadger
+
+
+ORM example		Python + SQLAlchemy
+DB migration 		Alembic  SQLAlchemy
+
+
+Unit Testing
+use in-memory DB or mocking for faster tests
+e.g.
+@pytest.fixture(scope='function')
+def db_session() -> Generator[Session]:
+    engine = create_engine('sqlite:///:memory:')
+    Base.metadata.create_all(engine)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    yield session
+    session.close()
+
+
+Performance monitoring tools
+pg_stat_statements
+pg_stat_activity
+
+Prometheus w/ Grafana
+Datadog
+
+
+INDEX maintenance
+identify unused indexes
+
+SELECT schemaname || '.' || relname AS table,
+       indexrelname AS index,
+       pg_size_pretty(pg_relation_size(i.indexrelid)) AS index_size,
+       idx_scan as index_scans
+FROM pg_stat_user_indexes ui
+JOIN pg_index i ON ui.indexrelid = i.indexrelid
+WHERE NOT indisunique AND idx_scan < 50 AND pg_relation_size(relid) > 5 * 8192
+ORDER BY pg_relation_size(i.indexrelid) / nullif(idx_scan, 0) DESC NULLS FIRST,
+         pg_relation_size(i.indexrelid) DESC;
+
+
+rebuild fragmented indexes
+
+update index stats
+ANALYZE <table>;
+
+
+DB health checks
+SELECT pg_size_pretty(pg_database_size('your_database'));
+
+long running transactions
+SELECT pid, now() - xact_start AS duration, query
+FROM pg_stat_activity
+WHERE state = 'active' AND now() - xact_start > '5 minutes'::interval
+ORDER BY duration DESC;
+
+
+MACHINE LEARNING
+perform ML tasks w/in DB
+reduce data movement = improve perf
+
+Postgres	MADlib	example
+
+
+Time-series data handling
+TimescaleDB (PostgreSQL extension)
+
+
+NewSQL DBs
+provide scalability of NoSQL systems while maintaining ACID guarantees or RDBMS
+
+Atomicity	all of nothing
+Consistency
+Isolated
+Durability
+
+
+JSON semi-structure support
+
+Serverless DBs
+
+Enhanced security
+End-to-end encryption
+Advanced access controls
+Automated compliance tools
+
+e.g.
+PostgreSQL Row-Level Security
+
+
+Pitfalls
+N+1 query problem
+over-indexing
+poor schema design
+inefficient queries
+lack of data validation
+no scaling
+
+
+CONCLUSION
+recap of key points
