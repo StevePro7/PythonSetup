@@ -90,14 +90,6 @@ Ex13
 run the same test function multiple times w/ different input values
 
 
-
-
-
-
-
-
-Sharing Fixtures Across Modules: Use conftest.py to define fixtures that can be shared across multiple test modules.
-
 Ex14
 pytest.param
 add more metadata to each test case
@@ -112,3 +104,104 @@ Other options seem a bit overkill for now
 Indirect Parametrization
 Parametrizing Fixtures
 External Data
+
+
+Markers
+categorize tsets + apply metadata to them
+
+Ex16
+Built-in markers
+@pytest.mark.skip
+@pytest.mark.skipif
+@pytest.mark.xfail      mark test as expected to fail
+
+
+Custom markers
+register custom markers in pytest.ini
+
+[pytest]
+markers =
+slow: marks tests as slow (deselect with '-m "not slow"')
+integration: marks tests as integration tests
+
+
+Plugins
+01. test coverage
+pytest-cov
+pip install pytest-cov
+pytest --cov=my_project tests/
+
+
+02. environment variables
+pytest-env
+pip install pytest-env
+    
+e.g. add to pytest.ini
+[pytest]
+env =
+MY_ENV_VAR=value
+
+
+03. testing asynchronous code
+pytest-asyncio
+pip install pytest-asyncio
+    
+e.g add to pytest.ini
+[pytest]
+asyncio_mode=auto
+
+Ex17    OR manually
+
+
+04. order tests
+pytest-order
+pip install pytest-order
+    
+
+05. Factory Boy
+often used w/ pytest to create test data
+provides a flexible way to generate complex objects for testing
+
+Ex18
+pip install factory_boy
+
+
+NOTE
+list all installed plugins
+pytest --trace-config
+
+
+BEST practices
+directory structure
+naming conventions
+
+
+
+Sharing Fixtures Across Modules: 
+Use conftest.py
+define fixtures that can be shared across multiple test modules
+
+
+Mocking
+pytest-mock
+pip install pytest-mock
+
+def test_api_call(mocker) -> None:
+    mocker.patch('module.api_call', return_value={"key": "value"})
+    result = module.api_call()
+    assert result == {"key": "value"}
+
+
+PERF
+pytest-xdist
+parallel testing
+
+pip install pytest-xdist
+pytest -n auto   # Automatically determine the number of CPUs and run tests in parallel.
+
+
+NOTE:
+pytest -v
+verbose mode
+
+pytest --pdb
