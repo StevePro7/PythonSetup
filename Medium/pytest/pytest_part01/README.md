@@ -64,4 +64,11 @@ verifying that it calls get_weather_data() method on WeatherAPI
 dependency
 
 
+Best practices
+don't mock what you don't own
+use loose specifications
+don't break Law of Demeter 
 
+
+BDD
+Ex09
