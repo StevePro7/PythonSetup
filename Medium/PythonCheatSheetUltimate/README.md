@@ -40,6 +40,18 @@ Working With Decorators
 Working With Web Scraping
 
 14. Asynchronous Web Scraping
+import aiohttp
+import asyncio
+
+async def fetch(url):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.text()
+
+urls = ['https://example.com/page1', 'https://example.com/page2']
+loop = asyncio.get_event_loop()
+pages = loop.run_until_complete(asyncio.gather(*(fetch(url) for url in urls)))
+
 
 Working With pip (Package Management)
 10. Checking Package Dependencies
