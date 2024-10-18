@@ -28,3 +28,7 @@ source venv/bin/activate
 
 10. Checking Package Dependencies
 pip show numpy
+
+
+NB:
+deactivate
