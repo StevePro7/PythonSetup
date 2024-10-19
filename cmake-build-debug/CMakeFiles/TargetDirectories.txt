@@ -1,0 +1,3 @@
+/home/stevepro/GitHub/StevePro9/PythonSetup/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/stevepro/GitHub/StevePro9/PythonSetup/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/stevepro/GitHub/StevePro9/PythonSetup/cmake-build-debug/CMakeFiles/PythonSetup.dir
