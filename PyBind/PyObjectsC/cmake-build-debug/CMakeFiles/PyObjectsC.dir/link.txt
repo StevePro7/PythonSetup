@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/PyObjectsC.dir/main.c.o CMakeFiles/PyObjectsC.dir/factorial.c.o CMakeFiles/PyObjectsC.dir/foo.c.o -o PyObjectsC  /usr/lib/x86_64-linux-gnu/libpython3.9.so 

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/foo.h
+
+/home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/main.c
+stdio.h
+-
+foo.h
+/home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/foo.h
+
