@@ -35,3 +35,20 @@ curl -X 'POST' \
   "title": "test",
   "description": "hello world"
 }'
+
+
+01. Environment
+python -m venv .venv
+source venv/bin/activate
+
+02. DB Models
+SQLAlchemy	define database Models
+
+03. Pydantic
+Pydantic schemas	ensure data validation
+
+04. CRUD Operations
+
+05. DB Configuration
+
+06. Fast API application
