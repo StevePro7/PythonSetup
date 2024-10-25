@@ -1,4 +1,14 @@
+SOURCE
+TITLE
+19-Oct-2024
 https://blog.devgenius.io/python-performance-optimization-a-comprehensive-guide-21bc4f40dcfd
+
+
+METHOD
+factorial.c
+setup.py
+python setup.py build_ext --inplace
+app.py
 
 
 #include <Python.h>
