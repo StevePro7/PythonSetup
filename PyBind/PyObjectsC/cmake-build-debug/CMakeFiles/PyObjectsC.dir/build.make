@@ -62,10 +62,10 @@ RM = /opt/clion-2021.1.3/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC
+CMAKE_SOURCE_DIR = /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug
+CMAKE_BINARY_DIR = /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PyObjectsC.dir/depend.make
@@ -78,42 +78,42 @@ include CMakeFiles/PyObjectsC.dir/flags.make
 
 CMakeFiles/PyObjectsC.dir/main.c.o: CMakeFiles/PyObjectsC.dir/flags.make
 CMakeFiles/PyObjectsC.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PyObjectsC.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PyObjectsC.dir/main.c.o -c /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PyObjectsC.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PyObjectsC.dir/main.c.o -c /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/main.c
 
 CMakeFiles/PyObjectsC.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PyObjectsC.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/main.c > CMakeFiles/PyObjectsC.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/main.c > CMakeFiles/PyObjectsC.dir/main.c.i
 
 CMakeFiles/PyObjectsC.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PyObjectsC.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/main.c -o CMakeFiles/PyObjectsC.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/main.c -o CMakeFiles/PyObjectsC.dir/main.c.s
 
 CMakeFiles/PyObjectsC.dir/factorial.c.o: CMakeFiles/PyObjectsC.dir/flags.make
 CMakeFiles/PyObjectsC.dir/factorial.c.o: ../factorial.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PyObjectsC.dir/factorial.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PyObjectsC.dir/factorial.c.o -c /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/factorial.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PyObjectsC.dir/factorial.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PyObjectsC.dir/factorial.c.o -c /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/factorial.c
 
 CMakeFiles/PyObjectsC.dir/factorial.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PyObjectsC.dir/factorial.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/factorial.c > CMakeFiles/PyObjectsC.dir/factorial.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/factorial.c > CMakeFiles/PyObjectsC.dir/factorial.c.i
 
 CMakeFiles/PyObjectsC.dir/factorial.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PyObjectsC.dir/factorial.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/factorial.c -o CMakeFiles/PyObjectsC.dir/factorial.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/factorial.c -o CMakeFiles/PyObjectsC.dir/factorial.c.s
 
 CMakeFiles/PyObjectsC.dir/foo.c.o: CMakeFiles/PyObjectsC.dir/flags.make
 CMakeFiles/PyObjectsC.dir/foo.c.o: ../foo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PyObjectsC.dir/foo.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PyObjectsC.dir/foo.c.o -c /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/foo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PyObjectsC.dir/foo.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PyObjectsC.dir/foo.c.o -c /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/foo.c
 
 CMakeFiles/PyObjectsC.dir/foo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PyObjectsC.dir/foo.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/foo.c > CMakeFiles/PyObjectsC.dir/foo.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/foo.c > CMakeFiles/PyObjectsC.dir/foo.c.i
 
 CMakeFiles/PyObjectsC.dir/foo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PyObjectsC.dir/foo.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/foo.c -o CMakeFiles/PyObjectsC.dir/foo.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/foo.c -o CMakeFiles/PyObjectsC.dir/foo.c.s
 
 # Object files for target PyObjectsC
 PyObjectsC_OBJECTS = \
@@ -130,7 +130,7 @@ PyObjectsC: CMakeFiles/PyObjectsC.dir/foo.c.o
 PyObjectsC: CMakeFiles/PyObjectsC.dir/build.make
 PyObjectsC: /usr/lib/x86_64-linux-gnu/libpython3.9.so
 PyObjectsC: CMakeFiles/PyObjectsC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable PyObjectsC"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable PyObjectsC"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PyObjectsC.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +143,6 @@ CMakeFiles/PyObjectsC.dir/clean:
 .PHONY : CMakeFiles/PyObjectsC.dir/clean
 
 CMakeFiles/PyObjectsC.dir/depend:
-	cd /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug/CMakeFiles/PyObjectsC.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug/CMakeFiles/PyObjectsC.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PyObjectsC.dir/depend
 

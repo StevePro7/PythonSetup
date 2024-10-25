@@ -1,4 +1,4 @@
-# Install script for directory: /home/stevepro/Steven/Cpp/NewCLion/PyObjectsC
+# Install script for directory: /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/stevepro/Steven/Cpp/NewCLion/PyObjectsC/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PyObjectsC/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
