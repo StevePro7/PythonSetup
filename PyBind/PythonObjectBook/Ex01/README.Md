@@ -4,9 +4,10 @@ GSM
 New project
 C11
 
-touch foo.c
+touch 
+foo.h
+foo.c
 write all Python code to be consumed in foo.c
-but do not #include "foo.c" in main.c
 
 
 Update CMakeLists.txt
@@ -27,3 +28,9 @@ Py_Finalize();
 
 Linker error
 collect2: error: ld returned 1 exit status
+
+add_executable(Ex01 main.c foo.c)
+target_link_libraries(Ex01 ${PYTHON_LIBRARIES})
+
+IMPORTANT
+order is critical here otherwise will not work!
