@@ -34,3 +34,9 @@ target_link_libraries(Ex01 ${PYTHON_LIBRARIES})
 
 IMPORTANT
 order is critical here otherwise will not work!
+
+
+Code updates
+2.7         PyString_FromString
+3.8         PyUnicode_FromString
+https://stackoverflow.com/questions/48849047/replacing-pystring-fromstring-method-in-python-3
