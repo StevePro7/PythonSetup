@@ -1,0 +1,5 @@
+/opt/clion-2021.1.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/Medium/Pybind11Example
+-- pybind11 v2.14.0 dev1
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/Medium/Pybind11Example/cmake-build-debug
