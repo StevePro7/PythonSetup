@@ -30,3 +30,12 @@ example.cpython-38-x86_64-linux-gnu.so
 Move to same directory as AddTest.py
 
 Works
+Debug
+
+Just had to add the following to the CMakeLists.txt file
+in order to ensure debugging worked end-to-end Python => C
+
+set(CMAKE_BUILD_TYPE Debug)
+set(SOURCE "${PROJECT_SOURCE_DIR}/source")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+
