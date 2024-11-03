@@ -4,6 +4,13 @@ Experimenting with Python threads
 Reference:
 https://medium.com/@datafairy/experimenting-with-python-threads-88f66b002acf
 
+Github
+https://github.com/datafairy-azure/python_threading_plg
+
+some code samples from article are based here
+but there are some other additional samples
+
+
 python -m venv .venv
 source .venv/bin/activate
 
@@ -45,4 +52,41 @@ NB: adding daemon=True to multiple functinos will result in multiple exceptions
 
 DEFINITIONS
 race conditions
-When two or more threads are trying to access a shared resuor
+When two or more threads are trying to access a shared resource at the same time
+e.g.
+two threads writing to a database simultaneously
+
+
+deadlock
+when two acquire operations are run without a release operation then we end up in deadlock 
+
+
+FACTS
+01. threading.lock
+synchronizes threads 
+allows only one thread at a time to access a resource
+
+02. threading
+library takes advantage of only one CPU [or core] simultaneously
+
+03. thread.join()
+method waits for the thread to finish
+
+04. race conditions
+two threads incorrectly accessing a shared resource
+
+05. ThreadPoolExecutor
+use as a context manager as it manages start up of all threads and waits for them to complete
+
+06. threading.Timer
+once you start you can stop before it expires
+
+
+Threading vs. Multiprocessing
+
+Threading
+form of concurrency that happens on a single processor
+
+Multiprocessing
+can make use of all the available cores
+
