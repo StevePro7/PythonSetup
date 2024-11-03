@@ -7,9 +7,9 @@ for word in words:
     else:
         word_count[word] = 1
 print(word_count)
-
 print()
-# Condensed way using counter
+
+# Condensed way: using Counter
 from collections import Counter
 word_count2 = Counter(words)
 print(word_count2)

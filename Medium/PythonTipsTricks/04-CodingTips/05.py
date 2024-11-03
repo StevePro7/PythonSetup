@@ -5,10 +5,9 @@ def add_item1(item, items=[]):
 
 print(add_item1('foo'))
 print(add_item1('bar'))
-
+print()
 
 # Correct way: using None as a Default
-print()
 def add_item2(item, items: list=None):
     if items is None:
         items = []

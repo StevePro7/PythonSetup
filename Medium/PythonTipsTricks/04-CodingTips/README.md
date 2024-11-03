@@ -17,3 +17,5 @@ source .venv/bin/activate
 # 08. set Operations: simplify membership tests
 # 09. Merging dictionaries: cleaner merging
 # 10. Functional programming techniques: map()
+# 11. Use sorted() with custom keys: flexible sorting
+# 12. Using defaultdict: simplify dictionary operations
