@@ -19,3 +19,7 @@ source .venv/bin/activate
 # 10. Functional programming techniques: map()
 # 11. Use sorted() with custom keys: flexible sorting
 # 12. Using defaultdict: simplify dictionary operations
+# 13. Using itertools: streamline complex iterations
+# 14. f-strings: simplify string formatting
+# 15. enumerate(): cleaner looping with indices
+# 16. Using any() and all(): simplify condition checking
