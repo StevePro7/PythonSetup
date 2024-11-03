@@ -13,3 +13,7 @@ source .venv/bin/activate
 # 04. zip Parallel iteration
 # 05. Avoid mutable default args
 # 06. collections: Powerful data structures
+# 07. Generators: efficient memory usage
+# 08. set Operations: simplify membership tests
+# 09. Merging dictionaries: cleaner merging
+# 10. Functional programming techniques: map()
