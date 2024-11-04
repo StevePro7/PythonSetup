@@ -2,7 +2,7 @@ Experimenting with Python threads
 03-Nov-2024
 
 Reference:
-https://medium.com/@datafairy/experimenting-with-python-threads-88f66b002acf
+https://medium.cmom/@datafairy/experimenting-with-python-threads-88f66b002acf
 
 Github
 https://github.com/datafairy-azure/python_threading_plg

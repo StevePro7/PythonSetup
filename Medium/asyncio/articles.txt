@@ -18,6 +18,11 @@ https://medium.com/python-features/asynchronous-programming-in-python-a-deep-div
 
 
 
+Experimenting with Python threads
+https://medium.com/@datafairy/experimenting-with-python-threads-88f66b002acf
+
+
+
 ARTICLES
 A Beginners Guide to Async Programming in Python
 https://medium.com/@marcnealer/a-beginners-guide-to-async-programming-in-python-0cb265dcfe4a
