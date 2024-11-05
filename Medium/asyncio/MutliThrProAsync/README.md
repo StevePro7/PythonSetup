@@ -93,3 +93,25 @@ file handles, database connections, and network sockets
 Blocking the Event loop
 Avoid blocking event loop w/ synchronous calls
 Avoid: use await to yield control back to event loop
+
+
+SUMMARY
+Multithreading			concurrent network requests
+I/O bound tasks waiting for external resources e.g.
+file I/O or network operations
+
+Multiprocessing			Data processing
+CPU bound tasks
+leverage multiple CPU cores for computationslly intensive tasks
+
+Async programming		Web scraping
+I/O bound tasks w/ lot of time waiting
+thousands of network connections or asynchronous file operations
+
+
+FINALLY
+Minimize shared state in multithreading
+Use locks when necessary
+Use queues for communication btwn processes [multiprocessing]
+Handle exceptions
+Manage resources in async programming - avoid blocking event loop
