@@ -1,6 +1,9 @@
 Polynomial
 07-Nov-2024
 
+Understanding Polynomial Regression Model
+https://www.analyticsvidhya.com/blog/2021/10/understanding-polynomial-regression-model
+
 New project
 Condo
 install mini conda
