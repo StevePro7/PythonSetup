@@ -5,3 +5,7 @@
 # 05. - AsyncProgramming
 # 06. - Multiprocessing
 # 07. - Multithreading
+# 08. - Hybrid
+# 09. - Lock
+# 10. - Multiprocessing
+# 11. - AsyncProgramming
