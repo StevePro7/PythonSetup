@@ -1,0 +1,24 @@
+Converting Complex Mathematics Formulas into Python Code — A Step-by-Step Guide
+08-Nov-2024
+
+
+https://medium.com/@ccpythonprogramming/converting-complex-mathematics-formulas-into-python-code-a-step-by-step-guide-baeac6b385d8
+
+1. The Black-Scholes Formula for Option Pricing
+import math
+from scipy.stats import norm
+
+2. Newton-Raphson Method for Finding Roots
+
+3. Fibonacci Sequence Using Matrix Exponentiation
+import numpy as np
+
+4. Logistic Function for Population Growth
+import math
+
+
+Python standard libraries and external packages
+math
+numpy
+scipy
+sympy

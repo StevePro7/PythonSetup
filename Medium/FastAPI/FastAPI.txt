@@ -5,3 +5,7 @@ Fast API
 
 Guide To Building Secure Backends In FastAPI In 2024
 https://blog.stackademic.com/guide-to-building-secure-backends-in-fastapi-in-2024-dcbccc0bfab0
+
+
+Building a Notification Service with FastAPI and Python
+https://medium.com/@ccpythonprogramming/building-a-notification-service-with-fastapi-and-python-474e877329f7
