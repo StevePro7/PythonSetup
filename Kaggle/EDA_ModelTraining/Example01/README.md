@@ -28,7 +28,7 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 Please also refer to the documentation for alternative solver options:
 
 
-REPORT
+REPORT      Test05
               precision    recall  f1-score   support
 
            0       0.81      0.80      0.80        99
@@ -37,3 +37,14 @@ REPORT
     accuracy                           0.75       154
    macro avg       0.72      0.73      0.73       154
 weighted avg       0.75      0.75      0.75       154
+
+
+
+REPORT      Test06
+{'max_depth': 10, 'n_estimators': 200}
+              precision    recall  f1-score   support
+           0       0.81      0.78      0.79        99
+           1       0.63      0.67      0.65        55
+    accuracy                           0.74       154
+   macro avg       0.72      0.73      0.72       154
+weighted avg       0.75      0.74      0.74       154
