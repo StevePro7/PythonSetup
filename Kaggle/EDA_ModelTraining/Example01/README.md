@@ -7,3 +7,12 @@ Example01
 
 source ~/miniconda3/bin/activate
 conda list
+
+
+Install package seaborn
+
+
+PACKAGES that could require more attention:
+pandas                  CSV to dataframe
+matplotlib.pyplot       graphs
+seaborn                 correlations
