@@ -37,4 +37,6 @@ from sklearn.metrics import classification_report
 model = RandomForestClassifier()
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
+print("beg")
 print(classification_report(y_test, y_pred))
+print("end")

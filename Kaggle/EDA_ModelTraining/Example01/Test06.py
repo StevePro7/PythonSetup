@@ -35,4 +35,6 @@ print(grid_search.best_params_)
 # evaluate on Test set
 best_model = grid_search.best_estimator_
 y_pred_test = best_model.predict(X_test)
+print("beg")
 print(classification_report(y_test, y_pred_test))
+print("end")

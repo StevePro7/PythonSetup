@@ -14,3 +14,6 @@ from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 numerical_features = ['BloodPressure', 'BMI']
 data[numerical_features] = scaler.fit_transform(data[numerical_features])
+
+print(data)
+print("data end")

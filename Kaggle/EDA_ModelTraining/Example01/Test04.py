@@ -8,3 +8,6 @@ data = pd.read_csv('diabetes.csv')
 correlation_matrix = data.corr()
 high_corr = correlation_matrix.index[abs(correlation_matrix['Outcome']) > 0.5]
 data = data[high_corr]
+
+print(data)
+print("data end")
