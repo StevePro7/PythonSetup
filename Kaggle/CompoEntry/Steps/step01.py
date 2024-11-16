@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix, roc_curve, roc_auc_score
 
 class Step01:
 
@@ -164,7 +164,7 @@ class Step01:
 
     def classify_report(self):
         self.y_pred = self.model.predict(self.x_test)
-        #print(classification_report(self.y_test, self.y_pred))
+        print(classification_report(self.y_test, self.y_pred))
 
     def confuse_matrix(self):
         self.cnf_matrix = confusion_matrix(self.y_test, self.y_pred)
@@ -182,3 +182,19 @@ class Step01:
         accuracy_rate = []
         accuracy_rate.append(self.cv_score.mean())
         print('Average accuracy of the final model is ', accuracy_rate)
+
+    def roc_curve(self):
+        self.y_pred_proba = self.model.predict_proba(self.x_test)[:,1]
+        self.fpr, self.tpr, self.thresholds = roc_curve(self.y_test, self.y_pred_proba)
+
+    def roc_curve_draw(self):
+        plt.plot([0, 1], [0, 1], 'k--')
+        plt.plot(self.fpr, self.tpr, label='Logistic Regression')
+        plt.xlabel('fpr')
+        plt.ylabel('tpr')
+        plt.title('Logistic Regression ROC curve')
+        plt.show()
+
+    def auc_curve(self):
+        auc = roc_auc_score(self.y_test, self.y_pred_proba)
+        print("Area under curve is ", auc)

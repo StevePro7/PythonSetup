@@ -37,5 +37,9 @@ def work():
     #step.confuse_matrix_draw()          # heatmap
     step.cross_validate()
 
+    step.roc_curve()
+    #step.roc_curve_draw()
+    step.auc_curve()
+
 if __name__ == '__main__':
     work()
