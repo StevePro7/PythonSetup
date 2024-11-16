@@ -8,6 +8,3 @@ Interpreter type:	Base conda
 Path to conda		~/miniconda3/bin/conda
 
 source ~/miniconda3/bin/activate
-
-
-
