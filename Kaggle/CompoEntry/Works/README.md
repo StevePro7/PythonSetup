@@ -40,3 +40,23 @@ hence our data is free from multicollinearity!
 Group features by the Outcome
 Line plot
 the mean value of each feature is more for diabetic women than non-diabetic women
+
+Box plots
+highlight outliers
+
+For completeness check count plot the Outcome
+The dataset is not imbalanced
+
+
+Univeriate plot
+Normal      BloodPressure, SkinThickness, BMI
+Skewed      other features
+
+Replace normal distributions with   mean
+Replace skewed distributions with   median
+
+
+Outliers
+We see outliers for every feature
+therefore we have to remove / replace outliers to get better accuracy
+

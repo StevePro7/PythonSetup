@@ -14,7 +14,15 @@ def work():
     #step.missing_numbers()
     #step.correlation_matrix()          # heatmap
     #step.groupby_outcome_line()
-    step.groupby_outcome_bars()
+    #step.groupby_outcome_bars()
+    #step.groupby_outcome_boxs()
+    #step.count_plot()                   # Outcome balanced?
+    #step.univariate_plotting()
+    step.replace_distributions()
+    #TODO - Imputer
+    #step.check_for_outliers()
+    step.detect_outliers()
+    step.check_for_outliers()
 
 if __name__ == '__main__':
     work()

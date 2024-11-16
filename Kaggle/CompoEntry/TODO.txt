@@ -3,4 +3,5 @@ TODO
 
 01. correlation plot
 02. line plot
-03. bar plot
+03. bars plot
+04. boxs plot       Outliers
