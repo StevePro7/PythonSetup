@@ -22,7 +22,12 @@ def work():
     #TODO - Imputer
     #step.check_for_outliers()
     step.detect_outliers()
-    step.check_for_outliers()
+    #step.check_for_outliers()          # outliers removed
+    #step.bivariate_plot_01()
+    #step.bivariate_plot_02()
+    #step.bivariate_plot_03()
+    #step.bivariate_plot_04()
+    step.bivariate_plot_05()
 
 if __name__ == '__main__':
     work()

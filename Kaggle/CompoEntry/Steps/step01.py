@@ -122,3 +122,22 @@ class Step01:
             self.df2.loc[(self.df2[col] < low), col] = low
             self.df2.loc[(self.df2[col] > high), col] = high
 
+    def bivariate_plot_01(self):
+        sns.pairplot(data=self.df2, kind="scatter")
+        plt.show()
+
+    def bivariate_plot_02(self):
+        sns.pairplot(data=self.df2, hue="Outcome")
+        plt.show()
+
+    def bivariate_plot_03(self):
+        sns.pairplot(data=self.df2, kind="kde")
+        plt.show()
+
+    def bivariate_plot_04(self):
+        sns.jointplot(x="Glucose", y ="Insulin", data = self.df2)
+        plt.show()
+
+    def bivariate_plot_05(self):
+        sns.jointplot(x="BMI", y="SkinThickness", data=self.df2, hue="Outcome")
+        plt.show()
