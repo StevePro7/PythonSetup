@@ -9,3 +9,6 @@ Path to conda		~/miniconda3/bin/conda
 
 source ~/miniconda3/bin/activate
 
+
+
+self.data['BMI'].eq(0).sum()
