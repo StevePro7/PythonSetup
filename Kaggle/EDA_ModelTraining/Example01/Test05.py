@@ -34,7 +34,8 @@ from sklearn.svm import SVC
 # evaluate each model with metrics: accuracy, precision, recall [F1-score]
 from sklearn.metrics import classification_report
 
-model = RandomForestClassifier()
+#model = RandomForestClassifier()
+model = LogisticRegression()
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 print("beg")

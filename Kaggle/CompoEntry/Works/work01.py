@@ -22,12 +22,20 @@ def work():
     #TODO - Imputer
     #step.check_for_outliers()
     step.detect_outliers()
+
     #step.check_for_outliers()          # outliers removed
     #step.bivariate_plot_01()
     #step.bivariate_plot_02()
     #step.bivariate_plot_03()
     #step.bivariate_plot_04()
-    step.bivariate_plot_05()
+    #step.bivariate_plot_05()
+
+    step.dropna()
+    step.train_model()
+    step.classify_report()
+    step.confuse_matrix()
+    #step.confuse_matrix_draw()          # heatmap
+    step.cross_validate()
 
 if __name__ == '__main__':
     work()

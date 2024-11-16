@@ -3,6 +3,10 @@ import numpy as np
 import missingno as msno
 import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, confusion_matrix
+
 class Step01:
 
     def __init__(self):
@@ -141,3 +145,40 @@ class Step01:
     def bivariate_plot_05(self):
         sns.jointplot(x="BMI", y="SkinThickness", data=self.df2, hue="Outcome")
         plt.show()
+
+    def dropna(self):
+        self.df2 = self.df2.dropna()
+
+    def train_model(self):
+        self.x = self.df2.drop("Outcome", axis=1)
+        self.y = self.df2["Outcome"]
+        self.x_train, self.x_test, self.y_train, self.y_test = train_test_split(
+            self.x,
+            self.y,
+            test_size=0.3,
+            random_state=42, stratify=self.y)
+
+        self.model: LogisticRegression = LogisticRegression(max_iter=1000)
+        self.model.fit(self.x_train, self.y_train)
+        self.model.score(self.x_test, self.y_test)
+
+    def classify_report(self):
+        self.y_pred = self.model.predict(self.x_test)
+        #print(classification_report(self.y_test, self.y_pred))
+
+    def confuse_matrix(self):
+        self.cnf_matrix = confusion_matrix(self.y_test, self.y_pred)
+        print(self.cnf_matrix)
+
+    def confuse_matrix_draw(self):
+        sns.heatmap(pd.DataFrame(self.cnf_matrix), annot=True, cmap="YlGnBu", fmt='g')
+        plt.title('Confusion matrix', y=1.1)
+        plt.ylabel('Actual label')
+        plt.xlabel('Predicted label')
+        plt.show()
+
+    def cross_validate(self):
+        self.cv_score = cross_val_score(self.model, self.x, self.y, cv=5)
+        accuracy_rate = []
+        accuracy_rate.append(self.cv_score.mean())
+        print('Average accuracy of the final model is ', accuracy_rate)

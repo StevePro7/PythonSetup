@@ -11,4 +11,3 @@ source ~/miniconda3/bin/activate
 
 
 
-self.data['BMI'].eq(0).sum()
