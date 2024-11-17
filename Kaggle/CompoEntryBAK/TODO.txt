@@ -1,0 +1,12 @@
+TODO
+16-Nov-2024
+
+01. correlation plot
+02. line plot
+03. bars plot
+04. boxs plot       Outliers
+
+
+Where is that diagram I saw in a notebook [?] RE: confusion matrix
+
+05. confusion matrix        heatmap
