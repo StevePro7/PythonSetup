@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix, roc_curve, roc_auc_score
 
-class Step01:
+class Server:
 
     def __init__(self):
         self.data = None
@@ -164,10 +164,12 @@ class Step01:
 
     def classify_report(self):
         self.y_pred = self.model.predict(self.x_test)
+        print("Classification Report")
         print(classification_report(self.y_test, self.y_pred))
 
     def confuse_matrix(self):
         self.cnf_matrix = confusion_matrix(self.y_test, self.y_pred)
+        print("Confusion Matrix")
         print(self.cnf_matrix)
 
     def confuse_matrix_draw(self):

@@ -1,12 +1,8 @@
 TODO
 16-Nov-2024
 
-01. correlation plot
-02. line plot
-03. bars plot
-04. boxs plot       Outliers
-
-
-Where is that diagram I saw in a notebook [?] RE: confusion matrix
-
-05. confusion matrix        heatmap
+WARNING
+~/GitHub/StevePro/PythonSetup/Kaggle/CompoEntry/server.py:126: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '-1.5' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  self.df2.loc[(self.df2[col] < low), col] = low
+~/GitHub/StevePro/PythonSetup/Kaggle/CompoEntry/server.py:126: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '-6.5' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  self.df2.loc[(self.df2[col] < low), col] = low
