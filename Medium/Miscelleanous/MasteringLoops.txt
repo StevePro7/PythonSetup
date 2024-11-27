@@ -1,0 +1,47 @@
+Mastering Loops and Iterative Tools in Python
+27-Nov-2024
+
+https://medium.com/@ccpythonprogramming/mastering-loops-and-iterative-tools-in-python-8d379119d04e
+
+
+List comprehension
+concise way to create list by iterating over an iterable
+apply optional condition or transformation
+
+
+Generator expression
+similar to list comprehension but produce values one at a time
+using an iterator instead of creating entire list in memory
+
+
+map()
+function applies a specified function to each item in an iterable
+
+
+filter()
+extract elements based on a condition without writing a full loop
+
+
+
+reduce()		functools
+applies a function cumulatively to the items of an iterable
+reducing it to a single value
+
+
+
+itertools		module
+provides a collection of tools for creating and manipulating iterators
+including infinite sequences, combinations, and permutations
+
+
+
+Set and Dictionary comprehensions
+allow you to create sets and dictionaries in a concise manner
+
+
+
+Asyncio			concurrent tasks
+handles asynchronous programming allowing tasks to run concurrently
+instead of sequentially
+
+I/O bound tasks like API calls or database operations
