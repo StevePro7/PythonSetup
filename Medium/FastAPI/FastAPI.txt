@@ -9,3 +9,7 @@ https://blog.stackademic.com/guide-to-building-secure-backends-in-fastapi-in-202
 
 Building a Notification Service with FastAPI and Python
 https://medium.com/@ccpythonprogramming/building-a-notification-service-with-fastapi-and-python-474e877329f7
+
+
+Centralized Exception handling for FastAPI + SQLAlchemy
+https://medium.com/@vickypalaniappan12/centralized-exception-handling-for-fastapi-sqlalchemy-c59e6ebcb90a
