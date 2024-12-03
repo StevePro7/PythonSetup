@@ -56,7 +56,7 @@ class Platform_Schema(ma.SQLAlchemySchema):
         
     id = ma.auto_field()
     platform = ma.auto_field()
-    
+
 singular_platform_schema = Platform_Schema()
 multiple_platform_schema = Platform_Schema(many=True)
 
@@ -201,7 +201,13 @@ class GamePlatformsResource(Resource):
 class GamePlatformsForGameResource(Resource):
     def get(self, id):
         games = GamePlatform.query.filter(GamePlatform.game_id == id).all()        
-        
+
+        game = games[0]
+        plat = game.platform
+        #test = singular_platform_schema(plat)
+        #rest = test.dump()
+        data = singular_platform_schema.dump(plat)
+        print(data)
         return [singular_platform_schema.dump(game.platform) for game in games], 200
 
 class GamesForPlatformResource(Resource):
