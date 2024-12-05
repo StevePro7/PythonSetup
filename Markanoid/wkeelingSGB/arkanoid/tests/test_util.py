@@ -12,9 +12,9 @@ class TestUtil(unittest.TestCase):
 
     def setUp(self) -> None:
         self._high_score_file = os.path.join(os.path.expanduser('~'),
-                                             'arkanoid')
+                                             '.arkanoid')
         self._high_score_file_backup = os.path.join(os.path.expanduser('~'),
-                                             'arkanoid.bak')
+                                             '.arkanoid.bak')
         if os.path.exists(self._high_score_file):
             os.rename(self._high_score_file, self._high_score_file_backup)
 
