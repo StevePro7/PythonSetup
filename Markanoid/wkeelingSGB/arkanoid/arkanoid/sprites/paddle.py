@@ -4,9 +4,9 @@ import math
 
 import pygame
 
-import arkanoid.event as event
-import arkanoid.utils.util as util
-
+from arkanoid.event import receiver
+from arkanoid.utils.util import (load_png,
+                                 load_png_sequence)
 
 LOG = logging.getLogger(__name__)
 
@@ -50,7 +50,7 @@ class Paddle(pygame.sprite.Sprite):
         self.visible = True
 
         # Load the default paddle image.
-        self.image, self.rect = util.load_png('paddle')
+        self.image, self.rect = load_png('paddle')
 
         # Create the area the paddle can move laterally in.
         screen = pygame.display.get_surface().get_rect()
@@ -284,7 +284,7 @@ class NormalState(PaddleState):
     def enter(self):
         """Set the default paddle graphic."""
         pos = self.paddle.rect.center
-        self.paddle.image, self.paddle.rect = util.load_png('paddle')
+        self.paddle.image, self.paddle.rect = load_png('paddle')
         self.paddle.rect.center = pos
 
     def update(self):
@@ -307,7 +307,7 @@ class _PaddlePulsator:
                 frame.
         """
         self._paddle = paddle
-        self._image_sequence = util.load_png_sequence(image_sequence_name)
+        self._image_sequence = load_png_sequence(image_sequence_name)
         self._animation = None
         self._update_count = 0
 
@@ -338,7 +338,7 @@ class MaterializeState(PaddleState):
     def __init__(self, paddle):
         super().__init__(paddle)
 
-        self._animation = iter(util.load_png_sequence('paddle_materialize'))
+        self._animation = iter(load_png_sequence('paddle_materialize'))
         self._update_count = 0
 
     def update(self):
@@ -367,7 +367,7 @@ class WideState(PaddleState):
         super().__init__(paddle)
 
         # Load the images/rects required for the expanding animation.
-        self._image_sequence = util.load_png_sequence('paddle_wide')
+        self._image_sequence = load_png_sequence('paddle_wide')
         self._animation = iter(self._image_sequence)
 
         # The pulsating animation.
@@ -443,7 +443,7 @@ class LaserState(PaddleState):
         self._game = game
 
         # Load the images/rects for converting to a laser paddle.
-        self._image_sequence = util.load_png_sequence('paddle_laser')
+        self._image_sequence = load_png_sequence('paddle_laser')
         self._laser_anim = iter(self._image_sequence)
 
         # Whether we're converting to or from a laser paddle.
@@ -478,7 +478,7 @@ class LaserState(PaddleState):
             # Conversion finished.
             self._to_laser = False
             # Start monitoring for spacebar presses for firing bullets.
-            event.receiver.register_handler(pygame.KEYUP, self._fire)
+            receiver.register_handler(pygame.KEYUP, self._fire)
 
     def _convert_from_laser(self):
         try:
@@ -515,7 +515,7 @@ class LaserState(PaddleState):
         self._laser_anim = iter(reversed(self._image_sequence))
         # Stop monitoring for spacebar presses now that we're leaving the
         # state.
-        event.receiver.unregister_handler(self._fire)
+        receiver.unregister_handler(self._fire)
 
     def _fire(self, event):
         """Event handler that fires bullets from the paddle when the
@@ -562,7 +562,7 @@ class LaserBullet(pygame.sprite.Sprite):
         """
         super().__init__()
         # Load the bullet and its rect.
-        self.image, self.rect = util.load_png('laser_bullet')
+        self.image, self.rect = load_png('laser_bullet')
 
         self._game = game
         self._position = position
@@ -652,7 +652,7 @@ class ExplodingState(PaddleState):
         super().__init__(paddle)
 
         # Set up the exploding images.
-        self._exploding_animation = iter(util.load_png_sequence('paddle_explode'))
+        self._exploding_animation = iter(load_png_sequence('paddle_explode'))
         # The notification callback.
         self._on_explode_complete = on_exploded
         self._rect_orig = None
