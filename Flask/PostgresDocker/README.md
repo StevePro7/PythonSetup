@@ -26,3 +26,9 @@ Alembic
 alembic init migrations
 - creates migrations folder
 - creates alembic.ini
+
+
+Update all files
+
+
+curl http://localhost:5000
