@@ -109,3 +109,5 @@ docker-compose exec app alembic upgrade head
 docker exec -it 3882af2d385d psql -U user -d app_db
 SELECT * FROM public.user;
 docker-compose exec app python seed.py
+curl http://localhost:5000/users
+docker-compose down --volumes
