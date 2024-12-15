@@ -140,6 +140,12 @@ curl http://localhost:5000/users
 //data
 
 
+MAC
+psycopg2-binary==2.9.9
+OR Mac
+/Applications/Postgres.app/Contents/Versions/12/bin/psql -h localhost -U user -d app_database
+
+
 SUMMARY
 docker-compose up -d
 
@@ -149,6 +155,12 @@ psql -h localhost -U user -d app_database
 alembic revision --autogenerate -m "Initial migration"
 alembic upgrade head
 
+SELECT * FROM public.user;
+0 rows
+
+python seed.py
+2 rows
+
 F5
 curl http://localhost:5000
 curl http://localhost:5000/users
@@ -156,7 +168,3 @@ curl http://localhost:5000/users
 docker-compose down
 
 
-MAC
-psycopg2-binary==2.9.9
-OR Mac
-/Applications/Postgres.app/Contents/Versions/12/bin/psql -h localhost -U user -d app_database
