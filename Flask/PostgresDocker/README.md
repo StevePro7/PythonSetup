@@ -43,9 +43,41 @@ curl http://localhost:5000
 docker-compose exec app alembic revision --autogenerate -m "Initial migration"
 docker-compose exec app alembic upgrade head
 
+Implement
+01.
+docker-compose exec app alembic revision --autogenerate -m "Initial migration"
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+  Generating /app/migrations/versions/28271b725a81_initial_migration.py ...  done
+
+02.
+docker-compose exec app alembic upgrade head
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 28271b725a81, Initial migration
+
 
 d ps
 d6a79e79b164   postgres:14
 docker exec -it d6a79e79b164 psql -U user -d app_db
 
 \dt
+
+
+INITIAL migration no data - why?
+because need to import DB models info env.py
+from app.models import *
+
+
+docker-compose up --build
+docker-compose exec app alembic revision --autogenerate -m "Initial migration"
+docker-compose exec app alembic upgrade head
+
+docker exec -it 51f1d3c71158 psql -U user -d app_db
+\dt
+\dt user
+\d user
+SELECT * FROM public.user;
+
+INSERT INTO public.user(username) VALUES('stevepro');
+INSERT INTO 
