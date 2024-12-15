@@ -80,4 +80,7 @@ docker exec -it 51f1d3c71158 psql -U user -d app_db
 SELECT * FROM public.user;
 
 INSERT INTO public.user(username) VALUES('stevepro');
-INSERT INTO 
+
+
+
+docker-compose down --volumes
