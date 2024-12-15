@@ -111,3 +111,33 @@ SELECT * FROM public.user;
 docker-compose exec app python seed.py
 curl http://localhost:5000/users
 docker-compose down --volumes
+
+
+Attempt to run PostgreSQL database running in a Docker container
+while executing Alembic migrations locally (e.g. from PyCharm)
+
+configure networking so that local application can connect to the database
+inside the container
+
+docker-compose up -d
+
+IMPORTANT
+update alembic.ini
+sqlalchemy.url = postgresql://user:password@localhost:5432/app_database
+
+Terminal
+export DATABASE_URL="postgresql://user:password@localhost:5432/app_database"
+
+alembic revision --autogenerate -m "Initial migration"
+alembic upgrade head
+
+F5
+curl http://localhost:5000/users
+[]
+
+python seed.py
+curl http://localhost:5000/users
+//data
+
+
+SUMMARY
