@@ -93,9 +93,19 @@ LATEST
 docker-compose up --build
 docker-compose exec app alembic revision --autogenerate -m "Initial migration"
 docker-compose exec app alembic upgrade head
+docker exec -it 3882af2d385d psql -U user -d app_db
 SELECT * FROM public.user;
 INSERT INTO public.user(username) VALUES('stevepro');
 curl http://localhost:5000/users
 [{"id":1,"username":"stevepro"}]
+docker-compose down --volumes
 
 
+SEED
+docker-compose up --build
+docker-compose exec app alembic revision --autogenerate -m "Initial migration"
+docker-compose exec app alembic upgrade head
+
+docker exec -it 3882af2d385d psql -U user -d app_db
+SELECT * FROM public.user;
+docker-compose exec app python seed.py
