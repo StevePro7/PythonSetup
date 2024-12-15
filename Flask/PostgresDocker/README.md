@@ -78,9 +78,24 @@ docker exec -it 51f1d3c71158 psql -U user -d app_db
 \dt user
 \d user
 SELECT * FROM public.user;
-
 INSERT INTO public.user(username) VALUES('stevepro');
 
 
 
 docker-compose down --volumes
+docker-compose exec app env 
+
+
+docker exec -it 8e757e30112c psql -U user -d app_db
+
+
+LATEST
+docker-compose up --build
+docker-compose exec app alembic revision --autogenerate -m "Initial migration"
+docker-compose exec app alembic upgrade head
+SELECT * FROM public.user;
+INSERT INTO public.user(username) VALUES('stevepro');
+curl http://localhost:5000/users
+[{"id":1,"username":"stevepro"}]
+
+

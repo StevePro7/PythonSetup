@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from app.routes import bp
 
 db = SQLAlchemy()
 
@@ -11,5 +10,6 @@ def create_app():
     db.init_app(app)
 
     # Register the blueprint
+    from app.routes import bp
     app.register_blueprint(bp)
     return app
