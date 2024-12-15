@@ -141,3 +141,14 @@ curl http://localhost:5000/users
 
 
 SUMMARY
+docker-compose up -d
+
+export DATABASE_URL="postgresql://user:password@localhost:5432/app_database"
+alembic revision --autogenerate -m "Initial migration"
+alembic upgrade head
+
+F5
+curl http://localhost:5000
+curl http://localhost:5000/users
+
+docker-compose down
