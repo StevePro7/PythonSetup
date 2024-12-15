@@ -24,3 +24,5 @@ pip install --upgrade pip
 
 Alembic
 alembic init migrations
+- creates migrations folder
+- creates alembic.ini
