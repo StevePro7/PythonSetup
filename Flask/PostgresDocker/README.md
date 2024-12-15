@@ -144,6 +144,8 @@ SUMMARY
 docker-compose up -d
 
 export DATABASE_URL="postgresql://user:password@localhost:5432/app_database"
+psql -h localhost -U user -d app_database
+
 alembic revision --autogenerate -m "Initial migration"
 alembic upgrade head
 
@@ -152,3 +154,9 @@ curl http://localhost:5000
 curl http://localhost:5000/users
 
 docker-compose down
+
+
+MAC
+psycopg2-binary==2.9.9
+OR Mac
+/Applications/Postgres.app/Contents/Versions/12/bin/psql -h localhost -U user -d app_database
