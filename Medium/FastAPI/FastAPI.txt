@@ -13,3 +13,12 @@ https://medium.com/@ccpythonprogramming/building-a-notification-service-with-fas
 
 Centralized Exception handling for FastAPI + SQLAlchemy
 https://medium.com/@vickypalaniappan12/centralized-exception-handling-for-fastapi-sqlalchemy-c59e6ebcb90a
+
+
+
+Exploring FastAPI 2024: Deploying Your FastAPI Application [Part 7/7]
+https://medium.com/@mathur.danduprolu/exploring-fastapi-2024-deploying-your-fastapi-application-part-7-7-23d37181e35d
+
+
+How to Log Every Request and Response in FastAPI
+https://medium.com/@joerosborne/how-to-log-every-request-and-response-in-fastapi-dcf8d2be2055
