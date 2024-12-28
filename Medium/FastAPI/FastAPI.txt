@@ -22,3 +22,7 @@ https://medium.com/@mathur.danduprolu/exploring-fastapi-2024-deploying-your-fast
 
 How to Log Every Request and Response in FastAPI
 https://medium.com/@joerosborne/how-to-log-every-request-and-response-in-fastapi-dcf8d2be2055
+
+
+Introduction to FastAPI
+https://jnikenoueba.medium.com/introduction-to-fastapi-91c3dedfc1e5
