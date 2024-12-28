@@ -13,3 +13,7 @@ https://medium.com/@ccpythonprogramming/building-a-notification-service-with-fas
 
 Centralized Exception handling for FastAPI + SQLAlchemy
 https://medium.com/@vickypalaniappan12/centralized-exception-handling-for-fastapi-sqlalchemy-c59e6ebcb90a
+
+
+Introduction to FastAPI
+https://jnikenoueba.medium.com/introduction-to-fastapi-91c3dedfc1e5
