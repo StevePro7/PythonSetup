@@ -1,0 +1,98 @@
+Python Packaging Best Practices
+29-Dec-2024
+
+https://medium.com/@miqui.ferrer/python-packaging-best-practices-4d6da500da5f
+
+
+Real example
+~/GitHub/StevePro9/PythonSetup/Medium/Miscelleanous/PythonPackages
+https://pypi.org/project/stevepromlpredictor/0.1.0
+
+
+Build + distribute Python package
+
+Packaging means
+building a Python package		source code
+distributing the Python package	publish package
+
+
+NB:
+use pyproject.toml based builds for Python packages
+with more complicated needs
+
+
+Python package
+bundles of Python code that can be distributed to other people
+installed by a tool like pip
+
+
+TWO types of Python packages
+
+
+01. Source packages	tar.gz
+snapshot of the source code with a manifest file
+that includes metadata like Name, Version, Summary, Author
+
+
+02. Wheel packages	whl
+an improvement on the Egg format and now the most
+recommended format
+
+
+DIFFERENCES
+
+01. Source packages	tar.gz
+SOURCE DISTRIBUTION
+contains only source code
+extensions compiled on User side
+Metadata stored in <package-name>.egg-info
+created with sdist option
+tar.gz	file
+
+
+02. Wheel packages	whl
+BINARY DISTRIBUTION
+contains source code + pre-built extensions
+extensions compiled on Developer side
+Metadata stored in <package-name>.dist-info
+created with bdist_wheel option
+whl	file
+
+
+Building standards
+
+01. "old" standards
+setup.py
+setup.cfg
+setuptools
+
+02. "new" standards
+pyproject.toml based packaging
+
+
+IMPORTANT
+article goes into great depth on why you should not build packages
+using the "old" standards
+
+
+PEP 517
+Backend
+program that reads your pyproject.toml and actually does the work of
+turning your source code into a package archive that can be installed
+or distributed.
+e.g.
+setuptools, poetry-core, hatchling, pdm-backend, flit-core
+
+
+Frontend
+use interface (usually CLI) that calls the backend
+e.g.
+pip, build, poetry, hatch, pdf, flit
+
+
+SUMMARY
+- declare build backend in the [build-system] table of your project.toml file
+- declare your project metadata in the [project] table of your project.toml file
+
+Choose backend
+- pick any backend that supports PEP 517 and PEP 621
