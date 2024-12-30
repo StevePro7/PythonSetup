@@ -26,3 +26,8 @@ https://medium.com/@joerosborne/how-to-log-every-request-and-response-in-fastapi
 
 Introduction to FastAPI
 https://jnikenoueba.medium.com/introduction-to-fastapi-91c3dedfc1e5
+
+
+
+Level Up Your FastAPI: Exception Handling Done Right
+https://medium.com/@ixbahy/level-up-your-fastapi-exception-handling-done-right-5db862038c7a
