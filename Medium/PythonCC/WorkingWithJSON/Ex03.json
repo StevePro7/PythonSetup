@@ -1,0 +1,20 @@
+{
+    "name": "Alice",
+    "age": 30,
+    "is_employee": true,
+    "skills": ["Python", "Data Analysis", "Machine Learning"],
+    "projects": {
+        "current": "Data Migration",
+        "completed": ["API Development", "Web Scraping"],
+        "details": {
+            "API Development": {
+                "duration": "3 months",
+                "team_size": 5
+            },
+            "Web Scraping": {
+                "duration": "1 month",
+                "team_size": 3
+            }
+        }
+    }
+}
