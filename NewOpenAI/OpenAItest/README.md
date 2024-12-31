@@ -18,3 +18,7 @@ Alternatively, you can pin your installation to the old version, e.g. `pip insta
 A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
 
 openai            1.58.1
+
+
+NB: could not get this example working
+https://github.com/openai/openai-python
