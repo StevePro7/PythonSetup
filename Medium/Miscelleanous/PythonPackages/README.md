@@ -8,6 +8,7 @@ https://github.com/Ebimsv/mlpredictor?source=post_page-----07fbfbb959a9---------
 
 
 PyCharm
+python -m venv .venv
 source .venv/bin/activate
 
 pip install .

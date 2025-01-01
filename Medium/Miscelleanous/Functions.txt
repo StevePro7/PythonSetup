@@ -1,0 +1,56 @@
+Python for AI: Week 5 — Functions in Depth
+24-Dec-2024
+
+https://medium.com/@ebimsv/python-for-ai-week-5-functions-in-depth-f2b8f7f62efc
+
+
+Parameters 
+are the variables listed in the function definition, while an 
+
+Argument
+is the value sent to the function when it is called
+
+
+Variable-Length Parameters:
+*args 
+to allow a function to accept any number of positional arguments 
+
+**kwargs
+for any number of keyword arguments
+
+
+Variable-Length Arguments:
+You can pass a varying number of arguments using 
+*args for positional arguments  
+**kwargs for keyword arguments
+
+
+Scope
+Local
+Variables defined inside a function, accessible only within that function
+
+Global
+Variables defined outside all functions, accessible throughout the program
+
+Enclosing
+Variables in the enclosing function for a nested function (closure)
+
+Built-in
+Names preassigned in Python (e.g., print, len)
+
+
+
+Lambda functions are concise, anonymous functions
+
+
+Nested functon
+A function inside another function
+
+Closures
+captures variables from their enclosing scope
+even after the enclosing function has finished execution
+
+
+Decorators
+higher order functions that modify or extend the behavior
+of another function

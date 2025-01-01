@@ -1,0 +1,17 @@
+{
+    "name": "Bob",
+    "age": 25,
+    "is_employee": false,
+    "skills": [
+        "Java",
+        "Spring Boot",
+        "DevOps"
+    ],
+    "projects": {
+        "current": "System Upgrade",
+        "completed": [
+            "Automation",
+            "Monitoring Setup"
+        ]
+    }
+}

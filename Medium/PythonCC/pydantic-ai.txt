@@ -1,0 +1,22 @@
+December 2024 - Python’s Progress and Community Highlights
+31-Dec-2024
+
+https://python.plainenglish.io/december-2024-pythons-progress-and-community-highlights-92054a417ed1
+https://github.com/cloutprotocol/pydantic-ai
+
+python -m venv .venv
+source .venv/bin/activate
+
+pip install -r requirements.txt
+
+cp .env.example .env
+# Edit .env with your OpenAI API key
+
+
+https://platform.openai.com/docs/overview
+API Keys
+
+NOT working!!
+python examples/recipe_generator.py
+python examples/customer_support.py
+python examples/data_analyzer.py
