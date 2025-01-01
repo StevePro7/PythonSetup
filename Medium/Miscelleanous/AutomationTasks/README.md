@@ -25,3 +25,19 @@ source .venv/Scripts/activate
 # 08. Automate Spreadsheet Data
 # 09. Automate Text Translation
 # 10. Automate PDF Manipulation
+
+
+03.
+# 11. Automate Image Processing
+# 12. Automate Website Monitoring
+# 13. Automate Database Backups
+# 14. Automate Slack Notifications
+# 15. Automate Weather Updates
+
+
+04.
+# 16. Automate Text-to-Speech
+# 17. Automate Currency Conversion
+# 18. Automate Task Scheduling
+# 19. Automate Notifications
+# 20. Automate Directory Cleanup
