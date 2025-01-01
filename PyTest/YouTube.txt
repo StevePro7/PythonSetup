@@ -1,0 +1,8 @@
+GitLab Developers Guide - Pytest & Coverage In CI/CD
+11-Dec-2024
+
+https://www.youtube.com/watch?v=e5d2euISzCk
+
+
+Experiment
+https://gitlab.com/StevePro7/pytestcicd

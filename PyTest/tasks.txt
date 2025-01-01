@@ -1,0 +1,17 @@
+Tasks
+11-Dec-2024
+
+
+01. rules
+only run pytest on DEV builds
+use rules
+
+
+02.
+replicate simple flask app w/ tests
+run using pytest
+
+
+03.
+integrate pytest and allure report into 
+existing GitLab CI/CD pipeline
