@@ -1,0 +1,2001 @@
+Order ID,Customer Name,Customer Email,Product Name,Category,Quantity,Price,Total,Order Date,Shipping Address
+38415e6b-cb9e-4b60-89f8-ac8c3e3de949,Jacqueline Dean,jenkinsryan@example.net,Smartphone,Electronics,7,699.99,4899.93,2025-01-02,"3424 Martin Cliffs Suite 245
+Timothyville, GU 96294"
+baa2fcca-0ae4-4b78-b7e1-b777a4732cc3,Jennifer Smith,millermary@example.com,Water Bottle,Accessories,4,19.99,79.96,2025-01-02,"6392 Hodge Views
+Lamfurt, NM 72172"
+fb948d17-7a5e-4ff7-b047-d5ab38f3bee9,Joshua Hardy,macdonaldcarol@example.com,Notebook,Stationery,1,5.99,5.99,2025-01-01,"2505 Amber Mountain
+West Lindseyshire, PR 81846"
+d2d57a36-6009-4873-b1a9-f572d498ee6c,Katie Clarke,clarence39@example.org,Laptop,Electronics,6,899.99,5399.94,2025-01-01,"852 Ian Canyon Suite 222
+Shellyside, WY 64662"
+b6c6ce31-9c69-443e-831a-33b2dde28214,Mrs. Stephanie Ball PhD,snguyen@example.org,Laptop,Electronics,1,899.99,899.99,2025-01-01,"428 Annette Rapid Suite 597
+Port Laura, TX 83007"
+8d40bd41-ba99-41f1-9beb-504b7d3c34e3,Robert Edwards,caldwelllisa@example.com,Desk Chair,Furniture,6,129.99,779.94,2025-01-01,"06665 Patricia Points Apt. 397
+Lake Zachary, FL 51371"
+c837e127-ac12-42a4-a28d-fb7cfecb4409,Christopher Adams,ashley36@example.com,Notebook,Stationery,7,5.99,41.93,2025-01-01,"45318 Charlene Cove Apt. 403
+Lake Heather, DE 45948"
+402b6715-53dc-494d-a029-7403b97d5f88,Megan Wiggins,pgarcia@example.org,Backpack,Fashion,5,39.99,199.95,2025-01-01,"76821 Mcguire Divide
+East Brandon, ME 91054"
+d72e2031-f7e7-4ae1-a895-77fc2bb4e4be,Daniel Crawford,maureenleblanc@example.org,Blender,Home Appliances,2,99.99,199.98,2025-01-01,"USNV Diaz
+FPO AA 92347"
+15fbb2ff-88cb-4b9f-b577-380ef426e15c,Kenneth Anderson,walkerkimberly@example.net,Sneakers,Fashion,8,59.99,479.92,2025-01-01,"4943 Laura Forks
+New Rebeccamouth, OH 96272"
+75e3763a-edec-4be5-b9c8-83f2f7b93965,Kristin Rojas,harveyjennifer@example.net,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"3171 Jill Circles Suite 331
+Millermouth, KY 56770"
+28af26bb-774c-4ca9-a443-ea011566f1c9,Jonathan Mccoy,asullivan@example.org,Smartphone,Electronics,10,699.99,6999.9,2025-01-02,"340 Rachel Park Suite 048
+East Kristinafort, MI 53246"
+27d0d2f9-293d-4b31-9771-c68c3d79f47b,Sarah Wilkins,leslie86@example.net,Blender,Home Appliances,7,99.99,699.93,2025-01-01,"4716 Brandy Avenue
+North Melody, MN 92839"
+2dcb4bb2-e391-45e0-a40e-ff8d57bff753,Michael Parker,michael98@example.org,Backpack,Fashion,2,39.99,79.98,2025-01-02,"9822 Barnett Center Apt. 304
+Port Christinefurt, MP 95972"
+d1db7a64-2b52-47c0-8848-4b8fa0a0d107,Joshua Franklin,ellisshannon@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-01,"PSC 4075, Box 2296
+APO AA 15296"
+cd97d517-8705-4d4a-ae95-744e0edf7ce1,Sharon Ramirez,iarnold@example.org,Blender,Home Appliances,1,99.99,99.99,2025-01-02,"PSC 3981, Box 8924
+APO AA 07901"
+ef5cad34-fd1c-408b-a961-dcf9fab14163,Cassandra Peterson,debragomez@example.com,Backpack,Fashion,5,39.99,199.95,2025-01-01,"Unit 4151 Box 9937
+DPO AA 14634"
+6de7a81f-167b-4961-b8f4-637a7ac02692,Allison Herrera,anthony04@example.org,Backpack,Fashion,9,39.99,359.91,2025-01-02,"185 Michael River Suite 077
+Hamiltonside, CA 23508"
+8a94c09a-d0ca-4aaf-9170-7c1c5b6ea226,Michael Cooley,bradshaweddie@example.com,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"144 Mccoy Flat
+Heathermouth, VT 70451"
+c5769be9-a982-45b3-946b-d0b29707c79e,Stephanie Pratt,douglasrichard@example.net,Water Bottle,Accessories,10,19.99,199.9,2025-01-01,"5639 Natalie Hills Apt. 544
+Martinton, VA 69509"
+f66e8ef3-707d-49ee-ace5-cec12a65971f,Sandra Waters,elizabethjohnson@example.org,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"053 Christopher Way Suite 388
+Port Michaeltown, NH 99377"
+3271c651-6aef-40d0-90fb-d40bdb2b2c36,Patrick Cross,robinsonkayla@example.org,Notebook,Stationery,9,5.99,53.91,2025-01-01,"1640 Vaughn Street
+Longbury, TX 73347"
+8c311886-b0c8-4a66-a426-b93a2a187e35,Grant Buckley,james28@example.net,Laptop,Electronics,8,899.99,7199.92,2025-01-02,"5998 Terry Ports Apt. 345
+Port Jasontown, NY 26140"
+efd63685-ac2b-4185-9699-892e04acf20f,Pamela Fernandez,bradfordkimberly@example.com,Desk Chair,Furniture,1,129.99,129.99,2025-01-01,"691 Lisa Shore
+Taylorstad, NH 95041"
+61dd565a-5f51-4828-81cc-2512991bdc02,David Parrish,steven94@example.com,Water Bottle,Accessories,8,19.99,159.92,2025-01-02,"2866 Smith Lock Suite 968
+Mcdonaldside, KS 48111"
+7368ef06-3131-43e0-9555-1010f34b9907,Angela Gill,scott91@example.com,Desk Chair,Furniture,8,129.99,1039.92,2025-01-01,"965 Steven Crescent Apt. 257
+Davisburgh, NV 27068"
+32f7d052-3926-409b-b900-d73811830eed,Christine Reed,jason48@example.org,Headphones,Accessories,1,49.99,49.99,2025-01-02,"28559 Anthony Locks
+Brendashire, NC 23858"
+04d5acf9-d8db-49c7-93a7-071fa2d17274,Leah Pace,aaron25@example.net,Notebook,Stationery,9,5.99,53.91,2025-01-02,"940 Warren Expressway Suite 221
+New Jamiemouth, MS 57009"
+3f907d0e-7eb2-4213-8744-0a0f472d00d7,Christopher David,walterjohnson@example.com,Blender,Home Appliances,4,99.99,399.96,2025-01-01,"705 Robin Pines Apt. 822
+Lake Charles, HI 32775"
+d4b745ee-f9e0-4ec4-a4b7-5bc0ff32b98d,Jennifer Ruiz,jackyoung@example.net,Coffee Maker,Home Appliances,10,79.99,799.9,2025-01-01,"36642 Darryl Vista
+Armstrongberg, NJ 29885"
+bba7d6cc-b631-4dba-a3cd-3f50bb685057,Andrew Rush,elizabethrogers@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-01,"148 Thomas Glen
+East Timothy, PR 06825"
+cb64d5d2-f4d5-4fa2-b904-8c24a038d442,Taylor Smith,normaperry@example.org,Notebook,Stationery,10,5.99,59.9,2025-01-01,"Unit 1453 Box 4866
+DPO AP 32402"
+4e6c5ca9-daef-434e-a43e-ba007200c0f2,Matthew Sims,jillwalker@example.org,Sneakers,Fashion,9,59.99,539.91,2025-01-02,"9183 Kenneth Walks Suite 477
+Sandrafort, ME 70855"
+7253b7a6-05e6-4c69-bd6c-282a4efd20cb,Sarah Ellis,jonesryan@example.com,Headphones,Accessories,9,49.99,449.91,2025-01-02,"166 Jones Field Apt. 870
+Lake Virginia, NC 71731"
+b8c6ea7a-5ecc-4ce6-a72d-1436b7d224da,Michael Miranda,andrea23@example.net,Sneakers,Fashion,5,59.99,299.95,2025-01-02,"567 Michael Locks Apt. 994
+East Heathertown, TX 14152"
+1e8d2257-6428-4305-ba73-345bb103cfb7,Martin Short,mmoreno@example.org,Notebook,Stationery,6,5.99,35.94,2025-01-02,"272 Ward Ville Suite 154
+South Cristina, GU 84525"
+924fca34-88af-4dca-a370-1bf95de26a26,Jack Miller,warrendeanna@example.com,Blender,Home Appliances,7,99.99,699.93,2025-01-02,"4134 Lopez Point
+Lopezport, PW 91458"
+03c5169e-2b25-40c0-8571-21854c6f202a,Jackie Elliott,monicaanderson@example.org,Backpack,Fashion,2,39.99,79.98,2025-01-01,"87430 Daniel Flats
+New Tyler, WV 31195"
+d5aa756b-665f-46e8-b268-a7e0afbdb09d,Andrew Newman,cooperphillip@example.org,Sneakers,Fashion,7,59.99,419.93,2025-01-01,"7502 Kimberly Summit
+Port Brandonshire, AZ 21150"
+c55a5ba1-02ac-4e78-8103-7d609ca76f45,Thomas Baker,mnelson@example.net,Backpack,Fashion,4,39.99,159.96,2025-01-01,"2759 Fisher Throughway Apt. 029
+Solisport, GA 65134"
+429cace8-31f8-40cb-94d3-40916395390e,David Rodriguez,vlewis@example.com,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-02,"4527 William Gardens Apt. 652
+North Scottshire, NC 43454"
+3134517f-1cd3-4334-aedc-e1e0e945975a,Steven Gray,gferrell@example.org,Backpack,Fashion,2,39.99,79.98,2025-01-01,"USNV Taylor
+FPO AP 06998"
+d0aaead9-5a2b-4521-98a3-f4d0da61649e,Tony Miller,jodi19@example.org,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"903 Hannah Views Apt. 768
+Butlerchester, ND 59702"
+872ea879-5f49-4fe5-967c-253ba1d8abbc,Martha Arnold,sarawheeler@example.com,Water Bottle,Accessories,3,19.99,59.97,2025-01-01,"754 Cody Lane
+South Ralph, IN 49438"
+ce9e3a8a-bd8b-4a32-86c8-e48843bc032a,Jamie Phillips,mmyers@example.net,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"3220 Thomas Lodge
+Scottfurt, OR 45954"
+f6cf524b-4c84-424f-a36f-c30aa55c6568,Ian Preston,quinnkerri@example.org,Smartphone,Electronics,7,699.99,4899.93,2025-01-02,"212 Marissa Well Suite 628
+Port Jorge, ID 97972"
+c0f00be1-87b0-46eb-a364-47f09f09e7da,Victoria Holland,mccartylauren@example.net,Blender,Home Appliances,2,99.99,199.98,2025-01-02,"750 Daniel Hollow
+Port Jimstad, PR 37945"
+c11a017d-4c2c-4e55-ab8e-ad3825a4df6e,Emily Lewis,annethomas@example.net,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-02,"9309 Michael Oval
+Loriton, DC 47209"
+a239410b-1b3d-4644-b5f5-002439a90816,Kathryn Perkins,atkinsonbrandon@example.org,Notebook,Stationery,4,5.99,23.96,2025-01-01,"83106 Linda Roads Apt. 213
+West Christianport, CA 91241"
+fb3df4bd-f6ca-48a4-affd-f8df2ef8c2ac,Logan Griffin,hunterklein@example.net,Water Bottle,Accessories,5,19.99,99.95,2025-01-01,"76737 Matthew Mountains Apt. 444
+East Erik, HI 25886"
+f3b2188d-9870-4b51-93a1-67d0bde3b1b0,Amanda Smith,xdougherty@example.net,Laptop,Electronics,4,899.99,3599.96,2025-01-01,"77761 Willis Bridge
+Kington, MI 25754"
+c92f2416-2db9-4637-9781-844d36b0e0fd,Elizabeth Moreno,peterward@example.org,Desk Chair,Furniture,4,129.99,519.96,2025-01-02,"1026 Frey Bypass Apt. 026
+Bethville, KY 70340"
+c8aa5585-9b72-4b93-8714-e397963f365d,Amber Lester,charles99@example.com,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"107 Chase Run Suite 078
+West Kyle, KS 22903"
+b23ca1bf-980d-42b8-8e34-2e7a5189842e,Sherry Delacruz,daniel55@example.net,Notebook,Stationery,1,5.99,5.99,2025-01-01,"904 Salas Summit
+Port Angela, NH 80813"
+09131341-23df-4cf8-b59d-bc2a9685cce7,Kevin Jensen,katelynwagner@example.com,Sneakers,Fashion,6,59.99,359.94,2025-01-02,"PSC 1219, Box 7455
+APO AE 32751"
+ffb7bed8-3017-4229-8dff-e044bdccd2f2,Eileen Adams,landrystephen@example.com,Laptop,Electronics,3,899.99,2699.97,2025-01-01,"5718 Roach Field
+Petersonberg, GA 68386"
+01f3e8ee-6e86-4704-bc73-9c87a25188ea,John Vasquez,orozcoscott@example.net,Backpack,Fashion,1,39.99,39.99,2025-01-01,"PSC 4406, Box 5570
+APO AP 82370"
+83a57622-29a2-47ab-832b-bb057d588fdb,Diana Thomas,benjamin03@example.net,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-01,"PSC 9758, Box 8242
+APO AE 57673"
+c25fa920-3c0e-4d7d-b174-92e86134a329,Danielle Green,meyersmichael@example.org,Water Bottle,Accessories,4,19.99,79.96,2025-01-01,"6553 Ford Burg Apt. 608
+North Angela, DC 32723"
+7117aa9b-d946-4666-8bb3-f51e83b33a2b,Adam Davis,jwoods@example.org,Smartphone,Electronics,7,699.99,4899.93,2025-01-02,"322 Tamara Courts
+West Jeffreystad, MT 64687"
+5a927caa-c71d-4d79-ba77-7bf5a1c9c3fb,James Hill,michele60@example.com,Blender,Home Appliances,5,99.99,499.95,2025-01-01,"PSC 2183, Box 2220
+APO AP 83948"
+d8945465-89e3-4ff8-a04d-8424e4021dff,Christian Williams,woodkerri@example.net,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-02,"577 Derek Path
+West Alejandra, NY 76235"
+e4d01179-aab3-40ea-bed2-423b5f6b4126,Chelsea Little,abigail73@example.com,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"421 Bradley Dale
+South Latoya, CA 71823"
+a55043dc-7950-4d1e-99be-78cf3499a10b,Danny Rose,mcurtis@example.com,Laptop,Electronics,6,899.99,5399.94,2025-01-01,"63640 Eric Terrace Apt. 607
+West Johnfurt, GU 59096"
+783c2f0d-901b-4ffd-8928-6c8bf5798e78,Paul Richardson,browndavid@example.net,Sneakers,Fashion,4,59.99,239.96,2025-01-01,"2225 Justin Meadow
+Longchester, SD 86710"
+db35f63d-b015-403c-af26-ef2882d8af61,Larry Martin,angelatownsend@example.net,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-02,"627 Norris Mission Apt. 490
+North Jessica, MI 42099"
+08b232ce-016b-42e2-a216-39d72a8682b2,Kara Lawrence,jennifer70@example.com,Blender,Home Appliances,7,99.99,699.93,2025-01-01,"01388 Bennett Roads Suite 154
+Michaelchester, TN 43103"
+8f17abd5-87b3-4f6c-a8ae-4319682d2411,Mitchell Fischer,ramosstephen@example.net,Sneakers,Fashion,6,59.99,359.94,2025-01-02,"40945 Miller Greens
+Georgemouth, TN 47511"
+dec8fab7-5b52-411c-8532-b439984372ee,Elizabeth Smith,cynthiamoore@example.org,Headphones,Accessories,8,49.99,399.92,2025-01-02,"Unit 4666 Box 4717
+DPO AE 31791"
+3fbbb8f0-fd5b-4327-b0b8-b71cc4934793,Gina Kline,theresa16@example.org,Smartphone,Electronics,9,699.99,6299.91,2025-01-01,"1333 Martinez Union Suite 276
+Adamfurt, SC 76132"
+35d4ee66-a7cb-49af-933c-f6b378ccb477,Yesenia Farmer,ehiggins@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-01,"260 Aaron Estates Apt. 720
+Henryside, MS 96739"
+17d33f79-7b0f-42dd-99ae-dffd004dcac7,Jennifer Bell,dclark@example.net,Blender,Home Appliances,10,99.99,999.9,2025-01-01,"61474 Fisher Green Apt. 299
+West Willie, WI 14162"
+dfaf2457-7f47-4b05-97c5-b7b0ce59a5dc,Tiffany Allen,collierlaura@example.com,Headphones,Accessories,1,49.99,49.99,2025-01-01,"839 Stacy Pike
+East Benjamin, CO 95606"
+cd4a90e0-177b-4654-895d-8a942a619e03,Jeffery Cooper,heather48@example.net,Laptop,Electronics,10,899.99,8999.9,2025-01-02,"7724 Marilyn Dam
+West Matthewchester, AR 74567"
+7f8d2f53-770f-40da-a6d1-f56b77000401,Christina Henderson,patrickdouglas@example.net,Smartphone,Electronics,10,699.99,6999.9,2025-01-01,"984 Garcia Alley Suite 839
+West Lisaport, ID 39452"
+0e932a02-bb4d-4ae7-96d8-f4087143c7b5,Eric Morales,nsmith@example.net,Blender,Home Appliances,7,99.99,699.93,2025-01-02,"286 Samuel Place Apt. 648
+Port Kylebury, MH 49593"
+e507eaa0-f14a-4821-934c-fd156a095ccb,Matthew Williams,brian62@example.net,Water Bottle,Accessories,2,19.99,39.98,2025-01-01,"683 Clements Junction Apt. 219
+Nancyport, NE 16428"
+e7c2e830-084d-4f0f-a66e-fe912536267b,Alyssa Reeves,bshepherd@example.org,Backpack,Fashion,1,39.99,39.99,2025-01-02,"USS Martin
+FPO AA 05753"
+512d354d-f572-40d0-a163-d1464087e0af,Daniel Mullins,wyattjessica@example.com,Sneakers,Fashion,9,59.99,539.91,2025-01-02,"695 Linda Valleys Suite 914
+Graystad, NJ 56950"
+12bfffe4-5d05-4d88-b43b-1a54d42269c3,Sharon Sandoval,gregory89@example.org,Backpack,Fashion,3,39.99,119.97,2025-01-02,"10892 Thomas Fort
+South Nicolemouth, RI 49316"
+b674ad1e-dc82-4bac-9249-1aa2eb899e1f,Adam Smith,rodgersmichael@example.net,Coffee Maker,Home Appliances,8,79.99,639.92,2025-01-02,"2578 Ralph Pass Apt. 230
+South Lisa, NV 73160"
+a234e804-ebff-4143-af61-5953868f3399,Justin Hahn,cooktanya@example.org,Laptop,Electronics,4,899.99,3599.96,2025-01-01,"0461 Jennifer Ranch Suite 217
+Davisfort, WA 68874"
+2e2a08c1-38af-41db-9192-1f47e92108b8,Karen Miller,rachel60@example.org,Backpack,Fashion,7,39.99,279.93,2025-01-02,"121 Cole Dam Apt. 630
+Charlenestad, FL 03533"
+5acbb978-d169-4532-a855-0df6cf6362ee,Terry Williams,sandra70@example.net,Sneakers,Fashion,3,59.99,179.97,2025-01-02,"Unit 3674 Box 8935
+DPO AP 00958"
+1b1723e2-9969-48ee-bb24-3b3af493ea18,Joyce Gray,abigail40@example.net,Headphones,Accessories,3,49.99,149.97,2025-01-01,"13741 Frazier Islands Apt. 461
+East Johnathan, NJ 65984"
+f3b81f4e-c834-43dc-b5c7-137a0cd987a0,Stephen Turner,jessicarogers@example.org,Coffee Maker,Home Appliances,6,79.99,479.94,2025-01-02,"856 Small Ports Suite 415
+Susanmouth, SC 22592"
+04a30038-94c1-45f7-8862-07ff3befb070,Donald Daniel,kelly77@example.org,Sneakers,Fashion,8,59.99,479.92,2025-01-02,"08325 Dylan Centers Suite 408
+Bruceport, MT 17294"
+b827bf83-0a12-4134-9648-c48adfcb455e,Lisa Park,nbrown@example.org,Headphones,Accessories,1,49.99,49.99,2025-01-01,"95906 Hernandez Hill
+Scottmouth, NY 08340"
+a2ecb3b0-dcfc-4740-89d6-3abfb23e4c6d,Mr. Vincent Collins DDS,joshua78@example.org,Coffee Maker,Home Appliances,7,79.99,559.93,2025-01-02,"60370 Kristi Village Apt. 359
+Lake Zachary, NH 25374"
+89249a6f-611d-43fc-8b5d-5ecb86f383cb,Mark Jackson,ashleyray@example.net,Smartphone,Electronics,6,699.99,4199.94,2025-01-01,"5228 Harris Ramp
+Haasmouth, GA 05758"
+da467027-cae1-43e6-a1e5-423f3092d0c9,Lori Doyle,tarroyo@example.com,Notebook,Stationery,9,5.99,53.91,2025-01-02,"02793 Mcconnell Lodge Apt. 766
+Port Davidberg, OH 74398"
+e2c9a24e-16f2-4ab8-863f-688a9182637a,Lisa Young,george37@example.com,Notebook,Stationery,6,5.99,35.94,2025-01-01,"209 Arnold Mission Suite 428
+Port Morgan, AL 36778"
+744de81f-e046-44d0-8883-e12842f0e173,Nicholas White,carrollfernando@example.com,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-02,"888 Simpson Passage Apt. 425
+New Charles, DC 19805"
+1574df0a-ba0f-40a5-99f5-51e33715a449,Andrew West,benjaminoconnell@example.com,Backpack,Fashion,8,39.99,319.92,2025-01-02,"94594 Natasha Vista
+New Debra, KS 55445"
+af55c73b-448d-4d46-b897-03385b7d3d6f,Keith Young,caseyanna@example.com,Smartphone,Electronics,4,699.99,2799.96,2025-01-01,"453 Adams Fort Suite 825
+South Martin, MP 23108"
+7140b599-23dc-4d70-9e4c-0f8461d7c66b,Charles Kidd,clarkesandra@example.org,Blender,Home Appliances,3,99.99,299.97,2025-01-01,"104 Elaine Dam Suite 969
+North Corey, SC 80999"
+06fd439a-44d7-464f-80b8-9e1ed783388d,John Rogers,tiffanyhester@example.net,Coffee Maker,Home Appliances,2,79.99,159.98,2025-01-01,"8241 Reyes Stravenue
+Lake Cindy, TN 52568"
+cfcaa0e7-89ea-40b9-bb23-78e7a7efb015,Stephanie Johnson,michaelscott@example.net,Backpack,Fashion,6,39.99,239.94,2025-01-01,"082 Mitchell Harbors Apt. 842
+Kelleymouth, ID 72179"
+e1562d26-e7b8-4e41-a4fc-7a5e5e37dcad,Dustin Perez,brendafreeman@example.net,Backpack,Fashion,3,39.99,119.97,2025-01-02,"16271 Cline Hollow Suite 492
+Gilesport, TN 31007"
+c331d23a-3707-437e-9cf6-147c8c06a0b0,Spencer Brooks,howardfrank@example.net,Sneakers,Fashion,1,59.99,59.99,2025-01-02,"352 Cheyenne Crossing Apt. 426
+Port Donald, AR 95723"
+5dbaf5e5-f165-44cb-9c5d-2b09d24d7f2e,David Powell,seanmartin@example.org,Desk Chair,Furniture,9,129.99,1169.91,2025-01-01,"8637 Franco Lake
+Port Willie, SD 01591"
+57f1f641-783c-42fb-98f2-0c7a0e9ae9b8,Sarah Williams,raymond17@example.com,Desk Chair,Furniture,8,129.99,1039.92,2025-01-01,"90565 Cynthia Drive
+South Scottton, GA 18726"
+3890d3ba-270b-43c2-bb2d-896f506b484b,Jose Thomas,joshuastewart@example.net,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-02,"39719 Williams Rapid
+Morganmouth, OR 19171"
+d013b540-1a99-48c0-ba4e-855c3595d587,David Hunt,twilliams@example.com,Coffee Maker,Home Appliances,10,79.99,799.9,2025-01-01,"145 Timothy Village Suite 818
+Justinchester, NV 78054"
+5976387b-6e2e-4553-bf41-14c46c89519a,John Gomez,janice30@example.com,Desk Chair,Furniture,8,129.99,1039.92,2025-01-02,"83251 Miller Curve Apt. 548
+Valerieville, TN 98138"
+eb611b81-e398-4213-8498-b654b8b190ad,Melissa Norris,uconrad@example.com,Smartphone,Electronics,8,699.99,5599.92,2025-01-01,"1838 Glover Stravenue Suite 174
+Lake Andrew, MD 08424"
+5d2a920a-9101-43b2-9ec2-4768228a2306,Karen Camacho,luke58@example.org,Headphones,Accessories,10,49.99,499.9,2025-01-01,"81405 Hughes Viaduct Suite 948
+Stephanieport, MI 41720"
+d20f06e4-bf8c-43e1-92e2-f8494f9f8099,Jason Shelton,hrogers@example.com,Blender,Home Appliances,5,99.99,499.95,2025-01-01,"948 Michelle Shore
+New Angelicaview, MS 81736"
+ada43849-2a26-4ac6-86fc-63ce507006fc,Steven Burns,reynoldskathy@example.org,Sneakers,Fashion,10,59.99,599.9,2025-01-01,"0669 Rhodes Roads Apt. 379
+Munozhaven, ID 23849"
+1399665f-97c5-4cb0-bf8a-0f69069d165d,Morgan Fowler,marksosa@example.com,Laptop,Electronics,1,899.99,899.99,2025-01-02,"5723 Briggs Ville Suite 565
+New Angela, AL 63269"
+7408cc44-b851-4ed0-8245-bbd02aa8b428,Anthony Caldwell,randywood@example.com,Blender,Home Appliances,3,99.99,299.97,2025-01-01,"950 Julia Station Suite 127
+South Christian, AK 10704"
+164cb701-c429-42d6-88ae-a8ef562044eb,Margaret Gray,ewilson@example.org,Smartphone,Electronics,9,699.99,6299.91,2025-01-01,"04036 Kim Villages Apt. 598
+Alexandraview, MA 36505"
+d7c6a85f-d4c5-4d79-9a2a-e0fb16cd08a8,Carol Klein,harpercaroline@example.org,Water Bottle,Accessories,7,19.99,139.93,2025-01-02,"98911 Davis Ways Suite 073
+Krystalhaven, TX 74145"
+6b1b7077-b02c-4f50-8ae8-6e74c230fc27,John Henry,qgaines@example.net,Desk Chair,Furniture,4,129.99,519.96,2025-01-02,"865 Patricia Creek
+Rachelburgh, KY 52205"
+c7a30832-eafa-4493-8784-46f152443f6f,Elizabeth Doyle,ericapena@example.org,Sneakers,Fashion,5,59.99,299.95,2025-01-01,"31294 Aaron Hills Apt. 441
+Andersonborough, NV 61976"
+251935a8-e51e-4ed4-8e81-87cdffb38b50,Michelle Greene,wumelissa@example.com,Notebook,Stationery,9,5.99,53.91,2025-01-01,"23476 Susan Fords Suite 291
+Tranmouth, DE 69106"
+3d48fcdd-c8dd-49e4-af3e-94c76fcf494c,Angela Sparks,michealbaldwin@example.net,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-01,"622 Tara Locks Suite 799
+East Leslie, VI 43260"
+62eae0e8-38b9-4052-8962-08f77ab57eca,Jeffrey Moss,gregorynorman@example.com,Desk Chair,Furniture,4,129.99,519.96,2025-01-01,"08325 Ralph Passage Suite 132
+Port Nathan, ND 65045"
+57242fd6-32ff-4549-8dae-9bb7d7b32534,Jessica Russell,brandoncastillo@example.net,Coffee Maker,Home Appliances,6,79.99,479.94,2025-01-02,"4732 Timothy Overpass
+Skinnerview, PR 54888"
+0d5473e6-5acc-4c25-86a0-42c3daf0e528,Lisa Buck,scottamy@example.net,Desk Chair,Furniture,9,129.99,1169.91,2025-01-01,"462 Hood Stream
+North Katherineshire, GA 61533"
+111739e8-10dc-4ac0-a13a-1ce6b7691b7e,Carlos Cox,knightmark@example.net,Desk Chair,Furniture,2,129.99,259.98,2025-01-02,"72529 Matthew Landing
+Lake Christineside, TN 75699"
+674894aa-aed5-4751-91cc-ce5e59ff8e0b,Haley Castillo,sfernandez@example.org,Smartphone,Electronics,2,699.99,1399.98,2025-01-02,"PSC 5552, Box 9100
+APO AA 90724"
+a437e4d0-b5d5-4225-993a-600b166f0b60,Richard Murray,batesbeth@example.net,Notebook,Stationery,7,5.99,41.93,2025-01-02,"73830 Madison Islands Apt. 432
+Alyssaborough, OK 98596"
+9e8a0881-b80d-4bca-be13-3fb6b4e45693,Adam Jenkins,fowlerkelly@example.org,Water Bottle,Accessories,4,19.99,79.96,2025-01-02,"8112 Andrew Divide Suite 699
+Mccannport, HI 70856"
+b1b58ba6-f75c-49af-8d9f-feb0f09b7ddd,Tina Combs,chadhughes@example.org,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"36886 James Harbor
+Juliehaven, WI 05446"
+cfb47a36-51ba-4e55-aaa1-7d6961dd329d,Debbie Reynolds,ogreer@example.com,Smartphone,Electronics,7,699.99,4899.93,2025-01-01,"8573 Alex Inlet Suite 484
+Chavezview, ME 93700"
+e2663180-e55f-4f50-bdeb-37cabb8d4571,Glenn Whitaker,monica38@example.org,Blender,Home Appliances,10,99.99,999.9,2025-01-01,"Unit 5368 Box 2352
+DPO AA 52702"
+48b0dcf7-b708-48ab-ab60-d7a1de8daebf,Nathan Williams,lopezsarah@example.net,Notebook,Stationery,6,5.99,35.94,2025-01-01,"93341 Santos Lodge
+Lambertbury, TN 06093"
+531401a1-a742-4000-a3d7-26ef66be1cdb,Carl Whitaker,olivia15@example.org,Sneakers,Fashion,5,59.99,299.95,2025-01-01,"983 Oconnor Knolls Suite 011
+Port Stephenton, DE 64814"
+35d37b1a-d34b-47b4-99ac-a13f837373bc,Jacob Bailey,emilyleach@example.com,Backpack,Fashion,7,39.99,279.93,2025-01-01,"9046 Cox Parks Apt. 832
+North Eric, CT 15739"
+76ae0a60-b52d-49b2-926c-6c7bfc2f63a1,Mark Swanson,woodjennifer@example.net,Headphones,Accessories,4,49.99,199.96,2025-01-02,"1084 Abigail Spur
+Zacharyfurt, VA 57965"
+8173ea06-f9e0-4fda-8613-97df86bcfe20,Christopher Sosa,kaylaboyd@example.net,Laptop,Electronics,4,899.99,3599.96,2025-01-02,"12190 Jeff Crossing
+East Dawnport, MA 07987"
+9caccb44-30ca-437e-b430-a03cb5ffd8f5,John Hicks DVM,kimcalvin@example.com,Coffee Maker,Home Appliances,7,79.99,559.93,2025-01-02,"03678 Flores Island Apt. 831
+Shieldsland, RI 48809"
+284bb1d9-e931-449f-b569-79e471d5cd7c,Joseph Dawson,fgutierrez@example.org,Blender,Home Appliances,1,99.99,99.99,2025-01-01,"255 Whitney Crescent Apt. 463
+South Richardton, WY 86704"
+bb610592-11bd-44ad-8db5-b9b56ba3c29c,Matthew Wilkerson,rhondapalmer@example.org,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"19644 Robert Port
+Guzmantown, OK 54693"
+b4455589-6103-499c-b389-15670844fb9c,Dr. James Sampson,christophergarcia@example.com,Notebook,Stationery,10,5.99,59.9,2025-01-02,"451 Lauren Shoal
+Kingstad, FL 93095"
+a53f7c93-8493-4da6-9dc7-174cf2d03497,Kimberly Hughes,anncampbell@example.org,Desk Chair,Furniture,1,129.99,129.99,2025-01-01,"86248 Knapp Well Suite 526
+Kirstenchester, FM 49556"
+0887ef6b-f443-4075-a614-0ee2fe315b16,Mrs. Andrea Reed,christineevans@example.net,Smartphone,Electronics,3,699.99,2099.97,2025-01-02,"8913 Nicole Garden Apt. 214
+Port Robert, NV 09635"
+e5a63010-defc-4c01-9850-6d7de0b20cb0,Carl Larson,tyler36@example.org,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"557 Cynthia Manor
+East Michael, IL 19203"
+0e162a27-cc69-4b2d-b381-9f312464562f,Daniel Wilson,kevinwood@example.com,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"1204 Marshall Well Suite 409
+New Ashleystad, MN 14887"
+e00e67d9-123e-43c4-a190-74bc9310eff0,Donald Harris,kimberlymartin@example.com,Backpack,Fashion,3,39.99,119.97,2025-01-02,"19818 Williams Knolls Suite 425
+South Christinafurt, PW 43731"
+c38066af-8b45-4a26-9adf-ddfbbca78520,Monique Leon,xtaylor@example.org,Notebook,Stationery,4,5.99,23.96,2025-01-01,"884 Bryan Tunnel Apt. 830
+Smithside, HI 79401"
+404014aa-5d16-44c1-a697-52c0adbacebe,Jill Dixon DVM,bellchristopher@example.com,Laptop,Electronics,3,899.99,2699.97,2025-01-01,"35894 Garcia Parks
+West Brendashire, MD 33952"
+656b1782-faf8-4963-af91-262576453406,Steve Wade,lorirobinson@example.net,Blender,Home Appliances,2,99.99,199.98,2025-01-02,"7637 Johnson Islands Suite 125
+New Carlosbury, FM 36742"
+6ffc4187-e762-4014-a662-959eb38e6e20,Crystal Mcintosh,danaruiz@example.net,Desk Chair,Furniture,2,129.99,259.98,2025-01-02,"7649 Charles Expressway Suite 973
+Robertberg, NE 49152"
+0232bada-6f99-485f-a2ec-04b6e8a4bd16,Travis George,jbennett@example.org,Backpack,Fashion,8,39.99,319.92,2025-01-01,"950 Raven Island
+Rivasville, MT 85299"
+b272df27-f813-4bef-a94c-0095fa406ecd,Jason Johnson,paulreed@example.com,Backpack,Fashion,6,39.99,239.94,2025-01-02,"295 Barnes Meadow Suite 956
+East Leahhaven, FM 83638"
+e184e902-e25d-4699-abad-0ddf76427cc3,Nicole Brown,qward@example.org,Headphones,Accessories,3,49.99,149.97,2025-01-01,"91716 Wilcox Fork Suite 389
+New Michaelberg, NY 87662"
+26f53f71-6297-41ac-96ad-03eea6fa430d,Melissa Lawrence,jordan26@example.org,Laptop,Electronics,7,899.99,6299.93,2025-01-01,"838 Taylor Harbors
+Clarkland, UT 67673"
+2fea6d11-b422-4c86-b962-9d89d167b6e9,Adam Malone,imoore@example.com,Headphones,Accessories,7,49.99,349.93,2025-01-02,"37759 Brent Haven
+West John, IN 38249"
+e3613095-0663-4b72-8718-b0941554fa75,Caitlin Jenkins,jennifer45@example.com,Notebook,Stationery,1,5.99,5.99,2025-01-02,"29360 Martinez Mills Suite 058
+Bellport, PA 86252"
+dc2e22b8-b716-492b-a44f-6cbf5a3630ba,Trevor Mills,robertsondouglas@example.com,Sneakers,Fashion,9,59.99,539.91,2025-01-02,"700 Brenda Meadow
+Jenniferfort, WI 87564"
+ea0f91cc-f234-46e9-825f-6fec1431f5e8,Robert Mendoza,ljohnson@example.org,Desk Chair,Furniture,5,129.99,649.95,2025-01-01,"8299 Laurie Throughway Suite 614
+Nataliebury, NV 05096"
+26a467f8-fdf2-408b-bab8-8e8e6c187954,Kurt Alvarez,paulprice@example.net,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-02,"9494 Matthews Ranch
+Martinchester, KY 78720"
+6af00269-d6a0-4b6d-a659-e8af5aec8e29,Daniel Brown,hhernandez@example.com,Laptop,Electronics,7,899.99,6299.93,2025-01-02,"587 Monica Trail Apt. 680
+Robertland, MO 44856"
+d211bb73-012b-46ec-aeba-c7e74931463f,Carla Vance,msmith@example.com,Sneakers,Fashion,3,59.99,179.97,2025-01-01,"4736 Walker Course
+New Keith, TN 33284"
+0d632c5f-7502-49e7-9609-0abc4e79903e,Carolyn Cummings,melissa75@example.com,Water Bottle,Accessories,4,19.99,79.96,2025-01-01,"49070 Russell Plains
+North Jennifer, WI 48874"
+6bb15d61-6ad9-4d66-a07e-d0232886ec48,Sara Smith,nlopez@example.com,Smartphone,Electronics,2,699.99,1399.98,2025-01-02,"23008 Rodney Port Suite 802
+New Benjaminshire, NJ 54145"
+bf2cfec5-f527-4fed-b64f-e1a6ff7dcfbb,Kimberly Cohen,ashleymartin@example.com,Desk Chair,Furniture,10,129.99,1299.9,2025-01-01,"5994 Brewer Courts Apt. 957
+Lewisfurt, WV 01493"
+5880da93-8dc9-499c-9ba0-bed755aca044,Zachary Hernandez Jr.,amandacoffey@example.net,Backpack,Fashion,1,39.99,39.99,2025-01-01,"589 Kelly Row
+West Gregorybury, NE 69708"
+9460f33c-c7d2-459e-ac90-c9fcc6735355,Sara Juarez,slarson@example.org,Sneakers,Fashion,9,59.99,539.91,2025-01-02,"60007 Stephanie Path
+Jacobport, VA 37287"
+8c07730c-29ab-4468-8f2e-a1f7913512d3,Jennifer Williams,djames@example.com,Water Bottle,Accessories,9,19.99,179.91,2025-01-02,"373 Ferguson Center Apt. 659
+Theresaview, IN 27163"
+42780c04-d517-47c5-8431-07576287b56d,Dr. Raymond Reyes,bairdmadison@example.net,Backpack,Fashion,6,39.99,239.94,2025-01-01,"0381 Michael Cliffs Apt. 898
+New Maryview, ID 74200"
+e03f3a6d-2a4d-451d-9781-2111c7dd8b41,Sheila Moore,dwhite@example.net,Smartphone,Electronics,6,699.99,4199.94,2025-01-02,"646 Robert Crescent Apt. 600
+Lake Alexandramouth, WI 99635"
+e7693b1f-178f-4f1b-b57a-f671367df9db,Tiffany Shelton,brian11@example.com,Notebook,Stationery,4,5.99,23.96,2025-01-01,"3658 Alvarez Hill Apt. 454
+North Johnathanmouth, ND 12284"
+18fdcaf5-b1a8-4ce1-af43-26a3fba34b8d,Kevin Johnson,vargasanne@example.org,Desk Chair,Furniture,10,129.99,1299.9,2025-01-02,"96280 Elizabeth Track
+New Andrewport, TX 79908"
+b6fa4c84-a784-4087-a9f5-37891eb47669,Timothy Clark,fsmith@example.org,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"58463 Mcmillan Parkways Apt. 803
+South Andrew, FL 43694"
+c68279f4-3aad-4650-bd01-0799e9db4a04,Erin Hall,michaelhogan@example.net,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-01,"3483 Andrea Wells Apt. 218
+East Jeffery, WV 51873"
+3d1f177e-ff11-4959-a0f0-7c59ac28e147,Tonya Jackson,milleramber@example.com,Sneakers,Fashion,2,59.99,119.98,2025-01-01,"35129 Michelle Village
+South Kimberlyview, RI 44062"
+cf29f80f-6e28-470e-ac88-cf0ab1b91aa5,Christina Lucero,daniel78@example.com,Sneakers,Fashion,9,59.99,539.91,2025-01-02,"17026 Vasquez Road
+Leeview, AR 39596"
+2abbcdff-99d7-4b0d-87a5-58586f5919a0,Charles Graves,munoznatalie@example.org,Water Bottle,Accessories,10,19.99,199.9,2025-01-02,"6043 Mckinney Square Apt. 077
+West Juliemouth, AZ 90424"
+c8d50b06-14dc-4505-9a4d-14a39928cec2,Jasmine Nelson,devinhale@example.net,Smartphone,Electronics,7,699.99,4899.93,2025-01-01,"PSC 8392, Box 8789
+APO AP 08032"
+59dc6dc0-7d30-40dc-a6fe-536ac27248ef,Dean Robinson,christina76@example.com,Backpack,Fashion,7,39.99,279.93,2025-01-02,"PSC 3618, Box 1680
+APO AP 51810"
+93d2c446-8d89-4c00-ad9f-7206e523c508,Seth Lynn,jholt@example.org,Backpack,Fashion,3,39.99,119.97,2025-01-02,"23077 Amber Hill
+New Lisa, CO 21025"
+e36d37fa-28f6-43c7-870b-6c06d89e702d,Margaret Hernandez,sharonjordan@example.org,Blender,Home Appliances,1,99.99,99.99,2025-01-02,"249 Watkins Burg
+East Crystal, CO 33085"
+77019f59-629f-44ee-bded-e4ba237fde7e,Deanna Haynes,ejames@example.org,Sneakers,Fashion,1,59.99,59.99,2025-01-01,"298 Daniel Knoll Suite 373
+Port James, OH 33825"
+37aeb658-a115-40c1-9ec2-1730b4c6d34a,Ashley Taylor,lisamoyer@example.org,Water Bottle,Accessories,2,19.99,39.98,2025-01-02,"86437 Danny Overpass Suite 348
+North Karenberg, DE 73518"
+d5f0a738-632a-44ae-bc59-bd593b613bfc,Christopher Kaiser,dmiller@example.net,Laptop,Electronics,5,899.99,4499.95,2025-01-01,"6119 Angel Forges
+Kaylamouth, MA 56597"
+2774f099-c1d5-43b4-b00a-5479de8047cd,Heather Beasley,aprilsmith@example.com,Blender,Home Appliances,2,99.99,199.98,2025-01-02,"08135 Murphy Spur Apt. 319
+Lake Brandonside, SC 85505"
+bea9b50a-2765-47c5-a16a-0aa9eb3a3e59,Wyatt Jackson,gomezronnie@example.org,Desk Chair,Furniture,2,129.99,259.98,2025-01-02,"8780 Michael Port
+Lake Jessicaville, RI 50026"
+76ca6656-a4a2-4509-953f-f0f958f15f04,Taylor Moore DDS,mcdonaldrobert@example.com,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-02,"998 Serrano Drive
+North Sheila, MN 13211"
+cc6ad901-b4bf-4eef-8c23-37a629648f2d,Kristopher Mack,loridavis@example.net,Headphones,Accessories,8,49.99,399.92,2025-01-02,"USCGC Castro
+FPO AA 88076"
+d4a75900-7437-4924-a13a-996e6ceaa7f8,Dale Montoya,asullivan@example.com,Blender,Home Appliances,5,99.99,499.95,2025-01-01,"524 Alvarez Ridge Apt. 044
+Leeland, OH 74863"
+a31fffc2-965e-41d7-986a-682444abeef4,Bryan Williams,erinschultz@example.org,Laptop,Electronics,10,899.99,8999.9,2025-01-02,"USS Anthony
+FPO AA 07855"
+5dd533d6-18f7-4031-ab91-3683d47da0ed,Travis Waller,lawrencejoseph@example.net,Smartphone,Electronics,5,699.99,3499.95,2025-01-02,"Unit 5918 Box 5089
+DPO AE 85685"
+d5d02589-5e22-49e7-96e5-2001a7af932c,Melody White,nicolehuffman@example.org,Laptop,Electronics,4,899.99,3599.96,2025-01-01,"465 Erica Square Suite 311
+Stephaniefurt, PW 73541"
+51aec96e-1493-475c-aca3-8b25c2d97cc8,Tiffany Long,andrewssherri@example.com,Backpack,Fashion,3,39.99,119.97,2025-01-02,"USCGC Jones
+FPO AE 20027"
+2b9b3df5-4d08-4ed0-809a-30c3803b341b,Arthur Salas,anthony15@example.net,Water Bottle,Accessories,2,19.99,39.98,2025-01-02,"26794 Kayla Forest
+Port Louisburgh, SC 12943"
+33618ed9-82d7-4e24-b4f8-f190b57ca27b,Thomas Clark,jeremy67@example.net,Water Bottle,Accessories,4,19.99,79.96,2025-01-01,"USS Ferrell
+FPO AE 35263"
+591626b5-1ba3-49ed-a7b7-7882a3b9d0db,Donald Frank,joanna98@example.com,Blender,Home Appliances,6,99.99,599.94,2025-01-02,"Unit 9195 Box 9583
+DPO AP 40857"
+60a023be-44b9-4eeb-a062-9758549180c9,Sarah Reynolds,christopher57@example.net,Sneakers,Fashion,8,59.99,479.92,2025-01-01,"37199 Deborah Hills
+Hesterland, GU 98870"
+486847d8-4117-4bb8-b7f5-6bba2ad23e78,Charles Hayes,starkdarryl@example.org,Blender,Home Appliances,1,99.99,99.99,2025-01-01,"USS Hensley
+FPO AE 98709"
+81315fa4-0911-4b6d-99d6-d7fb204f7ed7,Richard Wilson,twilliams@example.net,Headphones,Accessories,4,49.99,199.96,2025-01-01,"569 Phillip Mission
+Mcneilfurt, SC 05750"
+d3787333-6aa1-4fbf-b078-5bbc260c1715,Courtney Ortiz,markhenderson@example.com,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"92952 Randall Plain
+North Melanie, DC 22973"
+c7f6d455-e633-4046-81f6-9e8c43d9cdb2,Jill Bauer,andrewsmith@example.org,Backpack,Fashion,7,39.99,279.93,2025-01-02,"320 Edwards Skyway
+Armstrongfurt, AZ 74927"
+79553806-e8e4-4c8a-a322-08c3aafeb6bb,Rick Alvarado,melissacook@example.org,Headphones,Accessories,6,49.99,299.94,2025-01-02,"3132 Lisa Village Suite 697
+Port Jeffreyshire, MI 70921"
+00dac8a2-1597-4508-8dae-1cde03719291,Mark Marquez,samuel64@example.com,Blender,Home Appliances,5,99.99,499.95,2025-01-01,"1429 Anderson Extensions Apt. 596
+Kimberlyview, CO 62813"
+a617642c-5311-4b21-b23a-d2b8e1d4ea1e,David Hawkins,davidcarroll@example.com,Desk Chair,Furniture,10,129.99,1299.9,2025-01-01,"55911 Michelle Port Suite 591
+New Bonnie, RI 00794"
+cf47433e-27af-4446-8d17-db72e0b504b4,Megan Jackson,jody40@example.com,Sneakers,Fashion,2,59.99,119.98,2025-01-01,"8285 Sharon Course
+West Shane, OK 36325"
+335ca393-6f03-4e85-8195-3e8bb061ad1d,Susan Gonzalez,xparker@example.org,Backpack,Fashion,3,39.99,119.97,2025-01-01,"662 Hall Keys Apt. 469
+Robertton, VA 62961"
+8f8342e7-004a-4e79-9b97-d0aff9a56ebf,Adam Nixon,steven17@example.net,Notebook,Stationery,6,5.99,35.94,2025-01-01,"PSC 7108, Box 4132
+APO AP 65624"
+91f6ef30-a314-453f-a307-b266b278cf6a,Brett Miller,qmorrison@example.net,Smartphone,Electronics,7,699.99,4899.93,2025-01-02,"7501 Pacheco Garden Suite 790
+Taraburgh, UT 70797"
+5cdf6f49-126f-4db7-9156-9f60cc85717b,Kristi Berg,vwebb@example.com,Laptop,Electronics,9,899.99,8099.91,2025-01-02,"29880 Chad Lake Apt. 548
+New Robertberg, MN 74593"
+5956cc2a-0a71-4527-8de1-0c0ba89a1bab,Janice Collins,rogerstiffany@example.net,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"167 Castaneda Road
+Port Johnny, NY 40747"
+66bbcfe5-2c3f-4f51-9ba4-8b20c38b5672,Wesley Santos,carl91@example.net,Sneakers,Fashion,6,59.99,359.94,2025-01-01,"369 Mitchell Burg
+Tammyside, LA 18065"
+4d171ea4-15fc-45f3-96e0-cf85243f5744,Brian Brown,sotoanna@example.net,Desk Chair,Furniture,2,129.99,259.98,2025-01-01,"777 Derek Roads
+Arellanofurt, MI 33546"
+c5df84e0-9c30-466e-b047-c17d4cc5e2c4,Jose White,tracy97@example.net,Blender,Home Appliances,10,99.99,999.9,2025-01-01,"492 Singleton Ridge Apt. 177
+North Madison, WY 17261"
+f9fc7229-de0d-4a22-aa35-8bbc10515429,Renee Bell,xwilliams@example.net,Notebook,Stationery,6,5.99,35.94,2025-01-01,"695 Charles Hills
+North Diamondbury, CT 89635"
+acd2890b-e2d4-4bdb-8847-4ec5d984d9a2,Kristen Gonzalez,murphylinda@example.org,Desk Chair,Furniture,7,129.99,909.93,2025-01-01,"31444 Eduardo Course
+Davidside, WI 08114"
+a9ae80ff-83c4-4265-a537-565ae172ad20,Darren Prince,jennywalsh@example.net,Sneakers,Fashion,5,59.99,299.95,2025-01-01,"Unit 9428 Box 9546
+DPO AA 74633"
+d684b746-f19e-46b5-b43f-5bc3b3f260ec,Michael Page,terri41@example.org,Notebook,Stationery,5,5.99,29.95,2025-01-01,"62412 Perez Hill Apt. 222
+Lake Josephburgh, IL 23342"
+02cf7edc-a5ea-4a35-9a7c-480602739eb3,Madison Hood,dunnross@example.com,Blender,Home Appliances,9,99.99,899.91,2025-01-01,"81730 Dorsey Locks
+North Donna, UT 55210"
+e2ab36b3-9f75-465f-9566-5637b13d4dd2,Mark Wright,mjohnson@example.net,Laptop,Electronics,9,899.99,8099.91,2025-01-02,"650 Michele Garden
+West Yvonne, MP 90684"
+be61002d-6128-41c5-b14d-3faea053dd1a,John Wright,jacob64@example.org,Headphones,Accessories,9,49.99,449.91,2025-01-01,"37245 Elizabeth Shoal Suite 569
+Kristenport, MH 21691"
+48cd80a8-af4b-4b0d-9fba-9bfc2077aab2,Tonya Allen,kabbott@example.net,Desk Chair,Furniture,2,129.99,259.98,2025-01-01,"0524 Hines Summit
+New Tinabury, WV 27965"
+4dc6a2a3-a8e5-41fb-8a42-229fe1e35013,Michael Greene,ocurtis@example.org,Desk Chair,Furniture,8,129.99,1039.92,2025-01-02,"56847 Brown Track
+Nicholasbury, OH 72297"
+d9d19946-3bab-42b2-8702-31da15ff3f8c,Mrs. Meghan Smith,obrienlaura@example.net,Backpack,Fashion,8,39.99,319.92,2025-01-02,"6750 Dean Crossing Apt. 025
+Whiteport, NH 08648"
+f56f632c-f115-4e18-917f-13f73f2a8000,David Ferguson,johnerickson@example.com,Backpack,Fashion,1,39.99,39.99,2025-01-01,"84619 Espinoza Meadow Suite 611
+Myersview, ID 15404"
+3ad7504e-64ca-4c05-a6be-a89a3efce928,Heather Valenzuela,florescheryl@example.com,Laptop,Electronics,4,899.99,3599.96,2025-01-01,"96193 Spencer Creek Suite 764
+New Linda, PR 67366"
+caa2b2bc-f57e-486d-a32b-0980ea99e1ab,Andrew Brown,martincandace@example.com,Backpack,Fashion,8,39.99,319.92,2025-01-01,"073 Jesse Corners
+Henryton, PR 95665"
+e808c3b9-a8c3-4ddd-8b9b-14a3bd14f9f2,Tiffany Warren,emilyalexander@example.org,Notebook,Stationery,10,5.99,59.9,2025-01-02,"173 Jessica Roads
+Wellston, OR 89996"
+1a52d1f8-767f-4b1c-be30-99eb7e4adabe,Audrey Abbott,deborah10@example.org,Laptop,Electronics,5,899.99,4499.95,2025-01-02,"924 Schneider Tunnel
+North Tammy, HI 98460"
+39a6f554-1f39-44b7-a65f-bf03b1cd08bb,Kaylee Lane,potterjose@example.com,Blender,Home Appliances,10,99.99,999.9,2025-01-02,"6957 Kelly Pines
+East Nicole, VT 14139"
+26279b6e-2b16-43b3-9b5c-4c3a23b4d156,Stacey Davis,yperry@example.com,Laptop,Electronics,2,899.99,1799.98,2025-01-01,"12965 Jacobson Ridge
+Howellview, OK 21983"
+8713d88c-ca3a-4b30-8947-d673ae67e177,Matthew Terry,scott87@example.com,Backpack,Fashion,2,39.99,79.98,2025-01-02,"36850 Strickland Junction
+Leeburgh, NC 24158"
+099d6533-d795-494b-9d49-e4392b075509,Matthew Bell,xmorrison@example.org,Headphones,Accessories,10,49.99,499.9,2025-01-02,"8490 Chapman Canyon Apt. 115
+North Brian, UT 01204"
+647e877d-eab4-4ea1-837f-0dc6c780df65,Katie Baker,erin84@example.org,Laptop,Electronics,3,899.99,2699.97,2025-01-02,"444 Mallory Stravenue Apt. 605
+Claytonton, IN 73286"
+3599d589-155b-4a89-89c3-a41c31017d72,Lance Anderson,cindy94@example.com,Sneakers,Fashion,3,59.99,179.97,2025-01-02,"685 Sara Viaduct
+West Jeremyview, CT 49089"
+ed33f694-698b-4b05-8ded-868731bff734,Scott Rivera,tonya08@example.org,Blender,Home Appliances,4,99.99,399.96,2025-01-01,"8427 Samantha Passage
+Port Chris, UT 76560"
+3792b60d-d295-45ac-b227-de6025dbb19c,Erin Norris,hudsonpamela@example.net,Notebook,Stationery,2,5.99,11.98,2025-01-02,"600 Bell Rest Apt. 266
+North Kellychester, IN 57100"
+6af5c60b-f713-40c7-b699-f5ad6e9c7cd1,Brenda Taylor,jeffrey61@example.org,Desk Chair,Furniture,8,129.99,1039.92,2025-01-01,"7315 Natasha Grove Apt. 743
+Rogersland, RI 94746"
+841d75f8-9b49-4692-9050-e361d847c5c5,Dr. Timothy Allison Jr.,afarmer@example.com,Water Bottle,Accessories,3,19.99,59.97,2025-01-02,"923 Robles Street
+Port Thomasburgh, NE 69091"
+8daa3e23-e1a6-4fb8-8579-11c6888a1512,Elizabeth Ball,barnettevelyn@example.net,Blender,Home Appliances,2,99.99,199.98,2025-01-01,"Unit 2333 Box 7064
+DPO AP 42271"
+e25d50ce-fa49-4a50-844e-a8821cd82a97,Stacy Rodriguez,byrddennis@example.org,Blender,Home Appliances,7,99.99,699.93,2025-01-01,"0636 Angela Port
+Port Terriberg, NC 20099"
+5f172d89-871f-4ab9-9091-ef57ea46b6bf,Ricky Torres,woodsphillip@example.org,Smartphone,Electronics,6,699.99,4199.94,2025-01-02,"85006 Perry Terrace
+South Timothyborough, WI 32774"
+691aefed-0e9d-47c5-8ea9-48d94b596c09,Misty Esparza,kimberly21@example.com,Laptop,Electronics,5,899.99,4499.95,2025-01-02,"Unit 5388 Box 6661
+DPO AA 83184"
+559553bb-c027-4126-b534-b3afe54c335c,Danielle Roberts,jeffrey35@example.com,Water Bottle,Accessories,3,19.99,59.97,2025-01-01,"042 Nathan Stream Apt. 819
+Chapmanmouth, OK 85136"
+6940f401-b4f8-44d4-847a-a152cbc90fcf,Jasmine Holmes,andrewwhite@example.com,Laptop,Electronics,3,899.99,2699.97,2025-01-01,"2208 Kathy Stravenue Suite 044
+West Jennifer, KY 43826"
+b9fb649e-7e3c-425f-a5db-c45dad0bd718,Ashley Collins,bryanshannon@example.com,Sneakers,Fashion,2,59.99,119.98,2025-01-02,"242 Warren Park
+Gonzalesbury, IA 03798"
+6d367f27-d3a7-43ec-a50b-56b67d0af495,Trevor Turner,ydrake@example.org,Blender,Home Appliances,9,99.99,899.91,2025-01-01,"92450 Anderson Manor
+Benjaminfort, AK 55975"
+1b457a40-6fa3-4cb3-a865-37dbf4bc5807,Leonard Holmes,fjones@example.com,Backpack,Fashion,9,39.99,359.91,2025-01-01,"10053 Morgan Viaduct
+Danielhaven, VT 19481"
+aa2fab5a-494e-469e-a29b-35d6c7a138d3,Charles Ortiz,hoalexis@example.org,Desk Chair,Furniture,7,129.99,909.93,2025-01-02,"910 Darren Ramp Apt. 611
+Derrickland, ID 87335"
+1930f857-2a31-4813-bc68-a676793670de,Michael Johnson,vthompson@example.com,Desk Chair,Furniture,6,129.99,779.94,2025-01-01,"74222 Pope Orchard
+Carolshire, MH 40879"
+86016246-867c-4407-8f84-eaf6b8888dc7,Cynthia Rowland,kimjonathan@example.net,Blender,Home Appliances,2,99.99,199.98,2025-01-01,"14510 Thomas Pines
+West Robertside, GU 71082"
+f1c4ea1c-39d2-40b9-9f47-4b3aad96527a,Kim Walker,jonathanjohnson@example.net,Headphones,Accessories,5,49.99,249.95,2025-01-02,"1017 Randolph Mount
+South Carolinechester, GU 26552"
+b7ecb446-cfd8-419c-b6ec-2fd358dc48ed,Matthew Brady,petersoncatherine@example.org,Desk Chair,Furniture,7,129.99,909.93,2025-01-02,"PSC 4249, Box 5007
+APO AE 61212"
+f92b201f-2be5-4a28-84b2-706fbc5ec062,Sarah Bishop,kimberly15@example.org,Notebook,Stationery,8,5.99,47.92,2025-01-02,"24780 Andrew Passage Suite 175
+Wesleytown, OH 78706"
+cb24c0f1-c403-4021-8aa5-67c2e37d756a,Cody Cohen,georgeproctor@example.org,Water Bottle,Accessories,6,19.99,119.94,2025-01-02,"38745 Aaron Green
+Collinsside, MI 70892"
+90fedba6-3705-4ac1-91b3-bedc1294e01e,Greg Davis,angelaknight@example.org,Sneakers,Fashion,10,59.99,599.9,2025-01-01,"720 Mike Drives
+New Connieville, NY 33625"
+85bc2ab3-1b13-49ca-aa09-4dc4359926f7,Bailey Jackson,jessicawright@example.org,Coffee Maker,Home Appliances,8,79.99,639.92,2025-01-02,"75277 Mckinney Stravenue
+Lake Gregoryview, KS 75754"
+e007b68a-1f76-4767-882b-6d47f9baad1f,Darrell Schultz,joseph41@example.net,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-02,"2276 Austin Ridge
+Rachelton, MO 88509"
+b41c76af-ac5e-45bc-89f8-519cc37c325a,Dustin Martinez,carterjoshua@example.org,Notebook,Stationery,3,5.99,17.97,2025-01-01,"19920 Anderson Fords
+Lake Matthew, NM 06797"
+da4779bb-2697-48fe-a9ab-1db2e21b32d2,Lisa Daugherty,derrick33@example.com,Desk Chair,Furniture,1,129.99,129.99,2025-01-01,"546 Rodriguez Rue Suite 590
+Ballardstad, MP 55174"
+768cf5c5-cdd0-438b-803c-12ab973dc207,Christina Salinas,walkersandra@example.com,Desk Chair,Furniture,3,129.99,389.97,2025-01-01,"0718 Jones Circles Apt. 727
+Marcuschester, OK 10837"
+a35f71a1-1fa7-4b6d-9001-67edef52fe35,Craig Smith,moralesdonald@example.org,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"560 Hobbs Village
+Colleenfurt, AS 45304"
+6ec72fc3-c4ab-4f1c-87a5-ecec6f0a7ac9,Mercedes Mills,nicole23@example.com,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"96718 Catherine Rapid
+Rhondaton, GA 07941"
+a194bf68-fd0c-4054-bd4b-6e0138ad184d,Julie Hall,santosgeorge@example.com,Coffee Maker,Home Appliances,7,79.99,559.93,2025-01-02,"221 Timothy Viaduct
+South Feliciamouth, MP 21867"
+b4330c47-9d74-4422-970a-c679f46bb879,Mr. Michael Rich,thomaswood@example.org,Coffee Maker,Home Appliances,10,79.99,799.9,2025-01-02,"368 Chang Courts Apt. 924
+West Barryville, NV 24058"
+622deef8-2e47-4b1a-baf9-242ec916cfe5,Audrey Frederick,anarivera@example.net,Smartphone,Electronics,1,699.99,699.99,2025-01-01,"16208 Guzman Loaf Suite 874
+North Jorgeton, VA 78537"
+a524f6cd-5895-4f06-9bbb-ee8d7741830c,Summer Weaver,cooperjohn@example.org,Sneakers,Fashion,10,59.99,599.9,2025-01-01,"12083 Burnett Falls Suite 531
+Kellychester, ND 29724"
+ec123e3d-1712-4537-b0f4-716b224745be,Stephanie Hammond,delacruzcarla@example.com,Headphones,Accessories,4,49.99,199.96,2025-01-02,"Unit 4384 Box 4422
+DPO AE 43919"
+25aab3e6-0bbe-48d0-98eb-84e9ac0b1ba2,Jennifer Jones,sean98@example.com,Notebook,Stationery,6,5.99,35.94,2025-01-02,"8131 Pope Ports
+East Grantmouth, ME 67504"
+d40bc57a-aab1-4dbc-a4bb-e386276e21f7,Anthony Collins,brittanyporter@example.com,Headphones,Accessories,10,49.99,499.9,2025-01-01,"216 Doris Lock Apt. 195
+South Melaniehaven, MO 34082"
+925dd521-8d01-47a4-9d4e-ee104cc62355,Walter Perez,austincynthia@example.com,Smartphone,Electronics,4,699.99,2799.96,2025-01-02,"1348 Allen Terrace Apt. 502
+Joneschester, AS 88199"
+b94e3af9-dc00-4d50-9968-c8ec0f27a2db,John Smith,kyle65@example.net,Water Bottle,Accessories,3,19.99,59.97,2025-01-02,"48678 Wendy Parkway Apt. 776
+Paulhaven, SD 14828"
+23989dca-951c-49f8-b426-0da692893e42,Stacey Rios,alex94@example.net,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-01,"3865 Jones Common
+New Monica, NC 82624"
+ebddb42e-087b-4233-801c-195af086d904,James Faulkner,dshaw@example.net,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"984 Miller Ramp
+Clineburgh, NJ 94301"
+e0460f79-1f78-431a-b268-ba7827cde568,Shawn Sampson,jessicahart@example.net,Desk Chair,Furniture,9,129.99,1169.91,2025-01-02,"3812 Weaver Harbor
+Lake Joshua, SC 93251"
+b67dcafe-467f-4be2-978f-347333b7ca4c,Amanda White,mollylewis@example.net,Laptop,Electronics,1,899.99,899.99,2025-01-01,"05712 Williams Stream Apt. 345
+Ricehaven, MO 52754"
+f4e81b04-ba27-4c26-93af-3d621756fb78,Cynthia Smith,stephanie44@example.org,Sneakers,Fashion,6,59.99,359.94,2025-01-02,"666 Ortiz Run
+North Christina, DC 00657"
+13c3b590-91af-4c2c-a21b-d2ae1a90c939,Sara Washington,james66@example.org,Headphones,Accessories,5,49.99,249.95,2025-01-01,"97630 Carol Green Apt. 857
+Peterbury, IL 86464"
+2bd36fc9-59af-4176-81e2-143f1d7ba5ad,Tina Howe,lpearson@example.net,Backpack,Fashion,9,39.99,359.91,2025-01-01,"76177 White Turnpike Suite 054
+Salazarhaven, ND 71040"
+3b834b04-d89e-4d5a-8053-b0daca7ec052,Tiffany Morgan,jeffreymoore@example.com,Water Bottle,Accessories,5,19.99,99.95,2025-01-02,"086 Young Circle
+Collinsport, AR 32744"
+c85cd358-33b7-418e-814e-7d627ed25070,Andrea Vaughn,ereyes@example.com,Laptop,Electronics,4,899.99,3599.96,2025-01-02,"66408 Rivera Skyway
+Collierland, PW 36396"
+a48d4a95-2987-47dd-ab79-c0feaa3407c2,Lisa Olson,jdavis@example.org,Desk Chair,Furniture,6,129.99,779.94,2025-01-01,"39948 Charles Flats
+Ronaldtown, VI 74606"
+70f5e68e-43f6-410a-88d0-0154667913e5,Bradley Henry,megan90@example.net,Headphones,Accessories,8,49.99,399.92,2025-01-02,"70680 Joshua Dam Apt. 513
+Millerview, AZ 77366"
+d74022aa-7690-4244-95c8-cb5ffe3650ec,Donald Castillo,xdudley@example.org,Notebook,Stationery,2,5.99,11.98,2025-01-01,"4098 Cynthia Overpass
+Leeborough, PA 91941"
+35d20344-0952-4c54-89ed-947c876fade9,Joshua Howard,scott52@example.com,Blender,Home Appliances,4,99.99,399.96,2025-01-01,"78110 Michael Islands Suite 477
+Hodgesburgh, WA 16785"
+fbfdcef8-5eed-460b-bb8e-c56b3ed04fd7,Jessica Riley,lisa80@example.net,Smartphone,Electronics,3,699.99,2099.97,2025-01-01,"934 Bray Summit
+New Loriport, OR 28200"
+e23fd516-0f9d-44fb-8857-d3a0d8b67b74,John Aguilar,annbishop@example.com,Desk Chair,Furniture,2,129.99,259.98,2025-01-02,"733 White Radial
+Butlerville, PA 06311"
+97740f6f-8309-4003-84a0-8e7440472671,Mr. Jonathan Wallace,justin49@example.org,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"0199 Lisa Well Suite 511
+Dakotachester, MT 59905"
+65a0322e-ec98-411e-8378-f50956f2f779,Kendra Harris MD,matthew99@example.net,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-01,"848 Smith Villages Suite 188
+Castilloville, KS 26407"
+8d818792-91d3-4039-86c0-25284c769977,Christine Frank,bbrown@example.net,Notebook,Stationery,2,5.99,11.98,2025-01-02,"Unit 5386 Box 6807
+DPO AE 70891"
+968ae052-546f-40ea-b0a2-dc328d48e407,Albert Smith,zgarza@example.org,Backpack,Fashion,2,39.99,79.98,2025-01-02,"PSC 5214, Box 4330
+APO AA 25707"
+9e141b8d-5ecf-4a4f-aa9c-0d1058cc9f15,Mr. Ronald Hill MD,bryangreen@example.net,Laptop,Electronics,2,899.99,1799.98,2025-01-01,"8401 Mcintyre Ways
+East Christinestad, GA 18648"
+76810087-88f4-4da1-b6ab-505558e29816,Maureen Wagner,gordonangela@example.net,Notebook,Stationery,7,5.99,41.93,2025-01-02,"012 Montes Lake
+Riveraville, NJ 88634"
+8e727657-642d-4ca8-9d28-32e1f0893c92,Matthew Lee,ssilva@example.net,Backpack,Fashion,1,39.99,39.99,2025-01-02,"54434 Oneal Spur
+Dodsonbury, AZ 43542"
+9a05f626-8a46-4ad6-8ee7-70a175c6f40b,Kathleen Hill,joseph60@example.com,Notebook,Stationery,4,5.99,23.96,2025-01-01,"54963 Justin Lights Apt. 898
+New Danielleland, HI 46473"
+0c5bdcfe-ae81-4348-960f-9bac2ad091f0,Adam Beltran,rodneymartinez@example.net,Backpack,Fashion,2,39.99,79.98,2025-01-01,"1769 Myers Trail Apt. 854
+West Thomasmouth, CT 20018"
+6beeddfb-7010-45d1-9bd9-cdd55f2e6ab8,Christopher Lucas,toddgreen@example.org,Water Bottle,Accessories,10,19.99,199.9,2025-01-02,"USCGC Ramirez
+FPO AP 73523"
+f14399ca-886c-4004-b89c-c213407a1a0a,Tiffany Hogan,wattsjohn@example.com,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"4330 Hanna Crescent
+Lake Stephanie, FL 75542"
+85971499-203f-4a08-87a6-25cc7322b013,Jennifer Thomas,briggstimothy@example.com,Smartphone,Electronics,1,699.99,699.99,2025-01-01,"PSC 9722, Box 3965
+APO AP 10043"
+cf341224-2bfe-4b00-9fca-7ce575dc5b91,Daniel Jimenez,carrollalvin@example.com,Smartphone,Electronics,10,699.99,6999.9,2025-01-01,"09338 Jennifer Harbor
+Brookemouth, CO 40272"
+11a0e66b-f6cb-4e81-8a97-fd3db1e3dae0,Regina Donaldson,lstrickland@example.net,Water Bottle,Accessories,10,19.99,199.9,2025-01-02,"15291 Huffman Views
+West Paul, LA 63187"
+d0d8db4c-b7ef-4a26-84d6-1cf932728955,Jennifer Jones,christopherspencer@example.net,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-02,"0363 Jacobson Light
+Salinasview, VI 69896"
+bc4f3535-b81c-465d-bd73-f7814a83fdd0,Erin Ortega,christina86@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"PSC 3019, Box 9360
+APO AE 09691"
+a7e1f2ad-4477-4d8d-89e9-05e3578ab486,Laurie Lane,adam46@example.net,Blender,Home Appliances,3,99.99,299.97,2025-01-02,"7568 Sharon Station Apt. 544
+Harrisonfort, SD 41595"
+2fb9ed0b-edc8-4c52-add4-a694bec2d59b,Larry Lopez,wsantos@example.org,Smartphone,Electronics,5,699.99,3499.95,2025-01-01,"56290 Smith Spur Suite 563
+South Cynthiaside, ME 62086"
+88144de1-c98e-46e9-b37b-42f22359c193,Shannon Johnson,dlee@example.net,Laptop,Electronics,6,899.99,5399.94,2025-01-01,"8462 Snyder Ways Suite 938
+Rasmussenmouth, IN 07462"
+e4781b9f-91ca-45cc-866d-1460a2aa2946,Sara Jones,cochranjames@example.net,Coffee Maker,Home Appliances,6,79.99,479.94,2025-01-01,"215 Misty Forest
+North Ericborough, MH 64764"
+f2580b84-e6c4-474a-b73b-dec6d1966873,Donna Miller,wattsbrenda@example.net,Sneakers,Fashion,4,59.99,239.96,2025-01-01,"935 Maddox Fort
+Port Debraland, HI 07611"
+ba552db0-0130-400f-8c3b-9ae6dcf76277,David Singleton,maurice26@example.com,Laptop,Electronics,3,899.99,2699.97,2025-01-02,"3381 Owen Ridges
+Bethmouth, NY 43807"
+dd8b5bbd-d2fa-48ef-95ec-48bc7a50d0ee,Karen Stein,mullinstravis@example.org,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-01,"65326 Matthew Street Suite 165
+Brooksstad, NJ 26237"
+5d5e7534-d4a7-488d-bff4-8784072cfc13,Kelly Rodriguez,morrisbrian@example.com,Blender,Home Appliances,10,99.99,999.9,2025-01-01,"USNS Bell
+FPO AA 29878"
+63338a3c-903c-4ba2-ae16-3d7833c2a086,Melissa Scott,misty77@example.org,Laptop,Electronics,5,899.99,4499.95,2025-01-01,"641 Dickerson Inlet Apt. 799
+South Carl, WI 89501"
+70c90fe0-39de-428a-94d8-0a6b75befed9,Charles Harrison,tmanning@example.net,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"61172 Parks Station Apt. 461
+West Christopherburgh, WA 76455"
+7eb02de7-eb19-4a58-a0b6-6aeee72d9e33,Christian Crawford,sgarcia@example.org,Backpack,Fashion,8,39.99,319.92,2025-01-02,"50462 Michael Run Suite 320
+East Robert, NY 15278"
+a926d98d-ce06-4cf0-bd49-283349cffa53,Brittany Curtis,mitchell06@example.net,Water Bottle,Accessories,3,19.99,59.97,2025-01-01,"1169 Rice Village Apt. 626
+Lake Melissa, NV 12663"
+2a6069a7-0b20-40f7-a538-85fc3af8d082,Keith Dillon,sarah13@example.com,Coffee Maker,Home Appliances,8,79.99,639.92,2025-01-02,"06029 Williams Station Apt. 660
+New Daniel, VA 33384"
+53f76a08-d398-47a9-bfe9-6daf9667eb84,Diana Hill,bturner@example.com,Blender,Home Appliances,3,99.99,299.97,2025-01-02,"431 Martinez Stravenue Suite 407
+Port Kelly, IA 28317"
+8262d3e4-78dc-4f34-a9e8-5cac4ccf1642,Casey Beck,christinewright@example.net,Water Bottle,Accessories,7,19.99,139.93,2025-01-01,"06594 Sarah Lakes
+Ericville, VT 32874"
+e153eada-00d2-4fb8-a3f2-38bf59037edc,Albert Brennan,lisamadden@example.org,Notebook,Stationery,3,5.99,17.97,2025-01-01,"1841 Jennifer Glens
+Destinyview, MS 24430"
+73648508-94ee-4fe3-8abb-2dc1530a815b,Jonathan Rasmussen,ricardosmith@example.org,Smartphone,Electronics,7,699.99,4899.93,2025-01-01,"5557 Schwartz Keys Apt. 098
+Warrenport, AS 99805"
+a52d8bd6-5628-4452-bc64-4fbdd8084f95,Cameron Freeman,fdavis@example.net,Headphones,Accessories,6,49.99,299.94,2025-01-01,"168 Mitchell Neck
+East Jeremy, IL 08194"
+2ce06d47-f76b-4c44-b747-db553c3823ca,Kelsey Lopez,cchen@example.net,Water Bottle,Accessories,8,19.99,159.92,2025-01-01,"568 Smith Parkways Suite 773
+Leeland, GU 33468"
+4def7d24-6cae-448f-a538-5f3d137b4804,Heather Cummings,arthurbeasley@example.com,Smartphone,Electronics,6,699.99,4199.94,2025-01-02,"5944 Maria Rapid Suite 619
+Williamsfort, WV 39238"
+c8d8b3cc-3d77-432b-8730-5d796cf536dd,Rebecca Ramirez,catherine63@example.org,Water Bottle,Accessories,1,19.99,19.99,2025-01-01,"511 Emily Estate
+Paynefurt, KS 03649"
+8de5dbe4-1196-404b-9d7a-84ece6d5aa8b,Alyssa Hudson,michelle07@example.com,Water Bottle,Accessories,5,19.99,99.95,2025-01-01,"3776 Renee Lock Suite 721
+North Brianland, DE 26909"
+2460a549-958d-4533-baa5-71e7079c6edd,William Smith DDS,todd81@example.com,Water Bottle,Accessories,8,19.99,159.92,2025-01-02,"61746 Tracey Square Apt. 120
+Valenzuelastad, NE 26717"
+71bffe77-3797-4497-b706-cd0bf6d35979,Anthony Butler,adamsjeffrey@example.net,Backpack,Fashion,7,39.99,279.93,2025-01-02,"7570 Kevin Skyway Suite 421
+Port Andrew, LA 90532"
+bf7481c6-925a-457d-8853-f0ef17320788,Samantha Morrison,keith11@example.com,Water Bottle,Accessories,8,19.99,159.92,2025-01-01,"373 Ryan Lodge Suite 458
+Edwinhaven, NH 39978"
+b079ef35-eab8-467c-9b46-81db2ba25dad,Mary Coffey,laneheather@example.com,Desk Chair,Furniture,2,129.99,259.98,2025-01-01,"63196 Ruiz Turnpike Suite 138
+Hernandezbury, WV 67163"
+49319bca-fbf7-4ebd-b7fb-14a0dd6f57c3,James Pratt,ohill@example.net,Smartphone,Electronics,2,699.99,1399.98,2025-01-01,"55201 Ortiz Circles Suite 966
+East Austinfort, MT 50826"
+d14c62d6-e394-4efe-b6d7-02a8341a33a7,Caroline Dougherty,philipvaughn@example.net,Desk Chair,Furniture,3,129.99,389.97,2025-01-01,"PSC 0285, Box 4298
+APO AP 78127"
+b985ebc3-c4ca-4b1d-b677-f2215f7315de,Lori Mata,ywilliams@example.com,Backpack,Fashion,5,39.99,199.95,2025-01-01,"0118 Rivera Garden Apt. 318
+Tannerfurt, VT 42968"
+cd5ff03b-31e7-4522-9aa8-42c59948c846,Dr. Jeffery Allen,qwarren@example.org,Laptop,Electronics,9,899.99,8099.91,2025-01-02,"361 Farrell Squares Apt. 423
+Crawfordmouth, GU 79991"
+2da316bd-ebac-4d49-9fac-7de9ab7a8a35,Carrie Hicks,danielblackwell@example.net,Laptop,Electronics,3,899.99,2699.97,2025-01-02,"PSC 9270, Box 6768
+APO AP 40004"
+6e6aa0b5-1224-4a09-a6b9-866920ce0f92,Roy Mack,ericallen@example.com,Blender,Home Appliances,4,99.99,399.96,2025-01-02,"73368 Paula Bypass Apt. 607
+Michaelberg, MN 44556"
+bf28319c-1b4e-4c5b-b8c8-89fa3dfb0092,Andrew Bird,lindsey91@example.com,Headphones,Accessories,3,49.99,149.97,2025-01-01,"986 Cassandra Ridge
+South Zacharyport, MD 44500"
+7dc71822-fd1a-48db-ad9b-7ae106425134,Michael Miller,douglasmurillo@example.org,Notebook,Stationery,2,5.99,11.98,2025-01-01,"18373 Armstrong Brook Suite 292
+Jeffreymouth, SD 89500"
+18ca0860-3860-4c4a-bfd5-d656933d4dc8,Margaret Thomas,priceelizabeth@example.com,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"6214 Betty Locks
+Port Alan, NY 12752"
+7f125eaa-bb11-4772-83c6-ab73f8aa7570,Steven Vincent,marshallalejandra@example.org,Notebook,Stationery,7,5.99,41.93,2025-01-02,"PSC 1468, Box 5331
+APO AE 66019"
+4d9fa456-e8c6-4851-b464-e38e47d9d163,Lori Martin,tshaw@example.org,Blender,Home Appliances,5,99.99,499.95,2025-01-01,"7321 Garcia Skyway Apt. 889
+Chasetown, CT 20150"
+a3d6d9a5-db22-4e88-991b-b0ab86079f4c,Joshua Baker,jberry@example.com,Smartphone,Electronics,2,699.99,1399.98,2025-01-01,"Unit 8323 Box 2390
+DPO AE 31764"
+e8d24198-5479-402b-a8ad-5322aa6c506d,Virginia Rodriguez,olsonsusan@example.net,Notebook,Stationery,8,5.99,47.92,2025-01-02,"Unit 8806 Box 6623
+DPO AE 39832"
+ce640968-d262-40ef-bfb2-093b26749347,Lydia Crawford DVM,lambadam@example.org,Water Bottle,Accessories,7,19.99,139.93,2025-01-02,"719 Hale Plains Apt. 207
+Jacksonhaven, AL 75982"
+2a7fc200-92f8-4142-893f-8df8c34560c2,Tammy Sutton,shepardfrederick@example.org,Notebook,Stationery,1,5.99,5.99,2025-01-01,"91826 Gregory Alley Suite 809
+Laurieview, TX 31928"
+191915a0-b70b-4c13-b650-e7c4c6c97134,Linda Johnson,qyork@example.net,Smartphone,Electronics,2,699.99,1399.98,2025-01-01,"51867 Lee Cape Apt. 049
+Johnsonborough, CA 70439"
+3aabc542-976d-41f7-9939-20b0a03a4e4c,Joseph Brown,anthony12@example.com,Blender,Home Appliances,10,99.99,999.9,2025-01-01,"84557 Luis Course Suite 659
+New Cassandraside, AR 31134"
+9c4704fe-fc9e-460d-9dd4-c6ccc8219ec2,Laura Goodwin,thompsoncheyenne@example.net,Blender,Home Appliances,1,99.99,99.99,2025-01-02,"75124 Christopher Highway
+Masseyhaven, KS 63580"
+1a78426e-7979-4a68-801b-fbe7e1044a3a,Sarah Fisher,jpotter@example.net,Laptop,Electronics,4,899.99,3599.96,2025-01-01,"5468 Carla Pines
+North Jameschester, LA 23211"
+956c1fd2-ec5b-48fe-8d63-8d4e09c76364,Mckenzie Jones,wjoyce@example.com,Sneakers,Fashion,4,59.99,239.96,2025-01-01,"39072 Rodriguez Mountain Apt. 839
+Josestad, GU 37157"
+c3e2fd50-3200-4a85-80d2-0c6290723664,Rhonda Massey,william34@example.com,Notebook,Stationery,1,5.99,5.99,2025-01-01,"0332 Cummings Orchard Apt. 853
+Holmesburgh, NH 13491"
+62264695-bb34-4a2b-85c0-b1a30c8d49c9,Jose Jones,christopher13@example.com,Laptop,Electronics,1,899.99,899.99,2025-01-01,"7601 Petty Falls
+Port Andrea, CA 58211"
+386cfd52-6a68-44fc-bef5-ad733fea34a4,Robert Pearson,reedelizabeth@example.com,Laptop,Electronics,7,899.99,6299.93,2025-01-02,"6114 Roberts Harbors Apt. 376
+South Nicolebury, DC 61702"
+d10ca1fc-11bb-4823-8c62-707ee2830b28,Deborah Cortez,mpeterson@example.net,Notebook,Stationery,3,5.99,17.97,2025-01-01,"3309 Heather Parkways
+Dylanville, NC 07003"
+ea7d61cd-c876-4ee8-b3bb-32c911420562,Alexis Myers,brandy36@example.org,Coffee Maker,Home Appliances,2,79.99,159.98,2025-01-02,"110 Mitchell Bypass Apt. 804
+North Heidiborough, NV 24624"
+5aba3ed3-4d8c-42a5-9f8c-b6ad21f688b0,James Simmons,jonathan12@example.org,Desk Chair,Furniture,6,129.99,779.94,2025-01-02,"27886 Anthony Motorway Suite 263
+Port Jordan, OH 15577"
+83554593-a410-44e1-a780-d4cfdea319c6,Maria Harper,hughesjohn@example.net,Sneakers,Fashion,9,59.99,539.91,2025-01-02,"63091 Michael Parkways Suite 487
+Joeltown, MI 24216"
+f15c394a-12bf-41aa-be2d-b3d0d35e5ff1,Jodi Cross,mallorybriggs@example.net,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-01,"128 Martin Alley
+Taraberg, NH 78810"
+d529305f-e3aa-4718-8be9-a5f735509176,Samuel Warner,jamiecopeland@example.org,Laptop,Electronics,8,899.99,7199.92,2025-01-02,"8422 Martin Parkways
+Jenniferfurt, MH 82508"
+c2ab07c9-217f-4ae9-b720-396a79580262,James Carey,cindy34@example.org,Blender,Home Appliances,3,99.99,299.97,2025-01-02,"PSC 0605, Box 6594
+APO AP 02332"
+a0cd697d-c244-4a46-ac2a-48f0f0d2e810,Brian Barton,pdavis@example.net,Coffee Maker,Home Appliances,8,79.99,639.92,2025-01-01,"425 Nichols Ways Apt. 890
+Ricardomouth, NM 90540"
+8fd21c2e-d803-4fe8-9836-71769ea90af7,Kristen Soto,lance37@example.org,Backpack,Fashion,6,39.99,239.94,2025-01-02,"0086 Kelly Inlet Suite 121
+South Ernest, MP 02985"
+656e827a-1ecb-48d5-b5b3-c98df28b9ef2,Steven Nelson,andersongreg@example.com,Backpack,Fashion,10,39.99,399.9,2025-01-01,"98167 Steele Highway
+West April, CA 77257"
+9875276d-3d6e-4120-8e7f-b0cb5284b3ab,Craig Gill,david83@example.org,Sneakers,Fashion,3,59.99,179.97,2025-01-01,"83529 Henderson Lane
+Leeville, IA 98152"
+efc3a1fc-23d6-49be-a786-9a3c10d7a158,Charles Martin,johnsontravis@example.net,Water Bottle,Accessories,8,19.99,159.92,2025-01-02,"872 Hannah Pass
+Shieldsshire, LA 06988"
+aab72cc7-f546-443b-a265-778563b43c0e,Leslie Perry,susan10@example.net,Water Bottle,Accessories,4,19.99,79.96,2025-01-02,"5910 Paula Keys
+Gilmorechester, KS 17248"
+8a50e060-df50-4712-bf31-4e9f8ef913e8,Hannah Jennings,thomas57@example.com,Desk Chair,Furniture,5,129.99,649.95,2025-01-01,"37622 William Ford
+North Jamesbury, TX 17938"
+40b96a0c-3062-4bde-9f8b-32b95527c03f,Albert Thomas,pgibson@example.org,Backpack,Fashion,3,39.99,119.97,2025-01-01,"150 Miranda Wells Suite 505
+Miguelside, IA 68991"
+2ba01f5c-b74b-4eef-9291-ab77f3c4511d,Tonya Fields,michael59@example.org,Headphones,Accessories,8,49.99,399.92,2025-01-01,"7399 Rebecca Garden
+Smithstad, NC 44059"
+e22fe0f6-915d-4802-bace-94abbd4ac6f7,Sonya Gonzales,langashley@example.com,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-01,"5844 Emily Stream Suite 096
+Lake Nathan, DE 95411"
+178a874d-67e4-4efe-bc9c-ad4e8f3c4e86,Michael Chavez,thompsonconnor@example.net,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"5849 Kevin Circle
+Simpsonview, NM 59809"
+b07516a2-e937-4b2d-bf7c-b0154bb420eb,Melanie Garcia,pamela95@example.net,Notebook,Stationery,9,5.99,53.91,2025-01-01,"4705 Crystal Plains Suite 956
+Port Crystal, AK 72899"
+d8aafeea-2b56-48a8-961e-063b67c5fb75,Marc Scott,cindy53@example.net,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"2452 Buckley Inlet Suite 783
+Wilsonview, AS 33820"
+6293b0e2-2722-473b-bf7e-7a5a6f12f25c,Robert Gray,xroberts@example.com,Backpack,Fashion,2,39.99,79.98,2025-01-02,"101 Maxwell Mews Suite 165
+Port Melissafort, FL 54160"
+a1bdeb43-a4d6-4c25-b60f-55d2be892541,Jacob Mitchell,fisherandrea@example.com,Blender,Home Appliances,1,99.99,99.99,2025-01-02,"1890 Ashley Hollow
+Yorkfurt, NC 00706"
+91992d65-6631-4753-a1f6-0e9894fdd532,Doris Pierce,lisa36@example.org,Water Bottle,Accessories,5,19.99,99.95,2025-01-02,"954 Beard Stravenue Suite 654
+South Christineburgh, KS 17725"
+af59a7bd-b38a-4c72-aacc-ef4c1ccdf63b,Justin Smith,andrew79@example.net,Headphones,Accessories,9,49.99,449.91,2025-01-01,"831 Ralph Wall Suite 273
+South Timothy, FL 72510"
+761e48a5-41a1-47a1-b23e-d30ab29a0395,Joseph Rose,rodriguezkelly@example.net,Sneakers,Fashion,8,59.99,479.92,2025-01-02,"7891 Mark Brook
+Susanport, HI 24472"
+8f869fd4-b0e6-4fae-bd51-ace9885c7e55,Colton Martin,jnewton@example.net,Blender,Home Appliances,2,99.99,199.98,2025-01-02,"83782 Morales Estate
+South Megan, SC 00767"
+ac37f4e6-1b98-4d91-aa96-7a436462cee6,Benjamin Golden,tyler24@example.com,Smartphone,Electronics,5,699.99,3499.95,2025-01-02,"Unit 7588 Box 7071
+DPO AA 10720"
+3898ddb2-6bd2-4608-a77c-8addef60dfc0,Kristen Spears,yhoward@example.com,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-02,"6930 Billy Pines
+Ortegaburgh, OH 27042"
+923de2f1-7c2f-4f12-af14-a62294a76995,Michael Parks,connerchristopher@example.net,Sneakers,Fashion,2,59.99,119.98,2025-01-02,"209 Scott Mall
+Baldwinburgh, MH 27440"
+5b6fa5f8-e931-4597-b4df-1119629ff2fc,Amanda Ford,joanberry@example.com,Smartphone,Electronics,8,699.99,5599.92,2025-01-01,"9956 Michael Coves
+Dixonstad, NM 30333"
+ae224e9e-e362-4931-a1d7-85f843e799f9,Nicholas Goodwin,nguyenwarren@example.org,Desk Chair,Furniture,7,129.99,909.93,2025-01-01,"007 Cole Stream Suite 460
+Youngfurt, IL 33738"
+08f24e74-661e-4b23-a180-830b37d34879,Brian Lucas,tuckerrobert@example.com,Blender,Home Appliances,4,99.99,399.96,2025-01-02,"1126 Collins Fall
+West Sarah, WI 62965"
+4b912d77-4ccb-42be-9576-3f46a59dafa7,Jeffrey Morrow,sherribell@example.org,Backpack,Fashion,4,39.99,159.96,2025-01-02,"PSC 2255, Box 3010
+APO AA 05989"
+f3316508-ddc3-492d-b5cc-a8a5809574bf,Dr. Alan Jones,nelsonsean@example.org,Sneakers,Fashion,8,59.99,479.92,2025-01-02,"036 Gregory Estate
+Port Tracyborough, HI 79309"
+4362e058-e1a0-4214-b6b8-f5ed6e952176,Bruce Webb,cbriggs@example.net,Backpack,Fashion,4,39.99,159.96,2025-01-02,"17466 Ashley Cape
+Kristaborough, SD 69927"
+dfbc9acf-87c9-434f-9ae3-27aec8e3ee2c,Mary Brown,rodrigueztimothy@example.net,Notebook,Stationery,5,5.99,29.95,2025-01-01,"17509 Myers Station Suite 944
+New Jennifer, RI 08132"
+729cca39-d1a1-44fb-907e-c95d212fff8b,Brian Paul,michael95@example.org,Laptop,Electronics,5,899.99,4499.95,2025-01-01,"272 Lewis Roads
+East Timothy, OH 06424"
+bdffa2e5-7dd4-4122-934f-37a90f0f2add,Jordan Williams,candicewest@example.net,Blender,Home Appliances,8,99.99,799.92,2025-01-01,"6086 Brian Drives
+Kleinside, NC 89346"
+eaa60b11-d409-482d-8667-70fdedeca8f6,Crystal Peck,ebridges@example.net,Blender,Home Appliances,6,99.99,599.94,2025-01-02,"708 Anna Landing Apt. 829
+Ericfort, MP 44477"
+831f03d6-d344-44e1-8466-dc3644bd6206,Brenda Paul,tblack@example.com,Headphones,Accessories,8,49.99,399.92,2025-01-02,"PSC 9065, Box 0490
+APO AP 90806"
+2bee01ee-f21e-4962-a97a-abc81bb57587,Tanya Moreno,jacqueline10@example.net,Desk Chair,Furniture,6,129.99,779.94,2025-01-02,"1847 Sarah Valleys
+Port Sarahmouth, KY 10775"
+ac94b43b-5e1f-4b42-bbb7-4e4a29a8b149,Sharon Nichols,danielfoster@example.net,Sneakers,Fashion,4,59.99,239.96,2025-01-02,"5075 Donna Island
+Cookmouth, NC 54058"
+f7d9d8b7-3bd7-4787-a4f6-c8a5ece4c660,Amy Conner,zlane@example.net,Backpack,Fashion,6,39.99,239.94,2025-01-01,"Unit 9395 Box 6625
+DPO AE 97764"
+2867c4ba-62cc-4fa9-aee3-ddd3b6a86353,Jennifer Bowen,james80@example.net,Smartphone,Electronics,8,699.99,5599.92,2025-01-01,"392 Peterson Stream
+Garciatown, IL 27951"
+385c07b5-76ba-4b91-b005-dbc08f6fbdf8,Andrew Matthews,elliottmark@example.net,Backpack,Fashion,10,39.99,399.9,2025-01-01,"78418 Tanner Mountain Suite 138
+Clarkland, FL 31761"
+02c0e1fc-57a0-4d07-900a-64741317502a,Robert Aguilar,annewallace@example.com,Backpack,Fashion,6,39.99,239.94,2025-01-02,"938 Weaver Ridge
+Connorport, NH 90454"
+d83e6974-974c-4715-aac5-642ff8518276,Connor Sawyer,nicholasobrien@example.org,Desk Chair,Furniture,7,129.99,909.93,2025-01-01,"USNS Lewis
+FPO AE 41127"
+63f93a40-8e39-433d-bea1-ee6a3663b26e,Melissa Gould,jonfoley@example.org,Smartphone,Electronics,7,699.99,4899.93,2025-01-02,"722 White Mill
+Hernandezshire, ME 63194"
+df818da2-38f5-4179-861a-1448b64a49c8,Ryan Ryan,zbrown@example.com,Water Bottle,Accessories,5,19.99,99.95,2025-01-01,"06731 Lam Shore Apt. 221
+East Jenniferfurt, CA 15701"
+13da2ed9-d849-4fc7-902e-2d4743805590,Kenneth Smith,ureynolds@example.net,Desk Chair,Furniture,8,129.99,1039.92,2025-01-02,"7442 Walker Meadows Suite 954
+South Jeremystad, AS 18665"
+aefcbf98-6246-471a-994a-14ffed70a62f,Jodi Watkins,gonzalezjose@example.net,Headphones,Accessories,6,49.99,299.94,2025-01-02,"64037 Nicholas Keys
+Port Carly, TN 08057"
+bdec978c-7e45-417e-861a-eefd08517ea5,Jose Jones,allisonclark@example.org,Notebook,Stationery,6,5.99,35.94,2025-01-02,"25736 Moore Hill
+Monicafort, MP 96269"
+2ba6cf00-bc0c-434b-96c1-29bd2f1bc966,Jeffery Jimenez,griffinrenee@example.net,Blender,Home Appliances,8,99.99,799.92,2025-01-02,"44463 Richard Center Suite 927
+West Frankville, ND 99857"
+7ae6f989-2ef0-41e6-9813-7241817aa94c,Pamela Gonzalez,heather15@example.org,Notebook,Stationery,5,5.99,29.95,2025-01-02,"11139 Amanda Garden Suite 537
+Durhamview, CO 23448"
+f1ef05c1-ee0e-46c2-8c61-bb0b30730d34,Jasmine Mccoy,ronaldanderson@example.net,Sneakers,Fashion,10,59.99,599.9,2025-01-02,"7133 Ian Field Apt. 880
+Lisafurt, ID 23650"
+adb7b554-6373-4433-84c1-bb2ce58a8e91,Lisa Webb,guzmanbrent@example.net,Water Bottle,Accessories,1,19.99,19.99,2025-01-01,"688 Espinoza Gardens Apt. 533
+New Tylerland, ME 55180"
+44d12e58-d4a6-44c3-9aae-fa0a51d96bb0,Gregory Powell,colonjoyce@example.net,Backpack,Fashion,5,39.99,199.95,2025-01-02,"94960 Cole Canyon
+Jacksonstad, PR 13110"
+cb3f4cf0-8806-4ff0-9f74-1e38c16d59a5,Jessica Gonzales,perryashley@example.com,Water Bottle,Accessories,4,19.99,79.96,2025-01-02,"00428 Erickson Lock
+Lyonsmouth, NM 95588"
+e71e8505-2c9a-4cfc-a903-6d281f2adbdd,William Bush,msmith@example.org,Laptop,Electronics,7,899.99,6299.93,2025-01-02,"35700 Alexander Vista
+West Ryan, MT 01106"
+62a478f6-2cff-4aa4-97f2-79fd37359b7c,Steven Pittman DDS,tbrewer@example.org,Laptop,Electronics,4,899.99,3599.96,2025-01-02,"0316 Sandra Ville Apt. 976
+Sanchezville, NM 47277"
+45ae87c3-1a64-4137-8a95-41601c32b4f8,Brent Powell,theresacurry@example.net,Desk Chair,Furniture,8,129.99,1039.92,2025-01-02,"302 Marshall Dam Suite 004
+Martinfurt, DC 09375"
+53b4b5b5-a669-481c-a9b4-b7fd0b8e9323,Kyle Ward,padams@example.org,Blender,Home Appliances,8,99.99,799.92,2025-01-02,"4653 Alexandria Flat Suite 727
+Duncanville, MD 38229"
+7b4b5ce8-d748-47e1-967a-ea0ce9af4b05,Travis Barber,delgadopenny@example.org,Blender,Home Appliances,4,99.99,399.96,2025-01-02,"7952 Gary Lane
+Vanessaburgh, NE 66146"
+08d9807d-efc8-4600-a4d5-0a4506a181a2,Dr. Keith Rivera,denise04@example.org,Smartphone,Electronics,1,699.99,699.99,2025-01-02,"5431 Smith Harbors
+North Robertfort, IN 84944"
+951b8256-adc3-4636-9a30-a85ec22147ad,Jessica Richardson,robinjones@example.net,Laptop,Electronics,10,899.99,8999.9,2025-01-02,"994 Jesse Trace Suite 844
+Lake Christopherville, LA 47448"
+b126e460-c0f9-483d-840b-1a52d0364e2b,Gerald Morrison,fcuevas@example.net,Coffee Maker,Home Appliances,10,79.99,799.9,2025-01-02,"92437 Jones Squares Apt. 580
+East Jenniferburgh, NM 77903"
+84a46391-6a07-4cbc-b8ab-b10c8386cf04,Shaun Fuller,pricewalter@example.org,Headphones,Accessories,8,49.99,399.92,2025-01-01,"0711 Michelle Centers Apt. 082
+East Jameschester, AL 71426"
+8efcbdad-f03b-4bd5-a6fb-b84641ef5ddd,Tamara Glass,lenicole@example.com,Desk Chair,Furniture,5,129.99,649.95,2025-01-01,"678 Daniel Oval Suite 693
+Tylerton, AL 29263"
+1d0e9d5f-1c64-4e3e-9b48-8abeadcde62d,Sheila Lloyd DVM,ukhan@example.org,Desk Chair,Furniture,9,129.99,1169.91,2025-01-01,"46923 Rodgers Pike Apt. 431
+East Jamie, SD 98568"
+a6e86283-7fa9-4925-853f-9a9962a14bb9,Lori Ramirez,tiffanygarrett@example.net,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"578 Williams Fork Apt. 258
+Adamstown, UT 71346"
+cab24aef-770c-4647-aa4e-bc5954381d6a,Michael Shaw,codyrogers@example.org,Water Bottle,Accessories,4,19.99,79.96,2025-01-01,"377 Miller Lodge Suite 955
+Maryshire, CA 30094"
+516106d6-d9d3-441f-972e-354b94d7cdab,Barbara Murillo,laura10@example.org,Water Bottle,Accessories,9,19.99,179.91,2025-01-02,"027 Taylor Squares
+New Melvinshire, PR 60342"
+3811baef-782d-4017-99dc-3c89312b6af0,Elizabeth Schmidt,vthomas@example.net,Headphones,Accessories,10,49.99,499.9,2025-01-02,"212 Tiffany Circle
+East Nicolechester, SC 59012"
+d845b94b-9e4f-4d45-a99d-f51d50864db5,Michael Lopez,lreynolds@example.org,Sneakers,Fashion,2,59.99,119.98,2025-01-02,"57010 Katie Shores Suite 660
+Jenniferfurt, AS 78590"
+8d22c254-a99f-48a3-bdbe-d517289cc8a1,Juan Gutierrez,rodney09@example.org,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"212 English Summit
+New Amanda, IA 49578"
+9b6dadec-380e-48cb-aa09-922e3a7ee058,Christopher Roberts,charles31@example.org,Sneakers,Fashion,8,59.99,479.92,2025-01-01,"6808 Michael Expressway
+Ericport, RI 74469"
+fa38b819-cf67-47e8-8136-d9f3043991b3,Wendy Strong,janetaylor@example.net,Headphones,Accessories,6,49.99,299.94,2025-01-02,"USS Villarreal
+FPO AP 90486"
+e3dbe3aa-1a61-4e84-933e-a16594e4dc5a,Dr. Samuel Silva,moorealejandro@example.org,Backpack,Fashion,5,39.99,199.95,2025-01-02,"22171 Sarah River
+East Emily, NM 25116"
+04031ff2-75b7-42bf-8e42-2530cfb1fe6a,James Roberts,zjohnson@example.org,Water Bottle,Accessories,3,19.99,59.97,2025-01-02,"5279 Fox Radial
+East Edward, WY 88312"
+29df769b-6b2e-40ea-89a9-c6f2a034bc6c,Steven Green,edwardsyvette@example.org,Desk Chair,Furniture,3,129.99,389.97,2025-01-01,"578 Jensen Causeway Apt. 976
+Port Nicholas, FL 66707"
+32e10aa8-c5df-4892-997a-50cade0d60f6,Tiffany Hawkins,nbenson@example.net,Backpack,Fashion,8,39.99,319.92,2025-01-01,"968 Baldwin Valleys
+Hernandezshire, PA 92184"
+64974b73-f228-4b0b-b3e2-c96a0a469775,Richard Shelton,ashley20@example.com,Smartphone,Electronics,5,699.99,3499.95,2025-01-01,"491 Amy Plaza
+Daleport, MN 85193"
+1b28a1c4-ca2b-44f4-9240-ea7cf899e9d2,Jessica Bush,jacksonmaria@example.net,Sneakers,Fashion,6,59.99,359.94,2025-01-01,"38104 Moreno Lights Apt. 171
+East Tiffanyville, DC 45943"
+a0590b4c-9229-4b0d-9514-290e7e7db1e8,Charles Martin,gwells@example.org,Sneakers,Fashion,10,59.99,599.9,2025-01-02,"82361 Rebecca Track Suite 759
+South Markland, TX 49625"
+146fb2c1-f31f-44b0-ad39-29986b45e96e,Kyle Cole,caitlinchan@example.org,Headphones,Accessories,9,49.99,449.91,2025-01-01,"Unit 6651 Box 6051
+DPO AE 97374"
+3f4aa216-ae0d-4747-ae58-ce67c2a12298,Matthew Krause,ramseycathy@example.com,Laptop,Electronics,1,899.99,899.99,2025-01-01,"52178 Medina Flat Apt. 841
+South Stevenburgh, KY 12547"
+fa7a1dd2-6928-4ac3-931f-7ab75a0a86be,Andrew Thomas,wernerpaul@example.com,Laptop,Electronics,2,899.99,1799.98,2025-01-02,"948 Carter Circles Apt. 262
+West Michael, MS 26435"
+835d62cf-f90c-4bcf-9e19-53d13a498296,Robert Gomez,millschad@example.org,Sneakers,Fashion,7,59.99,419.93,2025-01-01,"PSC 6707, Box 5117
+APO AP 31137"
+0726b3d7-8dfa-42f4-b84c-540cef4d36ad,Jared Davis,juanjohnson@example.org,Smartphone,Electronics,1,699.99,699.99,2025-01-02,"50497 Martha Rapids
+Mckinneyshire, SD 10423"
+bad3567e-12c1-41e5-a39d-850e7ae5000d,Julia Fields,jamestucker@example.net,Laptop,Electronics,9,899.99,8099.91,2025-01-02,"38649 Teresa Courts
+Heidiville, KY 33848"
+6e3a242b-631a-4aa5-955b-596967b649eb,Alexandra Sanchez,rmcdonald@example.org,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-01,"435 Allison Parkways Suite 085
+Maldonadomouth, AK 93089"
+58e1ef29-7f3d-4d90-a158-677345f780e1,Jacqueline Burnett,ksantiago@example.net,Sneakers,Fashion,7,59.99,419.93,2025-01-01,"USS Little
+FPO AA 37185"
+a36d0e62-c2c9-4492-8411-98af87d6cea2,Daniel Hester,natalie81@example.com,Laptop,Electronics,6,899.99,5399.94,2025-01-02,"438 James Bypass Suite 698
+Williamschester, DC 77865"
+b2029f94-37fb-447c-ac74-52ccda3dc116,Tiffany Greene,matthewmccarty@example.com,Water Bottle,Accessories,9,19.99,179.91,2025-01-02,"6220 Fritz Summit Apt. 052
+Johnsonfort, CO 90178"
+155e181f-ec13-471b-8212-f516a44d0590,Bryan Dominguez,suzanne99@example.org,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-01,"916 Karen Plain
+Timothytown, FL 65332"
+fc61e396-12a3-4cbc-bf93-c0563795caeb,Benjamin Taylor,ufoster@example.net,Backpack,Fashion,9,39.99,359.91,2025-01-01,"56772 Allen Ports Apt. 950
+West Michelleview, CO 58915"
+bd0a36b4-842c-4edf-82a7-af75beb9441e,Timothy Hoover,nwilliams@example.com,Desk Chair,Furniture,4,129.99,519.96,2025-01-02,"21816 Wall Groves Apt. 669
+New Albert, MT 69157"
+36279b82-74b7-4b64-8581-096847db4af6,Jill Austin,johnsonjohn@example.org,Headphones,Accessories,8,49.99,399.92,2025-01-02,"8303 Aaron Burgs Suite 442
+Mckenzieview, CT 37656"
+4b79153f-920d-4b91-a310-33a4d6c61bad,Amy Vasquez,ryan62@example.net,Headphones,Accessories,4,49.99,199.96,2025-01-02,"147 Deborah Mills
+Port Joshua, MD 24560"
+0f2ace40-e1ac-4494-bb93-b05ec4c8bed9,Jenna Mccoy,laurenrobinson@example.org,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"403 Peterson Highway
+Michellefort, NM 65674"
+bcb619bc-0f7c-49d7-8cd1-b5fda2e80056,Sharon Smith,michaelreynolds@example.com,Sneakers,Fashion,3,59.99,179.97,2025-01-02,"221 Krause Underpass Apt. 780
+Karichester, VA 24880"
+603af2f4-18ea-4904-8573-cbad98fd7ee7,Julia Lopez DDS,maxwellmichael@example.net,Laptop,Electronics,3,899.99,2699.97,2025-01-02,"62401 Alyssa Meadows Suite 045
+Port Alexander, ID 82351"
+c07b9034-d289-4e51-8a99-b20023833a8e,Keith Johnson,michael77@example.com,Laptop,Electronics,9,899.99,8099.91,2025-01-01,"43504 Sheena Mills
+Daniellemouth, GU 38476"
+a3ec0571-4893-40f6-8182-969405f39a1c,James Hernandez,sally02@example.org,Notebook,Stationery,9,5.99,53.91,2025-01-01,"12414 Hodges Mountains Suite 900
+Tuckerstad, ID 97422"
+17b50efc-6bb0-40f3-9194-f9e931e4b55d,Danielle Sosa,nicholas76@example.net,Water Bottle,Accessories,5,19.99,99.95,2025-01-02,"741 James Pines
+East Amyberg, PR 04561"
+7311e2d3-eccd-42f1-a89a-0a038ffc51b9,Charlotte Thompson,laura55@example.net,Blender,Home Appliances,1,99.99,99.99,2025-01-02,"491 Fields Lodge Suite 684
+Port John, DE 98562"
+5937a54e-8166-422b-9b5e-a07008e77e95,Daniel Boyd,upage@example.com,Blender,Home Appliances,1,99.99,99.99,2025-01-01,"19133 Cory Mill Suite 090
+Port Kathleen, MA 61269"
+5bcb3b14-75a8-43ef-86cd-f858174bb203,Rebecca Miller,hodgeskimberly@example.com,Backpack,Fashion,9,39.99,359.91,2025-01-02,"406 Hamilton Isle Suite 098
+Jenkinshaven, ME 56319"
+e7108962-1f44-433d-b64e-61a14341aceb,Benjamin Gonzalez,kevinpowell@example.org,Sneakers,Fashion,8,59.99,479.92,2025-01-02,"99396 Osborn Unions
+Lake Mary, DE 61700"
+94613117-e666-42c3-a054-9d87f72053f4,Mark Henderson,zbutler@example.net,Headphones,Accessories,8,49.99,399.92,2025-01-01,"65860 Jacobs Run Suite 244
+Wilkinsontown, PW 84688"
+71651bd5-d146-4991-b9d7-8915352aed7d,Timothy Fletcher,benjaminjohnson@example.org,Smartphone,Electronics,3,699.99,2099.97,2025-01-01,"447 Jill Street
+East Claytonfort, MP 34143"
+4a9756c0-4906-4d0d-9212-2bdd6f0d0052,Sarah Johnson,robert26@example.com,Desk Chair,Furniture,2,129.99,259.98,2025-01-01,"74550 Ashley Court Apt. 540
+New James, OH 66066"
+d7154ad0-dcc1-4160-9506-593239264c91,Lucas Scott,georgehenson@example.net,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-01,"635 Amy Ville Apt. 652
+Port Krystal, WI 58850"
+995ff026-541a-47c0-8341-884d60ff1d59,Matthew Henry,chill@example.net,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"75330 Stephens Extensions
+New Sandratown, AR 45998"
+1842ceb5-7d67-4489-8152-95e8bfb99e81,Gail Ellis,apowers@example.org,Blender,Home Appliances,1,99.99,99.99,2025-01-02,"012 Miller Wells
+South Michael, GA 69839"
+3e3644d6-862c-4b5a-95fe-8c8569a10fbd,James Little,annelliott@example.com,Notebook,Stationery,5,5.99,29.95,2025-01-01,"901 Terry Tunnel
+South Jeanetteton, HI 23649"
+90aee2de-0ea6-412d-8b29-c8766853f031,Michael Monroe,henryjames@example.com,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-02,"5831 James Drives Suite 006
+Brucechester, WY 15592"
+d9ab7f3d-dbdd-44a7-8026-830faedee879,Mark Schwartz,cynthia72@example.org,Sneakers,Fashion,10,59.99,599.9,2025-01-01,"724 Williamson Flat
+Tinafurt, OR 62491"
+b6f07047-ff75-4b6b-842b-2faddc42e213,Tamara Miller,tracystone@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"USNS Lynch
+FPO AP 21136"
+3f5aa40e-bf39-4dcc-971b-6b5e940d0026,Lauren Hickman,hendersonkayla@example.com,Water Bottle,Accessories,4,19.99,79.96,2025-01-01,"PSC 6613, Box 4335
+APO AA 12588"
+3e4bc898-04ec-4fb7-b93d-c232b5f4c7ea,Rachel Garcia DDS,stephen43@example.org,Sneakers,Fashion,3,59.99,179.97,2025-01-02,"27441 Shannon Forge
+Mariaview, MH 11052"
+e2c4a06c-7cb1-4816-a54f-94b48818b711,Erika Hopkins,bmorales@example.com,Headphones,Accessories,1,49.99,49.99,2025-01-01,"1548 Lee Garden Suite 378
+East Cynthia, VT 25436"
+a3fa84eb-7e2e-4a90-a6b9-8837bf138a64,Christopher Martinez,eparker@example.net,Backpack,Fashion,1,39.99,39.99,2025-01-02,"4326 Perez Spur Apt. 941
+South Phillip, UT 30267"
+91bcefdb-c3a0-4497-bba8-6c1720322ee0,Crystal Nelson,johnfields@example.com,Smartphone,Electronics,6,699.99,4199.94,2025-01-01,"09710 Serrano Villages Apt. 948
+North Christophertown, VA 99932"
+a5dd1ade-b5f8-4762-9ab8-ab19f9b2ddbd,Chris Green,michaelrich@example.com,Notebook,Stationery,10,5.99,59.9,2025-01-02,"9158 Rachael Junctions Apt. 054
+Lake Saraburgh, VT 84773"
+d5c9d868-ad40-46e8-8bd6-b500ed71736a,Colleen Skinner,myerstodd@example.com,Laptop,Electronics,7,899.99,6299.93,2025-01-02,"002 Jon Stream Suite 252
+Craigberg, MP 79386"
+1b9950a7-cbab-4bcb-ae95-11a3f7f0e732,Rodney Callahan,george04@example.org,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-02,"998 Melinda Station Suite 137
+South Shawnfurt, MA 85813"
+9e6edb26-74d4-4087-81e9-2243ddc02055,Jonathan Riddle,alex58@example.net,Water Bottle,Accessories,8,19.99,159.92,2025-01-02,"757 Williams Drives Apt. 039
+Catherinetown, NJ 55718"
+bd0cff0e-479d-4b00-bc10-12b210b85f93,Maria Lin MD,khuerta@example.net,Desk Chair,Furniture,4,129.99,519.96,2025-01-02,"7950 Maria Cove
+East Erikchester, MI 07930"
+643c46ac-f176-4da6-a8f4-eaeaa969be0e,Amy Hayes,bhobbs@example.org,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"144 Jennifer Junction Apt. 373
+North William, MI 20928"
+adfbe6cc-bef6-4a36-9847-84817b5aeb17,Richard Howard,amanda58@example.com,Desk Chair,Furniture,3,129.99,389.97,2025-01-01,"335 Jacqueline Views
+Carolinemouth, VT 20180"
+1f77d4e4-8a9f-4b03-b815-073fb591fca0,Jose Brown,jacksonzachary@example.org,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"83809 Willis Knolls
+Bradleymouth, CO 61765"
+f988f739-b39e-49b6-8a37-f948c1f9eeb8,Thomas Martin,heatherjacobson@example.com,Water Bottle,Accessories,3,19.99,59.97,2025-01-02,"Unit 5114 Box 6966
+DPO AA 23914"
+4b38cddf-04b4-42fd-ba73-a2a11fcea7d6,Jack Moore,nthomas@example.org,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"PSC 9211, Box 1095
+APO AE 66829"
+a137b33e-0319-406a-bd9d-060fb08b950b,Tracy Peters,cody36@example.com,Headphones,Accessories,2,49.99,99.98,2025-01-01,"1985 Patricia Brook Apt. 352
+West Johnborough, WA 75911"
+3e13d614-8aa0-490c-b9ba-b31f2e846698,Wanda Clay,woodsbrooke@example.org,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"5567 Eric Island Apt. 635
+Denisehaven, KS 70924"
+a637ef19-7ebd-4d76-8deb-49b3f8dd8bf9,Charlene Wheeler,jacobsjesus@example.com,Water Bottle,Accessories,2,19.99,39.98,2025-01-02,"305 Carter Shores
+Browntown, GU 99263"
+6a537bf4-a162-4cdc-8627-09f6f03339e7,Austin Graham,lross@example.com,Water Bottle,Accessories,4,19.99,79.96,2025-01-01,"77652 Young Squares
+Taylorfort, MI 72185"
+5af7499e-faf7-4267-a462-c9ecd6f00af7,Eric Hudson,heatherwatkins@example.com,Backpack,Fashion,8,39.99,319.92,2025-01-02,"950 Herrera Branch
+Erikafurt, IL 97612"
+851ea9fb-ebb5-4a6c-8672-27ee7bf2e545,Mrs. Sharon Mccarty,hsalazar@example.net,Sneakers,Fashion,7,59.99,419.93,2025-01-01,"40463 Brandon Knolls Apt. 269
+Sullivanborough, PA 91506"
+d42b8860-acc8-4b6a-bb7e-aee287e9db0f,Rebecca Davis,thomas64@example.com,Smartphone,Electronics,9,699.99,6299.91,2025-01-01,"USNS Davis
+FPO AA 70214"
+3189bf3f-2ff9-4beb-ba45-a4a58191f8b2,Jose Mckenzie,michael97@example.com,Laptop,Electronics,7,899.99,6299.93,2025-01-02,"0719 Kent Gardens
+Markshire, LA 28243"
+46e50c70-7155-44a2-9109-c8ffa0bf8aa0,Ms. Kelli Gutierrez DDS,kaitlin06@example.com,Headphones,Accessories,7,49.99,349.93,2025-01-02,"24588 Rich Vista Suite 530
+Port Erin, NV 28920"
+ed2676d6-22c0-44b6-8748-94bf0bc2ac32,Annette Browning,bonniearias@example.net,Blender,Home Appliances,6,99.99,599.94,2025-01-01,"PSC 3130, Box 5421
+APO AP 34011"
+13d91ccf-e401-4bf9-aa81-fa25c45b7523,Lori Colon,brent37@example.org,Blender,Home Appliances,7,99.99,699.93,2025-01-01,"6520 Elaine Turnpike Suite 959
+Lake Russellburgh, DC 55228"
+2950e6a2-e41b-4a4c-b740-e43663ee0a90,Tammy Jacobson,jasmin97@example.net,Laptop,Electronics,7,899.99,6299.93,2025-01-01,"PSC 3481, Box 6373
+APO AE 02234"
+ce8fcc9b-366e-444d-9072-06e2c24bd97b,Richard Caldwell,kellibennett@example.net,Backpack,Fashion,10,39.99,399.9,2025-01-02,"Unit 0396 Box 7609
+DPO AE 11782"
+b87b6c2e-d8f3-4081-b10e-432bda77eb6f,Stephen Clark,gnguyen@example.org,Smartphone,Electronics,7,699.99,4899.93,2025-01-01,"41515 Cox Forks Suite 022
+Rothbury, TN 68005"
+45626855-016a-4b37-affb-7a6d48caeea6,Debbie Castillo,michaelrodriguez@example.org,Notebook,Stationery,6,5.99,35.94,2025-01-02,"479 Moore Flats Apt. 711
+Lake Cynthia, TX 53526"
+485cad42-8858-482c-9ace-c13339bbdeb4,Eric Jordan,barbaralutz@example.com,Backpack,Fashion,5,39.99,199.95,2025-01-02,"4041 Alexis Union Apt. 696
+Lake Malloryborough, KS 07365"
+1f7215ad-deaa-4a2e-83e2-8fd4b5e3c30b,Andrea Decker,ashleysanders@example.org,Laptop,Electronics,2,899.99,1799.98,2025-01-02,"451 Emily Lights
+Hernandezmouth, HI 06068"
+2d3cfda9-cab5-44fc-bc10-e37eacd3fc4b,Brian Aguilar,fshort@example.org,Sneakers,Fashion,7,59.99,419.93,2025-01-01,"07193 Watkins Freeway
+Carrieville, MT 77300"
+6e4cb3c6-10a1-47c6-bbb2-5af8508a54e4,Nancy Warner,denise75@example.net,Blender,Home Appliances,3,99.99,299.97,2025-01-02,"4631 Richard Ramp Suite 266
+Fisherberg, AK 22737"
+5a5a6138-bc81-40e4-b531-a2c080cb48c3,Jennifer Baker,lthompson@example.net,Sneakers,Fashion,4,59.99,239.96,2025-01-01,"329 Wood Land
+Port Emilyview, SD 60224"
+64bf2401-1640-4552-a0eb-179285225246,Mark Morgan,grayshirley@example.com,Headphones,Accessories,3,49.99,149.97,2025-01-02,"542 Mitchell Mews
+Millerton, MH 77921"
+579b8b37-72cd-42be-ba61-b380d0793652,Kathleen Carrillo,gperez@example.net,Laptop,Electronics,7,899.99,6299.93,2025-01-02,"529 Peggy Mountains Apt. 325
+West Kevinville, IA 39224"
+73396fa6-258e-4a5b-84dc-ff418c576798,Melissa White,mitchellvictoria@example.net,Backpack,Fashion,10,39.99,399.9,2025-01-01,"56962 Carney Prairie
+Lake Sethbury, MT 50514"
+63399baf-1586-4d8b-9bbb-2ea4175dece1,Morgan Hernandez,catherinescott@example.org,Laptop,Electronics,1,899.99,899.99,2025-01-02,"52833 Allen Mews
+North Taylor, VI 45475"
+128da899-9e92-4b01-8ec0-5834b30966ef,Sara Kennedy,leerichard@example.org,Backpack,Fashion,7,39.99,279.93,2025-01-01,"81712 John Ways Suite 875
+Hillfurt, KY 47364"
+7c72f2a5-b7e0-4057-8a73-c8a12e1dff0c,Rebecca Taylor,hramirez@example.org,Sneakers,Fashion,2,59.99,119.98,2025-01-01,"8135 Christopher Plaza Suite 241
+Lake James, ID 11887"
+911f302e-1edc-4104-b058-b6a6c8e43178,Mrs. Donna Fleming,luisbradley@example.org,Desk Chair,Furniture,9,129.99,1169.91,2025-01-02,"86767 Miller Station
+South Jamesside, AK 57177"
+9f5f8cef-65bf-497d-8118-ed127d86e0d2,Sarah Coleman,kevinriley@example.com,Laptop,Electronics,6,899.99,5399.94,2025-01-01,"71550 Taylor Garden
+Brockborough, WA 84016"
+ef64a979-f572-4506-869e-4d7c9d4b9a0b,Shannon Murphy,hnorman@example.net,Blender,Home Appliances,4,99.99,399.96,2025-01-02,"73123 Wise Village Apt. 554
+Roberttown, CA 13384"
+cd2a1a08-a8f7-46a5-850c-4b47abaca7b1,Brooke Wong,christopher00@example.com,Desk Chair,Furniture,7,129.99,909.93,2025-01-02,"27943 Oliver Parks
+Ericksonbury, NE 92658"
+5f4a3935-d39f-4eb1-8cbb-a942c71ba73e,Lori Clark,wayne54@example.net,Blender,Home Appliances,8,99.99,799.92,2025-01-02,"006 Martin Ridges Suite 554
+South Antonio, UT 12275"
+fb8ceb39-c12a-4321-8a38-b2d3b0f87752,Christine Lopez,christina56@example.com,Backpack,Fashion,9,39.99,359.91,2025-01-02,"3893 Morris Divide Suite 578
+Carneyshire, CO 52619"
+04cf3251-0896-4a8f-8910-622146128237,Danny Thompson,shirleyblake@example.net,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"306 Joy Shoal
+South Christinaland, ID 19892"
+bb2de91d-92c5-43b8-99bf-edb56e103ea5,Sharon Clark,vsanchez@example.net,Backpack,Fashion,4,39.99,159.96,2025-01-01,"4395 Adrian Squares Apt. 664
+Webbville, NJ 92747"
+329a6a0d-f217-43a3-9d77-d740b1e2b818,Sandra Brewer,lynchbenjamin@example.com,Smartphone,Electronics,6,699.99,4199.94,2025-01-01,"7352 Stacy Bypass
+Fernandezhaven, NM 77381"
+f735e070-4b8f-472f-8299-0046fc7b8ede,Alexis Sosa,taylorashley@example.com,Sneakers,Fashion,9,59.99,539.91,2025-01-02,"48393 Gregory Drive
+South Brianview, KY 52788"
+79f2c5d1-707e-4b2b-8ce8-1251dd90c79c,Jordan Murphy,jenniferclark@example.net,Headphones,Accessories,8,49.99,399.92,2025-01-01,"7696 Regina Inlet
+Armstrongside, PA 48705"
+78ac7b54-c35b-4a8e-a6c3-8ee1b5afb8ed,Sierra Warren,chavezshawn@example.net,Notebook,Stationery,9,5.99,53.91,2025-01-02,"024 Cuevas Plaza
+Port Jeffrey, TN 69238"
+0c4d9891-b28b-4eaf-82f5-d0ae1066e256,Laurie Owens,jeffrey70@example.net,Water Bottle,Accessories,2,19.99,39.98,2025-01-02,"029 Griffin Meadows Apt. 533
+Karaland, KS 01109"
+89d16b62-5811-4ea5-bd88-00592633da6e,Lorraine Becker,michael72@example.net,Desk Chair,Furniture,3,129.99,389.97,2025-01-01,"09362 Gray Curve
+East Scottberg, HI 46620"
+eb8d3ad0-bb99-4447-9e04-a998e2c4802f,Corey Watkins,maureen89@example.com,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-02,"236 Paul Shoals
+West Aaron, DC 70436"
+20aca1ec-3503-4248-af06-40fda33c7c88,Colleen Smith,natashaharris@example.net,Backpack,Fashion,4,39.99,159.96,2025-01-01,"877 Gardner Walks
+Garzaville, PW 19510"
+2cfd82e3-0e4a-4b0b-905d-6aba2586d368,Paula Taylor,alexanderclark@example.org,Backpack,Fashion,3,39.99,119.97,2025-01-01,"6823 Stevens Ford Apt. 712
+Wardshire, OK 11010"
+af26e18c-3deb-4809-993e-b4ffc248b2ce,Mr. Jacob Douglas,dustin57@example.net,Blender,Home Appliances,6,99.99,599.94,2025-01-02,"PSC 2642, Box 5252
+APO AA 41985"
+cbccca32-a4b3-4f80-b5c4-5c4a2e3a1b11,Theresa Sanders,eli@example.org,Smartphone,Electronics,8,699.99,5599.92,2025-01-02,"03062 Mills Corners Apt. 840
+Scottfurt, RI 69238"
+8798dc86-222c-4088-bc51-93e7530ff772,Rachel Flores,stephen62@example.net,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"765 Jesse Way Suite 189
+Port Kristin, MP 77040"
+e4802681-7cd7-42ac-8a60-143cbd6f871d,Richard Barnes,fcline@example.com,Blender,Home Appliances,6,99.99,599.94,2025-01-01,"5567 Lawrence Underpass
+East Randall, NH 78263"
+bc1afb77-f59e-473d-a5e0-1c4c93fda0ad,Chris Ward,garzaroger@example.net,Headphones,Accessories,5,49.99,249.95,2025-01-02,"521 Evelyn Key
+Rossside, WI 67213"
+a45604b7-2c90-44ae-bfe6-6a92b32aa50f,Stacy Daniels,bellabigail@example.com,Headphones,Accessories,7,49.99,349.93,2025-01-02,"4298 Elizabeth Villages
+Kennethton, VT 54559"
+fd6d2088-0d15-405d-8754-07ed9fd75037,Eric Santos,ralphford@example.org,Laptop,Electronics,1,899.99,899.99,2025-01-01,"08394 Robert Burgs
+Loriburgh, NM 63171"
+43a9f8c1-e102-4d58-a16a-08cda935426d,Timothy Smith,melinda87@example.net,Coffee Maker,Home Appliances,7,79.99,559.93,2025-01-01,"456 Keller Field Suite 374
+Andersonstad, IN 88258"
+750f20aa-4778-40a5-ba72-6bd1b4b65bf0,Eddie Walker,ashleymcgee@example.net,Notebook,Stationery,1,5.99,5.99,2025-01-02,"11086 Kim Roads Suite 249
+Adrianafurt, MN 96479"
+8657d5aa-4650-4c9f-a77b-6415b5c0c695,Samuel Benton,osmith@example.org,Backpack,Fashion,9,39.99,359.91,2025-01-02,"060 Crawford Lakes Apt. 656
+Christineland, AZ 76106"
+18efa178-a22f-4c28-a984-b29347b7fcf8,Elizabeth Castillo,jevans@example.com,Notebook,Stationery,7,5.99,41.93,2025-01-02,"1224 Griffin Well Apt. 371
+West Breanna, AK 90327"
+70b85026-a612-4496-907e-bd585a98f8b1,Daniel Simmons,dbrewer@example.com,Notebook,Stationery,6,5.99,35.94,2025-01-01,"54371 Courtney Isle Suite 688
+Carlosview, IN 99410"
+3d865692-93ee-4722-a4d3-662e345b3851,Kayla Rogers,samanthawright@example.org,Sneakers,Fashion,6,59.99,359.94,2025-01-02,"028 Linda Brook Suite 353
+Port Kennethmouth, CA 71464"
+9ac40814-0917-4c09-9e08-f0242c0323c2,Dakota Jenkins,sherriroberts@example.net,Backpack,Fashion,2,39.99,79.98,2025-01-01,"562 Arnold Landing
+Robleshaven, MP 03128"
+e7a2b8f3-f52d-4c2a-8ead-9995981af191,Jose Brown,damonmartinez@example.org,Blender,Home Appliances,6,99.99,599.94,2025-01-02,"9445 Bailey Park
+North Samuel, VI 19280"
+b015015a-4b2a-4cb2-be34-af41e3f810ce,Sharon Friedman,edwardsmith@example.org,Laptop,Electronics,2,899.99,1799.98,2025-01-01,"83678 Vanessa Bridge
+West Kaitlynborough, NC 02503"
+1746884d-bea3-4935-bb83-fd2b4461ab63,David Barnes,williamssusan@example.net,Laptop,Electronics,3,899.99,2699.97,2025-01-01,"506 Walters Mission
+Adambury, MO 11860"
+c76a488f-70ae-4854-a381-dc6bbf90c74e,Maria Callahan,marqueznicholas@example.net,Blender,Home Appliances,1,99.99,99.99,2025-01-02,"52722 Hansen Drives Apt. 834
+West Caleb, NJ 42942"
+01c6bd4a-4319-4861-91e1-447d71cf2374,Barbara Colon,taylorjoshua@example.org,Smartphone,Electronics,8,699.99,5599.92,2025-01-01,"3554 Moreno Land Apt. 136
+Pruittport, SD 72918"
+a0089b72-aab5-43ed-aacc-d06d94984271,Anna Mcdonald,joyce64@example.org,Backpack,Fashion,3,39.99,119.97,2025-01-01,"42178 Norris Cove
+Barberstad, AZ 52452"
+684a631c-1c4b-4170-b078-e1baf27f9976,Joseph Sullivan,corey78@example.net,Backpack,Fashion,3,39.99,119.97,2025-01-02,"963 Martin Oval
+Danielshire, MD 86548"
+ae3e624f-1b49-4181-9ab4-f7534bfb8452,Anna Williams,georgegarcia@example.org,Desk Chair,Furniture,5,129.99,649.95,2025-01-01,"10168 David Mission
+Peterfort, AK 88270"
+54a855e6-089b-450c-93e3-800da60faa08,Dana Perez,ericachapman@example.net,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-01,"2060 Rebecca Views Suite 027
+Jefferyville, FL 25456"
+552cfcf8-6016-48eb-8e5b-ef6f178e2993,Marcia Ellis,samuelcollins@example.org,Sneakers,Fashion,6,59.99,359.94,2025-01-01,"411 Boyd Brooks Apt. 657
+South Michaelland, NE 64684"
+c57916c8-fe6c-4596-a6b4-1c3370cb8b4f,Eric Adams,natashajones@example.org,Water Bottle,Accessories,7,19.99,139.93,2025-01-02,"2632 Maria Village
+South William, MN 84008"
+5d441364-52c6-4200-b572-97a6dce8ac05,Henry Schwartz,brent50@example.org,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-02,"15727 Melinda Squares Suite 526
+Williamsfurt, UT 86207"
+31a670f5-b219-4599-88b3-3b854460e191,Gabriela Price,dnguyen@example.org,Blender,Home Appliances,2,99.99,199.98,2025-01-02,"37404 Turner Field Suite 669
+North Nicoleborough, AZ 41209"
+dfefa709-394e-44f0-bdc4-31aec27778f8,Ruth Thomas,pauljones@example.com,Water Bottle,Accessories,4,19.99,79.96,2025-01-01,"0093 Amanda Fall
+North Brucefurt, NV 84479"
+cc492129-e594-4831-a26c-474f00d8e31c,Mark Miranda,rvaughn@example.org,Smartphone,Electronics,8,699.99,5599.92,2025-01-01,"40036 Johnson Tunnel Apt. 025
+Davidshire, VI 53475"
+2f689800-bb3f-4897-9f32-727c53c60bf7,Victoria Dickerson,william92@example.net,Laptop,Electronics,4,899.99,3599.96,2025-01-01,"978 Charles Bridge
+West Robertmouth, NC 15692"
+cd3189b8-1955-4ad6-bd4c-9cdc722ba85e,James Horton,marc45@example.org,Blender,Home Appliances,1,99.99,99.99,2025-01-02,"51128 Hodges Pass Apt. 269
+Greenville, OK 97941"
+995da6e4-8a5f-4fe3-8223-6a58154cea17,Tara Gould,smithstephen@example.com,Headphones,Accessories,5,49.99,249.95,2025-01-02,"6913 Brian Rapids Suite 661
+West Jill, PW 62830"
+3f0e5077-b3fa-470f-8647-b9e6e3f07fe7,Jacqueline Rivers,myerssamantha@example.net,Water Bottle,Accessories,5,19.99,99.95,2025-01-01,"8029 Rodriguez Green
+Lake Douglasview, NH 78818"
+b6546011-738f-4cde-9ea7-8d2f166d5c19,Adriana Davis,alexanderbrian@example.com,Desk Chair,Furniture,3,129.99,389.97,2025-01-02,"950 Cortez Expressway
+South Frederickmouth, AZ 28681"
+91658e0e-b516-4c23-b690-07c09b730db9,Amanda Sweeney,beanjason@example.net,Blender,Home Appliances,7,99.99,699.93,2025-01-01,"1836 Hancock Isle Suite 198
+Thorntonbury, MH 36748"
+04fc3b35-fd2d-4fa7-a1ae-e3b2b5370f9e,Harry Burke,aliciaanderson@example.com,Desk Chair,Furniture,10,129.99,1299.9,2025-01-02,"1515 Johnson Turnpike
+Lake Michaelstad, PR 72953"
+adf910be-134e-4136-a570-9114b23d09da,Martin Martin,kathryn95@example.com,Sneakers,Fashion,7,59.99,419.93,2025-01-01,"260 Murphy Ways
+South Devon, RI 44837"
+c0bbff2a-4abe-4bc9-977b-a5abb9812996,Rebecca Brown,igallagher@example.net,Notebook,Stationery,2,5.99,11.98,2025-01-01,"088 Lisa Plains
+New Michaelside, NE 80293"
+cf140530-ba1b-482c-b916-a66c26673b29,Lisa Cross,lisa55@example.net,Headphones,Accessories,4,49.99,199.96,2025-01-02,"17160 Michael Drive Apt. 115
+New Markfurt, RI 81765"
+84a89be9-5c5c-4a4a-a154-64123339c1d7,Ashley Taylor,brownamanda@example.com,Backpack,Fashion,10,39.99,399.9,2025-01-01,"74450 Kristen Plaza
+Shannonshire, IL 88298"
+d594a88d-2756-402a-a65b-a28d68c1b7a9,Eric Gonzalez,yangkathy@example.org,Notebook,Stationery,1,5.99,5.99,2025-01-02,"541 David Common Suite 133
+West Sarahfort, WY 77506"
+eb5bfeef-8a8f-466d-931f-443b63add082,John Grant,manningjennifer@example.net,Laptop,Electronics,4,899.99,3599.96,2025-01-02,"36979 Garcia Lane Suite 457
+Sosaberg, ME 30327"
+52bdfaba-90fe-4da6-880e-cd0a55b3a485,Anthony Anderson,fdurham@example.org,Sneakers,Fashion,2,59.99,119.98,2025-01-02,"0708 Elizabeth Ville
+Gilbertchester, IL 10276"
+529d121b-0582-471a-aff8-0d4c74ded83b,Bonnie Lowery,vnichols@example.org,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-01,"3989 Matthew Camp
+Kruegermouth, NC 06530"
+f8861134-6021-4ea1-b1d9-b8a4a4580555,Marcia Mercer,carpentermanuel@example.org,Notebook,Stationery,10,5.99,59.9,2025-01-02,"PSC 3079, Box 7316
+APO AP 72494"
+d588bf74-c33e-4f1a-aa33-893e61f178b1,Adam Osborne,samuel58@example.net,Backpack,Fashion,10,39.99,399.9,2025-01-01,"USNS Sullivan
+FPO AA 00544"
+9e4cdaeb-8b46-441e-b1ef-5b3a73473d12,Douglas Garrett,medinalaura@example.com,Smartphone,Electronics,3,699.99,2099.97,2025-01-01,"1275 James Tunnel
+Jamesmouth, UT 13521"
+37c608ea-363c-4256-a383-1b67f57475a6,Martin Martinez,mark14@example.net,Coffee Maker,Home Appliances,7,79.99,559.93,2025-01-02,"16741 Greg Meadows Apt. 923
+New Stevenborough, SC 01019"
+924c8a4c-8945-45ac-aa56-4c3c21ba66f8,Jessica Stewart,qcardenas@example.com,Water Bottle,Accessories,10,19.99,199.9,2025-01-01,"Unit 1329 Box 1248
+DPO AE 98451"
+307032d2-13fd-4368-8852-e963a5bb60d0,Edwin Oconnor,xtorres@example.org,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-01,"8540 Robert Alley
+Lake Bradley, HI 35699"
+fab15031-ee76-47ee-bd81-3d0fdd607f69,Mr. Harold Miller,sheila11@example.org,Desk Chair,Furniture,9,129.99,1169.91,2025-01-02,"2358 Blake Parkways Apt. 455
+Port Matthew, MT 56493"
+eae17edf-3571-404c-a61b-de4201a0bec3,Joseph Flowers,murphyjulie@example.com,Sneakers,Fashion,6,59.99,359.94,2025-01-02,"42185 Nichole Shores
+New Stevenside, DC 89158"
+ebaa4885-031c-4a99-96a0-02089d036c69,Erin Medina,awallace@example.org,Backpack,Fashion,6,39.99,239.94,2025-01-01,"51130 Simpson Avenue
+North Derekshire, FL 41221"
+e1661b3c-e852-4303-b533-82774f9385ce,Christopher Thompson,kimberly51@example.org,Water Bottle,Accessories,4,19.99,79.96,2025-01-01,"23250 Jones Extensions
+New Keith, PW 17189"
+ffbcdf03-3aac-469f-acc9-bc897019729b,Hector Davenport,jennifer69@example.com,Notebook,Stationery,8,5.99,47.92,2025-01-01,"11548 Graham Parkways
+North Jennifer, WA 30185"
+f71406fb-ec8e-44db-a954-76c359a438d8,Lisa Mckay,nicholsonkyle@example.org,Blender,Home Appliances,3,99.99,299.97,2025-01-01,"6218 Johnson Highway Suite 057
+Brooksport, DE 08943"
+0ccf0b5b-5d6b-4e5f-963c-5c187a0ee387,Dana Miller,karen75@example.com,Coffee Maker,Home Appliances,6,79.99,479.94,2025-01-01,"5745 Tina Station
+Oliviamouth, MN 79351"
+82190f19-238d-4bcb-b976-e03f8d3836e4,Cheryl Becker,mark99@example.com,Desk Chair,Furniture,8,129.99,1039.92,2025-01-02,"336 Sean Field Suite 578
+Port Jesusberg, MI 45704"
+fa8f34f9-dfcc-4922-9ac4-34215acf76d2,Margaret Houston,rodriguezbriana@example.net,Desk Chair,Furniture,5,129.99,649.95,2025-01-02,"560 Wiggins Cape Suite 323
+West Jamesville, AL 33495"
+1a809868-6d15-4c69-abc4-3d119bf4286f,Amy Colon,myerswilliam@example.org,Backpack,Fashion,1,39.99,39.99,2025-01-02,"263 John Groves
+New Shirleyview, IL 02409"
+85d95e8b-c0ac-4c98-a0e0-b9e738498642,Sean Estrada,amoreno@example.com,Desk Chair,Furniture,2,129.99,259.98,2025-01-02,"1230 Jacob Port Suite 565
+Martinezmouth, AZ 67584"
+01b086ba-de5b-4399-8b65-e8897b7ac9ce,Brandon Brown,crystalcarr@example.net,Headphones,Accessories,5,49.99,249.95,2025-01-01,"54557 Tracey Plains
+West Williamside, MO 80225"
+3b0d406e-8751-4507-a637-f70ca5ded5b6,Nicholas Orozco,tara11@example.net,Blender,Home Appliances,2,99.99,199.98,2025-01-02,"9456 Maureen Causeway
+Lake Jennifer, HI 86286"
+82967c2e-4148-4f82-b553-9066696fb506,Kimberly Mcgee,mcmahonstefanie@example.com,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-02,"51708 Erica Shoal
+Boothmouth, CO 00720"
+2d2667d7-a2e2-44f8-8bba-b5cda27aa8ad,Andrea Allen,hillwilliam@example.net,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"42932 Cunningham Junctions
+Carolchester, OR 90727"
+6e3920ae-71ee-4a3b-8d93-e36a952e5fa4,Robert Cowan MD,wjohnston@example.org,Sneakers,Fashion,7,59.99,419.93,2025-01-02,"387 Mark Courts
+South Angelaville, NJ 58912"
+ce9882e7-f062-403b-8156-749ec0301100,Veronica Jones,dpotter@example.net,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"005 Little Forks Apt. 732
+New Jasonshire, VT 08227"
+5dcd8bce-adae-4996-a2fc-512aa233e492,Wesley Cox,lauracalderon@example.net,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"555 Barnes Glen Apt. 995
+East Davidburgh, AS 67012"
+0def3d2c-521a-47e0-b53e-379200ad938e,Kyle Wilson,jillian22@example.com,Smartphone,Electronics,2,699.99,1399.98,2025-01-02,"90084 Walton Trafficway Suite 448
+New Bonnie, CO 58379"
+7d228d0e-9e20-49b7-b037-bc241f1f4a43,Angela Jones,martin32@example.net,Desk Chair,Furniture,7,129.99,909.93,2025-01-02,"95596 Mccall Rapid Suite 740
+Paultown, MT 32565"
+bee30c79-0a31-46ef-875c-11f60050b584,Michael Nelson,epatterson@example.com,Sneakers,Fashion,5,59.99,299.95,2025-01-01,"1191 Michael Inlet Apt. 126
+Robinsonport, AR 79799"
+6da6d4e9-19ef-44d1-bb55-4913f1af49c4,Jonathan Conner,whitejoe@example.org,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"36055 Cassandra Points Suite 001
+Stacyshire, AL 14362"
+d28700e2-aebc-4cde-95d1-34fee0ebde30,Jeremy Turner,lisasanchez@example.org,Desk Chair,Furniture,2,129.99,259.98,2025-01-01,"Unit 3168 Box 7537
+DPO AP 78933"
+5d581d06-0a81-4814-ab52-43ea68879263,Clayton Dodson,dana19@example.org,Sneakers,Fashion,9,59.99,539.91,2025-01-02,"110 Alejandro Port
+Tracyhaven, MH 02276"
+d6530a51-0b9f-442a-b123-d3c712b369f1,Alison Ramirez,pwilliams@example.net,Blender,Home Appliances,3,99.99,299.97,2025-01-01,"27195 Jacob Ville
+Tranbury, AS 48203"
+af8d7ea9-99f6-4567-b4df-313bc092032c,Andre Blackwell MD,staceyjackson@example.org,Water Bottle,Accessories,9,19.99,179.91,2025-01-02,"525 Peter Plains
+North Sarah, HI 18685"
+91265e0d-5579-4504-b7f1-5e405b452f22,John Cisneros,melissa29@example.org,Smartphone,Electronics,2,699.99,1399.98,2025-01-01,"169 Gilmore Cliffs
+Gonzalesville, AZ 98538"
+62571257-0a99-491e-98f9-136c5c243bd1,Larry Miller,lhernandez@example.net,Backpack,Fashion,8,39.99,319.92,2025-01-02,"94177 Alexandra Gateway Suite 045
+Waynemouth, NJ 49095"
+85c01243-dd79-4e8d-89e3-339952b3b1a1,Kyle Chapman,nancydalton@example.net,Blender,Home Appliances,3,99.99,299.97,2025-01-02,"449 Jessica Bypass
+Robertschester, ME 26385"
+7860a632-4c5e-4521-a8e4-4c802e4b54e4,Michael Mendez,tiffanychen@example.com,Notebook,Stationery,7,5.99,41.93,2025-01-02,"545 King Radial Suite 586
+Steinborough, TX 30139"
+cc75481b-846c-474f-9f84-a0c59f9e4261,David Gutierrez,thomasmicheal@example.org,Laptop,Electronics,2,899.99,1799.98,2025-01-02,"138 Jones Glen
+Lake Derekland, NV 77396"
+1a57253b-ef1b-4e5f-84b4-e2b0e400b7c3,Dr. Nicole Morton PhD,stefanieyoung@example.net,Headphones,Accessories,3,49.99,149.97,2025-01-02,"271 Jordan Oval Apt. 976
+North Kristin, VT 84024"
+25a1422d-3ca8-4581-81e6-82e37a0d7947,Ricky Wu,patricia60@example.org,Backpack,Fashion,1,39.99,39.99,2025-01-01,"98952 Joyce Centers
+Johnbury, ND 60069"
+65d6f12f-4114-4468-a3f2-78f74ba2773f,James Cameron,thomasanderson@example.org,Laptop,Electronics,6,899.99,5399.94,2025-01-02,"17393 Shea Manors Apt. 652
+Port Katherine, SD 84663"
+af170e3a-b380-49be-b0df-eb578d4a806a,David Vang,evan18@example.org,Headphones,Accessories,2,49.99,99.98,2025-01-01,"58381 Angela Freeway Apt. 109
+Parsonsport, MH 33016"
+011c5f6f-3cbf-4604-a574-4909a4ee93a6,Michael Kim,adamgonzales@example.net,Sneakers,Fashion,6,59.99,359.94,2025-01-02,"91565 John Track
+Roblesport, IL 38641"
+e96edd70-6880-4ede-951e-3353ecbbcc91,Tammy Montgomery,sharontran@example.net,Laptop,Electronics,9,899.99,8099.91,2025-01-02,"281 Villegas Keys
+Port Jonathan, TN 66980"
+d0d9323c-8fb2-497a-8f2a-155695a46032,Brianna West,vmckay@example.org,Backpack,Fashion,1,39.99,39.99,2025-01-02,"74130 Reid Hollow Suite 550
+New Krystalbury, AL 81404"
+716cbd46-8422-4db4-b8d0-f2e65331cd9a,Stephanie Moore,njones@example.org,Desk Chair,Furniture,7,129.99,909.93,2025-01-02,"95260 Cooper Lodge Suite 446
+Porterburgh, IA 55477"
+d8ec3300-532a-4b05-96f0-652fc6388e97,Eileen Stephens,spearsjoshua@example.net,Desk Chair,Furniture,8,129.99,1039.92,2025-01-01,"1974 Tammy Wells
+Port Crystalshire, ND 96068"
+e9d4c7a6-1ce3-4bbc-b9e0-ecc732152cd4,Christine Johnson,ohammond@example.net,Desk Chair,Furniture,3,129.99,389.97,2025-01-01,"88276 Erica Way Suite 357
+Port Haleyberg, IN 23349"
+5c4166b7-86c5-4781-a6c4-ea54d6b8f28d,Dale Brown,christopher67@example.net,Desk Chair,Furniture,9,129.99,1169.91,2025-01-01,"48624 Burgess Square Suite 109
+West Sharonfort, NC 12286"
+5ebe46ab-fc9e-40fe-ac8c-3a8ad74196f4,Kenneth Cross,mary66@example.com,Desk Chair,Furniture,3,129.99,389.97,2025-01-02,"8018 Christian Gateway
+New Andrew, OK 78132"
+2e5a691c-f801-4981-8523-98b681211373,Whitney Harris,david63@example.net,Headphones,Accessories,7,49.99,349.93,2025-01-02,"62021 Wise Loop
+Lake Jacob, PA 37413"
+d75ae6fe-db8e-4484-a18d-888294ed7896,Catherine Jones,mejiadustin@example.net,Laptop,Electronics,7,899.99,6299.93,2025-01-01,"4767 Alvarez Bridge Suite 549
+Brewerside, OR 16466"
+b5995f00-884d-40de-b6d1-945117546b45,Mrs. Theresa Hull,ataylor@example.net,Smartphone,Electronics,3,699.99,2099.97,2025-01-01,"2939 Callahan Corners Apt. 599
+Port Zachary, AZ 81980"
+29bb33d6-33c3-4052-a56f-da5c14bcc1ec,Michael Garcia,katherinebrown@example.org,Laptop,Electronics,7,899.99,6299.93,2025-01-01,"060 Parker Fork
+Port Paul, NC 29662"
+57f3dcc8-107a-4310-b51c-2678b050702d,Deborah Jones,tommy65@example.com,Laptop,Electronics,5,899.99,4499.95,2025-01-02,"333 Irwin Road Suite 107
+New Janetland, FM 16047"
+46549f6e-1b90-412a-ae4a-8ca5a576b782,Denise Acevedo,thompsonjennifer@example.net,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-02,"487 Richard Station
+Port Benjamin, NM 31420"
+0a4dec39-1812-486b-8d1c-4139a1dfa0a9,Trevor Stewart,hpowell@example.net,Notebook,Stationery,8,5.99,47.92,2025-01-02,"Unit 3229 Box 9914
+DPO AP 74734"
+b4957ef3-61d8-4bec-9dc1-79655857a4e8,Joan Zhang,meredithjohnson@example.org,Desk Chair,Furniture,7,129.99,909.93,2025-01-02,"489 Church Ways
+Davishaven, CA 77439"
+ecfe4145-88c8-4276-9b30-fdbe3a7826fc,Anthony Ayala Jr.,mcgrathjeremy@example.com,Sneakers,Fashion,3,59.99,179.97,2025-01-02,"USNS Chang
+FPO AP 13619"
+bea19347-aa87-4c64-898a-763138007717,Nicole Green,heather62@example.org,Desk Chair,Furniture,5,129.99,649.95,2025-01-01,"Unit 2092 Box 5948
+DPO AA 37899"
+b4ac5564-5e55-4b1a-903a-d1c0b0ad30b5,Angela Dudley,rachelthomas@example.org,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"USNS Rodriguez
+FPO AP 37053"
+968dbea3-cf54-4ef4-be93-039902eba412,Jamie Fleming,wendy09@example.com,Headphones,Accessories,2,49.99,99.98,2025-01-01,"99636 Gilmore Passage Apt. 053
+Lake Timothyport, VA 20698"
+4ca5c47b-dd38-437e-9ab6-8b1919fd244e,John Smith,vcox@example.org,Notebook,Stationery,7,5.99,41.93,2025-01-02,"4091 Leah Haven
+East Robinfort, NY 36890"
+a464f262-b0ee-4502-946d-46e1b222e67c,Jacob Norman,richard45@example.org,Desk Chair,Furniture,3,129.99,389.97,2025-01-02,"08491 Young Shoals
+Brooksmouth, NH 68971"
+bf29da11-ae95-4e5c-9da9-e14b28f941a6,Teresa Mccall,hunter42@example.org,Backpack,Fashion,4,39.99,159.96,2025-01-02,"75656 Wells Brooks Suite 641
+Nguyentown, RI 84723"
+86821d1a-5049-4e13-b9bb-9326cc92b096,Robert Schmidt,allenjason@example.net,Laptop,Electronics,2,899.99,1799.98,2025-01-01,"Unit 8796 Box 0564
+DPO AE 33800"
+21eb8a44-6ceb-4fc4-8dab-a844a75bc154,Julie Delgado,victoriabell@example.com,Backpack,Fashion,9,39.99,359.91,2025-01-02,"94031 Joshua Views Apt. 015
+New John, VI 82292"
+679622b4-9280-4cce-b2e4-d4fdc655ff7b,Hannah Anderson,zacharyheath@example.net,Backpack,Fashion,5,39.99,199.95,2025-01-02,"419 Carlos Pass
+Chaneyborough, WI 42775"
+5eedd0aa-dab7-4d34-b1f4-d76714d36d7b,Nicole White,april70@example.org,Smartphone,Electronics,3,699.99,2099.97,2025-01-01,"68245 Hernandez Station Suite 800
+New Barbaraberg, PW 03403"
+d9011d1d-7660-4711-a6f4-6f1771c66bd1,Russell Bryant,brian82@example.net,Desk Chair,Furniture,9,129.99,1169.91,2025-01-02,"7528 Andrews Mill
+East Mariahaven, MD 15338"
+07ba2820-2a3c-45ec-b254-d6b44d752b46,Richard Knight,molly08@example.net,Backpack,Fashion,8,39.99,319.92,2025-01-02,"165 Davis Forest
+South Lori, NH 85615"
+e0f96729-ba42-4a6d-9f57-da4bfcb1df7f,Steven Greer,beckyjohnson@example.com,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-02,"2180 Vaughan Estate
+Johnsontown, DE 50224"
+fe134105-22f1-47da-a8e9-92eacb0edab0,Sonia Adkins,shawdanny@example.org,Smartphone,Electronics,6,699.99,4199.94,2025-01-01,"354 Jason Drive Suite 255
+New Chad, NE 83525"
+34ba508d-600a-4c97-b4e3-48ee8660bdfb,Terri Jenkins,melissa83@example.com,Blender,Home Appliances,10,99.99,999.9,2025-01-01,"31915 Nicholas Plaza
+North Frankland, OK 70397"
+4446e78d-2273-41a1-8be2-3fcaa4ae2eb6,Nicole Ruiz,popekristen@example.net,Blender,Home Appliances,10,99.99,999.9,2025-01-01,"258 Acosta Loop Apt. 519
+West Jamestown, NY 66712"
+263fcd57-3cf9-4781-9bbc-2eb69db6798d,Donna Bush,marshcurtis@example.com,Smartphone,Electronics,7,699.99,4899.93,2025-01-02,"Unit 4031 Box 9382
+DPO AP 71592"
+e5da9100-b4d3-45d1-ab58-cedad3406a4b,Amy Garza,johnny92@example.org,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"25793 Jessica Junctions
+North Markhaven, NH 06797"
+877e8180-f778-4151-b65f-fc3682ae9ee2,Matthew Mejia,smithmichelle@example.net,Desk Chair,Furniture,5,129.99,649.95,2025-01-02,"009 Li Radial
+Heatherland, MN 47297"
+9a9c9be6-c085-466f-b1cd-0689b93b79b6,Jonathan Gordon,laura09@example.net,Water Bottle,Accessories,2,19.99,39.98,2025-01-01,"0709 Curry Forks Apt. 448
+Shermanton, AL 28223"
+94dc4bd0-e5f8-48e9-b265-187d49368a2f,Christopher Hines,leeroger@example.net,Desk Chair,Furniture,2,129.99,259.98,2025-01-01,"944 Jack Corner Apt. 409
+New Saraview, VT 73316"
+941ac601-fb33-4ef1-b3cb-c0d2a4596bf9,Dustin James,raymond77@example.net,Desk Chair,Furniture,8,129.99,1039.92,2025-01-01,"03577 Stephens Viaduct Suite 366
+East Sharonstad, NV 14725"
+7d496707-e93a-431c-8405-3497300e514b,Andrew Sanchez,jermaineallen@example.com,Headphones,Accessories,8,49.99,399.92,2025-01-01,"316 Christina Springs
+Johnberg, MT 60153"
+17d0f9fd-bf0a-41b2-8780-3820acba0e0b,Kyle Anderson,smithjackie@example.com,Sneakers,Fashion,4,59.99,239.96,2025-01-01,"70161 Kenneth Wall Apt. 641
+North Ronald, VT 69860"
+b0da63d7-bbe1-468d-985a-841dcc6bd680,Tyler Mclaughlin,travis05@example.org,Notebook,Stationery,8,5.99,47.92,2025-01-02,"PSC 1739, Box 2231
+APO AA 45872"
+f4f90f87-d73f-48e7-812f-1864f73b49ab,Ashley Simmons,bpadilla@example.com,Sneakers,Fashion,5,59.99,299.95,2025-01-01,"78239 Roberts Well
+Hahnton, ND 66328"
+88d52cd8-c550-4382-8038-e996b69815c8,Andrew Smith,hannah65@example.com,Desk Chair,Furniture,7,129.99,909.93,2025-01-02,"65978 Andrea Plain Apt. 547
+Port Howardmouth, HI 95691"
+b92ad4e3-3f31-4d95-a4ae-c822449f235d,Laura Price,brenda63@example.org,Blender,Home Appliances,10,99.99,999.9,2025-01-02,"20374 Ann Views Apt. 805
+North Danielshire, VT 90335"
+04957dcf-cfeb-4788-bcf1-d709c88e3d10,Mark Kelley,prodriguez@example.com,Backpack,Fashion,7,39.99,279.93,2025-01-01,"63991 Moore Land
+Claudiaton, ND 64530"
+d4721fe4-5fd5-4868-ab13-8cabb7617d8d,Dan Lee,joy21@example.net,Coffee Maker,Home Appliances,7,79.99,559.93,2025-01-01,"05728 Warren Crossing Apt. 838
+Edwardsside, AR 89021"
+adb05041-aefe-41df-8d8b-2a5423560789,Adam Gill,tara69@example.net,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"55030 Williamson Fort Suite 658
+Sanchezbury, SD 25044"
+e76b9074-037d-47a8-a3fe-e0cbc824cc82,Michael Ross MD,michael38@example.org,Backpack,Fashion,5,39.99,199.95,2025-01-02,"1743 Marks Meadow
+West Kellyhaven, MT 18994"
+f4f7e5c2-be50-4d9a-b465-844e52e90e82,Larry Cooper,miguel07@example.org,Headphones,Accessories,6,49.99,299.94,2025-01-01,"3439 Morton Squares
+Baileyborough, MN 30692"
+0bf16bcc-925a-4657-8015-102560e3c2ff,Lisa Kaufman,bianca98@example.net,Sneakers,Fashion,8,59.99,479.92,2025-01-01,"3367 Christine Springs
+East Tinatown, WA 25498"
+46dd1a01-e2c3-43aa-b85d-4a3341ad2bfc,Sheena Reed,rickyrodriguez@example.org,Laptop,Electronics,5,899.99,4499.95,2025-01-01,"62241 Lisa Trafficway
+New Michaelton, TX 59730"
+b1ddd880-5e72-43d5-97f2-79f9876d8422,Anthony Williams,jeffrey77@example.com,Backpack,Fashion,7,39.99,279.93,2025-01-02,"4620 King Via Suite 591
+South Nicholashaven, MD 78317"
+d032ac72-9e86-490d-8ce4-603bb79abb3a,Veronica Foster,normamartin@example.net,Desk Chair,Furniture,1,129.99,129.99,2025-01-01,"164 Hall Course
+West Andrewburgh, MP 11510"
+4d5c654a-a609-4dc6-a314-55a3dfe9dd67,Kristina Peterson,richardbaldwin@example.org,Notebook,Stationery,3,5.99,17.97,2025-01-01,"949 Cesar Route Apt. 139
+Perezmouth, NJ 30498"
+5934322f-9f33-487d-a582-14b3e28080ad,Mike Jones,jimmy37@example.com,Water Bottle,Accessories,7,19.99,139.93,2025-01-02,"6219 Samuel Ridge Suite 170
+Cathyton, MD 09186"
+0e3bc601-7569-460b-a06e-9ce035bc883e,Jessica Choi,walshdaisy@example.net,Smartphone,Electronics,3,699.99,2099.97,2025-01-01,"753 Michelle Mission
+Brentside, ID 86154"
+17838838-31db-4bca-bf52-1adf5d7bd40f,Miranda Esparza DDS,ebaxter@example.org,Notebook,Stationery,5,5.99,29.95,2025-01-02,"463 Murray Avenue
+South Angelaport, WI 10294"
+f9d9e177-923f-42d4-92c2-7d0ee191217d,Mr. Kyle Santos,michaelwhite@example.com,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-01,"4916 Anderson Plaza Suite 433
+Jerryview, TN 38062"
+dbeb54d5-cab4-47ae-9bdc-6b8a5ae1fdcf,Paul Zamora,davismeagan@example.net,Water Bottle,Accessories,1,19.99,19.99,2025-01-01,"PSC 3210, Box 4747
+APO AA 92313"
+259d1c61-d586-4b26-b581-7686cca655f7,Amanda Love,hamptonelizabeth@example.com,Laptop,Electronics,10,899.99,8999.9,2025-01-02,"364 Green Mount
+New Stevenview, MA 90916"
+419e7885-5d2f-4a23-918b-6355595e30e9,Benjamin Schmidt,erin99@example.net,Headphones,Accessories,2,49.99,99.98,2025-01-02,"USS Santos
+FPO AP 47458"
+289d00bc-bccb-4676-a2bc-ae0865efc96a,Jamie Schneider,kathleenmiller@example.org,Laptop,Electronics,1,899.99,899.99,2025-01-01,"806 Alexander Court
+Cooperchester, MS 39238"
+5ff013bc-7d0e-4bcf-bf0f-f1271ca5b831,Christopher Diaz,mikebrooks@example.com,Water Bottle,Accessories,8,19.99,159.92,2025-01-02,"97136 Mary Route Suite 270
+Brewerhaven, AZ 73480"
+1e2dbc80-deb9-4e14-85a3-2c27cac7cc23,Michael Poole,brian17@example.org,Water Bottle,Accessories,10,19.99,199.9,2025-01-01,"183 Kenneth Burgs
+South Michael, NE 31172"
+c5e07f10-51f7-40d7-96c5-7f62251c22ad,Stefanie Gutierrez,dalephillips@example.net,Laptop,Electronics,6,899.99,5399.94,2025-01-02,"511 Christina Plain
+Kelleyport, TX 24473"
+76906c4e-bc34-4899-be0c-8ba39593ca0d,Robert Harper,nhall@example.com,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-01,"72762 Jack Meadow Apt. 840
+Lake Billy, MA 52988"
+90225ee6-6d35-41b3-b54a-69f6fee0f44c,Tiffany Flores,mitchellhenry@example.org,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"73248 Jennifer Loop
+Lake Michaeltown, TX 87118"
+8ca1308e-6f0d-471a-b134-debed3037576,Sydney Cox,corey97@example.net,Water Bottle,Accessories,3,19.99,59.97,2025-01-02,"7803 Krista Station
+North Troystad, VT 46504"
+9e28af43-bbe0-4702-b754-d41a384877e9,Michael Williams,smithrebecca@example.com,Notebook,Stationery,6,5.99,35.94,2025-01-01,"176 Richard Lane Apt. 287
+New Lisa, RI 22168"
+68ad8899-e627-47fd-9c5a-71088f54a79d,Connor Estrada,melinda49@example.com,Headphones,Accessories,10,49.99,499.9,2025-01-02,"7410 Coleman Expressway Suite 195
+Lake Matthew, MN 16362"
+364f8829-0fc0-4318-ae88-257b67d03520,Peter Schroeder,balllinda@example.org,Sneakers,Fashion,3,59.99,179.97,2025-01-02,"44237 Louis Turnpike
+New Yolandaton, CO 46922"
+7a90ba48-ad43-4f0b-8384-ad30faef63aa,Melanie Marshall,rhunter@example.net,Backpack,Fashion,6,39.99,239.94,2025-01-02,"3064 Morales Cliffs Suite 111
+Courtneychester, CT 87222"
+bfe3efc4-ad7e-4f53-9bde-2c56a72d4857,Richard Osborn,lfoster@example.org,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"762 Graham Club Suite 147
+West Lauren, PW 41751"
+16ce05fe-50a0-49bf-8203-1e83eeda8133,Marvin Avila,kenneth45@example.org,Desk Chair,Furniture,8,129.99,1039.92,2025-01-01,"9911 Gonzales Circles
+New Todd, SD 96501"
+78703671-ce7b-4965-936d-95450ceefb73,Tiffany Alvarado,michaelsnow@example.org,Smartphone,Electronics,7,699.99,4899.93,2025-01-02,"8091 Jennifer Meadow Apt. 042
+Port Kellymouth, KY 80093"
+be235aab-3909-4620-87ce-75aefa15446f,Michael Frazier,johnsonshane@example.org,Sneakers,Fashion,4,59.99,239.96,2025-01-01,"4803 Jennings Squares Suite 075
+West Brittanyhaven, ID 65948"
+f3137a63-855c-4315-b266-faff0106c308,Robert Fisher,gsmith@example.org,Water Bottle,Accessories,5,19.99,99.95,2025-01-02,"Unit 4543 Box 3942
+DPO AP 78322"
+3fb4460b-a793-4f5c-9a1b-68075157604d,Holly Martin,robertcarpenter@example.net,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"7121 Arroyo Extension Apt. 009
+South Linda, HI 08552"
+a7b79371-bcd6-4fbc-8205-4e848c6e27d3,Julie Arellano,barbaraferguson@example.org,Headphones,Accessories,10,49.99,499.9,2025-01-02,"30529 Regina Stream
+Steeleton, FM 38181"
+48c17a55-5067-4d82-81d5-0f0f751ec63b,Daniel Lee,martinezcarl@example.net,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"34797 Wilson Inlet Suite 733
+Scottport, FL 04971"
+1bc658b4-c9d7-4573-b06d-1ae8ad22ac93,Vincent Wheeler,april64@example.net,Backpack,Fashion,9,39.99,359.91,2025-01-02,"43463 Michelle Views Suite 421
+West Zacharyport, NM 24771"
+1e92b0a3-1332-4208-961a-933452403dba,Debra Stevenson,qstone@example.net,Laptop,Electronics,5,899.99,4499.95,2025-01-01,"7767 Lane Locks
+East Patrickhaven, SC 16835"
+fd45221d-1d82-4d6e-bf70-d52301a4a93d,Philip Smith MD,joseph24@example.org,Notebook,Stationery,10,5.99,59.9,2025-01-01,"262 Edward Trace Apt. 902
+Jacobbury, ME 14285"
+8ce0e8c5-fb51-4a63-92ff-b819f53996de,Michael Robinson,debbiemaldonado@example.org,Headphones,Accessories,4,49.99,199.96,2025-01-01,"19632 Hall Harbors Suite 480
+New Jimmy, TN 72317"
+77e37b74-c7f2-4fbf-bb82-c47f84a5ba3a,Belinda Briggs,kevinpatrick@example.org,Desk Chair,Furniture,8,129.99,1039.92,2025-01-01,"19687 Kelli Crescent Suite 819
+Jonesborough, AK 85174"
+60a4e50f-bb10-4da3-9093-609dfd7f026b,Ellen Johnson,jamesberry@example.com,Sneakers,Fashion,6,59.99,359.94,2025-01-01,"885 Moreno Walk
+Whitemouth, AR 17439"
+9b300db6-39ac-4e9b-935d-64360932c5b5,Susan Thompson,matthewschristopher@example.net,Notebook,Stationery,7,5.99,41.93,2025-01-01,"333 Ward Meadows
+Watershaven, OH 00766"
+b87ae981-5030-4e56-84cd-153e35e1f1a3,Lance Moses,wlewis@example.org,Sneakers,Fashion,10,59.99,599.9,2025-01-02,"71218 Shane Point Apt. 967
+Cookchester, AL 53453"
+587dabc4-1713-4926-b03c-ad16059dc665,Mrs. Kathy Vega,jeremychavez@example.org,Laptop,Electronics,2,899.99,1799.98,2025-01-01,"933 Bryan Rest
+North Brenda, VA 35163"
+1de7aa1c-50ca-4f8a-b053-7ee1f2d9f438,Christopher Hanson,kristin90@example.net,Laptop,Electronics,8,899.99,7199.92,2025-01-01,"41394 Fowler Viaduct
+North Bradley, MD 45938"
+c6f027f3-6f19-4c2b-bf5d-15346bea09c9,Christopher Mckenzie,brianstevens@example.net,Smartphone,Electronics,3,699.99,2099.97,2025-01-02,"PSC 9056, Box 3580
+APO AA 95853"
+200ac606-858b-4656-8882-90183ff70be7,Travis Carlson,justinromero@example.com,Water Bottle,Accessories,8,19.99,159.92,2025-01-02,"742 Smith Corner
+Kimberlyland, NH 63762"
+5ca91221-a226-4b89-b522-e14f9cb02570,Sara Barker,torreskenneth@example.net,Headphones,Accessories,10,49.99,499.9,2025-01-02,"89490 Susan Park
+New Kaitlinchester, NH 39372"
+bbf97579-362a-427b-8ffa-243efeb287a1,Craig Jimenez,alexander85@example.net,Backpack,Fashion,10,39.99,399.9,2025-01-01,"4913 Stone Islands Apt. 376
+Lake Shawn, IL 72724"
+2178b319-43ab-41cf-a362-a602deb24b36,Nicholas Galloway,mark27@example.net,Backpack,Fashion,10,39.99,399.9,2025-01-02,"517 Wade Station
+Barnestown, MT 13731"
+cb358e01-b1db-432e-99a2-855d383c4e44,Kelly Vega,craigsantana@example.com,Desk Chair,Furniture,9,129.99,1169.91,2025-01-02,"0454 Owens Drive Suite 176
+New Rachel, MO 50348"
+174f78a7-39ad-4750-99ca-8cd5f029f542,Stephen Anderson,chelseaweiss@example.com,Coffee Maker,Home Appliances,3,79.99,239.97,2025-01-02,"8467 Lee Drives Apt. 205
+Taylorburgh, MD 48517"
+3699e7e8-42a8-474e-8a32-61783592587c,Barbara Mills,lewisstephanie@example.net,Notebook,Stationery,5,5.99,29.95,2025-01-02,"2290 Amanda Ramp
+Lake Cynthia, ID 23915"
+0cf493d8-300b-43fb-81ec-ca71e5bb0116,Mark Lucas,clopez@example.net,Sneakers,Fashion,4,59.99,239.96,2025-01-01,"593 Abigail Pass
+Bridgetfurt, RI 98136"
+ac065e9a-b4e4-4e88-9eb2-aeca4f36f63f,Mrs. Elizabeth Bridges,amy84@example.org,Desk Chair,Furniture,2,129.99,259.98,2025-01-01,"896 Christopher Spring Suite 516
+Charlesshire, DC 15136"
+cad4e0fa-417a-45e4-ba86-2eb29505d599,Jennifer Lewis,ethanacevedo@example.org,Coffee Maker,Home Appliances,10,79.99,799.9,2025-01-02,"692 Little Bridge Suite 293
+East Thomasfort, PW 55961"
+a258a39d-a882-468f-ab63-0fb414852576,Rachel Fletcher DVM,kbutler@example.com,Laptop,Electronics,1,899.99,899.99,2025-01-01,"271 Julia Hills
+Alexandermouth, OR 78894"
+d9f6bf84-9fbc-4c03-aa85-968df3bafeef,Shelby Diaz,johnsonalex@example.net,Laptop,Electronics,3,899.99,2699.97,2025-01-02,"02595 Lopez Streets Suite 253
+Cainmouth, MA 51221"
+45a2eb7e-3103-4324-a458-46b5afc75a33,Dr. Tammy Martin,kristen01@example.net,Laptop,Electronics,10,899.99,8999.9,2025-01-01,"716 Bradley Harbors Apt. 795
+Palmerview, TN 07803"
+425298ef-d57d-47bf-9568-38320b1396cd,Melissa Beck,kathrynrobinson@example.org,Backpack,Fashion,2,39.99,79.98,2025-01-02,"Unit 4181 Box 6008
+DPO AP 31182"
+e8af4df1-26a9-4130-8c98-e83e1bc83a38,Tracy Keller,michael68@example.org,Blender,Home Appliances,4,99.99,399.96,2025-01-01,"12291 Graham Junctions
+East Joshuaville, WI 61879"
+7a761e1b-e296-4197-b83c-d2e964e923e0,Ashley Thomas,brooksheather@example.org,Desk Chair,Furniture,1,129.99,129.99,2025-01-01,"62898 Sue Rue
+South Coltonshire, VI 28496"
+b8182fe9-f79e-4b84-b88f-1f40374fa7d5,Jeremiah Boyer,lkennedy@example.net,Water Bottle,Accessories,2,19.99,39.98,2025-01-02,"791 Turner Flat
+Port Jesus, IA 08185"
+fce1c52d-a684-4c30-8566-8cfe8102a65f,Rebecca Martinez,travis88@example.org,Blender,Home Appliances,7,99.99,699.93,2025-01-01,"7873 Melton Loaf
+Tracyport, FL 61518"
+2a20b494-ac37-417f-bb64-62d6c5ece647,Mrs. Pamela Hunter,gonzalezcraig@example.net,Laptop,Electronics,4,899.99,3599.96,2025-01-02,"65667 Laura Parkways Apt. 551
+Patriciahaven, DC 80130"
+30e7222a-4e45-420c-aba5-edffa8a2482c,Robert Jones,adamsanna@example.net,Laptop,Electronics,1,899.99,899.99,2025-01-01,"54324 Spence Plains Suite 900
+New Robert, HI 61287"
+51f06890-848c-4e89-a934-bd8ebf8a8620,Steven Case,rwright@example.net,Smartphone,Electronics,7,699.99,4899.93,2025-01-01,"691 Robinson Lights Apt. 470
+Rebeccaberg, IL 97921"
+f2be0d2a-158b-43bf-a2e5-60c892642bb5,Meghan Lewis,kevinjohnson@example.com,Backpack,Fashion,10,39.99,399.9,2025-01-01,"438 Luke Freeway
+Moorestad, UT 88187"
+5809e7f3-80fb-419a-b0d5-0bcb8aecfd63,Mary Thomas,handerson@example.org,Notebook,Stationery,2,5.99,11.98,2025-01-02,"135 William Knolls
+Petersonbury, HI 34139"
+ec4ad882-83f1-42cf-81fa-d11c48205e69,Monica Delacruz,christopherortiz@example.org,Water Bottle,Accessories,6,19.99,119.94,2025-01-02,"71662 Fletcher Drives Apt. 475
+Brianmouth, NV 78670"
+0d8ecb37-3ce0-4269-b151-0f074c9ab906,Dillon Lewis,susanhernandez@example.com,Sneakers,Fashion,3,59.99,179.97,2025-01-02,"92916 Michelle Square Suite 295
+South Robert, UT 83779"
+761f2d7b-34b9-4cad-83b2-62d91cc31bdd,Daniel Pennington,wilsonsarah@example.net,Sneakers,Fashion,4,59.99,239.96,2025-01-01,"796 Lisa Square Apt. 010
+Austinchester, ND 97352"
+ea8453bc-c55e-4147-91bc-8eb72302907d,Brooke Joseph,aguilargloria@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"36927 Megan Rapid
+East Ashleyville, AS 86621"
+8b9f1230-cd3a-451c-b026-962935e10320,Laura Williams,gabriel31@example.org,Blender,Home Appliances,3,99.99,299.97,2025-01-02,"561 Brown Plain Apt. 789
+Mirandastad, NV 93668"
+4edcad80-094e-4b80-9286-83147601cdc7,Mark Roberts,kayla37@example.org,Laptop,Electronics,1,899.99,899.99,2025-01-01,"161 Damon Land Suite 584
+Port Kyleshire, FM 40477"
+aecfdc8e-d952-4b3f-b553-0d5f79644789,Shawn Wilson,reynoldsellen@example.com,Laptop,Electronics,1,899.99,899.99,2025-01-01,"4908 Guerra Wells Suite 442
+Port Katherine, ME 44905"
+98989418-f371-491c-abcc-44442f124b27,Oscar Snyder,jbarnes@example.com,Desk Chair,Furniture,2,129.99,259.98,2025-01-02,"34780 Merritt Coves Apt. 708
+Gatesmouth, GU 28271"
+0ecfb12f-76db-4131-a453-430b17b012b6,Elizabeth Schwartz,ldavis@example.org,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"8287 Hatfield Streets
+Leonville, OK 61747"
+eab3da31-b49d-4b8e-a775-ca104cfba5bb,Mark Everett,andersonmichelle@example.com,Notebook,Stationery,10,5.99,59.9,2025-01-01,"344 Mccarthy Isle Apt. 915
+New Williamburgh, OH 91661"
+1276940a-2a56-4199-b891-474af2dd4b86,Karen Giles,brookstimothy@example.com,Sneakers,Fashion,5,59.99,299.95,2025-01-02,"1612 Smith Fall Apt. 099
+Jeffreymouth, SD 78567"
+fd357785-91e3-4d31-910f-609ba4b134d6,Sean Martin,stevensonpatricia@example.net,Desk Chair,Furniture,9,129.99,1169.91,2025-01-01,"72874 Wilson Field Apt. 312
+Normanborough, DE 28299"
+08c6270f-86ea-43c0-8893-cc0dad837560,Tyler Walters,patrickblanchard@example.net,Smartphone,Electronics,5,699.99,3499.95,2025-01-02,"3900 Jake Crescent Suite 456
+Rickyton, NC 38229"
+3cdc4dbf-a798-48ae-87a4-a35737cd491d,Larry Woods,delgadokylie@example.org,Laptop,Electronics,5,899.99,4499.95,2025-01-02,"292 Miller Common Apt. 600
+Serranohaven, MA 13411"
+dc69bb62-93e3-49d8-8786-41cc6d0ac13e,Nicole Lee,wilkersonmelinda@example.net,Smartphone,Electronics,7,699.99,4899.93,2025-01-01,"338 Miller Parkways Suite 953
+Barbarahaven, CT 62828"
+3c9bef1b-bb60-418f-b8af-06a91b3ada3b,Kaitlyn Mcpherson,danielle87@example.net,Headphones,Accessories,2,49.99,99.98,2025-01-01,"07298 Rodriguez Row
+Smithfurt, PR 10945"
+8b77d339-91c9-4421-8e22-bf4e85a282e4,Robert Keller,jessica09@example.com,Blender,Home Appliances,10,99.99,999.9,2025-01-01,"830 Bell Groves
+East Jenniferfurt, TX 28361"
+958c13bc-14fe-46fa-9eb2-861f667e665c,Jason Haynes,ygonzales@example.com,Headphones,Accessories,1,49.99,49.99,2025-01-01,"PSC 9027, Box 3375
+APO AA 24705"
+1c837bb1-7151-483a-9764-f6898384ff3f,Anthony Sanchez,howardwong@example.com,Sneakers,Fashion,1,59.99,59.99,2025-01-02,"832 Fernandez Trace
+South Shane, MO 42332"
+edc64d52-dd04-48b1-930c-2b52d1220ee3,Paula Phillips,nalexander@example.com,Sneakers,Fashion,10,59.99,599.9,2025-01-02,"2796 Brandon Bypass Apt. 150
+Jonesfurt, VT 77194"
+f12c0cdb-8c0f-4642-a928-6f1915a6ca01,Shannon Moreno,griffithsarah@example.com,Headphones,Accessories,3,49.99,149.97,2025-01-01,"9448 Robinson Groves Apt. 350
+North Shelleybury, MP 96421"
+7c7047d3-856a-4658-9496-e3a54d791e14,Deborah Patrick,karen51@example.com,Desk Chair,Furniture,4,129.99,519.96,2025-01-01,"5626 David Circles
+Lake Patrickbury, MT 33180"
+de983f77-8b8e-46bf-b215-7c0d4807b6e9,Jeffrey Hughes,michaelpatterson@example.com,Laptop,Electronics,5,899.99,4499.95,2025-01-01,"053 Katie Divide
+South Jennifer, GU 32307"
+23815be3-7776-4190-a4f7-90a5f2f697e9,David Hogan,april47@example.org,Notebook,Stationery,3,5.99,17.97,2025-01-02,"80095 Martin Cliff Suite 275
+North Gabriela, CT 17535"
+8446972a-6c7b-4ba8-9bb0-23426500e94e,Julie Wallace,danielledavis@example.com,Desk Chair,Furniture,4,129.99,519.96,2025-01-02,"60353 Sarah Track Apt. 840
+Bentleyfurt, IL 84177"
+6af7cdb0-fd58-4e54-b323-132428bb475a,Dennis Jones,bellryan@example.com,Headphones,Accessories,5,49.99,249.95,2025-01-02,"9486 Cruz Cliffs
+East Ryan, GU 08499"
+7995224e-c663-4e5d-8ed5-b0deca70b7bc,Barry Hurst,ricardo21@example.org,Coffee Maker,Home Appliances,6,79.99,479.94,2025-01-02,"1545 Richard Harbors Apt. 662
+North Manuel, LA 68592"
+94d28f05-c2a2-4160-95e9-31304f71ce1f,Cindy Edwards,joshuawoods@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-01,"048 Smith Street Apt. 784
+East Hannahbury, MD 32028"
+671c5d8b-e59d-4d88-9910-c7d26db6b112,Daniel Thompson,adamshort@example.com,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"537 Moon Glens
+North Bethtown, KS 54699"
+91e19c8a-4565-47a2-a1ee-e0fe94fe03fb,Loretta Brown,zmyers@example.org,Notebook,Stationery,5,5.99,29.95,2025-01-01,"882 Williams Ports Suite 937
+Anthonyview, ND 98632"
+8d0d3579-bab5-48bb-9338-656231199c5e,Derek Barnett,lesliewu@example.net,Notebook,Stationery,2,5.99,11.98,2025-01-01,"3605 Ryan Tunnel
+Kevinport, PR 85094"
+3b41ab10-2bc6-456d-9e75-cf8b3e948fea,Robert Smith,christinamcgrath@example.org,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"60099 Matthew Prairie Apt. 655
+New Nicholasland, SD 90491"
+a88bcedd-6190-4304-8ca6-8e2ad3a1b415,Steven Perez,jmyers@example.com,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"640 David Stravenue
+Oliviaside, AS 79647"
+a5da920e-82e9-4fe4-8897-36c11f39dc74,Amber Jones,foleyseth@example.org,Headphones,Accessories,2,49.99,99.98,2025-01-02,"775 Chapman Tunnel
+South Sonia, NE 41141"
+7c0dee91-ecd8-4d03-a123-d07a2853a30f,John Richard,ryanflores@example.com,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"33649 Karen Manors Apt. 135
+Hernandezfurt, ME 14994"
+0b521624-c014-4fb7-9ced-701cedae3437,Heather Cortez,jessicaanderson@example.net,Smartphone,Electronics,6,699.99,4199.94,2025-01-01,"Unit 8973 Box 4090
+DPO AP 34704"
+e3ff64c2-7ada-46f0-9874-74882330456c,Alan Keith,goodtiffany@example.org,Notebook,Stationery,3,5.99,17.97,2025-01-02,"USCGC Smith
+FPO AP 66414"
+4057b7d7-fd4f-45df-ba79-cd83dccbabb2,Jaime Tate,mli@example.org,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-02,"544 Silva Walks
+Ericfort, PA 35688"
+9a172a1d-0610-48a3-8085-046656799955,Caitlin Miller,gilljustin@example.net,Laptop,Electronics,1,899.99,899.99,2025-01-01,"4089 Richard Trafficway Suite 305
+Dawsonmouth, KS 03579"
+340c5579-d420-4b12-8994-01b3d71adea9,Alicia West,michele07@example.net,Smartphone,Electronics,9,699.99,6299.91,2025-01-02,"4372 Fisher Via
+Marthaberg, PW 77613"
+8757db00-7256-477f-9b7d-06f25ebb05c0,Dawn Robbins,brandi06@example.net,Blender,Home Appliances,3,99.99,299.97,2025-01-02,"1303 John Streets Apt. 727
+Lake Danielleborough, HI 12395"
+7b15ae60-e9ce-4206-a4b0-352bc1b6d148,Donna Mejia,joshua99@example.org,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-01,"151 Deborah Inlet Apt. 427
+New Ronaldborough, IA 42489"
+b6735c06-8fd6-48b0-bc9d-9cbbe4ad56a2,Allison Pearson,craigchandler@example.net,Backpack,Fashion,7,39.99,279.93,2025-01-01,"83509 Joyce Prairie
+Port Anthonyton, OR 44507"
+5151ada6-af71-4d4e-b4aa-6d51fd20afbb,Noah Hughes,jeremiah93@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"642 Travis Cove Apt. 269
+Boonefort, GA 18001"
+4ba2c87d-9715-425c-bc6d-d12d0ed3c282,Andrew Dominguez,david20@example.com,Laptop,Electronics,5,899.99,4499.95,2025-01-02,"878 Ross Cape Suite 978
+Rodriguezfurt, AK 01894"
+3acdf263-907a-4d18-9b4a-f4bc1e905ccb,Lisa Cannon,leahgallagher@example.com,Headphones,Accessories,2,49.99,99.98,2025-01-02,"2647 Jones Plaza Apt. 258
+Bruceton, SD 13335"
+3024a72a-1b8d-481f-bb71-06fa4ba95028,David Collier,tsanchez@example.net,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-02,"748 Danielle Islands
+Kellyberg, CA 02943"
+2489f1b9-44a9-42a9-9cc7-05ebe1cf6aba,Rachel Barrett,fosterjoann@example.com,Blender,Home Appliances,6,99.99,599.94,2025-01-02,"6524 Jason Ford
+Sarahland, ME 48395"
+705842ec-aecf-49d5-9e04-a62799fc3156,Brendan Adams,hansonkimberly@example.org,Sneakers,Fashion,8,59.99,479.92,2025-01-01,"433 Kristie Square
+Johnberg, ND 70453"
+a48b3735-1a05-4d61-904f-2bfbffa2d2b1,Jessica King,ashleywoods@example.com,Sneakers,Fashion,4,59.99,239.96,2025-01-01,"7926 Chapman Light Apt. 832
+Smithburgh, SC 36063"
+145f6fb6-7e84-406a-bce7-1563353b1c57,Brooke Armstrong,cynthia11@example.org,Laptop,Electronics,6,899.99,5399.94,2025-01-01,"8287 Robert Lakes Apt. 017
+Gaineston, MN 20357"
+746e7ef0-0f98-4e8f-8514-1f1232e18454,Bobby Andrews,katelyncooley@example.net,Notebook,Stationery,9,5.99,53.91,2025-01-01,"62379 Jennifer Coves
+Duncanmouth, SD 99593"
+f96b115a-c583-4c66-8476-93afa184ecc5,Kevin Jacobson,linda85@example.net,Coffee Maker,Home Appliances,2,79.99,159.98,2025-01-01,"79844 Philip Brook
+Bowmanshire, GA 29284"
+7a2ffb45-9962-4566-9b88-79280b7ff275,Adrienne Perry,frandolph@example.org,Laptop,Electronics,9,899.99,8099.91,2025-01-02,"PSC 4928, Box 3315
+APO AP 83470"
+f29d8a71-657f-4e7d-820f-1d57aad3621c,Christine Walton,barrettdavid@example.net,Notebook,Stationery,4,5.99,23.96,2025-01-01,"31044 Kathryn Stream
+Payneview, MD 97712"
+f1f4e26b-da3c-4472-b5e4-98a4aa167cad,Catherine Torres,vanessapittman@example.com,Sneakers,Fashion,4,59.99,239.96,2025-01-02,"464 Bates Union Apt. 279
+Banksside, WV 51888"
+91ae08cd-4c98-41c4-96f0-424ac6baa55d,David Fletcher,david28@example.net,Blender,Home Appliances,5,99.99,499.95,2025-01-02,"PSC 0799, Box 8334
+APO AP 17764"
+d67594ed-0b2c-471f-80be-f6e91463777f,Sharon Hudson,qallen@example.org,Notebook,Stationery,8,5.99,47.92,2025-01-01,"5329 Brandon Ports
+Quinnburgh, SD 41518"
+84e03729-55cf-4892-b9d2-328820769901,Katelyn Jackson,jenningscourtney@example.net,Smartphone,Electronics,10,699.99,6999.9,2025-01-01,"8207 Sean Mission Suite 603
+Cherryberg, NY 43244"
+a4c4b509-2ef6-4518-8d82-228589f35654,Jamie Saunders,portercheryl@example.net,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"497 Huerta Gateway Apt. 105
+Port Austinton, MI 01418"
+886bb0ce-8aa5-4fa1-8e29-1285de781c38,Frances Vazquez,zanderson@example.net,Backpack,Fashion,2,39.99,79.98,2025-01-02,"907 Wiley Run Apt. 109
+North Jessicaside, TN 50164"
+05368fad-74f3-46e4-80a7-1dd7fccedc13,Chad Garcia,danderson@example.net,Headphones,Accessories,5,49.99,249.95,2025-01-01,"84685 Nathaniel Lake
+Brentborough, NY 53661"
+159336ab-d01f-46e4-afc7-9e0725158de5,Douglas Lopez,holly00@example.net,Laptop,Electronics,9,899.99,8099.91,2025-01-02,"PSC 4180, Box 0831
+APO AE 64989"
+d818e504-bee6-4334-b06e-fd9b2b13c56c,Amber Bowman,ajones@example.org,Desk Chair,Furniture,1,129.99,129.99,2025-01-02,"79111 May Walks
+Carlosberg, MT 75818"
+2a4356bf-124e-41ad-8011-682052664cd6,Tiffany Valdez,kennethweber@example.net,Desk Chair,Furniture,2,129.99,259.98,2025-01-01,"3233 Hodge Harbor
+Jillborough, NC 51247"
+7ae6fbfb-203c-4174-b7bd-eccf51fe8e69,Sara Brown,traviskelli@example.net,Sneakers,Fashion,8,59.99,479.92,2025-01-01,"545 Ortega Creek Apt. 639
+Dominguezport, SD 39137"
+9e6b76a7-5c92-4032-8216-9103a560d2a8,Margaret Flores,xmccormick@example.org,Coffee Maker,Home Appliances,8,79.99,639.92,2025-01-02,"8070 Whitehead Islands
+Jordanchester, AK 19770"
+8e2e1d0a-feff-4661-9995-38d0c364b3a8,Samuel Anderson,scottstevenson@example.org,Coffee Maker,Home Appliances,8,79.99,639.92,2025-01-01,"72156 Kyle Meadows
+Jamesstad, OR 33269"
+e005b1f8-a44b-4450-88e0-e9c8c04387c4,Jeremy Kim Jr.,heather04@example.com,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-01,"71882 Sanchez Mission Apt. 026
+Cynthiaburgh, IL 22019"
+b9b1be64-d052-4963-804c-708d2c8695a6,Angela Barker,harpercharles@example.org,Smartphone,Electronics,6,699.99,4199.94,2025-01-02,"1784 Michelle Divide Suite 573
+Duncanfurt, OR 57635"
+42686376-8f59-47bc-b827-88ad1437e6ef,Melissa Wood,melissaphillips@example.org,Notebook,Stationery,6,5.99,35.94,2025-01-01,"8449 Jodi Wall Apt. 499
+Port Tammy, AZ 60694"
+a93ea42d-395d-4365-b2fd-e6c273f7bbfc,Edwin Avila,jerry61@example.org,Headphones,Accessories,7,49.99,349.93,2025-01-02,"Unit 9753 Box 7770
+DPO AA 14200"
+ba385404-ec53-4254-895d-c24a364d4f3c,Meagan Miller,bakerkatie@example.com,Notebook,Stationery,2,5.99,11.98,2025-01-02,"PSC 3155, Box 2868
+APO AE 77704"
+6cfff16e-796b-4fef-b21a-a59d4c9274df,Melissa Dean,lynn80@example.com,Sneakers,Fashion,8,59.99,479.92,2025-01-01,"Unit 2063 Box 3822
+DPO AE 99550"
+494e3266-8827-42bc-b398-e45491fb104a,Samantha Lee,mariakirby@example.net,Sneakers,Fashion,10,59.99,599.9,2025-01-01,"7843 Christina Plaza Suite 652
+New Daniel, VI 26134"
+e98a9e2f-e2b7-4c53-83ff-7c03ef54a0aa,Steven Scott,princecathy@example.net,Headphones,Accessories,6,49.99,299.94,2025-01-01,"80634 Vazquez Place
+Margaretmouth, NH 31111"
+e9fc88d6-0994-4303-a580-f4f18e9476f4,David Davis,dalton90@example.org,Laptop,Electronics,3,899.99,2699.97,2025-01-01,"822 Allison Light Apt. 061
+Nicoletown, OK 37587"
+959ec73a-06eb-45b3-9450-6738efed5db8,Tammy Key,yliu@example.org,Coffee Maker,Home Appliances,2,79.99,159.98,2025-01-01,"11725 Loretta Park
+Christinatown, WA 84824"
+1f9d2a6f-27ca-4b61-8591-2d4a4022ff74,Blake Murray,lewisterrance@example.org,Water Bottle,Accessories,7,19.99,139.93,2025-01-01,"80838 Kemp Centers
+Racheltown, AS 66796"
+bec51c5d-52bb-411e-9d89-377b1ec46ee8,Johnny Bennett,nicole45@example.com,Water Bottle,Accessories,3,19.99,59.97,2025-01-02,"Unit 2049 Box 3075
+DPO AE 09784"
+fabebc8b-9cc0-46a7-ab85-959e403730ea,Sean Price,barmstrong@example.com,Sneakers,Fashion,1,59.99,59.99,2025-01-02,"7945 Catherine Spring Apt. 064
+West Katrinaview, MN 83683"
+66be5356-8566-4376-bc6f-a892d9b08c61,Sandra Kim,qrich@example.org,Desk Chair,Furniture,3,129.99,389.97,2025-01-01,"4467 George Mountain Suite 638
+Zimmermanchester, NM 58409"
+207f4d26-45eb-4d35-82f6-af1505d97493,Kurt Diaz Jr.,georgejill@example.com,Water Bottle,Accessories,10,19.99,199.9,2025-01-01,"460 Thomas Squares Suite 047
+Mitchellport, GU 41579"
+99259181-ab3f-4565-82cb-8184ba1b37e1,Tyler Martinez,msalinas@example.net,Blender,Home Appliances,5,99.99,499.95,2025-01-01,"4511 Evans Rapid
+Bentleyville, GA 32390"
+36fccd7c-0d8c-4f60-a663-540c8068951b,Joseph Hunter,nealmark@example.net,Backpack,Fashion,4,39.99,159.96,2025-01-02,"82944 Tasha Walk Suite 461
+Melaniehaven, IN 47707"
+438cc516-e285-4b1f-b8d8-e9aab91e8b02,Gene Sexton,pcook@example.net,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-01,"2856 Allen Villages
+Lake Bradley, ME 45080"
+0cb7b53b-3c61-4dec-bcdf-b3e8689af3df,Nichole Torres,jimmyramirez@example.org,Notebook,Stationery,1,5.99,5.99,2025-01-02,"453 Alexandra Shores
+Stevenberg, GA 50989"
+4cd12bbd-cd1d-41e6-9df2-fb8d57b9c6aa,Travis Lynch,stephanie88@example.com,Backpack,Fashion,3,39.99,119.97,2025-01-01,"8022 Eric Manor Suite 361
+Port Gregory, NC 43023"
+eb9d2f27-6c9f-461b-85af-e6ee6c5e92d6,Kimberly Howard,austin60@example.net,Sneakers,Fashion,6,59.99,359.94,2025-01-02,"59977 Morgan Radial
+Lake Jamie, PW 02513"
+d501eecd-5146-4a76-8a08-02d287297f8c,James Johnson,annpowell@example.net,Notebook,Stationery,3,5.99,17.97,2025-01-02,"7730 Holland Pike
+Emilyshire, CT 40698"
+c364ed4d-222c-4845-a270-66b5575b79d1,Allen Hernandez,mariahpatterson@example.com,Smartphone,Electronics,6,699.99,4199.94,2025-01-01,"9236 Fischer Coves Suite 089
+Smithchester, MO 48008"
+533c672a-e933-4918-b1e1-853185c48a05,Julie Robinson,brownmelissa@example.org,Laptop,Electronics,3,899.99,2699.97,2025-01-02,"71542 Wilson Knoll
+South Maria, ID 44865"
+249ab49d-47f5-4818-8afa-bf27a854e2cb,Angela Harrington,olsenpeter@example.com,Headphones,Accessories,6,49.99,299.94,2025-01-01,"USNS Green
+FPO AE 58881"
+0bb78525-4888-4bd4-a4b1-51896f08424b,Jennifer Mckee,aaron21@example.org,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"767 Samantha Stream
+Caitlinmouth, OH 53876"
+df9b0f45-5fec-4ab1-b3c7-5d7161582ada,James Reyes,james82@example.org,Backpack,Fashion,10,39.99,399.9,2025-01-02,"83700 Jeffrey Views Suite 644
+West Victoria, WY 24931"
+f9809862-6240-4136-a2c4-6ec3a94db723,Amanda Le,hjohnston@example.org,Blender,Home Appliances,3,99.99,299.97,2025-01-02,"543 Christine Lakes
+Oliviafort, PR 18558"
+d965475b-d21a-4163-bafa-de6c612c043f,John Montoya,dakota01@example.com,Backpack,Fashion,7,39.99,279.93,2025-01-02,"78711 Heather Walk Apt. 156
+Davisville, PR 72372"
+9fee9344-460a-4b71-b0fd-22b6057c49d5,Amy Nichols,uking@example.net,Backpack,Fashion,7,39.99,279.93,2025-01-01,"76460 Eric Cape
+Ramirezview, CO 08297"
+b5656f2b-917f-4f6d-80d6-9f37aa2301a9,Regina Byrd,kristidelgado@example.org,Backpack,Fashion,9,39.99,359.91,2025-01-02,"7491 Frank Pass Suite 127
+Loristad, OK 52119"
+7ca2b606-4cb0-45a4-b055-ee94f9f74a0f,Julie Brown,james68@example.net,Headphones,Accessories,2,49.99,99.98,2025-01-02,"03179 Mcdonald Village
+Flowerschester, OR 12369"
+4b0b153e-0756-4a70-bba1-41acb745e56f,Justin Torres,lisa69@example.com,Headphones,Accessories,4,49.99,199.96,2025-01-01,"PSC 1467, Box 7431
+APO AE 04830"
+553b04a3-f297-48bc-a745-b04d625709db,Aaron Thomas,shannonguzman@example.net,Smartphone,Electronics,2,699.99,1399.98,2025-01-01,"76559 Thomas Via Apt. 314
+Grantstad, ND 13595"
+f1725e37-12ba-4a0d-9369-bccbe4c1f863,Christy Phillips,brownmatthew@example.net,Sneakers,Fashion,3,59.99,179.97,2025-01-02,"89195 Connie Mission Suite 449
+Howellville, ID 00845"
+01f74ba5-c799-4d3c-bdaf-6be667dc6e94,Gregory Fischer,brian27@example.net,Headphones,Accessories,4,49.99,199.96,2025-01-01,"551 Howell Vista
+North Markchester, MP 81566"
+f5804290-4d04-4dfe-bd3b-60c944528f2b,Tammy Chavez,garzadana@example.org,Sneakers,Fashion,10,59.99,599.9,2025-01-02,"529 Bradley Well
+Tiffanybury, PW 57414"
+9ad3831a-4bfb-46b1-ba21-5a7fa4b75ac0,Trevor Johnson,elizabethbutler@example.com,Blender,Home Appliances,3,99.99,299.97,2025-01-01,"92739 Davis Meadows Suite 354
+South Benjamin, MT 06247"
+7b81e033-007a-412e-a2d5-8a08c006591b,Justin Hogan,jessica14@example.com,Coffee Maker,Home Appliances,2,79.99,159.98,2025-01-02,"Unit 6102 Box 2826
+DPO AP 30093"
+f796b7eb-8b51-44e8-9cf7-de6fc7fcb445,Dawn Jennings,richardsondavid@example.org,Blender,Home Appliances,10,99.99,999.9,2025-01-02,"21873 Blevins Union
+South Jorge, MT 48688"
+2b0383bd-6a34-4cf4-a4ca-4c12d0696144,Stephanie Charles,brianna04@example.net,Headphones,Accessories,10,49.99,499.9,2025-01-01,"71170 Lucas Rapid Apt. 496
+Richardborough, KS 02188"
+bc9a446c-4d4e-493b-a22c-2aa5a07339df,Jill Hall,samantha66@example.com,Desk Chair,Furniture,5,129.99,649.95,2025-01-02,"807 Tracy Parkway
+Johnsonland, NC 90338"
+d8719c2c-8537-4c38-8516-575257667c3c,Brenda Flores,jason54@example.com,Headphones,Accessories,6,49.99,299.94,2025-01-01,"6399 Stephanie Green
+Lake Sandra, LA 81436"
+f2885251-fb1a-4f6a-a323-b0e83c06338b,Veronica Dyer,fochoa@example.org,Sneakers,Fashion,2,59.99,119.98,2025-01-02,"41158 Michael Roads
+Wadeview, MN 76352"
+92668d4d-e96c-443c-b24a-b2c5a5b50620,Alexandra Mills,valerie07@example.net,Notebook,Stationery,4,5.99,23.96,2025-01-02,"731 Sarah Ranch Apt. 299
+Lake Sherrytown, GA 96506"
+0573deca-2cae-44ab-b9e8-0005f1402189,Jason Melton,diazjulie@example.com,Headphones,Accessories,1,49.99,49.99,2025-01-02,"3621 Jones Mountains
+New Henry, NC 22271"
+0ce903a7-647a-4fc1-ba89-e4cbc0cbdf9d,Rebecca Daniels,ryanlewis@example.com,Laptop,Electronics,3,899.99,2699.97,2025-01-02,"54770 Evans Passage Apt. 961
+Kevinshire, WV 68752"
+ffa3dabb-a370-4416-a056-4a432a83423c,Rebecca Hill MD,nicholsontheresa@example.com,Laptop,Electronics,6,899.99,5399.94,2025-01-01,"5462 Lauren Mall Apt. 278
+Lake John, AR 88921"
+2355be34-8a59-4e5c-a43d-4853a3329b08,Wendy Wood,zjames@example.net,Smartphone,Electronics,5,699.99,3499.95,2025-01-02,"618 Moss Union Apt. 247
+New Brandy, NV 12425"
+2562d523-4ede-4b15-bf5d-7860b0217cdc,Lacey Chan,erose@example.org,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"4643 Huff Cove Apt. 396
+Hensleymouth, WY 34833"
+568ffad7-d580-445d-85b5-5f3dad375af3,Christopher Jones,davidrobinson@example.org,Headphones,Accessories,1,49.99,49.99,2025-01-02,"USNV Alvarez
+FPO AP 94848"
+dfd01e22-cd1a-4472-8fb5-4caa7efda03d,Adam Lucas,jonesmichael@example.net,Smartphone,Electronics,3,699.99,2099.97,2025-01-02,"631 Powell Spring Apt. 119
+Jamesmouth, IL 56297"
+7e53fb90-8232-4902-a3ec-d1c1549c8852,Kimberly Logan,jonessteven@example.com,Water Bottle,Accessories,5,19.99,99.95,2025-01-02,"USNS Wallace
+FPO AA 55018"
+398d11b0-3e12-4b9a-b08a-07c8262aaf3d,Stephanie Watson,amycarr@example.org,Laptop,Electronics,9,899.99,8099.91,2025-01-01,"1107 Conrad Knolls
+South Edward, MS 70979"
+1c797969-9dc5-4402-8aeb-593ee830e05b,Christopher Ray,gmartinez@example.net,Backpack,Fashion,3,39.99,119.97,2025-01-01,"USCGC Fernandez
+FPO AP 02059"
+0ce4e600-42d8-432c-9fd6-ee793a9a5b67,Melanie Williams,janet48@example.net,Sneakers,Fashion,10,59.99,599.9,2025-01-01,"34907 Travis Circles Apt. 267
+Jamesview, DE 16068"
+12eccff9-7b93-43ce-9a6d-1ee7c31f624d,Angela Sanchez,chambersjeffery@example.org,Smartphone,Electronics,8,699.99,5599.92,2025-01-02,"5018 Madison Hills
+Kathrynshire, AL 13864"
+e7a6de5e-38c5-46ed-82f6-00cc16061477,Brittany Bates,denise32@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"520 Andrew Islands Suite 564
+New Debbieburgh, DC 35809"
+478c62e8-1c41-441b-a260-fea1ea171214,Stephanie Miller,wshields@example.net,Laptop,Electronics,4,899.99,3599.96,2025-01-01,"5926 Jennifer Circle
+Alexanderburgh, DE 57613"
+eaac1a4d-ef08-48ad-95ba-7e34f3b80d7c,Walter Trujillo,mikerodriguez@example.org,Notebook,Stationery,8,5.99,47.92,2025-01-02,"6814 Mark Field
+Rodriguezville, MN 52835"
+4b3b98b7-052b-4b23-8ff1-8f44afbcb37f,Michael Davidson,masonmadison@example.net,Headphones,Accessories,3,49.99,149.97,2025-01-02,"2258 Diane Oval
+North Williamport, AS 45152"
+86f17d60-b877-4fb1-8732-ba1bda0ca6f1,Brittany Hebert,benitezkim@example.net,Smartphone,Electronics,1,699.99,699.99,2025-01-02,"067 Lisa Well Suite 613
+Vanessamouth, IA 05161"
+ad9f21e6-9d82-44bd-90bd-07554492675b,James Lopez,susan24@example.org,Sneakers,Fashion,8,59.99,479.92,2025-01-02,"91146 Evans Estates
+Jessicamouth, MP 38006"
+22051499-59b0-4d04-8f7f-4b02e5d67cd0,Valerie White,randy55@example.com,Headphones,Accessories,3,49.99,149.97,2025-01-01,"72965 White Station
+Port Haley, NM 35775"
+f9e4c9ad-7f46-4e5f-9eee-26d193c21ccf,Anthony Hall,anthonyguerrero@example.net,Blender,Home Appliances,3,99.99,299.97,2025-01-02,"864 Judy Green
+Port Kathryn, DE 02487"
+43e405fa-6092-4817-9586-812f29d77d19,Gary James,erikhernandez@example.org,Coffee Maker,Home Appliances,6,79.99,479.94,2025-01-02,"578 Mccann Inlet
+South Brittany, UT 55317"
+bf13003c-2fb8-4833-b857-48975d299243,Dr. Melissa Ray,cruzjohn@example.com,Desk Chair,Furniture,10,129.99,1299.9,2025-01-02,"2132 Melinda Lodge
+New Joshuahaven, DE 36155"
+8c478888-44c8-4d44-b4be-65847bbec606,Jose King,salinasjerry@example.net,Backpack,Fashion,3,39.99,119.97,2025-01-02,"379 Chad Rapids Suite 272
+Hansenfort, GA 90528"
+bd73dd10-7d14-48ad-b973-957a9f914c3e,Kenneth Young,calebparker@example.com,Smartphone,Electronics,7,699.99,4899.93,2025-01-01,"84978 Adams Brooks
+Martintown, CO 68477"
+83b74531-cc1e-4401-9ecd-2d020d1146c4,Matthew Sanchez,gregorygraves@example.net,Blender,Home Appliances,6,99.99,599.94,2025-01-01,"23893 Shelton Dale
+Patrickfort, CT 05980"
+7dc77618-617b-4bf3-8a19-4286ca9e522f,Arthur Hall II,elizabethjensen@example.org,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"6542 Catherine Center Suite 820
+North Andrea, NM 81450"
+9013a5d0-d097-47aa-8c74-74a65b681b98,Andrew Bolton,barrsonya@example.com,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-01,"241 Greene Trail
+North Joshua, MT 63033"
+2c5475ef-5389-4f28-be66-6ee113d92999,Virginia Leonard,jjones@example.net,Coffee Maker,Home Appliances,8,79.99,639.92,2025-01-01,"7800 Madison Squares Suite 206
+Curtisborough, CT 32641"
+ddee1912-d4f1-4849-b7e1-b53aef310dda,Joe Vargas,wmoore@example.net,Water Bottle,Accessories,5,19.99,99.95,2025-01-02,"084 Lloyd Mission Apt. 277
+North Kayla, MP 10204"
+f65e46df-cc58-4f7e-aee1-2c3f44ff9928,Emily Morales,kylesmith@example.net,Notebook,Stationery,6,5.99,35.94,2025-01-01,"4651 Contreras Shore
+Port Annville, MP 14309"
+3935291d-111c-4ee1-b2c1-791a2a31b389,John Johnson,shannontina@example.org,Notebook,Stationery,5,5.99,29.95,2025-01-01,"384 Ellen Mountain
+East Maryfurt, RI 68394"
+7b0992cd-a16c-4f5c-9d31-be2b8ff75abb,Kelly Foster,marydoyle@example.com,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-02,"10157 Murray Grove Apt. 616
+Sarabury, SD 91445"
+80db7db1-eff2-4ac9-a682-b099707c5c93,Sarah Lewis,jessemason@example.net,Notebook,Stationery,9,5.99,53.91,2025-01-02,"419 Amanda Plaza Apt. 174
+Juanmouth, AS 79746"
+d8ecd9ea-84b9-42f5-9f9f-89e1c057b1de,Heather Buck,ftapia@example.net,Notebook,Stationery,2,5.99,11.98,2025-01-01,"736 Frank Light
+Dillonland, SD 95559"
+677abdfb-58e8-4f24-87a4-4665f93f08b3,Rodney Jones,vanceamanda@example.com,Blender,Home Appliances,9,99.99,899.91,2025-01-02,"PSC 5006, Box 2962
+APO AP 10987"
+ce951a75-2596-4952-b604-befa1a829027,Ms. Dana Davis,christopher73@example.net,Water Bottle,Accessories,1,19.99,19.99,2025-01-01,"94235 Victoria Mountain Suite 578
+North Louis, WV 87128"
+05f44711-d005-4630-b046-a61336943e94,Michelle Ward,kemplisa@example.net,Blender,Home Appliances,3,99.99,299.97,2025-01-01,"0422 Debra Springs Apt. 277
+Taylorbury, VA 57676"
+51080184-e184-41cd-a7c6-8cbb42f41c43,John Mccormick,rking@example.org,Desk Chair,Furniture,8,129.99,1039.92,2025-01-02,"USCGC Coleman
+FPO AA 13378"
+9d20e399-353a-427b-b2a7-fd6051d94b7c,Denise Coleman,garciaedward@example.com,Headphones,Accessories,6,49.99,299.94,2025-01-01,"02799 Mary Summit
+Briggsshire, WV 02604"
+36ecd0cd-ffc8-4436-954a-4e74c5d2b2d7,Emily Young,dickersoncameron@example.org,Water Bottle,Accessories,1,19.99,19.99,2025-01-01,"357 Tiffany Divide
+Lake Barrytown, MP 72718"
+d0fc6e66-cd99-485c-a386-ce8a168c404e,Vanessa Sellers,megan40@example.org,Blender,Home Appliances,5,99.99,499.95,2025-01-02,"8852 Bryan Street Apt. 441
+Perryville, KS 69626"
+9c1b7a12-84ea-4e1f-98bb-9c408d182a91,Evan Delacruz,nicholas86@example.net,Headphones,Accessories,9,49.99,449.91,2025-01-01,"099 Anna Camp
+Crystalview, AS 44040"
+b9764e63-cf70-4a07-bc0d-0f92c4626f67,Dr. Benjamin Adkins,keithsalazar@example.net,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-01,"79511 Brittany Walks Apt. 176
+New Christopher, TN 80522"
+1249a749-c217-4d89-a4ad-9180c0d34aad,Felicia Martinez,fcarlson@example.com,Water Bottle,Accessories,10,19.99,199.9,2025-01-02,"045 Matthew Spurs
+Lake Bruceton, MP 71700"
+2cea2b93-e287-4157-921a-ca8e3714ac6f,Brad Taylor,karen95@example.com,Water Bottle,Accessories,8,19.99,159.92,2025-01-02,"5812 Lopez Camp
+East Trevor, MI 52549"
+a73a1489-f951-4d7c-b5ac-5133cd644e2d,Jeremiah Combs,asmith@example.org,Backpack,Fashion,2,39.99,79.98,2025-01-02,"3160 Danielle Streets
+Port Caitlin, DE 32684"
+e8401042-96df-4e32-a34c-6e770bc1a92d,Amy Mcgee DDS,etucker@example.com,Blender,Home Appliances,7,99.99,699.93,2025-01-02,"186 Weber Overpass Suite 257
+Justinmouth, NY 03807"
+9b1bfb16-927d-4458-a3c6-4870101224fb,Christopher Brown,lauracasey@example.net,Backpack,Fashion,9,39.99,359.91,2025-01-01,"420 Wesley Overpass
+North Laurenstad, NJ 69835"
+188e2cf0-0fe5-4302-bb44-ef7daf7d91fd,Christopher Newman,adam43@example.com,Blender,Home Appliances,4,99.99,399.96,2025-01-02,"2572 Long Highway Apt. 711
+East Charlesside, WV 57493"
+7c50afe0-d2e1-4399-84f6-bf5095171897,John Murphy,stephen58@example.org,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-01,"969 Sara Dale Suite 549
+Stevensshire, PW 71050"
+52d90b1a-213b-4a65-8d58-8f9c3eb2a878,Michael Simmons,jose79@example.net,Desk Chair,Furniture,1,129.99,129.99,2025-01-02,"04810 Erika Gardens Suite 227
+Tiffanyfurt, WI 64950"
+0fa1f976-890c-41ae-ab5c-6e35859c08cc,Gregory Saunders,canderson@example.org,Notebook,Stationery,10,5.99,59.9,2025-01-01,"190 Richard Lakes Suite 084
+East Williamfurt, NV 68642"
+f7bca3b4-f786-4f2f-804f-b434ae5584d8,Tonya Campbell,mlee@example.org,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-02,"0780 William Lake Apt. 483
+Ibarrafort, NH 79751"
+1fd24c5a-33e9-4702-b6c1-cd96c5a9652a,Lisa Smith,noblealexis@example.net,Headphones,Accessories,2,49.99,99.98,2025-01-02,"37674 Amy Streets
+Hartmanburgh, TN 57903"
+8bd1521a-a408-4fe8-a93e-9226cba3e5b1,Sara Williams,orrkaitlyn@example.org,Laptop,Electronics,6,899.99,5399.94,2025-01-01,"5288 Alexis Islands
+New Katie, NH 57688"
+cfe9f99f-8f24-481b-983f-8cd1ced9c97d,Charlene Harrington,cisnerosderrick@example.net,Desk Chair,Furniture,5,129.99,649.95,2025-01-02,"531 Moore Harbor Suite 080
+Donnaburgh, NM 95073"
+fe1c5510-35ea-42f7-9f12-c6317d27b981,Tammy Donaldson,sarahnguyen@example.net,Water Bottle,Accessories,7,19.99,139.93,2025-01-02,"776 Rodriguez Ports Apt. 479
+Colechester, HI 50815"
+62eaa350-8323-484f-b513-8c1afc16b963,Diamond Jones,pambutler@example.com,Smartphone,Electronics,1,699.99,699.99,2025-01-01,"602 Amanda Lights Suite 345
+South Lisaberg, WI 02235"
+dc8c4213-8eae-48c3-af94-ea77fab2eee6,Brandon Tate,amandalynch@example.com,Backpack,Fashion,7,39.99,279.93,2025-01-01,"30521 Anderson Pike Apt. 358
+Rosston, AK 53080"
+c31aa704-0b97-4e82-b202-34b247a2cbbd,Colleen Juarez,wandadowns@example.com,Smartphone,Electronics,9,699.99,6299.91,2025-01-01,"2105 Moore Vista
+Judithfort, VA 61006"
+1fdeb563-a8ac-41b9-aab0-56595c01f93d,Ashley Woodard,valerie40@example.org,Backpack,Fashion,4,39.99,159.96,2025-01-01,"179 Livingston Forks
+New Jessica, VI 03182"
+22f83aa9-e275-4691-8ba6-c736749cbb07,Judith Walker,wstone@example.com,Backpack,Fashion,10,39.99,399.9,2025-01-02,"84596 Richard Loop Apt. 356
+Robertton, WV 88273"
+857a54a1-6701-46c3-8bef-acb687dc5155,Amy Smith,kennethgraves@example.org,Laptop,Electronics,9,899.99,8099.91,2025-01-01,"Unit 0594 Box 9769
+DPO AP 88311"
+88ecd175-af07-4bae-be47-2b02f639a19b,Julie Greer,robertsantana@example.net,Desk Chair,Furniture,8,129.99,1039.92,2025-01-01,"63662 Castillo Forge
+North William, WV 05080"
+86d36b82-6b32-4b87-b88a-9c9e58013151,Anna Burnett,jillwade@example.com,Sneakers,Fashion,5,59.99,299.95,2025-01-01,"936 Mccarthy Islands Apt. 462
+Jaimemouth, ND 29932"
+52a3ccf0-4ce0-4437-a005-8db2f75295f9,Cory Todd,bradley06@example.org,Desk Chair,Furniture,4,129.99,519.96,2025-01-01,"081 Larry Rapids
+South Cody, ME 16526"
+2eea3237-582d-4877-9171-e08d63478093,Mrs. Michele White,khernandez@example.net,Coffee Maker,Home Appliances,8,79.99,639.92,2025-01-01,"2772 Sheppard Wall Apt. 492
+Williamschester, VT 76632"
+4e9bf4e1-3b8f-4b00-a539-ffe426b37150,Sandra Miller,lisahodges@example.com,Blender,Home Appliances,6,99.99,599.94,2025-01-01,"067 Courtney Street Apt. 646
+Wallaceshire, PW 61572"
+560e2409-0dc2-483d-b14f-172acb70ab50,Stephanie Blake,schmidtamber@example.com,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-01,"192 Lee Mall
+Brandistad, MA 01983"
+4bd76e50-791f-4c60-8416-da5b45a0f7fd,Laura Watson,deborahtaylor@example.net,Backpack,Fashion,1,39.99,39.99,2025-01-01,"3647 Johnston Hollow
+Jamesland, TX 93439"
+c53c2326-10d6-4533-807e-3b39ea935e2d,Emily Walker,curtisvirginia@example.com,Headphones,Accessories,3,49.99,149.97,2025-01-01,"31124 Patricia Drives
+Port Tina, MO 55829"
+f8462000-4555-4963-81de-21a648e4d499,Paul Carpenter,dedwards@example.com,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"984 Colleen Mews
+Millermouth, KY 20393"
+16332e83-e686-4dea-b7e0-92504c392af3,Dustin Wong,lauragraham@example.net,Smartphone,Electronics,1,699.99,699.99,2025-01-01,"4198 Lambert Valleys Apt. 585
+New Jessicaberg, DE 83761"
+c7318de6-d4f9-4b34-8b3d-cd042d7cdfd5,Christopher Morris,ubeck@example.com,Sneakers,Fashion,2,59.99,119.98,2025-01-02,"997 Lisa Underpass
+Glennmouth, MH 68474"
+26c61486-3e9d-44d7-bbde-68c348ac769b,Mark Steele,kimberly65@example.net,Sneakers,Fashion,7,59.99,419.93,2025-01-01,"3023 Tina Green Suite 894
+Stewartmouth, NV 03652"
+0d2d9324-d750-4775-ab18-548ea6d9ca26,Derrick Lopez,watsonsteve@example.com,Smartphone,Electronics,10,699.99,6999.9,2025-01-01,"47641 May Valleys Apt. 349
+South Timothy, KY 31124"
+8b402c14-906b-445b-8354-08a52d1d275a,Marcus Mccullough,sberger@example.org,Backpack,Fashion,2,39.99,79.98,2025-01-01,"Unit 2780 Box 8586
+DPO AP 21842"
+ad5a89a5-5011-4f71-8451-30df2795f627,Dustin Gardner,bdavis@example.org,Blender,Home Appliances,7,99.99,699.93,2025-01-02,"3157 Brown Cliffs
+Lake Danielburgh, OR 13424"
+26ec0fc6-0ed2-4cdd-b80e-8889ce0e7555,Benjamin Mcguire,yroy@example.org,Headphones,Accessories,1,49.99,49.99,2025-01-01,"PSC 7450, Box 4246
+APO AE 30619"
+b4997812-d540-456c-9f82-6a0c937e2167,Jennifer Jones,taylordorsey@example.net,Water Bottle,Accessories,9,19.99,179.91,2025-01-01,"061 Jones Radial
+Hawkinschester, MI 66989"
+800ab0f5-1f92-439e-936a-19a5f50024ce,William Thomas,sanchezgilbert@example.org,Headphones,Accessories,4,49.99,199.96,2025-01-01,"42253 Matthew Vista Apt. 100
+North Joseph, AR 51858"
+70eeda61-98f6-49ba-87fa-2a64b2e6372d,Dana Hicks,melissa33@example.org,Headphones,Accessories,7,49.99,349.93,2025-01-02,"1081 Wayne Run
+Herreramouth, AZ 68428"
+a46c8b61-63e0-4846-ad46-67cb7c67ea2b,William Weber,jenniferjones@example.org,Coffee Maker,Home Appliances,5,79.99,399.95,2025-01-01,"583 John Streets
+Calderonstad, NH 54581"
+9b7060e1-5614-466f-b03b-ff5754b6f25b,Philip Martin,hgilbert@example.net,Notebook,Stationery,9,5.99,53.91,2025-01-01,"29271 Wagner Isle
+Lake Sarahton, VI 86695"
+7b2e87dc-7273-4614-9f7d-421331a02443,Derrick Leon,tglenn@example.net,Blender,Home Appliances,1,99.99,99.99,2025-01-01,"319 Cox Landing
+East Karen, HI 28245"
+94340389-60b1-4286-9b7a-89b9b8b2fd99,Jermaine Mckay,williamscheryl@example.org,Smartphone,Electronics,1,699.99,699.99,2025-01-01,"641 Rebecca Corner Suite 380
+Williamstad, HI 49143"
+b4a6cc3d-f1f7-41da-a638-a24cea3f9eec,Sherry Morris,frankharris@example.com,Headphones,Accessories,9,49.99,449.91,2025-01-01,"1204 Brandon Mews Apt. 870
+North Kyleville, KY 62410"
+698903e2-b7e1-402e-836e-116ca64e145a,Adam Murray,sbates@example.com,Blender,Home Appliances,6,99.99,599.94,2025-01-01,"PSC 5903, Box 8382
+APO AE 98225"
+977350df-5946-472c-8053-e03b41d3ef6f,Jeremy Peterson,jerrypeterson@example.com,Notebook,Stationery,3,5.99,17.97,2025-01-01,"141 Glenn Forges Apt. 399
+South Monicaville, OH 60167"
+94571b01-840f-4315-a627-0a98ee611cf1,Manuel Watson,jim20@example.net,Headphones,Accessories,6,49.99,299.94,2025-01-02,"85342 Williams Branch Apt. 657
+New Reneeside, MT 95238"
+03d68f9f-a10f-4fbe-b54f-045c5fb14c4c,Eugene Neal,megan55@example.org,Headphones,Accessories,4,49.99,199.96,2025-01-02,"79381 Joseph Drives Apt. 084
+Port Teresa, MP 02615"
+694ac1cd-a60b-4472-b50a-021f61206c77,Timothy Burton,jamesford@example.net,Backpack,Fashion,6,39.99,239.94,2025-01-02,"11731 Bowers Vista
+Lake Robertland, TX 20962"
+c39f8025-929a-4117-b09e-b6a8efc1bacb,Richard Myers,ychristensen@example.com,Sneakers,Fashion,8,59.99,479.92,2025-01-01,"97782 Richards Falls Apt. 273
+Mitchellshire, GU 06391"
+03e67b4f-8d72-4dec-a298-89d6c820445c,Annette Ramos,ericgreen@example.com,Sneakers,Fashion,2,59.99,119.98,2025-01-01,"22808 Steven Plains Apt. 457
+Nunezchester, MH 93811"
+df46a8ee-2c77-47dd-81a0-c8f3b5c0fc88,Anna Campbell,alvarezmelissa@example.org,Notebook,Stationery,1,5.99,5.99,2025-01-02,"1692 Melissa Isle
+Melissaberg, MN 10861"
+32f38dc2-675e-4873-a7e3-7e2f4813129f,Jonathan Duncan,uwright@example.net,Headphones,Accessories,7,49.99,349.93,2025-01-02,"Unit 7153 Box 5226
+DPO AA 37658"
+13625e2e-eb69-4519-906f-007157dc642b,Mark Logan,pgarcia@example.com,Notebook,Stationery,10,5.99,59.9,2025-01-02,"3599 Kristin Ports
+Lake Michael, AZ 11167"
+68d07754-381e-42cf-aa72-79cd6fcc584f,Linda Ponce,pguzman@example.com,Water Bottle,Accessories,7,19.99,139.93,2025-01-01,"0569 Daisy Mall
+South Edwinmouth, NV 09810"
+1e2ba402-5dcb-4ed8-897c-659a6f0849a7,Kyle Deleon,hannah85@example.net,Laptop,Electronics,6,899.99,5399.94,2025-01-01,"PSC 2861, Box 6046
+APO AA 76639"
+d1d2a652-4d63-4244-82e0-ebadaac1dd1b,Kenneth Brooks,katelynsharp@example.com,Desk Chair,Furniture,9,129.99,1169.91,2025-01-01,"PSC 9253, Box 7523
+APO AA 14634"
+ddce874e-00c4-4227-aa9d-e6598991fe9b,Jesus Moore,gerald13@example.com,Water Bottle,Accessories,1,19.99,19.99,2025-01-02,"07454 Robinson Haven Apt. 884
+New Lauren, TX 37271"
+e3f52651-bd75-44ed-8eb4-f13068de4ded,Stephen Wright,egross@example.com,Backpack,Fashion,4,39.99,159.96,2025-01-01,"700 Amanda Spring
+Michaelchester, OH 42569"
+2087bafd-3bdc-4f70-ac27-2ad5128a918e,Ann King,tracey74@example.net,Headphones,Accessories,2,49.99,99.98,2025-01-01,"3237 Benjamin Square
+Kerrland, ND 74380"
+32ef6071-311a-40cb-98b2-07fc952ff3b3,Dominique Tran,kevinrodriguez@example.com,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-02,"94732 Johnson Burg Suite 776
+East Lisaport, SD 62129"
+f768629e-3ef2-4b2c-bd72-bcdd7365b3ce,Edward Parker,thomascuevas@example.net,Laptop,Electronics,8,899.99,7199.92,2025-01-01,"800 Dana Common
+South Zachary, MS 38092"
+2f0ef08b-f134-468d-aca8-e484a83b2de4,Tracey Hunter,gmccullough@example.net,Backpack,Fashion,9,39.99,359.91,2025-01-02,"139 Patterson Underpass Suite 232
+East James, CO 27423"
+46b70fd7-083f-4df9-8834-481c64684ea6,Willie Vasquez,jacob40@example.com,Laptop,Electronics,9,899.99,8099.91,2025-01-01,"4328 Jackson Drive
+Smithborough, IN 14944"
+f5ad3d21-89f3-4aaf-9bff-eb2bb60d439d,Bruce Lopez,mary48@example.net,Backpack,Fashion,3,39.99,119.97,2025-01-01,"USS Ortiz
+FPO AA 86402"
+da65a307-699f-4169-ae1c-7228f26f1729,Kyle Bruce,emily75@example.org,Desk Chair,Furniture,4,129.99,519.96,2025-01-01,"43364 Smith Stream
+West Meghan, CA 66111"
+bb4382b6-f3b9-46f6-9220-ec4d21137077,Rebecca Davis MD,james33@example.net,Coffee Maker,Home Appliances,4,79.99,319.96,2025-01-02,"8701 Penny Parks
+West Jayville, AS 15282"
+d82b91df-6e29-4e55-910b-3eff8145e734,Lisa Coleman,sarahadams@example.org,Backpack,Fashion,8,39.99,319.92,2025-01-01,"60944 Allen Walk
+West Cole, PA 54057"
+5aa1f99e-3c99-46ba-9399-842e0309761b,Edwin Oliver,kcuevas@example.org,Laptop,Electronics,8,899.99,7199.92,2025-01-02,"335 Ward Tunnel
+Lake Johnport, WY 03330"
+af454f35-25d0-475f-844e-2917263db376,Jeffrey Dunn,linda21@example.org,Backpack,Fashion,4,39.99,159.96,2025-01-02,"127 Cook Forks
+Meyersbury, WY 32236"
+0fa094fc-5f2f-4e2f-b53f-81ad2fdc5930,Dan Kaiser,cobbbrian@example.org,Backpack,Fashion,7,39.99,279.93,2025-01-02,"780 William Cove Apt. 356
+Marthaborough, WI 83117"
+586cbcc1-e39d-4ceb-8445-7e43fb8d3fdc,Zachary Williams,eric15@example.com,Notebook,Stationery,8,5.99,47.92,2025-01-01,"10033 Walter Extension
+West Amandaside, SC 86168"
+d4da51cd-b563-4027-829f-133c24040548,Thomas Sanders,robertsmith@example.org,Laptop,Electronics,7,899.99,6299.93,2025-01-02,"50391 Amy Canyon Apt. 718
+Kevinstad, AK 20334"
+03972dd8-e128-4640-ad05-b6b8c5c109e6,Christopher May,briantucker@example.com,Desk Chair,Furniture,3,129.99,389.97,2025-01-02,"7039 Foster Harbor Suite 214
+Dixontown, AR 80038"
+a941c2bd-187b-4eb8-8bb5-b168dd3e985b,Jesse Harper,kimberly74@example.com,Laptop,Electronics,6,899.99,5399.94,2025-01-01,"9169 Jones Junctions Apt. 666
+Thomasside, MH 92259"
+49cb5409-4ac2-46c6-90d1-301b108f7e29,Stephen Smith,fmolina@example.net,Laptop,Electronics,3,899.99,2699.97,2025-01-01,"8167 Stephanie Mill
+New Tiffany, DC 58570"
+a51ae252-72e8-4c9a-8923-adeac8ab680b,Richard Hurley,susanjackson@example.org,Sneakers,Fashion,7,59.99,419.93,2025-01-02,"5149 Katrina Shores
+Russoberg, ME 99442"
+612d6455-eb05-43d6-b44c-57b9af1c73c5,Norman Jackson,hoganjeffrey@example.net,Smartphone,Electronics,5,699.99,3499.95,2025-01-01,"72483 Briana Lane
+Port Teresafort, NH 61647"
+0adbf173-2685-4909-8c81-349e2666bb35,Brian Cook,tdavis@example.net,Sneakers,Fashion,5,59.99,299.95,2025-01-02,"2113 Harrington Rapid Apt. 169
+North Kimberlyfort, CA 06172"
+8b71ac32-1038-4602-a1b1-10dad2becbca,David May,richard37@example.net,Desk Chair,Furniture,2,129.99,259.98,2025-01-02,"28474 Tyler Gardens
+Gregoryside, WV 24926"
+a3cd3892-186a-4cff-bc67-5fec2aeea3f7,Steven Clarke,denisejacobs@example.net,Backpack,Fashion,7,39.99,279.93,2025-01-02,"241 Brenda Road Apt. 353
+Garymouth, AR 88374"
+e296bbbc-bfab-4b9c-baaa-ffe18a03fd7f,Andrew Santiago,smithderek@example.com,Laptop,Electronics,2,899.99,1799.98,2025-01-01,"6931 Flowers Freeway
+West Kevinberg, WV 93081"
+c6ba9241-d97e-4dd3-9057-b34282793749,Jeffrey Brown,michaelkelley@example.com,Headphones,Accessories,4,49.99,199.96,2025-01-01,"6727 Hansen Roads Apt. 363
+Josephtown, NM 78690"
+8408cad2-e2d5-465a-b625-8096d2138364,Kylie Meyers,vmcdonald@example.com,Smartphone,Electronics,5,699.99,3499.95,2025-01-02,"2646 Amanda Glen
+West Scott, MO 37205"
+de8830f3-3ff0-48b6-861d-6b34af5d042e,Candace Kelly,kbyrd@example.org,Smartphone,Electronics,10,699.99,6999.9,2025-01-02,"644 Dominic Mission Apt. 501
+Harrisonside, KY 96529"
+a97af86e-5132-4a2f-9263-55b9f274a604,Maria Davis,curtisapril@example.net,Backpack,Fashion,9,39.99,359.91,2025-01-01,"43490 Jesus Corner
+East Tabithachester, ND 77728"
+4bcbd6ed-0e90-43b3-845f-db8b670b0e7b,Timothy Gonzalez,amandacruz@example.net,Desk Chair,Furniture,2,129.99,259.98,2025-01-01,"230 Dillon Neck Suite 776
+South Kathryn, AR 37279"
+fee09cdc-609b-4bc1-aa1f-bb0678e73141,Jose Simmons,dtaylor@example.org,Smartphone,Electronics,2,699.99,1399.98,2025-01-01,"55541 Christopher Inlet Suite 758
+Karenland, MA 08275"
+2c4ea6c0-a33b-4f69-bec9-35f3a961a213,John Brown,qbyrd@example.com,Sneakers,Fashion,9,59.99,539.91,2025-01-01,"1365 Courtney Forges Apt. 088
+Deannaside, VI 41786"
+c0bed3a6-d781-43fd-bdd0-a034246850fb,Bonnie Peterson,salasluis@example.net,Headphones,Accessories,4,49.99,199.96,2025-01-01,"33112 Brandon Isle Suite 558
+East William, SD 78971"
+678ee3dc-8781-4892-92f6-88072e535539,Keith Rivera,jessicacole@example.org,Backpack,Fashion,9,39.99,359.91,2025-01-02,"34615 Patel Underpass
+East Paul, VI 80767"
+d679ce5a-8f68-47d1-8bdf-e67aa90dac6f,Trevor Wells,rowetiffany@example.net,Notebook,Stationery,3,5.99,17.97,2025-01-01,"3968 Rodriguez Gateway
+Smithhaven, VI 45343"
+1acb95e0-b6f1-42e6-bf52-f2be227013fa,Nicholas Watson,smithanna@example.com,Blender,Home Appliances,4,99.99,399.96,2025-01-01,"Unit 6327 Box 0778
+DPO AA 59708"
+3532ccc2-ad74-413e-9a84-b3510dfa2999,Timothy Robles,lawrencethompson@example.org,Water Bottle,Accessories,3,19.99,59.97,2025-01-02,"313 Elijah Keys Suite 544
+New Beckyside, AR 39678"
+3c5fe554-7a01-477b-b530-b6404c6d0f51,Rebecca Floyd,thoward@example.com,Notebook,Stationery,10,5.99,59.9,2025-01-02,"08896 Edwards Mountains
+South Madelineview, MI 17353"
+77aee579-08c8-4db4-a88f-c0c5929e3950,Joel Mitchell,wrightjames@example.org,Blender,Home Appliances,1,99.99,99.99,2025-01-01,"383 Jessica Mills Apt. 429
+New Reginamouth, VT 59562"
+320fdbd1-437a-460e-9d6f-3cca5a940d8f,Michael Brady,salazarsusan@example.net,Water Bottle,Accessories,3,19.99,59.97,2025-01-01,"19573 James Loop Suite 313
+Michaelmouth, NM 45703"
+8c8c1d50-dd40-427b-8a1c-c9627547f50d,Hannah Young,joshuajohnson@example.org,Notebook,Stationery,2,5.99,11.98,2025-01-01,"0565 Sutton Court Apt. 595
+Garnerberg, ME 74608"
+4311f484-4ce0-4c2a-aeb9-32ec43565702,Daniel Stuart,pthomas@example.net,Laptop,Electronics,1,899.99,899.99,2025-01-01,"849 Shannon Views Apt. 320
+South Jamesland, CT 10464"
+b8435076-7776-4fe1-82a7-5e14aad52736,Janet Hensley,kkeller@example.net,Backpack,Fashion,9,39.99,359.91,2025-01-02,"10123 Kaiser Corners Apt. 840
+New William, WI 39059"
+fa987eca-1698-4643-9e98-efff23df78e2,Adam Woods,bishopjulie@example.org,Sneakers,Fashion,2,59.99,119.98,2025-01-01,"88769 Brittany Meadow Suite 628
+New Destinyborough, LA 45941"
+461cbc95-59f1-4771-8b32-86c551587afd,Nicole Moore,ulittle@example.com,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-01,"991 Carla Fort Suite 831
+Maxwellfurt, MO 40513"
+35ab9801-922a-4bb9-b434-e3492cd46fb9,Sara Stone,dylan86@example.com,Desk Chair,Furniture,6,129.99,779.94,2025-01-02,"155 Jose Village
+North Tiffanyfort, PR 82437"
+17c66456-8741-4e03-b119-e8042e7ff191,Eric Crosby,lance63@example.com,Blender,Home Appliances,6,99.99,599.94,2025-01-01,"4451 Teresa Spurs
+Robinsonside, SC 35016"
+0e5e1fd5-a050-4757-ad81-fb678370d408,Carlos Faulkner,joshuabrown@example.org,Laptop,Electronics,6,899.99,5399.94,2025-01-02,"76912 Austin Estate Suite 409
+North Jamesfurt, AL 05970"
+78b55ab4-b3e2-41e5-b004-f581a657a811,Erin Williams,spearsrobert@example.net,Smartphone,Electronics,7,699.99,4899.93,2025-01-01,"1855 Anna Divide
+Lisamouth, MO 42484"
+097c6892-d8ba-483c-8956-4b456d713f91,Fred Cox,paige76@example.net,Smartphone,Electronics,10,699.99,6999.9,2025-01-02,"Unit 5136 Box 2973
+DPO AP 65943"
+eb14a663-5a7e-4504-bf4f-22e40e21521b,Erika Kirk,steinmark@example.org,Notebook,Stationery,4,5.99,23.96,2025-01-02,"681 Thompson Mountains Suite 167
+Jeffreyburgh, PR 11530"
+7906e482-cd12-45b5-b87e-ce6c3e54618b,Matthew Sanchez,hbrock@example.net,Headphones,Accessories,2,49.99,99.98,2025-01-02,"2549 Ashley Hills Apt. 925
+Katherinehaven, DC 49454"
+e8feca92-36f0-4d1d-ab1d-bb28ff649f0c,Jasmin Lewis,martinezmegan@example.com,Desk Chair,Furniture,6,129.99,779.94,2025-01-02,"USS Berry
+FPO AA 20649"
+d72e7f42-ee6b-4798-9400-6c4324bb523d,Eric Neal,garciaerica@example.com,Laptop,Electronics,5,899.99,4499.95,2025-01-01,"2293 Andrew Inlet Apt. 057
+East Willieberg, LA 34997"
+917d8d9c-ee16-4912-aa01-e56f034402bd,Laura Johnson,johnsongarrett@example.net,Headphones,Accessories,3,49.99,149.97,2025-01-02,"34897 Lisa Villages Apt. 104
+East Deborah, ND 38780"
+43456df2-39d4-4119-8317-c3822e6a686a,Philip Rivera,watsonkevin@example.com,Headphones,Accessories,3,49.99,149.97,2025-01-01,"3668 Michelle Flat Suite 255
+North Stephanie, NC 86108"
+357a6a0c-5a9a-40e5-ae88-2233b6b3a43c,Richard Delgado,shannonnielsen@example.net,Smartphone,Electronics,1,699.99,699.99,2025-01-02,"4403 Elliott Court
+Courtneyton, OK 24837"
+17bb8adc-ac4a-4311-881b-0dbdba36ddc7,Kristen Thompson,jasminehammond@example.com,Blender,Home Appliances,10,99.99,999.9,2025-01-02,"63147 Gonzales Ranch
+Kevinshire, RI 99844"
+1bb6ec28-40a0-4c6f-b6d3-ee6bc69368ae,Tonya Hernandez,nathancollier@example.com,Coffee Maker,Home Appliances,1,79.99,79.99,2025-01-01,"590 Sheri Harbors Suite 465
+East Mary, TN 35169"
+79500f2c-55a6-49f5-801f-7f8797a8e553,Courtney Ward,amy21@example.net,Backpack,Fashion,7,39.99,279.93,2025-01-02,"PSC 5777, Box 0612
+APO AP 22977"
+74662a36-dd2f-4dd3-9d6f-031ffc3e686c,Angela Green,stevensonmaria@example.com,Water Bottle,Accessories,4,19.99,79.96,2025-01-02,"PSC 0376, Box 3642
+APO AA 69000"
+03f8b4b7-07c3-42c7-a49e-64955203d6ec,Luis Wilson,sshah@example.net,Blender,Home Appliances,10,99.99,999.9,2025-01-02,"38008 Kim Cove Suite 878
+North Shane, CO 25633"
+478ede74-30bf-4b7d-8a71-ecf33baa6b59,Kathryn Brennan,trobertson@example.net,Laptop,Electronics,8,899.99,7199.92,2025-01-01,"569 Franklin Parks
+West Colinberg, SC 26773"
+a7f25105-7d86-4dd8-a6a3-ff1f331022f9,Heather Odonnell,frankgutierrez@example.org,Coffee Maker,Home Appliances,9,79.99,719.91,2025-01-02,"54900 Wilson Mission Apt. 711
+Port Kristitown, LA 23335"
+83b6de11-d486-471d-8d25-ad72d7981041,Elizabeth Myers,donnathompson@example.com,Headphones,Accessories,6,49.99,299.94,2025-01-02,"USCGC Smith
+FPO AA 25025"
