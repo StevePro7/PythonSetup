@@ -1,3 +1,0 @@
-/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PythonObjectBook/Ex01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PythonObjectBook/Ex01/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/PythonObjectBook/Ex01/cmake-build-debug/CMakeFiles/Ex01.dir

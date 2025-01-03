@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g -shared  -o Pybind11Example.cpython-38-x86_64-linux-gnu.so CMakeFiles/Pybind11Example.dir/source/example.cpp.o 

@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -g -g -shared  -o example.cpython-38-x86_64-linux-gnu.so CMakeFiles/example.dir/source/example.cpp.o 
