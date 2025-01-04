@@ -1,7 +1,7 @@
-Chat GPT
+Chat GPT 02
 04-Jan-2025
 
-python flask rest api could you show me example with full solid principles loose coupling and dependency injection with serialization to the postgresql data access layer with sqlalchemy that can be fully unit tested with pytest and mock objects   
+can you also add examples of pydantic for validation   
 
 python -m venv .venv
 source .venv/bin/activate
@@ -21,6 +21,7 @@ source .venv/bin/activate
 
 
 pip install -r requirements.txt
+pip install pydantic
 
 
 Step 3: config.py - Configuration
