@@ -1,6 +1,7 @@
 import pytest
 from app import app
 from unittest.mock import MagicMock
+from pydantic_models import UserCreateRequest, UserResponse
 
 
 @pytest.fixture
@@ -15,9 +16,11 @@ def mock_user_service():
 
 
 def test_get_users(client, mock_user_service):
-    mock_user_service.get_all_users.return_value = [{"id": 1, "name": "John", "email": "john@example.com"}]
+    mock_user_service.get_all_users.return_value = [
+        UserResponse(id=1, name="John", email="john@example.com")
+    ]
 
-    # Dependency Injection: Inject the mock service into the app
+    # Inject the mock service
     app.user_service = mock_user_service
 
     response = client.get("/users")
@@ -29,7 +32,7 @@ def test_get_users(client, mock_user_service):
 
 
 def test_create_user(client, mock_user_service):
-    mock_user_service.create_user.return_value = {"id": 2, "name": "Jane", "email": "jane@example.com"}
+    mock_user_service.create_user.return_value = UserResponse(id=2, name="Jane", email="jane@example.com")
 
     # Inject the mock service
     app.user_service = mock_user_service
@@ -40,3 +43,11 @@ def test_create_user(client, mock_user_service):
     assert response.status_code == 201
     assert data["name"] == "Jane"
     assert data["email"] == "jane@example.com"
+
+
+def test_create_user_validation_error(client):
+    response = client.post("/users", json={"name": "Ja", "email": "invalid_email"})
+    data = response.get_json()
+
+    assert response.status_code == 400
+    assert "error" in data

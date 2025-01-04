@@ -24,12 +24,10 @@ pip install -r requirements.txt
 pip install pydantic
 
 
-Step 3: config.py - Configuration
-Step 4: models.py - SQLAlchemy Models
-Step 5: serializers.py - Marshmallow Serialization
-Step 6: repositories.py - Data Access Layer (Repository)
-Step 7: services.py - Business Logic Layer (Services)
-Step 8: app.py - Flask Application
+models.py (unchanged, SQLAlchemy models)
 
-Step 9: Unit Tests with Pytest
-Step 10: Running Tests
+Step 3: Create Pydantic Models for Validation
+Step 4: Modify services.py to Use Pydantic Models
+Step 5: Modify app.py to Use Pydantic for Request Validation
+
+Step 6: Unit Tests with Pytest and Mocking
