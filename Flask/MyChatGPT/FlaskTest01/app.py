@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from config import Config
-from repositories import UserRepository
+from repository import UserRepository
 from services import UserService
 from serializers import UserSchema
 from models import db
