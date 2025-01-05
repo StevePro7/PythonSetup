@@ -47,3 +47,7 @@ VS Code break
 
 Reference:
 ~/GitHub/StevePro9/PythonSetup/PyBind/DebugEX00
+
+
+source
+https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code
