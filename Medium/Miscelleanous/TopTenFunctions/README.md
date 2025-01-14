@@ -9,4 +9,7 @@ https://medium.com/@Behavior2020/10-python-functions-every-data-scientist-must-m
 4. Map Function      apply a function to all items in input list
 5. Filter Function   construct an iterator from elements which returns true
 6. Sorted Function
-7. 
+7. Enumerate Function
+8. Zip Function      return an iterator of tuples passed together
+9. Open Function
+10. Sum Function
