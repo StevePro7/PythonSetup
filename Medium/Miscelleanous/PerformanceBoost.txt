@@ -1,0 +1,65 @@
+Performance Boost
+01-Feb-2025
+
+10 Proven Techniques to Supercharge Your Python Code by 500%
+https://pythonclcoding.medium.com/10-proven-techniques-to-supercharge-your-python-code-by-500-073cb6573e35
+
+https://www.linkedin.com/pulse/10-proven-techniques-supercharge-your-python-code-500-wbxdf
+
+1. Use Built-In Libraries and Functions
+Python built-in libraries and functions implemented in C
+e.g.
+sum()
+map()
+filter()
+
+Use sum() instead of manual loops for summing a list.
+Use map() and filter() instead of list comprehensions where applicable.
+        
+
+2. Optimize Data Structures
+Use sets for membership checks.
+Use dictionaries for key-value lookups.
+Use NumPy arrays instead of lists for numerical data.
+
+
+3. Use NumPy or Pandas for Data Processing
+NumPy and Pandas leverage optimized C routines
+
+
+4. Leverage Multithreading or Multiprocessing
+Use the concurrent.futures or multiprocessing modules to parallelize tasks
+
+
+5. Use Cython or PyPy
+CPython (the default Python interpreter)
+PyPy: A JIT (Just-In-Time) compiler for Python that can significantly speed up runtime.
+
+
+6. Avoid Redundant Calculations
+Memoization is a technique used to optimize the performance of algorithms by storing the results of expensive function calls and reusing those results when the same inputs occur again.
+e.g.
+functools.lru_cache
+
+@lru_cache(maxsize=None)  # This decorator caches the results of fib(n)
+def fib(n):
+
+
+7. Profile and Identify Bottlenecks
+Use cProfile or timeit to identify slow parts of the code.
+
+import cProfile
+cProfile.run('your_function()')
+
+
+8. Optimize Loops
+Combine loops or use list comprehensions where appropriate
+
+
+9. Use Libraries for Heavy Computations
+Libraries like TensorFlow or PyTorch are optimized for tasks involving large-scale matrix computations.
+
+
+10. Move Critical Code to C/C++
+Use libraries like ctypes or cffi to integrate C/C++ code with Python.
+
