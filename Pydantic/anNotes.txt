@@ -1,0 +1,25 @@
+Pydantic
+18-Feb-2025
+
+GPT
+Summary of pydantic package and its main APIs
+
+Pydantic
+python library data validation and settings management
+leverages Python type annotations to validate and serialize / deserialize data structures
+e.g.
+JSON objects
+
+
+BaseModel
+core class to define data models in Pydantic
+uses Python type hints for validation and parsing
+
+
+BaseSettings
+extends BaseModel but adds some specialized features
+e.g.
+specialized for configuration and environment variables
+designed for settings management eps. ENV VARs or config files
+i.e.
+.env

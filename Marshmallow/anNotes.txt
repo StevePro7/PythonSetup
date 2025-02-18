@@ -1,0 +1,21 @@
+Marshmallow
+18-Feb-2025
+
+GPT
+what is the difference between sqlalchemy marshmallow and flask marshmallow?
+
+both are used for serialization and deserialization of data
+converting to and from JSON but in different contexts
+
+
+1. Flask Marshmallow
+integration of Marshmallow and Flask to help serialize and deserialize data in Flask applications
+allowing you to work easily with REST APIs - data coming from requests
+
+pip install flask-marshmallow
+
+
+2. SQLAlchemy Marshmallow:
+integration of Marshmallow and SQLAlchemy to help serialize and deserialize SQLAlchemy models
+
+pip install marshmallow-sqlalchemy
