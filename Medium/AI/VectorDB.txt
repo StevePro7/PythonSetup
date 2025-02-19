@@ -1,0 +1,42 @@
+Vector DB
+19-Feb-2025
+
+Vector Databases: A Beginner’s Guide!
+https://medium.com/data-and-beyond/vector-databases-a-beginners-guide-b050cbbe9ca0
+
+SingleStore
+https://portal.singlestore.com/organizations/5afd1dbc-ddec-479c-9132-d7571a0a93b6/homepage
+
+
+Develop
+Data Studio
+starter-workplace
+db_steven_fa965
+
+CREATE TABLE products (
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    description TEXT,
+    vector BINARY(8)  -- Adjust size based on the vector's dimension
+);
+
+
+vector: The vector representation of the product  with 128 dimensions.
+(e.g., from a text embedding, image embedding, etc.)
+
+
+SELECT * FROM products;
+
+
+INSERT INTO products (id, name, description, vector)
+VALUES
+(1, 'Product A', 'Description of product A', X'01020304'),
+(2, 'Product B', 'Description of product B', X'12345678');
+
+
+CREATE INDEX vector_idx ON products(vector);
+
+
+SELECT * 
+FROM products
+WHERE name = 'Product A';
