@@ -40,3 +40,41 @@ CREATE INDEX vector_idx ON products(vector);
 SELECT * 
 FROM products
 WHERE name = 'Product A';
+
+
+
+git clone https://github.com/milvus-io/milvus.git
+cd milvus/deployments/docker
+
+docker-compose up
+
+Python
+pip install pymilvus
+
+from pymilvus import Collection, connections
+import numpy as np
+
+# Connect to the Milvus server
+connections.connect("default", host="localhost", port="19530")
+
+# Define the collection schema
+fields = [
+    {"name": "embedding", "type": "FLOAT_VECTOR", "params": {"dim": 128}},
+    {"name": "id", "type": "INT64"}
+]
+
+# Create the collection
+collection = Collection("example_collection", fields)
+
+# Generate random vectors
+data = np.random.rand(1000, 128).astype("float32")
+ids = [i for i in range(1000)]
+
+# Insert data into the collection
+collection.insert([ids, data])
+
+# Perform a search (find the 5 nearest neighbors for a random query vector)
+query_vector = np.random.rand(1, 128).astype("float32")
+results = collection.search(query_vector, "embedding", param={"nprobe": 10}, limit=5)
+
+print(results)
