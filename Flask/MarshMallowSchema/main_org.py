@@ -28,6 +28,7 @@ user = User(name="John Doe", email="john.doe@example.com")
 # Create a UserSchema instance
 user_schema = UserSchema()
 
+
 # Serialize the User object to a dictionary
 user_dict = user_schema.dump(user)
 
