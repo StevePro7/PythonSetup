@@ -1,0 +1,80 @@
+FIVE Practical Python Tricks
+25-Feb-2025
+
+1. The Underrated defaultdict Power Move
+from collections import defaultdict
+
+word_counts = defaultdict(int)
+words = ["apple", "banana", "apple", "orange", "banana", "banana"]
+
+for word in words:
+    word_counts[word] += 1
+
+
+2. The Zen of One-Liners: List Comprehensions Beyond Basics
+words = ["hello", "world", "Python", "is", "awesome"]
+capitalized_long_words = [word.upper() for word in words if len(word) > 5]
+print(capitalized_long_words)  # ['PYTHON', 'AWESOME']
+
+
+3. The Dataclass Hack: Not Just for Storing Data
+@dataclass decorator often used for simple data storage but can also simplify API design
+
+from dataclasses import dataclass
+
+@dataclass
+class User:
+    name: str
+    age: int
+
+user = User("Alice", 30)
+
+
+4. Context Managers Beyond Files
+create your own context managers
+
+import time
+from contextlib import contextmanager
+
+@contextmanager
+def timer():
+    start = time.time()
+    yield
+    end = time.time()
+    print(f"Execution time: {end - start:.4f} seconds")
+
+with timer():
+    time.sleep(1)
+
+
+5. Dunder Methods That Do the Work for You
+dunder methods let you define how objects behave:
+
+__getitem__: Make Objects Indexable
+class MyList:
+    def __init__(self, items):
+        self.items = items
+    
+    def __getitem__(self, index):
+        return self.items[index]
+
+my_list = MyList([1, 2, 3])
+print(my_list[1])  # 2
+
+
+__call__: Turn Objects Into Functions
+class Greeter:
+    def __call__(self, name):
+        return f"Hello, {name}!"
+
+greet = Greeter()
+print(greet("Alice"))  # Hello, Alice!
+
+
+__slots__: Save Memory
+class User:
+    __slots__ = ["name", "age"]
+    
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age

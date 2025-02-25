@@ -1,0 +1,44 @@
+Tackling AI Hallucinations in LLM Apps
+25-Feb-2025
+
+https://engineering.gusto.com/tackling-ai-hallucinations-in-llm-apps-6d46692f8cac
+
+How Token Log-Probabilities Can Predict LLM Reliability
+
+
+LLMs
+ChatGPT
+Claude
+LLaMA
+
+Sometimes the LLMs output irrelevant info or even "hallucinate" [make up info]
+
+
+Precision-Recall curve
+Max good predictions	high recall
+min bad  predictions	high precision
+
+
+GPT model works w/ limited vocabulary of words
+[tokens]
+
+
+At every token position in the generated sequence GPT computes a likelihood probability distribution over vocabulary T
+n-gram model
+token probability is estimated using large neural network
+
+
+GPT knowledge stored as contextual probabilities of each token given the current context
+
+
+LLM Confidence Score
+when hallucinating = the model is not confident
+
+Seq-Logprob	LLM confidence
+average of log-probabilities from sequence generation
+
+
+Conclusion: More Reliable LLM Systems
+LLM confidence score is extremely effective at capturing hallucinations and separating poor vs good quality LLM outputs
+
+We can implement better user experience patterns (e.g. expert verification} in LLM systems in an automated way
