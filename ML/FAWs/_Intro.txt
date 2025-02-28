@@ -1,0 +1,74 @@
+Introduction to Machine Learning with Python
+28-Feb-2025
+
+ISBN
+9781449369415
+
+
+GitHub
+https://github.com/amueller/introduction_to_ml_with_python
+
+
+What is ML?	blog
+ML is akin to training computers to improve tasks without providing detailed instructions. Machines utilize data to learn and enhance the performance without explicit programming and concentrates on creating algorithms for computers to learn from data to improv
+
+Pg. 2
+How are ML algorithms categorized?
+Supervised Learning
+Unsupervised Learning
+
+Pg. 2
+Waht is Supervised Learning?
+the user provides the algorithm with pairs of
+inputs and desired outputs, and the algorithm finds a way to produce the desired output
+given an input
+
+Pg. 3
+Waht is Unsupervised Learning?
+In unsupervised learning, only the input data is known, and no known output
+data is given to the algorithm
+
+Pg. 4
+What are the components of data used in ML?
+[represention of your input data that a computer understans]	
+- helpful to treat data as a table
+- sample = entity or row in the data
+- features = columns / properties that describe the entities
+
+
+LATER
+What is feature extraction?
+What is feature engineering?
+
+
+Pg. 5
+Why is Python the lingua franca for ML?
+It combines
+the power of general-purpose programming languages with the ease of use of
+domain-specific scripting languages like MATLAB or R. Python has libraries for data
+loading, visualization, statistics, natural language processing, image processing
+
+
+Pg. 5
+What is scikit-learn?
+scikit-learn is an open source project	that contains a number of ML algorithms as well as comprehensive documentation about each algorithm
+
+Pg. 7
+What are some of the other essential libraries and tools used in ML development?
+Jupyter Notebook
+an interactive environment for running [Python] code in the browser and useful tool for exploratory data analysis used by data scientists and ML engineers
+
+NumPy
+fundamental package for scientific computing in Python with functionality for multidimensional arrays [tables of data]
+
+SciPy
+collection of function for scientific computing in Python providing advanced linear algebra routines, mathematical function
+optimization, signal processing, special mathematical functions, and statistical distributions
+
+matplotlib
+primary scientific plotting library in Python. It provides functions
+for making publication-quality visualizations such as line charts, histograms, scatter
+plots
+
+pandas
+Python library for data wrangling and analysis leveraging DataFrame [table of data] providing range of methods to modify and operate on this table allowing SQL-like queries and table joins
