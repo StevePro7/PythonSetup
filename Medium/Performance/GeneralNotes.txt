@@ -1,0 +1,50 @@
+General Notes
+28-Feb-2025
+
+
+01.
+Best Practices and Code Optimization
+https://medium.com/@sridinu03/best-practices-and-code-optimization-d13dd39edc5e
+
+Profile and Optimize your Code
+Use cProfile to anaylze performance bottlenecks
+
+e.g.
+python -m cProfile my_script.py
+
+
+
+02.
+Stop Writing Slow Python: 14 Mind-Blowing Speed Hacks You Need Right Now!
+https://medium.com/@yaswanth.thod/stop-writing-slow-python-14-mind-blowing-speed-hacks-you-need-right-now-aa495862ec00
+
+Profile Relentless (but smarter)
+Before optimization, measure - wisely
+
+Mistake
+cProfile showed process_data()
+
+Hack
+Combine timeit for micro-benchmarks and pyinstrument for macro-level insights
+
+e.g.
+# Micro-benchmark with timeit
+import timeit
+
+def test_function():
+    return sum([x**2 for x in range(10_000)])
+print(timeit.timeit(test_function, number=1000))
+
+# Macro-profiling with pyinstrument
+from pyinstrument import Profiler
+profiler = Profiler()
+profiler.start()
+
+# Your main code here
+process_sensor_data()
+profiler.stop()
+print(profiler.output_text())
+
+
+
+
