@@ -37,3 +37,13 @@ If save() method is not specified then the code will throw a TypeError
 
 Now developer has full control over the class structure
 even before the code executes
+
+
+
+08-Mar-2025
+If You Can Answer These 7 Concepts Correctly, You’re Decent at Python
+https://medium.com/@Sabrina-Carpenter/if-you-can-answer-these-7-concepts-correctly-youre-decent-at-python-8a21391e5911
+
+
+Metaclasses
+metaclasses let you customize class creation programmatically
