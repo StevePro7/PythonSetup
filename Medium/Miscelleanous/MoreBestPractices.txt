@@ -1,0 +1,86 @@
+Python Best Practices Every Coder Should Know 
+08-Mar-2025
+
+
+01.
+User ExitStack() to manage multiple contexts
+
+BAD
+def process_files(file1, file2, file3):
+    with open(file1, 'r') as f1:
+        with open(file2, 'r') as f2:
+            with open(file3, 'r') as f3:
+                pass
+
+GOOD
+from contextlib import ExitStack
+
+def process_files(file1, file2, file3):
+    with ExitStack() as stack:
+        f1 = stack.enter_context(open(file1, 'r'))
+        f2 = stack.enter_context(open(file2, 'r'))
+        f3 = stack.enter_context(open(file3, 'r'))
+        pass
+
+
+
+02.
+Keep Naming Conventions Consistent
+BAD
+def myFunction(num):
+    MyVar = num / 3.5
+    return MyVar
+
+GOOD
+def my_function(num):
+    my_var = num / 3.5
+    return my_va
+
+
+
+03.
+Avoid Hardcoding Sensitive Information
+BAD
+password = "password"
+
+GOOD
+import os
+password = os.getenv("MY_SECRET_PASSWORD")
+
+
+
+04.
+Use get() to Avoid Key Errors in Dictionaries
+BAD
+data = {"name": "Alice", "age": 30}
+city = data["city"] if "city" in data else "Unknown"
+
+GOOD
+city = data.get("city", "Unknown")
+
+
+
+05.
+Take Advantage of match for Clean Conditional Statements
+BAD
+def describe_type(obj):
+    if isinstance(obj, str):
+        return "It's a string"
+    elif isinstance(obj, int):
+        return "It's an integer"
+    elif isinstance(obj, list):
+        return "It's a list"
+    else:
+        return "It's something else"
+
+GOOD
+def describe_type(obj):
+    match obj:
+        case str():
+            return "It's a string"
+        case int():
+            return "It's an integer"
+        case list():
+            return "It's a list"
+        case _:
+            return "It's something else"
