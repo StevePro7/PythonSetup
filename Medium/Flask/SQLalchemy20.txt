@@ -1,0 +1,3 @@
+SQLAlchemy 2.0: The Most Powerful ORM for Python Yet
+12-Mar-2025
+https://leapcell.medium.com/leapcell-the-next-gen-serverless-platform-for-python-app-hosting-0722d1b32047
