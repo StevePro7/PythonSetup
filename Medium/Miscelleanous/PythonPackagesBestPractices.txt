@@ -1,6 +1,12 @@
 Python Packaging Best Practices
-29-Dec-2024
 
+
+How I Create Local Python Packages
+17-Mar-2025
+https://medium.com/@roylowrance/how-i-create-local-python-packages-2f528ef57346
+
+
+29-Dec-2024
 https://medium.com/@miqui.ferrer/python-packaging-best-practices-4d6da500da5f
 
 
