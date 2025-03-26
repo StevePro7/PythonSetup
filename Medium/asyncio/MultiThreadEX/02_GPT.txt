@@ -1,0 +1,2 @@
+Step 2: Dockerfile to Containerize the Consumer
+Next, let's create a Dockerfile to containerize the Python application. The Docker image will include the Python environment and install dependencies like pika for RabbitMQ.

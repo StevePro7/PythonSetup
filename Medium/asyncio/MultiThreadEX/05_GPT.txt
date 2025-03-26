@@ -1,0 +1,16 @@
+Step 5: Test the Multithreading
+To test if multithreading is working properly:
+
+Verify Logs of the Consumer: After deploying the consumer, you can check the logs to see if multiple threads are processing messages concurrently.
+
+
+Look for output indicating multiple threads processing messages at the same time (i.e., "Processed message" for multiple messages concurrently).
+
+Send Some Test Messages to RabbitMQ:
+
+Use the RabbitMQ management UI to send messages or use the pika library in Python to publish some test messages to the my_queue queue.
+
+Example to send messages (you can run this in a Python script or directly from the Python REPL):
+
+
+Monitor the Consumer: Check the logs and see if multiple messages are processed concurrently by the consumer.

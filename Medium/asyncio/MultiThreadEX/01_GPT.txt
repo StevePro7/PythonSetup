@@ -1,0 +1,4 @@
+Step 1: RabbitMQ Consumer Using ThreadPoolExecutor
+First, we'll write the consumer that connects to RabbitMQ and processes messages using multiple threads.
+
+Python Code (consumer.py)

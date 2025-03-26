@@ -1,0 +1,3 @@
+26-Mar-2025
+provide a full example of a rabbitmq consumer using multithreading with ThreadPoolExecutor and how would I containerize this example using Docker to run in a local KinD cluster and how would I test if the multithreading is working correctly?
+
