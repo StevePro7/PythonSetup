@@ -6,6 +6,7 @@ If you don’t have KinD installed, you can follow the installation instructions
 
 Create a KinD Cluster
 Run the following command to create a local KinD cluster:
+kind create cluster --name rabbitmq-cluster
 
 
 This will create a local Kubernetes cluster in Docker.
@@ -25,3 +26,5 @@ Run the following commands to deploy RabbitMQ and the consumer to the KinD clust
 
 bash
 Copy
+kubectl apply -f rabbitmq-deployment.yml
+kubectl apply -f consumer-deployment.yml

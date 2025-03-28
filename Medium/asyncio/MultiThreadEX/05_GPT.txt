@@ -2,7 +2,7 @@ Step 5: Test the Multithreading
 To test if multithreading is working properly:
 
 Verify Logs of the Consumer: After deploying the consumer, you can check the logs to see if multiple threads are processing messages concurrently.
-
+kubectl logs -f deployment/consumer
 
 Look for output indicating multiple threads processing messages at the same time (i.e., "Processed message" for multiple messages concurrently).
 
