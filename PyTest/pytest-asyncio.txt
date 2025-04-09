@@ -1,0 +1,24 @@
+pytest asyncio
+09-Apr-2025
+
+pip install pytest-asyncio
+
+
+foo.py
+import asyncio
+
+async def fetch_data():
+await asyncio.slieep(1)
+return {"status": "success", "data": [1, 2, 3]}
+
+
+test_foo.py
+import pytest
+from foo import fetch_data
+
+@pytest.mark.asyncio
+async def test_fetch_data():
+	result = await fetch_data()
+	
+	assert result["status"] = "success"
+	assert result["data"] = [1, 2, 3]
