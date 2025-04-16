@@ -73,3 +73,10 @@ b captures the middle values as a list
 
 SUMMARY
 1.  Use == for value comparison and is for identity complarison
+2.  Avoud mutable default arguments in functions
+3.  Be careful with Python indentation rules
+4.  Use multprocessing instead of threading for CPU-bound tasks
+5.  Chained assignment can cause unexpected behaviour with mutable objects
+6.  Late binding in closures can be tricky; use i=i to capture values
+7.  Duck typing allows flexibility but requires careful design
+8.  Unpacking with * helps handle extra values in lists
