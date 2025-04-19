@@ -26,3 +26,32 @@ closes event loop
 
 async   defines the coroutine
 await   pause the coroutine     wait for another coroutine to complete
+
+
+Concurrent execution
+asyncio.gather()
+
+can run multiple coroutines concurrently
+taking advantage of asynchronous programming
+
+
+Coroutines vs. Threads
+
+Coroutines 
+offer an efficient alternative to threading for I/O-bound tasks	[but not CPU tasks]
+use co-operative multitasking where tasks yield control voluntarily
+
+Threads
+rely on the operating system for preemptive multitasking
+
+
+Coroutine vs. Generator
+Generators		iterate lazily over sequences
+Couroutines		manage asynchronous workflows
+
+
+Conclusion
+Coroutines offer powerful lightweight solution for asynchronous programming
+async / await improve code efficiency and responsiveness esp. I/O-bound tasks
+to
+build highly concurrent applications maximizing the speed and efficiency of programs

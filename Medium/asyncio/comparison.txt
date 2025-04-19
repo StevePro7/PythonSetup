@@ -1,0 +1,43 @@
+Comparison
+19-Apr-2024
+
+
+Chat GPT
+In Python if asycnio is good for I/O-bound tasks then what type of tasks are better suited for threads and multithreading in Python
+
+01.
+aysncio		[asynchronous programming]
+best for I/O-bound tasks that spend a lot of time waiting
+e.g.
+waiting for network responses, file or database access
+
+Why?
+because asyncio is single-threaded and works best when you're doing many tasks that are "paused" often (e.g. waiting for a response) - it lets other code run while waiting
+
+
+02.
+Multithreading
+best for I/O-bound tasks esp. working with blocking libraries that aren't async-aware
+e.g.
+requests
+
+Why?
+Python [OS] threads can help overlap I/O operations.  Even though Python has the Global Interpreter Lock [GIL] it doesn't affect I/O-waiting threads as much.  
+
+So it's still effective for I/O-bound workloads just not CPU-heavy ones
+
+
+03.
+Multiprocessing
+best for CPU-bound tasks that need serious computation
+e.g.
+ML model training
+
+Why?
+the GIL becomes a bottleneck for CPU-heavy tasks in threads but multiprocessing runs each process inits own Python interpreter so it bypasses the GIL
+
+
+SUMMARY
+I/O-bound	asyncio		Great when using async-aware libraries	[aiohttp, asyncpg]
+I/O-bound	multithreading	Great when using blocking libraries	[requests]
+CPU-bound	multiprocessing	Needed to avoid GIL and use multiple cores
