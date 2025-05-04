@@ -1,0 +1,9 @@
+Deep Dive into uv Dockerfiles by Astral: Image Size, Performance & Best Practices
+04-May-2025
+
+Medium
+https://medium.com/@benitomartin/deep-dive-into-uv-dockerfiles-by-astral-image-size-performance-best-practices-5790974b9579
+
+
+GitHub
+https://github.com/benitomartin/uv-docker-benchmark
