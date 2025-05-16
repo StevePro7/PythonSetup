@@ -1,0 +1,49 @@
+How I Use Python’s Metaclasses to Modify My Code Before It Runs
+03-Mar-2025
+
+https://python.plainenglish.io/how-i-use-pythons-metaclasses-to-modify-my-code-before-it-runs-cbe723a9bdea
+
+
+Metaclass
+class for classes
+
+
+create normal class Python internally creates a meta class
+e.g.
+MyClass = type("MyClass", (), {})
+
+type
+class creator
+
+type = metaclass
+
+
+If we want to control how our classes are created then we must use custom metaclasses
+
+
+EXAMPLE
+__new__
+constructor of the metaclass
+modified the class even before it's created
+
+
+Modify the metaclass to force all the models to have a specific method
+e.g.
+save()
+
+
+If save() method is not specified then the code will throw a TypeError
+
+
+Now developer has full control over the class structure
+even before the code executes
+
+
+
+08-Mar-2025
+If You Can Answer These 7 Concepts Correctly, You’re Decent at Python
+https://medium.com/@Sabrina-Carpenter/if-you-can-answer-these-7-concepts-correctly-youre-decent-at-python-8a21391e5911
+
+
+Metaclasses
+metaclasses let you customize class creation programmatically

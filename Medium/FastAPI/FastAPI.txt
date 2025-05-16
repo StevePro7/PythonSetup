@@ -1,8 +1,11 @@
 Fast API
+10-Mar-2025
+
+Asynchronous Magic: PyNest and SQLAlchemy 2.0 Drive a 25% Improvement in Python Apps Performance
+https://medium.com/@itay2803/asynchronous-magic-pynest-and-sqlalchemy-2-0-drive-a-25-improvement-in-python-apps-performance-9e2724e9f198
+
+
 24-Sep-2024
-
-
-
 Guide To Building Secure Backends In FastAPI In 2024
 https://blog.stackademic.com/guide-to-building-secure-backends-in-fastapi-in-2024-dcbccc0bfab0
 

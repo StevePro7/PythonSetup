@@ -1,0 +1,30 @@
+Step 4: Setting Up KinD (Kubernetes in Docker) Cluster
+KinD (Kubernetes in Docker) is a tool for running Kubernetes clusters in Docker containers. We'll use KinD to run a local Kubernetes cluster and deploy our RabbitMQ and consumer services to it.
+
+Install KinD (if not already installed)
+If you don’t have KinD installed, you can follow the installation instructions here: https://kind.sigs.k8s.io/docs/user/quick-start/.
+
+Create a KinD Cluster
+Run the following command to create a local KinD cluster:
+kind create cluster --name rabbitmq-cluster
+
+
+This will create a local Kubernetes cluster in Docker.
+
+Deploy the Services to KinD
+Create Kubernetes Deployments for RabbitMQ and Consumer:
+
+We will create Kubernetes YAML files for RabbitMQ and the consumer application.
+
+rabbitmq-deployment.yml
+
+
+
+Apply the Deployments:
+
+Run the following commands to deploy RabbitMQ and the consumer to the KinD cluster:
+
+bash
+Copy
+kubectl apply -f rabbitmq-deployment.yml
+kubectl apply -f consumer-deployment.yml

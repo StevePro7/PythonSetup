@@ -84,6 +84,13 @@ Body | raw | JSON
 }
 
 
+DEBUG
+PyCharm F5
+region.py
+def get_regions(session: Session = Depends(get_db)) -> List[RegionOutput]:
+Terminal
+curl http://localhost:8000/api/v1/location/region
+
 
 Extra for experts
 HTTP status code

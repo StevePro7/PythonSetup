@@ -1,0 +1,33 @@
+Email
+07-May-2025
+
+
+How to build MCP server with Authentication in Python using FastAPI
+https://medium.com/@miki_45906/how-to-build-mcp-server-with-authentication-in-python-using-fastapi-8777f1556f75
+
+
+Advanced FastAPI Routing Techniques for Scalable and Maintainable APIs
+https://medium.com/@rameshkannanyt0078/advanced-fastapi-routing-techniques-for-scalable-and-maintainable-apis-4cb9d65968b7
+
+from fastapi import APIRouter, FastAPI
+user_router = APIRouter()
+
+
+ 
+MEDIUM
+29-Apr-2025
+
+Python Multithreading and Multiprocessing: Explained Simply
+https://medium.com/@ashfaq.sayeem/python-multithreading-and-multiprocessing-explained-simply-6b758aa78ddd
+
+Exploring FastAPI 2024: Async Endpoints and Dependency Injection [Part 4/7]
+https://medium.com/@mathur.danduprolu/exploring-fastapi-2024-async-endpoints-and-dependency-injection-part-4-7-06854f0c0fc2
+
+
+19-Apr-2025
+FastAPI is Overkill: Starlette and Pydantic Are All You Really Need
+https://leapcell.medium.com/fastapi-is-overkill-starlette-and-pydantic-are-all-you-really-need-2b2d55c53de0
+
+
+
+

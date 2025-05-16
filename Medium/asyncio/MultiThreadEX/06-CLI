@@ -1,0 +1,3 @@
+kubectl delete -f rabbitmq-deployment.yml
+kubectl delete -f consumer-deployment.yml
+kind delete cluster --name rabbitmq-cluster
