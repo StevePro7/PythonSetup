@@ -101,3 +101,11 @@ http.HTTPStatus
 204     NO_CONTENT
 400     BAD_REQUEST
 404     NOT_FOUND
+
+
+Windows
+http://localhost:8000/docs
+http://localhost:8000/docs#/location/get_cities_api_v1_location_city_get
+
+OR Terminal
+curl http://localhost:8000/api/v1/location/region

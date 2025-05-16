@@ -6,6 +6,8 @@ https://medium.com/@ramazanolmeez/end-to-end-machine-learning-project-churn-pred
 GitLab
 https://github.com/rolmez/Customer-Churn-Project
 
+.\.venv\Scripts\activate
+source .venv/bin/activate
 
 pip install -r requirements.txt
 
