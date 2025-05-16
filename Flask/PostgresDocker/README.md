@@ -147,6 +147,14 @@ OR Mac
 
 
 SUMMARY
+MacOS
+alembic.ini
+sqlalchemy.url = postgresql://postgres:@localhost:5432/app_database
+username    postgres
+passowrd
+
+OR
+Linux
 docker-compose up -d
 
 export DATABASE_URL="postgresql://user:password@localhost:5432/app_database"
