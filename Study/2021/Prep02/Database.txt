@@ -1,0 +1,24 @@
+Database
+14/06/2021
+
+
+
+Index
+used to quick locate data w/o having to search every row in DB table
+created using one [or more] columns of DB table for basis of efficient access of [ordered] records
+vs. full table scan
+
+
+Replication
+action of copying [replicating] data from a database on one computer [or server] to a database in another
+e.g.
+Live DB replicate data to OLAP db for Leaderboard project - does NOT need to be live data
+
+OLTP	OnLine Transactional Process	data processing focused on "live" transaction-orientated data
+OLAP	OnLine Analytical    Process	data replicated for database querying "snapshot" data
+
+
+
+Shard
+horizontal partition of data which shard holds a separate database server instance to spread DB load
+each shard (or server) acts as the single source for this subset of data

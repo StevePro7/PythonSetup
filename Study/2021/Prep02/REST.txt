@@ -1,0 +1,49 @@
+REST
+14/06/2021
+
+REpresentational State Transfer
+
+architecture of the World Wide Web
+defines set of constraints for how architecture of Internet scale distributed system e.g. WWW should be behave
+
+emphasizes scalability btwn components, uniform interfaces, independent deployment of components,
+creation of layered architecture for caching components to reduce latency
+
+
+RESTFUL
+web service must adhere to 6x principles:
+
+1.	uniform interface
+2.	stateless
+3.	cacheable
+4.	client-server
+5.	layered system
+6.	code on demand
+
+
+Statelessness
+every packet sent / recd is understood in isolation from previous packets
+high volume apps, increase performance by remove server session info retention
+
+Cacheability
+cache responses to improve performance and scalability
+
+Layered system
+client can't tell if connected directly to server or via intermediary like proxy server [reverse] or load balancer
+
+Code on demand
+client side scripting
+
+Uniform interface
+decouples architecture so each part evolve independently
+- resource identification in requests
+- resource manipulation thru representations
+- self-descriptive messages
+- Hypermedia	HATEOAS	Hypermedia As The Engine Of Application State	response provide further info e.g. links
+
+
+Richardson REST maturity model
+0	define URI	e.g. POST
+1	create separate URI for individual resources
+2	use HTTP methods to define operations on resources
+3	use Hypermedia

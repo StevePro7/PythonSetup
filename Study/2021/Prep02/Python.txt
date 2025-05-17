@@ -1,0 +1,59 @@
+Python
+14/06/2021
+
+
+Python collections
+
+
+List 
+ordered, changeable	allow duplicates
+list1 = ["abc", 34, True, 40, "male"]
+
+Tuple
+ordered, unchangeable, allow duplicates
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+
+Set
+unordered, unindexed,	no duplicates, mutable
+myset = {"apple", "banana", "cherry"}
+
+Dictionary
+stores key, value pairs
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+List	mutable
+Tuple	immutable
+
+
+Nametuple
+e.g.
+from collections import namedtuple
+Animal = namedtuple('Animal', 'name age type')
+perry = Animal(name="perry", age=31, type="cat")
+print(perry)
+
+namedtuples make your tuples self-documenting
+i.e.	give property names
+do not have per-instance dictionaries
+lightweight and require no more memory than regular tuples
+
+
+List comprehensions
+offers shorter syntax when you want to create a new list based on values from an existing list
+https://www.w3schools.com/python/python_lists_comprehension.asp
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+newlist = [x.upper() for x in fruits]
+newlist = [x for x in range(10) if x < 5]
+
+
+Syntax
+newlist = [expression for item in iterable if condition == True]
+
+
+iterable can be list, tuple, set

@@ -1,0 +1,51 @@
+Study  02
+15-May-2025
+
+
+Issues with Python code bases
+
+violation
+DRY 	too much copy n' paste
+SOLID 	esp. S + I	no D
+schemaless dicts	no serialization
+hardcoded "keys"	everywhere!	brittle
+no obj graphs		no code reuse
+no tests!!		brittle code	break @ runtime
+			no isolation	long runtime
+
+Could use design patterns
+MVC			mock external dependencies / components
+DDD			repository pattern
+
+any game design patterns
+e.g. 
+Empty object
+Command pattern
+
+
+TODO
+use generator to more efficiently load / process data from large datasets
+
+
+
+Fetch
+ARCHITECTURE
+Client -> FastAPI (async) -> Redis (cache)
+
+
+Partition	BY
+field, 		condition,	fixed-sized chunks,	hash = num_buckets
+date/time, 	custom key,	range or bin		unique de-dup
+
+
+FETCH data
+- ensure old data is archived first
+- fetch data in chunks e.g. 
+  Pandas DF for CSV	chunksize OR  samples
+  Pandas DF use smaller datatypes AND drop unused columns
+  DB only return actual records = NOT SELECT *
+  DB use server side cursors to fetch X records at a time
+  DB filter or use page results returned to client
+- use Generators to read text files in chunks	avoid read whole dataset into memory at once
+- use Iterators  to slice text files into chunks
+ 

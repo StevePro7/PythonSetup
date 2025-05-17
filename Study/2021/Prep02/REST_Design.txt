@@ -1,0 +1,79 @@
+REST design	
+19/06/2021
+
+https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design
+
+
+REST API
+conforms to architectural constraints like stateless communication + cacheable data
+
+
+Best Practices
+
+01.
+Accept and respond w/ JSON
+Content-Type	application/json
+
+
+02.
+Use nouns instead of verbs in endpoint paths
+because HTTP request method already has the verb
+e.g.
+GET, POST, PUT, DELETE
+
+Also mentions to use plural nouns
+snake case plural of resource noun
+/users
+
+
+03.
+Use logical nesting on endpoints
+
+
+04.
+Handle errors gracefully and return standard error codes
+400	Bad Request		invalid client-side input
+401	Unauthorized		user is not authenticated
+403	Forbidden		user authenticated but NOT allowed access to resource
+404	Not Found		resource not found at path
+500	Internal Server Error	generic server error
+502	Bad Gateway		indicates invalid response from upstream server
+503	Service Unavailable	indicates something unexpected happened on server side
+
+
+05.
+Allow filtering, sorting and pagination
+
+
+06.
+Maintain good security practices
+communication btwn client + server MUST use TLS/SSL
+SSL certificate simple to load on server for secure channel
+user should not access more info than requested
+principle of least privilege	add role checks to resource
+
+
+07.
+Cache data to improve performance
+return data from local memory instead of querying database everytime
+cache response
+e.g. Redis
+
+
+08.
+Version APIs
+different versions of API esp. when making breaking changes
+phase out old endpoints instead of forcing everyone to move to new API version
+
+
+SUMMARY
+design high-quality REST API to have consistency by following web standards + conventions:
+JSON, SSL/TLS, HTTP status codes
+
+performance important consideration
+increase performance by not returning too much data at once
+use caching so don't have to query for data all the time
+
+endpoint paths should be consistent
+use nouns since HTTP methods indicate action we want to take
+paths of nested resources should come after the path of parent resource

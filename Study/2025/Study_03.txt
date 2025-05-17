@@ -1,0 +1,35 @@
+Study  03
+15-May-2025
+
+Data scientists and machine learning engineers write terrible Python code that does not confirm to classic Software Engineering best practices - I am a Senior Software Engineer with 20yrs professional experience - what can I do to improve their Python code quality?
+
+
+1. Introduce Code Reviews with Clear Expectations
+* Naming conventions
+* Function size and purity
+* No hardcoded paths / constants
+* Test coverage
+* Type hints (where reasonable)
+
+2. Promote Use of Tools That Enforce Quality Automatically
+black  # auto-formatting
+flake8 # linting
+mypy   # static type checking
+isort  # import sorting
+
+pre-commit hooks or CI pipeline
+pip install pre-commit
+pre-commit install
+
+3. Move Prototypes from Jupyter to Modules
+4. Introduce Testing Gradually
+5. Introduce Dependency and Environment Management
+
+6. Refactor for Reusability and Separation of Concerns
+Introduce a pipeline structure: input → preprocess → model → output.
+
+7. Mentor & Pair Program
+8. Advocate for a MLOps Culture
+Promote infrastructure-as-code (e.g., Terraform, Pulumi), and model deployment frameworks (e.g., FastAPI + Docker, BentoML, Seldon Core).
+
+Offer frameworks not rules.

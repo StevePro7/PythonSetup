@@ -1,0 +1,112 @@
+Study09 Backend
+22-Nov-2023
+
+GOOGLE
+common tech interview Backend Exercise
+
+
+72 Qs
+https://www.testgorilla.com/blog/backend-developer-interview-questions
+
+
+SW design vs. architecture
+architecture	displays how system components interact with each other
+design 		focuses on the implementation of the system
+
+CI
+practice in which devs use shared repo to integrate code + perform automated builds
+
+Clustered index
+physically stored rows on disks that follow same order as the index
+
+
+https://blog.hubspot.com/website/backend-interview-question
+
+BE dev
+server side [web] applications
+
+BE
+powers FE website or app
+store + organize the data
+handle user requests
+deliver content to FE
+
+GET vs. POST
+GET	request parameters passed in the URL
+POST	request parameters passed in the body
+
+Cache
+LRU	Least Recently Used	
+good choice for application where data is also likely to be reaccessed
+
+FIFO
+good choice for application where data expires after a particular time
+
+ORM issue
+performance degradation
+incorrect data mapping	transformation
+difficulty handling complex queries
+
+Async prog'ing
+improves performance of application e.g.
+db query = beneficial to use async prog'ing to avoid blocking main thread
+
+Promise vs. callback
+Promise 	object represents result of async op
+Callback	function invoked when async op complete
+
+Closure
+function that accesses variable "outside" itself
+in another function scope	[even if function closed]
+
+Class vs. Interface
+Class		template for an object
+Interface	contract defines what class must implement
+
+High-order functions
+functions that take other functions as arguments
+functions help abstract common patterns of code
+e.g.
+high-order function could create a function that logs the arguments it is called with
+[debugging]
+
+MS
+small independent component of a large more extesive applciation
+
+API
+satisfy consumers of API
+easy-to-use + well-documented
+security: ensure only authorized users can access data
+handle large no. of requests w/o overloading the server
+
+REST	todo
+
+NoSQL
+more scalable than RDBMS + easier to manage
+schemaless = more fleix + higher throughput
+
+Scalable impl?
+MS architecture to handle many concurrent users
+scale MS independently
+message queue to decouple components in the system
+employ redundancy: multiple nodes in many location
+
+Scale issues
+performance degradation
+data loss			
+downtime
+USE
+caching, sharding, replication
+
+
+SQL injection attack	malicious code injected as SQL statement
+XSS attack		malicious code injected into web page
+
+Authentication + authorization
+Authentication 
+OAuth, Okta, JWT	JSON Web Tokens
+enter user credentials = generate JWT + send back to user for subsequent requests
+
+authorization
+create roles + assign users to roles : check user has permissions when handle request
+

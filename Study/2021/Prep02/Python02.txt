@@ -1,0 +1,31 @@
+Python 02
+14/06/2021
+
+
+Python *args vs **kwargs
+https://realpython.com/python-kwargs-and-args
+
+
+01.
+*args
+* unpacking operator
+allows you to pass a varying number of arguments to a function
+e.g.
+list
+
+
+02.
+**kwargs
+** unpacking operator
+similar to args but instead of accepting positional arguments
+it accepts keyword (or named) arguments
+e.g.
+dictionary
+
+
+Strengths
+*args and **kwargs provide better / cleaner interface
+ability to pass in an unpacked data structure
+
+Weakness
+slow, poor memory consumption

@@ -1,0 +1,226 @@
+Study07 AKS arch
+20-Nov-2023
+
+IMPORTANT
+Microsoft Entra ID is the new name for the Azure Active Directory
+
+https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices
+https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices-advanced
+
+https://github.com/mspnp/microservices-reference-implementation
+
+github
+https://learn.microsoft.com/en-us/azure/architecture/microservices
+https://github.com/mspnp/aks-fabrikam-dronedelivery
+
+MS architecture style for building applications that are resilient, highly scalable + independently deployable
+
+
+https://www.linkedin.com/pulse/understanding-difference-between-azure-load-balancer-gateway-memon
+
+Load Balancer
+distributes traffic across VMs at the Transport layer [L4]
+
+Application Gateway
+manages + optimizes HTTPS traffic at Application layer [L7]
+
+AGIC
+Application Gateway Ingress Controller
+AKS resource leverages Azure native Application Gateway [L7]
+
+API Gateway	via Azure API Management service
+https://stackoverflow.com/questions/62364877/what-is-the-difference-between-api-gateway-provided-by-azure-api-management-and
+Facade for APIs: transform incoming / outgoing requests
+BFF	Backend For Frontend	acts as Reverse Proxy
+
+API gateway in Kubernetes handled by Ingress controller
+
+
+https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices
+
+K8s service
+static IP address for group of pods [Replicaset]
+mapping endpoint IP addresses + ports done by kube-proxy
+
+kube-proxy = worker node K8s network proxy
+
+
+INGRESS
+aggregate multiple requests into single request to reduce chatiness
+
+
+Encryption
+Prod = signed certificates from trusted CA certificate authority e.g. Let's Encrypt
+NB: rotate certificates
+
+
+Bulkhead pattern
+https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead
+
+application design to be fault tolerant
+applicaiton isolated into pools so if one fails the others will continue to function
+named after partitions [bulkhead] of a ship hull
+
+
+SECURITY
+rbac
+
+Service principal
+service identity used by applications
+
+Role		set of permissions
+RoleBinding	assign users or group to role	
+
+
+Secrets mgt
+Managed identity
+application or service has a service principal created in MS Entra ID + authenticates using OAuth 2.0 tokens
+
+process code transparently get token = don't need to store password or connection strings
+
+BUT
+not all Azure services use managed identities
+
+other options
+Azure Key Vault
+mount secrets from Key Vault as volume
+volume reads secrets from Key Vault
+
+
+Container security
+threat + vulnerability monitoring
+automate image patching
+store images in trusted private registry
+apply principle of least privilege
+
+
+
+https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices-advanced
+
+
+https://learn.microsoft.com/en-us/azure/architecture/microservices
+
+Baseline architecture for AKS cluster
+https://learn.microsoft.com/en-ie/azure/architecture/reference-architectures/containers/aks/baseline-aks
+
+Network topology
+hub-spoke
+https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli
+
+
+https://learn.microsoft.com/en-ie/azure/architecture/reference-architectures/containers/aks/baseline-aks
+
+Access cluster secrets
+use Secrets store CSI driver	Container Storage Interface
+Azure Key Vault with Secrets Store CSI Driver using the add-on to retrieve the TLS certificate from the key vault
+
+
+Node and pod sacalability
+HPA	Horizontal Pod Autoscaling
+Kubernetes can scale out by adding more pods to existing nodes
+
+Autoscaling
+when additional pods can no longer be scheduled then the number of nodes must be increased in AKS cluster
+
+
+HPA
+K8s resource that auto scales the number of pods by setting the min / max replica count
+e.g.
+kubectl autoscale rs foo --min=2 --max=5 --cpu-percent=80
+https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale
+
+RS	replicaset
+group of pods
+
+Cluster autoscaler
+AKS add-on component that scales the number of nodes in a node pool
+e.g.
+az aks create --enable-cluster-autoscaler
+https://learn.microsoft.com/en-us/azure/aks/cluster-autoscaler?tabs=azure-cli
+
+
+Azure Monitor
+recommended tool to monitor performance of container workloads: view events in realtime
+
+
+Self-healing
+monitor health of pods: set Liveness + Readiness probes
+if pod is unresponsive then K8s with restart pod
+
+Liveness	determines if pod is healthy	
+Readiness 	determines if pod is ready to receive requests / traffic
+
+
+
+SUBNET
+https://www.techtarget.com/searchnetworking/definition/subnet
+segmented piece of larger network
+Orgs use subnet to divide large network into smaller more efficient sub networks
+grouping smaller interconnected networks help minimize traffic: traffic doesn't have to flow thru unnecessary routers
+[increasing network speeds]
+
+
+Advanced Azure Kubernetes Service (AKS) microservices architecture
+https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices-advanced
+
+CSI provider
+gets secrets stored in Azure Key Vault and uses the Secret Store CSI driver interface to mount them into Kubernetes pods
+
+Flux
+CD solution for K8s powered by GitOps
+
+
+AGIC
+Application Gateway Ingress Controller
+API Gateway routing = reverse proxy that routes requests from clients to microservices
+Kubernetes ingress resource + ingress controller handle most API gateway functionality
+- aggregate multiple requests
+- offload SSL termination, rate limit etc.
+
+
+Network Policy
+zero-trust
+restrict pods that allowed to communicate with each other + other network endpoints
+
+
+Resource quotas
+CPU
+memory
+
+
+Cluster autoscaling
+scales the number of nodes
+
+Pod autoscaling
+HPA	horizontal pod autoscaling
+scales pods beased on CPU, memory
+specify min/max number of replicas in K8s deployment pod spec
+
+
+Health probes
+liveness
+readiness
+
+
+Monitoring
+APM	Application Performance Monitoring
+detect anomalies, diagnosing issues, understand dependencies between services
+
+Application Insights
+- logs HTTP requests, latency, result code
+- enable distributed tracing
+
+
+Security
+- AKS workload identity	= managed identity
+- ARM => OAuth 2.0 tokens = no passwords OR connection strings
+- assign identities to services that require them
+- K8s API access => appliation pods configured to use service account
+- Azure Key Vault: provides centralized mgt access control for keys/secrets not available in MS Entra
+- AKS mount secrets from Key Vault as a volume: pod can read Key Vault secret like regular volume via CSI
+
+
+EXAMPLE
+https://github.com/mspnp/aks-fabrikam-dronedelivery
+https://github.com/mspnp/aks-fabrikam-dronedelivery/blob/main/01-prerequisites.md
+https://github.com/mspnp/aks-fabrikam-dronedelivery/blob/main/11-cleanup.md

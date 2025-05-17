@@ -1,0 +1,50 @@
+Python interview questions
+10/10/2013
+
+
+01.
+What modules are installed / setup by default?
+python
+help('modules')
+
+
+02.
+Q: What does the __init__.py file do?
+A: I said initialization and configuration of Python when setup and launch
+__init__.py file is used to distinguish a Python package as a directory of Python modules
+as opposed to simply a directory of Python scripts
+
+
+03.
+Q: What is list comprehension and have you ever used it?
+A: List comprehension is "Pythonic" syntax and optimization of standard for-loop
+list comprehension offers shorter syntax when you want to create a new list based on values from an existing list
+
+
+04.
+Q: What is map in Python?
+A: I said it defined key values as seen in a dicitonary
+   Really it "maps" arguments" to functions
+   OR maps values to functions thus you can use to lookup function mapping
+
+
+05.
+Q: What is the difference between tuple and list?
+A: I remembered using tuple when scripting game engine using Python (in Game Scripting Mastery book)
+   But really better answer is tuples are immutable whereas list are mutable (and can be changed)
+difference is mutability
+list	mutable
+tuple	immutable
+
+
+06.
+Q: What is the global variable? lock
+A: I suggested it's lock for global variables when used in multi-threaded applications
+   But Python is single-threaded; I don't really remember what this is for...??
+GIL
+Global Interpreter Lock
+Python GIL is a mutex [lock] that allows only one thread to hold the control of the Python interpreter
+
+
+also spoke about Web UI stuff: Web gems, web trends, Flask for producing HTML
+Ginger used for the JavaScript and Async web services

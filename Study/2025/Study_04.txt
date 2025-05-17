@@ -1,0 +1,53 @@
+Study  04
+65-May-2025
+
+How does a Software Engineer explain best practices to Data Scientists and Machine Learning Engineers to fetch and partition data in a performant and scalable way that would be consumed by thousands of clients?
+
+CORE PRINCIPLES
+1. Think in Terms of Load and Latency
+thousands of clients - every data access impacts latency
+use caching, data partitioning, async I/O
+
+2. Move from "fetch-on-demand" to "prepare-ahead"
+precompute or cache results
+avoid fetch same data > 1
+
+
+BEST PRACTICES
+1. Fetch Smart: Cache, Paginate, and Stream
+cache frequent queries	Redis or Memcached
+paginate or stream	instead of loading large datasets - generators or async API
+avoid repeated loads	share common service or API for data load
+
+2. Partition for Scalability, Not Just Convenience
+shard data		partition by userID, time, geography	parallel read/write
+partitions consistent	chunk hash-based [num_buckets] or range-based
+distributed file system	S3
+
+3. Use Asynchronous and Parallel Techniques
+async I/O	use async code to handle many requests efficiently
+multiprocessing or distributed compute	CPU-heavy processing
+
+4. Standardize Interfaces: APIs > Ad-hoc Scripts
+well-versioned REST APIs
+avoid each model = own data-fetch logic
+
+5. Monitor, Profile, and Fail Gracefully
+track data fetch latency, failures, throughput => Prometheus/Grafana
+data load code has timeouts, retries, fallback e.g. return cached or default data
+
+Communicating to DS/ML Teams
+Partitioning	split class into smaller groups	each teacher [server] handles fewer students [data] = faster
+Caching		keep recent results on your desk - don't go back to library every time
+PARTITIONING
+1. Partitioning at the Data Source (Recommended for Scale)
+Where:	database, data warehouse or data storage system	S3
+Why:	reduce data transfer, parallel reads [master/slave], indexing
+
+2. Partitioning on Fetch (Common in App or ML Code)
+Where:	Python	App or ML code
+Why:	client control, no native data partitioning, stream processing, tasks queues, model pipelines
+
+3. Partitioning During Storage/Preprocessing
+Where:	ETL	data pipeline
+Why:	future reads, fast, consistent, ML pipelines [dataset versioned and reused]

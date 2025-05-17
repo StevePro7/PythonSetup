@@ -1,0 +1,39 @@
+HTTP
+14/06/2021
+
+HTTP
+GET vs POST vs PUT
+
+GET vs POST vs PUT
+
+GET	Retrieve an entity(s)		request data from specified resource
+POST	Create an entity		send data to create / update resource
+PUT	Update an entity full		update specified resource
+PATCH 	Update an entity partial	update specified resource
+DELETE	Delete an entity 		delete specified resource
+
+
+Return codes
+
+Client
+200	OK		standard
+201	Created		POST	
+204	No Content	PUT, POST, PATCH?, DELETE
+
+301	Redirect moved permanently
+302	Redirect found
+
+400	BadRequest
+401	Unauthorized
+403	Forbidden
+404	Not found
+405 	Method not allowed
+408	Request timeout
+409	Conflict
+415	Unsupported media type
+422	Unprocessable entity
+	
+Server
+500	Internal Server Error
+501	Not implemented
+502	Bad gateway

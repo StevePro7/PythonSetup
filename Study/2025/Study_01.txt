@@ -1,0 +1,79 @@
+Study  01
+14-May-2025
+
+
+Fetch
+cache layer
+esp. for static read-only partitioned data
+if not in cache then get
+
+once get data then partition
+store data by partition in cache
+
+
+PARTITION
+1. Partition by Field Value (e.g., Category, Type)
+2. Partition by Condition (Boolean Predicate)
+3. Partition into Fixed-Size Chunks 
+4. Partition by Hash (e.g., for load balancing)          num_buckets
+5. Partition by Date/Time
+6. Partition by Custom Key Function
+7. Partition by Range or Bin (e.g., age groups, price tiers)
+8. Partition by Uniqueness (e.g., deduplication)
+
+
+if I have Python code that gets data and partitions the data then I could use a cache but how can I scale this code to be performant especially when invokd by hundreds of clients?
+
+more that cache
+architecture, concurrency, infrastructure
+
+
+Scaling Techniques
+1. Use In-Memory Caching
+* functools.lru_cache			local single-process
+* cachetools.TTLCache
+* Redis or Memcache			distributed cache		multiple processes or nodes
+
+2. Expose via Async API layer
+* async handlers release thread on I/O wait	fetch data
+* scale better under concurrent load than block Flask
+
+3. Multiprocessing or Worker Pool for CPU-Intensive Work
+partition CPU heavy then use ProcessPoolExecutor to avoid GIL
+concurrent.futures
+if I/O heavy then use ThreadPoolExecutor for I/O bound OPs
+
+4. Batch Client Requests
+* coalesce requests
+* serve shared data from common cache	[or queue]
+
+5. Use a Message Queue (e.g., RabbitMQ, Redis Streams, Kafka)
+offload heavy fetch/partition jobs to background workers
+* client -> FastAPI handler	enqueue job
+* worker -> Python 		pulls job -> fetches -> partitions -> cache result
+* client -> subscribe for completion
+
+6. Horizontal Scaling (with Load Balancing)
+* uvicorn w/ multiple workers
+* Kubernetes deployment	set resource limits to trigger HPA	Horizontal Pod Autoscaler
+
+7. Profile and Optimize Hotspots
+* cProfile, line_profiler	-> identify bottlenecks
+* memory_profiler, objgraph	-> memory profilers
+
+8. Minimize Serialization Overhead
+* ujson, orjson or MessagePack	faster encoding
+* gzip, brotli			compress response
+
+
+Python how can I write some code to fetch data that is used by thousands of clients
+1. avoid repeated expensive fetches
+2. server cached / shared results efficiently
+3. support concurrency (async I/O)
+4. ensure scalability (container-ready and stateless)
+
+ARCHITECTURE
+Client -> FastAPI (async) -> Redis (cache)
+
+else fetch once
+External Source	(DB, API, etc.)

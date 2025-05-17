@@ -1,0 +1,86 @@
+Cheat Sheet
+21-Nov-2023
+
+
+Performance
+refers to speed and responsiveness of a system
+
+Scalability
+ability to handle sudden increase [surge] in traffic
+
+Availability
+responsive all times w/ no downtime
+
+Reliability
+ability to operate continuously w/o failure
+
+
+1. Scalability
+Vertical + Horizontal scaling
+Stateless services
+Load balancing
+
+2. Reliability
+Redundancy + retry logic
+Graceful degradaation + circuit breaker
+
+3. Performance
+Caching [Redis], CDN
+
+
+Microservices
+collection of small autonomous services modelled around business domain
+
+Serverless
+cloud provider allocates resources on demand
+[on behalf of customers]
+
+NoSQL
+high data throughput
+horizontal scaling easier
+cheaper HW
+in-memory caching = increased performance
+
+
+Why clustering?
+clustering needed to achieve high availability of server software
+goal = 100% availability OR zero down time in services
+
+
+Prometheus
+collects metrics and provides query language
+
+Grafana
+transforms metrics into meaningful visualizations
+
+
+ELK
+Logstash
+ingests, transforms, and sends data to correct destination
+
+Elasticsearch
+indexes, analyzes, and searches ingested data
+
+Kibana
+visualizes results of data analysis
+
+
+TRACING end-to-end
+Application Insights	enable distributed tracing, logs HTTP requests
+Jaeger			stateless service API endpoints run behind load balancer
+Zipkin			JSON API for finding and retrieving traces
+
+
+Concurrency 	dealing w/ many things at once	multitasking
+Parallelism	execute w/ many things at once 	multicore
+
+
+closure
+function value that references a variable from outside its body
+
+data race
+when multiple tasks [threads] access shared resource w/o protection = undefined behavior
+
+deadlock
+when two threads sharing same resource prevent each other from accessing same resource
+

@@ -1,0 +1,35 @@
+Study19 Platform Eng
+09-Jan-2023
+
+Platform 	Engineer
+Infrastructure	Engineer
+
+
+
+Platform Engineering
+additional layer of abstraction btwn DevOps and devs dedicated to teams and others that are fully dedicated to addressing more global technical challenges and tooling needed by the whole tech team
+
+
+
+Platform Engineering
+Discipline of building Internal Developer Platforms [IDPs]
+one of the most importand Software Engineering trends now
+
+predicted to be the future of Software Delivery
+
+
+
+https://www.gartner.com/en/articles/what-is-platform-engineering
+Platform engineering improves developer experience and productivity by providing self-service capabilities with automated infrastructure operations
+
+Opens up technical work and knowledge across broad set of rolEs and business functions - Generative AI has helped level playing field
+
+The impact of AI on platform engineering
+LLMs are helping platform teams build more competing IDPs
+
+URL
+https://www.gartner.com/en/articles/generative-ai-can-democratize-access-to-knowledge-and-skills
+
+
+10 common platform engineering interview questions
+https://www.techtarget.com/searchitoperations/tip/Common-platform-engineering-interview-questions

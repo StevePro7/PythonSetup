@@ -1,0 +1,22 @@
+Study20 AI
+09-Jan-2023
+
+
+LLMs
+Large Language Models
+very large deep learning models that are pre-trained on vast amounts of data
+
+
+GPT
+Generative Pre-Trained
+advanced form of AI
+ability to understand, analyze, and generate human-like text
+
+
+GenAI
+Generative AI
+AI capable of generating text, images, or other media using generative models
+
+
+e.g.
+Pulumi AI uses LLMs and GPT
