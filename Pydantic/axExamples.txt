@@ -1,0 +1,63 @@
+Examples
+26-May-2025
+
+01.
+Callable[[str, Exception], Exception]
+A function or object with __call__ takes two args: str + Exception and returns Exception
+
+
+02.
+variable = Annotated[str, StringConstraints]
+Annotated allows you to attach extra metadata
+i.e. StringConstraints to str type
+
+
+03.
+Nested meta class
+used inside class to define metadata
+
+
+04.
+TypeAdapter
+utility that allows you to create a custom adapter for validating 
+and serializing values outside Pydantic model
+
+
+05.
+ConfigDict(extra='forbid')
+e.g.
+class User(BaseModel):
+    model_config = ConfigDict(extra='forbid')  # disallow extra fields
+
+Pydantic will raise a validation error if you try to pass extra fields
+that are not defined in that model
+
+
+06.
+ValidationInfo
+special class used inside custom validators to give you contextual 
+information during validation
+
+
+07.
+WrapValidator
+decorator used to create advanced field validators that wrap the entire
+validation lifecycle for a field - better when @field_validator not flexible enough
+
+
+08.
+@field_validator
+decorator used to create custom validation logic for individual fields in a model
+
+
+09.
+Marshmallow.Method('func')
+used to bind a method of the schema class to a field for either
+Serialization	when dumping data
+Deserialization	when loading data
+Both
+
+
+10.
+Type[BaseModel]
+means any subclass of BaseModel
