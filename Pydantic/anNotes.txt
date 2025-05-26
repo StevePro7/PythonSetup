@@ -23,3 +23,10 @@ specialized for configuration and environment variables
 designed for settings management eps. ENV VARs or config files
 i.e.
 .env
+
+
+Real Python Pydantic tutorial
+https://realpython.com/python-pydantic
+
+
+https://testdriven.io/guides/complete-python
