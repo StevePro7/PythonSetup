@@ -13,6 +13,14 @@ async def thread02(channel, file02_path, message02_byte):
     print(f" [x] Sent Thread #02 '{file02_path}")
 
 
+async def load_file(file_path) -> bytes:
+    with open(file_path, 'r') as file:
+        message_dict = json.load(file)
+
+    message_json = json.dumps(message_dict)
+    return message_json.encode('utf-8')
+
+
 async def main():
     # Define connectio parameters
     credentials = pika.PlainCredentials('<redacted>', '<redacted>')
@@ -28,18 +36,10 @@ async def main():
 
     # Publish a message to the 'trigger' queue
     file01_path = "file01.json"
+    message01_byte = await load_file(file01_path)
+
     file02_path = "file02.json"
-    with open(file01_path, 'r') as file01:
-        message01_dict = json.load(file01)
-
-    with open(file02_path, 'r') as file02:
-        message02_dict = json.load(file02)
-
-    message01_json = json.dumps(message01_dict)
-    message01_byte = message01_json.encode('utf-8')
-
-    message02_json = json.dumps(message02_dict)
-    message02_byte = message02_json.encode('utf-8')
+    message02_byte = await load_file(file02_path)
 
     tasks = []
     for _ in range(4096):
