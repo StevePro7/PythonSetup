@@ -1,0 +1,24 @@
+Splunk Notes
+30-May-2025
+
+https://www.splunk.com/en_us/download.html
+
+Enterprise
+https://www.splunk.com/en_us/download/splunk-enterprise.html
+
+
+Splunk
+sourcetype
+metadata field that tells Splunk what kind of data is being indexed
+label that helps Splunk understaqnd how to handle incoming data
+
+
+
+http://localhost:8000
+
+
+
+
+TODO
+https://last9.io/blog/python-logging-best-practices
+https://medium.com/@jahnvi.gce21/a-complete-guide-to-logging-in-python-73eaecdd0424
