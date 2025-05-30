@@ -50,9 +50,9 @@ Steven-Table
 
 
 
-TODO
+Splunk articles
 https://last9.io/blog/python-logging-best-practices
 https://medium.com/@jahnvi.gce21/a-complete-guide-to-logging-in-python-73eaecdd0424
 
-
-
+Splunk demo
+https://www.splunk.com/en_us/resources/videos/splunk-web-demo.html?LST=Email1
