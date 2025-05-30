@@ -1,16 +1,26 @@
-# This is a sample Python script.
+import requests
+import json
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+SPLUNK_HEC_TOKEN = '<redacted>'
+SPLUNK_HEC_ENDPOINT = 'https://localhost:8088/services/collector/event'
 
+headers = {
+    'Authorization': f'Splunk {SPLUNK_HEC_TOKEN}',
+    'Content-Type': 'application/json'
+}
+log_event = {
+    "event": {
+        "level": "info",
+        "message": "This is a test log from Steven...???",
+        "user": "stevepro"
+    },
+    "sourcetype": "steven-python",
+    "host": "localhost",
+    "index": "main"
+}
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+data=json.dumps(log_event)
+response = requests.post(SPLUNK_HEC_ENDPOINT, headers=headers, data=data, verify=False)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(response.status_code, response.text)
+print('the end')

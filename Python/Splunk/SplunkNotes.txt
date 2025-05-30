@@ -17,8 +17,26 @@ label that helps Splunk understaqnd how to handle incoming data
 http://localhost:8000
 
 
+http://127.0.0.1:8000/en-US/app/launcher/home
+Settings > Data Inputs > HTTP Event Collector
+New Token	steven-token
+Source type	Structured | json
+Default index	main
 
+source="http:steven-logger" (index="main") sourcetype="_json"
+
+HEC
+Settings > Data Inputs > HTTP Event Collector > Global Settings
+All Tokens	Enabled
+SSH		checked
+HTTP port	8088
+
+
+http://127.0.0.1:8000/en-US/app/search/search
 
 TODO
 https://last9.io/blog/python-logging-best-practices
 https://medium.com/@jahnvi.gce21/a-complete-guide-to-logging-in-python-73eaecdd0424
+
+
+
