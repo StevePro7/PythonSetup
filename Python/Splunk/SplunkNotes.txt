@@ -34,6 +34,22 @@ HTTP port	8088
 
 http://127.0.0.1:8000/en-US/app/search/search
 
+Search
+index=main sourcetype="steven-python"
+
+Search | Create Table View
+Index		main
+sourcetype	steven-python
+Next
+
+Save		Steven-Table
+
+OR
+Datasets
+Steven-Table
+
+
+
 TODO
 https://last9.io/blog/python-logging-best-practices
 https://medium.com/@jahnvi.gce21/a-complete-guide-to-logging-in-python-73eaecdd0424
