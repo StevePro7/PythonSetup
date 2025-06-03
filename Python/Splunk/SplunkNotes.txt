@@ -15,7 +15,8 @@ label that helps Splunk understaqnd how to handle incoming data
 
 
 http://localhost:8000
-
+stevepro
+SP4
 
 http://127.0.0.1:8000/en-US/app/launcher/home
 Settings > Data Inputs > HTTP Event Collector
