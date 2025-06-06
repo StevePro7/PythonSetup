@@ -12,7 +12,7 @@ async def make_request():
         async with client.get(url, headers=headers) as response:
             print(response.status)
 
-async def main():
+def main():
     num: int = 3
     start = time.time()
     tasks = [asyncio.ensure_future(make_request()) for _ in range(num)]

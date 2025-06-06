@@ -15,5 +15,4 @@ Ex07    httpx Synchronous Mode  sync    sent 3 requests, cost: 3.556018114089966
 Ex08    httpx Synchronous Mode  async   sent 3 requests, cost: 1.030292272567749        only once
 Ex09    httpx Synchronous Mode  async   sent 3 requests, cost: 2.0491294860839844       everytime
 Ex10    aiohttp create ClientSession()  sent 3 requests, cost: 0.9784464836120605       only once
-Ex11    aiohttp create ClientSession()  sent 3 requests, cost: 0.9784464836120605       
-everytime
+Ex11    aiohttp create ClientSession()  sent 3 requests, cost: 0.8634638786315918       everytime
