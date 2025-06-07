@@ -1,6 +1,6 @@
 from app.config.constants import LOG_RULES_ENGINE
 from app.rules_process.rules_validate import rules_validate
-from tests.steve_preprocess.conftest import get_input_file, init_logger, get_extra_logger_data, set_output_file
+from tests.rules_preprocess.conftest import get_input_file, init_logger, get_extra_logger_data, set_output_file
 
 def test_rules_validate():
     # Test specific inputs.
