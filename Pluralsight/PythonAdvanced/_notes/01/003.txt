@@ -1,0 +1,2 @@
+Introducing Advanced Flow Control
+In this module we'll be looking at some of the more advanced flow control techniques used in Python programs, with which you should be familiar at an advanced level. Specifically, we'll cover else clauses on loops, else clauses on try blocks, emulating switch statements, and dispatching on type. By understanding these unusual language features you'll be able to understand more code that you may encounter, and reduce the complexity of your own code by eliminating unnecessary conditionals.

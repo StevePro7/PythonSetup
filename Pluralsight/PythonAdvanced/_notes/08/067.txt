@@ -1,0 +1,2 @@
+The ABC Convenience Base Class
+The ABC module contains a class, ABC, which is simply a regular class, which has ABCMeta as its metaclass. This makes it even easier to declare abstract base classes without having to put the metaclass mechanism on show, which may be an advantage when coding for an audience who haven't yet been exposed to the concept of metaclasses. Using ABC our Sword class can be simplified a little.

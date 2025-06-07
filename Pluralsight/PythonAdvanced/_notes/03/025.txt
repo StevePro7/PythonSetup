@@ -1,0 +1,2 @@
+Overriding __setattr__
+We can prevent this by overriding dunder setattr too to intercept attempts to write to our attributes. In this case, dunder setattr is configured to simply raise an AttributeError with a message explaining that we're not allowed to set attributes on immutable objects of this class. This successfully prevents writing to any attribute. We'll return to dunder setattr shortly, but first we need to demonstrate another problem with our dunder getattr.

@@ -1,0 +1,2 @@
+Summary
+Let's summarize. Class decorators provide a simple alternative to metaclasses for processing class definitions prior to the definition being bound to the class name. Remember, though, that class decorators are less powerful than metaclasses. Use class decorators when you can and metaclasses when you must. Thanks for watching, and we'll see you in the next module on abstract base classes.

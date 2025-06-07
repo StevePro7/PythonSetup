@@ -1,0 +1,3 @@
+Object Internals and Custom Attributes
+Introducing Object Internals
+Hello. My name is Robert Smallshire. Welcome to the third module of the Advanced Python course. In this module we'll provide details of how objects are represented internally in Python as a dictionary called dunder dict, and show how objects can be directly queried and manipulated through this internal dictionary. We'll then use this knowledge to show how to implement custom attribute access by overriding the special dunder getattr, dunder getattribute, dunder setattr, and dunder delattr methods. We'll round off by seeing how to make objects more memory efficient by defining dunder slots.

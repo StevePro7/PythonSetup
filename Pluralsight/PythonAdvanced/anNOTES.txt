@@ -1,0 +1,16 @@
+anNOTES
+21/06/2021
+
+Advanced Python
+https://app.pluralsight.com/library/courses/advanced-python/table-of-contents
+
+
+Course overview
+Advanced flow control
+Byte orientated programming
+Object internals and custom attributes
+Descriptors
+Instance creation
+Metaclasses
+Class decorators
+Abstract base classes
