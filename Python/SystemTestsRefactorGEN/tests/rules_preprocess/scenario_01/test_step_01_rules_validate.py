@@ -16,8 +16,8 @@ def test_rules_validate():
 
     # Act.
     context, out_obj = rules_validate(inp_obj, LOG_RULES_ENGINE, extra_logger_data)
-    assert out_obj is not None
 
     # Assert.
+    assert out_obj is not None
     set_output_file('test_step_02_context.json', context)
     set_output_file('test_step_02_inp_obj.json', out_obj)
