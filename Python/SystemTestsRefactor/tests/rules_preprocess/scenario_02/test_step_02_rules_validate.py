@@ -27,8 +27,8 @@ def test_rules_validate():
     assert out_obj is not None
 
     # Save output
-    with open('payloads/test_step_02_context.json', 'w') as file1:
+    with open('payloads/test_step_01_context.json', 'w') as file1:
         json.dump(context, file1, indent=2)
 
-    with open('payloads/test_step_02_out_obj.json', 'w') as file2:
+    with open('payloads/test_step_01_out_obj.json', 'w') as file2:
         json.dump(out_obj, file2, indent=2)
