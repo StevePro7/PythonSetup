@@ -11,11 +11,11 @@ def test_rules_validate():
     with open(file_path, 'r') as file:
         inp_obj = json.load(file)
 
-    trace_id: str = '0eddf3b3-55e0-4ed7-8798-bdf3baa857a0'
-    process_id: str = "test_01"
+    trace_id: str = 'a82258ea-924c-462f-867d-cb55a417c91a'
+    process_id: str = "test_02"
 
     log_level: str = "INFO"
-    app_env: str = "UAT"
+    app_env: str = "SIT"
     SingletonLogger.instance(log_level, app_env)
 
     extra_logger_data = {
@@ -27,8 +27,8 @@ def test_rules_validate():
     assert out_obj is not None
 
     # Save output
-    with open('payloads/test_step_01_context.json', 'w') as file1:
+    with open('payloads/test_step_02_context.json', 'w') as file1:
         json.dump(context, file1, indent=2)
 
-    with open('payloads/test_step_01_out_obj.json', 'w') as file2:
+    with open('payloads/test_step_02_out_obj.json', 'w') as file2:
         json.dump(out_obj, file2, indent=2)
