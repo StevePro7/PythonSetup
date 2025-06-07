@@ -21,4 +21,4 @@ def test_rules_validate():
 
     # Assert.
     set_output_file('test_step_02_context.json', context)
-    set_output_file('test_step_02_out_obj.json', out_obj)
+    set_output_file('test_step_02_inp_obj.json', out_obj)
