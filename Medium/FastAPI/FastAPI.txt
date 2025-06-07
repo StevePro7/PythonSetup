@@ -1,4 +1,13 @@
 Fast API
+07-Jun-2025
+
+Using SQLAlchemy 2.0 to implement CRUD operations with FastAPI
+https://blog.petrousoft.com/using-sqlalchemy-2-0-to-implement-crud-operations-with-fastapi-a56b040571ba
+
+GitHub
+https://github.com/gpetrousov/tachydev/blob/84cd11181457a7f5a7321a7a58b5dcc2bdea19f0/user_management/main.py#L27
+
+
 10-Mar-2025
 
 Asynchronous Magic: PyNest and SQLAlchemy 2.0 Drive a 25% Improvement in Python Apps Performance
