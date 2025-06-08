@@ -1,14 +1,20 @@
-import sys
-import dataclasses
+class Dog:
+    # Class attribute (shared by all instances)
+    species = "Canis familiaris"
 
+    # Constructor (initializer) method
+    def __init__(self, name, age):
+        # Instance attributes (unique to each instance)
+        self.name = name
+        self.age = age
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+    # Instance method
+    def bark(self):
+        return f"{self.name} says woof!"
 
+# Creating objects (instances of the Dog class)
+dog1 = Dog("Buddy", 3)
+dog2 = Dog("Max", 5)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(dog1.name)  # Output: Buddy
+print(dog2.bark())  # Output: Max says woof!
