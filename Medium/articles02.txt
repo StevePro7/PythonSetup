@@ -1,3 +1,11 @@
+09-Jun-2025
+DIY JWT Authentication in FastAPI Using Only Python
+https://leapcell.medium.com/diy-jwt-authentication-in-fastapi-using-only-python-5dd039c3cbee
+
+FUN
+Swapping Variables in Python: Behind the scenes of a,b = b,c
+https://medium.com/@RezSat/swapping-variables-in-python-behind-the-scenes-of-a-b-b-c-cd6245198df7
+
 30-May-2025
 Understanding Interfaces, ABC, Protocol and Duck Typing in Python
 https://medium.com/@kandemirozenc/understanding-interfaces-abc-protocol-and-duck-typing-in-python-866ca32ab2a0
