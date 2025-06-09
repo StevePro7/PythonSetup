@@ -1,0 +1,11 @@
+Building Dynamic API Responses with Generics in FastAPI
+08-Jun-2025
+
+https://medium.com/@jkishan421/building-dynamic-api-responses-with-generics-in-fastapi-972fa1f52d54
+
+
+from typing import TypeVar
+from pydantic.generics import GenericModel
+
+T = TypeVar("T")
+class Foo(GenericModel)

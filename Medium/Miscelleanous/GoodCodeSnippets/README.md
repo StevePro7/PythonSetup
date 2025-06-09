@@ -16,3 +16,28 @@ https://medium.com/@abdullah.iu.cse/mastering-python-with-these-code-snippets-pa
 11. Context Managers
 12. Dynamic Attribute Access
 13. Dependency Injection
+
+
+
+7. Mixins
+Mixins provide methods to the other classes and is used to add functionality to classes
+
+
+8. Slots
+Slots allow to explicitly define attributes a class can have and reduce memory usage
+If you want to add a new attribute outside slots then it will raise an error
+
+
+10. Descriptors
+Descriptors describe how attributes are accessed, modified, or deleted
+They are used to implement properties, class methods, and static methods
+
+
+11. Context Managers
+Context Managers are used to manage resources like files, database connections, and others using the with statement
+
+
+12. Dynamic Attribute Access
+Dynamic access or modify attributes using __getattr__, __setattr__, __delattr__
+
+
