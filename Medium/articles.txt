@@ -25,3 +25,9 @@ metaclasses also provide a powerful tool for controlling + customizing class cre
 
 Python Airflow Project For Your GitHub!
 https://python.plainenglish.io/python-airflow-project-for-your-github-10a6446b757e
+
+
+
+Abstract Base Classes (ABCs) and Protocols in python
+https://levelup.gitconnected.com/abstract-base-classes-abcs-and-protocols-in-python-f9c791ad84cd
+very long article here - 27mins!!
