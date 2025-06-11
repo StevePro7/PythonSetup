@@ -1,4 +1,9 @@
+11-Jun-2025
+Understanding TypeVar in Python
+https://medium.com/pythoneers/understanding-typevar-in-python-f78e5108471d
 
+Stop Using Boring Tuples: Try Python’s namedtuple() Instead
+https://medium.com/@aliyannshaikhh/bb26d56514d7
 
 DONE!!
 09-Jun-2025
