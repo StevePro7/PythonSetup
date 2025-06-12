@@ -1,3 +1,19 @@
+12-Jun-2025
+https://medium.com/@CodeWithHannan/10-python-internals-that-will-make-you-a-better-developer-b5b7941b14a8 
+
+
+https://python.plainenglish.io/how-i-optimized-a-python-etl-job-from-45-minutes-to-2-using-parallel-processing-and-cython-70de8ef08e38
+
+
+https://medium.com/the-pythonworld/10-performance-tips-to-make-your-fastapi-app-lightning-fast-f63a6265349f
+
+While uvicorn is great for development, running it solo in production isn't ideal.
+
+Instead, pair it with gunicorn for multi-worker support:
+gunicorn app.main:app -k uvicorn.workers.UvicornWorker --workers 4
+
+
+
 11-Jun-2025
 Understanding TypeVar in Python
 https://medium.com/pythoneers/understanding-typevar-in-python-f78e5108471d
