@@ -1,0 +1,37 @@
+How I Optimized a Python ETL Job from 45 Minutes to 2 Using Parallel Processing and Cython
+28-Feb-2025
+
+
+
+https://python.plainenglish.io/how-i-optimized-a-python-etl-job-from-45-minutes-to-2-using-parallel-processing-and-cython-70de8ef08e38
+
+cProfile
+line_profiler
+memory_profiler
+
+
+Optimization Phase 1: Multiprocessing
+Python has a GIL — but that only affects threads, not processes. So I:
+- break data into chunks
+- use multiprocessing.Pool()	4-8 processes
+- each worker: parse, transform, buffer a chunk
+
+
+Optimization Phase 2: Cython
+re-write critical function in Cythonand compile it
+- switch .py to .pyx	type annotations
+- cythonize() + setup.py	compile
+- replace org fn w/ compiled fn
+
+
+Final Step: Bulk Inserts with Psycopg2
+execute_values(cur, INSERT_SQL, data_batch, page_size=5000)
+
+
+Tech Stack
+Python 3.10
+Cython
+PostgreSQL 15
+psycopg2
+multiprocessing
+pandas + ujson
