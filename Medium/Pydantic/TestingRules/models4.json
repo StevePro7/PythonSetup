@@ -1,13 +1,15 @@
 {
-    "process_id": "StandardRules",
     "EXECTN_ID": 1234567890,
     "CNCPT_ID": "X25-4422-55-X-45",
-    "CNCPT_VRSN_ID": null,
+    "CNCPT_VRSN_ID": "null",
     "CLNT_ID": 59,
     "SEND_IND": "N",
     "TNNT_ID": 59,
     "ANLTYC_PROD_ID": 11,
     "INV_TYPE_ID": 5,
     "EXECTN_DT": "2025-03-05",
-    "ANLTYC_ST_DESC": "Legacy_Dropped"
+    "ANLTYC_ST_DESC": "Legacy_Dropped",
+    "process_id": "1234-5678",
+    "client_process": "dbg",
+    "env": "uat"
 }

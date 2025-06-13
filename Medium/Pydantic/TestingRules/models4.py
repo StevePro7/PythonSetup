@@ -26,4 +26,5 @@ rulesDataModel: RulesDataModel = RulesDataModel(**input_file)
 
 
 print(rulesDataModel.process_id)
+print(rulesDataModel.CNCPT_VRSN_ID)
 print(rulesDataModel.ANLTYC_ST_DESC)
