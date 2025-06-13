@@ -1,6 +1,5 @@
 from pydantic import BaseModel
 from typing import Optional
-import json
 
 class TestingDataModel(BaseModel):
     Postgres: Optional[bool] = False
