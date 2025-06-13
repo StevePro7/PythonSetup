@@ -1,0 +1,27 @@
+Understanding TypeVar in Python
+13-Jun-2025
+
+https://medium.com/pythoneers/understanding-typevar-in-python-f78e5108471d#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjBkOGE2NzM5OWU3ODgyYWNhZTdkN2Y2OGIyMjgwMjU2YTc5NmE1ODIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDI2ODgzMzA1MjE0NzYzNTYwNjAiLCJlbWFpbCI6InN0ZXZlbl9ib2xhbmRAaG90bWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmJmIjoxNzQ5ODEyMDI4LCJuYW1lIjoiU3RldmVuIEJvbGFuZCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NJdnRobG5KWHEtdER5Q1ZGWDVtc0NwNXc1eWFZZTQxSnl5Y0VBM084MnMwbklzTWtEZj1zOTYtYyIsImdpdmVuX25hbWUiOiJTdGV2ZW4iLCJmYW1pbHlfbmFtZSI6IkJvbGFuZCIsImlhdCI6MTc0OTgxMjMyOCwiZXhwIjoxNzQ5ODE1OTI4LCJqdGkiOiJjOWE5M2E3MTdlMWUwNTRhYzg2ODUxYWNlMzg2ZTMxZjhiNmY5ZjI0In0.NmGEWziDw-ENxxGTr4zALSPiLvpvP2EumAIaeLu23RgK5QRpUce62pTTm7yQz6DA0l8wF04cZ91vPMaCHnLtGrF-lhhtIoyA0QaLcpvaoglzlPTP9QkQSx3i5FdEeRQGYF1-hJCLPynsjFnjGlPLh3vzOeIX5tDAI2regE_U7DNCEy3BBLETm9Miaysb1akoVjEnx5tYMtoNIhVFvvovxH2YMoSOBu6MtqFtC8KQ5mpxO6JdcapKQSX_dR78RJAj03viyu6ddfeygHjZYEiN8-YvcDMFxViceX4Gu6rWpt8pOourLnm01Ve7kI4tgSB2PcD1fRIyU5GcrAfE7XZF_w
+
+
+from typing import TypeVar
+T = TypeVar('T')
+
+
+Ex01    Example: A Generic Function
+Ex02    Example: A Generic Class
+
+
+Bounded TypeVars
+from typing import TypeVar
+
+Number = TypeVar('Number', int, float)
+
+def add(a: Number, b: Number) -> Number:
+    return a + b
+
+
+Python 3.13
+Inline Type Parameters:
+def echo[T](value: T) -> T:
+    return value
