@@ -71,7 +71,7 @@ print(default_dict)
 
 
 #6. Named Tuples for Cleaner Code
-creates tuple-lie objects with named fields
+creates tuple-like objects with named fields
 lightweight alternative to classes while has clear structure
 
 EX
@@ -85,7 +85,7 @@ print(p.x, p.y)
 
 
 #7. Using itertools for Memory-Efficient Iterations
-itertools provides set of fast memory0-efficient tools
+itertools provides set of fast memory-efficient tools
 for working with iterators e.g. count(), cycle(), repeat(), chain()
 
 EX
