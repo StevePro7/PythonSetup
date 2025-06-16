@@ -1,0 +1,45 @@
+Getting Started with Python’s AsyncIO
+16-Jun-2025
+
+https://atifazad.com/getting-started-with-pythons-asyncio-9398c133e7e6
+https://github.com/atifazad/course_fastapi_asyncio_foundation/tree/master	
+
+
+Coroutine
+async def function
+- function capable of pausing and resuming
+- co-operative function which yields the control back to event loop
+
+
+Event Loop	
+entry point of the aqsync programs
+asyncio.run() 
+function responsible to manage the event loop for our program
+
+asyncio.run() 
+- creates an event loop for a program
+- schedules the main routine [ the function that we pass as a parameter to asyncio.run() ]
+- runs the event loop until the main task completes
+- closes the event loop
+
+
+ISSUES
+https://www.youtube.com/watch?reload=9&v=q1T9fyLTlbE
+
+
+Multiple concurrent event loops
+Missing await with async function calls
+
+Blocking the event loop
+as coroutine runs in the event loop thread - if a blocking function [time.sleep()]
+is called inside the coroutine then it results in block the event loop thread
+no other coroutines are executed until the completion of that blocking function
+
+
+DEBUGGING asyncio
+pass debug=True in asyncio.run
+e.g.
+asyncio.run(main(), debug=True)
+
+i.e.
+executing in the event loop without yielding control back to the event loop
