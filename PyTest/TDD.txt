@@ -1,0 +1,62 @@
+TDD
+18-Jun-2025
+
+Complete Python Development Guide
+https://testdriven.io/guides/complete-python
+
+Reference:
+~\GitHub\StevePro7\PythonSetup\Pydantic
+
+
+Step02
+https://testdriven.io/blog/testing-python
+
+monkeypatch
+fixture to replace calls with lambda callback that returns MockedResponse
+
+
+MOCKING
+pytest		monkeypatch
+pytest-mock
+unittest.mock
+
+
+Mutation testing
+analyze effectiveness or robustness of your test suite
+mutmut
+
+
+Hypothesis
+library = property-based testing in Python
+generates a wide range of random test data that's dependent on previous tests runs
+
+
+Type Checking
+runtime type checkers like
+pydantic [or Typeguard] minimize number of tests
+
+
+Step03	TDD
+https://testdriven.io/blog/modern-tdd
+
+conftest
+store pytest fixtures
+
+fixtures define steps and data that constitute teh arrange phase
+
+EG
+@pytest.fixture
+def some_fixture():
+  # do something before test
+  yield
+  # do something after  test
+
+autouse=True
+fixture automatically used by default before and after each test in the suite
+
+pydantic
+do not need tests to validate data
+
+Flask API
+jsonschema
+validate JSON payloads against the defined schemas and Flask
