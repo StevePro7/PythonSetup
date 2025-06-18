@@ -122,3 +122,40 @@ schema
 
 Remember to de-serialize data into an object you need decorator
 @post_load
+
+Typeguard
+enforces type checks at runtime
+whereas
+mypy
+enforces static type checks
+
+
+Step06	docstrings
+function.__doc__
+
+darglint
+document linter
+
+doctest
+Testing thru documentation
+
+Sphinx
+present docs to users
+generate docs from docstrings
+
+Open API docs
+Swagger UI
+editor.swagger.io
+
+autodoc
+pull in documentation from docstrings
+
+
+Step07
+__all__
+attriube in __init__.py = list of public objects for the module
+
+Packages
+PyPi
+~\GitHub\StevePro7\PythonSetup\Medium\Miscelleanous\PythonPackages
+https://pypi.org/project/stevepromlpredictor/0.1.0
