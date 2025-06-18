@@ -18,7 +18,7 @@ class UserSchema(Schema):
     email = fields.Str()
 
     @post_load
-    def manke_user(self, data, **kwargs):
+    def makeit_user(self, data, **kwargs):
         return User(**data)
 
 
