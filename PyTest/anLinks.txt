@@ -1,6 +1,8 @@
 Links
 18-Jun-2024
 
+Complete Python Development Guide
+https://testdriven.io/guides/complete-python
 
 SHA
 pytest
@@ -11,3 +13,26 @@ unittest
 mock
 MagicMock
 patch
+
+
+pytest links
+https://docs.pytest.org/en/stable
+https://www.tutorialspoint.com/pytest/index.htm
+https://realpython.com/pytest-python-testing
+https://www.geeksforgeeks.org/python/getting-started-with-pytest
+
+
+pytest with eric.com
+https://pytest-with-eric.com
+
+https://pytest-with-eric.com/mocking/pytest-mocking
+https://github.com/Pytest-with-Eric/pytest-mock-example
+
+
+https://pytest-with-eric.com/mocking/pytest-common-mocking-problems
+
+
+mock
+https://realpython.com/python-mock-library
+https://github.com/pytest-dev/pytest-mock
+https://pytest-mock.readthedocs.io/en/latest
