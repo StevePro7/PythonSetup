@@ -1,0 +1,35 @@
+import pytest
+from unittest.mock import patch, MagicMock
+from snowflake_db import SnowflakeDB
+
+@patch("snowflake_db.snowflake.connector.connect")
+def test_execute_query(mock_connect):
+    # Arrange
+    mock_conn = MagicMock()
+    mock_cursor = MagicMock()
+    mock_connect.return_value = MagicMock()
+    mock_conn.cursor.return_value = MagicMock()
+
+    mock_cursor.fetchall.return_value = [("row1",), ("row2",)]
+
+    db = SnowflakeDB(
+        user="test_user",
+        password="test_pass",
+        account="test_account",
+        warehouse="test_warehouse",
+        database="test_db",
+        schema="test_schema"
+    )
+    db.open_connection()
+
+    # Act
+    result = db.execute_query("SELECT * FROM test_table")
+
+    # Assert
+    mock_connect.assert_called_once()
+    mock_cursor.execute.assert_called_once()
+    #mock_cursor.execute.assert_called_once_with("SELECT * FROM test_table")
+    assert result == [("row1",), ("row2",)]
+
+    db.close_connection()
+    mock_conn.close.assert_called_once()

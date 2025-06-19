@@ -1,6 +1,4 @@
-# snowflake_db.py
 import snowflake.connector
-
 
 class SnowflakeDB:
     def __init__(self, user, password, account, warehouse, database, schema):
@@ -10,6 +8,7 @@ class SnowflakeDB:
         self.warehouse = warehouse
         self.database = database
         self.schema = schema
+
         self.connection = None
         self.cursor = None
 
@@ -25,14 +24,22 @@ class SnowflakeDB:
         self.cursor = self.connection.cursor()
 
     def execute_query(self, query, params=None):
-        if not self.cursor:
-            raise RuntimeError("Connection not open. Call open_connection() first.")
-
-        self.cursor.execute(query, params) if params else self.cursor.execute(query)
-        return self.cursor.fetchall()
+        data = None
+        try:
+            if self.cursor is not None:
+                if params:
+                    self.cursor.execute(query, params)
+                else:
+                    self.cursor.execute(query)
+                data = self.cursor.fetchall()
+                return data
+        except Exception as e:
+            print(f"Query execution failed: {e}")
+            raise
+        finally:
+            if self.cursor is not None:
+                self.cursor.close()
 
     def close_connection(self):
-        if self.cursor:
-            self.cursor.close()
-        if self.connection:
+        if self.connection is not None:
             self.connection.close()
