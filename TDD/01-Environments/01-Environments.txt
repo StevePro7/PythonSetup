@@ -1,0 +1,4 @@
+Modern Python Environments - dependency and workspace management
+20-Jun-2025
+
+https://testdriven.io/blog/python-environments
