@@ -1,0 +1,173 @@
+The Magic of Python Decorators: From Basics to Advanced Techniques
+https://python.plainenglish.io/the-magic-of-python-decorators-from-basics-to-advanced-techniques-94d25dc5f920
+
+
+Scaling OpenAI API Usage with Multiple Python Requests
+https://medium.com/@johnidouglasmarangon/scaling-openai-api-usage-with-multiple-python-requests-248e321ed7d3
+
+
+
+Python Code Quality: Style Conventions and Linting Tools
+https://leapcell.medium.com/python-code-quality-style-conventions-and-linting-tools-586f370824c1
+
+
+SHORT
+
+Python From Scratch Building a Tiny Local Vector Database Without LangChain or FAISS
+https://towardsdev.com/python-from-scratch-building-a-tiny-local-vector-database-without-langchain-or-faiss-52b50f4410f1
+
+
+What is a Vector Database, Really?
+A vector database stores information as vectors, not as plain text or rows. Each vector represents a piece of data — often a sentence, paragraph, or product description — that has been embedded into a multi-dimensional space.
+
+
+
+
+The Middleware Pattern in FastAPI That Nobody Talks About
+https://medium.com/@hadiyolworld007/the-middleware-pattern-in-fastapi-that-nobody-talks-about-8a952a031d11
+
+
+
+5 Python Hacks That Boosted My Code Speed
+https://python.plainenglish.io/5-python-hacks-that-boosted-my-code-speed-a870a6802b57
+
+__slots__
+
+
+From: Steven Boland <steven_boland@hotmail.com>
+Sent: Tuesday 8 July 2025 21:15
+To: Steven Boland <steven_boland@hotmail.com>
+Subject: Re: Medium3
+ 
+Wed 9th July
+Implementing FastAPI from Scratch Using Only Pure Python
+https://leapcell.medium.com/implementing-fastapi-from-scratch-using-only-pure-python-894d1bcf1d8e
+
+
+
+AI Bots Are Reviewing Your Resumes Now…
+https://python.plainenglish.io/ai-bots-are-reviewing-your-resumes-now-283f7793011e
+
+
+From: Steven Boland <steven_boland@hotmail.com>
+Sent: Saturday 5 July 2025 23:34
+To: Steven Boland <steven_boland@hotmail.com>
+Subject: Re: Medium2
+ 
+Sun,05-Jul
+https://medium.com/codex/what-is-chatgpt-an-in-depth-analysis-with-tips-on-usage-c1d9db1e9ced
+
+
+https://blog.stackademic.com/a-deep-dive-into-asynchronous-request-handling-and-concurrency-patterns-in-fastapi-699393bb3845
+
+
+
+
+https://medium.com/@yashwanthnandam/top-python-concurrency-interview-questions-part-1-5c34aac53dba
+
+
+From: Steven Boland <steven_boland@hotmail.com>
+Sent: Thursday 3 July 2025 00:17
+To: Steven Boland <steven_boland@hotmail.com>
+Subject: Re: Medium
+ 
+The Ultimate MCP Handbook: From Basics to Advanced LLM Integration
+https://codemaker2016.medium.com/the-ultimate-mcp-handbook-from-basics-to-advanced-llm-integration-00872d1df1e4
+
+
+
+SHORT
+5 Python Libraries Every MCP Developer Should Know
+https://lekha-bhan88.medium.com/5-python-libraries-every-mcp-developer-should-know-d414fb32685c
+
+
+
+Understanding the MCP Workflow: Building a Local MCP client using Ollama and LangChain MCP adapters 
+https://medium.com/the-ai-forum/understanding-the-mcp-workflow-building-a-local-mcp-client-using-ollama-and-langchain-mcp-5997b8a5fded
+
+
+
+Build Your First MCP Server with Python SDK & MCP Inspector
+https://medium.com/data-and-beyond/build-your-first-mcp-server-with-python-sdk-mcp-inspector-ae2c5ca3b36c
+
+Imagine asking your AI assistant: ‘Should I carry an umbrella today in Pune?’ — and getting back an accurate, real-time answer powered by your very own tool. That’s the magic of MCP servers. And today, you’ll build one from scratch.
+
+
+Server Architecture in FastAPI: A Modern Blueprint for High-Performance APIs
+https://medium.com/@rameshkannanyt0078/%EF%B8%8F-server-architecture-in-fastapi-a-modern-blueprint-for-high-performance-apis-6a67b103f694
+
+
+app/
+├── main.py                # Entry point
+├── api/                   # All route definitions
+│   └── v1/
+│       └── endpoints/
+├── core/                  # Core settings (configs, security, logging)
+├── models/                # SQLAlchemy or Pydantic models
+├── services/              # Business logic, ML integrations
+├── db/                    # Database connection, sessions
+├── schemas/               # Pydantic schemas (request/response)
+├── utils/                 # Helper functions
+├── middleware/            # Custom middlewares
+└── tests/                 # Test cases
+
+
+
+SHORT
+FastAPI + Pydantic + LLMs = Build APIs the Right Way
+https://medium.com/@alejandro7899871776/fastapi-pydantic-llms-build-apis-the-right-way-70d683a447c1
+
+
+TODO
+Steps: Models → OpenAI → Logging → Endpoint → Testing
+
+
+Async Programming in Python: Part 1 — The Fundamentals
+https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamentals-60cb280c6533
+
+
+Async Programming in Python: Part 2 — Advanced Patterns and Techniques
+https://mskadu.medium.com/async-programming-in-python-part-2-advanced-patterns-and-techniques-7f6b65061b74
+From: Steven Boland <steven_boland@hotmail.com>
+Sent: Thursday 26 June 2025 14:35
+To: Steven Boland <steven_boland@hotmail.com>
+Subject: Re: Medium
+ 
+ 
+ML Ops
+Thu 26 Jun @ DUB
+
+
+https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part1-its-time-to-ditch-poetry-c2590091d90a
+
+
+https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part-2-deep-dives-and-advanced-use-1e2540e6f4a6
+
+
+https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part-3-mlops-4906965f45a2
+
+From: Steven Boland <steven_boland@hotmail.com>
+Sent: Friday 20 June 2025 10:11
+To: Steven Boland <steven_boland@hotmail.com>
+Subject: Medium
+ 
+Fri,20-Jun
+Classifying Concord
+https://medium.com/@ranton256/classifying-concord-5c68c691f343
+
+
+Navigating the Python Packaging Landscape: Pip vs. Poetry vs. uv — A Developer’s Guide
+https://dimasyotama.medium.com/navigating-the-python-packaging-landscape-pip-vs-poetry-vs-uv-a-developers-guide-49a9c93caf9c
+
+
+
+Thu,19-Jun
+A Faster, Cleaner Python Workflow with uv, Ruff and ty
+https://medium.com/@wonowicki/a-faster-cleaner-python-workflow-with-uv-ruff-and-ty-e9c2d29c4de9
+
+
+Python 3.14: Seven Cool New Features You Should Know
+https://mskadu.medium.com/python-3-14-seven-cool-new-features-you-should-know-0a79e6afaae5
+
+	
+Virus-free.www.avast.com
