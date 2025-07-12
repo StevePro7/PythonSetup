@@ -20,3 +20,15 @@ class Animal:
         self.id = id
         self.species = species
         self.locations = locations  # List of GPS tuples
+
+
+Each instance of Animal had a dynamic attribute dictionary which wastes memory
+esp. when you have thousands of objects
+
+
+__slots__
+helps reduce memory overhead by preventing the creation of a per-instance __dict__
+
+i.e.
+does not have __dict__
+thus uses less memory esp. when you have many [millions] instances

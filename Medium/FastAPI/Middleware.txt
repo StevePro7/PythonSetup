@@ -1,0 +1,13 @@
+The Middleware Pattern in FastAPI That Nobody Talks About
+12-Jul-2025
+
+https://medium.com/@hadiyolworld007/the-middleware-pattern-in-fastapi-that-nobody-talks-about-8a952a031d11
+
+Middleware [in FastAPI] is a function that runs before and after every request
+
+You can:
+- intercept the request
+- add global logic
+- handle exceptions
+- modify responses
+- inject metadata	e.g. user info, requestID, latency logs
