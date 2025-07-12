@@ -39,4 +39,44 @@ docker run -it --rm \
   -w /app \
   python:3.14-rc bash
 
+
+docker run -it --rm -v "$HOME/python314-test":/app -w /app python:3.14-rc bash
+
 python hello.py
+
+
+EXAMPLES
+01.
+root@4ced01c039a5:/app# python hello.py
+AttributeError: 'string.templatelib.Template' object has no attribute 'substitute'
+
+02.
+root@4ced01c039a5:/app# python hello.py
+name 'user_list' is not defined
+
+03.
+root@4ced01c039a5:/app# python hello.py
+'DatabaseConnection' object has no attribute 'execute_querry'
+
+04.
+root@4ced01c039a5:/app# python hello.py
+API GET request to /api/users
+Large POST request - processing with worker queue
+Small POST request - processing immediately
+Modifying operation: DELETE on /users/123
+
+05.
+root@4ced01c039a5:/app# python hello.py
+Created user: {'id': 123, 'username': 'john_doe', 'email': 'john@example.com', 'last_login': '2024-10-15'}
+
+06.
+root@4ced01c039a5:/app# python hello.py
+Original size: 41,000 bytes
+Zstandard: 61 bytes (0.0001s)
+Gzip: 199 bytes (0.0002s)
+High compression: 61 bytes
+Fast compression: 61 bytes
+
+06.
+root@4ced01c039a5:/app# python hello.py
+External debugger interface not available in this Python version
