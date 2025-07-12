@@ -24,3 +24,19 @@ enter fully qualified path to VENV
 
 Finally see in PyCharm
 Python 3.12 (FF-uv)
+
+
+SUMMARY
+01.
+open in PyCharm
+uv venv
+uv pip list
+uv pip install scikit-learn
+pyproject.toml
+
+02.
+open in PyCharm
+uv venv
+uv pip list
+uv pip install pyproject.toml
+uv pip list
