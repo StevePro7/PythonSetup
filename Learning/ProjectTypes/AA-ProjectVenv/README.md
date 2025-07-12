@@ -5,3 +5,7 @@ python -m venv .venv
 source .venv/bin/activate
 OR
 .\.venv\Scripts\activate
+
+
+pip install requests
+pip freeze > requirements.txt
