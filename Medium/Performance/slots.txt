@@ -1,0 +1,22 @@
+__slots__
+12-Jul-2025
+
+
+5 Python Hacks That Boosted My Code Speed
+https://python.plainenglish.io/5-python-hacks-that-boosted-my-code-speed-a870a6802b57
+
+01. Use __slots__ to reduce memory overhead in classes
+BEFORE
+class Animal:
+    def __init__(self, id, species, locations):
+        self.id = id
+        self.species = species
+        self.locations = locations  # List of GPS tuples
+
+AFTER
+class Animal:
+    __slots__ = =['id', 'species', 'locations']
+    def __init__(self, id, species, locations):
+        self.id = id
+        self.species = species
+        self.locations = locations  # List of GPS tuples

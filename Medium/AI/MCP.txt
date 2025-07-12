@@ -1,0 +1,43 @@
+MCP
+12-Jul-2025
+
+01.
+MCP
+Model Context Protocol
+
+LLM
+Large Language Models [GPT] are powerful at generating natural language text
+very good at predicting next token in sequence
+
+BUT
+they can't fetch local files, run custom code, interact with external APIs
+
+MCP = bridge gap between language intelligence and the real world
+MCP = standard to extend LLM capabilities beyond static conversations
+
+Reference
+The Ultimate MCP Handbook: From Basics to Advanced LLM Integration
+https://codemaker2016.medium.com/the-ultimate-mcp-handbook-from-basics-to-advanced-llm-integration-00872d1df1e4
+
+
+02. FULL
+Understanding the MCP Workflow: Building a Local MCP client using Ollama and LangChain MCP adapters
+https://medium.com/the-ai-forum/understanding-the-mcp-workflow-building-a-local-mcp-client-using-ollama-and-langchain-mcp-5997b8a5fded
+
+
+03. PART
+5 Python Libraries Every MCP Developer Should Know
+https://lekha-bhan88.medium.com/5-python-libraries-every-mcp-developer-should-know-d414fb32685c
+
+fastmcp
+create MCP-compliant servers using decorators
+
+
+03. PART
+Build Your First MCP Server with Python SDK & MCP Inspector
+https://medium.com/data-and-beyond/build-your-first-mcp-server-with-python-sdk-mcp-inspector-ae2c5ca3b36c
+
+Imagine asking your AI assistant: ‘Should I carry an umbrella today in Pune?’ — and getting back an accurate, real-time answer powered by your very own tool. That’s the magic of MCP servers
+
+Why build an MCP server?
+LLM generate content but left in isolation they lack REAL-WORLD awareness!
