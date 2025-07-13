@@ -1,3 +1,7 @@
+From Pip to Lightning: How uv Opened My Eyes to Better Python Workflows
+https://viveksinghpathania.medium.com/from-pip-to-lightning-how-uv-opened-my-eyes-to-better-python-workflows-dfa50e8a5893
+
+
 The Magic of Python Decorators: From Basics to Advanced Techniques
 https://python.plainenglish.io/the-magic-of-python-decorators-from-basics-to-advanced-techniques-94d25dc5f920
 
