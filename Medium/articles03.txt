@@ -11,6 +11,64 @@ Python Code Quality: Style Conventions and Linting Tools
 https://leapcell.medium.com/python-code-quality-style-conventions-and-linting-tools-586f370824c1
 
 
+ 
+Wed 9th July
+Implementing FastAPI from Scratch Using Only Pure Python
+https://leapcell.medium.com/implementing-fastapi-from-scratch-using-only-pure-python-894d1bcf1d8e
+
+
+
+https://medium.com/@yashwanthnandam/top-python-concurrency-interview-questions-part-1-5c34aac53dba
+Ref: Blogger | Python | InterviewQs 2025
+
+
+
+Async Programming in Python: Part 1 — The Fundamentals
+https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamentals-60cb280c6533
+
+
+
+Async Programming in Python: Part 2 — Advanced Patterns and Techniques
+https://mskadu.medium.com/async-programming-in-python-part-2-advanced-patterns-and-techniques-7f6b65061b74
+
+
+ 
+
+
+
+https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part1-its-time-to-ditch-poetry-c2590091d90a
+https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part-2-deep-dives-and-advanced-use-1e2540e6f4a6
+
+https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part-3-mlops-4906965f45a2
+
+
+Fri,20-Jun
+
+Navigating the Python Packaging Landscape: Pip vs. Poetry vs. uv — A Developer’s Guide
+https://dimasyotama.medium.com/navigating-the-python-packaging-landscape-pip-vs-poetry-vs-uv-a-developers-guide-49a9c93caf9c
+
+
+
+
+Thu,19-Jun
+A Faster, Cleaner Python Workflow with uv, Ruff and ty
+https://medium.com/@wonowicki/a-faster-cleaner-python-workflow-with-uv-ruff-and-ty-e9c2d29c4de9
+
+
+ARCHIVE
+The Magic of Python Decorators: From Basics to Advanced Techniques
+https://python.plainenglish.io/the-magic-of-python-decorators-from-basics-to-advanced-techniques-94d25dc5f920
+
+
+Scaling OpenAI API Usage with Multiple Python Requests
+https://medium.com/@johnidouglasmarangon/scaling-openai-api-usage-with-multiple-python-requests-248e321ed7d3
+
+
+
+Python Code Quality: Style Conventions and Linting Tools
+https://leapcell.medium.com/python-code-quality-style-conventions-and-linting-tools-586f370824c1
+
+
 SHORT
 
 Python From Scratch Building a Tiny Local Vector Database Without LangChain or FAISS
