@@ -1,3 +1,11 @@
+Poetry Was Good, Uv Is Better: An MLOps Migration Story
+https://fmind.medium.com/poetry-was-good-uv-is-better-an-mlops-migration-story-f52bf0c6c703
+
+Building Enterprise Python Microservices with FastAPI in 2025 (3/10): Project Setup
+https://blog.devops.dev/building-enterprise-python-microservices-with-fastapi-in-2025-3-10-project-setup-1113658c9f0e
+
+
+
 From Pip to Lightning: How uv Opened My Eyes to Better Python Workflows
 https://viveksinghpathania.medium.com/from-pip-to-lightning-how-uv-opened-my-eyes-to-better-python-workflows-dfa50e8a5893
 
