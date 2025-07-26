@@ -1,0 +1,7 @@
+The Road to LLMs: A Journey Through word embeddings in PyTorch [part 1]
+https://medium.com/@johnathannguyen/the-road-to-llms-a-journey-through-embeddings-in-pytorch-part-1-404777ceca11
+https://github.com/nguyenanht/john-toolbox/blob/develop/notebooks/deep_learning/transformers/001_simple_embedding.ipynb?source=post_page-----404777ceca11---------------------------------------
+
+
+Word Embeddings: Encoding Lexical Semantics
+https://docs.pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html
