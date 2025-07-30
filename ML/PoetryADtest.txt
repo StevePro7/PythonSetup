@@ -6,10 +6,14 @@ cd path-to-directory
 poetry new my-poetry-project
 cd my-poetry-project
 
-poetyr config virtualenvs.in-project true
+poetry config virtualenvs.in-project true
 
 VENV
 poetry install
+
+MAC
+failed to query /System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python with code 1 err: '  File "/Users/XXXX/Library/Application Support/pypoetry/venv/lib/python3.12/site-packages/virtualenv/discovery/py_info.py", line 26\n    return list(OrderedDict.fromkeys(["", *os.environ.get("PATHEXT", "").lower().split(os.pathsep)]))\n                                          ^\nSyntaxError: invalid syntax\n'
+
 source .venv/bin/activate
 
 foo.py
@@ -33,3 +37,8 @@ pytest
 Commands did not work
 poetry show
 poetry run
+
+
+pip wheel --no-cache-dir --use-pep517 "pyyaml (==5.4.1)"
+
+PYTHONWARNINGS="ignore::setuptools.SetuptoolsDeprecationWarning" poetry install
