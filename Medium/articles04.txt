@@ -5,3 +5,11 @@ https://github.com/nguyenanht/john-toolbox/blob/develop/notebooks/deep_learning/
 
 Word Embeddings: Encoding Lexical Semantics
 https://docs.pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html
+
+
+
+My Lazy Secret to Cleaner Code: Python Decorators
+https://blog.devgenius.io/my-lazy-secret-to-cleaner-code-python-decorators-d43d673a1ba2
+
+How to build MCP server in python using FastAPI
+https://medium.com/@miki_45906/how-to-build-mcp-server-in-python-using-fastapi-d3efbcb3da3a
