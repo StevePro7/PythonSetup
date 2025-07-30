@@ -1,0 +1,35 @@
+Poetry AD test
+30-Jul-2025
+
+cd path-to-directory
+
+poetry new my-poetry-project
+cd my-poetry-project
+
+poetyr config virtualenvs.in-project true
+
+VENV
+poetry install
+source .venv/bin/activate
+
+foo.py
+poetry add requests
+9
+
+test_foo.py
+poetry add -D pytest
+17
+
+pip list
+
+
+update pyproject.toml
+pandas
+poetry lock
+poetry install
+pytest
+
+
+Commands did not work
+poetry show
+poetry run
