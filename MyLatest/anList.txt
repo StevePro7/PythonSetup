@@ -1,0 +1,35 @@
+My Latest
+30-Jul-2025
+
+
+Python
+http://interviewbit.com/python-interview-questions
+
+http://blog.inedo.com/python/modularization-and-packages
+
+
+Python Coding Standards
+https://ran-ramtamang.medium.com/python-coding-standards-f39571dfc872
+https://www.cs.rpi.edu/academics/courses/fall18/csci1200/Good_Programming_Practices.pdf
+https://astropgh.github.io/astropgh-boot-camp-2020/seminars/coding_best_practices_2020-06-03.pdf
+https://www.eso.org/projects/alma/develop/alma-se/reference/COMP-70.20.00.00-002-A-STD.pdf
+https://www.physik.uzh.ch/~python/python_2024-07/lecture_bp+git/best-practice.pdf
+~\Steven\BOOKS\ML\BP
+
+
+Python Style Guide	GOOGLE
+https://google.github.io/styleguide/pyguide.html
+
+
+PyTorch
+Machine Learning with PyTorch python and Scikit-Learn
+https://dl.ebooksworld.ir/books/Machine.Learning.with.PyTorch.and.Scikit-Learn.Sebastian.Raschka.Packt.9781801819312.EBooksWorld.ir.pdf
+~\Steven\BOOKS\ML
+
+Glossary
+http://nvidia.com/en-us/glossary/pytorch
+
+
+MISC
+Reddit
+https://www.reddit.com/r/learnpython/comments/ph5ogf/good_code_standards_for_python_project
