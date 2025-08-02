@@ -8,8 +8,19 @@ https://docs.pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html
 
 
 
-My Lazy Secret to Cleaner Code: Python Decorators
-https://blog.devgenius.io/my-lazy-secret-to-cleaner-code-python-decorators-d43d673a1ba2
+//My Lazy Secret to Cleaner Code: Python Decorators
+//https://blog.devgenius.io/my-lazy-secret-to-cleaner-code-python-decorators-d43d673a1ba2
 
-How to build MCP server in python using FastAPI
-https://medium.com/@miki_45906/how-to-build-mcp-server-in-python-using-fastapi-d3efbcb3da3a
+//How to build MCP server in python using FastAPI
+//https://medium.com/@miki_45906/how-to-build-mcp-server-in-python-using-fastapi-d3efbcb3da3a
+
+
+02-Aug-2025
+How to Set Environment Variables in FastAPI
+https://medium.com/@joerosborne/how-to-set-environment-variables-in-fastapi-837c538190e3
+
+Async Programming in Python: Part 1 — The Fundamentals
+https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamentals-60cb280c6533
+
+Python Packaging in 2025: Introducing uv, A Speedy New Contender
+https://medium.com/fhinkel/python-packaging-in-2025-introducing-uv-a-speedy-new-contender-cbf408726687
