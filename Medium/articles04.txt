@@ -16,11 +16,11 @@ https://docs.pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html
 
 
 02-Aug-2025
-How to Set Environment Variables in FastAPI
-https://medium.com/@joerosborne/how-to-set-environment-variables-in-fastapi-837c538190e3
+//How to Set Environment Variables in FastAPI
+//https://medium.com/@joerosborne/how-to-set-environment-variables-in-fastapi-837c538190e3
 
 Async Programming in Python: Part 1 — The Fundamentals
 https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamentals-60cb280c6533
 
-Python Packaging in 2025: Introducing uv, A Speedy New Contender
-https://medium.com/fhinkel/python-packaging-in-2025-introducing-uv-a-speedy-new-contender-cbf408726687
+//Python Packaging in 2025: Introducing uv, A Speedy New Contender
+//https://medium.com/fhinkel/python-packaging-in-2025-introducing-uv-a-speedy-new-contender-cbf408726687
