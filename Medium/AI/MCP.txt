@@ -1,6 +1,10 @@
 MCP
-12-Jul-2025
+03-Aug-2025
+Using Model Context Protocol (MCP) in Python for Stateful AI Workflows
+https://medium.com/@pankaj_pandey/using-model-context-protocol-mcp-in-python-for-stateful-ai-workflows-6edc990f7f07
 
+
+12-Jul-2025
 01.
 MCP
 Model Context Protocol
