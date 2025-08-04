@@ -24,3 +24,13 @@ https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamenta
 
 //Python Packaging in 2025: Introducing uv, A Speedy New Contender
 //https://medium.com/fhinkel/python-packaging-in-2025-introducing-uv-a-speedy-new-contender-cbf408726687
+
+
+04-Aug-2025
+I Lost My Job Offer Due to These 5 Python Mistakes…
+https://python.plainenglish.io/5-python-mistakes-that-cost-me-a-job-offer-42fc4e73b814
+
+When to Choose Python: A Practical Decision Framework for Experienced Developers
+https://python.plainenglish.io/when-to-choose-python-a-practical-decision-framework-for-experienced-developers-3fef237c1997
+esp.
+Machine Learning and AI Development
