@@ -1,0 +1,18 @@
+MCP Servers: A Comprehensive Guide — Another way to explain
+https://medium.com/data-and-beyond/mcp-servers-a-comprehensive-guide-another-way-to-explain-67c2fa58f650
+
+MCP
+Model Context Protocol
+An open standard that enables AI systems [LLMs] to connect and interact with external tools:
+data sources and services
+
+MCP is a connector [adapter] that provides an AI "agent" with access to some resource:
+database, API, file system through a standardized interface
+
+MCP servers
+play a critical role in modern computing by bridging the AI and the real world
+allowing AI to safely retrieve up-to-date data and execute tasks in external systems
+on behalf of users
+
+MCP servers were introduced by Anthropic in mid-2024
+rapidly gaining adoptioin across industries
