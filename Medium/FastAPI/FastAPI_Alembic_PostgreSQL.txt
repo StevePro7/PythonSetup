@@ -1,0 +1,123 @@
+Using Alembic With FastAPI and PostgreSQL — No Bullshit Guide
+10-Aug-2025
+
+https://medium.com/@rajeshpachaikani/using-alembic-with-fastapi-and-postgresql-no-bullshit-guide-b564ae89f4be
+
+Compare with previous project
+
+Although source project had migrations folder
+whereas this destination project uses alembic
+
+Other than that the project structure is identical
+
+1. Project Layout
+project/
+├── app/
+│   ├── models/
+│   │   └── user.py
+│   ├── db/
+│   │   ├── base.py
+│   │   └── session.py
+│   └── main.py
+├── alembic/
+├── alembic.ini
+├── .env
+├── requirements.txt
+
+
+2. Install Dependencies
+fastapi
+sqlalchemy
+alembic
+psycopg2-binary
+python-dotenv
+
+pip install -r requirements.txt
+
+
+OTHER
+psycopg2-binary==2.9.9
+pydantic==2.6.4
+python-dotenv==1.0.1
+
+Of course other project is Flask not FastAPI
+
+
+3. The .env file
+DATABASE_URL=postgresql://postgres:password@localhost:5432/mydb
+
+
+4. SQLAlchemy Model
+#app/models/user.py
+
+from sqlalchemy import Column, Integer, String
+from app.db.base import Base
+
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, index=True)
+    email = Column(String, unique=True, index=True)
+
+
+5. Setup Base and Session
+#app/db/base.py
+from sqlalchemy.ext.declarative import declarative_base
+Base = declarative_base()
+
+
+Destination
+database
+__init__.py
+from sqlalchemy.orm import declarative_base
+Base = declarative_base(name="BaseModel")
+
+
+context_manager.py
+from sqlalchemy import create_engine
+from sqlalchemy import Engine, Connection, NestedTransaction
+from sqlalchemy.orm import Session, sessionmaker
+
+engine = create_engine( DB_URL )
+sess = sessionmaker(**parameters)
+
+
+6. Initialize Alembic
+alembic init alembic
+vs.
+alembic init migrations
+
+This creates the migrations folder
+
+Update migrations env.py
+from logging.config import fileConfig
+from alembic import context
+
+config = context.config
+config.set_main_option("sqlalchemy.url", DB_URL )
+
+fileConfig(config.config_file_name)
+target_metadata = Base.metadata
+
+
+7. Migrate and Apply
+Generate the migration:
+alembic revision --autogenerate -m "create users table"
+
+Apply:
+alembic upgrade head
+
+
+8. Example: Add a New Column
+Modify your User model:
+age = Column(Integer, nullable=True)
+
+Migrate
+alembic revision --autogenerate -m "add age column to users"
+alembic upgrade head
+
+
+TL;DR Cheatsheet
+alembic init alembic
+alembic revision --autogenerate -m "your message"
+alembic upgrade head
