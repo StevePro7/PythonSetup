@@ -1,6 +1,22 @@
+10 Lesser-Known Python Features Every Data Scientist Should Know
+07-Sep-2025
+
+https://medium.com/@rohanmistry231/10-lesser-known-python-features-every-data-scientist-should-know-140f59a7c6ae
+
+1. The else Clause on Loops
+2. The dataclasses Module
+3. The Walrus Operator (:=)
+4. enumerate() for Indexed Loops
+5. The collections Module
+6. The itertools Module
+7. The functools.lru_cache Decorator
+8. The __slots__ Attribute
+9. The pathlib Module
+10. Type Hints and the typing Module
+
+
 Python Best Practices Every Coder Should Know 
 08-Mar-2025
-
 
 01.
 User ExitStack() to manage multiple contexts
