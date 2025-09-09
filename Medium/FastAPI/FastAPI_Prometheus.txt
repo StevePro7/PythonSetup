@@ -1,0 +1,27 @@
+Prometheus on a FastAPI application
+09-Sep-2025
+
+https://medium.com/@hitorunajp/prometheus-on-a-fastapi-application-aa25e5223a9e
+
+GitHub
+https://github.com/KansaiUser/fastapi-prometheus/tree/Simplest
+
+
+git clone https://github.com/KansaiUser/fastapi-prometheus/tree/Simplest
+cd $HOME/GitHubX/KansaiUser/fastapi-prometheus
+docker-compose up --build -d 
+
+
+Prometheus dashboard
+http://localhost:9090
+
+
+Fast API
+http://localhost:5000
+
+
+Fast API Metrics
+http://localhost:5000/metrics
+
+
+docker-compose down
