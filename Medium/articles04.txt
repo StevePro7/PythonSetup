@@ -1,3 +1,18 @@
+13-Sep-2025
+
+Serving ML Models with FastAPI: A Production-Ready API in Minutes
+https://grigorkh.medium.com/serving-ml-models-with-fastapi-a-production-ready-api-in-minutes-b5f4839a33a9
+4mins
+
+Python interfaces: abandon ABC and switch to Protocols
+https://levelup.gitconnected.com/python-interfaces-choose-protocols-over-abc-3982e112342e
+5mins
+
+Generating Code with LLMs: A Developer’s Guide — Part 1
+https://mskadu.medium.com/generating-code-with-llms-a-developers-guide-part-1-0c381dc3e57a
+10mins
+
+
 The Road to LLMs: A Journey Through word embeddings in PyTorch [part 1]
 https://medium.com/@johnathannguyen/the-road-to-llms-a-journey-through-embeddings-in-pytorch-part-1-404777ceca11
 https://github.com/nguyenanht/john-toolbox/blob/develop/notebooks/deep_learning/transformers/001_simple_embedding.ipynb?source=post_page-----404777ceca11---------------------------------------
