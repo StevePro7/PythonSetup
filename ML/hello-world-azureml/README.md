@@ -13,6 +13,8 @@ cd hello-world-azureml
 uv init
 uv venv
 source .venv/bin/activate
+OR
+.venv\Scripts\activate
 
 pyenv version
 * 3.12.3 (set by /Users/stevepro/Github/StevePro7/PythonSetup/ML/hello-world-azureml/.python-version)
