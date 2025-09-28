@@ -1,0 +1,51 @@
+FastAPI MCP server
+20-Sep-2025
+
+
+01. Practical
+Simplify LLM Integration: Convert FastAPI Endpoints to MCP Server with FastMCP
+https://ai.plainenglish.io/simplify-llm-integration-convert-fastapi-endpoints-to-mcp-server-with-fastmcp-2f0f5e39f6dc
+8mins
+
+TODO
+FastMCP
+converts FastAPI endpoints into MCP [Model Context Protocol] server
+enabling effortless integration with LLMs
+
+1. Set Up a PostgreSQL Database
+2. Define Database Models and Schemas
+3. Build FastAPI Endpoints
+http://localhost:8000/docs
+
+4. Convert to MCP Server with FastMCP
+5. Test the MCP Server
+6. Customize MCP Mapping (Optional)
+7. FastAPI with Authentication
+8. Integrate with LangGraph for Natural Language Interaction
+
+FastMCP revolutionizes API development by enabling seamless conversion of FastAPI endpoints
+into a MCP [Model Context Protocol] server.  API becomes LLM-compatible
+
+FastMCP popular for modern AI-driven development
+
+
+GitHub
+https://github.com/Sajith-K-Sasi/fastapi_fastmcp?source=post_page-----2f0f5e39f6dc---------------------------------------
+
+
+
+02. Theory
+How My MCP Server Helps LLMs Better Understand Python Projects
+https://autognosi.medium.com/how-my-mcp-server-helps-llms-better-understand-python-projects-595d9f865d48
+6mins
+
+Benefits
+1. Enhanced Code Understanding and Navigation
+2. Improved Code Quality and Reliability
+3. Development Workflow Optimization
+4. Integration with Development Ecosystems
+5. Future-Proofing Development
+
+
+GitHub
+https://github.com/automataIA/python-project-analyzer-mcp
