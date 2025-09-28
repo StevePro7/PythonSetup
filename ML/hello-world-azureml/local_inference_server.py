@@ -57,11 +57,10 @@ def score():
         print("Call scoring.run()")
 
         # Cal run function (like Azure ML does)
-        data: str = '{"sleep": 5}'
-        aml_response = scoring.run(data)
+        aml_response = scoring.run(raw_data)
 
         print("NEW RES")
-        print(f"Code:'{aml_response.status_code}")
+        print(f"Code:'{aml_response.status_code}'")
         print(f"Type:'{type(aml_response.data)}")
         print(f"Data:'{str(aml_response.data)[:200]}...")
 
