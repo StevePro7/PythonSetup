@@ -57,14 +57,14 @@ def train_model():
     X, y = create_sample_data()
 
     # Split the data
-    X_train, y_train, X_test, y_test = train_test_split(
+    X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
 
     # Create and train the model pipeline
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
-    X_test_scaled = scaler.fit_transform(X_test)
+    X_test_scaled = scaler.transform(X_test)
 
     model = LinearRegression()
     model.fit(X_train_scaled, y_train)
@@ -112,7 +112,7 @@ def save_model(model, scaler, model_dir="./model"):
     print(f"Model saved to {model_dir}/")
     print("     - greeting_model.pkl")
     print("     - scaler.pkl")
-    print("     - model_info.jso")
+    print("     - model_info.json")
 
 
 def main():
