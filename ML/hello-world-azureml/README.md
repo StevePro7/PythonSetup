@@ -24,5 +24,7 @@ Add New Interpreter | Add Local Interpreter | Existing
 
 uv sync
 
+curl -X GET http://localhost:5001/ -H 'Content-Type: application/json'
+curl -X GET http://localhost:5001/health -H 'Content-Type: application/json'
 
 curl -X POST http://localhost:5001/score -H 'Content-Type: application/json' -d '{"sleep": 5}'

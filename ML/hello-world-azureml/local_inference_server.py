@@ -54,6 +54,7 @@ def score():
         raw_data = request.get_data(as_text=True)
         print(f"Raw req='{raw_data}'")
         print(f"Content='{request.content_type}'")
+
         print("Call scoring.run()")
 
         # Cal run function (like Azure ML does)
@@ -68,6 +69,7 @@ def score():
         response_data = aml_response.data
         if isinstance(response_data, bytes):
             response_data = response_data.decode('utf-8')
+
         return response_data, aml_response.status_code, {"Content-Type": "application/json"}
 
     except Exception as e:
@@ -81,7 +83,33 @@ def score():
         }
         return json.dumps(error_response), http.HTTPStatus.INTERNAL_SERVER_ERROR, {"Content-Type": "application/json"}
 
+@app.route("/health", methods=["GET"])
+def health():
+    """ Health check endpoint"""
+    return jsonify({
+        "status": "healthy",
+        "message": "Azure ML inference server running",
+        "scoring_module": "loaded",
+        "init_called": "yes",
+    })
 
+@app.route("/")
+def info():
+    """ Info endpoint"""
+    return jsonify({
+        "message": "Azure ML local inference server",
+        "endpoints": {
+            "/": "GET",
+            "/health": "GET",
+            "/score": "POST",
+        },
+        "example_request": {
+            "method": "POST",
+            "url": "/score",
+            "content_type": "application/json",
+            "body": '{"name": "Azure ML"}',
+        }
+    })
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001, debug=True)
