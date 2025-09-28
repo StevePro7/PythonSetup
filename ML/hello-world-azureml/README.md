@@ -23,3 +23,6 @@ Add New Interpreter | Add Local Interpreter | Existing
 /Users/stevepro/Github/StevePro7/PythonSetup/ML/hello-world-azureml/.venv/bin/python
 
 uv sync
+
+
+curl -X POST http://localhost:5001/score -H 'Content-Type: application/json' -d '{"sleep": 5}'
