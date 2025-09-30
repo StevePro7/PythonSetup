@@ -1,0 +1,56 @@
+What’s the Best Way to Handle Concurrency in Python: ThreadPoolExecutor or asyncio?
+30-Sep-2025
+
+https://towardsdev.com/whats-the-best-way-to-handle-concurrency-in-python-threadpoolexecutor-or-asyncio-85da1be58557
+
+- ThreadPoolExecutor
+- asyncio
+
+
+ThreadPoolExecutor
+run existing sync code thru pool of threads
+specify max threads to be run
+thread creation + context switching = overhead
+
+
+asyncio
+designed for I/O-bound tasks
+runs in a single thread with event loop
+schedules execution based on async / await = concurrency
+no thread creation or clean up
+
+
+I/O-Bound Tasks
+asyncio			high concurrency
+ThreadPoolExecutor	sync code
+
+CPU-Bound Tasks
+Neither
+Why?
+asyncio			runs in a single thread
+ThreadPoolExecutor	GIL constraint
+
+Throttling
+asyncio			must implement your own
+ThreadPoolExecutor	built-in capability
+
+Legacy Code Integration
+asyncio			N/A
+ThreadPoolExecutor	always
+
+High-Concurrency Network apps
+asyncio			always
+ThreadPoolExecutor	N/A	inefficient thread overhead
+
+Error Handling + Structured Concurrency
+asyncio			better + easier via TaskGroup
+ThreadPoolExecutor	does not have structured concurrency
+
+Shared Memory
+asyncio			better with asyncio.Queue
+ThreadPoolExecutor	not mentioned
+
+
+SUMMARY
+asyncio			high-concurrency I/O-bound tasks + new code
+ThreadPoolExecutor	synchronous I/O-bound tasks or legacy code
