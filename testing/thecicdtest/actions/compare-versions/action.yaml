@@ -1,0 +1,82 @@
+name: "Compare Service Versions"
+description: "Compares pyproject.toml versions from current branch and base branch"
+
+inputs:
+  service_name:
+    description: "Name of the service to compare version for"
+    required: true
+  base_branch:
+    description: "Base branch to compare version from for comparison"
+    required: false
+    default: "origin/dev"
+
+outputs:
+  current_version:
+    description: "Compared version from current branch"
+    value: ${{ steps.compare.outputs.current_version }}
+  base_version:
+    description: "Compared version from base branch"
+    value: ${{ steps.compare.outputs.base_version }}
+  ready_to_deploy:
+    description: "Set ready to deploy based on comparison"
+    value: ${{ steps.compare.outputs.ready_to_deploy }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+
+    - name: Fetch base branch
+      shell: bash
+      run: git fetch -ap
+
+    - name: "Compare pyproject.toml versions"
+      id: compare
+      shell: bash
+      run: |
+        SERVICE_NAME="${{ inputs.service_name }}"
+        BASE_BRANCH="${{ inputs.base_branch }}"
+        DEFAULT_VERSION="0.1.0"     # First time deployment to origin the project version may not exist!
+
+        # Use relative path for git commands, absoluate path for file operations
+        SERVICE_PATH_REL="services/${SERVICE_NAME}/pyproject.toml"
+        SERVICE_PATH_ABS="${GITHUB_WORKSPACE}/${SERVICE_PATH_REL}"
+
+        echo "Service: $SERVICE_NAME"
+        echo "Base Branch: $BASE_BRANCH"
+        echo "Relative Path: $SERVICE_PATH_REL"
+        echo "Absolute Path: $SERVICE_PATH_ABS"
+        echo ""
+
+        # Check if file exists in current branch
+        if [[ ! -f "$SERVICE_PATH_ABS" ]]; then
+          echo "File not found in current branch: $SERVICE_PATH_ABS"
+          exit 1
+        fi
+
+        # Install yq for TOML parsing
+        pip install yq
+
+        # Get version from current branch
+        uvx --with yq toml .project.version "$SERVICE_PATH_ABS" 2>/dev/null || echo "$DEFAULT_VERSION"
+        CURRENT_VERSION=$(uvx --with yq toml .project.version "$SERVICE_PATH_ABS" 2>/dev/null || echo "$DEFAULT_VERSION")
+        echo "current_version=$CURRENT_VERSION" >> "$GITHUB_OUTPUT"
+        echo "Current version: '$CURRENT_VERSION'"
+
+        # Get version from base branch (use relative path for git)
+        BASE_VERSION=$(git show "$BASE_BRANCH":"$SERVICE_PATH_REL" | uvx --with yq toml .project.version "$SERVICE_PATH_ABS" 2>/dev/null || echo "$DEFAULT_VERSION")
+        echo "base_version=$BASE_VERSION" >> "$GITHUB_OUTPUT"
+        echo "Base version: '$BASE_VERSION'"
+
+
+        # Compare versions and return result as Ready to deploy
+        if [[ "$CURRENT_VERSION" > "$BASE_VERSION" ]]; then
+          echo "ready_to_deploy=true" >> "$GITHUB_OUTPUT"
+          echo "Ready to Deploy TRUE"
+        else
+          echo "ready_to_deploy=false" >> "$GITHUB_OUTPUT"
+          echo "Ready to Deploy FALSE"
+        fi

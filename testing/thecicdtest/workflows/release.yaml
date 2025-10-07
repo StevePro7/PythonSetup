@@ -1,0 +1,62 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - dev
+      - stable
+      - prod
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment to release to"
+        type: choice
+        options:
+          - dev
+          - stable
+          - prod
+        default: "dev"
+
+jobs:
+  determine-environment:
+    runs-on: ubuntu-latest
+    outputs:
+      environment: ${{ steps.determine-env.outputs.environment }}
+    #      should-release-packages: ${{ steps.determine-env.outputs.should-release-packages }}
+    steps:
+      - name: Determine environment
+        id: determine-env
+        run: |
+          if [[ ${{ github.event_name }} == "workflow_dispatch" ]]; then
+            ENV="${{ github.event.inputs.environment }}"
+          else
+            case "${{ github.ref_name }}" in
+              dev)    ENV="dev" ;;
+              stable) ENV="stable" ;;
+              prod)   ENV="prod" ;;
+              *)      ENV="dev" ;;
+            esac
+          fi
+
+          echo "environment=${ENV}" >> $GITHUB_OUTPUT
+
+          # # Only release packages for dev environment
+          # if [[ "${{ github.ref_name }}" == "dev" ]]; then
+          #   # COMMENT
+          #   echo "should-release-packages=true" >> $GITHUB_OUTPUT
+          # else
+          #   echo "should-release-packages=false" >> $GITHUB_OUTPUT
+          #fi
+
+  # release-packages:
+  #   needs: determine-environment
+  #   if: needs.determine-environment.outputs.should-release-packages == 'true'
+  #   uses: ./.github/workflows/_release-packages.yaml
+  #   secrets: inherit # pragma: allowlist secret
+
+  release-services:
+    needs: determine-environment
+    uses: ./.github/workflows/_release-services.yaml
+    with:
+      environment: ${{ needs.determine-environment.outputs.environment }}
+    secrets: inherit # pragma: allowlist secret

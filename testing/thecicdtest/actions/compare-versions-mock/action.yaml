@@ -1,0 +1,55 @@
+name: "Compare Service Versions MOCK"
+description: "Compares pyproject.toml versions from current branch and base branch"
+
+inputs:
+  service_name:
+    description: "Name of the service to compare version for"
+    required: true
+  base_branch:
+    description: "Base branch to compare version from for comparison"
+    required: false
+    default: "origin/dev"
+
+outputs:
+  current_version:
+    description: "Compared version from current branch"
+    value: ${{ steps.compare.outputs.current_version }}
+  base_version:
+    description: "Compared version from base branch"
+    value: ${{ steps.compare.outputs.base_version }}
+  ready_to_deploy:
+    description: "Set ready to deploy based on comparison"
+    value: ${{ steps.compare.outputs.ready_to_deploy }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Compare pyproject.toml versions"
+      id: compare
+      shell: bash
+      run: |
+        SERVICE_NAME="${{ inputs.service_name }}"
+        BASE_BRANCH="${{ inputs.base_branch }}"
+        DEFAULT_VERSION="0.1.0"     # First time deployment to origin the project version may not exist!
+
+        echo "MOCK: Pretending to compare versions in folder '$SERVICE_NAME' against base branch '$BASE_BRANCH'"
+
+        # Get version from current branch
+        CURRENT_VERSION="0.3.0"
+        echo "current_version=$CURRENT_VERSION" >> "$GITHUB_OUTPUT"
+        echo "Current version: '$CURRENT_VERSION'"
+
+        # Get version from base branch (use relative path for git)
+        BASE_VERSION="0.2.0"
+        echo "base_version=$BASE_VERSION" >> "$GITHUB_OUTPUT"
+        echo "Base version: '$BASE_VERSION'"
+
+
+        # Compare versions and return result as Ready to deploy
+        if [[ "$CURRENT_VERSION" > "$BASE_VERSION" ]]; then
+          echo "ready_to_deploy=true" >> "$GITHUB_OUTPUT"
+          echo "Ready to Deploy TRUE"
+        else
+          echo "ready_to_deploy=false" >> "$GITHUB_OUTPUT"
+          echo "Ready to Deploy FALSE"
+        fi

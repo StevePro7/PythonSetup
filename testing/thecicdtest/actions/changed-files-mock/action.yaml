@@ -1,0 +1,47 @@
+name: Changed Files Dection MOCK
+description: A composite action to detect changes in a specific folder
+
+inputs:
+  folder:
+    description: "The folder to check for changes"
+    required: true
+  base_branch:
+    description: "The base branch to compare against"
+    required: true
+
+outputs:
+  changes_detected:
+    value: ${{ steps.changes.outputs.changes_detected }}
+    description: "Whether changes were detected in the specified folder"
+
+runs:
+  using: composite
+  steps:
+    # - name: Fetch base branch
+    #   shell: bash
+    #   run: git fetch -ap
+
+    - name: Check for changes
+      shell: bash
+      id: changes
+      run: |
+        FOLDER="${{ inputs.folder }}"
+        BASE_BRANCH="${{ inputs.base_branch }}"
+
+        echo "MOCK: Pretending to detect changes in '$FOLDER' against '$BASE_BRANCH'"
+
+        #echo "changes_detected=true" >> $GITHUB_OUTPUT
+        echo "changes_detected=false" >> $GITHUB_OUTPUT
+
+
+        # echo ""
+        # echo $(git diff --name-only $BASE_BRANCH HEAD)
+        # echo ""
+        # echo $(git diff --name-only $BASE_BRANCH HEAD | grep $FOLDER)
+        # echo ""
+
+        # if [ -n "$(git diff --name-only $BASE_BRANCH HEAD | grep $FOLDER)" ]; then
+        #   echo "changes_detected=true" >> $GITHUB_OUTPUT
+        # else
+        #   echo "changes_detected=false" >> $GITHUB_OUTPUT
+        # fi

@@ -1,0 +1,102 @@
+name: Release Services
+
+on:
+  workflow_call:
+    inputs:
+      service_name:
+        type: string
+        description: "Name of the service to deploy"
+        required: true
+      env_to_deploy:
+        type: string
+        description: "Environment to deploy to"
+        required: true
+        default: "dev"
+      resource_flags:
+        type: string
+        description: "Resources to deploy"
+        required: true
+        default: "--all"
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+jobs:
+  #
+
+  detect-changes:
+    name: Detect Changes and Deploy ${{ inputs.service_name }} to ${{ inputs.env_to_deploy }}
+    runs-on: ubuntu-latest
+    outputs:
+      changes_detected: ${{ steps.changes.outputs.changes_detected }}
+      current_version: ${{ steps.compare.outputs.current_version }}
+      base_version: ${{ steps.compare.outputs.base_version }}
+      ready_to_deploy: ${{ steps.compare.outputs.ready_to_deploy }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: "Detect Changes in '${{ inputs.service_name }}' on '${{ inputs.env_to_deploy }}'"
+        id: changes
+        uses: ./.github/actions/changed-files
+        #uses: ./.github/actions/changed-files-mock
+        with:
+          folder: ${{ inputs.service_name }}
+          base_branch: "origin/${{ inputs.env_to_deploy }}"
+
+      - name: Show Detected Changes
+        run: |
+          echo "Changes detected: ${{ steps.changes.outputs.changes_detected }}"
+
+      - name: Compare pyproject.toml versions between ${{ inputs.env_to_deploy }} and origin/${{ inputs.env_to_deploy }}
+        id: compare
+        uses: ./.github/actions/compare-versions
+        #uses: ./.github/actions/compare-versions-mock
+        with:
+          service_name: ${{ inputs.service_name }}
+          base_branch: "origin/${{ inputs.env_to_deploy }}"
+
+      - name: Show Version Comparison Result
+        run: |
+          CURRENT_VERSION=${{ steps.compare.outputs.current_version }}
+          BASE_VERSION=${{ steps.compare.outputs.base_version }}
+          DEPLOYMENT=${{ steps.compare.outputs.ready_to_deploy }}
+          echo "Current Version: $CURRENT_VERSION"
+          echo "Base Version: $BASE_VERSION"
+          echo "DeploymentZZ: $DEPLOYMENT"
+
+  deploy:
+    needs:
+      - detect-changes
+
+    if: needs.detect-changes.outputs.changes_detected == 'true' || needs.detect-changes.outputs.ready_to_deploy == 'true' || github.event == 'workflow_dispatch'
+
+    name: Deploy '${{ inputs.service_name }}'' to '${{ inputs.env_to_deploy }}' now
+    runs-on: ubuntu-latest
+    steps:
+      #      - name: Checkout repository
+      #        uses: actions/checkout@v4
+
+      - name: Deploy Service Action
+        run: |
+          echo "Deploy start"
+          echo "Changes '${{ needs.detect-changes.outputs.changes_detected}}'"
+          echo "Changes '${{ needs.detect-changes.outputs.ready_to_deploy}}'"
+          echo "Deploy: '${{ inputs.service_name }}' to '${{ inputs.env_to_deploy }}' now..."
+          echo "Deploy -end-"
