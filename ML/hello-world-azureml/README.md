@@ -1,6 +1,25 @@
 Hello World Azure ML
-28-Sep-2025
+28-Oct-2025
+Linux
+delete .venv
+delete pyproject.toml
 
+uv init --python 3.12.3
+uv sync
+source .venv/bin/activate
+
+which python
+~/GitHub/StevePro9/PythonSetup/ML/hello-world-azureml/.venv/bin/python --version
+
+Python | No interpreter
+Select existing
+uv
+~/GitHub/StevePro9/PythonSetup/ML/hello-world-azureml/.venv/bin/python
+
+
+
+28-Sep-2025
+MacOS
 python --version
 Python 3.12.3
 
