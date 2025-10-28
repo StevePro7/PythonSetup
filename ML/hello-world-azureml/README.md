@@ -19,6 +19,9 @@ uv
 Run local_inference_server
 
 curl -X POST http://localhost:5001/score -H 'Content-Type: application/json' -d '{"name": "Alice"}'
+curl -X POST http://localhost:5001/score -H 'Content-Type: application/json' -d '{"features": [[5, 2, 3]]}'
+curl -X POST http://localhost:5001/score -H 'Content-Type: application/json' -d '{"instances": [[5, 2, 3]]}'
+
 
 28-Sep-2025
 MacOS
