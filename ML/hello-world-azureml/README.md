@@ -16,7 +16,9 @@ Select existing
 uv
 ~/GitHub/StevePro9/PythonSetup/ML/hello-world-azureml/.venv/bin/python
 
+Run local_inference_server
 
+curl -X POST http://localhost:5001/score -H 'Content-Type: application/json' -d '{"name": "Alice"}'
 
 28-Sep-2025
 MacOS
