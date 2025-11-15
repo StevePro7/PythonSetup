@@ -1,0 +1,9 @@
+On the Challenge of Converting TensorFlow Models to PyTorch
+15-Nov-2025
+
+https://chaimrand.medium.com/on-the-challenge-of-converting-tensorflow-models-to-pytorch-bd43a7704c62
+
+
+Tensorflow
+Google TPUs
+Tensor Processing Unit
