@@ -1,5 +1,9 @@
-13-Sep-2025
+16-Nov-2025
+Python Project Structure: Why the ‘src’ Layout Beats Flat Folders (and How to Use My Free Template)
+https://medium.com/@adityaghadge99/python-project-structure-why-the-src-layout-beats-flat-folders-and-how-to-use-my-free-template-808844d16f35
 
+
+13-Sep-2025
 Serving ML Models with FastAPI: A Production-Ready API in Minutes
 https://grigorkh.medium.com/serving-ml-models-with-fastapi-a-production-ready-api-in-minutes-b5f4839a33a9
 4mins
