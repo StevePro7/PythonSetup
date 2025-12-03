@@ -80,3 +80,29 @@ NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Ma
 
 
 update-initramfs
+
+boot failure
+common pain point with Alienware laptops, dual boot, and NVIDIA drivers on Linux.
+
+
+
+The mainline kernel 6.0.19 is the reason DKMS cannot build the NVIDIA module. Either install the headers manually for that kernel, or switch to an Ubuntu-supported kernel — only then will NVIDIA 535 work without breaking boot.
+
+sudo apt install linux-image-generic linux-headers-generic
+
+
+
+New approach - downgrade to 5.17.0-19 kernel that is compatible with nvidia-535
+
+sudo apt install linux-headers-5.15.0-97-generic
+dpkg -l | grep 5.15.0-97
+ls /usr/src | grep 5.15
+
+sudo update-grub
+
+
+AFTER
+sudo apt install dkms build-essential
+sudo apt install nvidia-driver-535
+
+nvidia-smi
