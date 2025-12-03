@@ -74,3 +74,9 @@ broken DKMS module builds
 
 Option 1 (best stability):
 sudo apt install nvidia-driver-535
+
+nvidia-smi
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+
+update-initramfs
