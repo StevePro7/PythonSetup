@@ -36,3 +36,41 @@ Driver Version: 570.xx
 CUDA Version: 12.x
 Your GPU name
 If that appears → GPU is now working.
+
+
+ACTUAL
+could not reboot!
+
+Reboot
+Advanced options for Ubuntu
+kernel 6.0.9 (recovery mode)
+
+FIX
+root
+sudo apt remove --purge nvidia-driver-570
+sudo apt autoremove
+
+sudo update-initramfs -u
+error
+sudo apt install initramfs-tools
+sudo update-initramfs -u
+error
+
+sudo reboot
+NOW all good
+
+sudo apt update
+sudo apt upgrade
+
+sudo add-apt-repository ppa:graphics-drivers/ppa
+
+
+Driver 580 is intended for newer Ubuntu releases such as 22.04 or 24.04.
+Using it on 20.04 can cause:
+boot failures
+black screens
+broken DKMS module builds
+
+
+Option 1 (best stability):
+sudo apt install nvidia-driver-535
