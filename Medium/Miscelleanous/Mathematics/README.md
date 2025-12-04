@@ -313,3 +313,8 @@ update ~/.bashrc to point there
 micromamba install matplotlib -c conda-forge -y
 micromamba install pandas -c conda-forge -y
 micromamba install scikit-learn -c conda-forge -y
+
+Installed Tensorflow
+https://medium.com/@ryassminh/math-to-ml-convexity-curvature-and-why-your-optimizer-gets-lost-1f0af80b1691
+
+pip install tensorflow
