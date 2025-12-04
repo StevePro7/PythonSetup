@@ -318,3 +318,10 @@ Installed Tensorflow
 https://medium.com/@ryassminh/math-to-ml-convexity-curvature-and-why-your-optimizer-gets-lost-1f0af80b1691
 
 pip install tensorflow
+
+
+
+During the code samples
+Traceback (most recent call last): File "/home/stevepro/micromamba/envs/torchenv/lib/python3.9/site.py", line 177, in addpackage exec(line) File "<string>", line 1, in <module> ModuleNotFoundError: No module named '_distutils_hack' Remainder of file ignored
+
+pip install --force-reinstall setuptools
