@@ -184,3 +184,127 @@ Thu Dec  4 11:16:11 2025
 |    0   N/A  N/A      1746      G   /usr/lib/xorg/Xorg                           62MiB |
 |    0   N/A  N/A      2802      G   /usr/bin/gnome-shell                        125MiB |
 +---------------------------------------------------------------------------------------+
+
+
+GPT
+Python conda project import torch ModuleNotFoundError: No module named 'torch'
+conda env list
+conda info
+
+CUDA Version: 12.2  
+
+conda list | wc -l
+446
+
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install torchvision torchaudio -c pytorch -c nvidia
+
+python -c "import torch; print(torch.version.cuda, torch.cuda.is_available())"
+
+which python                                                            
+/home/stevepro/anaconda3/envs/torchenv/bin/python                                                
+
+
+FAIL
+The following packages will be DOWNGRADED:
+
+  anaconda                                   2022.05-py39_0 --> custom-py39_5 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+                                                                                                                                                                       
+Preparing transaction: done                                                                                                                                            
+Verifying transaction: failed                                                                                                                                          
+                                                                                                                                                                       
+RemoveError: 'setuptools' is a dependency of conda and cannot be removed from                                                                                          
+conda's operating environment.
+
+conda activate base
+python --version
+Python 3.9.12                                                                                  
+
+conda create -n torchenv python=3.9 -y
+conda activate torchenv
+
+conda list | wc -l
+36
+
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+
+conda install pytorch 
+conda install pytorch pytorch-cuda=12.1 -c pytorch -c nvidia
+
+
+conda env export > torchenv.yml
+
+conda info
+active env location
+/home/stevepro/anaconda3/envs/torchenv
+
+Python interpreter
+change to Python and navigate
+/home/stevepro/anaconda3/envs/torchenv/bin/python
+Change to conda didn't work
+
+run program but get 0
+
+
+retry
+conda activate torchenv
+conda remove --force pytorch torchvision torchaudio pytorch-cuda
+
+conda install -n base -c conda-forge mamba -y
+mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -c conda-forge -y
+
+python -c "import torch; print(torch.__version__); print(torch.version.cuda); print(torch.cuda.is_available())"
+python -c "import torch; print(torch.cuda.device_count()); print(torch.cuda.get_device_name(0))"
+
+conda install -n base -c conda-forge mamba -y
+bash: mamba: command not found  
+
+conda activate base
+conda install -n base -c conda-forge mamba -y
+
+mamba --version
+conda activate torchenv
+mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -c conda-forge
+
+TOOK ages so tried micromamba
+
+mkdir -p ~/micromamba
+
+curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest \
+  | tar -xvj -C ~/micromamba --strip-components=1 bin/micromamba
+
+~/micromamba/micromamba shell init -s bash -r ~/micromamba
+source ~/.bashrc
+
+micromamba create -n torchenv python=3.9 -y
+micromamba activate torchenv
+
+micromamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y
+
+python -c "import torch; print(torch.version.cuda, torch.cuda.is_available())"
+12.1 True
+
+Python interpreter
+
+Micromamba creates environments in:
+~/micromamba/envs/<env_name>/bin/python  (Linux/macOS)
+
+e.g.
+~/micromamba/envs/torchenv/bin/python
+~/micromamba/envs/torchenv/bin/python --version
+OR
+which python
+/home/stevepro/micromamba/envs/torchenv/bin/python
+
+update python interpreter to point here
+3.9.25
+
+
+Finally - move micromamba to /usr/local/micromamba
+update ~/.bashrc to point there

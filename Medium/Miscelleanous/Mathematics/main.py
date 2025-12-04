@@ -1,12 +1,8 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import torch
+import numpy as np
 
+print(torch.cuda.device_count())
+print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU detected")
 
-
-def print_hi(name):
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-
-if __name__ == '__main__':
-    print_hi('PyCharm')
+print(torch.version.cuda)
+print(torch.cuda.is_available())
