@@ -308,3 +308,8 @@ update python interpreter to point here
 
 Finally - move micromamba to /usr/local/micromamba
 update ~/.bashrc to point there
+
+
+micromamba install matplotlib -c conda-forge -y
+micromamba install pandas -c conda-forge -y
+micromamba install scikit-learn -c conda-forge -y
