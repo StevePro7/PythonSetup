@@ -142,3 +142,21 @@ GRUB_SAVEDEFAULT=false
 
 sudo apt purge linux-image-6.0.19-060019-generic linux-headers-6.0.19-060019-generic
 sudo update-grub
+
+
+
+04-Dec-2025
+uname -r
+5.15.0-139-generic
+
+nvidia-smi
+Command not found
+ubuntu-drivers devices
+
+sudo apt update
+sudo apt install nvidia-driver-535
+
+nvidia-smi
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+sudo reboot
