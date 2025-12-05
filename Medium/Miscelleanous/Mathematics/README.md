@@ -325,3 +325,12 @@ During the code samples
 Traceback (most recent call last): File "/home/stevepro/micromamba/envs/torchenv/lib/python3.9/site.py", line 177, in addpackage exec(line) File "<string>", line 1, in <module> ModuleNotFoundError: No module named '_distutils_hack' Remainder of file ignored
 
 pip install --force-reinstall setuptools
+
+
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
+pip uninstall tensorflow -y
+pip install tensorflow==2.10
+
+TRY this but docker not see GPU
+docker run --gpus all -it tensorflow/tensorflow:2.10.0-gpu-jupyter bash

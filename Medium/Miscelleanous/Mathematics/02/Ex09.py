@@ -25,5 +25,19 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 y_pred_prob = model.predict_proba(X_test)[:, 1]
 
-print("Accuracy:", accuracy_score(y_test, y_pred))
-print("Log Loss:", log_loss(y_test, y_pred_prob))
+
+# Visualizing loss for one feature dimension for intuition
+coef_range = np.linspace(-2, 2, 100)
+losses = []
+for coef in coef_range:
+    y_prob = 1 / (1 + np.exp(-(X_test[:, 0] * coef)))
+    loss = log_loss(y_test, y_prob)
+    losses.append(loss)
+
+plt.plot(coef_range, losses, label="Cross-Entropy Loss")
+plt.title("Convex Loss Curve for Logistic Regression")
+plt.xlabel("Model Coefficient Value")
+plt.ylabel("Loss")
+plt.legend()
+plt.grid()
+plt.show()

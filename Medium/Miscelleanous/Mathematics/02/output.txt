@@ -41,7 +41,23 @@ Contour Lines Showing Convex Shape
 
 
 Ex08
-TODO
+Accuracy: 0.9736842105263158
+Log Loss: 0.060019464522388176
+
+
+Ex09
+Convex Loss Visualization
+Convex Loss Curve for Logistic Regression
+
+
+Ex10
+Convex model [Softmax]
+Run this program with warnings Tensorflow Could not load dynamic library
+
+This means TensorFlow itself cannot find compatible CUDA libraries or drivers at runtime, even if they are installed on the system
+
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+[]
 
 Train ML omdel
 goal: minimize loss function
