@@ -4,5 +4,5 @@ Google Collab
 Top 5 Python Libraries for Data Science in 2025: Master NumPy, Pandas, Matplotlib, TensorFlow & Scikit-Learn
 Https://medium.com/@ananyarajesh2112/top-5-python-libraries-for-data-science-in-2025-master-numpy-pandas-matplotlib-tensorflow-fe9153a08166
 
-
+Ex01
 https://colab.research.google.com/drive/12z_MORZo03vvfUM3fWQfPqDoA5c7j6z1?usp=sharing#scrollTo=90b9561f-bb90-4950-a8e3-09a3bee819a8
