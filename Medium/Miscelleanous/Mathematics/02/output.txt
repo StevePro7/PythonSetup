@@ -1,0 +1,66 @@
+Output 02
+Math for ML: Convexity, Curvature, and Why Your Optimizer Gets Lost
+https://medium.com/@ryassminh/math-to-ml-convexity-curvature-and-why-your-optimizer-gets-lost-1f0af80b1691
+04-Dec-2025
+
+Convexity
+function = convex iff line segment btwn any 2x points lies above graph
+
+Ex01
+Convex vs. Non-Convex Functions
+
+
+Ex02
+Convex Surface
+Convex Contours: single basin
+Gradient Descent Paths on Convex Landscape
+
+
+Ex03
+Saddle Surface
+Saddle Contours: ascent in one directions, descent in another
+
+
+Ex04
+Non-Convex Surface: Himmelblau's Function
+Non-Convex Contours: multiple basins
+Gradient Descent Paths on Non-Convex Landscape (Himmelblau)
+
+
+Ex05
+Gradient Vectors Point to Steepest Ascent
+
+
+Ex06
+Function Velocity (slope) and Acceleration (curvature) Analogy
+
+
+Ex07
+Convex Surface with Positive Definite Hessian
+Contour Lines Showing Convex Shape
+
+
+Ex08
+Accuracy: 0.9736842105263158
+Log Loss: 0.060019464522388176
+
+
+Ex09
+Convex Loss Visualization
+Convex Loss Curve for Logistic Regression
+
+
+Ex10
+Convex model [Softmax]
+Run this program with warnings Tensorflow Could not load dynamic library
+
+This means TensorFlow itself cannot find compatible CUDA libraries or drivers at runtime, even if they are installed on the system
+
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+[]
+
+Train ML omdel
+goal: minimize loss function
+
+loss function
+math expression that measures how far the model predictions are from the actual outcomes

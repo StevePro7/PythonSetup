@@ -1,0 +1,11 @@
+Output03
+Math for ML: Understand Regression Decision Trees with Simple Examples
+https://medium.com/@ryassminh/math-for-ml-understand-regression-decision-trees-with-simple-examples-9474fceb6802
+
+Ex01
+
+Ex02    A real multivariate case (Diabetes dataset)
+Diabetes regression RMSE (depth=8): 54.717
+Diabetes r2_score (depth=8): 0.435
+
+Ex03
