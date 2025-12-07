@@ -1,4 +1,4 @@
-# NUMPY
+# 1. NUMPY
 import numpy as np
 
 a=np.arange(100)
@@ -41,11 +41,18 @@ rand=np.arange(1000)
 var=slice(90, 100, 1)
 #print(rand[var])
 
-# ITERATING OVER ARRARY
+# ITERATING OVER ARRAY
 trail=np.arange(0, 50, 5)
 #for i in np.nditer(trail):
 #    print(i)
 
 # RxC = 2x rows X 5 cols
 trail=np.arange(0, 50, 5).reshape(2, 5)
-print(trail)
+#for i in np.nditer(trail, order="F"):
+#    print(i)
+
+import matplotlib.pyplot as plt
+x=np.arange(0, 3* np.pi, 0.1)
+y=np.sin(x)
+plt.plot(x, y)
+#plt.show()
