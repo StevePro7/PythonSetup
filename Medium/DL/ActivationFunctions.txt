@@ -1,0 +1,81 @@
+Delve deeper into Fourier Neural Operator: Explanation and use case for a simple turbulence prediction
+09-Dec-2025
+
+https://levelup.gitconnected.com/delve-deeper-into-fourier-neural-operator-explanation-and-use-case-for-simple-turbulence-cc70e93455e4
+
+Activation functions
+heartbeat of neural networks
+introduce non-linearity
+enable networks to model complex patterns linear models cannot
+
+ReLU
+Leaky ReLU
+Sigmoid
+Tanh
+GELU
+Swish
+Softmax
+
+
+AA.		Hidden
+ReLU		Rectified Linear Unit
+cheap
+vanishing gradient
+sparse activation
+
+
+BB.		Hidden
+Leaky ReLU
+small slope -> negatives signals
+fix dying ReLU
+
+
+CC.		Output [Binary]
+Sigmoid
+maps 0-1
+hidden layers
+
+
+DD.		Hidden
+Tanh
+maps to -1 to 1	zero-centerd
+better than sigmoid for hidden
+
+
+EE.		Transformer
+GELU		Gaussian Error Linear Unit
+smooth probabilistic [ReLU]
+popular e.g. BERT, GPT
+stable training in deep networks
+
+
+FF.		 Hidden
+Swish
+smooth non-monotonic differentiable
+output ReLU in deep networks
+richer representations
+
+
+GG.		Output [Multi-class]
+Softmax
+converts logits to probabilities in multi-class classification
+sums to 1
+
+
+SUMMARY
+Activation functions	enable non-linear learning
+
+ReLU		default hidden layer	simple + fast
+Leaky ReLU	fixes dying ReLU
+Sigmoid		early activation 	risk vanishing gradients
+Tanh		early activation 	risk vanishing gradients
+GELU		smooth			popular in transformers
+Swish		smooth			output performs ReLU in deep models
+Softmax		multi-class output probabilities
+
+
+Activation functions
+accelerate convergence
+improve accuracy
+stabilize training
+esp. in deep networks

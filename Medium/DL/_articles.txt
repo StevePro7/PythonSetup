@@ -1,0 +1,4 @@
+Delve deeper into Fourier Neural Operator: Explanation and use case for a simple turbulence prediction
+09-Dec-2025
+
+https://levelup.gitconnected.com/delve-deeper-into-fourier-neural-operator-explanation-and-use-case-for-simple-turbulence-cc70e93455e4
