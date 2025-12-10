@@ -12,3 +12,10 @@ https://colab.research.google.com/drive/1Hhr9YvK7mrjg_vMpLIn6YeYBf5HdqWkE?usp=sh
 
 Ex03 - Advanced
 https://colab.research.google.com/drive/1V9h-VZI5Gq_fnUiwAD-ea47plZ7fgmRV?usp=sharing
+
+
+MNIST dataset
+famous collection of 70k grayscale images [60k training + 10k testing] of
+handwritten digits [0-9] each 28x28 pixels used for training and testing
+machine learning and computer vision models esp. image classification +
+digit recognition tasks
