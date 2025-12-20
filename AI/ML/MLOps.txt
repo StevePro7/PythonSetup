@@ -1,0 +1,8 @@
+ML Ops
+23-Jul-2025
+
+
+01.
+Stop Building Rigid AI/ML Pipelines: Embrace Reusable Components for Flexible MLOps
+https://fmind.medium.com/stop-building-rigid-ai-ml-pipelines-embrace-reusable-components-for-flexible-mlops-6e165d837110
+https://github.com/fmind/mlops-python-package

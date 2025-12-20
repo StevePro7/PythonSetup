@@ -1,0 +1,10 @@
+readme
+20-Mar-2024
+
+pip install numpy
+pip install tensorflow
+pip install --upgrade pip
+
+
+pip freeze > requirements.txt
+pip install -r requirements.txt

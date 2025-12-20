@@ -1,0 +1,29 @@
+deployment:
+    name: "hello-world-deployment"
+    description: "Deployment for Hello World Azure ML service"
+endpoint:
+    type: online
+    count: 1
+compute:
+    type: CPU
+    ram_gb: 2
+    vram_gb: 0
+model:
+    name: "hello-world-model"
+    version: 1
+environment:
+    name: "hello-world-env"
+    version: 1
+    description: "Environment for Hello World service"
+image:
+    filepath: Dockerfile
+    context_dirpath: .
+
+settings:
+    request_ms: 60000
+    datat_collection:
+        request: true
+        response: true
+    env_vars:
+        SERVICE_NAME: "Hello World Azure ML"
+        LOG_LEVEL: "INFO"
