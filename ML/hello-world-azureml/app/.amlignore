@@ -1,3 +1,0 @@
-# Include files/folders below to have deploys ignore them.
-# Structure is identical to a .gitignore file
-# Paths are relative to Code: folder in deployment.yaml
