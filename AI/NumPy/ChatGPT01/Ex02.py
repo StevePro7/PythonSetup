@@ -1,3 +1,4 @@
+# Ex02        Arrays (ndarray)
 import numpy as np
 
 # Arrays [ndarray]  ND = number dimensions

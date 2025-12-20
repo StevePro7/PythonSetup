@@ -33,6 +33,7 @@ ndarray ND = number dimensions
 dtype   data type
 ndim    N-dimensions of ndarray
 
+
 Ex03        Common Constructors
 eye         identity matrix N = number rows
 arange      start, stop, step   >=start, <stop
@@ -56,3 +57,8 @@ this is why NumPy is fast
 Ex07        Broadcasting (VERY IMPORTANT)
 mechanism that allows NumPy to perform arithmetic 
 operations on arrays of different shapes + sizes
+
+dimensions alight from right
+size 1 can stretch
+
+

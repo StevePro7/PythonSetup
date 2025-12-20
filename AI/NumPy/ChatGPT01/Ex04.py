@@ -1,3 +1,4 @@
+# Ex04        Indexing & Slicing
 import numpy as np
 
 # 1D
