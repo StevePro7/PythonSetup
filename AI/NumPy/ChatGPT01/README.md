@@ -62,3 +62,44 @@ dimensions alight from right
 size 1 can stretch
 
 
+Ex08        Reductions
+used in:
+- loss functions
+- statistics
+- normalization
+
+
+Ex09        Reshaping 
+(Neural Net Backbone)
+
+
+Ex10        Linear Algebra
+(ML Core)
+np.linalg   linear algebra APIs
+np.linalg.inv   Inverse matrix
+
+
+Ex11        Dot Product & Norms
+used in
+- similarity
+- optimization
+- RL value functions
+
+
+Ex12        Randomness
+(Training ML Models)
+
+
+Ex13        Data Normalization
+
+
+Ex14        Softmax
+(DL Fundamental)
+
+
+Ex15        Loss Example
+(MSE)
+
+
+Ex16        Mini Linear Regression
+(End-to-End)
