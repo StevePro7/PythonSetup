@@ -1,0 +1,70 @@
+AI : Overfitting vs Underfitting(ML)-Part 16
+24-Dec-2025
+
+https://medium.com/@angadi.saa/ai-overfitting-vs-underfitting-ml-part-16-e92c9eed14d8
+
+
+Biggest challenge ensuring model generalizes well on unseen data
+
+Two common problems that can hinder generalization:
+01. Underfitting
+02. Overfitting
+
+
+Underfitting
+model is too simple to capture underlying patterns in training data
+
+Characteristics:
+* poor performance on both training and test data
+* high BIAS - model makes strong assumptions
+* model fails to learn important trends in data
+
+
+Overfitting
+model is too complex learning both the patterns and noise in training data
+
+Characteristics:
+* excellent performance on training data
+* poor performance on test or unseen data
+* high VARIANCE - model is overly sensitive to small fluctuations
+
+
+Learning Curves Interpretation
+
+Underfitting
+both training + validation errors converge to high value
+model is too simple to capture underlying patterns
+
+Overfitting
+large gap btwn training [low] + validation [high] errors
+model memorizes training data but fails to generalize
+
+Good fit
+both errors converge to low value w/ minimal gap
+show model generalizes well
+
+
+REMEMBER
+generalization = model performs well on unseen data
+[not just the data it was trained on]
+
+model performs well = model makes accurate + reliable predictions
+
+ML model
+mathematical framework or algorithm that learns patterns from data
+
+
+BIAS-VARIANCE tradeoff
+as model complexity increases training error decreases while
+validation error first decreases then increases
+
+optimal model complexity minimizes validation error
+balancing bias and variance
+
+
+SUMMARY
+underfitting fails to caputure the pattern
+
+good fit captures the underlying trend
+
+overfitting memorizes noise with excessive complexity

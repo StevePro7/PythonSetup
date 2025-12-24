@@ -1,6 +1,7 @@
-
+Bias, Variance, and the Trade-Off
 14-Dec-2025
 
+https://medium.com/@kiranvutukuri/8-bias-variance-and-the-trade-off-647a7c1f1295
 uv init --python 3.11.11
 uv venv --python 3.11.11
 

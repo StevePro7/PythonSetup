@@ -1,0 +1,198 @@
+Read Graphs Like a Machine Learning Practitioner
+24-Dec-2025
+
+https://pub.towardsai.net/read-graphs-like-a-machine-learning-practitioner-cb8219688cdb
+
+
+GRAPHS
+tell the truth about data and your model
+graph interpretation = important
+
+
+Importance of graphs in ML
+Accuracy, F1-score, RMSE, AUC
+numbers that summarize performance but hide structure
+
+
+Graphs help:
+* data skewed / noisey
+* hidden clusters
+* model underfit / overfit
+* more data help
+* model learning signals
+
+
+Graphs
+diagnostic scans for your model
+see inside your data + algorithms
+
+
+1. Distribution
+mean	average
+median	middle
+mode	most frequent
+
+Center (mean, median)
+
+Spread (variance)
+describes how far the data points are from cneter
+high spread = data more dispersed
+
+Shape (symmetric, skewed, multimodal)
+
+
+2. Correlation
++ve correlation		one inc when other inc
+-ve correlation 	one inc when other dec
+noo correlation		move independently 
+
+strong correlated features can mislead linear models
+and inflate feature importance
+
+
+3. Probability Basics
+TP	model   correctly predicts +ve outcome
+FP	model incorrectly predicts +ve outcome	Type I  error
+
+Precision
+proportion of +ve identifications are correct
+model accuracy when predict +ve outcome
+compare TP to the total predicted +ve [TP + FP]
+
+Recall	sensitivity
+proportion of +ve were identified correctly
+model ability to find all +ve cases
+compare TP to the total number actual +ve [TP + FN]
+
+
+4. Bias vs Variance
+bias		model is too simple	underfit
+variance	model is too flexible	overfit
+
+
+The Graphs You Must Understand (with simple intuition)
+
+1. Histogram: Visualizing Data Distribution
+continuous numerical data
+group numbers into "bins" [ranges] show frequency of data points
+
+normal distribution	 symmetric	Bell Curve
+left skewed		asymmetric	mean > median
+right skewed		asymmetric	mean < median
+
+Rules
+long tail	consider log transform
+two peaks	two natural groups
+extreme values	remove outliers
+
+
+2. Box Plot "How does this feature vary across classes?"
+if medians differ then feature is likely predictive
+
+
+3. Scatter Plot "Do these two variables relate?"
+* linear relationships
+* curvature
+* clusters
+* outliers
+
+whether 
+- linear models might work
+- need interaction features
+- should segment data into groups
+
+
+4. Correlation Heatmap "Which features overlap in meaning?"
+heatmap highlights paris of features that move together
+
+highly correlated features add noise
+redundant information makes models less stable
+simplifying feature sets often improves performance
+
+
+5. ROC Curve "How well does my model separate classes?"
+ROC = Receiver Operating Characteristic 
+
+curve showing binary classifier performance by
+plotting True Positive Rate [TPR or Sensitivity] against
+False Positive Rate [FPR or 1-Specificity]
+
+reveals trade-off between correctly identifying +ve 
+and incorrectly flagging -ve
+
+AUC
+Area Under Curve
+summarizes overall performance
+higher AUD [closer to 1] = better model
+
+ROC curve
+shows tradeoff between TP and FP
+
+higer curve	better separation
+AUC close 1	strong model
+AUC around 0.5	useless model
+
+
+6. Precision-Recall Curve "How good is my model at finding positives?"
+
+Precision
+proportion of correct predictions among all predictions for class
+
+Recall
+proportion of examples of particular class predicted by model to class
+
+Precision-Recall [PR] curve
+binary classification model performance plot
+x-axis	Recall
+y-axis	Precision
+
+reveal trade-off btwn correctly identifying +ve [recall] and
+ensuring those predictions are accurate [precision]
+
+
+7. Learning Curve "Do I need more data or a simpler model?"
+plot model performance [accuracy or loss] against training progress [epoch]
+diagnose issues like overfitting or underfitting
+
+underfitting	training + validation scores low
+overfitting 	training high but validation low
+
+
+EXAMPLE
+1. The Skew Correction (Histograms)
+
+2. A box plot reveals clear differences between classes.
+
+3. A heatmap shows two features are almost identical.
+The Redundancy Checker (Correlation Heatmap)
+light color = low correlation
+visualizes multicollinearity = keep both features add no new info only noise
+
+4. A scatter plot shows nonlinear patterns.
+dots NOT form straight line or cloud
+should form clear shape "U" parabola OR "S" sigmoid
+standard linear regression [straight line] fail to fit data i.e more complex model
+
+5. ROC curve looks good but PR curve is weak.
+ROC good PR weak = Tune for recall
+
+6. Learning curve shows high variance.
+High variance = regularization = more data
+represents model "memorizing" data rather than learning general rules
+
+
+How to Build Intuition Over Time
+* Visualize your data before modelling	Everytime
+* Do not trust number until you have seen its shape
+* Compare graphs btwn bad and good models -> patterns emerge
+* Keep mental picture of "graph shapes" and what they mean
+
+
+CHEAT SHEET
+Histogram	detect skew, outliers, clusters
+Box Plot	compare features across classes
+Scatter Plot	see relationships + non-linear patterns
+Heatmap		detect correlated + redundant features
+ROC Curve	evaluate class separation
+PR Curve	evaluate rare-event performance
+Learning Curve	diagnose bias vs. variance

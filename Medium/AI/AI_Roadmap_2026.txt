@@ -1,0 +1,51 @@
+Ultimate AI/ML Engineering Roadmap: Achieve Expertise Faster Than Ever
+24-Dec-2025
+
+https://techwithram.medium.com/ultimate-ai-ml-engineering-roadmap-achieve-expertise-faster-than-ever-77e42ef5c200
+
+
+Month 1: Master Python
+NumPy and Pandas
+
+https://www.udemy.com/course/100-days-of-code
+https://cs50.harvard.edu/python/2022
+
+
+Month 2: Build ML Foundations [ PyTorch & Neural Nets]
+ML Basics: Supervised/unsupervised learning, regression, classification.
+Neural Nets: Perceptrons, activation functions, and backpropagation.
+PyTorch: Tensors, building simple models.
+
+https://www.oreilly.com/library/view/hands-on-large-language/9781098150952
+https://www.youtube.com/playlist?list=PLAqhIrjkuy22beNfhca2nyRMN_7oRaocp
+
+
+Month 3: Dive into NLP and Large Language Models (LLMs)
+NLP: Tokenization, stemming, sentiment analysis.
+LLMs: Transformers, fine-tuning, prompt engineering.
+
+https://www.oreilly.com/library/view/real-world-natural-language/9781617296420
+https://www.oreilly.com/library/view/hands-on-large-language/9781098150952
+
+
+Month 4: Get Hands-On with MLOps
+Version control for ML (DVC), experiment tracking (MLflow).
+CI/CD pipelines, containerization (Docker).
+
+https://www.oreilly.com/library/view/designing-machine-learning/9781098107956
+https://github.com/GokuMohandas/Made-With-ML
+
+
+Month 5: Explore RAG and AI Agents
+RAG: Vector databases, retrieval techniques.
+Agents: Autonomous AI that reasons and acts.
+
+https://github.com/NirDiamant/RAG_Techniques
+https://www.packtpub.com/product/generative-ai-with-langchain/9781835083468
+
+
+Month 6: Level Up to AI Engineering
+Scalable infra (Kubernetes, cloud services).
+Model evaluation, monitoring, and ethical AI.
+
+https://huyenchip.com/books
