@@ -1,0 +1,49 @@
+NumPy: the absolute basics for beginners
+25-Dec-2025
+
+https://numpy.org/doc/stable/user/absolute_beginners.html
+
+slice indexing a list
+COPY elements into a new list
+
+slicing an array
+returns a view: object that refers to data in SAME array
+
+COPY
+id(a) != id(b)
+https://numpy.org/doc/stable/user/basics.copies.html#basics-copies-and-views
+
+dimension = "axis"
+
+
+np.arange( start, stop, step )		<  stop
+np.linspace( start, stop, num )		<= stop
+
+
+sort = return sorted COPY of array to new array
+
+reshape = SAME array different shape w/o change data
+
+Index + Slice
+Slice	< max
+
+View = SAME = shallow copy
+
+HOW to tell if 2x ndarray point to same ndarray object in memory
+a.__array_interface__['data'][0] == b1.__array_interface__['data'][0]
+True
+
+OR
+>>> print(hex(a.__array_interface__['data'][0]))
+0x1829f98f410
+>>> print(hex(b1.__array_interface__['data'][0]))
+0x1829f98f410
+
+b2 = a.copy()		deep COPY
+
+IMPORTANT axis
+axis=0	row
+axis=1 	col
+
+flatten	COPY
+ravel()	SAME does not create copy
