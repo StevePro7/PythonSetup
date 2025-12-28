@@ -1,4 +1,4 @@
-add_library(MyProject SHARED core.cpp)
+add_library(MyProject STATIC core.cpp)
 
 target_include_directories(MyProject PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
