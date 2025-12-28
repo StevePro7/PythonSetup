@@ -3,5 +3,5 @@
 
 TEST(HelloTest, Basic)
 {
-    EXPECT_EQ(greet("World"), "Hello, World?!");
+    EXPECT_EQ(greet("World"), "Hello, World!");
 }
