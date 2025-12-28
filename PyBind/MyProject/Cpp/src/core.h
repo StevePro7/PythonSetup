@@ -1,6 +1,6 @@
 #ifndef MYPROJECT_CORE_H
 #define MYPROJECT_CORE_H
 
-void hello();
+int hello();
 
 #endif //MYPROJECT_CORE_H

@@ -4,5 +4,8 @@ project(MyProject LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Load the C++ + Python subdirectories
 add_subdirectory(Cpp)
-#add_library(MyProject SHARED core.cpp core.h)
+
+
+enable_testing()
