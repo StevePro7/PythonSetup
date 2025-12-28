@@ -29,3 +29,13 @@ num
 2x2 matrix
 axis = 0	row
 axis = 1	col
+
+
+Deep copy
+copy should be called after slicing if the original array is not required
+
+
+Broadcasting
+if all input arrays do not have the same number of dimensions a "1"
+will be repeatedly prepended to the shapes of smaller arrays until
+all the arrays have the same number of dimensions
