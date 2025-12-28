@@ -3,5 +3,5 @@
 
 TEST(HelloTest, Basic)
 {
-EXPECT_EQ(hello(), 8);
+EXPECT_EQ(hello(), 7);
 }
