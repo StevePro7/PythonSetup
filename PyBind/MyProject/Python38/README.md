@@ -9,7 +9,8 @@ cd /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/MyProject/Python38/.venv/l
 cp ~/GitHub/StevePro9/PythonSetup/PyBind/MyProject/Python38/.venv/lib/python3.8/site-packages/myproject.cpython-38-x86_64-linux-gnu.so .
 
 
-
+PYI reference
+mesh Ops pvt
 
 Use mypy and stubgen to auto create myproject.pyi for intellisense
 
