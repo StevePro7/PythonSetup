@@ -39,3 +39,18 @@ Broadcasting
 if all input arrays do not have the same number of dimensions a "1"
 will be repeatedly prepended to the shapes of smaller arrays until
 all the arrays have the same number of dimensions
+
+
+# Advanced indexing and index tricks
+you can use indexing with arrays as a target to assign to
+
+
+REDUCE
+you could implement reduce as follows
+
+def ufunc_reduce(ufct, *vectors):
+  vs = np.ix_(*vectors)
+  f = ufct.identity
+  for v in vs:
+    r = ufct(r, v)
+  return r

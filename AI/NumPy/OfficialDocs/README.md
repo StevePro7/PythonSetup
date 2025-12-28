@@ -16,3 +16,5 @@ OR
 
 uv add numpy
 uv sync
+
+uv add matplotlib
