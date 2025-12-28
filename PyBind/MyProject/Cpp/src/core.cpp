@@ -4,6 +4,5 @@
 
 int hello()
 {
-//    std::cout << "Hello, World!" << std::endl;
     return 7;
 }
