@@ -18,3 +18,13 @@ uv add numpy
 uv sync
 
 uv add matplotlib
+
+
+Ex20
+https://numpy.org/doc/stable/user/absolute_beginners.html
+
+
+# How do you know the shape and size of an array?
+ndim        number of dimensions [or axis]
+size        total number of elements in ND array
+shape       tuple along each dimension
