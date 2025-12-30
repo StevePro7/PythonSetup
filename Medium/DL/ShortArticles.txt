@@ -1,0 +1,77 @@
+Short articles
+30-Dec-2025
+
+01.
+16. Optimization Fundamentals: Gradient Descent in AI
+https://medium.com/@kiranvutukuri/16-optimization-fundamentals-gradient-descent-in-ai-845f49095e33
+
+Optimization problem:
+find the best model parameters that minimize loss function
+
+
+Gradient Descent
+one of the most fundamental optimization algorithms used in AI to
+iteratively improve models and reach optimal solutions
+
+GD
+an iterative algorithm used to minimize a function
+in ML this function is usually the loss function which
+measures how far predictions are from true lables
+
+Idea
+* compute the gradient [derivative] of the loss function
+  with respect to model parameters
+* update the parameters opposite to the gradient to reduce the loss
+
+
+Maths
+theta	model parameters
+n	learning rate [step size]
+lambda theta L[ theta ]	gradient of the loss with respect to parameters
+
+
+
+02.
+51. Autoencoders: Learning Data Representation Through Reconstruction
+https://medium.com/@kiranvutukuri/51-autoencoders-learning-data-representation-through-reconstruction-dc0579b7a305
+
+Qs
+What are the core features driving the data?
+How can these essential characteristics be captured in compressed form?
+How can useful representations be learned without labled data?
+
+Autoencoders address these Qs
+
+Unlike supervised learning models that map inputs to targets
+autoencoders learn to map data to itself - learning efficient
+representations in the process
+
+Autoencoders demonstrate that neural networks can discover
+meaningful structure in data purely through reconstruction
+
+
+03.
+65. Vision Transformers (ViT)
+https://medium.com/@kiranvutukuri/65-vision-transformers-vit-3eca11cd6151
+
+CV 
+Computer Vision used to follow one rule: use convolutions:
+small filters - local patterns - hierarchies of edges -> shapes -> objects
+
+ViT
+Vision Transformers
+quietly changed how machines see
+
+CNN bottleneck
+* nearby pixels matter more than distant ones
+* local patterns compose global meaning
+* depth builds understanding
+
+Assumptions work OK but they are handcrafted biases - not learned ones
+
+CNNs struggle with:
+* long-range dependencies [a pixel in the corner affecting another]
+* global context
+* scaling efficiently with model size
+
+Transformers had already solved these problems - for text
