@@ -20,6 +20,10 @@ uv sync
 uv add matplotlib
 
 
+print(hex(a.__array_interface__['data'][0]))
+print(hex(b.__array_interface__['data'][0]))
+
+
 Ex20
 https://numpy.org/doc/stable/user/absolute_beginners.html
 
@@ -28,3 +32,23 @@ https://numpy.org/doc/stable/user/absolute_beginners.html
 ndim        number of dimensions [or axis]
 size        total number of elements in ND array
 shape       tuple along each dimension
+
+
+IMPORTANT
+tuple & or | are and | or
+
+
+Broadcasting
+execute an operation btwn an array and a single number
+[i.e. vector and scalar]
+
+
+More usefull array operations
+data = np.array([1, 2, 3])
+data.max()
+# 3
+data.min()
+# 1
+data.sum()
+# 6
+
