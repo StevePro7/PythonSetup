@@ -664,3 +664,67 @@ uses self-attention to caputre global dependencies
 while processing tokens in parallel
 allowing faster training and superior performance
 on sequential tasks
+
+
+INTERVIEW Qs
+
+Q1: What is a neuron?
+A1:
+A neuron is used multiply inputs by weights adds them
+applies a non-linear activation and outputs a value
+
+
+Q2: Why do we need activation functions?
+A2:
+Without activation the network is linear and cannot learn complex patterns
+
+
+Q3: What do layers do?
+A3:
+Each layer learns a more abstract representation:
+edges -> shapes -> objects -> concepts
+
+
+Q4: Explain gradient descent.
+A4:
+An optimization algorithm used to reduce the loss
+Think of blindfolder climber going downhill by following the slope [gradient]
+to reach mimimum loss
+
+
+Q5: Explain backpropagation.
+A5:
+It is a backward blame assignment where each weight gets updated based on
+how much it contributed to the error
+
+
+Q6: What is a CNN?
+A6:
+A model that uses filters to detect patterns in images from edges to
+full objects
+
+
+Q7: What is an RNN?
+A7:
+A network with a hidden state that maintains memory across sequences
+but struggles with long-range dependencies
+
+
+Q8: What is an LSTM?
+A8:
+A LSTM is a RNN with gates and a cell state that controls what to remember
+write and forget
+
+
+Q9: What is attention?
+A9:
+A mechanism that assigns importance to weights to different tokens
+allowing the model to focus on relevant information
+
+
+Q10: What is a Transformer?
+A10:
+A parallel architecture using self-attention, positional encoding, and
+residual connections to process sequences efficiently
+
+
