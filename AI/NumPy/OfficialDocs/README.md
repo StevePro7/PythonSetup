@@ -52,3 +52,40 @@ data.min()
 data.sum()
 # 6
 
+
+UNIQUE
+if axis argument is not passed then your 2D array will be flattened
+
+
+# Reshaping and flattening multidimensional arrays
+ravel()
+reference to parent array   view
+does not create copy = more memory efficient
+
+
+How to access the docstring for more information
+help(max)
+
+
+# Working with mathematical formulas
+math formulas = NumPy
+e.g.
+MSE
+= Mean Square Error
+= central formula used in supervised machine learning models [regression]
+e.g.
+error = (1/n) * np.sum(np.square(predictions - labels))
+
+
+How to save and load NumPy objects
+TXT 
+loadtxt
+savetxt
+
+binary file
+*.npy
+
+*.npz
+savez
+e.g.
+store more than one 
