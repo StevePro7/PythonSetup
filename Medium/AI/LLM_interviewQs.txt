@@ -1,0 +1,179 @@
+If You Can Answer These GenAI Questions, You’re Already Hireable
+01-Jan-2026
+
+
+https://medium.com/activated-thinker/if-you-can-answer-these-genai-questions-youre-already-hireable-9e96db97e83c
+
+
+Q1. How do Large Language Models (LLMs) actually work under the hood?
+A1:
+An LLM is a neural network trained to predict the next token based on the 
+previous tokens using the Transformer architecture
+
+
+Remember
+Tokens are basic units of text that a model reads, processes, and generates
+
+
+Deep understanding
+LLM does one task well:
+given previous text predict the mostlikely next token
+
+
+Input text = tokens
+Tokens converted into embeddings
+Embeddings pass thru many Transformer layers
+Each layer improves context understanding
+Final layer outputs probability distribution over next tokens
+
+
+LLMs
+model statistical patterns so well that understanding appears
+
+
+IMPORTANT
+LLM training	self-supervised
+Loss function	cross entropy
+
+
+Q2. What problem did the Transformer architecture solve, and why did it replace RNNs/LSTMs?
+A2:
+Problem with RNNs/LSTMs:
+* Sequential processing (slow)
+* Hard to scale
+* Weak long-range memory
+* Vanishing gradients problem
+
+Transformers
+* Parallel processing [read entire sequence at once]
+* Each word can look at every other word in the sentence
+  [via attention - global context]
+* Better scaling on GPUs
+
+
+IMPORTANT
+replace recurrent with attention
+
+Transformers
+* faster training
+* better context handling
+* massive scalability		LLMs possible
+
+Transformers
+made it feasible to train LLM with billions of parameters
+
+
+Q3. How does self-attention work, and why is it so powerful?
+A3:
+self-attention allows the model to understand - what is "it"
+
+NB:
+each token creates:
+Q	Query	what am I looking for?
+K	Key	what do I offer?
+V	Value	what information do I pass if selected??
+
+
+Multi-attention
+multiple attention heads to focus on different aspects:
+* syntax
+* semantics
+* position
+* long-range relations
+
+INSIGHT
+Self-attention allows models to dynamically focus on relevant parts of the context
+
+
+Q4. What is tokenization, and how does it affect cost, context length, and accuracy?
+A4:
+Tokenization
+converting text into model-understandable units [tokens]
+
+NB:
+subword tokenization
+"unbelievable" → ["un", "believ", "able"]
+
+INSIGHT
+Tokenization directly impacts performance, latency, and cost
+
+
+Q5. What happens inside GPT when you enter a prompt? (End-to-End Flow)
+A5:
+Full pipeline
+1. user input		tokenizer
+2. tokens -> embeddings
+3. positional encoding added		Helps model understand position or words
+4. pass thru N Transformer layers
+5. logits generated	raw unnormalized scores	help in deciding which tokens to select
+6. sampling	temperature, top-p	decides how the next token is chosen
+7. token selected
+8. repeat until stop
+
+
+Remember
+logit
+raw unnormalized scores for each possible next token
+
+
+IMPORTANT
+* GPT is decoder-only	only generates
+* GPT has no encoder like BERT
+* Autoregressive generation	model generates one token at a time
+				each new token added back to the input
+
+
+INSIGHT
+GPT generates text one token at a time conditioning each step on all previous tokens
+
+
+REVISION
+* LLM = next-token predictor
+* Transformers enable scale
+* Attention = context understanding
+* Tokenization affects everything
+* GPT = autoregressive decoder
+
+
+Q6. What are embeddings, and how do they represent semantic meaning?
+A6:
+Embedding [definition]
+An embedding is a list of numbers [a vector] that represents the meaning of text
+
+Embeddings
+convert meaning into geometry
+
+
+During training
+* model sees billions of sentences
+* learns that certain words appear in similar contexts
+
+IDEA
+words with similar meanings appear in similar contexts
+model places them close together in vector space
+
+
+Embeddings = powerful
+* compare meaning	semantic search
+* retrieve relevant documents
+* cluster similar content
+* create RAG
+
+NB:
+Embeddings
+allow semantic understanding NOT keyword matching
+
+INSIGHT
+Embeddings are dense vector representations of text that encode semantic
+meaning allowing similarity-based retrieval
+
+
+Q7. Why do we need a vector database? Why not SQL or Elasticsearch?
+A7:
+Find most relevant documents for this query
+
+SQL is not built for geometry
+SQL is built for structured rows and columns
+
+Elasticsearch not optimized for large-scale ANN	[Approximate Nearest Neighbor]
+Elasticsearch has higher latency and less control over vector indexing
