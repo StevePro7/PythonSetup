@@ -177,3 +177,261 @@ SQL is built for structured rows and columns
 
 Elasticsearch not optimized for large-scale ANN	[Approximate Nearest Neighbor]
 Elasticsearch has higher latency and less control over vector indexing
+
+Vector DBs optimized
+* high-dimensional vectors	[no. elements in a vector]
+* Approximate Nearest Neighbor	ANN
+* fast similarity lookup
+* metadata filtering
+
+e.g.
+Chroma
+FAISS
+Pinecone
+Weaviate
+
+Vector DBs = search engines for meaning
+
+INSIGHT
+SQL 		is for structured data
+Elasticsearch	is for keyword relevance
+Vector DBs	are for semantic similarity at scale
+
+
+Q8. How does similarity search work in vector databases (cosine, ANN, HNSW)?
+A8:
+Similarity search
+does this document mean the same thing?
+
+Cosine similarity
+angle btwn two vectors
+ 1.0	identical meaning
+ 0.0	no relation
+-1.0	opposite meaning
+
+Nearest neighbor search = too slow
+
+ANN
+Approximate Nearest Neighbor
+trades tiny accuracy loss for massive speed gain
+only searches likely candidates
+
+HNSW
+Hierarchical Navigable Small World graph
+ANN algorithm
+
+graph of vectors
+similar vectors are connected
+multiple layers	coarse -> fine
+
+HNSW
+makes vector search fast without scanning everything
+that is why it is widely used
+
+INSIGHT
+Vector DBs use ANN algorithms like HNSW to efficiently find
+semantically similar embeddings without exact comparison
+
+
+REVISION
+* Embeddings = meanings -> numbers
+* Similar meaning = closer vectors
+* SQL != semantic search
+* Vectors DBs = optimized for ANN	Approximate Nearest Neighbors
+* Cosine similarity = angle between meanings
+* ANN = fast + scalable
+* HNSW = graph-based retrieval
+
+
+Q9. What is RAG, and why is it preferred over fine-tuning in many systems?
+A9.
+LLMs = 3x issues
+1. lack of new knowledge
+2. hallucinations	[guess when unsure]
+3. no knowledge about private documents
+
+RAG
+fixes this by inserting external knowledge at runtime
+
+Retrieval Augmented Generation
+* retrieve relevant documents
+* give them [docs] to the LLM
+* generate an answer based on those documents
+
+
+PROCESS
+1. user asks question
+2. question -> embedding
+3. search vector DB		here knowledge embeddings are present
+4. retrieve top-k documents	ones similar to query answer
+5. inject documents + query into prompt and give it to LLM
+6. LLM generates answer using this context
+
+
+RAG
+no retraining
+data stays freshj
+lower cost
+easier updates
+fewer hallucinations
+
+BUT
+expensive
+slow to update
+hard to debug
+not good for changing knowledge
+
+Rule of thumb
+use RAG for knowledge fine-tuning behavior
+
+INSIGHT
+RAG is preferred because it injects up-to-date external knowledge
+without retraining the model
+
+
+Q10. What are the most common failure points in a RAG pipeline?
+A10:
+1. Bad chunking
+chunks too small	lose context
+chunks too large	irrelevant info
+chunking quality directly affects answer quality
+
+2. Embeddings mismatch
+using wrong embedding model
+domain mismatch
+retriever fails silently
+
+3. Poor retrieval strategy
+top-k too low		miss info
+top-k too high		noise
+no metadata filtering
+LLM overwhelmed or misled
+
+4. Context overload
+too many tokens in prompt
+more context != better answers
+
+5. Weak prompt
+without grounding hallucinations still happen
+
+6. LLM limitations
+ever with perfect retrieval
+model may give wrong reasoning
+model may overgeneralize
+RAG reduces hallunication but doesn't eliminate it
+
+RAG
+improves information availability not reasoning correctness
+
+
+INSIGHTS
+* RAG injects external knowledge at inference time
+* Most RAG failures come from chunking and retrieval NOT the LLM
+* RAG reduces hallucinations but doesn't guarantee correctness
+
+
+Q11. What is fine-tuning, and when should you NOT use it?
+A11:
+Fine-tuning
+* taking a pretrained LLM
+* updating its weights using task-specific data
+
+changes how models behaves NOT what it knows
+Fine-tuning is not a knowledge update mechanism
+
+RULE
+use RAG		for knowledge
+use fine-tuning for behavior
+
+
+Q12. What is LoRA and why is it important?
+A12:
+tradition fine-tuning issues
+* updating billions parameters
+* huge GPU memory
+* very expensive
+
+LoRA = Low-Rank Adaption
+* freeze the base model
+* add small trainable matrices
+* train only those
+
+modify behavior without touching core model
+almost ALL modern fine-tuning uses LoRA
+
+INSIGHT
+LoRA enables efficient fine-tuning by updating low-rank adapters
+instead of full model weights
+
+
+Q13. How do you reduce hallucinations in GenAI systems?
+A13:
+You cannot eliminate hallucinations. You can only reduce them
+
+Hallucinations
+* missing context
+* ambiguous questions
+* model overconfidence
+* weak prompts
+
+Mitigation strategies
+1. Retrieval grounding
+2. Strong system prompts
+3. Smaller focuses context
+4. Output validation
+5. Human-in-the-loop		critical systems
+
+INSIGHTS
+Hallucinations are reduced by grounding not by prompting alone
+
+
+Q14. What do temperature, top-k, and top-p control?
+A14:
+control how the next token is chosen
+e.g.
+Temperature
+Top-k
+Top-p		nucleus sampling
+Practical rule
+
+INSIGHT
+Sampling parameters balance determinism and diversity during generation
+
+
+Q15. How do you evaluate GenAI systems in production?
+A15:
+Evaluation depends on the use case
+e.g.
+RAG systems
+1. Retrieval quality
+2. Grounding / faithfulness
+3. Final answer quality
+
+Production metrics
+* latency
+* token cost
+* error rate
+* user feedback		which answer is more helpful or clearer
+
+GenAI evaluation is system-level NOT model-only
+
+INSIGHT
+GenAI evaluation requires combining retrieval metrics, generation quality and
+human judgement
+
+
+REVISION
+* LLM		= next-token predictor
+* Transformer enables scale
+* Attention	= context selection
+* Embeddings	= meaning -> vectors
+* Vector DB 	= semantic search
+* ANN + HNSW 	= fast retrieval
+* RAG		= knowledge injection
+* Chunking matters more than models
+* Fine-tuning	= behavior change
+* LoRA		= efficient fine-tuning
+* Hullucinations need grounding
+* Sampling controls creativity
+* Evaluation is multi-layered
+* Production	= cost + latency + safety 
