@@ -1,5 +1,3 @@
-from logging import info
-
 import numpy as np
 
 # How to save and load NumPy objects

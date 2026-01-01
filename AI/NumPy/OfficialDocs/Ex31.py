@@ -1,5 +1,3 @@
-from logging import info
-
 import numpy as np
 
 # Transposing and reshaping a matrix

@@ -89,3 +89,7 @@ binary file
 savez
 e.g.
 store more than one 
+
+
+Importing and exporting a CSV
+uv add pandas
