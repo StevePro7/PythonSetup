@@ -6,8 +6,8 @@ https://blog.devops.dev/building-enterprise-python-microservices-with-fastapi-in
 
 
 
-From Pip to Lightning: How uv Opened My Eyes to Better Python Workflows
-https://viveksinghpathania.medium.com/from-pip-to-lightning-how-uv-opened-my-eyes-to-better-python-workflows-dfa50e8a5893
+//From Pip to Lightning: How uv Opened My Eyes to Better Python Workflows
+//https://viveksinghpathania.medium.com/from-pip-to-lightning-how-uv-opened-my-eyes-to-better-python-workflows-dfa50e8a5893
 
 
 The Magic of Python Decorators: From Basics to Advanced Techniques
@@ -48,9 +48,9 @@ https://mskadu.medium.com/async-programming-in-python-part-2-advanced-patterns-a
 
 
 
-https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part1-its-time-to-ditch-poetry-c2590091d90a
-https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part-2-deep-dives-and-advanced-use-1e2540e6f4a6
-https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part-3-mlops-4906965f45a2
+//https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part1-its-time-to-ditch-poetry-c2590091d90a
+//https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part-2-deep-dives-and-advanced-use-1e2540e6f4a6
+//https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part-3-mlops-4906965f45a2
 
 
 Fri,20-Jun
