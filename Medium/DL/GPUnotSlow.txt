@@ -1,0 +1,135 @@
+Your GPU Isn’t Slow — You Just Don’t Understand How It Actually Works
+04-Jan-2026
+
+
+https://blog.stackademic.com/your-gpu-isnt-slow-you-just-don-t-understand-how-it-actually-works-a6b9fbf13dbd
+
+
+01. CUDA Cores / Stream Processors
+fundamental processing units inside GPU
+nVidia	CUDA Cores 
+AMD	Stream Processors
+
+Misconception
+more cores = better performance
+RTX 4080 	9,728 cores 
+RTX 3090 	10,496 cores
+
+but memory bandwidth bottleneck
+
+
+02. Tensor Cores - AI Accelerators
+HW matrix multiplication ops
+A100		6,912 CUDA cores
+
+RTX GPUs have fewer Tensor cores than Datacenter GPUs [A100, H100]
+PyTorch + TensorFlow frameworks that leverage Tensor cores
+
+
+03. Memory Bandwidth - Highway to Corees
+rate at which data moved between GPU memory and its processors
+GB/s
+memory-bound = data not fed to GPU cores fast enough = underutilized
+nVidia H200	4.8TB/s
+nVidia A100	2.0TB/s
+RTX 4090	1.0GB/s		slow for enterprise AI
+
+NB: if task compute bound then extra memory bandwidth won't help
+
+Memory bandwidth = memory clock speed * memory bus width / 8
+HBM [high BM] = GDDR6X, GDDR6, GDDR5
+
+
+04. VRAM capacity - how much data fits
+physical memory VRAM on GPU
+AI LLMs need 40-80GB VRAM
+
+nVidia H200	192GB
+RTX 4090	24GB
+
+
+05. Memory type - GDDR vs. HBM
+GDDR	Graphics Double Data Rate
+HBM	High Bandwidth Memory
+
+HBM is faster than GDDR
+often bottleneck for performance
+memory bandwidth = critical to consider
+
+
+06. Streaming Multiprocessors [SMs] - Organizational Units
+each SM contains CUDA cores, Tensor cores, RT cores
+building block for nVidial GPU architecture
+
+
+07. Clock Speed - how fast each core runs
+frequency at which GPU cores operator
+
+
+08. Memory Bus width - Data Highway lanes
+number parallel data channels between GPU cores + VRAM
+measured in bits
+[128-bit, 256-bit, 384-bit, 512-bit]
+
+
+09. NVLink - Multi-GPU communication
+NVLink = high-bandwidth interconnect = allow data quickly transferred
+important in multi-GPU configurations = faster data exchange
+
+PCIe 		 32 GB/s bandwidth
+NVLink 4: 	900 GB/s between GPUs (28x faster)
+
+
+10. Cache Hierarchy - Speed tiers
+multiple levels of fast memory between cores to VRAM to reduce latency
+registers		fastest		KB per SM
+shared memory		fast		48-96KB per SM
+L1 cache		fast		128KB	typical
+L2 cache		slower		40-80MB
+VRAM global memory	slowest		8-192GB
+
+
+Real Performance formula
+GPU performance = balance
+
+Memory-bound workloads		AI training
+* memory bandwidth = bottleneck
+* more CUDA cores won't help
+* upgrade to HBM or optimize data reuse
+
+Compute-bound workloads		gaming, rendering
+* core count and clock speed matter most
+* memory bandwidth is sufficient
+* focus on shader optimization
+
+Mixed workloads			LLM inference
+* tensor cores accelerate matrix ops
+* memory badnwidth feeds the cores
+* VRAM capacity holds the model
+
+
+Bottlenecks
+Q. I need more CUDA cores
+A. Your memory bandwidth is the bottleneck
+
+Q. I need more VRAM
+A. Your Tensor Cores aren’t being utilized
+
+Q. I need faster clock speeds
+A. Your data isn’t even reaching the cores
+
+Profile first!
+* nVidia Nsight Compute		identifies bottlenecks
+* PyTorch Profiler		shows GPU utilization
+* Task Manager GPU stats	basic monitoring
+
+
+SUMMARY
+* CUDA/Tensor Cores:		The workers
+* Memory bandwidth: 		The highway supplying them
+* VRAM: 			The workspace
+* Cache: 			The speed buffer
+* SMs: 				The organizers
+* Clock speed: 			The pace
+* Bus width: 			The pipeline
+* NVLink: 			The inter-GPU connector
