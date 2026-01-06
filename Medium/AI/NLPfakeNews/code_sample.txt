@@ -1,0 +1,104 @@
+# Fake News Detection Using NLP: A Complete Machine Learning Project
+# 06-Jan-2026
+#
+# https://medium.com/activated-thinker/fake-news-detection-using-nlp-a-complete-machine-learning-project-5fa8083767ef
+
+
+# Step 1: Download the Dataset in Colab
+import kagglehub
+
+# Download dataset
+path = kagglehub.dataset_download("algord/fake-news")
+print("Dataset path:", path)
+
+# Step 2: Load the CSV File
+import pandas as pd
+import os
+
+df = pd.read_scv(os.path.join(path, "fake_news.csv")
+df.head()
+
+# Step 3: Understand the Dataset (DO NOT SKIP THIS)
+# Dataset Columns
+# title → News headline (text)
+# news_url → Source link
+# source_domain → Website name
+# tweet_num → Number of tweets
+# real → Label:
+# 1 = Real news
+# 0 = Fake news
+
+df.info()
+df.isnull().sum()
+
+x=df["real"].value_counts()
+
+
+# Step 4: Feature Selection
+
+df = df[["title", "real]]
+df.columns = ["text", "label"]
+
+
+# Step 5: Text Cleaning (Machines Hate Noise)
+import re
+import string
+
+
+def clean_text(text):
+    text = text.lower()
+    text = re.sub(r'\W', ' ', text)
+    text = re.sub(r'\d+', '', text)
+    text = text.translate(str.maketrans('', '', string.punctuation))
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+df["clean_text"] = df["text"].apply(clean_text)
+
+
+# Step 6: Train–Test Split
+from sklearn.model_selection import train_test_split
+X = df["clean_text"]
+y = df["label"]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+
+
+# Step 7: Convert Text into Numbers (TF-IDF)
+from sklearn.feature_extraction.text import TfidVectorizer
+
+vectorizer = TfidVectorizer(
+ stop_words="english",
+ max_features=5000,
+ ngram_range=(1, 2)
+ )
+
+X_train_tfidf = vectorizer.fit(X_train)
+X_test_tfidf = vectorizer.fit(X_test)
+
+
+# Step 8: First Model — Logistic Regression (Baseline)
+from sklearn.linear_model import LogisticRegression
+
+lr_model = LogisticRegression(max_iter=1000)
+lr_model.fit(X_train_tfidf, X_test_tfidf)
+
+
+# Step 9: Evaluation
+from sklearn.metrics import confusion_matrix, classification_report
+
+y_pred = lr_model.predict(X_test_tfidf)
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))
+
+
+# Step 10: Fix the Bias (This Is Real ML)
+lr_model = LogisticRegression(
+    max_iter=1000,
+    class_weight="balanced"
+)
+
+
+lr_model.fit(X_train_tfidf, y_train)
+y_pred = lr_model.predict(X_test_tfidf)
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))
