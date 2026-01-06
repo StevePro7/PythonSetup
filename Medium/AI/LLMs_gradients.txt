@@ -1,0 +1,61 @@
+I wasted years confused about how LLMs learn before learning this.
+06-Jan-2026
+
+https://ai.gopubby.com/ai-might-be-overhyped-but-your-math-skills-are-not-adbd08aa84ca
+
+
+AI concept
+Gradients
+
+why important + how to compute them for any AI model
+
+
+Why Gradients Are Everywhere in AI
+AI models learn incrementally over time
+
+tuning = update numbers inside the model called weights
+
+Q. how does model know how to update weights?
+A. gradients
+
+
+Backpropagation in neural networks = same process of updating weights based on data
+
+
+Every model has "weights vector"
+collection of numbers model needs to update as it "learns from data"
+to more accurately predict outputs from inputs
+
+
+Linear Regression
+Linear model = fitting a line
+
+yi = wTxi
+
+Function we need to minimize = error function
+
+Q. what is derivative of the error function with respect to w?
+
+Article = types of derivatives
+
+
+Solving Gradient for our error function
+f(w) = ||Xw - y||2
+
+Problem 1: Finding df/dr
+Problem 2: Finding dr/dw
+
+
+Put it all together = the Chain Rule
+f = ||n||2
+
+
+Backpropagation
+gradients are crucial for every neural network, every transformer, every AI model
+
+
+SUMMARY
+* why gradients are crucial for updating model weights
+* how to think about derivatives of scalars, vectors, matrices
+* how to compute gradients for real error function using linear regression
+* chain rule + dimension-tracking tricks that make things easier

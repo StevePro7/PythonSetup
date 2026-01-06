@@ -1,0 +1,124 @@
+There would be no AI without this 200-year-old idea
+06-Jan-2026
+
+https://ai.gopubby.com/where-machine-learning-begins-5bdaa417c90c
+
+
+Linear Regression = 200yrs
+
+Machines learn
+1.   supervised learning	teaching w/ flashcards
+2. unsupervised learning	give model data w/o any labels
+
+Features + Labels
+
+Feature
+what you feed into the model
+the input
+
+Label
+what you want the model to predict
+the output
+
+
+How to train Supervised Learning model?
+regression
+fit a function to training data to map new inputs to outputs
+
+2D plot
+points on line = find equation of this line = linear regression
+
+Fit perfect line
+y = wx
+
+w = slope
+find w that best fits data points
+(x1, y1), (x2, y2), ... (xn, yx)
+
+want
+wxi - yi to be small as possible for all points
+wxi - yi = 0
+
+Minimization problem
+min||Xw-y||2
+ w
+
+
+Multiple regresion
+3D space = find best plane that fits all points
+yi == xiTw
+
+
+Extend idea to any number of features
+hyperplane equation = dot product btwn data poins feature vector and sets of weights
+
+
+Closed-form solution
+linear regression 
+= don't need complex iterative algorithms
+= closed-form solution
+
+find w that minimizes function - we set the gradient to zero
+i.e.
+setting the gradient of the function to zero gives closed-form solution
+
+
+EXAMPLE
+
+X = [	1 0	]
+	0 1
+	1 1
+	2 1
+
+y = [	2	]
+	3
+	5
+	7
+
+XTX = [ 6 3]
+	3 3
+
+how?
+	  1 0
+1 0 1 2   0 1	6 3
+0 1 1 1   1 1	3 3
+	  2 1
+
+
+XTy
+how?
+	  2
+1 0 1 2	  3	21
+0 1 1 1	  5	15
+  	  7
+
+
+To calcuate the inverse of XTX - calculate the determinant of
+[ 6 3
+  3 3 ]
+
+det(XTX)	= ad - bc
+	  	= 18 - 9
+		= 9
+
+det is NON zero i.e. invertible
+
+(XTX)-1 = 	1/det(XTX) [ d -b 
+			    -c a ]
+	= 1/9 [  3 -3 
+		-3  6 ]
+
+[ 3 -3 ]  [21]	= [ 18
+ -3  6 	   15	    27 ]
+
+
+1/9 [ 18 27 ] = [ 2 3 ]
+
+
+y = 2x1 + 3x2
+
+This works:
+1*2 + 0*3	= 2
+0*2 + 1*3	= 3
+1*2 + 1*3	= 5
+2*1 + 1*3	= 7
