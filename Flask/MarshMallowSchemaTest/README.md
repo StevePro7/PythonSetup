@@ -1,0 +1,1 @@
+uv add marshmallow_dataclass
