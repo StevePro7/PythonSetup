@@ -1,0 +1,27 @@
+PyTorch Articles
+09-Jan-2026
+
+01.
+PyTorch in 10 Minutes: From Your First Tensor to a Tiny Neural Network
+https://pythonclcoding.medium.com/pytorch-in-10-minutes-from-your-first-tensor-to-a-tiny-neural-network-bb404f4fe99f
+
+PyTorch DL framework
+Pythonic
+
+Tensor = core building blocks of PyTorch
+similar to NumPy arrays but GPU ready
+
+Reference: Tensor
+Tensor.txt
+~\GitHub\StevePro10\Blogger\AI\DL
+
+Remember
+Tensor = container for data
+
+IMPORTANT
+Tensor runs on CPU by default
+if torch.cuda.is_available() == True then can set device = "cuda" and convert tensor.to("cuda")
+
+CODE
+~/GitHub/StevePro9/FelixTesting/Solv/GDL3Duv/PyTorch/FirstTensor.py
+
