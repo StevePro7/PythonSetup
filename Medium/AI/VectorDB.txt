@@ -1,6 +1,77 @@
 Vector DB
 
 01. 19-Feb-2025
+Vector Databases Explained — Chroma, Pinecone, ANN (Everything)
+https://medium.com/pen-with-paper/vector-databases-explained-chroma-pinecone-ann-everything-5350e5ad7182
+
+
+Vector DB = ??
+Text -> embeddings -> storage -> search -> done
+
+BUT
+What’s the size of your vector database?
+Is it in-memory or disk-based?
+What is ANN and why not exact search?
+
+1. What a Vector Database Really Is
+Vector DB = system designed to
+1. store vectors [embeddings]
+2. index them efficiently
+3. retrieve the most similar ones quickly
+
+
+Key difference from traditional DB = how data is searched
+e.g.
+* similarity search
+* distance-based retrieval
+
+Example
+"Find vectors closest to this query vector"
+Difference changes everything
+
+
+2. What Is a Vector (Embedding), Really?
+An embedding is just a list of numbers.
+e.g.
+"I love cricket"
+-> [0.021, -0.34, 0.88, ..., 0.12]
+
+IMPORTANT
+* length of this list = embedding dimension
+* stored as floats	usually float32
+
+Vector size = database size
+
+
+3. What Does a Vector Database Store Internally?
+A vector database does not store only vectors. It stores three things:
+a. vectors	numerical embeddings
+b. metadata	extra info
+c. index	makes vector DB fast
+
+
+ANN
+Approximate Nearest Neighbor	Heart of Vector DB
+find vectors that are close enough = very fast
+
+HNSW
+Hierarchical Navigable Small World
+most popular ANN algorithm
+
+Other ANN techniques
+IVF	Inverted File Indes
+PQ	Product Quantization
+ScaNN	Google ANN
+
+SUMMARY
+Vector DB
+Google Maps for embeddings
+Don't check every road
+Navigate intelligently
+
+
+
+19-Feb-2025
 Vector Databases: A Beginner’s Guide!
 https://medium.com/data-and-beyond/vector-databases-a-beginners-guide-b050cbbe9ca0
 
@@ -81,7 +152,7 @@ print(results)
 
 
 
-02. 12-Jul-2025
+12-Jul-2025
 Python From Scratch Building a Tiny Local Vector Database Without LangChain or FAISS
 https://towardsdev.com/python-from-scratch-building-a-tiny-local-vector-database-without-langchain-or-faiss-52b50f4410f1
 

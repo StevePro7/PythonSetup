@@ -1,0 +1,94 @@
+LLM Evaluation For Beginners
+10-Jan-2026
+
+https://medium.com/activated-thinker/llm-evaluation-for-beginners-6abea951f209
+
+ML models
+easy to evaluate
+
+Email spam?
+Yes OR No
+
+LLM outputs = open-ended
+can be partially correct
+
+LLM evaluation = harder than any previous ML task
+
+
+You are not evaluating the LLM alone.
+
+You are evaluating:
+
+prompt
+model
+context
+retrieval (if RAG)
+tools (if any)
+user input
+
+
+LLM evaluation = system-level NOT model-level
+
+
+Four core dimensions of LLM evaluation
+
+1. Relevance
+Does the answer actually address the user’s question?
+
+2. Faithfulness / Correctness
+Is the answer factually correct given the context?
+
+3. Completeness
+Did the answer cover all parts of the question?
+
+4. Helpfulness & Safety
+Is the response useful, safe, and appropriate?
+
+
+Accuracy = bad metri cof LLMs
+
+
+Types of LLM Evaluation (Very Important)
+There are three main ways to evaluate LLM systems.
+
+1. Offline Evaluation
+You evaluate on a fixed dataset.
+
+2. Online Evaluation
+You evaluate using real user behaviour.
+
+3. Human-in-the-Loop Evaluation
+Humans review:
+
+sampled outputs
+edge cases
+failures
+
+
+Evaluating RAG Systems (Critical Section)
+RAG introduces two new failure points.
+
+Failure 1: Retrieval Failure
+Failure 2: Generation Failure
+
+
+Real-world LLM evaluation
+* small offline evaluation set
+* automatic scoring
+* human review on failures
+* online feedback loop
+* continuous monitoring
+
+Evaluation = NOT a one-time task = it is a continuous process
+
+
+IMPORTANT
+"Did the system's behavior change and why?"
+
+
+LLM evaluation is not about judging correctness
+It's about detecting when and why behavior changes
+
+
+SUMMARY
+I built an AI system that behaves blindly
