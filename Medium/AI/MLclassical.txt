@@ -3,3 +3,214 @@ Welcome to Classical Machine Learning
 
 https://medium.com/ai-ml-interview-playbook/welcome-to-classical-machine-learning-b884ff138547
 
+ML models
+faster to train
+easier to reason about
+cheaper to run in Prod
+
+
+Classic ML teaches how to think about data
+1. data quality and features
+2. model assumptions: linear independence, smoothness, margin assumptions
+3. interpretability and debugging
+4. efficiency
+5. evaluation discipline
+
+
+1. TYPES OF ML PROBLEMS
+
+Supervised ML
+uses labeled data to train algorithms
+make predictions or classifications
+
+labeled data
+provides correct answers for model to learn on
+allow model to map inputs to outputs + reduce errors [over time]
+
+1. labeld data      each input has correct output or "label"
+2. model training   learn relationship between input and output
+3. error correction model makes predictions accuracy compares predicitons to true output
+4. prediction       once trained model given new unlabeled data to make predictions
+
+Examples
+* classification
+* regression
+* image + speech recognition
+* fraud detection
+
+
+Unsupervised ML
+no predefined outputs or human guidance3
+models discover similarities and differences on its own
+
+1. no labels
+2. automatci discovery
+3. data exploration
+
+Algorithms
+1. Cusltering
+2. Dimensionality reduction     PCA Principal Component Analysis
+3. Association rule learning
+4. Anomaly detection
+
+Examples
+* Customer segmentation
+* Recommendation systems
+* Image recognition
+* Cybersecurity
+
+
+Semi-Supervised Learning    SSL
+Semi-supervised / self-supervised
+
+
+2. DATA PREPROCESSING + FEATURE ENGINEERING
+
+1. Understand data
+2. Clean
+3. Impute               strategy for missing or skewed values
+4. Scale                SVM, KNN, PCA
+5. Encode categoricals
+6. Feature creation     data features, non-dimensional transforms
+7. Feature selection    remove redundant or noisy data
+
+EX
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex01.py
+
+
+CORE ALGORITHMS
+
+Linear Regression       regression
+y=  m * x + b
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex02.py
+
+
+Logistic Regression     classification
+binary classification with interpretability needs
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex03.py
+
+Regularization          Ridge and Lasso
+prevent overfitting and stabilize coefficients
+Ridge adds L2 penalty
+Lasso adds L1 penalty
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex04.py
+
+k-Nearest Neighbors     kNN
+predict based on closed training examples in feature space
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex05.py
+
+Decision Trees
+recursive partitioning of feature space into leaf predictions
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex06.py
+
+Ensemble Trees: Random Forest and Gradient Boosting
+bagging many trees with random feature subsets
+e.g.
+Gradient Boosting   XGBoost, LightGBM, CatBoost
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex07.py
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex08.py
+
+Support Vector Machines     SVM
+finds a maximum margin separator in transformed feature space via kernels
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex09.py
+
+Naive Bayes
+probabilistic classifier assuming conditional independence of features given the class
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex10.py
+
+Clustering  k-means
+partition points into k clusters by minimizing within-cluster variance
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex11.py
+
+Dimensionality reduction    PCA
+linear project to the directions of greatest variance
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex12.py
+
+
+MODEL SELECTION CROSS VALIDATION and METRICS
+
+Cross validation
+uses multiple splits to estimate generalization
+
+Classification
+* accuracy, precision, recal, F1, ROC-AUD, PR-AUC
+  use precision / recall when classes are imbalanced
+
+Regression
+* MSE, RMSE, MAE, R*R
+
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex13.py
+
+
+BIAS VARIANCE TRADE OFF and DIAGNOSTICS
+
+Bias        error from wrong model assumptions          underfitting
+Variance    error from sensitivity to training data     overfitting
+
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex14.py
+
+
+PIPELINES FEATURE SELECTION HYPERPARAMETER TUNING and INTERPRETATION
+
+Pipelines
+wrap preprocessing and model into single object [Pipeline] to avoid leakage
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex15.py
+
+Feature selection
+RFE Recursive Feature Elimination
+
+Hyperparameter tuaning
+RandomizedSearchCV  for high dimensional spaces
+Bayesian [Optuna, Hyperopt] for efficiency
+Ex
+~/GitHub/StevePro7/FelixTesting/~/MLclassical/Ex16.py
+
+Model interpretation
+* linear models
+* tree ensembles        SHAP values for local explanations
+* partial dependence plots
+
+SHAP example    [conceptual]
+explains predictions by attributing contributions of each feature
+model-agnostic  useful for local explanations
+
+
+PRACTICAL TIPS PITFALLS and DEBUGGING CHECKLIST
+
+* Data leakage      always fit transformers on training only
+* Imbalanced classes
+* Ignoring assumptions
+* Overfitting in hyperparameter search
+
+
+RESOURCES and NEXT STEPS
+
+Books
+"An Introduction to Statistical Learning"
+"Elements of Statistical Learning"
+
+Courses
+ttps://www.fast.ai
+
+Libraries
+scikit-learn                    classical models
+XGBoost, LightGBM, CatBoost     boosting
+SHAP                            explanations
+Optuna                          tuning
+
+Practice
+Kaggle
+real datasets
