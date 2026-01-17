@@ -1,0 +1,57 @@
+New to GenAI? This Is the AI Toolkit You Need in 2026
+17-Jan-2026
+
+AI Engineers
+
+01. LangChain
+Does not give you intelligence it gives you structure
+
+Connects
+LLM + prompts + memory + tools + retrievers
+
+https://medium.com/activated-thinker/langchain-beginner-friendly-guide-382a50031e36
+
+
+02. Hugging Face
+model hub + complete ecosystem = backbone of open-source AI
+
+https://medium.com/activated-thinker/build-a-complete-langchain-rag-app-for-free-e9b535f20595
+
+
+03. Vector Databases
+Chroma
+Pinecone
+Vec DBs store meaning not keywords
+
+https://medium.com/pen-with-paper/vector-databases-explained-chroma-pinecone-ann-everything-5350e5ad7182
+
+
+04. OpenAI API
+NOT ChatGPT in code but it is programmable intelligence
+
+
+05. LLaMA Model
+are open-weight LLMs
+
+https://medium.com/activated-thinker/build-an-ai-interview-simulator-using-llama-923c9865daea
+
+
+06. Agent Frameworks
+
+Instead of:
+Prompt → Answer
+
+You get:
+Goal → Plan → Act → Verify → Repeat
+
+
+SUMMARY
+GenAI is heading
+* AI researchers
+* AI assistance
+* AI co-workers
+
+
+https://medium.com/activated-thinker/langgraph-beginner-edition-74bfbb7f701b
+https://medium.com/activated-thinker/build-a-self-reviewing-ai-agent-using-langgraph-33516814edeb
+https://medium.com/activated-thinker/build-an-ai-agent-with-crewai-aacadc455117
