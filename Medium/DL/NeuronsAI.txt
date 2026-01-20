@@ -1,0 +1,102 @@
+Understanding Neurons — The Building Blocks of AI
+20-Jan-2026
+
+https://python.plainenglish.io/understanding-neurons-the-building-blocks-of-ai-bfa70b0c60e9
+
+
+Neurons
+tiny math decision-makers that work together [like brain cells] = make sense of the world
+
+
+Part 1: What Are Neurons?
+The tiny decision-makers powering modern AI
+
+Neuron = tiny decision-maker
+
+takes inputs
+gives each input an importance [weight]
+adds small bias
+decides how "strongly" it should respond	via Activation Function
+
+
+Listen to all signals -> weigh them -> make final call
+
+
+Neurons good at recognizing patterns		[even if not perfect]
+
+
+Neurons inspired by human brain
+Artificial neuron similar but in math form
+
+Weigh + Add step
+[brain's weighing scale]
+
+weighted sum = neuron's way of "thinking"
+
+
+Activation = turning "thinking" into action
+e.g.
+
+Sigmoid		Logisting fn
+Tanh		Hyperbolic tangent
+ReLU		Rectified Linear Unit
+Softmax		multiple choices
+
+
+ReLU
+energetic + fast
+default for DL
+
+Sigmoid
+ideal for probabilities
+
+Tanh
+ideal for hidden layers in older networks
+
+Softmax
+pick one of many tasks
+
+
+SUMMARY
+A neuron takes multiple clues, weighs them, adds bias and
+uses an activation to decided "how much to care"
+
+
+Role of activation functions
+each layer in neural network = own personality
+activation function gives that personality
+
+Hidden layers		learn patterns			ReLU or Tanh
+Output layers		turns patterns into answers	Sigmoid or Softmax
+
+
+Ex01 - Binary classification
+hidden layer		ReLU
+output layer		Sigmoid
+
+Ex02 - Multi-class classification		Image cat, dog or horse?
+hidden layer		ReLU
+output layer		Softmax
+
+Ex03 - Regression				Predict price of house
+hidden layer		ReLU
+output layer		Linear	[no activation]
+
+
+RULE of Thumb
+* ReLU			everywhere by default for hidden layers
+* Sigmoid		binary		output layer
+* Softmax		multi-class	output layer
+* skip activation	regression	output layer
+
+
+PART I
+neuron = thinking unit of DL and how collection forms foundation of AI models
+
+
+Part II
+what a neuron is + how it learns
+* forward + backward propagation	data flows thru network
+* loss function				model learns from its mistakes
+* optimization process			gradient descent help reduce mistakes over time
+* regularization			make networks faster + scalable
