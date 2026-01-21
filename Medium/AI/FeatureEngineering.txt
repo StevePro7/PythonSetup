@@ -1,0 +1,72 @@
+You’re Not Bad at Machine Learning — Your Features Are
+21-Jan-2026
+
+https://medium.com/@rohanmistry231/youre-not-bad-at-machine-learning-your-features-are-815b3f1db6b0
+
+ML growth = better feature engineering NOT better algorithms
+
+
+Feature Engineering
+take raw data
+turn into usable info ML models can comprehend
+
+feature
+- selection
+- extraction
+- transformation
+- creation
+
+
+Feature Selection
+which columns matter
+remove garbage
+
+Feature Extraction
+create new features from raw data
+
+Feature Transformation
+convert features into better representations
+[log scaling, normalization]
+
+Feature Creation
+combine new features that didn't exist in the raw data
+
+
+7 Essential Feature Importance Techniques
+
+1. Correlation Analysis (The Simple & Fast)
+2. Permutation Feature Importance (The Trustworthy One)
+3. Tree-Based Feature Importance (The Fast Production Method)
+4. SHAP Values (The Game Theory Approach)
+5. LIME (Local Interpretable Model-Agnostic Explanations)
+6. Recursive Feature Elimination (RFE) — The Elimination Method
+7. Statistical Tests (Chi-Square, ANOVA, Correlation)
+
+
+Complete Feature Engineering workflow
+
+1. Exploratory Data Analysis (EDA)
+2. Feature Correlation Analysis
+3. Feature Importance Analysis
+4. Feature Engineering (Create New Features)
+5. Final Validation
+
+
+Common Mistakes (Don’t Make These!)
+
+1. Using Feature Importance from Trained on Training Data
+2. Removing Features Based on Correlation Alone
+3. Not Handling Collinearity
+4. Over-engineering Features
+5. Not Scaling Before SHAP
+
+
+SUMMARY
+Feature engineering = gather key variables from data specific to use case
+Domain knowledge = valuable in feature engineering
+Focus on most meaningful data for task at hand
+
+Domain knowledge matters more than algorithms
+
+Understand why feature should matter but
+let data guide through feature importance
