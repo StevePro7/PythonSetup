@@ -1,0 +1,66 @@
+Deep Learning Neural Networks Explained: ANN, CNN, RNN, and Transformers (Basic Understanding)
+27-Jan-2026
+
+https://sanjaysingh-dev.medium.com/deep-learning-neural-networks-explained-ann-cnn-rnn-and-transformers-basic-understanding-d5b190f63387
+
+
+ANN
+Artificial Neural Network
+* most basic type of neural network
+
+best for
+* classification problems		spam email detection
+* handwritten digit recognition
+* disease prediction
+* predicting house priceses
+
+ANN
+works best when data is structured
+[numbers, categories]
+
+
+
+Convolutional Neural Network
+* assigned to process image + video data
+* uses convolutional layers to extract features like edges
+
+applications
+* image classification			cat vs. dog
+* object defection			detecting cars, people
+* image segmentation			separate object from BG
+* video analysis
+
+
+Recurrent Neural Network
+* good for sequential data where order matters
+  e.g. text, speech, time-sen		unlike ANN and CNN
+
+applications
+* NLP 
+* speech recognition
+* time-series forecasting		stock prices, sensor data
+
+
+Transformers
+* replaced RNNs in modern NLP tasks
+* uses attention mechanisms instead of recurrence making more powerful + scalable
+
+famous models
+BERT for classification
+
+
+
+SUMMARY
+Deep Learning Neural Networks
+
+ANN
+* Feedforward neural networks
+* information processing
+
+CNN
+* harness spatial features
+* convolutional layers
+
+Transformers
+* self-attention
+* parallel processing

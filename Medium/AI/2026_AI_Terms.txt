@@ -1,0 +1,82 @@
+12 AI Terms You Must Know in 2026
+27-Jan-2026
+
+https://medium.com/activated-thinker/12-ai-terms-you-must-know-in-2026-d0ba0bb9a9cf
+
+
+01. LLM		Large Language Model
+Neural network trained on huge amounts of text
+learns how words follow each other
+
+
+02. Tokenization
+AI breaks text into small pieces called tokens
+Token = word, part word, symbol
+more tokens = more cost = more time
+i.e.
+shorter prompts = faster + cheaper
+
+
+03. Transformer
+Brain behind LLMs
+helps AI look at all words of the sentence at once using attention mechanism
+i.e.
+look at the relation of each word with all the others
+most all modern AI models use transformers
+
+
+04. Embeddings
+Models understand numbers NOT text
+embeddings convert text into meaning numbers
+simiar words = similar meanings = similar numbers
+
+
+05. Vector database
+Vector DB stores embeddings
+helps find similar meaning NOT exact matches
+much faster than normal DBs for AI tasks
+
+
+06. RAG		Retrieval Augmented Generation
+Allows AI to search for data before answering
+fetches relevant documents containing relevant data using embeddings
+
+
+07. Hallucination
+AI confidently gives wrong answers
+happens when AI has no read data to rely on
+RAG helps reduce hallucinations
+
+
+08. Prompt engineering
+How you talk to AI
+clear instructions = better answers
+good prompts save time + tokens
+
+
+09. Fine-tuning
+Training AI on your own data
+generalized model learns your style / domain
+used when prompts are not enough but
+more control = more cost
+
+
+10. Latency
+How long AI takes to respond
+lower  latency = faster answers
+higher latency = slow and annoying
+
+
+11. Agent
+An AI that takes actions not just answers
+can call tools, APIs, or other models
+used in automation and AI workflows
+
+
+12. Evaluation
+Checks how good AI answers are
+common methods:
+* human evaluation
+* BLEU / ROUGE
+* BERTScore
+* LLM
