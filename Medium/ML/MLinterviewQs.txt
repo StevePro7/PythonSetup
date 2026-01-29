@@ -1,0 +1,229 @@
+15 Machine Learning Interview Questions You MUST Know
+29-Jan-2026
+
+https://medium.com/activated-thinker/15-machine-learning-interview-questions-you-must-know-1e5a697a326a
+
+
+01. What Are the Main Types of Machine Learning?
+
+Supervised Learning
+model learns mapping between input and output
+e.g.
+spam detection
+price prediction
+disease classification
+
+Unsupervised Learning
+model discover hidden patterns on its own
+e.g.
+clustering customers
+grouping documents
+reducting data dimensions
+
+Semi-Supervised Learning
+small portion data labeled
+majority data unlabeld
+
+Reinforcement Learning
+agent learns by interacting with an environment
+using rewards and penalties
+e.g.
+game AI
+robotics
+recommendation systems
+
+
+02. Difference Between Classification and Regression
+
+Classification
+models predict category or class
+output = fixed set of labels
+
+Regression
+models predict continuous numerical value
+
+Output	discrete	= classification
+Output	continuous	= regression
+
+
+03. What is Overfitting and Underfitting
+
+Underfitting
+model too simple to capture patterns in the data
+
+Overfitting 
+model learns training data too well including noise and fluctuations
+NB: many models fail not due to algorithms but due to overfitting
+
+
+04. Explain the Bias-Variance Trade-off
+bias-variance trade-off explains why models make errors
+
+Bias
+refers to error caused by overly simple assumptions in the model
+
+Variance
+refers to error caused by the model being too sensitive to small
+changes in the data
+
+NB: good model balances both bias and variance
+to achieve strong performance on unseen data
+
+
+05. What is Cross-Validation and Why is it Used?
+Cross-validation
+technique to evaluate how well a model generalizes to unseen data
+helps 
+- detect overfitting
+- use data more efficiently
+- get reliable estimage of performance
+
+K-Fold cross-validation = most commonly used method
+
+
+06. How do you Evaluate a Classification Model?
+Accuracy
+measures overall correctness but can be misleading for imbalanced data
+
+Precision
+measures how many predicted positive cases are actually correct
+
+Recall 
+measures how many positive cases were correctly identified
+
+F1-score
+balances precision and recall
+
+Confusion matrix
+provides a detailed breakdown of correct and incorrect predictions
+
+
+07. What is ROC curve and AUC
+ROC curve
+shows how the true positive ratge changes with the false positive rate
+
+AUC	Area Under Curve
+summarizes the ROCD curve into a single number that represents
+how well the model distinguishes between classes
+
+ROC-AUC useful for imbalance classificaiton problems
+
+
+08. What is Feature Scaling and Why is it Important?
+Feature scaling
+ensures that numerical features are on a similar scale so
+no feature dominates others due to its magnitude
+
+Without scaling features with larger values can negatively impact
+model performance
+
+Scaling techniques
+* Normalization		scale 0 - 1
+* Standardization	mean 0 with unit variance
+
+
+09. How does a Decision Tree make decisions?
+Decision Tree
+algorithm that makes decisions ask series simple questions about the data
+each step [node] model selects one feature and condition to best split data
+
+DT
+often used as building blocks rather than final models
+
+
+10. What is Random Forest?  How is it better than Decision Tree?
+Random Forest
+ensemble learning method that combines the output of many decision trees
+to make final decision
+
+* reduces overfitting
+* more stable and reliable
+* works well even w/o heavy tuning
+
+
+11. What are Regularization Techniques [L1 and L2] Why are they used?
+Regularization 
+technique used to control model complexity and prevent overfitting
+
+many models [regression] assign large weights to features to fit training data
+Regularization discourages this behavior
+
+L1 Regularization	Lasso
+* adds penalty equal to absolute value of weights
+
+L2 Regularization 	Ridge
+* adds penalty equal to square of weights
+
+Regularization
+* prevents models from memorizing noise		overfitting
+* improves performance on unseen data
+* encourages simpler more general models
+
+Regularization
+one of the most practical technique to improve real-world ML models
+
+
+12. What is Gradient Descent?  How does it work?
+Gradient Descent
+optimization algorithm used to find the best model parameters by
+minimizing loss function
+
+Explain the steps:
+stand on mountain and try to reach lowest point
+
+Gradient Descent is fundamental to both classical ML and DL
+
+
+13. Why is Train-Validation-Test Split important?
+Data splitting ensures that we honestly evaluate how well a model performns
+
+Training set
+used to teach the model patterns
+
+Validation set
+used to tune hyperparameters and make model decisions
+
+Test set
+used fonly once for final perfomance evaluation
+
+This process prevents data leakage and gives confidence that the model will
+work in real-world conditions
+
+
+14. What is Confusion Matrix and How do you Interpret it?
+Confusion Matrix
+table that shows actual values vs. predicted values in classication
+
+TP	True  Positives		correct   positive predictions
+TN	True  Negatives		correct   negative predictions
+FP	False Positives		predicted positive but actually negative
+FN	False Negatives		predicted negative but actually positive
+
+Matix shows
+* Accuracy
+* Precision
+* Recall
+* F1-score
+
+Confusion matrix helps understand what kind of errors the model makes
+which is far more important than accuracy alone in many applications
+
+
+15. What is Feature Engineering?  Why is it Important?
+Feature Engineering
+the process of creating better input data for a ML model
+
+Raw data = rarely useful
+Feature Engineering transforms data into format that models can learn from effectively
+
+EG
+* extract day, month, weekday from date
+* encode categories like city or gender
+
+Feature Engineering = necessary
+* models learn patterns from features not raw data
+* good features can drastically improve performance
+* often more impactful than changing algorithms
+
+strong feature engineering separates average models from great ones in real-world ML 
+
