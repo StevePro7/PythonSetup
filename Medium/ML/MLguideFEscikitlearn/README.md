@@ -2,9 +2,10 @@ Feature Engineering for Machine Learning:
 A Practical Guide with Scikit-learn
 
 24-Jan-2026
-
+https://christianbernecker.medium.com/feature-engineering-for-machine-learning-a-practical-guide-with-scikit-learn-43e2d3a79b01
 
 Ex 01
+1. Handling Dates: From a Timestamp to a Signal
    tenure_months  monthly_charge last_login_date subscription_plan
 0              3            9.99      2025-09-15             Basic
 1             24           19.99      2025-09-10           Premium
@@ -14,6 +15,7 @@ Ex 01
 
 
 Ex02
+2. Binning Numbers: From Raw Counts to Meaningful Groups
   last_login_date  days_since_last_login
 0      2025-09-15                      4
 1      2025-09-10                      9
@@ -23,6 +25,7 @@ Ex02
 
 
 Ex 03
+3. Creating Interaction Features: Combining Clues
    tenure_months  tenure_group
 0              3           0.0
 1             24           2.0
@@ -32,6 +35,7 @@ Ex 03
 
 
 Ex 04
+4. Encoding Categories: Making Text Understandable
    tenure_months  monthly_charge  tenure_charge_interaction
 0              3            9.99                      29.97
 1             24           19.99                     479.76
@@ -41,6 +45,7 @@ Ex 04
 
 
 Ex 05
+Putting It All Together with ColumnTransformer
    subscription_plan_Basic  subscription_plan_Premium
 0                      1.0                        0.0
 1                      0.0                        1.0

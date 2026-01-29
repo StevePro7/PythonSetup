@@ -1,13 +1,14 @@
-from sklearn.preprocessing import KBinsDiscretizer
+# 3. Creating Interaction Features: Combining Clues
+from sklearn.preprocessing import PolynomialFeatures
 from info import df
 
-# We need to reshare the data for the transformer
-tenure_data = df[["tenure_months"]]
+# Select the features to interact
+interaction_features = df[["tenure_months", "monthly_charge"]]
 
-# Initialize the binner to create 3x groups
-binner = KBinsDiscretizer(n_bins=3, encode="ordinal", strategy="uniform", subsample=None)
+# Create the interaction terms (e.g. tenure * monthly_charge)
+poly = PolynomialFeatures(interaction_only=True, include_bias=False)
+interactions = poly.fit_transform(interaction_features)
 
-# Fit and transform the data
-df["tenure_group"] = binner.fit_transform(tenure_data)
-
-print(df[["tenure_months", "tenure_group"]].head())
+# Add the new feature to the DataFrame
+df["tenure_charge_interaction"] = interactions[:, -1]       # last column = interaction term
+print(df[["tenure_months", "monthly_charge", "tenure_charge_interaction"]].head())
