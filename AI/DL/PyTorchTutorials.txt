@@ -9,3 +9,9 @@ https://docs.pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
 https://docs.pytorch.org/tutorials
 
 https://docs.pytorch.org/docs/stable/index.html
+
+
+
+Where do I go next?
+Train neural nets to play video games
+https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html

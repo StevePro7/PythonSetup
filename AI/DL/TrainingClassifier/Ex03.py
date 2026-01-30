@@ -1,4 +1,4 @@
-# 2. Define a Convolutional Neural Network
+# 3. Define a Loss function and optimizer
 # Ex02
 import torch
 import torch.nn as nn
@@ -25,11 +25,13 @@ class Net(nn.Module):
         return x
 
 
-
-device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-print(device)
-
 net = Net()
-net.to(device)
 
-print("End2!")
+
+# Ex03
+import torch.optim as optim
+
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+
+print("End3")
