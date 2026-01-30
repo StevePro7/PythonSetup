@@ -1,0 +1,117 @@
+Reinforcement Learning (RL) Basics You Should Know
+30-Jan-2026
+
+https://medium.com/@StackSoul/reinforcement-learning-rl-basics-you-should-know-064ddca08ea0
+
+
+Reinforcement Learning
+type of machine learning where system [agent] learns by
+interacting with an environment
+
+
+Agent
+- takes an action
+- gets feedback		[reward or penaly]
+- learns what works
+- tries again
+
+
+Terminology
+
+1. Agent
+learner or decision-maker
+e.g.
+robot
+game player
+trading bot
+
+
+2. Environment
+world the agent lives in
+e.g.
+game screen
+road
+stock market
+
+
+3. State
+current situation
+e.g.
+player position
+speed
+score
+
+
+4. Action
+what the agent can do
+e.g.
+move left
+buy stock
+accelerate
+
+
+5. Reward
+feedback from environment
+e.g.
++1 wining
+-1 losing
+
+
+6. Policy
+strategy for choosing actions
+e.g.
+if enemy is near then run
+
+
+
+7. Value function
+how good a state is in long-term rewards
+
+
+
+Real-world applications
+1. Game AI
+2. Robotics
+3. Self-driving cars
+4. Trading bots
+5. Industrial systems
+
+
+RL Algorithms
+1. Q-Learning		learns how good an action is
+2. SARSA		similar to Q-Learning but uses current policy
+3. DQN			Deep Q Network	use neural networks
+4. Policy Gradients	directly improves the policy instead of values
+5. Actor-Critic		one part decides actions another evaluates
+
+
+Rewards define everything!
+
+
+Typical RL loop
+1. observe current state
+2. choose an action
+3. perform action
+4. receive reward and next state
+5. update policy or values
+6. repeat
+
+
+RL challenges
+* exploration vs. exploitation
+* rewards delayed
+* sparse rewards = learning slow
+* high computation cost
+* training takes time + patience
+
+
+RL libraries
+* Open AI Gym
+* Stable-Baselines3
+* RLlib
+* TensorFlow agents
+* PyTorch RL tools
+
+
+Summary
+RL not about perfection but learning from mistakes
