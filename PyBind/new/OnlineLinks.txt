@@ -1,0 +1,21 @@
+OnlineLinks
+31-Jan-2026
+
+ChatGPT
+https://chatgpt.com/c/e300ba33-f2b2-435a-af8b-b14d3536a54d
+
+
+Pybind11 Tutorial: Binding C++ Code to Python
+https://medium.com/@ahmedfgad/pybind11-tutorial-binding-c-code-to-python-337da23685dc
+
+
+
+Using Python with C++. Part1.
+https://medium.com/@stevechange/using-python-with-c-part1-3e894912214d
+
+Using Python with C++. Part2.
+https://medium.com/@stevechange/using-python-with-c-part2-e1db73185c9e
+
+
+Example debugging mixed Python C++ in VS Code
+https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code
