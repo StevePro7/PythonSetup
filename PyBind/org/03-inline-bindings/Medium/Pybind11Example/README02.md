@@ -15,6 +15,13 @@ example.cpython-38-x86_64-linux-gnu.so
 Must move the SO [shared object] file to the same location as
 AddTest.py
 
+DEBUGGING
+Reference:
+~/GitHub/StevePro9/PythonSetup/PyBind/DebugEX00
+source
+https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code
+
+
 AddTest.py
 Set breakpoint
 F5
@@ -45,9 +52,3 @@ PyCharm F5
 VS Code break
 
 
-Reference:
-~/GitHub/StevePro9/PythonSetup/PyBind/DebugEX00
-
-
-source
-https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code
