@@ -8,8 +8,11 @@ uv venv --python 3.11.11
 source .venv/bin/activate
 
 uv add torch torchvision torchaudio
-
 uv add matplotlib
+
+IMPORTANT
+Data is stored here
+~/GitHub/StevePro7/PythonSetup/AI/DL/TrainingClassifier
 
 
 #  Ex01
