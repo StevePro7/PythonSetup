@@ -13,7 +13,8 @@ Creates .venv
 Otherise  
 source .venv/bin/activate  
 
-uv pip install pybind11  
+uv add pybind11
+#uv pip install pybind11  
 uv sync  
 
 which python  
@@ -58,3 +59,8 @@ cd ~/GitHub/StevePro9/PythonSetup/PyBind/PyBind11Test/.venv/lib/python3.11/site-
 cp ~/GitHub/StevePro9/PythonSetup/PyBind/PyBind11Test/build/hello.cpython-311-x86_64-linux-gnu.so .  
 
 Python complete:   
+
+
+
+cd /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/org/03-inline-bindings/PyBind11Test/.venv/lib/python3.11/site-packages
+/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/org/03-inline-bindings/PyBind11Test/build/hello.cpython-311-x86_64-linux-gnu.so

@@ -1,0 +1,13 @@
+TODO
+01-Feb-2026
+
+01.
+Pybind11 Tutorial: Binding C++ Code to Python
+https://medium.com/@ahmedfgad/pybind11-tutorial-binding-c-code-to-python-337da23685dc
+Using NumPy
+
+
+02.
+Using Python with C++. Part2.
+https://medium.com/@stevechange/using-python-with-c-part2-e1db73185c9e
+Guitar

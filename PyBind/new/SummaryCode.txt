@@ -1,0 +1,23 @@
+SummaryCode
+01-Feb-2026
+
+VS Code
+01-example
+
+PyCharm
+02-exampleHW
+03-exampleCalc
+manully use setuptools
+python setup.py build
+python setup.py install
+
+
+10-stevechange-01
+based on
+/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/org/03-inline-bindings/PyBind11Test
+I use UV Python 3.11.11
+pyproject.toml
+CMakeLists.txt
+All work done in PyCharm
+i.e. no work done in CLion
+because both config files on the same level = corrupt .idea
