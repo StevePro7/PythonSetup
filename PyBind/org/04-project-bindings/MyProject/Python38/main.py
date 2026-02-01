@@ -1,5 +1,5 @@
 import myproject
-import myproject
+
 def main():
     x = myproject.hello()
     print(f"X={x}")
