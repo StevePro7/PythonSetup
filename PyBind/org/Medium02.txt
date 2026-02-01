@@ -20,7 +20,7 @@ PYBIND11_MODULE(example, m) {
 
 3D
 Using NumPy
-pybind11::array_t<double> scale_array(pybind11::array_t<double> input_array, double scalar) 
+pybind11::array_t<double> scale_array(pybind11::array_t<double> input_array, double scalar)
 {}
 
 
