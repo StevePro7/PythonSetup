@@ -1,0 +1,6 @@
+[submodule "PyBind/new-01/10-stevechange-01/ThirdPartyLib/pybind11"]
+	path = PyBind/new-01/10-stevechange-01/ThirdPartyLib/pybind11
+	url = https://github.com/pybind/pybind11.git
+[submodule "PyBind/org/03-inline-bindings/Medium/Pybind11Example/ThirdPartyLib/pybind11"]
+	path = PyBind/org/03-inline-bindings/Medium/Pybind11Example/ThirdPartyLib/pybind11
+	url = https://github.com/pybind/pybind11.git

@@ -1,0 +1,26 @@
+# Build directories
+build/
+cmake-build-debug/
+dist/
+*.egg-info/
+__pycache__/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+.python-version
+.venv/
+venv/
+*.pyc
+*.pyo
+*.pyd
+
+# Project specific
+uv.lock
+*.so
+*.o
+*.a
