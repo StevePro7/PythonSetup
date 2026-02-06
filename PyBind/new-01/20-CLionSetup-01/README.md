@@ -20,3 +20,14 @@ my_project/
 │   └── test_api.cpp
 └── third_party/
 └── pybind11/            # optional: git submodule
+
+
+Tidy up CMakeLists.txt
+Move pybind_module beneath bindings directory
+
+Build directory
+In CLion, go to File → Settings (or CLion → Preferences on macOS)
+Navigate to Build, Execution, Deployment → CMake
+Find the "Build directory" field (it currently shows cmake-build-debug)
+Change it to build
+Click OK
