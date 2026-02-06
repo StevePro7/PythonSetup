@@ -74,3 +74,10 @@ I believe you must delete build directory and Rebuild project in order to get 31
 
 my_api_py.cpython-311-x86_64-linux-gnu.so
 /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/new-01/20-CLionSetup-01/build/python
+
+
+CLion
+Run | Edit configurations...
+delete any unused entries
+OR
+set_target_properties(my_api_py PROPERTIES EXCLUDE_FROM_ALL TRUE)

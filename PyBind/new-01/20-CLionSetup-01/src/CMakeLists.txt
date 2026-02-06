@@ -45,7 +45,23 @@ target_link_libraries(my_api_py
         PRIVATE my_api
         )
 
-# Optional: nicer output location for Python
-set_target_properties(my_api_py PROPERTIES
-        LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/python
-        )
+# Install directly into venv site-packages when project .venv exists
+if(EXISTS "${CMAKE_SOURCE_DIR}/.venv/bin/python")
+    set(PY_VENV_SITE_PACKAGES "${CMAKE_SOURCE_DIR}/.venv/lib/python3.11/site-packages")
+    # Ensure the directory exists at build time
+    add_custom_command(TARGET my_api_py
+                       POST_BUILD
+                       COMMAND ${CMAKE_COMMAND} -E make_directory "${PY_VENV_SITE_PACKAGES}"
+                       COMMENT "Ensuring venv site-packages exists: ${PY_VENV_SITE_PACKAGES}")
+
+    set_target_properties(my_api_py PROPERTIES
+            LIBRARY_OUTPUT_DIRECTORY ${PY_VENV_SITE_PACKAGES}
+            )
+    message(STATUS "Python module will be built into venv site-packages: ${PY_VENV_SITE_PACKAGES}")
+else()
+    # Default to build output
+    set_target_properties(my_api_py PROPERTIES
+            LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/python
+            )
+    message(STATUS "Python module will be built into: ${CMAKE_BINARY_DIR}/python")
+endif()
