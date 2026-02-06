@@ -9,9 +9,6 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 include(CTest)
 enable_testing()
 
-# ---- Dependencies ----
-include(cmake/Dependencies.cmake)
-
 # ---- Project subdirs ----
 add_subdirectory(src)
 add_subdirectory(tests)
