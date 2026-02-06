@@ -1,3 +1,22 @@
+# ---- Python 3.11 ----
+if(NOT Python3_EXECUTABLE)
+    # First, check if .venv exists in project root
+    if(EXISTS "${CMAKE_SOURCE_DIR}/.venv/bin/python")
+        set(Python3_EXECUTABLE "${CMAKE_SOURCE_DIR}/.venv/bin/python")
+        message(STATUS "Using project venv Python: ${Python3_EXECUTABLE}")
+    # Then check if running in a virtual environment
+    elseif(DEFINED ENV{VIRTUAL_ENV})
+        set(Python3_EXECUTABLE "$ENV{VIRTUAL_ENV}/bin/python")
+        message(STATUS "Using activated venv Python: ${Python3_EXECUTABLE}")
+    else()
+        # Fall back to system python
+        execute_process(COMMAND which python OUTPUT_VARIABLE Python3_EXECUTABLE OUTPUT_STRIP_TRAILING_WHITESPACE)
+        message(STATUS "Using system Python: ${Python3_EXECUTABLE}")
+    endif()
+endif()
+
+find_package(Python3 3.11 REQUIRED COMPONENTS Interpreter Development)
+
 # ---- pybind11 ----
 include(FetchContent)
 FetchContent_Declare(

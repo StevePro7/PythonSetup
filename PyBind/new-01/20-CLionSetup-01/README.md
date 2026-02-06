@@ -31,3 +31,34 @@ Navigate to Build, Execution, Deployment → CMake
 Find the "Build directory" field (it currently shows cmake-build-debug)
 Change it to build
 Click OK
+
+
+IMPORTANT
+CLion | Build menu | Clean | Rebuild
+
+This creates the Shared Object SO file
+my_api_py.cpython-38-x86_64-linux-gnu.so
+/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/new-01/20-CLionSetup-01/build/python
+
+
+
+Python 3.11
+uv venv --python 3.11
+source .venv/bin/activate
+`which python` --version
+Python 3.11.11
+
+which python
+.venv/bin/python
+
+Project | Settings
+Build, Execution ...
+CMake
+CMake options
+-DPython3_EXECUTABLE=/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/new-01/20-CLionSetup-01/.venv/bin/python
+-DPython3_EXECUTABLE=`which python`
+
+
+
+my_api_py.cpython-311-x86_64-linux-gnu.so
+/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/new-01/20-CLionSetup-01/build/python
