@@ -10,7 +10,6 @@ FetchContent_MakeAvailable(pybind11)
 # ---- Core C++ library ----
 add_library(my_api
         api/my_api.cpp
-        api/my_api.h
         )
 
 target_include_directories(my_api
