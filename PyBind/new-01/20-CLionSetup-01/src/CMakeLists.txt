@@ -31,7 +31,7 @@ target_link_libraries(my_app
 
 # ---- Python module (pybind11) ----
 pybind11_add_module(my_api_py
-        pybind_module.cpp
+        bindings/pybind_module.cpp
         )
 
 target_link_libraries(my_api_py
