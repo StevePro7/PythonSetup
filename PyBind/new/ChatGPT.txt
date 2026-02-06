@@ -1,0 +1,4 @@
+Chat GPT
+06-Feb-2026
+
+I am on Linux - I want to build C++ project using CLion that is an executable but has a lot of C++ library API code consumed internally by the C++ project and externally by Python using PyBind11 - I want all build tool chain to be internal to CLion using CMakeLists.txt - ideally one top level CMakeLists.txt file that drives the entire project with all C++ library API code in src folder and all C++ test code using gtest in tests folder with the Python to C++ via PyBind bindings in its own file for Python consumption - could you show me the best project setup and CMakeLists.txt file for these requirements all within CLion - NB: I do not want to execute cmake and make commands externally as I want to build and debug step thru C++ code all within CLion
