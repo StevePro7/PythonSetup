@@ -51,14 +51,26 @@ Python 3.11.11
 which python
 .venv/bin/python
 
-Project | Settings
-Build, Execution ...
-CMake
-CMake options
--DPython3_EXECUTABLE=/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/new-01/20-CLionSetup-01/.venv/bin/python
--DPython3_EXECUTABLE=`which python`
+
+//This only works if you use the full path to .venv
+//Project | Settings
+//Build, Execution ...
+//CMake
+//CMake options
+//-DPython3_EXECUTABLE=/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/new-01/20-CLionSetup-01/.venv/bin/python
+//-DPython3_EXECUTABLE=`which python`
 
 
+Update src CMakeLists.txt file instead
+if(EXISTS "${CMAKE_SOURCE_DIR}/.venv/bin/python")
+# Using project venv (Python 3.11)
+set(Python3_EXECUTABLE "${CMAKE_SOURCE_DIR}/.venv/bin/python")
+message(STATUS "Using project venv Python: ${Python3_EXECUTABLE}")
+find_package(Python3 3.11 REQUIRED COMPONENTS Interpreter Development)
+endif()
+
+IMPORTANT 
+I believe you must delete build directory and Rebuild project in order to get 311 SO 
 
 my_api_py.cpython-311-x86_64-linux-gnu.so
 /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/new-01/20-CLionSetup-01/build/python

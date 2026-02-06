@@ -4,10 +4,6 @@ if(EXISTS "${CMAKE_SOURCE_DIR}/.venv/bin/python")
     set(Python3_EXECUTABLE "${CMAKE_SOURCE_DIR}/.venv/bin/python")
     message(STATUS "Using project venv Python: ${Python3_EXECUTABLE}")
     find_package(Python3 3.11 REQUIRED COMPONENTS Interpreter Development)
-else()
-    # Using system python (Python 3.8)
-    message(STATUS "Using system Python")
-    find_package(Python3 3.8 REQUIRED COMPONENTS Interpreter Development)
 endif()
 
 # ---- pybind11 ----
