@@ -1,4 +1,4 @@
-# Define loss function and optimizer
+# 3. Define a Loss function and optimizer
 import torch
 import torchvision
 import torchvision.transforms as transforms
@@ -15,13 +15,13 @@ batch_size = 4
 
 trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
                                         download=True, transform=transform)
-trainLoader = torch.utils.data.DataLoader(trainset, batch_size=batch_size,
+trainloader = torch.utils.data.DataLoader(trainset, batch_size=batch_size,
                                           shuffle=True, num_workers=2)
 
 testset = torchvision.datasets.CIFAR10(root='./data', train=False,
-                                        download=True, transform=transform)
-testload = torch.utils.data.DataLoader(testset, batch_size=batch_size,
-                                       shuffle=False, num_workers=2)
+                                       download=True, transform=transform)
+testloader = torch.utils.data.DataLoader(testset, batch_size=batch_size,
+                                         shuffle=False, num_workers=2)
 
 classes = ('plane', 'car', 'bird', 'cat',
            'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
@@ -44,9 +44,9 @@ class Net(nn.Module):
         self.fc3 = nn.Linear(84, 10)
 
     def forward(self, x):
-        x = self.pool(F.relu((self.conv1(x))))
-        x = self.pool(F.relu((self.conv2(x))))
-        x = torch.flatten(x, 1)     # flatten all dimensions except batch
+        x = self.pool(F.relu(self.conv1(x)))
+        x = self.pool(F.relu(self.conv2(x)))
+        x = torch.flatten(x, 1) # flatten all dimensions except batch
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         x = self.fc3(x)
@@ -69,10 +69,10 @@ optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
 
 # Ex04
-for epoch in range(2):          # loop over the dataset multiple times
+for epoch in range(2):  # loop over the dataset multiple times
 
     running_loss = 0.0
-    for i, data in enumerate(trainLoader, 0):
+    for i, data in enumerate(trainloader, 0):
         # get the inputs; data is a list of [inputs, labels]
         # inputs, labels = data
         inputs, labels = data[0].to(device), data[1].to(device)
@@ -88,12 +88,6 @@ for epoch in range(2):          # loop over the dataset multiple times
 
         # print statistics
         running_loss += loss.item()
-        if i % 2000 == 1999:            # print every 2000 mini-batches
-            print(f'[{epoch + 1}, {i + 5:5d}] loss: {running_loss / 2000:.3f}')
+        if i % 2000 == 1999:    # print every 2000 mini-batches
+            print(f'[{epoch + 1}, {i + 1:5d}] loss: {running_loss / 2000:.3f}')
             running_loss = 0.0
-
-print("Finished Training")
-
-
-
-print("the end")
