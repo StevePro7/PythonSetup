@@ -91,3 +91,29 @@ for epoch in range(2):  # loop over the dataset multiple times
         if i % 2000 == 1999:    # print every 2000 mini-batches
             print(f'[{epoch + 1}, {i + 1:5d}] loss: {running_loss / 2000:.3f}')
             running_loss = 0.0
+
+print('Finished Training')
+
+PATH = './cifar_net.pth'
+torch.save(net.state_dict(), PATH)
+
+dataiter = iter(testloader)
+images, labels = next(dataiter)
+
+# print images
+# functions to show an image
+
+
+def imshow(img):
+    img = img / 2 + 0.5     # unnormalize
+    npimg = img.numpy()
+    plt.imshow(np.transpose(npimg, (1, 2, 0)))
+    plt.savefig("Ex10.png", bbox_inches="tight", dpi=300)
+    plt.close()
+    #plt.show()
+
+
+imshow(torchvision.utils.make_grid(images))
+print('GroundTruth: ', ' '.join(f'{classes[labels[j]]:5s}' for j in range(4)))
+# GroundTruth:  cat   ship  ship  plane
+
