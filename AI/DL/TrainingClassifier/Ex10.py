@@ -126,7 +126,7 @@ _, predicted = torch.max(outputs, 1)
 
 print('Predicted: ', ' '.join(f'{classes[predicted[j]]:5s}'
                               for j in range(4)))
-# Predicted:  cat   ship  ship  ship
+# Predicted:  cat   ship  ship  plane
 
 correct = 0
 total = 0
@@ -142,7 +142,7 @@ with torch.no_grad():
         correct += (predicted == labels).sum().item()
 
 print(f'Accuracy of the network on the 10000 test images: {100 * correct // total} %')
-# Accuracy of the network on the 10000 test images: 54 %
+# Accuracy of the network on the 10000 test images: 55 %
 
 
 # prepare to count predictions for each class
@@ -167,4 +167,17 @@ for classname, correct_count in correct_pred.items():
     accuracy = 100 * float(correct_count) / total_pred[classname]
     print(f'Accuracy for class: {classname:5s} is {accuracy:.1f} %')
 
-    print("End6!!")
+print("The end")
+
+
+# Accuracy for class: plane is 53.0 %
+# Accuracy for class: car   is 72.0 %
+# Accuracy for class: bird  is 49.8 %
+# Accuracy for class: cat   is 28.4 %
+# Accuracy for class: deer  is 41.0 %
+# Accuracy for class: dog   is 56.1 %
+# Accuracy for class: frog  is 66.4 %
+# Accuracy for class: horse is 56.5 %
+# Accuracy for class: ship  is 69.1 %
+# Accuracy for class: truck is 67.0 %
+#
