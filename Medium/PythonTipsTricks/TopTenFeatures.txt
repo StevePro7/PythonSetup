@@ -1,0 +1,59 @@
+10 Python Features You’re Not Using (But Really Should)
+07-Feb-2026
+
+https://python.plainenglish.io/10-python-features-youre-not-using-but-really-should-283608887ff9
+
+
+01. functools.cache
+memoization
+CLIs, ETL jobs, batch scripts
+
+
+02. typing.Protocol
+function depends on behavior not inheritance
+structural typing - similar to interface??
+
+
+03. dataclasses.replace
+replace gives dataclasses immutability without ceremony
+instead of mutating you get a new object while old one stays untouched
+
+
+04. itertools.pairwise
+replace manually index into a list to compare adjacent elements
+
+
+05. assignment expressions [:=]
+walrus operator
+helps stream or parse loops where you'd otherwise duplicate work
+
+
+06. pathlib
+replaces os.path, os.listdir etc.
+paths become objects which have methods
+
+
+07. contextlib.suppress
+cleaner than try-except-pass for things you don't care if they fail
+e.g.
+delete temp file
+
+
+08. contextvars
+replace passing IDs through async code
+globals don't work neither do thread locals
+async task gets its own logical context
+set a value once and read it anywhere downstream
+
+
+09. match with guards
+replace large if-else chains
+match with guards help express intent
+
+
+10. contextlib.ExitStack
+when managing a dynamic number of resources
+ExitStack lets you enter an unknown number of context managers
+and guarantees cleanup
+no half-open resources when something fails mid-way
+

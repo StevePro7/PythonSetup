@@ -1,0 +1,24 @@
+Reinforcement Learning with Verifiable Rewards (RLVR): Training LLMs for Real Reasoning
+07-Feb-2026
+
+https://ggarkoti02.medium.com/reinforcement-learning-with-verifiable-rewards-rlvr-training-llms-for-real-reasoning-5ee90d987537
+
+
+RL
+relied on explicit human feedback or learned reward models to train agents
+
+
+RLVR
+Verifiable Rewards
+training paradigm powering reasoning models = next gen problem solving AI
+
+Instead of guessing what humans prefer RLVR uses deterministic
+rule-based signals to tell models when they are correct
+
+
+RLHF
+2022-2024
+dominated
+
+Problem: reward models = neural networks = they hallucinate!
+<the end>
