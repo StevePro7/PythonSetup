@@ -1,0 +1,11 @@
+[project]
+name = "qlearning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11.11"
+dependencies = [
+    "gymnasium[classic-control]>=1.2.3",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+]
