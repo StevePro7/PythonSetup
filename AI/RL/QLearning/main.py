@@ -92,7 +92,11 @@ plt.xlabel('Episode')
 plt.ylabel('Total Reward')
 plt.legend()
 plt.grid(True)
-plt.show()
+#plt.show()         # "UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown"
+
+# Save the plot as a PNG file
+plt.savefig('cartpole_training_progress.png', dpi=300, bbox_inches='tight')
+plt.close()  # Close the figure to free memory
 
 # --- Part 3: Watching the Trained Agent ---
 
