@@ -20,6 +20,7 @@ target_link_libraries(my_api_tests
         PRIVATE
         my_api
         GTest::gtest_main
+        GTest::gmock
         Python3::Python
         )
 
