@@ -48,3 +48,17 @@ Process finished with exit code 1
 
 Templates must be header only
 Templates must usually be header-only.
+
+
+
+IMPORTANT
+I added gmock to CMakeLists.txt file - just one line added
+
+
+target_link_libraries(my_api_tests
+        PRIVATE
+        my_api
+        GTest::gtest_main
+        GTest::gmock
+        Python3::Python
+        )

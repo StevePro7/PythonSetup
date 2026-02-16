@@ -1,5 +1,6 @@
 // my_api.cpp
 #include "my_api.h"
+#include <stdexcept>
 
 
 Guitar::Guitar(const std::string& manufacturer_name,
@@ -27,5 +28,10 @@ void Guitar::SetManufacturer(const std::string& manufacturer_name)
 
 void Guitar::SetPrice(const float price)
 {
+    if (price < 0.0f)
+    {
+        throw std::invalid_argument("Price cannot be negative");
+    }
+
     mPrice = price;
 }
