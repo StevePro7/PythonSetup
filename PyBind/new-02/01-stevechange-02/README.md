@@ -14,6 +14,8 @@ Open
 
 uv venv --python 3.11.11
 source .venv/bin/activate
+OR
+.venv\Scripts\activate
 
 
 
@@ -29,3 +31,16 @@ make
 Close CLion
 Delete .idea
 re-launch CLion
+
+
+Windows
+Launch VS 2022
+File | Open | CMake...
+Navigate to root level 
+CMakeLists.txt
+
+
+Launch PyCharm
+File | New | Project
+weird had to create new project to choose UV package manager
+overwrite main.py
