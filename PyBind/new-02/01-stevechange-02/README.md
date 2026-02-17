@@ -40,7 +40,19 @@ Navigate to root level
 CMakeLists.txt
 
 
+Build All
+output 
+my_api_py.cp312-win_amd64.pyd
+~\GitHub\StevePro9\PythonSetup\PyBind\new-02\01-stevechange-02\cpp\out\build\x64-Debug\python
+
 Launch PyCharm
 File | New | Project
 weird had to create new project to choose UV package manager
 overwrite main.py
+
+Copy
+my_api_py.cp312-win_amd64.pyd
+FROM
+~\GitHub\StevePro9\PythonSetup\PyBind\new-02\01-stevechange-02\cpp\out\build\x64-Debug\python
+TO
+~\GitHub\StevePro9\PythonSetup\PyBind\new-02\01-stevechange-02\python\.venv\Lib\site-packages
