@@ -1,6 +1,6 @@
 import html
 
-file = "example.cpp"
+file = "commands.txt"
 
 # Read the Python file
 with open(file, "r", encoding="utf-8") as f:

@@ -5,7 +5,7 @@
 &nbsp;&nbsp;import example
 &nbsp;&nbsp;
 &nbsp;&nbsp;result = example.add(1, 2)
-&nbsp;&nbsp;print(result)
+&nbsp;&nbsp;print(f"1 + 2 = {result}")
 </pre>
 </td></tr>
 </table>
