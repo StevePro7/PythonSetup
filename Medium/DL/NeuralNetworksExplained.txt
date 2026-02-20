@@ -1,0 +1,121 @@
+Neural Networks & Deep Learning-Explained Simply
+20-Feb-2026
+
+
+Neurons
+human brain = tiny cells
+each one connects to thousands of others
+sending signals + learning from patterns
+
+
+Neural Network = this + maths
+
+
+Each neuron
+take inputs [numbers] * weights [importants] + bias [tweak] 
+pass through an Activation Functions = decide what to next
+
+
+LAYERS
+input	layer	data	image
+hidden	layer	find patterns, edges, emotions, context
+output	layer 	give final result	cat OR no cat
+
+
+Summary
+learning by connecting and adjusting those weights
+over and over
+
+
+1. Activation Functions — The Brain’s Switches
+if neurons added and multiplied then result = linear = boring + limited
+
+so
+activation function helps neural network learn non-linear patterns
+
+
+1. ReLU	Rectified Linear Unit		most common + fast
+2. Sigmoid	great for binary outputs	Yes / No
+3. Softmax	used when you have multiple classes
+
+
+Activation Functions
+let neural networks bend reality to understand curves,
+edges or emotions that aren't straight lines
+
+
+
+2. Deep Learning = Neural Networks With Many Layers
+more layers = better model becomes @ learning abstract features
+shapes + meanings
+
+
+CNNs
+Convolutional Neural Networks
+used for image recognition
+
+RNNs
+Recurrent Neural Networks
+time sequences or text
+
+Transformers
+used in language models
+ChatGPT, BERT, Gemini
+
+
+
+3. Loss Function & Optimization — The Learning Cycle
+neural network = prediction = how wrong was I?
+
+Loss
+loss function to measure
+mean square error OR cross entropy
+
+
+Optimizer
+SGD
+tweaks the weights to minimize that loss in the next attempt
+
+CYCLE
+predict -> calc loss -> adjust weight -> repeat
+
+
+Summary
+model learns from trial n' error
+just like humans
+
+
+4. Backpropagation — The Secret Sauce
+how learning actually happens
+
+backpropagation = calculus [chain rule]
+calculate how much each weight contributed to error and adjusts it
+
+
+
+5. Different Types of Neural Networks
+CNN (Convolutional Neural Network)	images
+RNN (Recurrent Neural Network) 	time-based data like text, speech, or stock prices
+Transformer 				powers everything from Google Translate to ChatGPT
+
+
+6. Overfitting vs Underfitting
+1. Overfitting
+model memorizes training data but fails on new examples
+
+2. Underfitting
+model does not learn enough even from the training data
+
+
+FIX
+Regularization		reduce complexity
+Dropout layers		ignore some neurons during training
+More data!
+
+
+CONCLUSION
+neural networks are the foundation of AI
+not magic but math and patience
+
+AI = bunch of neurons working together making small improvements one iteration at a time
+
