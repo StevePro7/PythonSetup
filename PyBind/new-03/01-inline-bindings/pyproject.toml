@@ -1,0 +1,9 @@
+[project]
+name = "01-inline-bindings"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "pybind11>=3.0.2",
+]
+

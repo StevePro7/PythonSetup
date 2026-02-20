@@ -6,6 +6,33 @@ C++ Executable
 Language standard C++17
 Create
 
+cpp/
+├── src/
+│   ├── api/
+│   │   ├── my_api.h
+│   │   └── my_api.cpp
+│   ├── bindings/
+│   │   └── pybind_module.cpp	# pybind11 bindings
+│   ├── CMakeLists.txt
+│   ├── main.cpp            	# C++ executable entry point
+├── tests/
+│   ├── CMakeLists.txt
+│   └── test_api.cpp
+├── CMakeLists.txt          	# top-level, CLion entry point
+
+
+python/
+├── .venv/
+│   ├── lib/
+│   │   ├── python3.11
+│   │   │   ├── site-packages
+│   │   │   │   └── my_api_py.cpython-311-x86_64-linux-gnu.so
+├── main.py
+├── pyproject.toml
+├── README.md
+
+
+PREVIOUS
 my_project/
 ├── CMakeLists.txt          # top-level, CLion entry point
 ├── src/
