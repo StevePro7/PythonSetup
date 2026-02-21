@@ -4,6 +4,6 @@
 PYBIND11_MODULE(my_api_py, m)
 {
     // Optional module docstring
-    m.doc() = "pybind11 example module";
+    m.doc() = "pybind11 API module";
     m.def("add", &add, "A function that adds two numbers");
 }

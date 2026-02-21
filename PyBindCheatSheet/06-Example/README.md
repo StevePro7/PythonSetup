@@ -83,5 +83,14 @@ uv run test.py
 ```
 OUTPUT
 ```sh
-TODO
+Container[0] = 0.0
+Container[1] = 1.0
+Container[2] = 2.0
+Container[3] = 3.0
+Container[4] = 4.0
+Container[5] = 5.0
+Container[6] = 6.0
+Container[7] = 7.0
+Container[8] = 8.0
+Container[9] = 9.0
 ```

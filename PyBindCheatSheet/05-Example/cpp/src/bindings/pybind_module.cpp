@@ -6,7 +6,8 @@ namespace py = pybind11;
 
 PYBIND11_MODULE(my_api_py, m)
 {
-    m.doc() = "Guitar example";
+    // Optional module docstring
+    m.doc() = "pybind11 API module";
 
     py::class_<Guitar>(m, "Guitar")
         .def(py::init<const std::string&, const float, const int>())

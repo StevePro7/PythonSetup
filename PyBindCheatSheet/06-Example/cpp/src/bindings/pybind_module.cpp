@@ -5,7 +5,8 @@ namespace py = pybind11;
 
 PYBIND11_MODULE(my_api_py, m)
 {
-    m.doc() = "pybind template";
+    // Optional module docstring
+    m.doc() = "pybind11 API module";
 
     py::class_<Container<double>>(m, "Container")
         .def(py::init<const size_t>())
