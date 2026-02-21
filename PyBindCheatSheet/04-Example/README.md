@@ -12,7 +12,7 @@ Launch PyCharm | New Project
 
 | KEY | VALUE    |
 | :---   | :--- |
-| Location: | ~/HelloPybind/python   |
+| Location: | ~/HelloPyBind/python   |
 | Interpreter type: | uv   |
 | Python version: | 3.11   |
 | Path to uv: | ~/.local/bin/uv   |
@@ -31,7 +31,7 @@ Launch CLion | New Project
 | KEY | VALUE    |
 | :---   | :--- |
 | C++ | C++ Executable   |
-| Location: | ~/HelloPybind/cpp   |
+| Location: | ~/HelloPyBind/cpp   |
 | Language standard: | C++ 17   |
 Create
 

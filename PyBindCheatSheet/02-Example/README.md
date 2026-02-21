@@ -6,7 +6,7 @@ Launch PyCharm | New Project
 
 | KEY | VALUE    |
 | :---   | :--- |
-| Location: | ~/HelloPybind   |
+| Location: | ~/HelloPyBind   |
 | Interpreter type: | uv   |
 | Python version: | 3.11   |
 | Path to uv: | ~/.local/bin/uv   |

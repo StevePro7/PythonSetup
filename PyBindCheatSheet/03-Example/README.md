@@ -6,7 +6,7 @@ Launch PyCharm | New Project
 
 | KEY | VALUE    |
 | :---   | :--- |
-| Location: | ~/HelloPybind   |
+| Location: | ~/HelloPyBind   |
 | Interpreter type: | uv   |
 | Python version: | 3.11   |
 | Path to uv: | ~/.local/bin/uv   |
@@ -34,7 +34,7 @@ Build C++ code using cmake
 ```sh
 mkdir -p build
 cd build
-cmake -DPython3_EXECUTABLE=$(which python) ..  
+cmake -DPython3_EXECUTABLE=$(which python) ..
 make -j$(grep -c ^processor /proc/cpuinfo)
 ```
 OUTPUT

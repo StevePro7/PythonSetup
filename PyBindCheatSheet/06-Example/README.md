@@ -1,64 +1,87 @@
-16-Feb-2026
+## Example VI
+#### 31-Mar-2026
 
-Using Python with C++. Part2.
-https://medium.com/@stevechange/using-python-with-c-part2-e1db73185c9e
+### Hello PyBind
+Launch Terminal
+```sh
+mkdir ~/HelloPyBind
+cd ~/HelloPyBind
+```
 
+Launch PyCharm | New Project
 
-Copy from previous directory
-01-stevechange-01
+| KEY | VALUE    |
+| :---   | :--- |
+| Location: | ~/HelloPyBind/python   |
+| Interpreter type: | uv   |
+| Python version: | 3.11   |
+| Path to uv: | ~/.local/bin/uv   |
+Create
 
+Setup environment - if not auto created by PyCharm
+```sh
+uv venv --python 3.11
+source .venv/bin/activate       # OR .\.venv\Scripts\activate
+which python
+`which python` --version	# Python 3.11.11
+```
 
-Launch PyCharm
-Open
-~/GitHub/StevePro9/PythonSetup/PyBind/new-02/01-stevechange-03/python
+Launch CLion | New Project
 
-uv venv --python 3.11.11
-source .venv/bin/activate
+| KEY | VALUE    |
+| :---   | :--- |
+| C++ | C++ Executable   |
+| Location: | ~/HelloPyBind/cpp   |
+| Language standard: | C++ 17   |
+Create
 
+Ensure build directory set | File menu | Settings...
+```sh
+Build, Execution, Deployment
+CMake
+Build directory: build
+```
 
+Setup C++ folder structure for src and tests folders
+```sh
+cpp/
+├── src/
+│   ├── api/
+│   │   ├── my_api.h
+│   │   └── my_api.cpp
+│   ├── bindings/
+│   │   └── pybind_module.cpp	# pybind11 bindings
+│   ├── CMakeLists.txt
+│   ├── main.cpp            	# C++ executable entry point
+├── tests/
+│   ├── CMakeLists.txt
+│   └── test_api.cpp
+├── CMakeLists.txt          	# top-level, CLion entry point
+```
 
-Launch CLion
-build
+Write all C++ code for src and tests plus CMakeLists.txt
+```sh
+main.cpp
+test_api.cpp
+```
 
-mkdir build
-cd build
-cmake ..
-make
+Rebuild entire solution in Debug mode | Build menu
+```sh
+Rebuild all in 'Debug'
+```
 
+IMPORTANT - CMakeLists.txt files are configured to copy SO file into .venv directory!
 
-Close CLion
-Delete .idea
-re-launch CLion
+Launch PyCharm | Write code for Python code to test
+```sh
+test.py
+```
 
-
-First time I separated out
-Container.h
-Container.cpp
-
-but this creates linker error
-
-~/GitHub/StevePro9/PythonSetup/PyBind/new-02/01-stevechange-03/python/.venv/bin/python ~/GitHub/StevePro9/PythonSetup/PyBind/new-02/01-stevechange-03/python/main.py 
-Traceback (most recent call last):
-  File "~/GitHub/StevePro9/PythonSetup/PyBind/new-02/01-stevechange-03/python/main.py", line 1, in <module>
-    import my_api_py
-ImportError: ~/GitHub/StevePro9/PythonSetup/PyBind/new-02/01-stevechange-03/python/.venv/lib/python3.11/site-packages/my_api_py.cpython-311-x86_64-linux-gnu.so: undefined symbol: _ZN9ContainerIdEC1Em
-
-Process finished with exit code 1
-
-
-Templates must be header only
-Templates must usually be header-only.
-
-
-
-IMPORTANT
-I added gmock to CMakeLists.txt file - just one line added
-
-
-target_link_libraries(my_api_tests
-        PRIVATE
-        my_api
-        GTest::gtest_main
-        GTest::gmock
-        Python3::Python
-        )
+Finally hit F5 to run Python code to test C++ code or execute
+```sh
+uv run test.py
+```
+OUTPUT
+```sh
+TODO
+```
