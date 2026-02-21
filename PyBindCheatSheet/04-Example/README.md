@@ -1,50 +1,87 @@
-16-Feb-2026
+## Example IV
+#### 31-Mar-2026
 
-https://medium.com/@stevechange/using-python-with-c-part1-3e894912214d
+### Hello PyBind
+Launch Terminal
+```sh
+mkdir ~/HelloPyBind
+cd ~/HelloPyBind
+```
 
-mkdir -p /home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/new-02/01-stevechange-01
+Launch PyCharm | New Project
 
+| KEY | VALUE    |
+| :---   | :--- |
+| Location: | ~/HelloPybind/python   |
+| Interpreter type: | uv   |
+| Python version: | 3.11   |
+| Path to uv: | ~/.local/bin/uv   |
+Create
 
-Launch CLion
-C++ Executable
-C++17
-/home/stevepro/GitHub/StevePro9/PythonSetup/PyBind/new-02/01-stevechange-01/cpp
+Setup environment - if not auto created by PyCharm
+```sh
+uv venv --python 3.11
+source .venv/bin/activate       # OR .\.venv\Scripts\activate
+which python
+`which python` --version	# Python 3.11.11
+```
 
+Launch CLion | New Project
 
-CLion | Build, Execution, Deployment | CMake
-Build directory    build
+| KEY | VALUE    |
+| :---   | :--- |
+| C++ | C++ Executable   |
+| Location: | ~/HelloPybind/cpp   |
+| Language standard: | C++ 17   |
+Create
 
+Ensure build directory set | File menu | Settings...
+```sh
+Build, Execution, Deployment
+CMake
+Build directory: build
+```
 
-${CMAKE_SOURCE_DIR}/.venv
-Change to
-${CMAKE_SOURCE_DIR}/../python/.venv
+Setup C++ folder structure for src and tests folders
+```sh
+cpp/
+├── src/
+│   ├── api/
+│   │   ├── my_api.h
+│   │   └── my_api.cpp
+│   ├── bindings/
+│   │   └── pybind_module.cpp	# pybind11 bindings
+│   ├── CMakeLists.txt
+│   ├── main.cpp            	# C++ executable entry point
+├── tests/
+│   ├── CMakeLists.txt
+│   └── test_api.cpp
+├── CMakeLists.txt          	# top-level, CLion entry point
+```
 
+Write all C++ code for src and tests plus CMakeLists.txt
+```sh
+main.cpp
+test_api.cpp
+```
 
-delete build dir
-mkdir build
-cd build
-cmake ..
+Rebuild entire solution in Debug mode | Build menu
+```sh
+Rebuild all in 'Debug'
+```
 
+IMPORTANT - CMakeLists.txt files are configured to copy SO file into .venv directory!
 
-Had to close CLion
-delete .idea
-re-launch CLion
-configure build directory
-now all good after refresh
+Launch PyCharm | Write code for Python code to test
+```sh
+test.py
+```
 
-
-DEBUGGING
-Ensure CLion Build | Build All in Debug
-
-TODO - can I set CMake configuration
-
-cmake -DCMAKE_BUILD_TYPE=Debug ..
--g -O0
-
-VS Code debug as before
-ps aux | grep main.py
-
-
-CLion
-Must do this first
-sudo sysctl kernel.yama.ptrace_scope=0
+Finally hit F5 to run Python code to test C++ code or execute
+```sh
+uv run test.py
+```
+OUTPUT
+```sh
+1 + 2 = 3
+```

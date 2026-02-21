@@ -24,3 +24,23 @@ target_link_libraries(my_api_tests
         GTest::gmock
         Python3::Python
         )
+
+
+DEBUGGING
+reference:
+Blogger | PyBindCheatSheet | 04-Example
+
+Ensure CLion Build | Build All in Debug
+
+TODO - can I set CMake configuration
+
+cmake -DCMAKE_BUILD_TYPE=Debug ..
+-g -O0
+
+VS Code debug as before
+ps aux | grep main.py
+
+
+CLion
+Must do this first
+sudo sysctl kernel.yama.ptrace_scope=0

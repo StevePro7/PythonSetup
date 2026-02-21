@@ -3,7 +3,7 @@
 
 PYBIND11_MODULE(my_api_py, m)
 {
-    m.def("build_edge_topology", &build_edge_topology);
-    m.def("edge_side_points", &edge_side_points);
+    // Optional module docstring
+    m.doc() = "pybind11 example module";
     m.def("add", &add, "A function that adds two numbers");
 }
