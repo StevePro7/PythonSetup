@@ -1,61 +1,56 @@
-Example
-01-Feb-2026
+### ExampleI
+#### 31-Mar-2026
 
-Reference
-PyBind.doc
-~/GitHub/StevePro10/Blogger/Python/PyBind/old/OpenAI_Retro_ChatGPT
-
-BUT also replicate of
-~/GitHub/StevePro9/PythonSetup/PyBind/org/01-setupTools/pybind/test01
-~/GitHub/StevePro9/PythonSetup/PyBind/org/01-setupTools/pybind/test02
-
-cd ~/GitHub/StevePro9/PythonSetup/PyBind/new-01/01-example
-touch README.md
+Hello PyBind
+```sh
+mkdir ~/HelloPyBind
+cd ~/HelloPyBind
 touch example.cpp
 touch setup.py
 touch test.py
+```
 
+Setup environment
+```sh
 python  -m venv .venv
 source .venv/bin/activate
 which python
-`which python` --version
-Python 3.8.10
+`which python` --version	# Python 3.8.10
+```
 
+Pip install dependencies
+```sh
 pip install pybind11
 pip install --upgrade pip
-pip list
-Package       Version
-------------- -------
-pip           20.0.2
-pkg-resources 0.0.0
-pybind11      3.0.1
-setuptools    44.0.0
+```
 
+Write code for C++ and setup
+```sh
 example.cpp
 setup.py
+```
 
+Build C++ code using setup
+```sh
 python setup.py build_ext --inplace
+```
 
-Produces
+Output
+```sh
 example.cpython-38-x86_64-linux-gnu.so
+```
 
+Write code for Python code to test
+```sh
 test.py
+```
 
+Finally run Python code to test C++ code
+```sh
 python test.py
-3
+```
 
-
-IMPORTANT
-in this small example all the files are on the same level
-thus
-python setup.py build_ext --inplace
-will build the SO file at the same level as python files
-example.cpython-38-x86_64-linux-gnu.so
-
-Therefore - no issue consuming in test.py with intellisense etc.
-
-
-further confirmation
-https://medium.com/@ahmedfgad/pybind11-tutorial-binding-c-code-to-python-337da23685dc
-Just make sure the .so file is in the same directory of the test.py script
-(unless you opted to install the module).
+Output
+```sh
+1 + 2 = 3
+```

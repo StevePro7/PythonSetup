@@ -2,7 +2,8 @@ TODO
 21-Feb-2026
 
 ALL
-readme
+format better
+README
 
 Ex02
 pyproject.toml
