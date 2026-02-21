@@ -83,5 +83,7 @@ uv run test.py
 ```
 OUTPUT
 ```sh
-TODO
+Guitar: 'Fender' [6-string] = $1500.0
+Guitar: 'Ibanez' [7-string] = $1200.0
+Guitar: 'Gibson' [6-string] = $2400.0
 ```
