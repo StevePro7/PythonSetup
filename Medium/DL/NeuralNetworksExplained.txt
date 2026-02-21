@@ -1,6 +1,7 @@
 Neural Networks & Deep Learning-Explained Simply
 20-Feb-2026
 
+https://medium.com/illumination/neural-networks-deep-learning-explained-simply-b650a3c8129f
 
 Neurons
 human brain = tiny cells
