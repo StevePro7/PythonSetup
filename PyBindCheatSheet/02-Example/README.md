@@ -1,64 +1,57 @@
-Hello Pybind
-01-Feb-2026
+## Example II
+#### 31-Mar-2026
 
-References
-https://medium.com/@ahmedfgad/pybind11-tutorial-binding-c-code-to-python-337da23685dc
+### Hello PyBind
+Launch PyCharm | New Project
 
-PyBind.doc
-~/GitHub/StevePro10/Blogger/Python/PyBind/old/OpenAI_Retro_ChatGPT
-~/GitHub/StevePro9/PythonSetup/PyBind/new-01/01-example/README.md
+| KEY | VALUE    |
+| :---   | :--- |
+| Location: | ~/HelloPybind   |
+| Interpreter type: | uv   |
+| Python version: | 3.11   |
+| Path to uv: | ~/.local/bin/uv   |
+Create
 
-Launch PyCharm | New Project | ~/HelloPybind
-Python 3.8
-/usr/bin/python3
-
-Created virtual environment
-python  -m venv .venv
-source .venv/bin/activate
+Setup environment - if not auto created by PyCharm
+```sh
+uv venv --python 3.11
+source .venv/bin/activate       # OR .\.venv\Scripts\activate
 which python
-`which python` --version
-Python 3.8.10
+`which python` --version	# Python 3.11.11
+```
+UV install dependencies
+```sh
+uv add pybind11
+uv add setuptools
+uv lock
+uv sync
+```
 
-
-touch README.md
-touch example.cpp
-touch setup.py
-touch test.py
-
-
-pip list
-Package    Version
----------- -------
-pip        25.0.1
-setuptools 75.3.2
-wheel      0.45.1
-
-pip install pybind11
-pip install --upgrade pip
-
-pip list
-Package    Version
----------- -------
-pip        25.0.1
-pybind11   3.0.1
-setuptools 75.3.2
-wheel      0.45.1
-
+Write code for C++ and setup
+```sh
 example.cpp
 setup.py
+```
+Build C++ code using setup
+```sh
+uv run setup.py build
+uv run setup.py install
 
-python setup.py build
-python setup.py install
-
-IMPORTANT
-these 2x commands
-build the example.cpp file and produce binary file
-example.cpython-38-x86_64-linux-gnu.so
-
-This is located beneath directory
-example-0.1-py3.8-linux-x86_64.egg
-as this is legacy packaging
-
-then installs in the virtual environment for consumption
-from test.py
-
+```
+OUTPUT
+```sh
+./build/lib.linux-x86_64-cpython-311/example.cpython-311-x86_64-linux-gnu.so
+```
+Write code for Python code to test
+```sh
+test.py
+```
+Finally hit F5 to run Python code to test C++ code or execute
+```sh
+uv run test.py
+```
+OUTPUT
+```sh
+3 + 5 = 8
+9 - 5 = 4
+```
