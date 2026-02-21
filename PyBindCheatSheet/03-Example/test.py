@@ -1,4 +1,4 @@
 import example
 
-greeting: str = hello.say_hello()
+greeting: str = example.say_hello()
 print(greeting)
