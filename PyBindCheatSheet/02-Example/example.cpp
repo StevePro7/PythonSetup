@@ -16,8 +16,8 @@ PYBIND11_MODULE(example, m)
     m.doc() = "pybind11 example module";
 
     m.def("add", &add, "A function that adds two numbers",
-          pybind11::arg("a"), pybind11::arg("b"));
+          pybind11::arg("x"), pybind11::arg("y"));
 
     m.def("subtract", &subtract, "A function that subtracts two numbers",
-          pybind11::arg("a"), pybind11::arg("b"));
+          pybind11::arg("x"), pybind11::arg("y"));
 }

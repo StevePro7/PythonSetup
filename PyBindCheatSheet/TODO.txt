@@ -1,0 +1,25 @@
+TODO
+21-Feb-2026
+
+ALL
+readme
+
+Ex02
+pyproject.toml
+uv.lock
+
+Ex03
+uv.lock
+
+
+
+Ex04,05,06
+if you want gmock then add intests
+
+target_link_libraries(my_api_tests
+        PRIVATE
+        my_api
+        GTest::gtest_main
+        GTest::gmock
+        Python3::Python
+        )
