@@ -16,6 +16,7 @@ Launch PyCharm | New Project
 | Interpreter type: | uv   |
 | Python version: | 3.11   |
 | Path to uv: | ~/.local/bin/uv   |
+
 Create
 
 Setup environment - if not auto created by PyCharm
@@ -33,6 +34,7 @@ Launch CLion | New Project
 | C++ | C++ Executable   |
 | Location: | ~/HelloPyBind/cpp   |
 | Language standard: | C++ 17   |
+
 Create
 
 Ensure build directory set | File menu | Settings...
