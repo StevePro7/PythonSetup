@@ -1,8 +1,9 @@
-find_package(GTest REQUIRED)
-
 add_executable(runTests
     test_vector.cpp
+    test_matrix.cpp
     test_mesh.cpp
+    test_mesh_algorithms.cpp
+    test_mesh_processor.cpp
 )
 
 target_link_libraries(runTests

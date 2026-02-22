@@ -1,14 +1,37 @@
 #include <gtest/gtest.h>
-#include "mock_logger.h"
-#include "../src/core/mesh_processor.h"
+#include "../src/mesh/mesh.h"
 
-TEST(MeshProcessorTest, LogsDuringSmoothing) {
-    MockLogger logger;
-    mesh::Mesh mesh;
+using mesh::Mesh;
+using mesh::Face;
+using math::Vector3;
 
-    EXPECT_CALL(logger, log("Starting smoothing")).Times(1);
-    EXPECT_CALL(logger, log("Finished smoothing")).Times(1);
+TEST(MeshTest, ComputeVertexNormalsSingleTriangle) {
+    Mesh m;
 
-    core::MeshProcessor proc(logger);
-    proc.smooth(mesh);
+    m.vertices = {
+        {0,0,0},
+        {1,0,0},
+        {0,1,0}
+    };
+
+    m.faces.push_back({0,1,2});
+
+    std::vector<Vector3> normals;
+    m.computeVertexNormals(normals);
+
+    ASSERT_EQ(normals.size(), 3);
+
+    for (const auto& n : normals) {
+        EXPECT_NEAR(n.x, 0.0, 1e-6);
+        EXPECT_NEAR(n.y, 0.0, 1e-6);
+        EXPECT_NEAR(n.z, 1.0, 1e-6);
+    }
+}
+
+TEST(MeshTest, EmptyMeshNormals) {
+    Mesh m;
+    std::vector<Vector3> normals;
+    m.computeVertexNormals(normals);
+
+    EXPECT_TRUE(normals.empty());
 }
