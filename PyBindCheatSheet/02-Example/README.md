@@ -37,7 +37,6 @@ Build C++ code using setup
 ```sh
 uv run setup.py build
 uv run setup.py install
-
 ```
 OUTPUT
 ```sh

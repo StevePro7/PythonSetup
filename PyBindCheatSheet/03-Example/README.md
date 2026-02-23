@@ -63,6 +63,5 @@ uv run test.py
 ```
 OUTPUT
 ```sh
-3 + 5 = 8
-9 - 5 = 4
+Hello, World!
 ```
