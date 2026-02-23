@@ -6,13 +6,14 @@
 
 using ::testing::Exactly;
 
-TEST(MeshProcessorTest, LogsCorrectly) {
-    MockLogger logger;
-    mesh::Mesh m;
+TEST(MeshProcessorTest, LogsCorrectly)
+{
+	MockLogger logger;
+	mesh::Mesh m;
 
-    EXPECT_CALL(logger, log("Starting smoothing")).Times(Exactly(1));
-    EXPECT_CALL(logger, log("Finished smoothing")).Times(Exactly(1));
+	EXPECT_CALL(logger, log("Starting smoothing")).Times(Exactly(1));
+	EXPECT_CALL(logger, log("Finished smoothing")).Times(Exactly(1));
 
-    core::MeshProcessor proc(logger);
-    proc.smooth(m);
+	core::MeshProcessor proc(logger);
+	proc.smooth(m);
 }
