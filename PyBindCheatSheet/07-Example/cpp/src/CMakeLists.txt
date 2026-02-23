@@ -18,8 +18,14 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(pybind11)
 
 # ---- Core C++ library ----
+file(GLOB_RECURSE SRC_FILES
+        math/*.cpp
+        mesh/*.cpp
+        core/*.cpp
+        )
+
 add_library(my_api
-        api/my_api.cpp
+        ${SRC_FILES}
         )
 
 target_include_directories(my_api
