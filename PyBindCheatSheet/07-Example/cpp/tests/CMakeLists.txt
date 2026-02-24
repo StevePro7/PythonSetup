@@ -29,7 +29,6 @@ endfunction()
 # ---- Tests ----
 add_my_test(tests_matrix test_matrix.cpp)
 add_my_test(tests_vector test_vector.cpp)
-
 add_my_test(tests_mesh test_mesh.cpp)
 add_my_test(tests_mesh_algorithms test_mesh_algorithms.cpp)
 
@@ -43,5 +42,3 @@ target_link_libraries(tests_mesh_processor
         Python3::Python
         )
 gtest_discover_tests(tests_mesh_processor)
-
-
