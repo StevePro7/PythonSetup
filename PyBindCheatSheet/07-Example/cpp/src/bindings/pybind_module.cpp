@@ -5,8 +5,11 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(meshcore, m)
+PYBIND11_MODULE(my_api_py, m)
 {
+    // Optional module docstring
+    m.doc() = "pybind11 API module";
+
     py::class_<math::Vector3>(m, "Vector3")
             .def(py::init<double,double,double>())
             .def_readwrite("x", &math::Vector3::x)

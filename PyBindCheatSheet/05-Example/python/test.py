@@ -3,8 +3,6 @@ from my_api_py import Guitar
 def pprint_axe(guitar: Guitar) -> None:
     print(f"Guitar: '{guitar.manufacturer}' [{guitar.num_strings}-string] = ${guitar.price}")
 
-print("beg")
-
 guitar1 = Guitar("Fender", 1500.0, 6)
 guitar2 = Guitar("Ibanez", 1200.0)
 guitar2.num_strings = 7
@@ -19,5 +17,3 @@ guitar3.num_strings = 6
 pprint_axe(guitar1)
 pprint_axe(guitar2)
 pprint_axe(guitar3)
-
-print("end")
