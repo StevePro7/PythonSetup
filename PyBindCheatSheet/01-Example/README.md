@@ -6,9 +6,6 @@ Launch Terminal
 ```sh
 mkdir ~/HelloPyBind
 cd ~/HelloPyBind
-touch example.cpp
-touch setup.py
-touch test.py
 ```
 Setup environment
 ```sh
@@ -21,6 +18,12 @@ Pip install dependencies
 ```sh
 pip install pybind11
 pip install --upgrade pip
+```
+Create the following files
+```sh
+touch example.cpp
+touch setup.py
+touch test.py
 ```
 Write code for C++ and setup
 ```sh
