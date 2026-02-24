@@ -5,8 +5,8 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(meshcore, m) {
-
+PYBIND11_MODULE(meshcore, m)
+{
     py::class_<math::Vector3>(m, "Vector3")
             .def(py::init<double,double,double>())
             .def_readwrite("x", &math::Vector3::x)

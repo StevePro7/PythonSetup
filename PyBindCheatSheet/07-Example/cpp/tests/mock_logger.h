@@ -10,4 +10,4 @@ public:
 	MOCK_METHOD(void, log, (const std::string&), (override));
 };
 
-#endif// _MOCK_LOGGER_H_
+#endif// _MOCK_LOGGER_H

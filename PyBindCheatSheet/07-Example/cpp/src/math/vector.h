@@ -1,24 +1,29 @@
-#pragma once
+#ifndef _MATH_VECTOR_H_
+#define _MATH_VECTOR_H_
+
 #include <cmath>
 
-namespace math {
+namespace math
+{
+    class Vector3
+    {
+    public:
+        double x, y, z;
 
-class Vector3 {
-public:
-    double x, y, z;
+        Vector3();
+        Vector3(double x, double y, double z);
 
-    Vector3();
-    Vector3(double x, double y, double z);
+        double norm() const;
+        Vector3 normalized() const;
 
-    double norm() const;
-    Vector3 normalized() const;
+        Vector3 operator+(const Vector3& other) const;
+        Vector3 operator-(const Vector3& other) const;
+        Vector3 operator*(double scalar) const;
 
-    Vector3 operator+(const Vector3& other) const;
-    Vector3 operator-(const Vector3& other) const;
-    Vector3 operator*(double scalar) const;
-
-    static double dot(const Vector3& a, const Vector3& b);
-    static Vector3 cross(const Vector3& a, const Vector3& b);
-};
+        static double dot(const Vector3& a, const Vector3& b);
+        static Vector3 cross(const Vector3& a, const Vector3& b);
+    };
 
 }
+
+#endif//_MATH_VECTOR_H_
