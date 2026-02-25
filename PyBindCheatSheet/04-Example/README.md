@@ -2,6 +2,12 @@
 #### 31-Mar-2026
 
 ### Hello PyBind
+Launch Terminal
+```sh
+mkdir ~/HelloPyBind
+cd ~/HelloPyBind
+```
+
 Launch PyCharm | New Project
 
 | KEY | VALUE    |

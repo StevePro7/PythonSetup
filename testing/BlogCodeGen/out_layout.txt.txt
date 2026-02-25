@@ -1,0 +1,32 @@
+<table width="99%" border="1">
+<tr><td>&nbsp;&nbsp;<strong>layout.txt</strong></td></tr>
+<tr><td>
+<pre style="font-size: 12px;">
+&nbsp;&nbsp;HelloPyBind/
+&nbsp;&nbsp;├── cpp/
+&nbsp;&nbsp;│   ├── src/
+&nbsp;&nbsp;│   │   ├── api/
+&nbsp;&nbsp;│   │   │   ├── my_api.h
+&nbsp;&nbsp;│   │   │   └── my_api.cpp
+&nbsp;&nbsp;│   │   ├── bindings/
+&nbsp;&nbsp;│   │   │   └── pybind_module.cpp        # pybind11 bindings
+&nbsp;&nbsp;│   │   ├── CMakeLists.txt
+&nbsp;&nbsp;│   │   └── main.cpp                    # C++ executable entry point
+&nbsp;&nbsp;│   ├── tests/
+&nbsp;&nbsp;│   │   ├── CMakeLists.txt
+&nbsp;&nbsp;│   │   └── test_api.cpp
+&nbsp;&nbsp;│   └── CMakeLists.txt                  # top-level C++ (CLion entry point)
+&nbsp;&nbsp;│
+&nbsp;&nbsp;└── python/
+&nbsp;&nbsp;    ├── .venv/
+&nbsp;&nbsp;    │   └── lib/
+&nbsp;&nbsp;    │       └── python3.11/
+&nbsp;&nbsp;    │           └── site-packages/
+&nbsp;&nbsp;    │               └── my_api_py.cpython-311-x86_64-linux-gnu.so
+&nbsp;&nbsp;    ├── main.py
+&nbsp;&nbsp;    ├── pyproject.toml
+&nbsp;&nbsp;    └── README.md
+</pre>
+</td></tr>
+</table>
+<br />
