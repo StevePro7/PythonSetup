@@ -1,0 +1,9 @@
+python/
+├── .venv/
+│   ├── lib/
+│   │   ├── python3.11
+│   │   │   ├── site-packages
+│   │   │   │   └── my_api_py.cpython-311-x86_64-linux-gnu.so
+├── main.py
+├── pyproject.toml
+├── README.md

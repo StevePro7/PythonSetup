@@ -1,0 +1,21 @@
+<table width="99%" border="1">
+<tr><td>&nbsp;&nbsp;<strong>layout_CLion.txt</strong></td></tr>
+<tr><td>
+<pre style="font-size: 12px;">
+&nbsp;&nbsp;cpp/
+&nbsp;&nbsp;├── src/
+&nbsp;&nbsp;│   ├── api/
+&nbsp;&nbsp;│   │   ├── my_api.h
+&nbsp;&nbsp;│   │   └── my_api.cpp
+&nbsp;&nbsp;│   ├── bindings/
+&nbsp;&nbsp;│   │   └── pybind_module.cpp	# pybind11 bindings
+&nbsp;&nbsp;│   ├── CMakeLists.txt
+&nbsp;&nbsp;│   ├── main.cpp            	# C++ executable entry point
+&nbsp;&nbsp;├── tests/
+&nbsp;&nbsp;│   ├── CMakeLists.txt
+&nbsp;&nbsp;│   └── test_api.cpp
+&nbsp;&nbsp;├── CMakeLists.txt          	# top-level, CLion entry point
+</pre>
+</td></tr>
+</table>
+<br />

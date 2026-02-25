@@ -1,0 +1,13 @@
+cpp/
+├── src/
+│   ├── api/
+│   │   ├── my_api.h
+│   │   └── my_api.cpp
+│   ├── bindings/
+│   │   └── pybind_module.cpp	# pybind11 bindings
+│   ├── CMakeLists.txt
+│   ├── main.cpp            	# C++ executable entry point
+├── tests/
+│   ├── CMakeLists.txt
+│   └── test_api.cpp
+├── CMakeLists.txt          	# top-level, CLion entry point

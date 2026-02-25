@@ -1,5 +1,13 @@
 TODO
+25-Feb-2026
+
+Ex07
+output is NOT correct
+
+
 21-Feb-2026
+
+
 
 ALL
 format better

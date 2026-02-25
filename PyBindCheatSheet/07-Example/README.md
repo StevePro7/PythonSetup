@@ -2,12 +2,6 @@
 #### 31-Mar-2026
 
 ### Hello PyBind
-Launch Terminal
-```sh
-mkdir ~/HelloPyBind
-cd ~/HelloPyBind
-```
-
 Launch PyCharm | New Project
 
 | KEY | VALUE    |
@@ -85,14 +79,5 @@ uv run test.py
 ```
 OUTPUT
 ```sh
-Container[0] = 0.0
-Container[1] = 1.0
-Container[2] = 2.0
-Container[3] = 3.0
-Container[4] = 4.0
-Container[5] = 5.0
-Container[6] = 6.0
-Container[7] = 7.0
-Container[8] = 8.0
-Container[9] = 9.0
+TODO!!
 ```

@@ -1,0 +1,17 @@
+<table width="99%" border="1">
+<tr><td>&nbsp;&nbsp;<strong>layout_PyCharm.txt</strong></td></tr>
+<tr><td>
+<pre style="font-size: 12px;">
+&nbsp;&nbsp;python/
+&nbsp;&nbsp;├── .venv/
+&nbsp;&nbsp;│   ├── lib/
+&nbsp;&nbsp;│   │   ├── python3.11
+&nbsp;&nbsp;│   │   │   ├── site-packages
+&nbsp;&nbsp;│   │   │   │   └── my_api_py.cpython-311-x86_64-linux-gnu.so
+&nbsp;&nbsp;├── main.py
+&nbsp;&nbsp;├── pyproject.toml
+&nbsp;&nbsp;├── README.md
+</pre>
+</td></tr>
+</table>
+<br />
