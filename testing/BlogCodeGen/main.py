@@ -1,6 +1,6 @@
 import html
 
-file = "commands.txt"
+file = "CMakeLists.txt"
 
 # Read the Python file
 with open(file, "r", encoding="utf-8") as f:
@@ -26,7 +26,8 @@ html_output = f"""<table width="99%" border="1">
 <br />"""
 
 # Write to new HTML file
-with open("out_" + file + ".txt", "w", encoding="utf-8") as f:
+out_file: str = "out_" + file + ".txt"
+with open(out_file, "w", encoding="utf-8") as f:
     f.write(html_output)
 
-print("HTML file created: output.html")
+print(f"Output file created: '{out_file}'")

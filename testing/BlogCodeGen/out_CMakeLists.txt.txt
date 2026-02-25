@@ -1,0 +1,20 @@
+<table width="99%" border="1">
+<tr><td>&nbsp;&nbsp;<strong>CMakeLists.txt</strong></td></tr>
+<tr><td>
+<pre style="font-size: 12px;">
+&nbsp;&nbsp;cmake_minimum_required(VERSION 3.16)
+&nbsp;&nbsp;project(example)
+&nbsp;&nbsp;
+&nbsp;&nbsp;# Find the Python 3.11-specific pybind11 CONFIG from pip
+&nbsp;&nbsp;execute_process(
+&nbsp;&nbsp;        COMMAND ${Python3_EXECUTABLE} -m pybind11 --cmakedir
+&nbsp;&nbsp;        OUTPUT_VARIABLE pybind11_DIR
+&nbsp;&nbsp;        OUTPUT_STRIP_TRAILING_WHITESPACE
+&nbsp;&nbsp;)
+&nbsp;&nbsp;find_package(pybind11 REQUIRED CONFIG)
+&nbsp;&nbsp;
+&nbsp;&nbsp;pybind11_add_module(example example.cpp)
+</pre>
+</td></tr>
+</table>
+<br />
