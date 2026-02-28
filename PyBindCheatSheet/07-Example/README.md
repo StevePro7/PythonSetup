@@ -57,11 +57,11 @@ cpp/
 │   ├── main.cpp            	# C++ executable entry point
 ├── tests/
 │   ├── CMakeLists.txt
-    ├── test_matrix.cpp
-    ├── test_vector.cpp
-    ├── test_mesh.cpp
-    ├── test_mesh_algorithms.cpp
-    └── test_mesh_processor.cpp
+│   ├── test_matrix.cpp
+│   ├── test_vector.cpp
+│   ├── test_mesh.cpp
+│   ├── test_mesh_algorithms.cpp
+│   ├── test_mesh_processor.cpp
 ├── CMakeLists.txt          	# top-level, CLion entry point
 ```
 
