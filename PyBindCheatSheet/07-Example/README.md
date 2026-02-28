@@ -89,5 +89,8 @@ uv run test.py
 ```
 OUTPUT
 ```sh
-TODO!!
+Vertices:
+(0.0, 0.0, 0.0)
+(1.0, 0.0, 0.0)
+(0.0, 1.0, 0.0)
 ```

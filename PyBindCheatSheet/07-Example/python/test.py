@@ -8,3 +8,7 @@ m.vertices = [
 ]
 
 m.smooth()
+
+print("Vertices:")
+for v in m.vertices:
+    print(f"({v.x}, {v.y}, {v.z})")
