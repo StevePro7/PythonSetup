@@ -42,23 +42,33 @@ Setup C++ folder structure for src and tests folders
 ```sh
 cpp/
 ├── src/
-│   ├── api/
-│   │   ├── my_api.h
-│   │   └── my_api.cpp
+│   ├── core/					# Core API implementation
+│   │   ├── *.cpp
+│   │   └── *.h
+│   ├── math/					# Math-related API
+│   │   ├── *.cpp
+│   │   └── *.h
+│   ├── mesh/					# Mesh-related API
+│   │   ├── *.cpp
+│   │   └── *.h
 │   ├── bindings/
 │   │   └── pybind_module.cpp	# pybind11 bindings
 │   ├── CMakeLists.txt
 │   ├── main.cpp            	# C++ executable entry point
 ├── tests/
 │   ├── CMakeLists.txt
-│   └── test_api.cpp
+    ├── test_matrix.cpp
+    ├── test_vector.cpp
+    ├── test_mesh.cpp
+    ├── test_mesh_algorithms.cpp
+    └── test_mesh_processor.cpp
 ├── CMakeLists.txt          	# top-level, CLion entry point
 ```
 
 Write all C++ code for src and tests plus CMakeLists.txt
 ```sh
 main.cpp
-test_api.cpp
+test_*.cpp
 ```
 
 Rebuild entire solution in Debug mode | Build menu
