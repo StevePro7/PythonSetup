@@ -1,0 +1,35 @@
+# Build directories
+build/
+cmake-build-debug/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# JetBrains IDE (CLion, PyCharm) - ignore user-specific and workspace files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/sshConfigs.xml
+.idea/shelf/
+.idea/caches/
+.idea/compiler.xml
+.idea/dictionaries/
+.idea/jsLibraryMappings.xml
+.idea/httpRequests/
+
+# Ignore local run/debug and workspace-specific files but keep project-level settings
+# Keep: .idea/modules.xml, .idea/misc.xml (optional), .idea/runConfigurations/, .idea/codeStyles/
+
+# OS files
+.DS_Store
+Thumbs.db
