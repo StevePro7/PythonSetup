@@ -1,0 +1,13 @@
+I Couldn’t Visualize My Neural Network — So I Built ModelViz-AI
+08-Mar-2026
+
+https://levelup.gitconnected.com/i-couldnt-visualize-my-neural-network-so-i-built-modelviz-ai-62426cb38a1b
+
+https://github.com/shreyanshjain05/modelviz
+https://shreyanshjain05.github.io/modelviz
+
+
+uv init --python 3.11
+uv venv --python 3.11
+
+uv pip install modelviz-ai
