@@ -1,0 +1,31 @@
+Why AI loves eigenvectors (and you should too)	
+16-Mar-2026
+
+https://ai.gopubby.com/why-ai-loves-eigenvectors-and-you-should-too-d82e8c428875
+
+
+Eigen Vectors
+special vectors that don't change direction at all - they only get scaled
+
+
+
+Remember vectors have DLL
+direction
+length
+but no location
+
+
+eigenvectors = directions of the transformation
+eigenvalues  = scaling factor
+
+
+Q. how do we find eigenvector?
+A. determinant
+
+
+Determinant
+scaling factor
+ad - bc
+
+
+Use determinant to compute eigenvectors

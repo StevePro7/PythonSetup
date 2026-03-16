@@ -1,5 +1,5 @@
 import pytest
-from mlpredictor import MLPredictor"
+from mlpredictor import MLPredictor
 
 def test_train_and_predict():
     model = MLPredictor()
