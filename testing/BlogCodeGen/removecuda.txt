@@ -1,0 +1,3 @@
+sudo apt remove -y cuda* nvidia-cuda-toolkit
+sudo apt autoremove -y
+sudo rm -rf /usr/local/cuda*

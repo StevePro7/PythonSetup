@@ -1,6 +1,6 @@
 import html
 
-file = "layout.txt"
+file = "envvars.txt"
 
 # Read the Python file
 with open(file, "r", encoding="utf-8") as f:
@@ -26,7 +26,7 @@ html_output = f"""<table width="99%" border="1">
 <br />"""
 
 # Write to new HTML file
-out_file: str = "out_" + file + ".txt"
+out_file: str = "out_" + file
 with open(out_file, "w", encoding="utf-8") as f:
     f.write(html_output)
 
