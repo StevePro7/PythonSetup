@@ -1,0 +1,29 @@
+an Manifest
+28-Mar-2026
+
+01. HelloPyTorch
+pyproject toml
+bare bones
+
+
+02. HellAzureML
+pyproject toml
+bare bones
+
+
+01. HelloPyTorch
+bash shell scripts
+make wheel files
+
+02. HelloPyTorch
+use wheel files local
+
+03. HelloPyTorch
+upload wheel files
+
+04. HellAzureML
+use wheel files hosted
+
+05. HellAzureML
+use wheel files hosted
+full example
