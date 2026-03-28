@@ -1,0 +1,37 @@
+TorchSparse built from source
+28-Mar-2026
+
+
+1. Limit build parallelism (critical)
+export MAX_JOBS=1
+uv sync
+
+This alone fixes most exit 137 cases.
+
+
+2. Add swap (very likely needed)
+
+If you're on a typical dev machine (8–16GB RAM), do:
+
+sudo fallocate -l 8G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+
+
+uv cache dir
+No I cleared uv cache
+
+
+"torchsparse @ git+https://github.com/mit-han-lab/torchsparse.git@2.0.0b",
+
+
+dmesg | tail -n 50
+
+
+Bottom line
+Your stack is valid and known to work
+Failure is due to:
+switching from wheel → source build
+memory exhaustion during CUDA compile
+slight version mismatch (2.0.0b vs v2.0.0)
