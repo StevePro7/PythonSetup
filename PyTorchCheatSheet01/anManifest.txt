@@ -20,10 +20,13 @@ use wheel files local
 
 03. HelloPyTorch
 upload wheel files
+scripts03
 
 04. HellAzureML
 use wheel files hosted
+scripts02b
 
 05. HellAzureML
 use wheel files hosted
-full example
+full example Dockerfile
+scripts07
