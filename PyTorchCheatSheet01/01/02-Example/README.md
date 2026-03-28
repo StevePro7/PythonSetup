@@ -1,12 +1,12 @@
 ## Example II
 #### 01-Apr-2026
 
-### Hello PyTorch3d
+### Hello AzureML
 Launch PyCharm | New Project
 
 | KEY | VALUE            |
 | :---   |:-----------------|
-| Location: | ~/HelloPyTorch3d |
+| Location: | ~/HelloAzureML |
 | Interpreter type: | uv               |
 | Python version: | 3.10             |
 | Path to uv: | ~/.local/bin/uv  |
@@ -46,8 +46,8 @@ Finally hit F5 to run Python code
 Submit POST request
 ```sh
 curl --location --request POST 'http://localhost:5001/score' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{}'
+  --header 'Content-Type: application/json' \
+  --data-raw '{}'
 ```
 
 OUTPUT
