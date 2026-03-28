@@ -5,7 +5,7 @@ export PYTORCH3D_REF=v0.7.7
 export TORCHSPARSE_REF=master
 export TORCH_SPEC="torch==2.2.0+cu121"
 export TORCH_INDEX_URL="https://download.pytorch.org/whl/cu121"
-export WHEELHOUSE="/home/stevepro/GitHub/StevePro7/FelixTesting/StevePro/PyPi/scripts01/wheelhouse-cu121"
+export WHEELHOUSE="$(pwd)/wheelhouse-cu121"
 
 # Build a local PyTorch3D wheel compatible with the current Python + installed torch.
 # Outputs wheels into ./wheelhouse
@@ -84,7 +84,7 @@ python -m pip install --upgrade --no-deps "ninja" "cmake" "pybind11" "typing_ext
 # Build wheel
 pushd "$WORKDIR" >/dev/null
 python -m pip wheel . -w "$WHEELHOUSE" --no-deps --no-build-isolation
-popd "$WORKDIR" >/dev/null
+popd >/dev/null
 
 echo "Built wheels in $WHEELHOUSE"
 ls -1 "$WHEELHOUSE" | sed 's/^/ - /'
