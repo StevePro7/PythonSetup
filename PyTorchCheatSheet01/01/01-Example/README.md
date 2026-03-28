@@ -24,6 +24,7 @@ which python
 UV update pyproject.toml
 ```sh
 export MAX_JOBS=1
+export NVCC_THREADS=1
 uv lock
 uv sync
 ```

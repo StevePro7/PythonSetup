@@ -1,0 +1,780 @@
+uv sync
+Resolved 126 packages in 0.93ms
+  × Failed to build `torchsparse @
+  │ git+https://github.com/mit-han-lab/torchsparse.git@1a10fda15098f3bf4fa2d01f8bee53e85762abcf`
+  ├─▶ The build backend returned an error
+  ╰─▶ Call to `setuptools.build_meta:__legacy__.build_wheel` failed (exit status: 1)
+
+      [stdout]
+      running bdist_wheel
+      running build
+      running build_py
+      copying torchsparse/__init__.py -> build/lib.linux-x86_64-cpython-310/torchsparse
+      copying torchsparse/tensor.py -> build/lib.linux-x86_64-cpython-310/torchsparse
+      copying torchsparse/backends.py -> build/lib.linux-x86_64-cpython-310/torchsparse
+      copying torchsparse/operators.py -> build/lib.linux-x86_64-cpython-310/torchsparse
+      copying torchsparse/version.py -> build/lib.linux-x86_64-cpython-310/torchsparse
+      copying torchsparse/nn/__init__.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn
+      copying torchsparse/utils/utils.py -> build/lib.linux-x86_64-cpython-310/torchsparse/utils
+      copying torchsparse/utils/__init__.py -> build/lib.linux-x86_64-cpython-310/torchsparse/utils
+      copying torchsparse/utils/quantize.py -> build/lib.linux-x86_64-cpython-310/torchsparse/utils
+      copying torchsparse/utils/collate.py -> build/lib.linux-x86_64-cpython-310/torchsparse/utils
+      copying torchsparse/utils/tune.py -> build/lib.linux-x86_64-cpython-310/torchsparse/utils
+      copying torchsparse/backbones/__init__.py -> build/lib.linux-x86_64-cpython-310/torchsparse/backbones
+      copying torchsparse/backbones/resnet.py -> build/lib.linux-x86_64-cpython-310/torchsparse/backbones
+      copying torchsparse/backbones/unet.py -> build/lib.linux-x86_64-cpython-310/torchsparse/backbones
+      copying torchsparse/nn/modules/bev.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/modules
+      copying torchsparse/nn/modules/__init__.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/modules
+      copying torchsparse/nn/modules/activation.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/modules
+      copying torchsparse/nn/modules/norm.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/modules
+      copying torchsparse/nn/modules/crop.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/modules
+      copying torchsparse/nn/modules/pooling.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/modules
+      copying torchsparse/nn/modules/conv.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/modules
+      copying torchsparse/nn/utils/__init__.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/utils
+      copying torchsparse/nn/utils/apply.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/utils
+      copying torchsparse/nn/utils/kernel.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/utils
+      copying torchsparse/nn/functional/devoxelize.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/__init__.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/activation.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/downsample.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/count.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/crop.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/pooling.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/voxelize.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/hash.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/build_kmap.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/query.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/nn/functional/conv.py -> build/lib.linux-x86_64-cpython-310/torchsparse/nn/functional
+      copying torchsparse/backbones/modules/__init__.py -> build/lib.linux-x86_64-cpython-310/torchsparse/backbones/modules
+      copying torchsparse/backbones/modules/blocks.py -> build/lib.linux-x86_64-cpython-310/torchsparse/backbones/modules
+      running build_ext
+      building 'torchsparse.backend' extension
+      [1/17] c++ -MMD -MF
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hashmap/hashmap_cpu.o.d
+      -pthread -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fPIC
+      -fPIC -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/hashmap/hashmap_cpu.cpp -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hashmap/hashmap_cpu.o
+      -g -O3 -fopenmp -lgomp -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"'
+      '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend
+      -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+      [2/17] /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hashmap/hashmap_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/hashmap/hashmap_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hashmap/hashmap_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/hashmap/hashmap_cuda.cu(28):
+      warning #181-D: argument is incompatible with corresponding format string conversion (expected type "int" but
+      argument has type "unsigned long")
+                     bucket_ofs, (512), n, bucket_num, num_buckets, key);
+                                                                    ^
+
+      Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+      [3/17] /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/sparsemapping_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/sparsemapping_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/sparsemapping_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      FAILED: [code=137]
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/sparsemapping_cuda.o
+      /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/sparsemapping_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/sparsemapping_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/sparsemapping_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      Killed
+      [4/17] /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/devoxelize/devoxelize_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/devoxelize/devoxelize_cuda.cu
+      -o /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/devoxelize/devoxelize_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      FAILED: [code=137]
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/devoxelize/devoxelize_cuda.o
+      /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/devoxelize/devoxelize_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/devoxelize/devoxelize_cuda.cu
+      -o /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/devoxelize/devoxelize_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      Killed
+      [5/17] /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hash/hash_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/hash/hash_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hash/hash_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      FAILED: [code=137]
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hash/hash_cuda.o
+      /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hash/hash_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/hash/hash_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hash/hash_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      Killed
+      [6/17] /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/query_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/query_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/query_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      FAILED: [code=137]
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/query_cuda.o
+      /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/query_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/query_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/query_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      Killed
+      [7/17] /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/voxelize/voxelize_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/voxelize/voxelize_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/voxelize/voxelize_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      FAILED: [code=137]
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/voxelize/voxelize_cuda.o
+      /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/voxelize/voxelize_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/voxelize/voxelize_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/voxelize/voxelize_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      Killed
+      [8/17] /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/count_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/count_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/count_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      FAILED: [code=137]
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/count_cuda.o
+      /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/count_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/count_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/count_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      Killed
+      [9/17] /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/downsample_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/downsample_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/downsample_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      FAILED: [code=137]
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/downsample_cuda.o
+      /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/downsample_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/downsample_cuda.cu -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/downsample_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      Killed
+      [10/17] c++ -MMD -MF
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/count_cpu.o.d
+      -pthread -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fPIC
+      -fPIC -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/count_cpu.cpp -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/count_cpu.o
+      -g -O3 -fopenmp -lgomp -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"'
+      '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend
+      -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+      [11/17] c++ -MMD -MF
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/voxelize/voxelize_cpu.o.d
+      -pthread -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fPIC
+      -fPIC -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/voxelize/voxelize_cpu.cpp -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/voxelize/voxelize_cpu.o
+      -g -O3 -fopenmp -lgomp -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"'
+      '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend
+      -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+      [12/17] c++ -MMD -MF
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hash/hash_cpu.o.d
+      -pthread -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fPIC
+      -fPIC -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/hash/hash_cpu.cpp -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/hash/hash_cpu.o
+      -g -O3 -fopenmp -lgomp -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"'
+      '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend
+      -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+      [13/17] c++ -MMD -MF
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/devoxelize/devoxelize_cpu.o.d
+      -pthread -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fPIC
+      -fPIC -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/devoxelize/devoxelize_cpu.cpp
+      -o /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/devoxelize/devoxelize_cpu.o
+      -g -O3 -fopenmp -lgomp -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"'
+      '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend
+      -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+      [14/17] c++ -MMD -MF
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/query_cpu.o.d
+      -pthread -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fPIC
+      -fPIC -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/others/query_cpu.cpp -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/others/query_cpu.o
+      -g -O3 -fopenmp -lgomp -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"'
+      '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend
+      -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+      [15/17] c++ -MMD -MF
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/convolution/convolution_cpu.o.d
+      -pthread -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fPIC
+      -fPIC -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cpu.cpp
+      -o /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/convolution/convolution_cpu.o
+      -g -O3 -fopenmp -lgomp -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"'
+      '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend
+      -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+      [16/17] c++ -MMD -MF
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/pybind_cuda.o.d
+      -pthread -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fPIC
+      -fPIC -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/pybind_cuda.cpp -o
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/pybind_cuda.o
+      -g -O3 -fopenmp -lgomp -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"'
+      '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend
+      -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+      [17/17] /usr/local/cuda-12.1/bin/nvcc --generate-dependencies-with-compile --dependency-output
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/convolution/convolution_cuda.o.d
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/torch/csrc/api/include
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/TH
+      -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/THC
+      -I/usr/local/cuda-12.1/include -I/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/include
+      -I/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/include/python3.10 -c -c
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu
+      -o /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/torchsparse/backend/convolution/convolution_cuda.o
+      -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__
+      -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3
+      -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"'
+      '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=backend -D_GLIBCXX_USE_CXX11_ABI=0
+      -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu(209):
+      warning #177-D: variable "tmp" was declared but never referenced
+          float tmp = 0.0f;
+                ^
+
+      Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu(322):
+      warning #177-D: variable "new_group" was declared but never referenced
+          bool new_group = true;
+               ^
+
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:
+      In lambda function:
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:549:45:
+      warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated.
+      Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were
+      using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use
+      tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+        549 |   AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |                                             ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:1:
+      note: declared here
+        225 |   DeprecatedTypeProperties & type() const {
+            | ^ ~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:549:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        549 |   AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:549:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        549 |   AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:
+      In lambda function:
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:781:45:
+      warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated.
+      Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were
+      using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use
+      tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+        781 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |                                             ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:1:
+      note: declared here
+        225 |   DeprecatedTypeProperties & type() const {
+            | ^ ~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:781:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        781 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:781:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        781 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:
+      In lambda function:
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:798:45:
+      warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated.
+      Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were
+      using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use
+      tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+        798 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |                                             ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:1:
+      note: declared here
+        225 |   DeprecatedTypeProperties & type() const {
+            | ^ ~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:798:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        798 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:798:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        798 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:
+      In lambda function:
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:879:45:
+      warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated.
+      Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were
+      using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use
+      tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+        879 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |                                             ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:1:
+      note: declared here
+        225 |   DeprecatedTypeProperties & type() const {
+            | ^ ~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:879:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        879 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:879:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        879 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:
+      In lambda function:
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:888:45:
+      warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated.
+      Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were
+      using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use
+      tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+        888 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |                                             ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:1:
+      note: declared here
+        225 |   DeprecatedTypeProperties & type() const {
+            | ^ ~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:888:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        888 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:888:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        888 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:
+      In lambda function:
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:904:45:
+      warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated.
+      Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were
+      using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use
+      tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+        904 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |                                             ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:1:
+      note: declared here
+        225 |   DeprecatedTypeProperties & type() const {
+            | ^ ~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:904:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        904 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/torchsparse/backend/convolution/convolution_cuda.cu:904:171:
+      warning: ‘c10::ScalarType detail::scalar_type(const at::DeprecatedTypeProperties&)’ is deprecated:
+      passing at::DeprecatedTypeProperties to an AT_DISPATCH macro is deprecated, pass an at::ScalarType instead
+      [-Wdeprecated-declarations]
+        904 |     AT_DISPATCH_FLOATING_TYPES_AND_HALF(
+            |
+      ^
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/include/ATen/Dispatch.h:109:1:
+      note: declared here
+        109 | inline at::ScalarType scalar_type(const at::DeprecatedTypeProperties& t) {
+            | ^~~~~~~~~~~
+      ninja: build stopped: subcommand failed.
+
+      [stderr]
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/dist.py:332: InformationOnly:
+      Normalizing '2.0.0b' to '2.0.0b0'
+        self.metadata.version = self._normalize_version(self.metadata.version)
+      /home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/utils/cpp_extension.py:425:
+      UserWarning: There are no c++ version bounds defined for CUDA version 12.1
+        warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+      Emitting ninja build file
+      /home/stevepro/.cache/uv/git-v0/checkouts/0e8186bf29da20cd/1a10fda/build/temp.linux-x86_64-cpython-310/build.ninja...
+      Compiling objects...
+      Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+      Traceback (most recent call last):
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/utils/cpp_extension.py",
+      line 2096, in _run_ninja_build
+          subprocess.run(
+        File "/home/stevepro/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/subprocess.py", line
+      526, in run
+          raise CalledProcessError(retcode, process.args,
+      subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 137.
+
+      The above exception was the direct cause of the following exception:
+
+      Traceback (most recent call last):
+        File "<string>", line 11, in <module>
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/build_meta.py", line
+      438, in build_wheel
+          return _build(['bdist_wheel'])
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/build_meta.py", line
+      429, in _build
+          return self._build_with_temp_dir(
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/build_meta.py", line
+      410, in _build_with_temp_dir
+          self.run_setup()
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/build_meta.py", line
+      520, in run_setup
+          super().run_setup(setup_script=setup_script)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/build_meta.py", line
+      317, in run_setup
+          exec(code, locals())
+        File "<string>", line 30, in <module>
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/__init__.py", line
+      117, in setup
+          return distutils.core.setup(**attrs)  # type: ignore[return-value]
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/core.py",
+      line 186, in setup
+          return run_commands(dist)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/core.py",
+      line 202, in run_commands
+          dist.run_commands()
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/dist.py",
+      line 1000, in run_commands
+          self.run_command(cmd)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/dist.py", line 1107,
+      in run_command
+          super().run_command(command)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/dist.py",
+      line 1019, in run_command
+          cmd_obj.run()
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/command/bdist_wheel.py",
+      line 370, in run
+          self.run_command("build")
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/cmd.py",
+      line 341, in run_command
+          self.distribution.run_command(command)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/dist.py", line 1107,
+      in run_command
+          super().run_command(command)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/dist.py",
+      line 1019, in run_command
+          cmd_obj.run()
+        File
+      "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/command/build.py",
+      line 135, in run
+          self.run_command(cmd_name)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/cmd.py",
+      line 341, in run_command
+          self.distribution.run_command(command)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/dist.py", line 1107,
+      in run_command
+          super().run_command(command)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/dist.py",
+      line 1019, in run_command
+          cmd_obj.run()
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/command/build_ext.py",
+      line 97, in run
+          _build_ext.run(self)
+        File
+      "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py",
+      line 367, in run
+          self.build_extensions()
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/utils/cpp_extension.py",
+      line 871, in build_extensions
+          build_ext.build_extensions(self)
+        File
+      "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py",
+      line 483, in build_extensions
+          self._build_extensions_serial()
+        File
+      "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py",
+      line 509, in _build_extensions_serial
+          self.build_extension(ext)
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/command/build_ext.py",
+      line 262, in build_extension
+          _build_ext.build_extension(self, ext)
+        File
+      "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py",
+      line 564, in build_extension
+          objects = self.compiler.compile(
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/utils/cpp_extension.py",
+      line 684, in unix_wrap_ninja_compile
+          _write_ninja_file_and_compile_objects(
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/utils/cpp_extension.py",
+      line 1774, in _write_ninja_file_and_compile_objects
+          _run_ninja_build(
+        File "/home/stevepro/.cache/uv/builds-v0/.tmpBpTh3P/lib/python3.10/site-packages/torch/utils/cpp_extension.py",
+      line 2112, in _run_ninja_build
+          raise RuntimeError(message) from e
+      RuntimeError: Error compiling objects for extension
+
+      hint: This usually indicates a problem with the package or the build environment.
+  help: `torchsparse` was included because `hellopytorch3d` (v0.1.0) depends on `torchsparse`
+(01-Example) stevepro@Alienware:~/GitHub/StevePro9/PythonSetup/PyTorchCheatSheet01/01/01-Example$ 
+
+
