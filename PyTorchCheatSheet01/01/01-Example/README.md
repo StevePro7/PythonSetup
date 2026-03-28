@@ -20,6 +20,7 @@ source .venv/bin/activate       # OR .\.venv\Scripts\activate
 which python
 `which python` --version	# Python 3.10.19
 ```
+
 UV update pyproject.toml
 ```sh
 uv lock

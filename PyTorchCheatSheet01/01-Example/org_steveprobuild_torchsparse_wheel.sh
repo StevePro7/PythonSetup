@@ -5,6 +5,8 @@ set -euo pipefail
 # Configurable environment
 # -----------------------------
 export TORCHSPARSE_REF="v2.0.0"
+export TORCH_SPEC="torch==2.2.0+cu121"
+export TORCH_INDEX_URL="https://download.pytorch.org/whl/cu121"
 export WHEELHOUSE="$(pwd)/wheelhouse-cu121"
 
 export CXXFLAGS="-O3 -DNDEBUG"
@@ -27,6 +29,14 @@ rm -rf "$WORKDIR"
 if ! command -v git >/dev/null 2>&1; then
   echo "git is required" >&2
   exit 1
+fi
+if ! command -v nvcc >/dev/null 2>&1; then
+  echo "nvcc not found on PATH; CUDA toolkit is required" >&2
+  exit 1
+fi
+if ! command -v auditwheel >/dev/null 2>&1; then
+  echo "auditwheel not found, installing..."
+  uv run pip install --upgrade --no-deps auditwheel
 fi
 
 # -----------------------------
@@ -53,13 +63,10 @@ export CXXFLAGS="${CXXFLAGS} -D_GLIBCXX_USE_CXX11_ABI=${TORCH_CXX_ABI}"
 # -----------------------------
 REPO_URL="https://github.com/mit-han-lab/torchsparse.git"
 
-# Clone / update repo
-if [[ ! -d $"WORKDIR/.git" ]]; then
-  git clone --depth 1 --branch "$TORCHSPARSE_REF" "$REPO_URL" "$WORKDIR"
-else  
-  git -C "$WORKDIR" fetch --tags --force
-  git -C "$WORKDIR" checkout -f "$TORCHSPARSE_REF"
-fi
+git clone --depth 1 --branch "$TORCHSPARSE_REF" "$REPO_URL" "$WORKDIR" || {
+    git -C "$WORKDIR" fetch --tags --force
+    git -C "$WORKDIR" checkout -f "$TORCHSPARSE_REF"
+}
 
 # -----------------------------
 # Patch for scalar_type()
@@ -102,18 +109,16 @@ uv run pip install --upgrade --no-deps "numpy<=1.26.4"
 uv run pip install --upgrade --no-deps "ninja" "cmake" "pybind11" "typing_extensions" "tqdm" "packaging<26"
 
 # -----------------------------
-# Patch project name for custom PyPI wheel
+# Patch project name to steveprotorchsparse
 # -----------------------------
 PROJECT_NAME="steveprotorchsparse"
-
-# pyproject.toml
 PYPROJECT="$WORKDIR/pyproject.toml"
+SETUP="$WORKDIR/setup.py"
+
 if [ -f "$PYPROJECT" ]; then
     sed -i "s/^name = \".*\"/name = \"$PROJECT_NAME\"/" "$PYPROJECT"
 fi
 
-# setup.py fallback
-SETUP="$WORKDIR/setup.py"
 if [ -f "$SETUP" ]; then
     sed -i "s/name=.*,/name=\"$PROJECT_NAME\",/" "$SETUP"
 fi
@@ -126,5 +131,12 @@ pushd "$WORKDIR" >/dev/null
 uv run python -m pip wheel . -w "$WHEELHOUSE" --no-deps --no-build-isolation
 popd >/dev/null
 
-echo "Built wheels in $WHEELHOUSE"
+# -----------------------------
+# Repair with auditwheel (manylinux)
+# -----------------------------
+for whl in "$WHEELHOUSE"/${PROJECT_NAME}-*.whl; do
+    uv run auditwheel repair "$whl" -w "$WHEELHOUSE"
+done
+
+echo "Built manylinux wheels in $WHEELHOUSE:"
 ls -1 "$WHEELHOUSE" | sed 's/^/ - /'

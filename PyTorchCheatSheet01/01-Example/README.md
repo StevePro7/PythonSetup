@@ -20,33 +20,29 @@ source .venv/bin/activate       # OR .\.venv\Scripts\activate
 which python
 `which python` --version	# Python 3.10.19
 ```
-UV update pyproject.toml
+
+UV install dependencies
 ```sh
-uv lock
-uv sync
+uv pip install twine
+uv pip install numpy==1.26.4
+uv pip install --index-url https://download.pytorch.org/whl/cu121 \
+    "torch==2.2.0+cu121" "torchvision==0.17.0"  "torchaudio==2.2.0"
 ```
 
-Write code for main program
+Write shell scripts to build custom wheels
 ```sh
-main.py
+chmod +x steveprobuild_pytorch3d_wheel.sh
+chmod +x steveprobuild_torchsparse_wheel.sh
 ```
 
-Finally hit F5 to run Python code
+Execute shell scripts to build custom wheels
 ```sh
-uv run test.py
+bash steveprobuild_pytorch3d_wheel.sh
+bash steveprobuild_torchsparse_wheel.sh
 ```
 
 OUTPUT
 ```sh
-Hello PyTorch3d
-torch 2.2.0+cu121
-pytorch3d 0.7.7
-cuda 12.1
-cuda True
-torch_geometric 2.7.0
-torch_scatter 2.1.2+pt22cu121
-torch_sparse 0.6.18+pt22cu121
-torch_cluster 1.6.3+pt22cu121
-torch_spline_conv 1.2.2+pt22cu121
-torchsparse 2.0.0b
+stevepropytorch3d-0.7.7-cp310-cp310-linux_x86_64.whl
+steveprotorchsparse-2.0.0b0-cp310-cp310-linux_x86_64.whl
 ```
