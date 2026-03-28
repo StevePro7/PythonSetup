@@ -30,11 +30,12 @@ Write code for main program
 ```sh
 main.py
 ```
-```
+
 Finally hit F5 to run Python code
 ```sh
 uv run test.py
 ```
+
 OUTPUT
 ```sh
 Hello PyTorch3d
