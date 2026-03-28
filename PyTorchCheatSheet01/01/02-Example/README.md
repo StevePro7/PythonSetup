@@ -69,6 +69,6 @@ OUTPUT
 
 Cleanup - as necessary
 ```sh
-sudo fuser -k 5001/tcp    # Linux
-lsof                 TODO # MacOS
+sudo fuser -k 5001/tcp		# Linux
+sudo lsof -ti tcp:5001		# MacOS
 ```

@@ -1,7 +1,7 @@
-## Example I
+## Example II
 #### 01-Apr-2026
 
-### Hello PyTorch3d
+### Use Custom Wheels
 Launch PyCharm | New Project
 
 | KEY | VALUE            |
@@ -19,6 +19,12 @@ uv venv --python 3.10
 source .venv/bin/activate       # OR .\.venv\Scripts\activate
 which python
 `which python` --version	# Python 3.10.19
+```
+
+Copy custom wheels built from previous example
+```sh
+mkdir -p wheelhouse-121
+cp ../01-Example/wheelhouse-121/* ./wheelhouse-121
 ```
 
 UV update pyproject.toml

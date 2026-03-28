@@ -1,0 +1,20 @@
+[project]
+name = "HelloPyTorch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.10.19"
+dependencies = [
+    "numpy<=1.26.4",
+
+    # Torch from official PyTorch CUDA wheels
+    "torch @ https://download.pytorch.org/whl/cu121/torch-2.2.0%2Bcu121-cp310-cp310-linux_x86_64.whl",
+
+    # Custom wheels from Devpi
+    "stevepropytorch3d @ http://localhost:3141/root/cuda-wheels/+f/e17/6e71951c168cb/stevepropytorch3d-0.7.7-cp310-cp310-linux_x86_64.whl",
+    "steveprotorchsparse @ http://localhost:3141/root/cuda-wheels/+f/aec/56aea5e352658/steveprotorchsparse-2.0.0b0-cp310-cp310-linux_x86_64.whl"
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"

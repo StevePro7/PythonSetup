@@ -1,7 +1,7 @@
 ## Example II
 #### 01-Apr-2026
 
-### Use Custom Wheels
+### Use Local Wheels
 Launch PyCharm | New Project
 
 | KEY | VALUE            |
@@ -21,12 +21,6 @@ which python
 `which python` --version	# Python 3.10.19
 ```
 
-Copy custom wheels built from previous example
-```sh
-mkdir -p wheelhouse-121
-cp ../01-Example/wheelhouse-121/* ./wheelhouse-121
-```
-
 UV update pyproject.toml
 ```sh
 uv lock
@@ -40,7 +34,7 @@ main.py
 
 Finally hit F5 to run Python code
 ```sh
-uv run test.py
+uv run main.py
 ```
 
 OUTPUT
