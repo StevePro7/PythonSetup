@@ -3,3 +3,8 @@ TODO
 
 Ex02
 lsof
+
+
+
+Ex02-02
+uv lock
