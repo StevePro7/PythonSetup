@@ -6,7 +6,7 @@ Launch PyCharm | New Project
 
 | KEY | VALUE            |
 | :---   |:-----------------|
-| Location: | ~/HelloPyTorch3d |
+| Location: | ~/HelloPyTorch3dWheels |
 | Interpreter type: | uv               |
 | Python version: | 3.10             |
 | Path to uv: | ~/.local/bin/uv  |
@@ -21,14 +21,22 @@ which python
 `which python` --version	# Python 3.10.19
 ```
 
-Copy custom wheels built from previous example
+Install local devpi client and server and twine to upload
 ```sh
-mkdir -p wheelhouse-121
-cp ../01-Example/wheelhouse-121/* ./wheelhouse-121
+uv pip install devpi-server
+uv pip install devpi-web
+```
+
+Launch Terminal | Initialize server and start
+```sh
+devpi-server --host 127.0.0.1 --port 3141
+# Launch browser | Navigate http://localhost:3141
 ```
 
 UV update pyproject.toml
 ```sh
+export MAX_JOBS=1
+export NVCC_THREADS=1
 uv lock
 uv sync
 ```

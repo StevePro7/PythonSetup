@@ -1,5 +1,5 @@
 [project]
-name = "hellopytorch3d"
+name = "HelloPyTorch3d"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -15,8 +15,6 @@ dependencies = [
     "pyrender>=0.1.45",
     "tensorboard>=2.20.0",
     "torch==2.2.0+cu121",
-    "pytorch3d @ git+https://github.com/facebookresearch/pytorch3d.git@v0.7.7",
-    "torchsparse @ git+https://github.com/mit-han-lab/torchsparse.git@v2.0.0",
     "torch-scatter==2.1.2+pt22cu121; platform_system != 'Windows'",
     "torch-sparse==0.6.18+pt22cu121; platform_system != 'Windows'",
     "torch-cluster==1.6.3+pt22cu121; platform_system != 'Windows'",
@@ -24,6 +22,8 @@ dependencies = [
     "pyg-lib==0.4.0+pt22cu121; platform_system != 'Windows'",
     "transformers>=4.38,<4.45",
     "torch-geometric>=2.7.0",
+    "pytorch3d @ git+https://github.com/facebookresearch/pytorch3d.git@v0.7.7",
+    "torchsparse @ git+https://github.com/mit-han-lab/torchsparse.git@v2.0.0",
 ]
 
 [tool.uv.extra-build-dependencies]
