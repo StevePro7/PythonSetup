@@ -6,7 +6,7 @@ Launch PyCharm | New Project
 
 | KEY | VALUE            |
 | :---   |:-----------------|
-| Location: | ~/HelloPyTorch3d |
+| Location: | ~/HelloPyTorch3dWheels |
 | Interpreter type: | uv               |
 | Python version: | 3.10             |
 | Path to uv: | ~/.local/bin/uv  |
