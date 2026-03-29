@@ -69,6 +69,5 @@ explicit = true
 
 [tool.uv.sources]
 torch = { index = "pytorch-cu121" }
-pytorch3d = { path = "wheelhouse-cu121/stevepropytorch3d-0.7.7-cp310-cp310-linux_x86_64.whl" }
-torchsparse = { path = "wheelhouse-cu121/steveprotorchsparse-2.0.0b0-cp310-cp310-linux_x86_64.whl" }
-
+stevepropytorch3d = { path = "wheelhouse-cu121/stevepropytorch3d-0.7.7-cp310-cp310-linux_x86_64.whl" }
+steveprotorchsparse = { path = "wheelhouse-cu121/steveprotorchsparse-2.0.0b0-cp310-cp310-linux_x86_64.whl" }

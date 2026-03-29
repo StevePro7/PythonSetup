@@ -21,8 +21,16 @@ which python
 `which python` --version	# Python 3.10.19
 ```
 
+Copy pre-built wheels from previous example
+```sh
+mkdir -p wheelhouse-cu121
+cp -r ../01-Example/wheelhouse-cu121 .
+```
+
 UV update pyproject.toml
 ```sh
+export MAX_JOBS=1
+export NVCC_THREADS=1
 uv lock
 uv sync
 ```
