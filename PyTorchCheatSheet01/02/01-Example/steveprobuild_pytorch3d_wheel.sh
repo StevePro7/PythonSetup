@@ -18,7 +18,7 @@ export TORCH_CUDA_ARCH_LIST="8.6"
 # -----------------------------
 # Directories
 # -----------------------------
-export WORKDIR="$(pwd)/.build/torchsparse"
+export WORKDIR="$(pwd)/.build/pytorch3d"
 mkdir -p "$WORKDIR" "$WHEELHOUSE"
 rm -rf "$WORKDIR"
 
@@ -42,12 +42,13 @@ print(f"CUDA version: {torch.version.cuda}")
 PY
 
 # Ensure correct C++ ABI
-export TORCH_CXX_ABI="$(uv run python - <<'PY'
+TORCH_CXX_ABI="$(python - <<'PY'
 import torch
 print(int(bool(torch._C._GLIBCXX_USE_CXX11_ABI)))
 PY
 )"
-export CXXFLAGS="${CXXFLAGS} -D_GLIBCXX_USE_CXX11_ABI=${TORCH_CXX_ABI}"
+export TORCH_CXX_ABI
+export CXXFLAGS="${CXXFLAGS:-} -D_GLIBCXX_USE_CXX11_ABI=${TORCH_CXX_ABI}"
 
 # -----------------------------
 # Clone PyTorch3d
@@ -65,9 +66,12 @@ fi
 # -----------------------------
 # Install build prerequisites via UV
 # -----------------------------
-uv run pip install --upgrade --no-deps pip setuptools wheel
-uv run pip install --upgrade --no-deps "numpy<=1.26.4"
-uv run pip install --upgrade --no-deps "ninja" "cmake" "pybind11" "typing_extensions" "tqdm" "packaging<26"
+uv run python -m ensurepip --upgrade
+
+# Now install build deps
+uv run python -m pip install --upgrade --no-deps pip setuptools wheel
+uv run python -m pip install --upgrade --no-deps "numpy<=1.26.4"
+uv run python -m pip install --upgrade --no-deps "ninja" "cmake" "pybind11" "typing_extensions" "tqdm" "packaging<26"
 
 # -----------------------------
 # Patch project name for custom PyPI wheel

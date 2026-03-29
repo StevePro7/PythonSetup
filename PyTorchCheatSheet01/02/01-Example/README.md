@@ -6,7 +6,7 @@ Launch PyCharm | New Project
 
 | KEY | VALUE            |
 | :---   |:-----------------|
-| Location: | ~/HelloPyTorch3d |
+| Location: | ~/HelloPyTorch3dWheels |
 | Interpreter type: | uv               |
 | Python version: | 3.10             |
 | Path to uv: | ~/.local/bin/uv  |
@@ -29,6 +29,11 @@ uv pip install --index-url https://download.pytorch.org/whl/cu121 \
     "torch==2.2.0+cu121" "torchvision==0.17.0"  "torchaudio==2.2.0"
 ```
 
+Create directory to house custom wheels
+```sh
+mkdir -p wheelhouse-cu121
+```
+
 Write shell scripts to build custom wheels
 ```sh
 chmod +x steveprobuild_pytorch3d_wheel.sh
@@ -41,7 +46,7 @@ bash steveprobuild_pytorch3d_wheel.sh
 bash steveprobuild_torchsparse_wheel.sh
 ```
 
-OUTPUT
+OUTPUT - in wheelhouse-121
 ```sh
 stevepropytorch3d-0.7.7-cp310-cp310-linux_x86_64.whl
 steveprotorchsparse-2.0.0b0-cp310-cp310-linux_x86_64.whl
