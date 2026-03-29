@@ -6,7 +6,7 @@ Launch PyCharm | New Project
 
 | KEY | VALUE            |
 | :---   |:-----------------|
-| Location: | ~/HelloPyTorch3d |
+| Location: | ~/HelloPyTorch3dWheels |
 | Interpreter type: | uv               |
 | Python version: | 3.10             |
 | Path to uv: | ~/.local/bin/uv  |
@@ -23,14 +23,15 @@ which python
 
 Copy custom wheels built from previous example
 ```sh
-mkdir -p wheelhouse-121
-cp ../01-Example/wheelhouse-121/* ./wheelhouse-121
+mkdir -p wheelhouse-cu121
+cp -r ../01-Example/wheelhouse-cu121 .
 ```
 
 Install local devpi client and server and twine to upload
 ```sh
 uv pip install devpi-server
 uv pip install devpi-client
+uv pip install devpi-web
 uv pip install twine
 ```
 

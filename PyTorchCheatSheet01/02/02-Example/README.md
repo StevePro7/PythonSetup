@@ -21,7 +21,7 @@ which python
 `which python` --version	# Python 3.10.19
 ```
 
-Copy pre-built wheels from previous example
+Copy custom wheels built from previous example
 ```sh
 mkdir -p wheelhouse-cu121
 cp -r ../01-Example/wheelhouse-cu121 .
