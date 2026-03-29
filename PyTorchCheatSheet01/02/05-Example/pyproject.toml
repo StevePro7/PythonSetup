@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = "==3.10.19"
+
 dependencies = [
+    # Core dependencies
     "numpy<=1.26.4",
     "packaging>=25.0",
     "azure-storage-blob>=12.27.1",
@@ -24,19 +26,26 @@ dependencies = [
     "ray[tune]>=2.51.1",
     "seaborn>=0.13.2",
     "tensorboard>=2.20.0",
+
+    # Torch + CUDA wheels
     "torch==2.2.0+cu121",
-    "torchaudio==2.2.0",
     "torchvision==0.17.0",
-    "pytorch3d @ git+https://github.com/facebookresearch/pytorch3d.git@v0.7.7",
-    "torchsparse @ git+https://github.com/mit-han-lab/torchsparse.git@v2.0.0",
+    "torchaudio==2.2.0",
+
+    # PyTorch Geometric CUDA wheels
     "torch-scatter==2.1.2+pt22cu121; platform_system != 'Windows'",
     "torch-sparse==0.6.18+pt22cu121; platform_system != 'Windows'",
     "torch-cluster==1.6.3+pt22cu121; platform_system != 'Windows'",
     "torch-spline-conv==1.2.2+pt22cu121; platform_system != 'Windows'",
     "pyg-lib==0.4.0+pt22cu121; platform_system != 'Windows'",
-    "transformers>=4.38,<4.45",
     "torch-geometric>=2.7.0",
+    "transformers>=4.38,<4.45",
     "websockets",
+    "setuptools>=68,<75",
+
+    # Git-based packages
+    "pytorch3d @ git+https://github.com/facebookresearch/pytorch3d.git@v0.7.7",
+    "torchsparse @ git+https://github.com/mit-han-lab/torchsparse.git@v2.0.0",
 ]
 
 [dependency-groups]
@@ -47,7 +56,7 @@ dev = [
     "syrupy>=4.7.1",
     "pre-commit>=3.7.1",
     "twine>=5.1.1",
-    "ipython",       # removed version requirement
+    "ipython",
     "pdoc3>=0.11.1",
     "pytest-xdist>=3.8.0"
 ]
@@ -55,15 +64,22 @@ dev = [
 [tool.uv.extra-build-dependencies]
 file = ["setuptools"]
 build = ["numpy<=1.26.4"]
+
+# Build dependencies for Git-based or special packages
 pytorch3d = ["torch==2.2.0+cu121", "numpy<=1.26.4"]
 torchsparse = ["torch==2.2.0+cu121", "numpy<=1.26.4", "ninja", "tqdm"]
+
+# Build dependencies for PyG CUDA wheels
 torch-cluster = ["torch", "numpy<=1.26.4"]
 torch-scatter = ["torch", "numpy<=1.26.4"]
 torch-sparse = ["torch", "numpy<=1.26.4"]
 torch-spline-conv = ["torch", "numpy<=1.26.4"]
 
 [tool.uv]
-find-links = ["https://data.pyg.org/whl/torch-2.2.0+cu121.html"]
+find-links = [
+    "https://download.pytorch.org/whl/cu121",
+    "https://data.pyg.org/whl/torch-2.2.0+cu121.html"
+]
 
 [[tool.uv.index]]
 name = "pytorch-cu121"
@@ -72,3 +88,7 @@ explicit = true
 
 [tool.uv.sources]
 torch = { index = "pytorch-cu121" }
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"

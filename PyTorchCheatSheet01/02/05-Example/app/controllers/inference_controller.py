@@ -1,7 +1,6 @@
 # app/controllers/inference_controller.py
 from app.models.dto import InferenceResponse
 
-
 class InferenceController:
 
     def __init__(self, pc_service, mesh_service, render_service, device):
