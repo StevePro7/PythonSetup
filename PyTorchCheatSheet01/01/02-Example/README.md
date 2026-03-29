@@ -34,6 +34,11 @@ Create app directory and move main to app/scoring.py
 app/scoring.py
 ```
 
+Create .env ENV VARs file and load
+```sh
+set -a; source .env; set +a
+```
+
 Configure Azure ML environment
 ```sh
 which azmlinfsrv
