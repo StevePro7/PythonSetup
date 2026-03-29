@@ -40,8 +40,9 @@ pytest
 ```
 
 Create Dockerfile | Build image + Run container
+
 ```sh
-docker run --rm --gpus all nvidia/cuda:12.1.1-base-ubuntu22.04 nvidia-smi
+docker build -t azml-gpu-local:latest .
 docker run --gpus all -p 5001:5001 azml-gpu-local:latest
 ```
 

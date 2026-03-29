@@ -11,10 +11,13 @@ ENV DEBIAN_FRONTEND=noninteractive \
     NVIDIA_VISIBLE_DEVICES=all \
     NVIDIA_DRIVER_CAPABILITIES=compute,utility \
     PATH="/opt/venv/bin:$PATH" \
-    CUDA_HOME=/usr/local/cuda
+    CUDA_HOME=/usr/local/cuda \
+    FORCE_CUDA=1 \
+    TORCH_CUDA_ARCH_LIST="8.6" \
+    MAX_JOBS=8
 
 # ----------------------------
-# System dependencies (INCLUDING torchsparse fix)
+# System dependencies
 # ----------------------------
 RUN apt-get update && apt-get install -y \
         python3.10 python3.10-venv python3.10-distutils python3-pip \
@@ -52,7 +55,12 @@ RUN pip install \
     --index-url https://download.pytorch.org/whl/cu121
 
 # ----------------------------
-# PyTorch Geometric compiled ops (prebuilt wheels)
+# Verify CUDA is visible at build time
+# ----------------------------
+RUN python -c "import torch; print('CUDA available:', torch.cuda.is_available()); print('CUDA version:', torch.version.cuda)"
+
+# ----------------------------
+# PyTorch Geometric compiled ops
 # ----------------------------
 RUN pip install \
     pyg-lib==0.4.0+pt22cu121 \
@@ -68,16 +76,26 @@ RUN pip install \
 RUN pip install torch-geometric==2.7.0
 
 # ----------------------------
-# Install torchsparse (NOW FIXED)
+# Install torchsparse (CUDA build)
 # ----------------------------
-RUN pip install --no-build-isolation \
+RUN pip install --no-build-isolation --verbose \
     git+https://github.com/mit-han-lab/torchsparse.git@v2.0.0
 
 # ----------------------------
-# Install PyTorch3D
+# Install PyTorch3D (FORCED CUDA BUILD)
 # ----------------------------
-RUN pip install --no-build-isolation \
+RUN pip install --no-build-isolation --verbose \
     git+https://github.com/facebookresearch/pytorch3d.git@v0.7.7
+
+# ----------------------------
+# Validate PyTorch3D CUDA build
+# ----------------------------
+RUN python - <<EOF
+import torch
+from pytorch3d import _C
+print("CUDA available (runtime):", torch.cuda.is_available())
+print("PyTorch3D rasterizer loaded:", hasattr(_C, "rasterize_meshes"))
+EOF
 
 # ----------------------------
 # Remaining Python dependencies

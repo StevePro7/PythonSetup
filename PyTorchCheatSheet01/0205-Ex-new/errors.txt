@@ -1,0 +1,48 @@
+
+
+2026-03-29 18:35:10,901 I [28] azmlinfsrv.print - Worker PID: 28
+2026-03-29 18:35:10,901 I [28] azmlinfsrv.print - CUDA available: True
+2026-03-29 18:35:10,901 I [28] azmlinfsrv.print - CUDA device: NVIDIA GeForce RTX 3080 Laptop GPU
+2026-03-29 18:35:32,968 E [28] azmlinfsrv - Encountered Exception: Traceback (most recent call last):
+  File "/opt/venv/lib/python3.10/site-packages/azureml_inference_server_http/server/user_script.py", line 132, in invoke_run
+    run_output = self._wrapped_user_run(**run_parameters, request_headers=dict(request.headers))
+  File "/opt/venv/lib/python3.10/site-packages/azureml_inference_server_http/server/user_script.py", line 156, in <lambda>
+    self._wrapped_user_run = lambda request_headers, **kwargs: self._user_run(**kwargs)
+  File "/app/app/scoring.py", line 34, in run
+    response: InferenceResponse = controller.handle(request)
+  File "/app/app/controllers/inference_controller.py", line 19, in handle
+    img = self.render_service.render(mesh)
+  File "/app/app/services/render_service.py", line 43, in render
+    images = self.renderer(mesh)
+  File "/opt/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/venv/lib/python3.10/site-packages/pytorch3d/renderer/mesh/renderer.py", line 63, in forward
+    fragments = self.rasterizer(meshes_world, **kwargs)
+  File "/opt/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/venv/lib/python3.10/site-packages/pytorch3d/renderer/mesh/rasterizer.py", line 254, in forward
+    pix_to_face, zbuf, bary_coords, dists = rasterize_meshes(
+  File "/opt/venv/lib/python3.10/site-packages/pytorch3d/renderer/mesh/rasterize_meshes.py", line 225, in rasterize_meshes
+    pix_to_face, zbuf, barycentric_coords, dists = _RasterizeFaceVerts.apply(
+  File "/opt/venv/lib/python3.10/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/opt/venv/lib/python3.10/site-packages/pytorch3d/renderer/mesh/rasterize_meshes.py", line 298, in forward
+    pix_to_face, zbuf, barycentric_coords, dists = _C.rasterize_meshes(
+RuntimeError: Not compiled with GPU support
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.10/site-packages/azureml_inference_server_http/server/routes.py", line 222, in handle_score
+    timed_result = main_blueprint.user_script.invoke_run(request, timeout_ms=config.scoring_timeout)
+  File "/opt/venv/lib/python3.10/site-packages/azureml_inference_server_http/server/user_script.py", line 139, in invoke_run
+    raise UserScriptException(ex) from ex
+azureml_inference_server_http.server.user_script.UserScriptException: Caught an unhandled exception from the user script
+
+2026-03-29 18:35:32,968 I [28] azmlinfsrv - POST /score 500 22067.958ms 92
+2026-03-29 18:35:32,969 I [28] gunicorn.access - 172.17.0.1 - - [29/Mar/2026:18:35:32 +0000] "POST /score HTTP/1.1" 500 92 "-" "PostmanRuntime/7.28.4"
+
