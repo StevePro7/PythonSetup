@@ -1,0 +1,13 @@
+{
+    "message": "Hello PyTorch3d",
+    "torch_version": "2.2.0+cu121",
+    "pytorch3d_version": "0.7.7",
+    "cuda_version": "12.1",
+    "cuda_available": true,
+    "torch_geometric_version": "2.7.0",
+    "torch_scatter_version": "2.1.2+pt22cu121",
+    "torch_sparse_version": "0.6.18+pt22cu121",
+    "torch_cluster_version": "1.6.3+pt22cu121",
+    "torch_spline_conv_version": "1.2.2+pt22cu121",
+    "torchsparse_version": "2.0.0b"
+}

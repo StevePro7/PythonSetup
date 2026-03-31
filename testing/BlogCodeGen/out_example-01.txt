@@ -1,0 +1,19 @@
+<table width="99%" border="1">
+<tr><td>&nbsp;&nbsp;<strong>example-01.txt</strong></td></tr>
+<tr><td>
+<pre style="font-size: 12px;">
+&nbsp;&nbsp;Hello PyTorch3d
+&nbsp;&nbsp;torch 2.2.0+cu121
+&nbsp;&nbsp;pytorch3d 0.7.7
+&nbsp;&nbsp;cuda 12.1
+&nbsp;&nbsp;cuda True
+&nbsp;&nbsp;torch_geometric 2.7.0
+&nbsp;&nbsp;torch_scatter 2.1.2+pt22cu121
+&nbsp;&nbsp;torch_sparse 0.6.18+pt22cu121
+&nbsp;&nbsp;torch_cluster 1.6.3+pt22cu121
+&nbsp;&nbsp;torch_spline_conv 1.2.2+pt22cu121
+&nbsp;&nbsp;torchsparse 2.0.0b
+</pre>
+</td></tr>
+</table>
+<br />

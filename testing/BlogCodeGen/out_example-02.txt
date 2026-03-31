@@ -1,0 +1,21 @@
+<table width="99%" border="1">
+<tr><td>&nbsp;&nbsp;<strong>example-02.txt</strong></td></tr>
+<tr><td>
+<pre style="font-size: 12px;">
+&nbsp;&nbsp;{
+&nbsp;&nbsp;    &quot;message&quot;: &quot;Hello PyTorch3d&quot;,
+&nbsp;&nbsp;    &quot;torch_version&quot;: &quot;2.2.0+cu121&quot;,
+&nbsp;&nbsp;    &quot;pytorch3d_version&quot;: &quot;0.7.7&quot;,
+&nbsp;&nbsp;    &quot;cuda_version&quot;: &quot;12.1&quot;,
+&nbsp;&nbsp;    &quot;cuda_available&quot;: true,
+&nbsp;&nbsp;    &quot;torch_geometric_version&quot;: &quot;2.7.0&quot;,
+&nbsp;&nbsp;    &quot;torch_scatter_version&quot;: &quot;2.1.2+pt22cu121&quot;,
+&nbsp;&nbsp;    &quot;torch_sparse_version&quot;: &quot;0.6.18+pt22cu121&quot;,
+&nbsp;&nbsp;    &quot;torch_cluster_version&quot;: &quot;1.6.3+pt22cu121&quot;,
+&nbsp;&nbsp;    &quot;torch_spline_conv_version&quot;: &quot;1.2.2+pt22cu121&quot;,
+&nbsp;&nbsp;    &quot;torchsparse_version&quot;: &quot;2.0.0b&quot;
+&nbsp;&nbsp;}
+</pre>
+</td></tr>
+</table>
+<br />

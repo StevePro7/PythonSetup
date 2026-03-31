@@ -1,6 +1,6 @@
 import html
 
-file = "hellocu.txt"
+file = "example-01.txt"
 
 # Read the Python file
 with open(file, "r", encoding="utf-8") as f:
