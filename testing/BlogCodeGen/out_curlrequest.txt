@@ -1,0 +1,24 @@
+<table width="99%" border="1">
+<tr><td>&nbsp;&nbsp;<strong>curlrequest.txt</strong></td></tr>
+<tr><td>
+<pre style="font-size: 12px;">
+&nbsp;&nbsp;curl --location --request POST &#x27;http://localhost:5001/score&#x27; \
+&nbsp;&nbsp;  --header &#x27;Content-Type: application/json&#x27; \
+&nbsp;&nbsp;  --data-raw &#x27;{
+&nbsp;&nbsp;  &quot;points&quot;: [
+&nbsp;&nbsp;    [0.0, 0.0, 1.0],
+&nbsp;&nbsp;    [0.1, 0.0, 0.99],
+&nbsp;&nbsp;    [-0.1, 0.0, 0.99],
+&nbsp;&nbsp;    [0.0, 0.1, 0.99],
+&nbsp;&nbsp;    [0.0, -0.1, 0.99],
+&nbsp;&nbsp;    [0.7, 0.7, 0.0],
+&nbsp;&nbsp;    [-0.7, 0.7, 0.0],
+&nbsp;&nbsp;    [0.7, -0.7, 0.0],
+&nbsp;&nbsp;    [-0.7, -0.7, 0.0],
+&nbsp;&nbsp;    [0.0, 0.0, -1.0]
+&nbsp;&nbsp;  ]
+&nbsp;&nbsp;}&#x27;
+</pre>
+</td></tr>
+</table>
+<br />

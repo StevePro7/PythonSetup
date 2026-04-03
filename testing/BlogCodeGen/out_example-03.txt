@@ -1,0 +1,19 @@
+<table width="99%" border="1">
+<tr><td>&nbsp;&nbsp;<strong>example-03.txt</strong></td></tr>
+<tr><td>
+<pre style="font-size: 12px;">
+&nbsp;&nbsp;{
+&nbsp;&nbsp;    &quot;num_vertices&quot;: 1524,
+&nbsp;&nbsp;    &quot;num_faces&quot;: 2892,
+&nbsp;&nbsp;    &quot;mean_pixel&quot;: 0.9926620125770569,
+&nbsp;&nbsp;    &quot;image_shape&quot;: [
+&nbsp;&nbsp;		128,
+&nbsp;&nbsp;		128,
+&nbsp;&nbsp;		3
+&nbsp;&nbsp;	],
+&nbsp;&nbsp;    &quot;device&quot;: &quot;cuda:0&quot;
+&nbsp;&nbsp;}
+</pre>
+</td></tr>
+</table>
+<br />

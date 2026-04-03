@@ -1,0 +1,11 @@
+{
+    "num_vertices": 1524,
+    "num_faces": 2892,
+    "mean_pixel": 0.9926620125770569,
+    "image_shape": [
+		128,
+		128,
+		3
+	],
+    "device": "cuda:0"
+}
