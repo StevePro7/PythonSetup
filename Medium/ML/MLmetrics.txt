@@ -1,0 +1,90 @@
+Stop Using Accuracy: 5 ML Metrics You Must Understand
+04-Apr-2026
+
+https://pub.towardsai.net/stop-using-accuracy-5-ml-metrics-you-must-understand-81d2acbf9955
+
+Imbalanced dataset problem
+
+Confusion Matrix
+TP
+TN
+FP      false alarm
+FN      missed catch
+
+
+#1. Precision
+all +ve predictions - how many were actually +ve?
+how often is your model right when it points?
+
+Precision matter most?
+When a False Positive is costly
+
+high precision
+when the model says +ve then you can trust it
+
+
+#2. Recall
+all actual +ve - how many did the model find?
+it cares about whether anything slipped thru
+
+Recall matter most?
+When a False Negative is costly
+
+high recall
+the model is thorough - it tries not to miss anything
+
+
+#3. F1-Score
+harmonic mean of precision and recall
+harmonic mean punishes extreme values
+
+when to use F1
+working with imbalanced data - want single number to compare different models
+w/o ignoring either type of error
+
+
+#4. ROC-AUC
+model outputting probability
+
+ROC curve
+plotting model performance at every possible threshold
+x-axis  FP rate     how often you catch wrong thing
+y-axis  TP rate     how often you catch real  thing
+
+AUC curve
+1.0     perfet model        always ranks +ve above -ve
+0.5     your model guessing
+0.85    good enough
+
+
+#5. Log Loss
+cross-entropy loss
+
+correct prediction      high confidence         tiny        penalty
+correct prediction      low  confidence         moderate    penalty
+wrong   prediction      high confidence         massive     penalty
+
+lower log loss = better
+perfect model has Log Loss = 0
+
+
+SUMMARY
+F1-Score                imbalanced classes need one number
+Precision               FP are expensive [spam, legal flags]
+Recall                  FN are expensive [disease, fraud]
+ROC-AUC                 comparing models across thresholds
+Log Loss                probabilities matter not just predictions
+Accuracy = OK           classes are balanced and stakes are low
+
+
+AUC = overall picture
+Log Loss keeps model honest RE: confidence
+
+
+Conclusion
+goal ML model != score well on metric but solve a real problem
+metric chosen should reflect that
+
+Qs
+what is the cost of FP?
+what is the cost of FN?
