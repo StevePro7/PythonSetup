@@ -42,12 +42,12 @@ set -a; source .env; set +a
 Configure Azure ML environment
 ```sh
 which azmlinfsrv
-~/.venv/bin/azmlinfsrv
+~/HelloAzureML/.venv/bin/azmlinfsrv
 ```
 
 Finally hit F5 to run Python code
 ```sh
-~/.venv/bin/azmlinfsrv --entry app/scoring.py
+~/HelloAzureML/.venv/bin/azmlinfsrv --entry app/scoring.py
 ```
 
 Submit POST request
