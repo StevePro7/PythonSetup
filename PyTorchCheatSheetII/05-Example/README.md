@@ -29,12 +29,12 @@ uv lock
 uv sync
 ```
 
-Create app directory and move main to app/scoring.py
+Create app and tests directories | Enter all code for app/scoring.py
 ```sh
 app/scoring.py
 ```
 
-Complete all app code and tests!
+Complete all app and tests code | Test all code using pytest
 ```sh
 pytest
 ```
