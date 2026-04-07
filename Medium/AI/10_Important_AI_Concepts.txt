@@ -1,0 +1,73 @@
+10 Most Important AI Concepts You Should Understand Before You Start Building AI
+07-Apr-2026
+
+https://ai.plainenglish.io/10-most-important-ai-concepts-you-should-understand-before-you-start-building-ai-7b163e8454d9
+
+
+1. Tokens
+2. Embeddings
+3. Attention
+4. Transformers
+5. LLMs
+6. Hallucination
+6. RAG
+7. Temperature
+8. Context Window
+9. RAG
+10.AI Agents
+
+
+
+1. Tokens
+How AI reads text
+tokenization = divide sentence into tokens
+
+
+2. Embeddings
+How AI understands meaning
+text converted into numbers
+numbers = embeddings
+
+
+3. Attention
+How AI understands context
+meaning of word depends on context
+
+
+4. Transformers
+The engine behind modern AI
+transformers changed AI forever
+when you chat w/ AI = predict next word v/ fast
+
+
+5. LLMs
+Large Language Model
+transformer trained on massive amounts of text = predict next token
+
+6. Hallucination
+When AI sounds right but is wrong
+
+
+7. Temperature
+Controls creativity vs. Accuracy
+AI gradually predicts the next most likely token
+temperature controls how random that selection is
+
+
+8. Context Window
+AI memory
+AI only sees what is inside context window
+
+
+9. RAG
+Retrieval Augmented Generation
+rather than relying solely on what AI was trained on
+AI looks for pertinent documents before providing a response
+so
+more accurate, more up-to-date = more reliable
+
+
+10.AI Agents
+AI that can take actions
+AI normal	answers
+AI agent	plans, uses tools, executes, checks, repeats, finish task
