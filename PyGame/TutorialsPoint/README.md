@@ -7,6 +7,10 @@ anLinks02.txt
 
 https://www.tutorialspoint.com/pygame/pygame_tutorial.pdf
 
+pygame_tutorial.pdf
+/home/stevepro/Steven/Books/Python
+
+
 cd ~/GitHub/StevePro9/PythonSetup 
 mkdir PyGame && cd PyGame
 mkdir TutorialsPoint && cd TutorialsPoint
@@ -100,3 +104,9 @@ move an image diagonally with numeric keys
 
 Chp14.
 move an image with mouse = mouse.get_pos()
+
+
+Chp15.
+move_ip()       move in-place
+contains()
+colliderect()
