@@ -115,3 +115,23 @@ colliderect()
 Chp16.  Button
 text or image surface as button - click = fire action
 use collidepoint() to identify button clicked
+
+
+Chp17.
+pygame.transform
+defintions for manipulations of Surface objects
+e.g.
+rotozoom        filtered scale and rotation
+laplacian       extracts outline of surface object
+
+
+
+Chp26.
+uv add pyopengl
+
+
+Chp27.
+pygame.error
+raised when pygame or SDL operation fails
+set_error(error_msg)
+get_error()
