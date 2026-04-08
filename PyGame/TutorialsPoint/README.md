@@ -110,3 +110,8 @@ Chp15.
 move_ip()       move in-place
 contains()
 colliderect()
+
+
+Chp16.  Button
+text or image surface as button - click = fire action
+use collidepoint() to identify button clicked
