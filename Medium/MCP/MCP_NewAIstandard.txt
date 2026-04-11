@@ -1,0 +1,86 @@
+MCP Is the New AI Agent Standard, and It’s Happening Faster Than Expected
+11-Apr-2026
+
+https://medium.com/javarevisited/mcp-is-the-new-ai-agent-standard-and-its-happening-faster-than-expected-cc76d454f8f7
+
+
+Why AI agents were hard to build
+How MCP changed that
+
+
+What is an Agent?
+system that does things not just gives suggestions
+e.g.
+chatbot = write email
+but
+AI Agent = send email on your behalf
+
+
+Tasks AI agent can do
+* read document from computer
+* query DB
+* invoke API
+* send msg to MS Teams
+* create | update file
+
+
+AI Agent = Chat Model + Taking action
+
+
+AI agent interact w/ external system = "tools"
+
+
+Examples
+Gmail tool		send email
+Jira  tool		create Jira ticket
+Teams tool		send MS Teams msg
+Web   tool		browse internet for research
+Image tool		create image
+
+
+AI agent = use intelligence = decide action = take action = tools
+AI agent = decide what to do and tools are how they do it
+
+
+MCP answer
+AI systems safely + reliably take actions = need standardized contracts
+					    with the tools they use
+
+
+MCP
+Model Context Protocol
+standard way for AI models to use tools
+
+MCP
+defines Unified API = shared format for:
+* what tools exist
+* what they can do
+* what input they need
+* what output do they return
+
+
+MCP server
+Gmail tool runs in MCP server = manages login, tokens and API calls
+[emailing sending logic]
+
+MCP client
+model uses client to check requests and send them to the MCP server
+bridge between AI model and the MCP server
+
+
+Flow
+1. model generates email text
+2. model requests Gmail tool "send_email" with input
+3. MCP client validates input
+4. MCP server executes Gmail logic
+5. result returned in structured format to the model
+
+
+IMPORTANT
+AI model never connects w/ Gmail
+AI model only interacts w/ MCP
+
+clean separation keeps execution logic clean, secure and easy to maintain
+
+Why:
+MCP = Model agnostic
