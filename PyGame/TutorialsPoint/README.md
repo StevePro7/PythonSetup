@@ -125,6 +125,15 @@ rotozoom        filtered scale and rotation
 laplacian       extracts outline of surface object
 
 
+Chp18. sound + music
+pygame.mixer module
+
+
+Chp19.
+sound object played on specific channel instead of default channel
+
+
+Chp20.
 
 Chp26.
 uv add pyopengl
@@ -135,3 +144,4 @@ pygame.error
 raised when pygame or SDL operation fails
 set_error(error_msg)
 get_error()
+
