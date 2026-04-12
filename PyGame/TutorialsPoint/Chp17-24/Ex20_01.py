@@ -9,7 +9,7 @@ bg = (127, 127, 127)
 
 done = False
 
-sound=pygame.mixer.Sound("riff.wav")
+pygame.mixer.music.load("music.wav")
 font = pygame.font.SysFont("Arial", 14)
 text1 = font.render("  PLAY  ", True, white)
 text2 = font.render("  PAUSE  ", True, white)
