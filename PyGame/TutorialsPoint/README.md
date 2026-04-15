@@ -134,9 +134,44 @@ sound object played on specific channel instead of default channel
 
 
 Chp20.
+playing music
+streaming channel for musicn playback
+pygame.mixer.music
+NB: music is streamed whereas sound playback is loaded all at once
+
+
+Chp21. Play movie
+not supported on our version
+
+
+Chp22. Camera
+pygame.camera module = capture camera feed to game window
+grab an image from it
+Linux   not detected
+Windows pip3 install VideoCapture
+
+
+Chp23.
+pygame.cursors
+predefined cursor enumerations
+
+
+Chp24. CD ROM
+skip!  'pygame' has no attribute 'cdrom'
+
+
+Chp25.  Sprite
+any bitmap drawn can in game window can be moved as Sprite
+pygame.sprite module
+
 
 Chp26.
 uv add pyopengl
+OpenGL = cross platform API = render 2D + 3D vector graphics
+hardware accelerated rendering on GPU
+OpenGL
+OpenGLU Utility functions
+edges   = lines between vertices
 
 
 Chp27.
