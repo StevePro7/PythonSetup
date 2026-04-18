@@ -1,7 +1,24 @@
 wkeeling
+18-Apr-2026
+
+
+Launch PyCharm | Open
+/home/stevepro/GitHub/StevePro9/PythonSetup/Markanoid/wkeeling/arkanoid
+
+python -m venv .venv
+pip install -r requirements.txt
+
+cd ~/GitHub/StevePro9/PythonSetup/Markanoid/wkeeling/arkanoid
+python arkanoid.py
+
+
+TESTTS
+Terminal
+cd ~/GitHub/StevePro9/PythonSetup/Markanoid/wkeeling/arkanoid
+python -m unittest discover tests
+
+
 06-Jan-2024
-
-
 pip install pygame
 
 
