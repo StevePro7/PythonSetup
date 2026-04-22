@@ -1,0 +1,47 @@
+Learn These 5 GenAI terms, And Stay Ahead In The Race
+22-Apr-2026
+
+https://medium.com/activated-thinker/learn-these-5-genai-terms-and-stay-ahead-in-the-race-ff4ef17ebb81
+
+
+GenAI
+AI that not only recognizes but generates
+
+
+01. AI Agent
+02. Guardrails
+03. Chain of Thought	[CoT]
+04. Multimodal AI
+05. Zero-Shot and Few-Shot Learning
+
+
+01. AI Agent
+AI agents
+Agentic AI
+Autonomous agents
+
+AI that not only answers but performs actions
+
+
+02. Guardrails
+AI rules and filters built into the system
+to ensure responses are within safe bounds
+
+
+03. Chain of Thought	[CoT]
+Technique where instead of asking an AI to 
+just jump to the answer you ask it to reason
+thru the problem step by step
+
+underrated technique in prompt enginerring
+
+
+04. Multimodal AI
+Takes in multiple types of inputs at once e.g.
+text, images, audio, video, documents and
+understands them together
+
+
+05. Zero-Shot and Few-Shot Learning
+once a model is trained you can actually guide it
+to do new tasks with a few or even zero examples

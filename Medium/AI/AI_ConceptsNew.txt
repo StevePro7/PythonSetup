@@ -1,0 +1,93 @@
+AI Concepts Every Developer Should Know
+22-Apr-2026
+
+https://medium.com/codex/ai-concepts-every-developer-should-know-af1b82ca8e67
+
+Prior reference
+10_Important_AI_Concepts.txt
+
+
+MCP				Model Context Protocol
+Embeddings
+Model Routing
+Evals	
+RAG				Retrieval Augmented Generation
+Multi-Agent Systems
+A2A				Agent‑to‑Agent [Communication]
+Memory + State Mgt
+Context Windows
+
+
+
+MCP				Model Context Protocol
+provides a standardized way for AI models to access external systems
+e.g.
+databaess, APIs, internal services, SaaS tools, files
+
+Connective tissue btwn AI and real applications
+
+
+Embeddings			Turning Meaning into Math
+machines understand numbers
+
+embeddings
+convert text, images or other data into numeric vectors
+that capture meaning and relationships
+
+
+Model Routing			Choosing the Right Brain
+instead of using one model for everything
+requests are routed to the most suitable model
+from a model pool = model routing
+
+saves costs, improves latency, scales systems efficiently
+
+
+
+Evals				How AI Improves Over Time
+[evaluations] = how systems measure quality and reliability continuously
+
+feedback loop
+helps teams catch regressions, refine prompts, improve routing and
+track performanc eover time
+
+
+RAG				Retrieval-Augmented Generation
+				Thinking with Knowledge
+
+RAG solves issue that LLMs don't know everything by
+retrieving relevant information and injecting it
+directly into the prompt
+
+
+Multi‑Agent Systems	Collaboration Over Complexity
+break work into roles
+each agent specializes and collaborates
+
+
+A2A 				Agent‑to‑Agent Communication
+mulit-agent systems need co-ordination
+A2A communication = allows agents to talk directly to each other
+sharing results, assinging tasks, or escalating decisions
+
+
+Memory & State Management	Continuity Over Time
+AI without memory = resets every interaction
+Memory and state management fix that
+
+
+
+Context Windows			The Attention Limit
+every LLM has a limit on how much it can "see" at once = context window
+
+
+SUMMARY
+* MCP connects AI to tools
+* Embeddings capture meaning
+* Routing selects intelligence
+* RAG provides knowledge
+* Agents collaborate
+* A2A coordinates actions
+* Memory preserves continuity
+* Context window constrain reasoning
+
