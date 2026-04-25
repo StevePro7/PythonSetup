@@ -3,28 +3,30 @@ import sys
 
 pygame.init()
 
-# Internal SMS resolution
-# SMS_WIDTH = 256
-# SMS_HEIGHT = 192
+# --- Resolution setup ---
+#SMS_WIDTH = 256
+#SMS_HEIGHT = 192
 
-# Window size
-SCREEN_WIDE = 640
-SCREEN_HIGH = 480
+WINDOW_WIDTH = 640
+WINDOW_HEIGHT = 480
 
-window = pygame.display.set_mode((SCREEN_WIDE, SCREEN_HIGH))
-pygame.display.set_caption("Splash Screen")
+window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+pygame.display.set_caption("Emulogic Font Example")
 
-# Create a low-res surface (like SMS VRAM output)
-sms_surface = pygame.Surface((SCREEN_WIDE, SCREEN_HIGH))
+# Internal SMS surface
+sms_surface = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
 
 clock = pygame.time.Clock()
 
-# Load image
-splash = pygame.image.load("StevePro.bmp").convert()
+# --- Load Emulogic font ---
+# 20px ≈ one 8x8 tile scaled to 640x480
+FONT_SIZE = 20
 
+font = pygame.font.Font("emulogic.ttf", FONT_SIZE)
 
-# Ensure it matches SMS resolution
-#splash = pygame.transform.scale(splash, (SMS_WIDTH, SMS_HEIGHT))
+# Disable smoothing (important for pixel fonts)
+def render_text(text, color=(255, 255, 255)):
+    return font.render(text, False, color)  # False = no anti-aliasing
 
 running = True
 while running:
@@ -32,18 +34,20 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # Draw to SMS surface
-    dest: tuple[float, float] = ((SCREEN_WIDE - splash.get_width()) / 2, (SCREEN_HIGH - splash.get_height()) / 2)
-    sms_surface.blit(splash, dest=dest)
+    # Clear SMS surface
+    sms_surface.fill((0, 0, 0))
 
-    # Scale up to window (choose one)
+    # Render text (tile-like positioning)
+    text_surface = render_text("HELLO SMS PORT")
 
-    # Option 1: smooth (slightly blurry)
-    #scaled = pygame.transform.smoothscale(sms_surface, (SCREEN_WIDE, SCREEN_HIGH))
+    # Position in "tile space"
+    # e.g. tile (5,5) = 5*8,5*8 in SMS coords
+    tile_x = 0
+    tile_y = 0
+    sms_surface.blit(text_surface, (tile_x * 8, tile_y * 8))
 
-    # Option 2 (better for retro): pixel-perfect scaling
-    scaled = pygame.transform.scale(sms_surface, (SCREEN_WIDE, SCREEN_HIGH))
-
+    # Scale up to window
+    scaled = pygame.transform.scale(sms_surface, (WINDOW_WIDTH, WINDOW_HEIGHT))
     window.blit(scaled, (0, 0))
 
     pygame.display.flip()
