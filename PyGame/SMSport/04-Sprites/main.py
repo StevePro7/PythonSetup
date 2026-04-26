@@ -35,7 +35,7 @@ def get_sprite(sheet, col, row, width=32, height=32):
 
 
 # Example: get sprite at column 1, row 2
-sprite = get_sprite(spritesheet, col=1, row=0)
+sprite = get_sprite(spritesheet, col=0, row=1)
 
 running = True
 while running:
