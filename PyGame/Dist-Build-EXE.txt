@@ -1,0 +1,25 @@
+Trying to build Windows EXE
+10-May-2026
+
+TL;DR
+Could not do because Avast constantly blocking and deleting EXE
+putting in the Quarantine
+
+
+01. PyInstaller
+pyinstaller --onefile aacircle.py
+
+
+pyinstaller --onefile --windowed aacircle.py
+
+
+python -m venv venv 
+venv\Scripts\activate
+python -m pip install pyinstaller pygame  
+python -m PyInstaller --windowed --noupx aacircle.py
+
+
+02. Nuitka
+python -m pip install nuitka 
+
+python -m nuitka --onefile --windows-disable-console aacircle.py
