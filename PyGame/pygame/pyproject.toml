@@ -1,5 +1,5 @@
 [project]
-name = "pygame"
+name = "pygame_examples"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
