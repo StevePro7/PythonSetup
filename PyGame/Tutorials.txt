@@ -1,0 +1,19 @@
+PyGame Tutorials
+15-May-2026
+
+https://www.pygame.org/wiki/tutorials
+
+
+Python PyGame Tutorial – The Complete Guide
+https://coderslegacy.com/python/python-pygame-tutorial
+
+
+Discover Python and Patterns
+https://www.patternsgameprog.com/series/discover-python-and-patterns
+
+
+
+
+GitHub
+simple pygame code github
+https://github.com/techwithtim/PygameForBeginners/blob/main/main.py
