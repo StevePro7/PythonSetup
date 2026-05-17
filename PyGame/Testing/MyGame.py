@@ -1,30 +1,39 @@
 from GameManager import GameManager
 
+
+
 class MyGame:
     manager: GameManager = None
+
+    # THIS enables: MyGame.Manager
+    class _ManagerProperty:
+        def __get__(self, obj, owner):
+            return owner.manager
+
+    Manager = _ManagerProperty()
 
     @classmethod
     def Construct(cls, manager: GameManager):
         cls.manager = manager
         print("steve Construct")
 
-    @staticmethod
-    def Initialize():
-        MyGame.Manager().BarManager.Initialize()
+    @classmethod
+    def Initialize(cls):
+        MyGame.Manager.BarManager.Initialize()
+        MyGame.Manager.FooManager.Initialize()
         print("steve Init")
 
-    @staticmethod
-    def LoadContent():
+    @classmethod
+    def LoadContent(cls):
+        MyGame.Manager.BarManager.LoadContent()
         print("steve LoadContent")
 
     @staticmethod
     def Update(gameTime: int):
         print(f"steve Update {gameTime}")
 
-    @staticmethod
-    def Draw():
+    @classmethod
+    def Draw(cls):
         print("steve Draw")
 
-    @classmethod
-    def Manager(cls):
-        return cls.manager
+
