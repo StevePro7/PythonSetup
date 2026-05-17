@@ -5,3 +5,4 @@ build_game()
 
 MyGame.Initialize()
 MyGame.LoadContent()
+MyGame.Update()

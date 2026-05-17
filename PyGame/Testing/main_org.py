@@ -1,4 +1,4 @@
-from MyGame import MyGame
+from generate_stubs import MyGame
 
 from BarManager import BarManager
 from FooManager import FooManager

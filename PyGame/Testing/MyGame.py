@@ -22,3 +22,8 @@ class MyGame:
     def LoadContent():
         MyGame.Manager.BarManager.LoadContent()
         MyGame.Manager.FooManager.LoadContent()
+
+
+    @staticmethod
+    def Update():
+        pass
