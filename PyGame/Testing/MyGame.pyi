@@ -1,5 +1,5 @@
-from FooManager import FooManager
-from BarManager import BarManager
+from Managers.BarManager import BarManager
+from Managers.FooManager import FooManager
 
 
 class MyGame:
@@ -20,5 +20,5 @@ class MyGame:
 
     class Manager:
         ...
-        FooManager: FooManager
         BarManager: BarManager
+        FooManager: FooManager

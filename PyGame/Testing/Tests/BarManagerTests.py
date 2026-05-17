@@ -1,5 +1,5 @@
 from ServiceRegistry import ServiceRegistry
-from BarManager import BarManager
+from Managers.BarManager import BarManager
 from bootstrap import build_game
 
 build_game()
