@@ -1,0 +1,16 @@
+Audio
+17-May-2026
+
+main.py
+/home/stevepro/GitHub/StevePro7/PythonSetup/PyGame/SMSport/07-Audio
+
+
+audiocapture.py
+/home/stevepro/GitHub/StevePro7/PythonSetup/PyGame/pygame/examples
+
+# init_subsystem(INIT_AUDIO)
+names = get_audio_device_names(True)
+print(names)
+
+if no audio devices detected then
+names = []

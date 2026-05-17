@@ -1,10 +1,9 @@
 import pygame
 
 pygame.init()
-pygame.mixer.init()
-
-pygame.mixer.init()
-pygame.init()
+test = pygame.mixer.init()
+if not test:
+    print("Cannot access audio!!")
 
 pygame.mixer.music.load("music.wav")
 pygame.mixer.music.play(-1)  # loop forever
