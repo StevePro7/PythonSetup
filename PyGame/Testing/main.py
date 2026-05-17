@@ -1,8 +1,11 @@
-import pygame
+from MyGame import MyGame
 
-def main():
-    print("Hello from testing!")
+from BarManager import BarManager
+from FooManager import FooManager
+from GameManager import GameManager
+barmanager = BarManager()
+foomanager = FooManager()
 
-
-if __name__ == "__main__":
-    main()
+manager: GameManager = GameManager(barmanager, foomanager)
+MyGame.Construct(manager)
+MyGame.Initialize()
