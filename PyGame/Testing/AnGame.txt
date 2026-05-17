@@ -1,0 +1,118 @@
+import pygame
+from registration import initialize_registration
+from game_factory import resolve_game_manager
+from engine import Engine
+from my_game import MyGame
+
+
+class AnGame:
+    WIDTH = 1280
+    HEIGHT = 720
+    TITLE = "WindowsGame"
+
+    def __init__(self):
+        pygame.init()
+
+        self.screen = pygame.display.set_mode(
+            (self.WIDTH, self.HEIGHT)
+        )
+
+        pygame.display.set_caption(self.TITLE)
+
+        self.clock = pygame.time.Clock()
+        self.running = True
+        self.active = True
+
+        # Registration.Initialize();
+        initialize_registration()
+
+        # var manager = GameFactory.Resolve();
+        manager = resolve_game_manager()
+
+        # MyGame.Construct(manager);
+        MyGame.construct(manager)
+
+    def initialize(self):
+        """
+        Equivalent to Initialize()
+        """
+
+        Engine.initialize(self)
+        MyGame.initialize()
+
+    def load_content(self):
+        """
+        Equivalent to LoadContent()
+        """
+
+        MyGame.load_content()
+
+    def unload_content(self):
+        """
+        Equivalent to UnloadContent()
+        """
+
+        MyGame.unload_content()
+
+    def update(self, dt):
+        """
+        Equivalent to Update(GameTime)
+        """
+
+        MyGame.update(dt)
+
+    def draw(self):
+        """
+        Equivalent to Draw(GameTime)
+        """
+
+        MyGame.draw(self.screen)
+
+    def on_activated(self):
+        """
+        Equivalent to OnActivated()
+        """
+
+        self.active = True
+        MyGame.on_activated()
+
+    def on_deactivated(self):
+        """
+        Equivalent to OnDeactivated()
+        """
+
+        self.active = False
+        MyGame.on_deactivated()
+
+    def run(self):
+        """
+        Equivalent to Game.Run()
+        """
+
+        self.initialize()
+        self.load_content()
+
+        while self.running:
+
+            dt = self.clock.tick(60) / 1000.0
+
+            for event in pygame.event.get():
+
+                if event.type == pygame.QUIT:
+                    self.running = False
+
+                elif event.type == pygame.WINDOWFOCUSGAINED:
+                    self.on_activated()
+
+                elif event.type == pygame.WINDOWFOCUSLOST:
+                    self.on_deactivated()
+
+            self.update(dt)
+
+            self.draw()
+
+            pygame.display.flip()
+
+        self.unload_content()
+
+        pygame.quit()

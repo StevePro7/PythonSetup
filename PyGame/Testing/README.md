@@ -53,3 +53,17 @@ public class GameManager : IGameManager
 	public IFooManager FooManager { get; private set; }
 	public ILogger Logger { get; private set; }
 }	
+
+
+
+Program.cs
+from an_game import AnGame
+
+
+def main():
+    game = AnGame()
+    game.run()
+
+
+if __name__ == "__main__":
+    main()
