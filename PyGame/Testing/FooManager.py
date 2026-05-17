@@ -3,7 +3,7 @@ class FooManager:
         print("FM steve Init")
 
     def LoadContent(self):
-        print("FM steve LoadContent")
+        print("FM steve Load")
 
     def Update(self):
         print(f"FM steve Update")

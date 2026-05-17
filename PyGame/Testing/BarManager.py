@@ -1,5 +1,5 @@
-#from FooManager import FooManager
-
+from ServiceRegistry import ServiceRegistry
+from FooManager import FooManager
 
 class BarManager:
 
@@ -7,13 +7,8 @@ class BarManager:
         print("BM steve Init")
 
     def LoadContent(self):
-        from MyGame import MyGame
+        print("BM steve Load #1")
+        foo: FooManager = ServiceRegistry.get(FooManager.__name__)
+        foo.LoadContent()
 
-        MyGame.Manager.FooManager.LoadContent()
-        print("BM steve LoadContent")
-
-    def Update(self):
-        print(f"BM steve Update")
-
-    def Draw(self):
-        print("BM steve Draw")
+        print("BM steve Load #2")

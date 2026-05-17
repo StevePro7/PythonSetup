@@ -1,39 +1,23 @@
-from GameManager import GameManager
-
+from ServiceRegistry import ServiceRegistry
 
 
 class MyGame:
-    manager: GameManager = None
+    class _ManagerFacade:
+        def __getattr__(self, name):
+            return ServiceRegistry.get(name)
 
-    # THIS enables: MyGame.Manager
-    class _ManagerProperty:
-        def __get__(self, obj, owner):
-            return owner.manager
-
-    Manager = _ManagerProperty()
-
-    @classmethod
-    def Construct(cls, manager: GameManager):
-        cls.manager = manager
-        print("steve Construct")
-
-    @classmethod
-    def Initialize(cls):
-        MyGame.Manager.BarManager.Initialize()
-        MyGame.Manager.FooManager.Initialize()
-        print("steve Init")
-
-    @classmethod
-    def LoadContent(cls):
-        MyGame.Manager.BarManager.LoadContent()
-        print("steve LoadContent")
+    Manager = _ManagerFacade()
 
     @staticmethod
-    def Update(gameTime: int):
-        print(f"steve Update {gameTime}")
+    def Construct():
+        print("MyGame Construct")
 
-    @classmethod
-    def Draw(cls):
-        print("steve Draw")
+    @staticmethod
+    def Initialize():
+        MyGame.Manager.BarManager.Initialize()
+        MyGame.Manager.FooManager.Initialize()
+        print("Init complete")
 
-
+    @staticmethod
+    def LoadContent():
+        MyGame.Manager.BarManager.LoadContent()
