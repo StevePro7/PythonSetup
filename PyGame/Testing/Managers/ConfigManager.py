@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class ConfigManager:
     def Initialize(self):
         print("ConfigManager steve Init")

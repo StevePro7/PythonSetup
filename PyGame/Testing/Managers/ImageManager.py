@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class ImageManager:
     def Initialize(self):
         print("ImageManager steve Init")

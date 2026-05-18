@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class FooManager:
     def Initialize(self):
         print("FooManager steve Init")

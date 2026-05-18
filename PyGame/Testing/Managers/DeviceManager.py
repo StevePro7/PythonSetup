@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class DeviceManager:
     def Initialize(self):
         print("DeviceManager steve Init")

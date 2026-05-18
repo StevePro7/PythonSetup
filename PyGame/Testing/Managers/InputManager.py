@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class InputManager:
     def Initialize(self):
         print("InputManager steve Init")

@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class ThreadManager:
     def Initialize(self):
         print("ThreadManager steve Init")

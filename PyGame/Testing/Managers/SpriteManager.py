@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class SpriteManager:
     def Initialize(self):
         print("SpriteManager steve Init")

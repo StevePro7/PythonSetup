@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class CollisionManager:
     def Initialize(self):
         print("CollisionManager steve Init")

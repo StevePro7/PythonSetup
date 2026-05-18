@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class TextManager:
     def Initialize(self):
         print("TextManager steve Init")

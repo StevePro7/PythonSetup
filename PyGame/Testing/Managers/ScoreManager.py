@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class ScoreManager:
     def Initialize(self):
         print("ScoreManager steve Init")

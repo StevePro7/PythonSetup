@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class ScreenManager:
     def Initialize(self):
         print("ScreenManager steve Init")

@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class ContentManager:
     def Initialize(self):
         print("ContentManager steve Init")

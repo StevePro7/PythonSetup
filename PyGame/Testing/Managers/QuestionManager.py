@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class QuestionManager:
     def Initialize(self):
         print("QuestionManager steve Init")

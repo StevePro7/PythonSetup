@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class SoundManager:
     def Initialize(self):
         print("SoundManager steve Init")

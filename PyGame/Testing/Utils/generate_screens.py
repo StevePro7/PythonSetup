@@ -1,7 +1,7 @@
 from pathlib import Path
 
 # Source template file
-template_file = "../Managers/FooManager.py"
+template_file = "../Screens/BaseScreen.py"
 
 # List of manager names
 screens = [
@@ -23,10 +23,10 @@ screens = [
 template_text = Path(template_file).read_text()
 
 # Create each manager file
-for manager in managers:
-    new_text = template_text.replace("FooManager", manager)
+for screen in screens:
+    new_text = template_text.replace("BaseScreen", screen)
 
-    output_file = f"../Managers/{manager}.py"
+    output_file = f"../Screens/{screen}.py"
     Path(output_file).write_text(new_text)
 
     print(f"Created: {output_file}")

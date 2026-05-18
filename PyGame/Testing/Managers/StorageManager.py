@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class StorageManager:
     def Initialize(self):
         print("StorageManager steve Init")

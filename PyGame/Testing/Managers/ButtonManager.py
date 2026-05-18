@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class ButtonManager:
     def Initialize(self):
         print("ButtonManager steve Init")

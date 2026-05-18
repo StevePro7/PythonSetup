@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class RandomManager:
     def Initialize(self):
         print("RandomManager steve Init")

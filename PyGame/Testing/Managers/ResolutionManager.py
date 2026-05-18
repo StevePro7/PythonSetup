@@ -1,3 +1,5 @@
+from MyGame import MyGame
+
 class ResolutionManager:
     def Initialize(self):
         print("ResolutionManager steve Init")
