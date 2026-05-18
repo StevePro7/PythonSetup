@@ -1,12 +1,12 @@
 class FooManager:
     def Initialize(self):
-        print("FM steve Init")
+        print("FooManager steve Init")
 
     def LoadContent(self):
-        print("FM steve Load")
+        print("FooManager steve Load")
 
-    def Update(self):
-        print(f"FM steve Update")
+    def Update(self, gameTime):
+        print(f"FooManager steve Update")
 
     def Draw(self):
-        print("FM steve Draw")
+        print("FooManager steve Draw")
