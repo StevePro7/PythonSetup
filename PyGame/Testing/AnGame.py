@@ -15,6 +15,10 @@ class AnGame:
     def Update(self):
         MyGame.Update()
 
+    def Run(self):
+        self.Initialize()
+        self.LoadContent()
+
 
 
 

@@ -2,7 +2,6 @@ from MyGame import MyGame
 
 class ButtonManager:
     def Initialize(self):
-        MyGame.Manager.FooManager.LoadContent()
         print("ButtonManager steve Init")
 
     def LoadContent(self):

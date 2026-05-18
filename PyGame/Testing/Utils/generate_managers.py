@@ -6,12 +6,15 @@ template_file = "../Managers/FooManager.py"
 # List of manager names
 managers = [
     "ButtonManager",
+    "ClockManager",
     "CollisionManager",
     "ConfigManager",
     "ContentManager",
     "DeviceManager",
     "ImageManager",
     "InputManager",
+    "LogManager",
+    "PyGameManager",
     "QuestionManager",
     "RandomManager",
     "ResolutionManager",

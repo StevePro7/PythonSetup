@@ -2,7 +2,8 @@ from MyGame import MyGame
 
 class FooManager:
     def Initialize(self):
-        print("FooManager steve Init")
+        #print("FooManager steve Init")
+        MyGame.Manager.LogManager.Write("Foo MGR init")
 
     def LoadContent(self):
         print("FooManager steve Load")
