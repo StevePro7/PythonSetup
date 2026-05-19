@@ -15,11 +15,12 @@ class MyGame:
         MyGame.Manager.LogManager.Initialize()
         MyGame.Manager.ConfigManager.Initialize()
         MyGame.Manager.ConfigManager.LoadContent()
+        MyGame.Manager.ConfigManager.DumpConfig()
 
         MyGame.Manager.ClockManager.Initialize()
-        MyGame.Manager.BarManager.Initialize()
-        MyGame.Manager.FooManager.Initialize()
-        MyGame.Manager.ButtonManager.Initialize()
+        # MyGame.Manager.BarManager.Initialize()
+        # MyGame.Manager.FooManager.Initialize()
+        # MyGame.Manager.ButtonManager.Initialize()
         MyGame.Manager.LogManager.Write("Init complete")
 
 
