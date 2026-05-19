@@ -14,3 +14,6 @@ class BarManager:
         # foo.LoadContent()
 
         print("BM steve Load #2")
+
+    def TestValue(self) -> int:
+        return 7
