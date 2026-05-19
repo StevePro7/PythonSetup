@@ -1,0 +1,4 @@
+FPS=100
+Width=640
+Height=480
+Fullscreen=false

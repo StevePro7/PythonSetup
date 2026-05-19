@@ -13,8 +13,10 @@ class MyGame:
     def Initialize():
         MyGame.Manager.PyGameManager.Initialize()
         MyGame.Manager.LogManager.Initialize()
-        MyGame.Manager.ClockManager.Initialize()
+        MyGame.Manager.ConfigManager.Initialize()
+        MyGame.Manager.ConfigManager.LoadContent()
 
+        MyGame.Manager.ClockManager.Initialize()
         MyGame.Manager.BarManager.Initialize()
         MyGame.Manager.FooManager.Initialize()
         MyGame.Manager.ButtonManager.Initialize()
