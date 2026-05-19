@@ -8,10 +8,6 @@ class MyGame:
 
     Manager = _ManagerFacade()
 
-    # @staticmethod
-    # def Construct():
-    #     print("MyGame Construct")
-    #     pass
 
     @staticmethod
     def Initialize():
@@ -31,4 +27,8 @@ class MyGame:
 
     @staticmethod
     def Update():
+        pass
+
+    @staticmethod
+    def Draw():
         pass

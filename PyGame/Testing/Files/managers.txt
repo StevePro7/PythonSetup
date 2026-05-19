@@ -3,7 +3,7 @@ CollisionManager
 ConfigManager
 ContentManager
 DeviceManager
-ImageManager
+EventManager
 InputManager
 QuestionManager
 RandomManager
