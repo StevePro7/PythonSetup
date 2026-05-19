@@ -13,6 +13,7 @@ class MyGame:
     def Initialize():
         MyGame.Manager.PyGameManager.Initialize()
         MyGame.Manager.LogManager.Initialize()
+        MyGame.Manager.ClockManager.Initialize()
 
         MyGame.Manager.BarManager.Initialize()
         MyGame.Manager.FooManager.Initialize()
@@ -27,8 +28,8 @@ class MyGame:
 
 
     @staticmethod
-    def Update():
-        pass
+    def Update(deltaTime: int):
+        MyGame.Manager.LogManager.Write(f"DT={deltaTime}")
 
     @staticmethod
     def Draw():

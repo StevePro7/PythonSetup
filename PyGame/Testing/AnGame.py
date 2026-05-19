@@ -14,8 +14,8 @@ class AnGame:
     def LoadContent(self):
         MyGame.LoadContent()
 
-    def Update(self):
-        MyGame.Update()
+    def Update(self, deltaTime: int):
+        MyGame.Update(deltaTime)
 
     def Draw(self):
         MyGame.Draw()
@@ -37,7 +37,8 @@ class AnGame:
             if MyGame.Manager.EventManager.QuitRequested:
                 self.Exit()
 
-            self.Update()
+            deltaTime: int = MyGame.Manager.ClockManager.Update()
+            self.Update(deltaTime)
             self.Draw()
 
         self.ShutDown()

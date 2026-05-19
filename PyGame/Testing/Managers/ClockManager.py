@@ -1,15 +1,11 @@
-from MyGame import MyGame
+import pygame
+
 
 class ClockManager:
     def Initialize(self):
-        #print("ClockManager steve Init")
-        MyGame.Manager.LogManager.Write("Foo MGR init")
+        self.clock: pygame.time.Clock = pygame.time.Clock()
+        self.fps = 100
 
-    def LoadContent(self):
-        print("ClockManager steve Load")
-
-    def Update(self, gameTime):
-        print(f"ClockManager steve Update")
-
-    def Draw(self):
-        print("ClockManager steve Draw")
+    def Update(self) -> int:
+        deltaTime: int = self.clock.tick(self.fps)
+        return deltaTime
