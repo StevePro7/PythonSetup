@@ -17,7 +17,8 @@ class MyGame:
         MyGame.Manager.BarManager.Initialize()
         MyGame.Manager.FooManager.Initialize()
         MyGame.Manager.ButtonManager.Initialize()
-        print("Init complete")
+        MyGame.Manager.LogManager.Write("Init complete")
+
 
     @staticmethod
     def LoadContent():

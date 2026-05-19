@@ -19,6 +19,7 @@ from Managers.SpriteManager import SpriteManager
 from Managers.LogManager import LogManager
 from Managers.ResolutionManager import ResolutionManager
 from Managers.RandomManager import RandomManager
+from Managers.EventManager import EventManager
 from Managers.ContentManager import ContentManager
 
 
@@ -61,4 +62,5 @@ class MyGame:
         LogManager: LogManager
         ResolutionManager: ResolutionManager
         RandomManager: RandomManager
+        EventManager: EventManager
         ContentManager: ContentManager

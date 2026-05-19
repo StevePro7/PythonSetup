@@ -2,8 +2,13 @@ from AnGame import AnGame
 
 
 def main():
-    game = AnGame()
-    game.Run()
+    try:
+        game = AnGame()
+        game.Run()
+    except KeyboardInterrupt:
+        game.Exit()
+    finally:
+        game.ShutDown()
 
 
 if __name__ == "__main__":

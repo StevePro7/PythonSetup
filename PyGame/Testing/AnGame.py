@@ -21,18 +21,25 @@ class AnGame:
         MyGame.Draw()
 
     def Exit(self):
-        self.running = True
+        self.running = False
+        MyGame.Manager.LogManager.Write("exiting...")
 
+    def ShutDown(self):
+        MyGame.Manager.LogManager.Write("shut down.")
+        MyGame.Manager.PyGameManager.Quit()
 
     def Run(self):
         self.Initialize()
         self.LoadContent()
 
         while self.running:
+            MyGame.Manager.EventManager.ProcessEvents()
+            if MyGame.Manager.EventManager.QuitRequested:
+                self.Exit()
+
             self.Update()
-            MyGame.Manager.LogManager.Write("ddd")
             self.Draw()
 
-
+        self.ShutDown()
 
 

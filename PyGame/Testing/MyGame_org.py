@@ -25,7 +25,6 @@ class MyGame:
     def Initialize():
         MyGame.Manager.FooManager.Initialize()
         MyGame.Manager.BarManager.Initialize()
-        print("Init complete")
 
     @staticmethod
     def LoadContent():

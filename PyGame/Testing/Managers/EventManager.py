@@ -1,14 +1,17 @@
-from MyGame import MyGame
+import pygame
+
 
 class EventManager:
-    def Initialize(self):
-        MyGame.Manager.LogManager.Write("MGR init")
 
-    def LoadContent(self):
-        MyGame.Manager.LogManager.Write("MGR Load")
+    def __init__(self):
+        self.QuitRequested = False
+        self.Events = []
 
-    def Update(self, deltaTime: int):
-        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
-    def Draw(self):
-        MyGame.Manager.LogManager.Write("MGR Draw")
+    def ProcessEvents(self):
+        self.Events.clear()
+        for event in pygame.event.get():
+
+            self.Events.append(event)
+            if event.type == pygame.QUIT:
+                self.QuitRequested = True
