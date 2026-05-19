@@ -30,6 +30,7 @@ class AnGame:
 
         while self.running:
             self.Update()
+            MyGame.Manager.LogManager.Write("ddd")
             self.Draw()
 
 

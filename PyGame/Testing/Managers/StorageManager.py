@@ -2,13 +2,13 @@ from MyGame import MyGame
 
 class StorageManager:
     def Initialize(self):
-        print("StorageManager steve Init")
+        MyGame.Manager.LogManager.Write("MGR init")
 
     def LoadContent(self):
-        print("StorageManager steve Load")
+        MyGame.Manager.LogManager.Write("MGR Load")
 
-    def Update(self, gameTime):
-        print(f"StorageManager steve Update")
+    def Update(self, deltaTime: int):
+        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
     def Draw(self):
-        print("StorageManager steve Draw")
+        MyGame.Manager.LogManager.Write("MGR Draw")

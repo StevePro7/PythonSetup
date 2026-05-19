@@ -1,17 +1,17 @@
-ButtonManager
-CollisionManager
-ConfigManager
-ContentManager
-DeviceManager
-EventManager
-InputManager
-QuestionManager
-RandomManager
-ResolutionManager
-ScoreManager
-ScreenManager
-SoundManager
-SpriteManager
-StorageManager
-TextManager
-ThreadManager
+# ButtonManager
+# CollisionManager
+# ConfigManager
+# ContentManager
+# DeviceManager
+# EventManager
+# InputManager
+# QuestionManager
+# RandomManager
+# ResolutionManager
+# ScoreManager
+# ScreenManager
+# SoundManager
+# SpriteManager
+# StorageManager
+# TextManager
+# ThreadManager

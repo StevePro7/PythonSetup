@@ -2,13 +2,13 @@ from MyGame import MyGame
 
 class CollisionManager:
     def Initialize(self):
-        print("CollisionManager steve Init")
+        MyGame.Manager.LogManager.Write("MGR init")
 
     def LoadContent(self):
-        print("CollisionManager steve Load")
+        MyGame.Manager.LogManager.Write("MGR Load")
 
-    def Update(self, gameTime):
-        print(f"CollisionManager steve Update")
+    def Update(self, deltaTime: int):
+        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
     def Draw(self):
-        print("CollisionManager steve Draw")
+        MyGame.Manager.LogManager.Write("MGR Draw")

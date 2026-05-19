@@ -4,34 +4,19 @@ from pathlib import Path
 template_file = "../Managers/FooManager.py"
 
 # List of manager names
-managers = [
-    "ButtonManager",
-    "ClockManager",
-    "CollisionManager",
-    "ConfigManager",
-    "ContentManager",
-    "DeviceManager",
-    "ImageManager",
-    "InputManager",
-    "LogManager",
-    "PyGameManager",
-    "QuestionManager",
-    "RandomManager",
-    "ResolutionManager",
-    "ScoreManager",
-    "ScreenManager",
-    "SoundManager",
-    "SpriteManager",
-    "StorageManager",
-    "TextManager",
-    "ThreadManager",
-]
+managers = []
+
+with open("../Files/managers.txt", "r") as file:
+    managers = [line.strip() for line in file if line.strip()]
 
 # Read the template content
 template_text = Path(template_file).read_text()
 
 # Create each manager file
 for manager in managers:
+    if manager.startswith("#"):
+        continue
+
     new_text = template_text.replace("FooManager", manager)
 
     output_file = f"../Managers/{manager}.py"

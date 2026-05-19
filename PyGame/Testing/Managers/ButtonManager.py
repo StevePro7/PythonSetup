@@ -2,13 +2,13 @@ from MyGame import MyGame
 
 class ButtonManager:
     def Initialize(self):
-        print("ButtonManager steve Init")
+        MyGame.Manager.LogManager.Write("MGR init")
 
     def LoadContent(self):
-        print("ButtonManager steve Load")
+        MyGame.Manager.LogManager.Write("MGR Load")
 
-    def Update(self, gameTime):
-        print(f"ButtonManager steve Update")
+    def Update(self, deltaTime: int):
+        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
     def Draw(self):
-        print("ButtonManager steve Draw")
+        MyGame.Manager.LogManager.Write("MGR Draw")

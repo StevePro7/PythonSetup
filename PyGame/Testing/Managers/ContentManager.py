@@ -2,13 +2,13 @@ from MyGame import MyGame
 
 class ContentManager:
     def Initialize(self):
-        print("ContentManager steve Init")
+        MyGame.Manager.LogManager.Write("MGR init")
 
     def LoadContent(self):
-        print("ContentManager steve Load")
+        MyGame.Manager.LogManager.Write("MGR Load")
 
-    def Update(self, gameTime):
-        print(f"ContentManager steve Update")
+    def Update(self, deltaTime: int):
+        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
     def Draw(self):
-        print("ContentManager steve Draw")
+        MyGame.Manager.LogManager.Write("MGR Draw")

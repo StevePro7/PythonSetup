@@ -2,7 +2,8 @@ from MyGame import MyGame
 
 class ClockManager:
     def Initialize(self):
-        print("ClockManager steve Init")
+        #print("ClockManager steve Init")
+        MyGame.Manager.LogManager.Write("Foo MGR init")
 
     def LoadContent(self):
         print("ClockManager steve Load")

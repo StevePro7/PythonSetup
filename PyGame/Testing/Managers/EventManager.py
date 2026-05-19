@@ -1,6 +1,6 @@
 from MyGame import MyGame
 
-class SpriteManager:
+class EventManager:
     def Initialize(self):
         MyGame.Manager.LogManager.Write("MGR init")
 

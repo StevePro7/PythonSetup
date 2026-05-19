@@ -2,7 +2,8 @@ from MyGame import MyGame
 
 class ImageManager:
     def Initialize(self):
-        print("ImageManager steve Init")
+        #print("ImageManager steve Init")
+        MyGame.Manager.LogManager.Write("Foo MGR init")
 
     def LoadContent(self):
         print("ImageManager steve Load")

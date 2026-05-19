@@ -2,13 +2,13 @@ from MyGame import MyGame
 
 class DeviceManager:
     def Initialize(self):
-        print("DeviceManager steve Init")
+        MyGame.Manager.LogManager.Write("MGR init")
 
     def LoadContent(self):
-        print("DeviceManager steve Load")
+        MyGame.Manager.LogManager.Write("MGR Load")
 
-    def Update(self, gameTime):
-        print(f"DeviceManager steve Update")
+    def Update(self, deltaTime: int):
+        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
     def Draw(self):
-        print("DeviceManager steve Draw")
+        MyGame.Manager.LogManager.Write("MGR Draw")

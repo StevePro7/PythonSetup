@@ -2,13 +2,13 @@ from MyGame import MyGame
 
 class RandomManager:
     def Initialize(self):
-        print("RandomManager steve Init")
+        MyGame.Manager.LogManager.Write("MGR init")
 
     def LoadContent(self):
-        print("RandomManager steve Load")
+        MyGame.Manager.LogManager.Write("MGR Load")
 
-    def Update(self, gameTime):
-        print(f"RandomManager steve Update")
+    def Update(self, deltaTime: int):
+        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
     def Draw(self):
-        print("RandomManager steve Draw")
+        MyGame.Manager.LogManager.Write("MGR Draw")
