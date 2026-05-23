@@ -13,7 +13,7 @@ class SplashScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        pass
+        return ScreenType.Diff
 
 
     def Draw(self) -> None:

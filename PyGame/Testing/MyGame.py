@@ -33,7 +33,8 @@ class MyGame:
     @staticmethod
     def Update(deltaTime: int):
         MyGame.Manager.LogManager.Write(f"DT={deltaTime}")
+        MyGame.Manager.ScreenManager.Update(deltaTime)
 
     @staticmethod
     def Draw():
-        pass
+        MyGame.Manager.ScreenManager.Draw()

@@ -7,8 +7,10 @@ from enumerations import ScreenType
 
 class ScreenManager:
 
-   # def __init__(self):
-
+    def __init__(self):
+        self.screens: dict = {}
+        self.currScreen: ScreenType = ScreenType.Splash
+        self.nextScreen: ScreenType = ScreenType.Splash
 
     def Initialize(self):
         import_all_screens()
@@ -18,17 +20,28 @@ class ScreenManager:
             for st, cls in screen_classes.items()
         }
 
-        self.current_screen_type: ScreenType | None = None
-        self.current_screen: BaseScreen | None = None
+    #    self.currScreen: ScreenType = ScreenType.Splash
+    #    self.nextScreen: ScreenType = ScreenType.Splash
+
 
 
     def LoadContent(self):
         MyGame.Manager.LogManager.Write("MGR Load")
 
     def Update(self, deltaTime: int):
+        if self.currScreen != self.nextScreen:
+            self.currScreen = self.nextScreen
+            self.screens[self.currScreen].LoadContent()
+
+        tempScreen = self.screens[self.currScreen].Update(deltaTime)
+        if tempScreen:
+            self.nextScreen = tempScreen
+
         MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
+
     def Draw(self):
+        self.screens[self.currScreen].Draw()
         MyGame.Manager.LogManager.Write("MGR Draw")
 
 

@@ -3,7 +3,7 @@ from MyGame import MyGame
 
 class AnGame:
     def __init__(self):
-        self.running: bool = False
+        self.running: bool = True
         build_game()
 
 
