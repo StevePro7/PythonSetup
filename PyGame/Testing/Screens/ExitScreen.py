@@ -1,4 +1,4 @@
-from BaseScreen import BaseScreen
+from Screens.BaseScreen import BaseScreen
 from enumerations import ScreenType
 
 class ExitScreen(BaseScreen):

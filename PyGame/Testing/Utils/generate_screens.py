@@ -29,7 +29,7 @@ for screen in screens:
     # 1. Replace import
     new_text = new_text.replace(
         "from abc import ABC, abstractmethod",
-        "from BaseScreen import BaseScreen"
+        "from Screens.BaseScreen import BaseScreen"
     )
 
     # 2. Remove abstract decorator

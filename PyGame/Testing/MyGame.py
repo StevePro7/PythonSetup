@@ -18,7 +18,7 @@ class MyGame:
         MyGame.Manager.ConfigManager.DumpConfig()
 
         MyGame.Manager.ClockManager.Initialize()
-        # MyGame.Manager.BarManager.Initialize()
+        MyGame.Manager.ScreenManager.Initialize()
         # MyGame.Manager.FooManager.Initialize()
         # MyGame.Manager.ButtonManager.Initialize()
         MyGame.Manager.LogManager.Write("Init complete")
