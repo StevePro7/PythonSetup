@@ -13,7 +13,7 @@ class ReadyScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        pass
+        return None
 
 
     def Draw(self) -> None:
