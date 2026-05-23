@@ -1,14 +1,20 @@
-from MyGame import MyGame
+from BaseScreen import BaseScreen
+from enumerations import ScreenType
 
-class ExitScreen:
-    def Initialize(self):
-        print("ExitScreen steve Init")
+class ExitScreen(BaseScreen):
 
-    def LoadContent(self):
-        print("ExitScreen steve Load")
 
-    def Update(self, gameTime):
-        print(f"ExitScreen steve Update")
+    def Initialize(self) -> None:
+        pass
 
-    def Draw(self):
-        print("ExitScreen steve Draw")
+
+    def LoadContent(self) -> None:
+        pass
+
+
+    def Update(self, deltaTime: int) -> ScreenType | None:
+        pass
+
+
+    def Draw(self) -> None:
+        pass

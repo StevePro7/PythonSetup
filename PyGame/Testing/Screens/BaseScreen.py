@@ -1,14 +1,20 @@
-from MyGame import MyGame
+from abc import ABC, abstractmethod
+from enumerations import ScreenType
 
-class BaseScreen:
-    def Initialize(self):
-        print("BaseScreen steve Init")
+class BaseScreen(ABC):
 
-    def LoadContent(self):
-        print("BaseScreen steve Load")
+    @abstractmethod
+    def Initialize(self) -> None:
+        pass
 
-    def Update(self, gameTime):
-        print(f"BaseScreen steve Update")
+    @abstractmethod
+    def LoadContent(self) -> None:
+        pass
 
-    def Draw(self):
-        print("BaseScreen steve Draw")
+    @abstractmethod
+    def Update(self, deltaTime: int) -> ScreenType | None:
+        pass
+
+    @abstractmethod
+    def Draw(self) -> None:
+        pass

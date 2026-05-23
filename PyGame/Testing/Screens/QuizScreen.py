@@ -1,14 +1,20 @@
-from MyGame import MyGame
+from BaseScreen import BaseScreen
+from enumerations import ScreenType
 
-class QuizScreen:
-    def Initialize(self):
-        print("QuizScreen steve Init")
+class QuizScreen(BaseScreen):
 
-    def LoadContent(self):
-        print("QuizScreen steve Load")
 
-    def Update(self, gameTime):
-        print(f"QuizScreen steve Update")
+    def Initialize(self) -> None:
+        pass
 
-    def Draw(self):
-        print("QuizScreen steve Draw")
+
+    def LoadContent(self) -> None:
+        pass
+
+
+    def Update(self, deltaTime: int) -> ScreenType | None:
+        pass
+
+
+    def Draw(self) -> None:
+        pass
