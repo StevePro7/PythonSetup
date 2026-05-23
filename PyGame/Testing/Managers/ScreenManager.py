@@ -13,8 +13,8 @@ class ScreenManager:
         self.nextScreen: ScreenType = ScreenType.Splash
 
     def Initialize(self):
-        import_all_screens()
-        screen_classes = build_screen_map()
+        self._import_all_screens()
+        screen_classes = self._build_screen_map()
         self.screens: dict[ScreenType, BaseScreen] = {
             st: cls()
             for st, cls in screen_classes.items()
@@ -45,23 +45,43 @@ class ScreenManager:
         MyGame.Manager.LogManager.Write("MGR Draw")
 
 
-def import_all_screens():
-    for _, module_name, _ in pkgutil.iter_modules(Screens.__path__):
-        if module_name == "BaseScreen":
-            continue
+    def _import_all_screens(self):
+        for _, module_name, _ in pkgutil.iter_modules(Screens.__path__):
+            if module_name == "BaseScreen":
+                continue
 
-        importlib.import_module(f"Screens.{module_name}")
+            importlib.import_module(f"Screens.{module_name}")
+
+    def _build_screen_map(self) -> dict[ScreenType, type[BaseScreen]]:
+        screen_map: dict[ScreenType, type[BaseScreen]] = {}
+
+        for screen_type in ScreenType:
+            class_name = f"{screen_type.name}Screen"
+            module = importlib.import_module(f"Screens.{class_name}")
+
+            cls = getattr(module, class_name)
+            screen_map[screen_type] = cls
+
+        return screen_map
 
 
-def build_screen_map() -> dict[ScreenType, type[BaseScreen]]:
-    screen_map = {}
-
-    for screen_type in ScreenType:
-        class_name = f"{screen_type.name}Screen"
-        module = importlib.import_module(f"Screens.{class_name}")
-
-        cls = getattr(module, class_name)
-
-        screen_map[screen_type] = cls
-
-    return screen_map
+# def import_all_screens():
+#     for _, module_name, _ in pkgutil.iter_modules(Screens.__path__):
+#         if module_name == "BaseScreen":
+#             continue
+#
+#         importlib.import_module(f"Screens.{module_name}")
+#
+#
+# def build_screen_map() -> dict[ScreenType, type[BaseScreen]]:
+#     screen_map = {}
+#
+#     for screen_type in ScreenType:
+#         class_name = f"{screen_type.name}Screen"
+#         module = importlib.import_module(f"Screens.{class_name}")
+#
+#         cls = getattr(module, class_name)
+#
+#         screen_map[screen_type] = cls
+#
+#     return screen_map

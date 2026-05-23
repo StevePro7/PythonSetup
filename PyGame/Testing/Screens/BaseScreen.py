@@ -13,7 +13,7 @@ class BaseScreen(ABC):
 
     @abstractmethod
     def Update(self, deltaTime: int) -> ScreenType | None:
-        pass
+        return None
 
     @abstractmethod
     def Draw(self) -> None:
