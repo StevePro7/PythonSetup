@@ -3,9 +3,10 @@ wkeeling
 
 
 Launch PyCharm | Open
-/home/stevepro/GitHub/StevePro9/PythonSetup/Markanoid/wkeeling/arkanoid
+/home/stevepro/GitHub/StevePro7/PythonSetup/Markanoid/wkeeling/arkanoid
 
 python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 
 cd ~/GitHub/StevePro9/PythonSetup/Markanoid/wkeeling/arkanoid
