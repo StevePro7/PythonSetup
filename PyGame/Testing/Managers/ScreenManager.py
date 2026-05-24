@@ -3,6 +3,7 @@ import importlib
 import pkgutil
 import Screens
 from Screens.BaseScreen import BaseScreen
+import constants as const
 from enumerations import ScreenType
 
 class ScreenManager:
@@ -47,38 +48,17 @@ class ScreenManager:
             if module_name == "BaseScreen":
                 continue
 
-            importlib.import_module(f"Screens.{module_name}")
+            importlib.import_module(f"{const.ENGINE_SCREENS}.{module_name}")
 
     def _build_screen_map(self) -> dict[ScreenType, type[BaseScreen]]:
         screen_map: dict[ScreenType, type[BaseScreen]] = {}
 
         for screen_type in ScreenType:
-            class_name = f"{screen_type.name}Screen"
-            module = importlib.import_module(f"Screens.{class_name}")
+            class_name = f"{screen_type.name}{const.ENGINE_SCREEN}"
+            module = importlib.import_module(f"{const.ENGINE_SCREENS}.{class_name}")
 
             cls = getattr(module, class_name)
             screen_map[screen_type] = cls
 
         return screen_map
 
-
-# def import_all_screens():
-#     for _, module_name, _ in pkgutil.iter_modules(Screens.__path__):
-#         if module_name == "BaseScreen":
-#             continue
-#
-#         importlib.import_module(f"Screens.{module_name}")
-#
-#
-# def build_screen_map() -> dict[ScreenType, type[BaseScreen]]:
-#     screen_map = {}
-#
-#     for screen_type in ScreenType:
-#         class_name = f"{screen_type.name}Screen"
-#         module = importlib.import_module(f"Screens.{class_name}")
-#
-#         cls = getattr(module, class_name)
-#
-#         screen_map[screen_type] = cls
-#
-#     return screen_map

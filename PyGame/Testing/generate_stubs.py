@@ -2,21 +2,21 @@ import os
 import importlib
 import inspect
 from ServiceRegistry import ServiceRegistry
+import constants as const
 
 
-MANAGERS_DIR = "Managers"
 OUTPUT_FILE = "MyGame.pyi"
 
 
 def discover_managers():
     managers = {}
 
-    for file in os.listdir(MANAGERS_DIR):
+    for file in os.listdir(const.MANAGERS):
         if not file.endswith(".py") or file.startswith("__"):
             continue
 
         module_name = file[:-3]  # strip .py
-        module_path = f"{MANAGERS_DIR}.{module_name}"
+        module_path = f"{const.MANAGERS}.{module_name}"
 
         module = importlib.import_module(module_path)
 
