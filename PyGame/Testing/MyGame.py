@@ -26,8 +26,10 @@ class MyGame:
 
     @staticmethod
     def LoadContent():
-        MyGame.Manager.BarManager.LoadContent()
-        MyGame.Manager.FooManager.LoadContent()
+        # MyGame.Manager.BarManager.LoadContent()
+        # MyGame.Manager.FooManager.LoadContent()
+        MyGame.Manager.ScreenManager.LoadContent()
+        pass
 
 
     @staticmethod

@@ -20,13 +20,11 @@ class ScreenManager:
             for st, cls in screen_classes.items()
         }
 
-    #    self.currScreen: ScreenType = ScreenType.Splash
-    #    self.nextScreen: ScreenType = ScreenType.Splash
-
-
 
     def LoadContent(self):
         MyGame.Manager.LogManager.Write("MGR Load")
+        self.nextScreen = MyGame.Manager.ConfigManager.ConfigData.ScreenType
+        print(self.nextScreen)
 
     def Update(self, deltaTime: int):
         if self.currScreen != self.nextScreen:

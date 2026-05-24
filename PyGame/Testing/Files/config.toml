@@ -1,4 +1,5 @@
 FPS=2
+ScreenType="Init"
 Width=640
 Height=480
 Fullscreen=false
