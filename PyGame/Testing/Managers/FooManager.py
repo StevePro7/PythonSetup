@@ -7,7 +7,7 @@ class FooManager:
 
     def LoadContent(self):
         # MyGame.Manager.LogManager.Write("MGR Load")
-        pass
+        return 12
 
     def Update(self, deltaTime: int):
         MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")

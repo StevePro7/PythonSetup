@@ -50,6 +50,6 @@ class ContentManager:
         #     self.writer.blit(text, coord)
 
         scaled = pygame.transform.scale(self.writer, self.size)
-        self.screen.blit(scaled, (0, -0))
+        self.screen.blit(scaled, (0, 0))
 
         pygame.display.flip()
