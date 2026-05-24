@@ -15,3 +15,6 @@ class EventManager:
             self.Events.append(event)
             if event.type == pygame.QUIT:
                 self.QuitRequested = True
+
+            if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+                self.QuitRequested = True

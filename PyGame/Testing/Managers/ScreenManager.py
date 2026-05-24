@@ -24,7 +24,6 @@ class ScreenManager:
     def LoadContent(self):
         MyGame.Manager.LogManager.Write("MGR Load")
         self.nextScreen = MyGame.Manager.ConfigManager.ConfigData.ScreenType
-        print(self.nextScreen)
 
     def Update(self, deltaTime: int):
         if self.currScreen != self.nextScreen:
