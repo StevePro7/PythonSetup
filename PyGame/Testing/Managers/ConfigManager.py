@@ -13,8 +13,10 @@ class ConfigManager:
 
 
     def LoadContent(self):
-        path: str = "/home/stevepro/GitHub/StevePro7/PythonSetup/PyGame/Testing/Files/config.toml"
-        file: Path = Path(path)
+        base_dir = Path(__file__).resolve().parent.parent
+        file: Path = base_dir / "Files" / "config.toml"
+        #path: str = "/home/stevepro/GitHub/StevePro7/PythonSetup/PyGame/Testing/Files/config.toml"
+        #file: Path = Path(path)
         text = file.read_text()
         data = tomllib.loads(text)
         data[ScreenType.__name__] = ScreenType[data[ScreenType.__name__]]
