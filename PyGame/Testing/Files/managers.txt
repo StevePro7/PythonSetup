@@ -1,3 +1,6 @@
+FontManager
+DisplayManager
+GraphicsManager
 # ButtonManager
 # CollisionManager
 # ConfigManager

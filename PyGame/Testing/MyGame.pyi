@@ -4,6 +4,8 @@ from Managers.CollisionManager import CollisionManager
 from Managers.ScreenManager import ScreenManager
 from Managers.ClockManager import ClockManager
 from Managers.QuestionManager import QuestionManager
+from Managers.GraphicsManager import GraphicsManager
+from Managers.FontManager import FontManager
 from Managers.FooManager import FooManager
 from Managers.SoundManager import SoundManager
 from Managers.ScoreManager import ScoreManager
@@ -12,6 +14,7 @@ from Managers.TextManager import TextManager
 from Managers.DeviceManager import DeviceManager
 from Managers.ButtonManager import ButtonManager
 from Managers.ConfigManager import ConfigManager
+from Managers.DisplayManager import DisplayManager
 from Managers.ThreadManager import ThreadManager
 from Managers.PyGameManager import PyGameManager
 from Managers.StorageManager import StorageManager
@@ -47,6 +50,8 @@ class MyGame:
         ScreenManager: ScreenManager
         ClockManager: ClockManager
         QuestionManager: QuestionManager
+        GraphicsManager: GraphicsManager
+        FontManager: FontManager
         FooManager: FooManager
         SoundManager: SoundManager
         ScoreManager: ScoreManager
@@ -55,6 +60,7 @@ class MyGame:
         DeviceManager: DeviceManager
         ButtonManager: ButtonManager
         ConfigManager: ConfigManager
+        DisplayManager: DisplayManager
         ThreadManager: ThreadManager
         PyGameManager: PyGameManager
         StorageManager: StorageManager

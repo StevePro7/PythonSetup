@@ -15,6 +15,7 @@ class ContentManager:
         self.wide = MyGame.Manager.ConfigManager.ConfigData.Width
         self.high = MyGame.Manager.ConfigManager.ConfigData.Height
         self.size = (self.wide, self.high)
+        #self.screen = pygame.display.set_mode(self.size, pygame.FULLSCREEN)
         self.screen = pygame.display.set_mode(self.size)
         self.writer = pygame.Surface(self.size)
 

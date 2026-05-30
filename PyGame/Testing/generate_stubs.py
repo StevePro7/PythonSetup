@@ -11,12 +11,12 @@ OUTPUT_FILE = "MyGame.pyi"
 def discover_managers():
     managers = {}
 
-    for file in os.listdir(const.MANAGERS):
+    for file in os.listdir(const.ENGINE_MANAGERS):
         if not file.endswith(".py") or file.startswith("__"):
             continue
 
         module_name = file[:-3]  # strip .py
-        module_path = f"{const.MANAGERS}.{module_name}"
+        module_path = f"{const.ENGINE_MANAGERS}.{module_name}"
 
         module = importlib.import_module(module_path)
 
