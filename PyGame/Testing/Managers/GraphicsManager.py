@@ -1,4 +1,5 @@
 from MyGame import MyGame
+from Static.Assets import Assets
 
 class GraphicsManager:
     def Initialize(self):
@@ -7,10 +8,11 @@ class GraphicsManager:
 
     def LoadContent(self):
         # MyGame.Manager.LogManager.Write("MGR Load")
-        return 12
+        return None
 
     def Update(self, deltaTime: int):
         MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
     def Draw(self):
-        MyGame.Manager.LogManager.Write("MGR Draw")
+        surface = Assets.EmulogicFont.render("STEVEPRO", False, (255, 0, 0))
+        MyGame.Manager.DisplayManager.Foo(surface)

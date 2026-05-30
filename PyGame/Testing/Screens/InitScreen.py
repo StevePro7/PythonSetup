@@ -2,6 +2,7 @@ from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from enumerations import ScreenType
 
+
 class InitScreen(BaseScreen):
 
 
@@ -18,4 +19,6 @@ class InitScreen(BaseScreen):
 
 
     def Draw(self) -> None:
-        MyGame.Manager.ContentManager.Draw()
+        MyGame.Manager.GraphicsManager.Draw()
+
+        pass

@@ -39,8 +39,10 @@ class ScreenManager:
 
 
     def Draw(self):
+        MyGame.Manager.DisplayManager.Clear()
         self.screens[self.currScreen].Draw()
-        MyGame.Manager.LogManager.Write("MGR Draw")
+        MyGame.Manager.DisplayManager.Present()
+        #MyGame.Manager.LogManager.Write("MGR Draw")
 
 
     def _import_all_screens(self):

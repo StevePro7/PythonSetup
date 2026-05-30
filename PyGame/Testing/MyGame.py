@@ -18,16 +18,21 @@ class MyGame:
         MyGame.Manager.ConfigManager.DumpConfig()
 
         MyGame.Manager.ClockManager.Initialize()
+        MyGame.Manager.DisplayManager.Initialize()
+        MyGame.Manager.FontManager.Initialize()
         MyGame.Manager.ScreenManager.Initialize()
-        # MyGame.Manager.FooManager.Initialize()
+
         # MyGame.Manager.ButtonManager.Initialize()
         MyGame.Manager.LogManager.Write("Init complete")
 
 
     @staticmethod
     def LoadContent():
+        MyGame.Manager.FontManager.LoadContent()
         MyGame.Manager.ContentManager.LoadContent()
+
         MyGame.Manager.ScreenManager.LoadContent()
+        MyGame.Manager.DisplayManager.LoadContent()
         pass
 
 

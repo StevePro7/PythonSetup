@@ -3,24 +3,26 @@ import pygame
 
 class ContentManager:
     def __init__(self):
-        self.font: pygame.font.Font = None
+        #self.font: pygame.font.Font = None
+        pass
 
     def Initialize(self):
         MyGame.Manager.LogManager.Write("MGR init")
 
     def LoadContent(self):
-        self.font_size: int = 20
-        self.font = pygame.font.Font("Fonts/emulogic.ttf", self.font_size)
+        # self.font_size: int = 20
+        # self.font = pygame.font.Font("Fonts/emulogic.ttf", self.font_size)
 
-        self.wide = MyGame.Manager.ConfigManager.ConfigData.Width
-        self.high = MyGame.Manager.ConfigManager.ConfigData.Height
-        self.size = (self.wide, self.high)
-        #self.screen = pygame.display.set_mode(self.size, pygame.FULLSCREEN)
-        self.screen = pygame.display.set_mode(self.size)
-        self.writer = pygame.Surface(self.size)
-
-        #self.text = self.font.render("X", False, (255, 255, 255))
-        pygame.display.set_caption("Hello World")
+        # self.wide = MyGame.Manager.ConfigManager.ConfigData.Width
+        # self.high = MyGame.Manager.ConfigManager.ConfigData.Height
+        # self.size = (self.wide, self.high)
+        # #self.screen = pygame.display.set_mode(self.size, pygame.FULLSCREEN)
+        # self.screen = pygame.display.set_mode(self.size)
+        # self.writer = pygame.Surface(self.size)
+        #
+        # #self.text = self.font.render("X", False, (255, 255, 255))
+        # pygame.display.set_caption("Hello World")
+        pass
 
     def Update(self, deltaTime: int):
         MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")

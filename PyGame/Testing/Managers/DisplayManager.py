@@ -1,16 +1,28 @@
 from MyGame import MyGame
+import pygame
 
 class DisplayManager:
+    def __init__(self):
+        self.screen: pygame.Surface = None
+        self.size: tuple = None
+
     def Initialize(self):
-        # MyGame.Manager.LogManager.Write("MGR init")
-        pass
+        self.wide = MyGame.Manager.ConfigManager.ConfigData.Width
+        self.high = MyGame.Manager.ConfigManager.ConfigData.Height
+        self.size = (self.wide, self.high)
 
     def LoadContent(self):
         # MyGame.Manager.LogManager.Write("MGR Load")
-        return 12
+        self.screen = pygame.display.set_mode(self.size)
+        pygame.display.set_caption("Hello World!!")
 
-    def Update(self, deltaTime: int):
-        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
+    def Clear(self, color: tuple=(0, 0, 0)):
+        # MyGame.Manager.LogManager.Write("MGR Load")
+        self.screen.fill(color)
+        return
 
-    def Draw(self):
-        MyGame.Manager.LogManager.Write("MGR Draw")
+    def Present(self):
+        pygame.display.flip()
+
+    def Foo(self, surface):
+        self.screen.blit(surface, (0, 0))
