@@ -1,5 +1,6 @@
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
+from Static.Assets import Assets
 from enumerations import ScreenType
 
 
@@ -19,6 +20,7 @@ class InitScreen(BaseScreen):
 
 
     def Draw(self) -> None:
-        MyGame.Manager.GraphicsManager.Draw()
-
+        MyGame.Manager.TextManager.DrawText("STEVEPRO", (0,0))
+        MyGame.Manager.TextManager.DrawText("SUZANNE", (0, 20), (0, 255, 0))
+        MyGame.Manager.TextManager.DrawText("ADRIANA", (0, 40), (0, 0, 255))
         pass

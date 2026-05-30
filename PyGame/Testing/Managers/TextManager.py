@@ -1,14 +1,16 @@
 from MyGame import MyGame
+from Static.Assets import Assets
+from Static.Colors import Colors
 
 class TextManager:
     def Initialize(self):
-        MyGame.Manager.LogManager.Write("MGR init")
+        pass
 
     def LoadContent(self):
-        MyGame.Manager.LogManager.Write("MGR Load")
+        pass
 
     def Update(self, deltaTime: int):
-        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
+        pass
 
-    def Draw(self):
-        MyGame.Manager.LogManager.Write("MGR Draw")
+    def DrawText(self, text, position, color=Colors.White):
+        MyGame.Manager.GraphicsManager.DrawText(Assets.EmulogicFont, text, position, color)
