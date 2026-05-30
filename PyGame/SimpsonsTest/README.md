@@ -24,3 +24,31 @@ uv lock
 uv sync
 
 uv add pytest
+
+
+
+LAYOUT
+SimpsonsTrivia/
+│
+├── README.md
+├── pyproject.toml
+├── program.py
+│
+├── Assets/
+│
+├── Engine/
+│   ├── Core/
+│   ├── Graphics/
+│   ├── Input/
+│   ├── Audio/
+│   ├── Events/
+│   ├── Time/
+│   └── Services/
+│
+├── Game/
+│   ├── Managers/
+│   ├── Screens/
+│   ├── Models/
+│   └── MyGame.py
+│
+└── Tests/
