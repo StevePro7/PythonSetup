@@ -1,6 +1,7 @@
-FontManager
-DisplayManager
-GraphicsManager
+FileManager
+# FontManager
+# DisplayManager
+# GraphicsManager
 # ButtonManager
 # CollisionManager
 # ConfigManager

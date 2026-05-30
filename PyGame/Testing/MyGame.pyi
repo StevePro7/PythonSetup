@@ -15,6 +15,7 @@ from Managers.DeviceManager import DeviceManager
 from Managers.ButtonManager import ButtonManager
 from Managers.ConfigManager import ConfigManager
 from Managers.DisplayManager import DisplayManager
+from Managers.FileManager import FileManager
 from Managers.ThreadManager import ThreadManager
 from Managers.PyGameManager import PyGameManager
 from Managers.StorageManager import StorageManager
@@ -61,6 +62,7 @@ class MyGame:
         ButtonManager: ButtonManager
         ConfigManager: ConfigManager
         DisplayManager: DisplayManager
+        FileManager: FileManager
         ThreadManager: ThreadManager
         PyGameManager: PyGameManager
         StorageManager: StorageManager
