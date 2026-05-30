@@ -22,3 +22,11 @@ class InputManager:
         test = self.keyboard.KeyHold(pygame.K_SPACE)
         #test = self.keyboard.KeyPress(pygame.K_SPACE)
         return test
+
+    def GetOptionType(self) -> bool:
+        test = self.mouse.ButtonClick()
+        #test = self.mouse.ButtonHold()
+        return test
+
+    def GetPosition(self) -> (int, int):
+        return self.mouse.MousePosition()

@@ -37,4 +37,7 @@ class MouseInput:
         return self.curr_buttons[index] and not self.prev_buttons[index]
 
     def ButtonClick(self, index=0) -> bool:
-        return self.button_hold(index)
+        return self.ButtonHold(index)
+
+    def MousePosition(self) -> (int, int):
+        return (self.CurrMouseX, self.CurrMouseY)

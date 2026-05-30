@@ -6,7 +6,8 @@ class OverScreen(BaseScreen):
 
 
     def Initialize(self) -> None:
-        pass
+        self.X: int = 0
+        self.Y: int = 0
 
 
     def LoadContent(self) -> None:
@@ -14,8 +15,16 @@ class OverScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
+        self.test: bool = MyGame.Manager.InputManager.GetOptionType()
+        if self.test:
+            self.X, self.Y = MyGame.Manager.InputManager.GetPosition()
+
         return None
 
 
     def Draw(self) -> None:
-        MyGame.Manager.TextManager.DrawText("SPLAT", (0, 0))
+        for i in range(24):
+            y = i * 20
+            MyGame.Manager.TextManager.DrawText("X", (0, y))
+
+        MyGame.Manager.TextManager.DrawText("SPLAT", (self.X, self.Y))
