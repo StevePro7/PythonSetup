@@ -1,8 +1,8 @@
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from Objects.TextData import TextData
-
 from enumerations import ScreenType
+
 
 class DiffScreen(BaseScreen):
 

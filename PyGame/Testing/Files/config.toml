@@ -1,7 +1,6 @@
 FPS=50
-#ScreenType="Level"
-#ScreenType="Long"
-ScreenType="Test"
+ScreenType="Long"
+#ScreenType="Test"
 Width=640
 Height=480
 Fullscreen=false
