@@ -1,11 +1,15 @@
+from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
+from Objects.TextData import TextData
+
 from enumerations import ScreenType
 
 class DiffScreen(BaseScreen):
 
 
     def Initialize(self) -> None:
-        pass
+        screen = self.__class__.__name__
+        self.textDataList: list[TextData] = MyGame.Manager.TextManager.LoadTextData(screen)
 
 
     def LoadContent(self) -> None:
@@ -17,4 +21,5 @@ class DiffScreen(BaseScreen):
 
 
     def Draw(self) -> None:
-        pass
+        MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
+

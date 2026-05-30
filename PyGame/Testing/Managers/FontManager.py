@@ -14,7 +14,6 @@ class FontManager:
     def Initialize(self):
         self.color: tuple = pygame.Color("white")
         self.font_size: int = (int)(MyGame.Manager.ConfigManager.ConfigData.Width / const.FONT_SCALE)
-        x = self.font_size
 
     def LoadContent(self):
         root: Path = utils.get_project_root()
@@ -23,3 +22,7 @@ class FontManager:
 
     def Draw(self):
         MyGame.Manager.LogManager.Write("MGR Draw")
+
+    @property
+    def FontSize(self) -> int:
+        return self.font_size

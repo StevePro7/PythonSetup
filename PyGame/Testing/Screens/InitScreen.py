@@ -1,5 +1,6 @@
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
+from Objects.TextData import TextData
 from Static.Assets import Assets
 from enumerations import ScreenType
 
