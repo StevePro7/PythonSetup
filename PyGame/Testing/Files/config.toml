@@ -1,7 +1,7 @@
 FPS=50
-ScreenType="Diff"
+#ScreenType="Level"
 #ScreenType="Long"
-#ScreenType="Over"
+ScreenType="Test"
 Width=640
 Height=480
 Fullscreen=false

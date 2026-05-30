@@ -1,13 +1,17 @@
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from enumerations import ScreenType
+from Objects.TextData import TextData
+
 
 class OverScreen(BaseScreen):
 
 
     def Initialize(self) -> None:
-        self.X: int = 0
-        self.Y: int = 0
+        # self.X: int = 0
+        # self.Y: int = 0
+        screen = self.__class__.__name__
+        self.textDataList: list[TextData] = MyGame.Manager.TextManager.LoadTextData(screen)
 
 
     def LoadContent(self) -> None:
@@ -15,16 +19,18 @@ class OverScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        self.test: bool = MyGame.Manager.InputManager.GetOptionType()
-        if self.test:
-            self.X, self.Y = MyGame.Manager.InputManager.GetPosition()
+        # self.test: bool = MyGame.Manager.InputManager.GetOptionType()
+        # if self.test:
+        #     self.X, self.Y = MyGame.Manager.InputManager.GetPosition()
 
         return None
 
 
     def Draw(self) -> None:
-        for i in range(24):
-            y = i * 20
-            MyGame.Manager.TextManager.DrawText("X", (0, y))
+        # for i in range(24):
+        #     y = i * 20
+        #     MyGame.Manager.TextManager.DrawText("X", (0, y))
+        #
+        # MyGame.Manager.TextManager.DrawText("SPLAT", (self.X, self.Y))
+        MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
 
-        MyGame.Manager.TextManager.DrawText("SPLAT", (self.X, self.Y))

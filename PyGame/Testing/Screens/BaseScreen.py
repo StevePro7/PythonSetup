@@ -1,5 +1,8 @@
 from abc import ABC, abstractmethod
 from enumerations import ScreenType
+from Objects.TextData import TextData
+from MyGame import MyGame
+
 
 class BaseScreen(ABC):
 
@@ -18,3 +21,7 @@ class BaseScreen(ABC):
     @abstractmethod
     def Draw(self) -> None:
         pass
+
+
+    # def LoadTextData(self, screen: str):
+    #     self.textDataList: list[TextData] = MyGame.Manager.TextManager.LoadTextData(screen)

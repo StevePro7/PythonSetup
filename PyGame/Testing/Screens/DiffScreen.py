@@ -22,4 +22,3 @@ class DiffScreen(BaseScreen):
 
     def Draw(self) -> None:
         MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
-
