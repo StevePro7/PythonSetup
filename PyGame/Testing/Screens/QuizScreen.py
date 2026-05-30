@@ -5,7 +5,7 @@ class QuizScreen(BaseScreen):
 
 
     def Initialize(self) -> None:
-        pass
+        super().LoadScreenText()
 
 
     def LoadContent(self) -> None:
@@ -17,4 +17,4 @@ class QuizScreen(BaseScreen):
 
 
     def Draw(self) -> None:
-        pass
+        super().DrawScreenText()

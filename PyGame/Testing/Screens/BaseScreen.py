@@ -6,6 +6,10 @@ from MyGame import MyGame
 
 class BaseScreen(ABC):
 
+    def __init__(self):
+        self.textDataList: list[TextData] = []
+
+
     @abstractmethod
     def Initialize(self) -> None:
         pass
@@ -23,5 +27,9 @@ class BaseScreen(ABC):
         pass
 
 
-    # def LoadTextData(self, screen: str):
-    #     self.textDataList: list[TextData] = MyGame.Manager.TextManager.LoadTextData(screen)
+    def LoadScreenText(self) -> None:
+        screen_name = self.__class__.__name__
+        self.textDataList = MyGame.Manager.TextManager.LoadTextData(screen_name)
+
+    def DrawScreenText(self) -> None:
+        MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)

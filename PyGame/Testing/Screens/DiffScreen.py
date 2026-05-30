@@ -8,8 +8,7 @@ class DiffScreen(BaseScreen):
 
 
     def Initialize(self) -> None:
-        screen = self.__class__.__name__
-        self.textDataList: list[TextData] = MyGame.Manager.TextManager.LoadTextData(screen)
+        super().LoadScreenText()
 
 
     def LoadContent(self) -> None:
@@ -21,4 +20,4 @@ class DiffScreen(BaseScreen):
 
 
     def Draw(self) -> None:
-        MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
+        super().DrawScreenText()

@@ -7,10 +7,11 @@ from enumerations import ScreenType
 class LongScreen(BaseScreen):
 
     def Initialize(self) -> None:
-        screen = self.__class__.__name__
-        self.textDataList: list[TextData] = MyGame.Manager.TextManager.LoadTextData(screen)
+        #screen = self.__class__.__name__
+        #self.textDataList: list[TextData] = MyGame.Manager.TextManager.LoadTextData(screen)
         # self.text: str = None
         # self.Y: int = 0
+        super().LoadScreenText()
 
 
     def LoadContent(self) -> None:
@@ -25,9 +26,10 @@ class LongScreen(BaseScreen):
 
 
     def Draw(self) -> None:
-        MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
+        #MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
         # for i in range(24):
         #     y = i * 20
         #     MyGame.Manager.TextManager.DrawText("X", (0, y))
         #
         # MyGame.Manager.TextManager.DrawText("SPACE", (40, self.Y))
+        super().DrawScreenText()

@@ -10,8 +10,7 @@ class OverScreen(BaseScreen):
     def Initialize(self) -> None:
         # self.X: int = 0
         # self.Y: int = 0
-        screen = self.__class__.__name__
-        self.textDataList: list[TextData] = MyGame.Manager.TextManager.LoadTextData(screen)
+        super().LoadScreenText()
 
 
     def LoadContent(self) -> None:
@@ -32,5 +31,5 @@ class OverScreen(BaseScreen):
         #     MyGame.Manager.TextManager.DrawText("X", (0, y))
         #
         # MyGame.Manager.TextManager.DrawText("SPLAT", (self.X, self.Y))
-        MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
+        super().DrawScreenText()
 
