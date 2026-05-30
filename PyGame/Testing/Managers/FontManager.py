@@ -19,7 +19,6 @@ class FontManager:
     def LoadContent(self):
         root: Path = utils.get_project_root()
         file: Path = root / "Fonts/emulogic.ttf"
-        bob = pygame.font.Font(file, self.font_size)
         Assets.EmulogicFont = pygame.font.Font("Fonts/emulogic.ttf", self.font_size)
 
     def Draw(self):

@@ -1,5 +1,6 @@
-FPS=1
-ScreenType="Init"
+FPS=50
+ScreenType="Long"
+#ScreenType="Over"
 Width=640
 Height=480
 Fullscreen=false

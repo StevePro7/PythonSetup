@@ -20,6 +20,8 @@ class ScreenManager:
             st: cls()
             for st, cls in screen_classes.items()
         }
+        for screen in self.screens.values():
+            screen.Initialize()
 
 
     def LoadContent(self):

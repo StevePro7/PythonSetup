@@ -1,3 +1,4 @@
+from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from enumerations import ScreenType
 
@@ -17,4 +18,4 @@ class OverScreen(BaseScreen):
 
 
     def Draw(self) -> None:
-        pass
+        MyGame.Manager.TextManager.DrawText("SPLAT", (0, 0))

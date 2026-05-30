@@ -20,6 +20,7 @@ class MyGame:
         MyGame.Manager.ClockManager.Initialize()
         MyGame.Manager.DisplayManager.Initialize()
         MyGame.Manager.FontManager.Initialize()
+        MyGame.Manager.InputManager.Initialize()
         MyGame.Manager.ScreenManager.Initialize()
 
         # MyGame.Manager.ButtonManager.Initialize()
@@ -39,6 +40,7 @@ class MyGame:
     @staticmethod
     def Update(deltaTime: int):
         MyGame.Manager.LogManager.Write(f"DT={deltaTime}")
+        MyGame.Manager.InputManager.Update(deltaTime)
         MyGame.Manager.ScreenManager.Update(deltaTime)
 
     @staticmethod

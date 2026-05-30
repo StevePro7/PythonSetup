@@ -1,14 +1,24 @@
-from MyGame import MyGame
+import pygame
+from Inputs.KeyboardInput import KeyboardInput
+from Inputs.MouseInput import MouseInput
+#from JoystickInput
+
 
 class InputManager:
-    def Initialize(self):
-        MyGame.Manager.LogManager.Write("MGR init")
+    def __init__(self):
+        self.keyboard: KeyboardInput = None
+        self.mouse:MouseInput = None
 
-    def LoadContent(self):
-        MyGame.Manager.LogManager.Write("MGR Load")
+    def Initialize(self):
+        self.keyboard: KeyboardInput = KeyboardInput()
+        self.mouse: MouseInput = MouseInput()
+
 
     def Update(self, deltaTime: int):
-        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
+        self.keyboard.Update(deltaTime)
+        self.mouse.Update(deltaTime)
 
-    def Draw(self):
-        MyGame.Manager.LogManager.Write("MGR Draw")
+    def Advance(self) -> bool:
+        test = self.keyboard.KeyHold(pygame.K_SPACE)
+        #test = self.keyboard.KeyPress(pygame.K_SPACE)
+        return test

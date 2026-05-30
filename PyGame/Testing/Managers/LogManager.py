@@ -14,3 +14,7 @@ class LogManager:
     @staticmethod
     def Write(msg: str):
         logging.info(msg, stacklevel=2)
+
+    @staticmethod
+    def Error(msg: str):
+        logging.error(msg, stacklevel=2)
