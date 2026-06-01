@@ -1,10 +1,16 @@
 import pygame
+from pygame._sdl2 import get_audio_device_names
 
 pygame.init()
-test = pygame.mixer.init()
-if not test:
-    print("Cannot access audio!!")
+if pygame.mixer.get_init() is not None:
+    devices = get_audio_device_names(False)
+    print(devices)
+    # ['DELL U2414H (NVIDIA High Definition Audio)', 'DELL U2414H (NVIDIA High Definition Audio) (2)']
+else:
+    print("Audio subsystem unavailable")
+#self.audio_enabled = pygame.mixer.get_init() is not None
 
+pygame.mixer.init()
 pygame.mixer.music.load("music.wav")
 pygame.mixer.music.play(-1)  # loop forever
 

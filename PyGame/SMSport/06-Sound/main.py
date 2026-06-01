@@ -4,10 +4,21 @@ pygame.init()
 pygame.mixer.init()
 
 # Load sound effects
-cheat_sfx = pygame.mixer.Sound("cheat.wav")
-ready_sfx = pygame.mixer.Sound("ready.wav")
-right_sfx = pygame.mixer.Sound("right.wav")
+# cheat_sfx = pygame.mixer.Sound("right_01.wav")
+# ready_sfx = pygame.mixer.Sound("right_02.wav")
+# right_sfx = pygame.mixer.Sound("right.wav")
+# wrong_sfx = pygame.mixer.Sound("right_03.wav")
+
+cheat_sfx = pygame.mixer.Sound("wrong_01.wav")
+ready_sfx = pygame.mixer.Sound("wrong_02.wav")
+right_sfx = pygame.mixer.Sound("wrong_03.wav")
 wrong_sfx = pygame.mixer.Sound("wrong.wav")
+
+
+# cheat_sfx = pygame.mixer.Sound("cheat.wav")
+# ready_sfx = pygame.mixer.Sound("ready.wav")
+# right_sfx = pygame.mixer.Sound("right.wav")
+# wrong_sfx = pygame.mixer.Sound("wrong.wav")
 
 pygame.display.set_caption("SFX example")
 screen = pygame.display.set_mode((640, 480))
