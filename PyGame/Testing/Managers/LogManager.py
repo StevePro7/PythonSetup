@@ -12,6 +12,10 @@ class LogManager:
         logging.basicConfig(level=level, format=output, datefmt=datefmt)
 
     @staticmethod
+    def Debug(msg: str):
+        logging.debug(msg, stacklevel=2)
+
+    @staticmethod
     def Write(msg: str):
         logging.info(msg, stacklevel=2)
 
