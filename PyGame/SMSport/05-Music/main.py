@@ -4,8 +4,9 @@ import sys
 pygame.mixer.init()
 pygame.init()
 
-pygame.mixer.music.load("music.wav")
-pygame.mixer.music.play(-1)  # loop forever
+#pygame.mixer.music.load("happymusic.mp3")
+pygame.mixer.music.load("titlemusic.mp3")
+pygame.mixer.music.play()
 
 pygame.display.set_caption("Music Example")
 screen = pygame.display.set_mode((640, 480))
