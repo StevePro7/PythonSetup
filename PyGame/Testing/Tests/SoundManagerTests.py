@@ -1,7 +1,9 @@
+import pygame
+import enumerations as enums
 from Managers.SoundManager import SoundManager
 from bootstrap import build_game
-import pygame
-#import enumerations as enums
+
+
 
 registry = build_game()
 
@@ -11,7 +13,7 @@ soundManager.Initialize()
 soundManager.LoadContent()
 
 # MUSIC
-#soundManager.PlayMusic(enums.MusicType.HappyMusic)
+soundManager.PlayMusic(enums.MusicType.HappyMusic)
 #soundManager.PlayMusic(enums.MusicType.TitleMusic)
 #test: bool = soundManager.IsMusicPlaying()
 

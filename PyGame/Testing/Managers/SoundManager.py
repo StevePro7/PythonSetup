@@ -28,25 +28,17 @@ class SoundManager:
             return
 
         for type in enums.MusicType:
-            file = self.GetAudioFile(type.name, "mp3")
+            file = self.__getAudioFile(type.name, "mp3")
             self.music[type] = file
 
         for type in enums.SoundType:
-            file = self.GetAudioFile(type.name, "wav")
+            file = self.__getAudioFile(type.name, "wav")
             sfx: pygame.mixer.Sound = pygame.mixer.Sound(file)
             self.sound[type] = sfx
 
 
-        # tm = enums.SoundType.Wrong
-        # sf = f"{tm.name}"
-        # ex = "wav"
-        # xx = self.GetAudioFile(sf, ex)
-        # sfx: pygame.mixer.Sound = pygame.mixer.Sound(xx)
-        # self.sound[tm] = sfx
-
-
     def PlaySound(self, type: enums.SoundType):
-        if not self.soundEnable:
+        if not self.audioEnable or not self.soundEnable:
             return
 
         sfx: pygame.mixer.Sound = self.sound[type]
@@ -55,18 +47,23 @@ class SoundManager:
 
 
     def PlayMusic(self, type: enums.MusicType):
-        song = self.music[type]
-        self.currMusic = song
-        pygame.mixer.music.load(song)
-        pygame.mixer.music.play()
+        if not self.audioEnable or not self.musicEnable:
+            song = self.music[type]
+            self.currMusic = song
+            pygame.mixer.music.load(song)
+            pygame.mixer.music.play()
 
     def StopMusic(self):
-        pygame.mixer.music.stop()               # adriana - test API
+        if not self.audioEnable or not self.musicEnable:
+            pygame.mixer.music.stop()               # adriana - test API
 
     def IsMusicPlaying(self) -> bool:
+        if not self.audioEnable or not self.musicEnable:
+            return False
+
         return pygame.mixer.music.get_busy() and self.currMusic is not None
 
-    def GetAudioFile(self, soundFile: str, extention: str) -> str:
+    def __getAudioFile(self, soundFile: str, extention: str) -> str:
         root: Path = get_project_root()
         file = f"{soundFile}.{extention}"
         path: Path = root / "Sound" / file      # adriana - hardcode Sound
