@@ -4,7 +4,6 @@ from Managers.SoundManager import SoundManager
 from bootstrap import build_game
 
 
-
 registry = build_game()
 
 pygame.init()

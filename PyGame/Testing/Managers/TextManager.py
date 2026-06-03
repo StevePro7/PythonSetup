@@ -15,7 +15,7 @@ class TextManager:
         pass
 
     def InitTextData(self, screen: str) -> list[TextData]:
-        file: str = self.__GetTextFile(f"{screen}.txt")
+        file: str = self.__getTextFile(f"{screen}.txt")
         lines: list[str] = MyGame.Manager.FileManager.LoadTxt(file)
 
         textDataList: list[TextData] = []
@@ -49,7 +49,7 @@ class TextManager:
         for textData in textDataList:
             self.DrawTextPos(textData.Text, textData.Position, textData.Color)
 
-    def __GetTextFile(self, textFile: str) -> str:
+    def __getTextFile(self, textFile: str) -> str:
         root: Path = get_project_root()
         file: Path = root / "Data" / textFile
         return file
