@@ -1,6 +1,4 @@
 FPS=50
 ScreenType="Over"
 #ScreenType="Test"
-Width=640
-Height=480
 Fullscreen=false

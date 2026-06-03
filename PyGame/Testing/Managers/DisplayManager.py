@@ -1,6 +1,7 @@
+import pygame
 from MyGame import MyGame
 from Static.Globalize import Globalize
-import pygame
+import constants as const
 
 # Window ownership
 class DisplayManager:
@@ -9,9 +10,7 @@ class DisplayManager:
         self.size: tuple = None
 
     def Initialize(self):
-        wide = MyGame.Manager.ConfigManager.ConfigData.Width
-        high = MyGame.Manager.ConfigManager.ConfigData.Height
-        self.size = (wide, high)
+        self.size = (const.SCREEN_WIDE, const.SCREEN_HIGH)
 
     def LoadContent(self):
         self.screen = pygame.display.set_mode(self.size)

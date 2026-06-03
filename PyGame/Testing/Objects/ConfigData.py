@@ -5,6 +5,4 @@ from enumerations import ScreenType
 class ConfigData:
     FPS: int
     ScreenType: ScreenType
-    Width: int
-    Height: int
     Fullscreen: bool

@@ -17,3 +17,7 @@ Need to get build version DrawText() not TextList
 
 04. Content Mgr
 do I need FontMgr - maybe load all content via Content Mgr??
+
+
+05. Colors
+e.g. Display Mgr
