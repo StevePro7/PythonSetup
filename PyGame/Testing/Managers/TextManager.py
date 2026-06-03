@@ -4,6 +4,7 @@ from Static.Assets import Assets
 from Static.Colors import Colors
 from utils import get_project_root
 from pathlib import Path
+import constants as const
 
 
 class TextManager:
@@ -14,7 +15,7 @@ class TextManager:
         pass
 
     def LoadTextData(self, screen: str) -> list[TextData]:
-        file: str = self.GetTextFile(f"{screen}.txt")
+        file: str = self.__GetTextFile(f"{screen}.txt")
         lines: list[str] = MyGame.Manager.FileManager.LoadTxt(file)
 
         textDataList: list[TextData] = []
@@ -27,7 +28,7 @@ class TextManager:
             y = int(items[1])
             text = items[2]
 
-            position: tuple[int, int] = self.GetTextPosition(x, y)
+            position: tuple[int, int] = self.__GetTextPosition(x, y)
             textData: TextData = TextData(position, text, Colors.White)
             textDataList.append(textData)
 
@@ -37,19 +38,27 @@ class TextManager:
     def Update(self, deltaTime: int):
         pass
 
-    def DrawText(self, text, position, color=Colors.White):
+    def DrawText(self, text: str, x: int, y: int, color= Colors.White):
+        position: tuple[int, int] = self.__GetTextPosition(x, y)
+        self.DrawTextPos(text, position, color)
+
+    def DrawTextPos(self, text: str, position: tuple[int, int], color= Colors.White):
         MyGame.Manager.GraphicsManager.DrawText(Assets.EmulogicFont, text, position, color)
 
     def DrawTextDataList(self, textDataList: list[TextData]) -> None:
         for textData in textDataList:
-            self.DrawText(textData.Text, textData.Position, textData.Color)
+            self.DrawTextPos(textData.Text, textData.Position, textData.Color)
 
-    def GetTextFile(self, textFile: str) -> str:
+    def __GetTextFile(self, textFile: str) -> str:
         root: Path = get_project_root()
         file: Path = root / "Data" / textFile
         return file
 
-    def GetTextPosition(self, x: int, y: int) -> tuple[int, int]:
-        font_size: int = 20 # MyGame.Manager.FontManager.FontSize
-        position: tuple[int, int] = (x * font_size, y * font_size)
+    def __GetTextPosition(self, x: int, y: int) -> tuple[int, int]:
+        try:
+            px = x * const.FONT_SIZE + const.FontOffsetX
+            py = y * const.FONT_SIZE + const.FontOffsetY
+            position: tuple[float, float] = (px, py)
+        except Exception as e:
+            print(e)
         return position
