@@ -1,5 +1,5 @@
 FPS=50
-ScreenType="Over"
+ScreenType="Title"
 #ScreenType="Test"
 Width=640
 Height=480

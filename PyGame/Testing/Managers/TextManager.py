@@ -14,7 +14,7 @@ class TextManager:
     def Initialize(self):
         pass
 
-    def LoadTextData(self, screen: str) -> list[TextData]:
+    def InitTextData(self, screen: str) -> list[TextData]:
         file: str = self.__GetTextFile(f"{screen}.txt")
         lines: list[str] = MyGame.Manager.FileManager.LoadTxt(file)
 

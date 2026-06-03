@@ -13,8 +13,3 @@ class FileManager:
                 line = reader.readline()
 
         return lines
-
-
-    # def LoadTxt(self, file: str) -> list[str]:
-    #     with open(file, "r", encoding="utf-8") as f:
-    #         return [line.rstrip("\n") for line in f]

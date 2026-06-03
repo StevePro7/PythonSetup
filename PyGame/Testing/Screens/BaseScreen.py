@@ -29,7 +29,7 @@ class BaseScreen(ABC):
 
     def LoadScreenText(self) -> None:
         screen_name = self.__class__.__name__
-        self.textDataList = MyGame.Manager.TextManager.LoadTextData(screen_name)
+        self.textDataList = MyGame.Manager.TextManager.InitTextData(screen_name)
 
     def DrawScreenText(self) -> None:
         MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)

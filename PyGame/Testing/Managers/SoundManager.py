@@ -3,13 +3,14 @@ from pygame._sdl2 import get_audio_device_names
 from MyGame import MyGame
 from utils import get_project_root
 from pathlib import Path
+import constants as const
 import enumerations as enums
 
 class SoundManager:
     def __init__(self):
         self.audioEnable = False
         self.musicEnable = False
-        self.soundEnable = True
+        self.soundEnable = False
         self.music: dict[enums.MusicType, str] = {}
         self.sound: dict[enums.SoundType, str] = {}
         self.currMusic = None
@@ -19,7 +20,7 @@ class SoundManager:
         self.audioEnable = pygame.mixer.get_init() is not None
         if self.audioEnable:
             pygame.mixer.init()
-            devices = get_audio_device_names(False)
+            devices = get_audio_device_names(True)
             MyGame.Manager.LogManager.Debug(devices)
 
 
@@ -66,5 +67,5 @@ class SoundManager:
     def __getAudioFile(self, soundFile: str, extention: str) -> str:
         root: Path = get_project_root()
         file = f"{soundFile}.{extention}"
-        path: Path = root / "Sound" / file      # adriana - hardcode Sound
+        path: Path = root / const.SOUND_DIRECTORY / file      # adriana - hardcode Sound
         return path
