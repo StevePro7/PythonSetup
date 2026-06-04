@@ -1,14 +1,25 @@
-from MyGame import MyGame
+import random
+import time
+
 
 class RandomManager:
-    def Initialize(self):
-        MyGame.Manager.LogManager.Write("MGR init")
+    def __init__(self):
+        self._random = None
 
-    def LoadContent(self):
-        MyGame.Manager.LogManager.Write("MGR Load")
 
-    def Update(self, deltaTime: int):
-        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
+    def Initialize(self, seed: int = None):
+        if seed is None:
+            seed = int(time.time_ns()) & 0xFFFF
 
-    def Draw(self):
-        MyGame.Manager.LogManager.Write("MGR Draw")
+        self._random = random.Random(seed)
+
+    def Next(self, *args) -> int:
+        if len(args) == 1:
+            max_val: int = args[0]
+            return self._random.randrange(max_val)
+        elif len(args) == 2:
+            min_val: int = args[0]
+            max_val: int = args[1]
+            return self._random.randrange(min_val, max_val)
+        else:
+            raise TypeError("next() expects 1 or 2 arguments")
