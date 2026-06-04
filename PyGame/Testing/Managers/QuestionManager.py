@@ -25,7 +25,7 @@ class QuestionManager:
         self.QuestionNumber: int = None
         self.NumberQuestion: int = None
         self.DifficultyType: enums.DifficultyType = None
-        self.OptionType: enums.OptionType = None
+        self.CorrectOptionType: enums.OptionType = None
         self.DifficultyText: str = None
         self.QuizLengthText: str = None
         self.QuizLengthText2: str = None
@@ -86,6 +86,16 @@ class QuestionManager:
         for line in lines:
             question: Question = self.LoadQuestion(line)
             self.QuestionList.append(question)
+
+
+    def PlayQuestion(self, index: int) -> Question:
+        q: Question = self.QuestionList[index]
+        answerCode: int = q.AnswerCode
+        answerCode -= 1
+
+        # Set correct option for this question.
+        self.CorrectOptionType: enums.OptionType = enums.OptionType(answerCode)
+        return q
 
 
     def GetQuestionPosn(self) -> list[pygame.Vector2]:

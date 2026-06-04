@@ -12,6 +12,7 @@ questionManager.LoadContent()
 
 questionManager.LoadQuestionList(enums.DifficultyType.Easy)
 
+q: Question = questionManager.PlayQuestion(0)
 # TEST
 # line: str = "3;WHO SHOT MR. BURNS?;BART;HOMER;MAGGIE;LISA;page01;02-GeneralSimpsonsTrivia.csv"
 # question: Question = questionManager.LoadQuestion(line)

@@ -29,6 +29,10 @@ TM
 def __getTextFile(self, textFile: str) -> str:
 
 
+07. public Question LoadQuestion(Byte index)
+as we cannot override methods - I renamed this PlayQuestion
+which is used in PlayScreen
+
 IMPORTANT
 OptionType
 original code uses None but cannot be used in Python
