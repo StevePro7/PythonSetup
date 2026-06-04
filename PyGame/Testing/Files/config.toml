@@ -1,4 +1,6 @@
 FPS=50
 ScreenType="Over"
 #ScreenType="Test"
+#MusicEnable=true
+#SoundEnable=true
 Fullscreen=false
