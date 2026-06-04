@@ -1,9 +1,11 @@
 import pygame
+from pathlib import Path
 from MyGame import MyGame
 from Objects.Question import Question
 import constants as const
 import enumerations as enums
 import utils
+
 
 class QuestionManager:
 
@@ -76,8 +78,15 @@ class QuestionManager:
         return Question(questionText, answerAText, answerBText, answerCText, answerDText, answerCode)
 
 
-    def LoadQuestionList(self):
+    def LoadQuestionList(self, type: enums.DifficultyType) -> None:
         self.QuestionList.clear()
+
+        file: str = self.__getTextFile(type)
+        lines: list[str] = MyGame.Manager.FileManager.LoadTxt(file)
+        for line in lines:
+            question: Question = self.LoadQuestion(line)
+            self.QuestionList.append(question)
+
 
     def GetQuestionPosn(self) -> list[pygame.Vector2]:
         positions: list[pygame.Vector2] = []
@@ -117,4 +126,10 @@ class QuestionManager:
     def Reset(self):
         self.QuestionNumber = 0
         self.numberTxt = utils.GetNumberZO(self.QuestionNumber + 1)
-        print("bob")
+
+
+    def __getTextFile(self, type: enums.DifficultyType) -> str:
+        name: str = f"{type.name}.txt"
+        root: Path = utils.get_project_root()
+        file: Path = root / "Levels" / name
+        return file

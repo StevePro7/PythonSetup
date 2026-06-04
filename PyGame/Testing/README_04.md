@@ -23,6 +23,12 @@ do I need FontMgr - maybe load all content via Content Mgr??
 e.g. Display Mgr
 
 
+06. DRY
+QM
+TM
+def __getTextFile(self, textFile: str) -> str:
+
+
 IMPORTANT
 OptionType
 original code uses None but cannot be used in Python
