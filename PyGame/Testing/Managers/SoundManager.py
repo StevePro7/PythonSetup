@@ -49,14 +49,18 @@ class SoundManager:
 
     def PlayMusic(self, type: enums.MusicType):
         if not self.audioEnable or not self.musicEnable:
-            song = self.music[type]
-            self.currMusic = song
-            pygame.mixer.music.load(song)
-            pygame.mixer.music.play()
+            return
+
+        song = self.music[type]
+        self.currMusic = song
+        pygame.mixer.music.load(song)
+        pygame.mixer.music.play()
 
     def StopMusic(self):
         if not self.audioEnable or not self.musicEnable:
-            pygame.mixer.music.stop()               # adriana - test API
+            return
+
+        pygame.mixer.music.stop()               # adriana - test API
 
     def IsMusicPlaying(self) -> bool:
         if not self.audioEnable or not self.musicEnable:
