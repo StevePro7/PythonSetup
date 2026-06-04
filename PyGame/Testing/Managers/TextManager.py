@@ -28,7 +28,7 @@ class TextManager:
             y = int(items[1])
             text = items[2]
 
-            position: tuple[int, int] = self.__GetTextPosition(x, y)
+            position: tuple[int, int] = self.GetTextPosition(x, y)
             textData: TextData = TextData(position, text, Colors.White)
             textDataList.append(textData)
 
@@ -39,7 +39,7 @@ class TextManager:
         pass
 
     def DrawText(self, text: str, x: int, y: int, color= Colors.White):
-        position: tuple[int, int] = self.__GetTextPosition(x, y)
+        position: tuple[int, int] = self.GetTextPosition(x, y)
         self.DrawTextPos(text, position, color)
 
     def DrawTextPos(self, text: str, position: tuple[int, int], color= Colors.White):
@@ -49,16 +49,15 @@ class TextManager:
         for textData in textDataList:
             self.DrawTextPos(textData.Text, textData.Position, textData.Color)
 
+
+    def GetTextPosition(self, x: int, y: int) -> tuple[int, int]:
+        px = x * const.FONT_SIZE + const.FontOffsetX
+        py = y * const.FONT_SIZE + const.FontOffsetY
+        position: tuple[int, int] = (px, py)
+        return position
+
+
     def __getTextFile(self, textFile: str) -> str:
         root: Path = get_project_root()
         file: Path = root / "Data" / textFile
         return file
-
-    def __GetTextPosition(self, x: int, y: int) -> tuple[int, int]:
-        try:
-            px = x * const.FONT_SIZE + const.FontOffsetX
-            py = y * const.FONT_SIZE + const.FontOffsetY
-            position: tuple[float, float] = (px, py)
-        except Exception as e:
-            print(e)
-        return position

@@ -58,6 +58,14 @@ class SpriteType(ZeroBasedEnum):
     White = auto()
 
 
+class OptionType(ZeroBasedEnum):
+    A = auto()
+    B = auto()
+    C = auto()
+    D = auto()
+    Invalid = auto()
+
+
 class ActorType(ZeroBasedEnum):
     Bart1 = auto()
     Bart2 = auto()

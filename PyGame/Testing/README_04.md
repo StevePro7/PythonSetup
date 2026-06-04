@@ -21,3 +21,9 @@ do I need FontMgr - maybe load all content via Content Mgr??
 
 05. Colors
 e.g. Display Mgr
+
+
+IMPORTANT
+OptionType
+original code uses None but cannot be used in Python
+so I renamed to Invalid
