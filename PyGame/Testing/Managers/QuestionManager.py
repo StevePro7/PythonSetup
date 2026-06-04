@@ -11,17 +11,16 @@ class QuestionManager:
 
     def __init__(self):
         # Private members.
-        self.questionRoot: str = None
         self.questionPosn: list[pygame.Vector2] = None
         self.answerAPosn: list[pygame.Vector2] = None; self.answerBPosn: list[pygame.Vector2] = None; self.answerCPosn: list[pygame.Vector2] = None; self.answerDPosn: list[pygame.Vector2] = None
         self.originAPosn: list[pygame.Vector2] = None; self.originBPosn: list[pygame.Vector2] = None; self.originCPosn: list[pygame.Vector2] = None; self.originDPosn: list[pygame.Vector2] = None
         self.numberPos: pygame.Vector2 = None; self.totalPos: pygame.Vector2 = None; self.diffPos: pygame.Vector2 = None
         self.numberTxt: str = None
         self.answerList: list[int] = None
-        self.cheatMode: bool = False
+        self.cheatMode: bool = None
 
         # Properties
-        self.QuestionList: list[Question] = []
+        self.QuestionList: list[Question] = None
         self.QuestionNumber: int = None
         self.NumberQuestion: int = None
         self.DifficultyType: enums.DifficultyType = None
@@ -35,7 +34,9 @@ class QuestionManager:
         self.semicolon = ";"
         self.pipe = "|"
 
-        self.QuestionList = []
+        self.answerList: list[int] = []
+        self.QuestionList: list[Question] = []
+        self.cheatMode: bool = False
 
 
     def LoadContent(self):
@@ -57,27 +58,6 @@ class QuestionManager:
         self.Reset()
 
 
-    def Update(self, deltaTime: int):
-        pass
-
-    def Draw(self):
-        pass
-
-
-
-    def LoadQuestion(self, line: str):
-        texts: list[str] = line.split(self.semicolon)
-
-        questionText: list[str] = texts[1].split(self.pipe)
-        answerAText: list[str] = texts[2].split(self.pipe)
-        answerBText: list[str] = texts[3].split(self.pipe)
-        answerCText: list[str] = texts[4].split(self.pipe)
-        answerDText: list[str] = texts[5].split(self.pipe)
-        answerCode: int = int(texts[0])
-
-        return Question(questionText, answerAText, answerBText, answerCText, answerDText, answerCode)
-
-
     def LoadQuestionList(self, type: enums.DifficultyType) -> None:
         self.QuestionList.clear()
 
@@ -96,6 +76,22 @@ class QuestionManager:
         # Set correct option for this question.
         self.CorrectOptionType: enums.OptionType = enums.OptionType(answerCode)
         return q
+
+
+    def LoadQuestion(self, line: str):
+        texts: list[str] = line.split(self.semicolon)
+
+        questionText: list[str] = texts[1].split(self.pipe)
+        answerAText: list[str] = texts[2].split(self.pipe)
+        answerBText: list[str] = texts[3].split(self.pipe)
+        answerCText: list[str] = texts[4].split(self.pipe)
+        answerDText: list[str] = texts[5].split(self.pipe)
+        answerCode: int = int(texts[0])
+
+        return Question(questionText, answerAText, answerBText, answerCText, answerDText, answerCode)
+
+
+
 
 
     def GetQuestionPosn(self) -> list[pygame.Vector2]:
