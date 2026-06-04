@@ -4,25 +4,28 @@ from pathlib import Path
 from dataclasses import asdict
 from enumerations import ScreenType
 import tomllib
-
+import utils
 
 
 class ConfigManager:
     def Initialize(self):
-        MyGame.Manager.LogManager.Write("MGR init")
+        pass
+        #MyGame.Manager.LogManager.Write("MGR init")
 
 
     def LoadContent(self):
-        base_dir = Path(__file__).resolve().parent.parent
-        file: Path = base_dir / "Files" / "config.toml"
+        root: Path = utils.get_project_root()
+        file: Path = root / "Files" / "config.toml"
         #path: str = "/home/stevepro/GitHub/StevePro7/PythonSetup/PyGame/Testing/Files/config.toml"
         #file: Path = Path(path)
         text = file.read_text()
         data = tomllib.loads(text)
         data[ScreenType.__name__] = ScreenType[data[ScreenType.__name__]]
         self.ConfigData = ConfigData(**data)
-        MyGame.Manager.LogManager.Write(f"start screen='{self.ConfigData.ScreenType.name}'")
+        #MyGame.Manager.LogManager.Write(f"start screen='{self.ConfigData.ScreenType.name}'")
 
 
     def DumpConfig(self):
-        MyGame.Manager.LogManager.Write(asdict(self.ConfigData))
+        msg: str = asdict(self.ConfigData)
+        print(msg)
+        MyGame.Manager.LogManager.Debug(asdict(self.ConfigData))
