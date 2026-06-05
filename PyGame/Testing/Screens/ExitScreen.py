@@ -1,6 +1,10 @@
+import pygame
+
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from enumerations import ScreenType
+from enumerations import SpriteType
+
 
 class ExitScreen(BaseScreen):
 
@@ -28,5 +32,7 @@ class ExitScreen(BaseScreen):
         MyGame.Manager.ImageManager.DrawHeader()
         MyGame.Manager.ImageManager.DrawCurrActor()
         #MyGame.Manager.ImageManager.DrawActor(self.actor)
+        pos: pygame.Vector2 = (50, 50)
+        MyGame.Manager.SpriteManager.DrawSprite(SpriteType.Select, pos)
         MyGame.Manager.TextManager.DrawText(str(self.voice), 0, 0)
         pass

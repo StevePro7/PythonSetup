@@ -1,6 +1,5 @@
 import pygame
 import constants as const
-import enumerations as enums
 from Static.Assets import Assets
 from MyGame import MyGame
 
@@ -29,8 +28,6 @@ class ImageManager:
 
         self.actorRects: list[pygame.Rect] = self.__populateActorRects()
         self.actorVect: pygame.Vector2 = pygame.Vector2(const.SCREEN_WIDE - const.imageWide - const.GameOffsetX, const.SCREEN_HIGH - const.imageHigh)
-
-        self.spriteRects: list[pygame.Rect] = self.__populateSpriteRects()
         self.imageRotate: float = 90   # degrees
 
 
@@ -89,18 +86,3 @@ class ImageManager:
 
     def __getActorRect(self, x: int, y: int) -> pygame.Rect:
         return pygame.Rect(x * const.imageWide, y * const.imageHigh, const.imageWide, const.imageHigh)
-
-    def __populateSpriteRects(self) -> list[pygame.Rect]:
-        spriteRects: list[pygame.Rect] = []
-
-        x: int = 4 * const.imageHigh - const.SpriteSize
-        y: int = 2 * const.imageHigh
-
-        for index in range(const.NUMBER_SPRITES):
-            spriteRects.append(self.__getSpriteRect(x, y, index))
-
-        return spriteRects
-
-    def __getSpriteRect(self, x: int, y: int, index: int):
-        ny = y + index * const.SpriteSize
-        return pygame.Rect(x, ny, const.SpriteSize, const.SpriteSize)

@@ -42,4 +42,5 @@ class ContentManager:
         path: Path = self.contentRoot / const.TEXTURES_DIRECTORY
         file: Path = path  / assetName
         texture = pygame.image.load(file).convert_alpha()
+
         return texture

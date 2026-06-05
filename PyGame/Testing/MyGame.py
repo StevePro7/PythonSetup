@@ -39,6 +39,7 @@ class MyGame:
         #MyGame.Manager.FontManager.LoadContent()        # adriana
         MyGame.Manager.ContentManager.LoadContent()
         MyGame.Manager.ImageManager.LoadContent()
+        MyGame.Manager.SpriteManager.LoadContent()
         MyGame.Manager.ScreenManager.LoadContent()
 
         pass
