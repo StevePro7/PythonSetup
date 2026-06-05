@@ -9,21 +9,23 @@ import utils
 
 class ContentManager:
     def __init__(self):
-        #self.font: pygame.font.Font = None
+        self.contentRoot: Path = utils.get_project_root()
+        self.texturesRoot: Path = self.contentRoot / const.TEXTURES_DIRECTORY
         pass
 
-    def Initialize(self):
-        MyGame.Manager.LogManager.Write("MGR init")
+    # def Initialize(self):
+    #     #MyGame.Manager.LogManager.Write("MGR init")
+    #     pass
 
     def LoadContent(self):
         # Load font
-        root: Path = utils.get_project_root()
-        file: Path = root / "Fonts/emulogic.ttf"
+
+        file: Path = self.contentRoot / const.FONTS_DIRECTORY / "emulogic.ttf"
         Assets.EmulogicFont = pygame.font.Font(file, const.FONT_SIZE)
 
         # Load images
-        file: Path = root / "Spritesheet.png"
-        Assets.SpritesheetTexture = pygame.image.load(file).convert_alpha()
+        Assets.SplashTexture: pygame.Surface = self._LoadTexture("StevePro.bmp")
+        Assets.SpritesheetTexture: pygame.Surface = self._LoadTexture("Spritesheet.png")
 
         # self.font_size: int = 20
         # self.font = pygame.font.Font("Fonts/emulogic.ttf", self.font_size)
@@ -72,3 +74,9 @@ class ContentManager:
         # self.screen.blit(scaled, (0, 0))
         #
         # pygame.display.flip()
+
+    def _LoadTexture(self, assetName: str) -> pygame.Surface:
+        path: Path = self.contentRoot / const.TEXTURES_DIRECTORY
+        file: Path = path  / assetName
+        texture = pygame.image.load(file).convert_alpha()
+        return texture

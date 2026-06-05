@@ -20,6 +20,7 @@ class ScreenType(ZeroBasedEnum):
     Over = auto()
     Exit = auto()
     Test = auto()       # 11
+    Unknown = auto()
 
 
 class DifficultyType(ZeroBasedEnum):

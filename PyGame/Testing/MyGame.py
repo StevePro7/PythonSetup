@@ -29,11 +29,12 @@ class MyGame:
 
     @staticmethod
     def LoadContent():
+        MyGame.Manager.DisplayManager.LoadContent()
         MyGame.Manager.FontManager.LoadContent()
         MyGame.Manager.ContentManager.LoadContent()
 
         MyGame.Manager.ScreenManager.LoadContent()
-        MyGame.Manager.DisplayManager.LoadContent()
+
         pass
 
 

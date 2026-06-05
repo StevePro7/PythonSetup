@@ -10,7 +10,7 @@ class ScreenManager:
 
     def __init__(self):
         self.screens: dict = {}
-        self.currScreen: ScreenType = ScreenType.Splash
+        self.currScreen: ScreenType = ScreenType.Unknown
         self.nextScreen: ScreenType = ScreenType.Splash
 
     def Initialize(self):
