@@ -29,15 +29,26 @@ class BaseManager:
         py: int = y * const.SpriteTile + const.OffsetSelect
         return pygame.Vector2(px, py)
 
-    def GetLeftArrowPos(self) -> pygame.Vector2:
-        arrowHigh: int = const.SCREEN_HIGH - const.SpriteSize + const.OffsetArrowY
-        return pygame.Vector2(0, arrowHigh)
-
-    def GetRghtArrowPos(self) -> pygame.Vector2:
-        arrowHigh: int = const.SCREEN_HIGH - const.SpriteSize + const.OffsetArrowY
-        return pygame.Vector2(const.SCREEN_WIDE - const.SpriteSize, arrowHigh)
+    # adriana
+    # def GetLeftArrowPos(self) -> pygame.Vector2:
+    #     arrowHigh: int = const.SCREEN_HIGH - const.SpriteSize + const.OffsetArrowY
+    #     return pygame.Vector2(0, arrowHigh)
+    #
+    # def GetRghtArrowPos(self) -> pygame.Vector2:
+    #     arrowHigh: int = const.SCREEN_HIGH - const.SpriteSize + const.OffsetArrowY
+    #     return pygame.Vector2(const.SCREEN_WIDE - const.SpriteSize, arrowHigh)
 
     def GetVolumeIconPos(self) -> pygame.Vector2:
         x: int = const.SCREEN_WIDE - const.SpriteSize - const.GameOffsetX
         y: int = -const.FONT_SIZE / 2
+        return pygame.Vector2(x, y)
+
+    def GetCheatModePos(self) -> pygame.Vector2:
+        x: int = const.CheatModeOffsetX + const.GameOffsetX
+        y: int = const.CheatModeOffsetY
+        return pygame.Vector2(x, y)
+
+    def GetCharacterPos(self) -> pygame.Vector2:
+        x: int = const.GameOffsetX + const.FONT_SIZE * const.FONT_SIZE
+        y: int = const.NUMBER_SPRITES * const.FONT_SIZE
         return pygame.Vector2(x, y)

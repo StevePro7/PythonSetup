@@ -36,6 +36,7 @@ class MyGame:
     @staticmethod
     def LoadContent():
         MyGame.Manager.DisplayManager.LoadContent()
+        MyGame.Manager.CollisionManager.LoadContent()
         #MyGame.Manager.FontManager.LoadContent()        # adriana
         MyGame.Manager.ContentManager.LoadContent()
         MyGame.Manager.ImageManager.LoadContent()

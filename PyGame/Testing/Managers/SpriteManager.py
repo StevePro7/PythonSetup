@@ -24,8 +24,8 @@ class SpriteManager:
     def LoadContent(self):
         self.positionsSelect = MyGame.Manager.BaseManager.GetPositionsSelect()
         self.positionsAnswer: list[pygame.Vector2] = self.__getPositionsAnswer()
-        self.leftArrowPos = MyGame.Manager.BaseManager.GetLeftArrowPos()
-        self.rghtArrowPos = MyGame.Manager.BaseManager.GetRghtArrowPos()
+#        self.leftArrowPos = MyGame.Manager.BaseManager.GetLeftArrowPos()
+#        self.rghtArrowPos = MyGame.Manager.BaseManager.GetRghtArrowPos()
         self.volumePos = MyGame.Manager.BaseManager.GetVolumeIconPos()
 
         self.spriteRects: list[pygame.Rect] = self.__populateSpriteRects()

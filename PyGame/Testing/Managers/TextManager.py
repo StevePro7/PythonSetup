@@ -13,7 +13,7 @@ class TextManager:
 
     def Initialize(self):
         self.color = Colors.Black
-        pass
+
 
     def InitTextData(self, screen: str) -> list[TextData]:
         file: str = self.__getTextFile(f"{screen}.txt")
@@ -36,8 +36,19 @@ class TextManager:
         return textDataList
 
 
-    def Update(self, deltaTime: int):
-        pass
+    def GetTextPosition(self, x: int, y: int) -> tuple[int, int]:
+        px = x * const.FONT_SIZE + const.FontOffsetX
+        py = y * const.FONT_SIZE + const.FontOffsetY
+        position: tuple[int, int] = (px, py)
+        return position
+
+
+    def GetWhitePosition(self, x: int, y: int) -> tuple[int, int]:
+        px = x * const.FONT_SIZE + const.GameOffsetX
+        py = y * const.FONT_SIZE
+        position: tuple[int, int] = (px, py)
+        return position
+
 
     def DrawText(self, text: str, x: int, y: int):
         position: tuple[int, int] = self.GetTextPosition(x, y)
@@ -49,13 +60,6 @@ class TextManager:
     def DrawTextDataList(self, textDataList: list[TextData]) -> None:
         for textData in textDataList:
             self.DrawTextPos(textData.Text, textData.Position, textData.Color)
-
-
-    def GetTextPosition(self, x: int, y: int) -> tuple[int, int]:
-        px = x * const.FONT_SIZE + const.FontOffsetX
-        py = y * const.FONT_SIZE + const.FontOffsetY
-        position: tuple[int, int] = (px, py)
-        return position
 
 
     def __getTextFile(self, textFile: str) -> str:
