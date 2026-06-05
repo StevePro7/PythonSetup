@@ -1,10 +1,9 @@
 import pygame
 import constants as const
+import enumerations as enums
 from Static.Assets import Assets
 from MyGame import MyGame
-import utils
-import math
-from pathlib import Path
+
 
 
 class ImageManager:
@@ -43,8 +42,13 @@ class ImageManager:
 
 
     def DrawActor(self, index: int) -> None:
-        actorPosn: pygame.Vector2 = self.actorVect
+        actorPosn: pygame.Vector2 = self.actorVect.copy()
         actorRect: pygame.Rect = self.actorRects[index]
+        # scale: float = 1.0
+        #
+        # if index == enums.ActorType.Lisa1.value or index == enums.ActorType.Lisa2.value:
+        #     scale = 0.85
+        #     actorPosn.y += 2 * const.FONT_SIZE
 
         MyGame.Manager.GraphicsManager.DrawTexture(
             Assets.SpritesheetTexture,

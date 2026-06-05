@@ -5,7 +5,7 @@ from enumerations import ScreenType
 class ExitScreen(BaseScreen):
 
     def Initialize(self) -> None:
-        self.actor = 9
+        self.actor = 0
         self.voice = str(self.actor)
         pass
 

@@ -16,27 +16,29 @@ class GraphicsManager:
         pass
 #        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
-
+    # adriana
     # def DrawTexture(self, texture: pygame.Surface, position: pygame.Vector2):
     #     MyGame.Manager.DisplayManager.Screen.blit(texture, position)
     #
+
     def DrawTexture(
             self,
             texture: pygame.Surface,
             position: pygame.Vector2,
             source_rect: pygame.Rect | None = None,
             rotation: float = 0.0,
-            scale: float = 1.0
+#            scale: float = 1.0     # adriana
     ):
         surface: pygame.Surface = texture
 
         if source_rect:
             surface = texture.subsurface(source_rect)
 
-        if scale != 1.0:
-            w: int = int(surface.get_width() * scale)
-            h: int = int(surface.get_height() * scale)
-            surface = pygame.transform.scale(surface, (w, h))
+        # adriana
+        # if scale != 1.0:
+        #     w: int = int(surface.get_width() * scale)
+        #     h: int = int(surface.get_height() * scale)
+        #     surface = pygame.transform.scale(surface, (w, h))
 
         if rotation:
             surface = pygame.transform.rotate(surface, rotation)
