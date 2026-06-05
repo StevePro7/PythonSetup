@@ -18,10 +18,6 @@ class ImageManager:
         self.nextActor = 0
 
     def LoadContent(self):
-        root: Path = utils.get_project_root()
-        file: Path = root / "Spritesheet.png"
-        #Assets.SpritesheetTexture = pygame.image.load(file).convert_alpha()        # adriana - move to Content MGR
-
         self.zeroPosn: pygame.Vector2 = (const.GameOffsetX, 0)
         self.headPosn: pygame.Vector2 = (const.GameOffsetX, int(const.FONT_SIZE / 2))
 
@@ -32,18 +28,28 @@ class ImageManager:
         self.headerVect: pygame.Vector2(const.SpriteSize, 0)
 
         self.actorRects: list[pygame.Rect] = self.__populateActorRects()
-        self.actorVect: pygame.Vector2(const.SCREEN_WIDE - const.imageWide - const.GameOffsetX, const.SCREEN_HIGH - const.imageHigh)
+        self.actorVect: pygame.Vector2 = pygame.Vector2(const.SCREEN_WIDE - const.imageWide - const.GameOffsetX, const.SCREEN_HIGH - const.imageHigh)
 
         self.spriteRects: list[pygame.Rect] = self.__populateSpriteRects()
         self.imageRotate: float = 90   # degrees
 
 
-    def DrawTitle(self):
+    def DrawTitle(self) -> None:
         MyGame.Manager.GraphicsManager.DrawTexture(
             Assets.SpritesheetTexture,
             self.zeroPosn,
             self.titleRect,
             self.imageRotate)
+
+
+    def DrawActor(self, index: int) -> None:
+        actorPosn: pygame.Vector2 = self.actorVect
+        actorRect: pygame.Rect = self.actorRects[index]
+
+        MyGame.Manager.GraphicsManager.DrawTexture(
+            Assets.SpritesheetTexture,
+            actorPosn,
+            actorRect)
 
 
     def __populateSpriteRects(self) -> list[pygame.Rect]:

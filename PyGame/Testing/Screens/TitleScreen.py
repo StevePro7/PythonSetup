@@ -19,4 +19,4 @@ class TitleScreen(BaseScreen):
 
     def Draw(self) -> None:
         MyGame.Manager.ImageManager.DrawTitle()
-        #super().DrawScreenText()
+        super().DrawScreenText()

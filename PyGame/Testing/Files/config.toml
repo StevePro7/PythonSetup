@@ -1,7 +1,7 @@
 FPS=50
 #ScreenType="Splash"
-ScreenType="Title"
-#ScreenType="Init"
+#ScreenType="Title"
+ScreenType="Exit"
 #ScreenType="Test"
 MusicEnable=true
 SoundEnable=true
