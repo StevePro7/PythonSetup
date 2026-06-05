@@ -1,7 +1,7 @@
 import pygame
 
 from MyGame import MyGame
-from Static.Assets import Assets
+from Static.Colors import Colors
 
 # Rendering API
 class GraphicsManager:
@@ -20,6 +20,6 @@ class GraphicsManager:
     def DrawTexture(self, texture: pygame.Surface, position: pygame.Vector2):
         MyGame.Manager.DisplayManager.Screen.blit(texture, position)
 
-    def DrawText(self, font, text, position, color=(255,255,255)):
+    def DrawText(self, font, text, position, color=Colors.White):
         surface = font.render(text, False, color)
         MyGame.Manager.DisplayManager.Screen.blit(surface, position)

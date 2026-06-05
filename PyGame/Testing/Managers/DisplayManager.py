@@ -1,7 +1,8 @@
 import pygame
-from MyGame import MyGame
+from Static.Colors import Colors
 from Static.Globalize import Globalize
 import constants as const
+
 
 # Window ownership
 class DisplayManager:
@@ -16,7 +17,7 @@ class DisplayManager:
         self.screen = pygame.display.set_mode(self.size)
         pygame.display.set_caption(Globalize.SIMPSONS_TITLE)
 
-    def Clear(self, color: tuple=(0, 0, 0)):
+    def Clear(self, color: Colors.Black):
         self.screen.fill(color)
 
     def Present(self):

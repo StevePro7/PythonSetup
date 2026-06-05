@@ -1,4 +1,5 @@
 FPS=50
+#ScreenType="Over"
 ScreenType="Splash"
 #ScreenType="Test"
 MusicEnable=true

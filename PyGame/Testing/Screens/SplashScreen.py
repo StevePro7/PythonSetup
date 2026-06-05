@@ -2,6 +2,7 @@ import pygame
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from Static.Assets import Assets
+from Static.Colors import Colors
 import constants as const
 from enumerations import ScreenType
 

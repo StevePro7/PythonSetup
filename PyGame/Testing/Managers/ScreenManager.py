@@ -3,6 +3,7 @@ import importlib
 import pkgutil
 import Screens
 from Screens.BaseScreen import BaseScreen
+from Static.Colors import Colors
 import constants as const
 from enumerations import ScreenType
 
@@ -12,6 +13,8 @@ class ScreenManager:
         self.screens: dict = {}
         self.currScreen: ScreenType = ScreenType.Unknown
         self.nextScreen: ScreenType = ScreenType.Splash
+        self.color = Colors.Black
+
 
     def Initialize(self):
         self._import_all_screens()
@@ -41,7 +44,7 @@ class ScreenManager:
 
 
     def Draw(self):
-        MyGame.Manager.DisplayManager.Clear()
+        MyGame.Manager.DisplayManager.Clear(self.color)
         self.screens[self.currScreen].Draw()
         MyGame.Manager.DisplayManager.Present()
         #MyGame.Manager.LogManager.Write("MGR Draw")

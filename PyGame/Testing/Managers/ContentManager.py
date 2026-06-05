@@ -24,7 +24,8 @@ class ContentManager:
         Assets.EmulogicFont = pygame.font.Font(file, const.FONT_SIZE)
 
         # Load images
-        Assets.SplashTexture: pygame.Surface = self._LoadTexture("StevePro.bmp")
+        Assets.SplashTexture: pygame.Surface = self._LoadTexture("Splash.bmp")
+        #Assets.SplashTexture: pygame.Surface = self._LoadTexture("StevePro.bmp")   # adriana
         Assets.SpritesheetTexture: pygame.Surface = self._LoadTexture("Spritesheet.png")
 
         # self.font_size: int = 20
