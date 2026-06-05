@@ -16,6 +16,7 @@ LEVELS_DIRECTORY: str = "Levels"
 TEXTS_DIRECTORY: str = "Texts"
 
 FONTS_DIRECTORY: str = "Fonts"
+FILES_DIRECTORY: str = "Files"
 SOUND_DIRECTORY: str = "Sound"
 TEXTURES_DIRECTORY: str = "Textures"
 

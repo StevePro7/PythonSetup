@@ -7,23 +7,26 @@ class ExitScreen(BaseScreen):
     def Initialize(self) -> None:
         self.actor = 0
         self.voice = str(self.actor)
-        pass
 
 
     def LoadContent(self) -> None:
-        pass
+        MyGame.Manager.ImageManager.GenerateNextActor()
+        self.actor = MyGame.Manager.ImageManager.GetCurrActor
+        self.voice = str(self.actor)
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        test: bool = MyGame.Manager.InputManager.Advance()
-        if test:
-            self.actor += 1
-            self.voice = str(self.actor)
+        # test: bool = MyGame.Manager.InputManager.Advance()
+        # if test:
+        #     self.actor += 1
+        #     self.voice = str(self.actor)
 
         return None
 
 
     def Draw(self) -> None:
-        MyGame.Manager.ImageManager.DrawActor(self.actor)
+        MyGame.Manager.ImageManager.DrawHeader()
+        MyGame.Manager.ImageManager.DrawCurrActor()
+        #MyGame.Manager.ImageManager.DrawActor(self.actor)
         MyGame.Manager.TextManager.DrawText(str(self.voice), 0, 0)
         pass

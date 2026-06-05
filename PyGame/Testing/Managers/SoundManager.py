@@ -6,6 +6,7 @@ from pathlib import Path
 import constants as const
 import enumerations as enums
 
+
 class SoundManager:
     def __init__(self):
         self.audioEnable = False
@@ -71,5 +72,5 @@ class SoundManager:
     def __getAudioFile(self, soundFile: str, extention: str) -> str:
         root: Path = get_project_root()
         file = f"{soundFile}.{extention}"
-        path: Path = root / const.SOUND_DIRECTORY / file      # adriana - hardcode Sound
+        path: Path = root / const.SOUND_DIRECTORY / file
         return path

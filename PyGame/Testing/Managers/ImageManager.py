@@ -13,8 +13,9 @@ class ImageManager:
         self.nextActor: int = None
 
     def Initialize(self):
-        self.currActor: const.NUMBER_CHARACTERS
+        self.currActor = const.NUMBER_CHARACTERS
         self.nextActor = 0
+
 
     def LoadContent(self):
         self.zeroPosn: pygame.Vector2 = (const.GameOffsetX, 0)
@@ -33,6 +34,15 @@ class ImageManager:
         self.imageRotate: float = 90   # degrees
 
 
+    def GenerateNextActor(self):
+        while True:
+            self.nextActor: int = MyGame.Manager.RandomManager.Next(const.NUMBER_CHARACTERS)
+            if self.currActor != self.nextActor:
+                break
+
+        self.currActor = self.nextActor
+
+
     def DrawTitle(self) -> None:
         MyGame.Manager.GraphicsManager.DrawTexture(
             Assets.SpritesheetTexture,
@@ -41,20 +51,44 @@ class ImageManager:
             self.imageRotate)
 
 
+    def DrawHeader(self) -> None:
+        MyGame.Manager.GraphicsManager.DrawTexture(
+            Assets.SpritesheetTexture,
+            self.headPosn,
+            self.headerRect,
+            self.imageRotate)
+
+    def DrawCurrActor(self) -> None:
+        self.DrawActor(self.currActor)
+
+
     def DrawActor(self, index: int) -> None:
         actorPosn: pygame.Vector2 = self.actorVect.copy()
         actorRect: pygame.Rect = self.actorRects[index]
-        # scale: float = 1.0
-        #
-        # if index == enums.ActorType.Lisa1.value or index == enums.ActorType.Lisa2.value:
-        #     scale = 0.85
-        #     actorPosn.y += 2 * const.FONT_SIZE
 
         MyGame.Manager.GraphicsManager.DrawTexture(
             Assets.SpritesheetTexture,
             actorPosn,
             actorRect)
 
+    @property
+    def GetCurrActor(self):
+        return self.currActor
+
+    # Private methods
+    def __populateActorRects(self) -> list[pygame.Rect]:
+
+        x_coords = [0, 0, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4]
+        y_coords = [2, 3, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3]
+
+        actorRects: list[pygame.Rect] = []
+        for x, y in zip(x_coords, y_coords):
+            actorRects.append(self.__getActorRect(x, y))
+
+        return actorRects
+
+    def __getActorRect(self, x: int, y: int) -> pygame.Rect:
+        return pygame.Rect(x * const.imageWide, y * const.imageHigh, const.imageWide, const.imageHigh)
 
     def __populateSpriteRects(self) -> list[pygame.Rect]:
         spriteRects: list[pygame.Rect] = []
@@ -67,22 +101,6 @@ class ImageManager:
 
         return spriteRects
 
-    def __populateActorRects(self) -> list[pygame.Rect]:
-
-        x_coords = [0, 0, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4]
-        y_coords = [2, 3, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3]
-
-        actorRects: list[pygame.Rect] = []
-        for x, y in zip(x_coords, y_coords):
-            actorRects.append(self.__getActorRect(x, y))
-
-        return actorRects
-
-
     def __getSpriteRect(self, x: int, y: int, index: int):
         ny = y + index * const.SpriteSize
         return pygame.Rect(x, ny, const.SpriteSize, const.SpriteSize)
-
-
-    def __getActorRect(self, x: int, y: int) -> pygame.Rect:
-        return pygame.Rect(x * const.imageWide, y * const.imageHigh, const.imageWide, const.imageHigh)
