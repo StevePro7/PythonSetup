@@ -28,14 +28,21 @@ NUMBER_CHARACTERS: int = 16
 NUMBER_SPRITES: int = 8
 NUMBER_CHEATS: int = 5
 
-
+# Global sizes.
 SpriteSize: int = 80
 FONT_SIZE: int = 20
 FontOffsetX: int = -1
 FontOffsetY: int = -4
-OffsetArrowY: int = -4
-GameOffsetX: int = 0
+OffsetArrowY: int = 16
 
+# Local sizes.
+SpriteTile: int = 20
+OffsetSelect: int = 10
+CheatModeOffsetX: int = 430
+CheatModeOffsetY: int = 260
+
+# Device specific.
+GameOffsetX: int = 0
 
 imageWide: int = 240
 imageHigh: int = 320

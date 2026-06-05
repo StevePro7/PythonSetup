@@ -26,6 +26,7 @@ class MyGame:
         #MyGame.Manager.FontManager.Initialize()    # adriana
         MyGame.Manager.ImageManager.Initialize()
         MyGame.Manager.InputManager.Initialize()
+        MyGame.Manager.SpriteManager.Initialize()
         MyGame.Manager.ScreenManager.Initialize()
 
         # MyGame.Manager.ButtonManager.Initialize()

@@ -1,30 +1,29 @@
-from Managers.BarManager import BarManager
-from Managers.ImageManager import ImageManager
-from Managers.CollisionManager import CollisionManager
-from Managers.ScreenManager import ScreenManager
+from Managers.BaseManager import BaseManager
 from Managers.ClockManager import ClockManager
-from Managers.QuestionManager import QuestionManager
-from Managers.GraphicsManager import GraphicsManager
+from Managers.CollisionManager import CollisionManager
+from Managers.ConfigManager import ConfigManager
+from Managers.ContentManager import ContentManager
+from Managers.DeviceManager import DeviceManager
+from Managers.DisplayManager import DisplayManager
+from Managers.EventManager import EventManager
+from Managers.FileManager import FileManager
 from Managers.FontManager import FontManager
 from Managers.FooManager import FooManager
-from Managers.SoundManager import SoundManager
-from Managers.ScoreManager import ScoreManager
+from Managers.GraphicsManager import GraphicsManager
+from Managers.ImageManager import ImageManager
 from Managers.InputManager import InputManager
-from Managers.TextManager import TextManager
-from Managers.DeviceManager import DeviceManager
-from Managers.ButtonManager import ButtonManager
-from Managers.ConfigManager import ConfigManager
-from Managers.DisplayManager import DisplayManager
-from Managers.FileManager import FileManager
-from Managers.ThreadManager import ThreadManager
-from Managers.PyGameManager import PyGameManager
-from Managers.StorageManager import StorageManager
-from Managers.SpriteManager import SpriteManager
 from Managers.LogManager import LogManager
-from Managers.ResolutionManager import ResolutionManager
+from Managers.PyGameManager import PyGameManager
+from Managers.QuestionManager import QuestionManager
 from Managers.RandomManager import RandomManager
-from Managers.EventManager import EventManager
-from Managers.ContentManager import ContentManager
+from Managers.ResolutionManager import ResolutionManager
+from Managers.ScoreManager import ScoreManager
+from Managers.ScreenManager import ScreenManager
+from Managers.SoundManager import SoundManager
+from Managers.SpriteManager import SpriteManager
+from Managers.StorageManager import StorageManager
+from Managers.TextManager import TextManager
+from Managers.ThreadManager import ThreadManager
 
 
 class MyGame:
@@ -45,30 +44,29 @@ class MyGame:
 
     class Manager:
         ...
-        BarManager: BarManager
-        ImageManager: ImageManager
-        CollisionManager: CollisionManager
-        ScreenManager: ScreenManager
+        BaseManager: BaseManager
         ClockManager: ClockManager
-        QuestionManager: QuestionManager
-        GraphicsManager: GraphicsManager
+        CollisionManager: CollisionManager
+        ConfigManager: ConfigManager
+        ContentManager: ContentManager
+        DeviceManager: DeviceManager
+        DisplayManager: DisplayManager
+        EventManager: EventManager
+        FileManager: FileManager
         FontManager: FontManager
         FooManager: FooManager
-        SoundManager: SoundManager
-        ScoreManager: ScoreManager
+        GraphicsManager: GraphicsManager
+        ImageManager: ImageManager
         InputManager: InputManager
-        TextManager: TextManager
-        DeviceManager: DeviceManager
-        ButtonManager: ButtonManager
-        ConfigManager: ConfigManager
-        DisplayManager: DisplayManager
-        FileManager: FileManager
-        ThreadManager: ThreadManager
-        PyGameManager: PyGameManager
-        StorageManager: StorageManager
-        SpriteManager: SpriteManager
         LogManager: LogManager
-        ResolutionManager: ResolutionManager
+        PyGameManager: PyGameManager
+        QuestionManager: QuestionManager
         RandomManager: RandomManager
-        EventManager: EventManager
-        ContentManager: ContentManager
+        ResolutionManager: ResolutionManager
+        ScoreManager: ScoreManager
+        ScreenManager: ScreenManager
+        SoundManager: SoundManager
+        SpriteManager: SpriteManager
+        StorageManager: StorageManager
+        TextManager: TextManager
+        ThreadManager: ThreadManager

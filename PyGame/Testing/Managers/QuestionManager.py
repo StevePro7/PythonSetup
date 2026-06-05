@@ -131,7 +131,7 @@ class QuestionManager:
 
     def Reset(self):
         self.QuestionNumber = 0
-        self.numberTxt = utils.GetNumberZO(self.QuestionNumber + 1)
+        self.numberTxt = MyGame.Manager.BaseManager.GetNumberZO(self.QuestionNumber + 1)
 
 
     def __getTextFile(self, type: enums.DifficultyType) -> str:

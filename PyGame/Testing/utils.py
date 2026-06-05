@@ -1,5 +1,6 @@
 from pathlib import Path
 
+# adriana - BaseManager
 def get_project_root() -> Path:
     PROJECT_TOML: str = "pyproject.toml"
     current_dir: Path = Path(__file__).parent
@@ -14,12 +15,4 @@ def get_project_root() -> Path:
     return project_root
 
 
-def GetNumberZO(number: int) -> str:
-    return GetNumber(number, "0")
-
-def GetNumberSP(number: int) -> str:
-    return GetNumber(number, " ")
-
-def GetNumber(number: int, paddingChar: str) -> str:
-    return str(number).rjust(3, paddingChar)
 
