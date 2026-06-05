@@ -35,7 +35,15 @@ class ImageManager:
         self.actorVect: pygame.Vector2(const.SCREEN_WIDE - const.imageWide - const.GameOffsetX, const.SCREEN_HIGH - const.imageHigh)
 
         self.spriteRects: list[pygame.Rect] = self.__populateSpriteRects()
-        self.imageRotate: float = math.radians(270)
+        self.imageRotate: float = 90   # degrees
+
+
+    def DrawTitle(self):
+        MyGame.Manager.GraphicsManager.DrawTexture(
+            Assets.SpritesheetTexture,
+            self.zeroPosn,
+            self.titleRect,
+            self.imageRotate)
 
 
     def __populateSpriteRects(self) -> list[pygame.Rect]:

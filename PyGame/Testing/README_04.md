@@ -33,6 +33,11 @@ def __getTextFile(self, textFile: str) -> str:
 as we cannot override methods - I renamed this PlayQuestion
 which is used in PlayScreen
 
+
+08. Init screen - prints black text on black background
+Do I want a toggle where white text on black or vice versa?
+
+
 IMPORTANT
 OptionType
 original code uses None but cannot be used in Python

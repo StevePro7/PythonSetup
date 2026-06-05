@@ -1,3 +1,4 @@
+from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from enumerations import ScreenType
 
@@ -17,4 +18,5 @@ class TitleScreen(BaseScreen):
 
 
     def Draw(self) -> None:
-        super().DrawScreenText()
+        MyGame.Manager.ImageManager.DrawTitle()
+        #super().DrawScreenText()

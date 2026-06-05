@@ -31,16 +31,21 @@ class ScreenManager:
         MyGame.Manager.LogManager.Write("MGR Load")
         self.nextScreen = MyGame.Manager.ConfigManager.ConfigData.ScreenType
 
+
     def Update(self, deltaTime: int):
         if self.currScreen != self.nextScreen:
             self.currScreen = self.nextScreen
             self.screens[self.currScreen].LoadContent()
 
+            self.color = Colors.White
+            if self.currScreen in (ScreenType.Splash, ScreenType.Init):
+                self.color = Colors.Black
+
         tempScreen = self.screens[self.currScreen].Update(deltaTime)
         if tempScreen:
             self.nextScreen = tempScreen
 
-        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
+        #MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
 
 
     def Draw(self):

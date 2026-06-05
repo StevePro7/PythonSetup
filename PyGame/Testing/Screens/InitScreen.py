@@ -21,7 +21,7 @@ class InitScreen(BaseScreen):
 
 
     def Draw(self) -> None:
-        MyGame.Manager.TextManager.DrawText("STEVEPRO", 0,0)
-        MyGame.Manager.TextManager.DrawText("SUZANNE", 0, 1, (0, 255, 0))
-        MyGame.Manager.TextManager.DrawText("ADRIANA", 0, 2, (0, 0, 255))
+        MyGame.Manager.TextManager.DrawText("STEVEPRO", 0, 0)
+        MyGame.Manager.TextManager.DrawText("SUZANNE", 0, 1)
+        MyGame.Manager.TextManager.DrawText("ADRIANA", 0, 2)
         pass

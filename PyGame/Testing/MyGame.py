@@ -13,13 +13,18 @@ class MyGame:
     def Initialize():
         MyGame.Manager.PyGameManager.Initialize()
         MyGame.Manager.LogManager.Initialize()
+        MyGame.Manager.RandomManager.Initialize()
+
         MyGame.Manager.ConfigManager.Initialize()
         MyGame.Manager.ConfigManager.LoadContent()
         MyGame.Manager.ConfigManager.DumpConfig()
 
         MyGame.Manager.ClockManager.Initialize()
+        MyGame.Manager.ContentManager.Initialize()
+
         MyGame.Manager.DisplayManager.Initialize()
-        MyGame.Manager.FontManager.Initialize()
+        #MyGame.Manager.FontManager.Initialize()    # adriana
+        MyGame.Manager.ImageManager.Initialize()
         MyGame.Manager.InputManager.Initialize()
         MyGame.Manager.ScreenManager.Initialize()
 
@@ -30,9 +35,9 @@ class MyGame:
     @staticmethod
     def LoadContent():
         MyGame.Manager.DisplayManager.LoadContent()
-        MyGame.Manager.FontManager.LoadContent()
+        #MyGame.Manager.FontManager.LoadContent()        # adriana
         MyGame.Manager.ContentManager.LoadContent()
-
+        MyGame.Manager.ImageManager.LoadContent()
         MyGame.Manager.ScreenManager.LoadContent()
 
         pass

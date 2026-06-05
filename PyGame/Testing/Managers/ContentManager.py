@@ -9,13 +9,14 @@ import utils
 
 class ContentManager:
     def __init__(self):
+        self.contentRoot: Path = None
+        self.texturesRoot: Path = None
+
+
+    def Initialize(self):
         self.contentRoot: Path = utils.get_project_root()
         self.texturesRoot: Path = self.contentRoot / const.TEXTURES_DIRECTORY
-        pass
 
-    # def Initialize(self):
-    #     #MyGame.Manager.LogManager.Write("MGR init")
-    #     pass
 
     def LoadContent(self):
         # Load font
@@ -25,7 +26,7 @@ class ContentManager:
 
         # Load images
         Assets.SplashTexture: pygame.Surface = self._LoadTexture("Splash.bmp")
-        #Assets.SplashTexture: pygame.Surface = self._LoadTexture("StevePro.bmp")   # adriana
+        Assets.SplashTexture: pygame.Surface = self._LoadTexture("StevePro.bmp")   # adriana
         Assets.SpritesheetTexture: pygame.Surface = self._LoadTexture("Spritesheet.png")
 
         # self.font_size: int = 20

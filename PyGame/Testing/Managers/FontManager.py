@@ -6,12 +6,13 @@ import utils
 from pathlib import Path
 
 class FontManager:
-    def __init__(self):
-        self.color = None
-        self.font: pygame.font.Font = None
+    # def __init__(self):
+    #     self.color = None
+    #     self.font: pygame.font.Font = None
 
     def Initialize(self):
-        self.color: tuple = pygame.Color("white")
+        #self.color: tuple = pygame.Color("white")
+        pass
 
 
     def LoadContent(self):

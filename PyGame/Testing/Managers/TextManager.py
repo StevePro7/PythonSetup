@@ -12,6 +12,7 @@ class TextManager:
         self.DELIM = ","
 
     def Initialize(self):
+        self.color = Colors.Black
         pass
 
     def InitTextData(self, screen: str) -> list[TextData]:
@@ -29,7 +30,7 @@ class TextManager:
             text = items[2]
 
             position: tuple[int, int] = self.GetTextPosition(x, y)
-            textData: TextData = TextData(position, text, Colors.White)
+            textData: TextData = TextData(position, text, Colors.Black)
             textDataList.append(textData)
 
         return textDataList
@@ -38,11 +39,11 @@ class TextManager:
     def Update(self, deltaTime: int):
         pass
 
-    def DrawText(self, text: str, x: int, y: int, color= Colors.White):
+    def DrawText(self, text: str, x: int, y: int):
         position: tuple[int, int] = self.GetTextPosition(x, y)
-        self.DrawTextPos(text, position, color)
+        self.DrawTextPos(text, position, Colors.Black)
 
-    def DrawTextPos(self, text: str, position: tuple[int, int], color= Colors.White):
+    def DrawTextPos(self, text: str, position: tuple[int, int], color):
         MyGame.Manager.GraphicsManager.DrawText(Assets.EmulogicFont, text, position, color)
 
     def DrawTextDataList(self, textDataList: list[TextData]) -> None:
