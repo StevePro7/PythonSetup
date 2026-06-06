@@ -26,6 +26,7 @@ class MyGame:
         #MyGame.Manager.FontManager.Initialize()    # adriana
         MyGame.Manager.ImageManager.Initialize()
         MyGame.Manager.InputManager.Initialize()
+        MyGame.Manager.QuestionManager.Initialize()
         MyGame.Manager.SpriteManager.Initialize()
         MyGame.Manager.ScreenManager.Initialize()
 
@@ -40,6 +41,8 @@ class MyGame:
         #MyGame.Manager.FontManager.LoadContent()        # adriana
         MyGame.Manager.ContentManager.LoadContent()
         MyGame.Manager.ImageManager.LoadContent()
+
+        MyGame.Manager.QuestionManager.LoadContent()
         MyGame.Manager.SpriteManager.LoadContent()
         MyGame.Manager.ScreenManager.LoadContent()
 

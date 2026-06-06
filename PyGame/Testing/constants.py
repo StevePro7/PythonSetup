@@ -41,6 +41,9 @@ OffsetSelect: int = 10
 CheatModeOffsetX: int = 430
 CheatModeOffsetY: int = 260
 
+QUIZ_LONG: list[int] = [ 5, 10, 25, 50]
+
+
 # Device specific.
 GameOffsetX: int = 0
 

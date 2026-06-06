@@ -2,6 +2,7 @@ import pygame
 from pathlib import Path
 from MyGame import MyGame
 from Objects.Question import Question
+from Static.Globalize import Globalize
 import constants as const
 import enumerations as enums
 import utils
@@ -68,6 +69,8 @@ class QuestionManager:
             self.QuestionList.append(question)
 
 
+    # ORG but can't overload LoadQuestion()
+    # public Question LoadQuestion(Byte index)
     def PlayQuestion(self, index: int) -> Question:
         q: Question = self.QuestionList[index]
         answerCode: int = q.AnswerCode
@@ -91,8 +94,58 @@ class QuestionManager:
         return Question(questionText, answerAText, answerBText, answerCText, answerDText, answerCode)
 
 
+    # public void RandomizeQuestionList()
+    # public void RandomizeAnswerList(Byte index)
+    # public void DrawQuestion(Byte index)
+    # public void DrawQuestionNumber()
+    # public void DrawQuestionTotal()
+    # public void DrawQuizDiffText()
+
+    def SetDifficulty(self, optionType: enums.OptionType) -> None:
+        if optionType == enums.OptionType.B:
+            self.DifficultyType = enums.DifficultyType.Norm
+        elif optionType == enums.OptionType.C:
+            self.DifficultyType = enums.DifficultyType.Hard
+        elif optionType == enums.OptionType.D:
+            self.DifficultyType = enums.DifficultyType.Argh
+        else:
+            self.DifficultyType = enums.DifficultyType.Easy
+
+        index: int = optionType.value
+        self.DifficultyText = Globalize.DIFF_TEXT[index]
 
 
+    def SetQuizLength(self, optionType: enums.OptionType) -> None:
+        index = optionType.value
+        self.NumberQuestion = const.QUIZ_LONG[index]
+        self.QuizLengthText = MyGame.Manager.BaseManager.GetNumberZO(self.NumberQuestion)
+        self.QuizLengthText2 = MyGame.Manager.BaseManager.GetNumberSP(self.NumberQuestion)
+
+
+    def Increment(self):
+        qNo: int = self.QuestionNumber + 1
+        if qNo > self.NumberQuestion:
+            return
+
+        self.QuestionNumber += 1
+        self.numberTxt = MyGame.Manager.BaseManager.GetNumberZO(self.QuestionNumber + 1)
+
+
+    def Reset(self):
+        self.QuestionNumber = 0
+        self.numberTxt = MyGame.Manager.BaseManager.GetNumberZO(self.QuestionNumber + 1)
+
+
+    def GetCheatMode(self) -> bool:
+        return self.cheatMode
+
+    def SetCheatMode(self, theCheatMode: bool) -> None:
+        self.cheatMode = theCheatMode
+
+
+    # public void SetCheatMode(Boolean theCheatMode)
+
+    # private static void DrawLine(String line, Vector2 posn)
 
     def GetQuestionPosn(self) -> list[pygame.Vector2]:
         positions: list[pygame.Vector2] = []
@@ -129,13 +182,12 @@ class QuestionManager:
         answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 23))
         return answerPosn
 
-    def Reset(self):
-        self.QuestionNumber = 0
-        self.numberTxt = MyGame.Manager.BaseManager.GetNumberZO(self.QuestionNumber + 1)
+    # private void RandomizeAnswerPosn()
+
 
 
     def __getTextFile(self, type: enums.DifficultyType) -> str:
         name: str = f"{type.name}.txt"
         root: Path = utils.get_project_root()
-        file: Path = root / "Levels" / name
+        file: Path = root / const.LEVELS_DIRECTORY / name
         return file

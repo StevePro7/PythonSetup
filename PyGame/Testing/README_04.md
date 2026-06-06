@@ -38,6 +38,9 @@ which is used in PlayScreen
 Do I want a toggle where white text on black or vice versa?
 
 
+09. QM increment - check this logic works 
+i.e. does NOT overflow !
+
 IMPORTANT
 OptionType
 original code uses None but cannot be used in Python
