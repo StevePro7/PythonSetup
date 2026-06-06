@@ -37,6 +37,36 @@ class CollisionManager:
         self.optionRect.append(self.__getOptionRect(enums.OptionType.D))
 
 
+    def FullScreen(self, x: int, y: int) -> bool:
+        return self.fullScreenRect.collidepoint(x, y)
+
+
+    # adriana - stream line
+    def GetOptionType(self, x: int, y: int) -> enums.OptionType:
+        if self.optionRect[enums.OptionType.A.value].collidepoint(x, y):
+            return enums.OptionType.A
+        elif self.optionRect[enums.OptionType.B.value].collidepoint(x, y):
+            return enums.OptionType.B
+        elif self.optionRect[enums.OptionType.C.value].collidepoint(x, y):
+            return enums.OptionType.C
+        elif self.optionRect[enums.OptionType.D.value].collidepoint(x, y):
+            return enums.OptionType.D
+
+        return enums.OptionType.Invalid
+
+    # def LeftArrow(self, x: int, y: int) -> bool:
+    # def RghtArrow(self, x: int, y: int) -> bool:
+
+    def VolumeIcon(self, x: int, y: int) -> bool:
+        return self.volumeIconRect.collidepoint(x, y)
+
+    def CheatMode(self, x: int, y: int) -> bool:
+        return self.cheatModeRect.collidepoint(x, y)
+
+    def Character(self, x: int, y: int) -> bool:
+        return self.characterRect.collidepoint(x, y)
+
+
     def __getOptionRect(self, type: enums.OptionType) -> pygame.Rect:
         # Shrink the collision.
         option: int = type.value
