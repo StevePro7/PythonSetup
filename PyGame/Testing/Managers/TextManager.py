@@ -52,9 +52,9 @@ class TextManager:
 
     def DrawText(self, text: str, x: int, y: int):
         position: tuple[int, int] = self.GetTextPosition(x, y)
-        self.DrawTextPos(text, position, Colors.Black)
+        self.DrawTextPos(text, position)
 
-    def DrawTextPos(self, text: str, position: tuple[int, int], color):
+    def DrawTextPos(self, text: str, position: tuple[int, int], color: Colors = Colors.Black):
         MyGame.Manager.GraphicsManager.DrawText(Assets.EmulogicFont, text, position, color)
 
     def DrawTextDataList(self, textDataList: list[TextData]) -> None:

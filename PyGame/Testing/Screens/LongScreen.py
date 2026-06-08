@@ -44,11 +44,29 @@ class LongScreen(BaseScreen):
             self.Timer = 0
             self.flag = not self.flag
 
+        if MyGame.Manager.InputManager.Advance():
+            MyGame.Manager.ScoreManager.Increment()
+
         return None
 
 
     def Draw(self) -> None:
         super().DrawScreenText()
+        MyGame.Manager.ScoreManager.DrawScore()
+
+        # adriana - start
+        totalText = MyGame.Manager.QuestionManager.QuizLengthText2
+        solveValu = MyGame.Manager.QuestionManager.QuestionNumber
+        solveText = MyGame.Manager.BaseManager.GetNumberSP(solveValu)
+
+        scoreValu: int = MyGame.Manager.ScoreManager.ScoreValu
+        visorValu: int = 0
+        if solveValu > 0:
+            visorValu = int(solveValu / scoreValu * 100)
+        visorText = MyGame.Manager.BaseManager.GetNumberSP(visorValu)
+        MyGame.Manager.ScoreManager.DrawStats(totalText, solveText, visorText)
+        # adriana - end
+
 
         # Show / hide cheat mode text
         if not self.localCheat:

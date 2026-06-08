@@ -28,6 +28,7 @@ class MyGame:
         MyGame.Manager.ImageManager.Initialize()
         MyGame.Manager.InputManager.Initialize()
         MyGame.Manager.QuestionManager.Initialize()
+        MyGame.Manager.ScoreManager.Initialize()
         MyGame.Manager.SpriteManager.Initialize()
         MyGame.Manager.ScreenManager.Initialize()
         MyGame.Manager.SoundManager.Initialize()
@@ -46,6 +47,7 @@ class MyGame:
 
         MyGame.Manager.ImageManager.LoadContent()
         MyGame.Manager.QuestionManager.LoadContent()
+        MyGame.Manager.ScoreManager.LoadContent()
         MyGame.Manager.SpriteManager.LoadContent()
         MyGame.Manager.ScreenManager.LoadContent()
         MyGame.Manager.SoundManager.LoadContent()
