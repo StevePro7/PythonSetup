@@ -10,7 +10,7 @@ class OverScreen(BaseScreen):
     def Initialize(self) -> None:
         # self.X: int = 0
         # self.Y: int = 0
-        super().LoadScreenText()
+        super().InitScreenText()
 
 
     def LoadContent(self) -> None:

@@ -30,6 +30,7 @@ class MyGame:
         MyGame.Manager.QuestionManager.Initialize()
         MyGame.Manager.SpriteManager.Initialize()
         MyGame.Manager.ScreenManager.Initialize()
+        MyGame.Manager.SoundManager.Initialize()
 
         # MyGame.Manager.ButtonManager.Initialize()
         MyGame.Manager.LogManager.Write("Init complete")
@@ -47,8 +48,9 @@ class MyGame:
         MyGame.Manager.QuestionManager.LoadContent()
         MyGame.Manager.SpriteManager.LoadContent()
         MyGame.Manager.ScreenManager.LoadContent()
+        MyGame.Manager.SoundManager.LoadContent()
 
-        pass
+        MyGame.Manager.LogManager.Write("Load complete")
 
 
     @staticmethod

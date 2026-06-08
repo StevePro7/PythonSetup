@@ -7,7 +7,7 @@ from enumerations import OptionType
 class QuizScreen(BaseScreen):
 
     def Initialize(self) -> None:
-        super().LoadScreenText()
+        super().InitScreenText()
 
 
     def LoadContent(self) -> None:
@@ -15,6 +15,7 @@ class QuizScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
+        super().UpdateVolumeIcon()
         return None
 
 
@@ -23,5 +24,5 @@ class QuizScreen(BaseScreen):
         MyGame.Manager.SpriteManager.DrawSelectAll()
         MyGame.Manager.SpriteManager.DrawRight(OptionType.A)
         #MyGame.Manager.SpriteManager.DrawWrong(OptionType.D)
-        MyGame.Manager.SpriteManager.DrawVolumeOn()
+        MyGame.Manager.SoundManager.DrawVolumeIcon()
 

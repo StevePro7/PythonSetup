@@ -6,7 +6,7 @@ class TitleScreen(BaseScreen):
 
 
     def Initialize(self) -> None:
-        super().LoadScreenText()
+        super().InitScreenText()
 
 
     def LoadContent(self) -> None:
@@ -14,6 +14,7 @@ class TitleScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
+        super().UpdateVolumeIcon()
         return None
 
 

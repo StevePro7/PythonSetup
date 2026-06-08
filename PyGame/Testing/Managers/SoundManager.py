@@ -16,6 +16,8 @@ class SoundManager:
         self.sound: dict[enums.SoundType, str] = {}
         self.currMusic = None
         self.currSound = None
+        self.volume: int = None
+
 
     def Initialize(self):
         self.audioEnable = pygame.mixer.get_init() is not None
@@ -23,6 +25,9 @@ class SoundManager:
             pygame.mixer.init()
             devices = get_audio_device_names(True)
             MyGame.Manager.LogManager.Debug(devices)
+
+        self.soundEnable = True
+        self.SetVolume()
 
 
     def LoadContent(self):
@@ -68,6 +73,25 @@ class SoundManager:
             return False
 
         return pygame.mixer.music.get_busy() and self.currMusic is not None
+
+
+    def AlternateSound(self) -> None:
+        self.soundEnable = not self.soundEnable
+        self.SetVolume()
+
+    # public void SetPlaySound(Boolean playSound)
+    # public Boolean PlaySound { get; private set; }
+
+    def DrawVolumeIcon(self) -> None:
+        if self.soundEnable:
+            MyGame.Manager.SpriteManager.DrawVolumeOn()
+        else:
+            MyGame.Manager.SpriteManager.DrawVolumeOff()
+
+
+    def SetVolume(self) -> None:
+        self.volume = 100 if self.soundEnable else 0
+
 
     def __getAudioFile(self, soundFile: str, extention: str) -> str:
         root: Path = get_project_root()

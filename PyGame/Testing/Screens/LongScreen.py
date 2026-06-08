@@ -11,7 +11,7 @@ class LongScreen(BaseScreen):
         #self.textDataList: list[TextData] = MyGame.Manager.TextManager.InitTextData(screen)
         # self.text: str = None
         # self.Y: int = 0
-        super().LoadScreenText()
+        super().InitScreenText()
 
 
     def LoadContent(self) -> None:

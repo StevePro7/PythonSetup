@@ -1,9 +1,12 @@
 FPS=50
-ScreenType="Splash"
+#ScreenType="Splash"
 #ScreenType="Title"
-#ScreenType="Quiz"
+ScreenType="Quiz"
 #ScreenType="Exit"
 #ScreenType="Test"
+OptionType="A"
+DifficultyType="Easy"
+SplashDelay=3000
 MusicEnable=true
 SoundEnable=true
 Fullscreen=false

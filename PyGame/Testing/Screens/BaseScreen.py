@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+import pygame
 from enumerations import ScreenType
 from Objects.TextData import TextData
 from MyGame import MyGame
@@ -7,15 +8,21 @@ from MyGame import MyGame
 class BaseScreen(ABC):
 
     def __init__(self):
+        self.Timer: int = None
+        self.BuildPosition: pygame.Vector2 = None
+        self.CheatPositions: list[pygame.Vector2] = None
         self.textDataList: list[TextData] = []
 
 
     @abstractmethod
     def Initialize(self) -> None:
-        pass
+        self.BuildPosition = self.__getBuildPosition()
+        self.CheatPositions = self.__getCheatPositions()
+
 
     @abstractmethod
     def LoadContent(self) -> None:
+        self.Timer = 0
         pass
 
     @abstractmethod
@@ -27,9 +34,31 @@ class BaseScreen(ABC):
         pass
 
 
-    def LoadScreenText(self) -> None:
+    def UpdateTimer(self, deltaTime: int):
+        self.Timer += deltaTime
+
+    def UpdateVolumeIcon(self) -> None:
+        volume: bool = MyGame.Manager.InputManager.VolumeIcon()
+        if volume:
+            MyGame.Manager.SoundManager.AlternateSound()
+
+    def InitScreenText(self) -> None:
         screen_name = self.__class__.__name__
         self.textDataList = MyGame.Manager.TextManager.InitTextData(screen_name)
 
     def DrawScreenText(self) -> None:
         MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
+
+    def HideCheatMode(self) -> None:
+        MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[0])
+        MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[1])
+
+
+    def __getBuildPosition(self) -> pygame.Vector2:
+        return MyGame.Manager.TextManager.GetTextPosition(26, 23)
+
+    def __getCheatPositions(self) -> list[pygame.Vector2]:
+        positions: list[pygame.Vector2] = []
+        positions.append(MyGame.Manager.TextManager.GetTextPosition(25, 9))
+        positions.append(MyGame.Manager.TextManager.GetTextPosition(27, 9))
+        return positions

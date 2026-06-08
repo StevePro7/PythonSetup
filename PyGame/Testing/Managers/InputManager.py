@@ -1,4 +1,6 @@
 import pygame
+
+from MyGame import MyGame
 from Inputs.KeyboardInput import KeyboardInput
 from Inputs.MouseInput import MouseInput
 #from JoystickInput
@@ -7,7 +9,7 @@ from Inputs.MouseInput import MouseInput
 class InputManager:
     def __init__(self):
         self.keyboard: KeyboardInput = None
-        self.mouse:MouseInput = None
+        self.mouse: MouseInput = None
 
     def Initialize(self):
         self.keyboard: KeyboardInput = KeyboardInput()
@@ -30,3 +32,12 @@ class InputManager:
 
     def GetPosition(self) -> (int, int):
         return self.mouse.MousePosition()
+
+    # public Boolean LeftArrow()
+    # public Boolean RghtArrow()
+
+    def VolumeIcon(self) -> bool:
+        if not self.mouse.ButtonHold():
+            return False
+
+        return MyGame.Manager.CollisionManager.VolumeIcon(self.mouse.CurrMouseX, self.mouse.CurrMouseY)

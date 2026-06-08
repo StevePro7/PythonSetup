@@ -3,7 +3,7 @@ from Managers.ClockManager import ClockManager
 from Managers.CollisionManager import CollisionManager
 from Managers.ConfigManager import ConfigManager
 from Managers.ContentManager import ContentManager
-from Managers.DeviceManager import DeviceManager
+from Managers.DebugManager import DebugManager
 from Managers.DisplayManager import DisplayManager
 from Managers.EventManager import EventManager
 from Managers.FileManager import FileManager
@@ -49,7 +49,7 @@ class MyGame:
         CollisionManager: CollisionManager
         ConfigManager: ConfigManager
         ContentManager: ContentManager
-        DeviceManager: DeviceManager
+        DebugManager: DebugManager
         DisplayManager: DisplayManager
         EventManager: EventManager
         FileManager: FileManager

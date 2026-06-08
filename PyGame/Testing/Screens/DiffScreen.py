@@ -8,7 +8,7 @@ class DiffScreen(BaseScreen):
 
 
     def Initialize(self) -> None:
-        super().LoadScreenText()
+        super().InitScreenText()
 
 
     def LoadContent(self) -> None:
