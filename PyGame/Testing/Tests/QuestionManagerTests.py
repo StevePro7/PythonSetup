@@ -33,9 +33,8 @@ questionManager.SetQuizLength(enums.OptionType.D)
 
 #questionManager.Increment()
 
-test: bool = questionManager.GetCheatMode()
-print(test)
-
-questionManager.SetCheatMode(True)
-test2: bool = questionManager.GetCheatMode()
-print(test2)
+# test: bool = questionManager.GetCheatMode()
+# print(test)
+# questionManager.SetCheatMode(True)
+# test2: bool = questionManager.GetCheatMode()
+# print(test2)

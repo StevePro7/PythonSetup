@@ -9,12 +9,11 @@ import utils
 
 class ContentManager:
     def __init__(self):
-        self.contentRoot: Path = None
         self.texturesRoot: Path = None
 
 
     def Initialize(self):
-        self.contentRoot: Path = utils.get_project_root()
+        self.contentRoot = MyGame.Manager.BaseManager.GetContentRoot()
         self.texturesRoot: Path = self.contentRoot / const.TEXTURES_DIRECTORY
 
 
@@ -27,20 +26,10 @@ class ContentManager:
         Assets.SplashTexture: pygame.Surface = self._LoadTexture("Splash.bmp")
         Assets.SplashTexture: pygame.Surface = self._LoadTexture("StevePro.bmp")   # adriana
         Assets.SpritesheetTexture: pygame.Surface = self._LoadTexture("Spritesheet.png")
-
-
-    # adriana
-    def Update(self, deltaTime: int):
-        pass
-
-    # adriana
-    def Draw(self):
-        pass
-
+        Assets.IconTexture: pygame.Surface = self._LoadTexture("DonutIcon.png")
 
     def _LoadTexture(self, assetName: str) -> pygame.Surface:
-        path: Path = self.contentRoot / const.TEXTURES_DIRECTORY
-        file: Path = path  / assetName
-        texture = pygame.image.load(file).convert_alpha()
-
+        file: Path = self.texturesRoot  / assetName
+        #texture = pygame.image.load(file).convert_alpha()
+        texture = pygame.image.load(file)
         return texture

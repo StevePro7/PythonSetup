@@ -1,8 +1,21 @@
 import pygame
+from pathlib import Path
 import constants as const
 import enumerations as enums
+import utils
 
 class BaseManager:
+
+    def __init__(self):
+        self.contentRoot: Path = None
+
+    def Initialize(self):
+        self.contentRoot: Path = utils.get_project_root()
+
+
+    def GetContentRoot(self) -> Path:
+        return self.contentRoot
+
 
     def GetNumberZO(self, number: int) -> str:
         return self.GetNumber(number, "0")

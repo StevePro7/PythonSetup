@@ -15,6 +15,7 @@ class MyGame:
         MyGame.Manager.LogManager.Initialize()
         MyGame.Manager.RandomManager.Initialize()
 
+        MyGame.Manager.BaseManager.Initialize()
         MyGame.Manager.ConfigManager.Initialize()
         MyGame.Manager.ConfigManager.LoadContent()
         MyGame.Manager.ConfigManager.DumpConfig()
@@ -36,12 +37,13 @@ class MyGame:
 
     @staticmethod
     def LoadContent():
-        MyGame.Manager.DisplayManager.LoadContent()
         MyGame.Manager.CollisionManager.LoadContent()
-        #MyGame.Manager.FontManager.LoadContent()        # adriana
         MyGame.Manager.ContentManager.LoadContent()
-        MyGame.Manager.ImageManager.LoadContent()
+        MyGame.Manager.DisplayManager.LoadContent()
 
+        #MyGame.Manager.FontManager.LoadContent()        # adriana
+
+        MyGame.Manager.ImageManager.LoadContent()
         MyGame.Manager.QuestionManager.LoadContent()
         MyGame.Manager.SpriteManager.LoadContent()
         MyGame.Manager.ScreenManager.LoadContent()

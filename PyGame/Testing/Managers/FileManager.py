@@ -1,6 +1,5 @@
-from MyGame import MyGame
-
 class FileManager:
+
 
     def LoadTxt(self, file: str) -> list[str]:
         lines: list[str] = []
