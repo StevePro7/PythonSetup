@@ -1,6 +1,10 @@
 from MyGame import MyGame
 
 class ScoreManager:
+
+    def __init__(self):
+        self.scoreText: str = None
+
     def Initialize(self):
         MyGame.Manager.LogManager.Write("MGR init")
 

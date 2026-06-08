@@ -1,3 +1,4 @@
+import pygame
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from Objects.TextData import TextData
@@ -6,30 +7,70 @@ from enumerations import ScreenType
 
 class LongScreen(BaseScreen):
 
+    def __init__(self):
+        self.titleDelay: int = None
+        self.flash: bool = None
+        self.globalCheat: bool = None
+        self.localCheat: bool = None
+        self.cheatCount: int = None
+        self.flag: bool = None
+
+
     def Initialize(self) -> None:
-        #screen = self.__class__.__name__
-        #self.textDataList: list[TextData] = MyGame.Manager.TextManager.InitTextData(screen)
-        # self.text: str = None
-        # self.Y: int = 0
+        super().Initialize()
         super().InitScreenText()
+
+        self.textPositions: list[pygame.Vector2] = self.__getTextPositions()
+        self.whitePositions: list[pygame.Vector2] = self.__getWhitePositions()
+
+        self.titleDelay = MyGame.Manager.ConfigManager.ConfigData.TitleDelay
+        self.flash = MyGame.Manager.ConfigManager.ConfigData.FlashTitle
+
 
 
     def LoadContent(self) -> None:
-        pass
+        super().LoadContent()
+        self.globalCheat = MyGame.Manager.ConfigManager.ConfigData.CheatMode
+        self.localCheat = self.globalCheat
+        MyGame.Manager.QuestionManager.SetCheatMode(self.localCheat)
+
+        self.cheatCount = 0
+        self.flag = False
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        # self.test: bool = MyGame.Manager.InputManager.Advance()
-        # if self.test:
-        #     self.Y += 20
+        super().UpdateTimer(deltaTime)
+        if self.Timer > self.titleDelay:
+            self.Timer = 0
+            self.flag = not self.flag
+
         return None
 
 
     def Draw(self) -> None:
-        #MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
-        # for i in range(24):
-        #     y = i * 20
-        #     MyGame.Manager.TextManager.DrawText("X", (0, y))
-        #
-        # MyGame.Manager.TextManager.DrawText("SPACE", (40, self.Y))
         super().DrawScreenText()
+
+        # Show / hide cheat mode text
+        if not self.localCheat:
+            super().HideCheatMode()
+
+        # Flash Press Start
+        if not self.flash or not self.flag:
+            return
+
+        MyGame.Manager.SpriteManager.DrawWhite(self.whitePositions[0])
+        MyGame.Manager.SpriteManager.DrawWhite(self.whitePositions[1])
+
+
+    def __getTextPositions(self) -> list[pygame.Vector2]:
+        positions: list[pygame.Vector2] = []
+        positions.append(MyGame.Manager.TextManager.GetTextPosition(2, 13))
+        positions.append(MyGame.Manager.TextManager.GetTextPosition(2, 14))
+        return positions
+
+
+    def __getWhitePositions(self) -> list[pygame.Vector2]:
+        positions: list[pygame.Vector2] = []
+        positions.append(MyGame.Manager.TextManager.GetWhitePosition(2, 13))
+        positions.append(MyGame.Manager.TextManager.GetWhitePosition(4, 13))
+        return positions

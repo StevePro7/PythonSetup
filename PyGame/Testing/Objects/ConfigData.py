@@ -9,6 +9,18 @@ class ConfigData:
     OptionType: OptionType
     DifficultyType: DifficultyType
     SplashDelay: int
+    TitleDelay: int
+    OptionDelay: int
+    ReadyDelay: int
+    DotsDelay: int
+    OverDelay: int
+    PlayDelay: int
+    TitleDelay: int
+    BlankSplash: bool
+    FlashTitle: bool
     MusicEnable: bool   # adriana
     SoundEnable: bool
+    CheatMode: bool
+    RandomQuestions: bool
+    RandomAnswers: bool
     Fullscreen: bool
