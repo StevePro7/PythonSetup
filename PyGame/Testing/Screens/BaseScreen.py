@@ -37,10 +37,12 @@ class BaseScreen(ABC):
     def UpdateTimer(self, deltaTime: int):
         self.Timer += deltaTime
 
-    def UpdateVolumeIcon(self) -> None:
+    def UpdateVolumeIcon(self) -> bool:
         volume: bool = MyGame.Manager.InputManager.VolumeIcon()
         if volume:
             MyGame.Manager.SoundManager.AlternateSound()
+
+        return volume
 
     def InitScreenText(self) -> None:
         screen_name = self.__class__.__name__
@@ -53,6 +55,9 @@ class BaseScreen(ABC):
         MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[0])
         MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[1])
 
+    def BlockOnSoundFX(self) -> None:
+        while (MyGame.Manager.SoundManager.IsSoundPlaying()):
+            pass
 
     def __getBuildPosition(self) -> pygame.Vector2:
         return MyGame.Manager.TextManager.GetTextPosition(26, 23)

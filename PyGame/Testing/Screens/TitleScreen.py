@@ -1,5 +1,6 @@
 import pygame
 
+import constants
 import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
@@ -44,12 +45,37 @@ class TitleScreen(BaseScreen):
             self.Timer = 0
             self.flag = not self.flag
 
-        super().UpdateVolumeIcon()
+        fullScreen: bool = False
+        icon: bool = super().UpdateVolumeIcon()
+        if not icon:
+            # Check if hit Lisa head first then check cheat mode...
+            cheatMode: bool = MyGame.Manager.InputManager.CheatMode()
+            if cheatMode:
+                if not self.localCheat:
+                    self.cheatCount += 1
+                    if self.cheatCount >= constants.NUMBER_CHEATS:
+                        #  Tap Lisa head enough times to enable cheat!
+                        self.localCheat = True
+                        MyGame.Manager.QuestionManager.SetCheatMode(self.localCheat)
+                        MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Cheat)
+                else:
+                    fullScreen = MyGame.Manager.InputManager.FullScreen()
+            else:
+                fullScreen = MyGame.Manager.InputManager.FullScreen()
+
+        if fullScreen:
+            MyGame.Manager.SoundManager.StopMusic()
+            MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Right)
+            super().BlockOnSoundFX()
+
+            return enumerations.ScreenType.Diff
+
         return None
 
 
     def Draw(self) -> None:
         MyGame.Manager.ImageManager.DrawTitle()
+        MyGame.Manager.SoundManager.DrawVolumeIcon()
         super().DrawScreenText()
 
         # Show / hide cheat mode text

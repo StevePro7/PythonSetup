@@ -20,14 +20,23 @@ class InputManager:
         self.keyboard.Update(deltaTime)
         self.mouse.Update(deltaTime)
 
+
     def Advance(self) -> bool:
-        test = self.keyboard.KeyHold(pygame.K_SPACE)
-        #test = self.keyboard.KeyPress(pygame.K_SPACE)
-        return test
+        if self.mouse.ButtonClick():
+            return True
+
+        return self.keyboard.KeyHold(pygame.K_SPACE)
+
+
+    def FullScreen(self) -> bool:
+        if not self.mouse.ButtonHold():
+            return False
+
+        return MyGame.Manager.CollisionManager.FullScreen(self.mouse.CurrMouseX, self.mouse.CurrMouseY)
+
 
     def GetOptionType(self) -> bool:
         test = self.mouse.ButtonClick()
-        #test = self.mouse.ButtonHold()
         return test
 
     def GetPosition(self) -> (int, int):
@@ -41,3 +50,18 @@ class InputManager:
             return False
 
         return MyGame.Manager.CollisionManager.VolumeIcon(self.mouse.CurrMouseX, self.mouse.CurrMouseY)
+
+    def CheatMode(self) -> bool:
+        if not self.mouse.ButtonHold():
+            return False
+
+        return MyGame.Manager.CollisionManager.CheatMode(self.mouse.CurrMouseX, self.mouse.CurrMouseY)
+
+    def Character(self) -> bool:
+        if self.mouse.ButtonHold():
+            return MyGame.Manager.CollisionManager.Character(self.mouse.CurrMouseX, self.mouse.CurrMouseY)
+
+        if self.keyboard.KeyHold(pygame.K_RIGHT):
+            return True
+
+        return False

@@ -17,6 +17,7 @@ class SoundManager:
         self.currMusic = None
         self.currSound = None
         self.volume: int = None
+        self.channel: pygame.mixer.Channel = None
 
 
     def Initialize(self):
@@ -51,7 +52,7 @@ class SoundManager:
 
         sfx: pygame.mixer.Sound = self.sound[type]
         self.currSound = sfx
-        sfx.play()
+        self.channel: pygame.mixer.Channel = sfx.play()
 
 
     def PlayMusic(self, type: enums.MusicType):
@@ -75,6 +76,11 @@ class SoundManager:
 
         return pygame.mixer.music.get_busy() and self.currMusic is not None
 
+    def IsSoundPlaying(self) -> bool:
+        if not self.audioEnable or not self.soundEnable:
+            return False
+
+        return self.channel and self.channel.get_busy() and self.currSound is not None
 
     def AlternateSound(self) -> None:
         self.soundEnable = not self.soundEnable
@@ -91,7 +97,8 @@ class SoundManager:
 
 
     def SetVolume(self) -> None:
-        self.volume = 100 if self.soundEnable else 0
+        self.volume = 1 if self.soundEnable else 0
+        pygame.mixer.music.set_volume(self.volume)
 
 
     def __getAudioFile(self, soundFile: str, extention: str) -> str:
