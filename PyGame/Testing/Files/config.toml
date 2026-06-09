@@ -1,6 +1,6 @@
 FPS=50
-#ScreenType="Splash"
-ScreenType="Title"
+ScreenType="Splash"
+#ScreenType="Title"
 #ScreenType="Diff"
 #ScreenType="Long"
 #ScreenType="Test"
