@@ -26,7 +26,8 @@ class SoundManager:
             devices = get_audio_device_names(True)
             MyGame.Manager.LogManager.Debug(devices)
 
-        self.soundEnable = True
+        self.musicEnable = MyGame.Manager.ConfigManager.ConfigData.MusicEnable
+        self.soundEnable = MyGame.Manager.ConfigManager.ConfigData.SoundEnable
         self.SetVolume()
 
 

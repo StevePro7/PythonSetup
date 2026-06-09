@@ -23,7 +23,7 @@ class BaseScreen(ABC):
     @abstractmethod
     def LoadContent(self) -> None:
         self.Timer = 0
-        pass
+
 
     @abstractmethod
     def Update(self, deltaTime: int) -> ScreenType | None:
