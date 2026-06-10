@@ -49,8 +49,6 @@ class DiffScreen(BaseScreen):
         MyGame.Manager.ImageManager.DrawTitle()
         MyGame.Manager.SoundManager.DrawVolumeIcon()
         super().DrawScreenText()
-
-        if not self.cheatMode:
-            super().HideCheatMode()
+        super().HideCheatMode()
 
         MyGame.Manager.SpriteManager.DrawSelectAll()

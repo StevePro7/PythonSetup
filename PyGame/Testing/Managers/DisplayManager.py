@@ -23,7 +23,7 @@ class DisplayManager:
     def LoadContent(self):
         self.screen = pygame.display.set_mode(self.size)
         pygame.display.set_caption(Globalize.SIMPSONS_TITLE)
-#        pygame.display.set_icon(Assets.IconTexture)            # adriana
+        pygame.display.set_icon(Assets.IconTexture)            # adriana
 
 
     def Clear(self, color: Colors.Black):

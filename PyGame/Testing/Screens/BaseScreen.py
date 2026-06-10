@@ -52,8 +52,10 @@ class BaseScreen(ABC):
         MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
 
     def HideCheatMode(self) -> None:
-        MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[0])
-        MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[1])
+        cheatMode: bool = MyGame.Manager.QuestionManager.GetCheatMode()
+        if not cheatMode:
+            MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[0])
+            MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[1])
 
     def BlockOnSoundFX(self) -> None:
         while (MyGame.Manager.SoundManager.IsSoundPlaying()):

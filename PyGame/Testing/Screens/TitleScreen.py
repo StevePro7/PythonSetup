@@ -11,6 +11,7 @@ class TitleScreen(BaseScreen):
     def __init__(self):
         self.titleDelay: int = None
         self.flash: bool = None
+        self.globalCheat: bool = None
         self.localCheat: bool = None
         self.cheatCount: int = None
         self.flag: bool = None
@@ -29,9 +30,12 @@ class TitleScreen(BaseScreen):
 
     def LoadContent(self) -> None:
         super().LoadContent()
-        self.localCheat = MyGame.Manager.QuestionManager.GetCheatMode()
 
-        MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.TitleMusic)
+        self.globalCheat = MyGame.Manager.ConfigManager.ConfigData.CheatMode
+        self.localCheat = self.globalCheat
+        MyGame.Manager.QuestionManager.SetCheatMode(self.localCheat)
+
+        MyGame.Manager.SoundManager.ResumeMusic()
         self.cheatCount = 0
         self.flag = False
 
@@ -42,7 +46,7 @@ class TitleScreen(BaseScreen):
             self.Timer = 0
             self.flag = not self.flag
 
-        fullScreen: bool = False
+        foward: bool = False
         icon: bool = super().UpdateVolumeIcon()
         if not icon:
             # Check if hit Lisa head first then check cheat mode...
@@ -56,11 +60,11 @@ class TitleScreen(BaseScreen):
                         MyGame.Manager.QuestionManager.SetCheatMode(self.localCheat)
                         MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Cheat)
                 else:
-                    fullScreen = MyGame.Manager.InputManager.FullScreen()
+                    foward = MyGame.Manager.InputManager.Forward()
             else:
-                fullScreen = MyGame.Manager.InputManager.FullScreen()
+                foward = MyGame.Manager.InputManager.Forward()
 
-        if fullScreen:
+        if foward:
             MyGame.Manager.SoundManager.PauseMusic()
             MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Right)
             super().BlockOnSoundFX()
@@ -73,10 +77,7 @@ class TitleScreen(BaseScreen):
         MyGame.Manager.ImageManager.DrawTitle()
         MyGame.Manager.SoundManager.DrawVolumeIcon()
         super().DrawScreenText()
-
-        # Show / hide cheat mode text
-        if not self.localCheat:
-            super().HideCheatMode()
+        super().HideCheatMode()
 
         # Flash Press Start
         if not self.flash or not self.flag:

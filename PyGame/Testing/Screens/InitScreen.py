@@ -1,7 +1,6 @@
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from Objects.TextData import TextData
-from Static.Assets import Assets
+import enumerations
 from enumerations import ScreenType
 
 
@@ -9,19 +8,20 @@ class InitScreen(BaseScreen):
 
 
     def Initialize(self) -> None:
-        pass
+        super().Initialize()
+        super().InitScreenText()
 
 
     def LoadContent(self) -> None:
-        pass
+        MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.TitleMusic)
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        return None
+        return ScreenType.Title
 
 
     def Draw(self) -> None:
-        MyGame.Manager.TextManager.DrawText("STEVEPRO", 0, 0)
-        MyGame.Manager.TextManager.DrawText("SUZANNE", 0, 1)
-        MyGame.Manager.TextManager.DrawText("ADRIANA", 0, 2)
-        pass
+        MyGame.Manager.ImageManager.DrawTitle()
+        MyGame.Manager.SoundManager.DrawVolumeIcon()
+        super().DrawScreenText()
+        super().HideCheatMode()

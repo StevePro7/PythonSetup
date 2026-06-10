@@ -30,11 +30,11 @@ class SplashScreen(BaseScreen):
     def Update(self, deltaTime: int) -> ScreenType | None:
         super().UpdateTimer(deltaTime)
         if self.Timer > self.splashDelay:
-            return enumerations.ScreenType.Title
+            return enumerations.ScreenType.Init
 
         fullScreen: bool = MyGame.Manager.InputManager.FullScreen()
         if fullScreen:
-            return enumerations.ScreenType.Title
+            return enumerations.ScreenType.Init
 
         return None
 

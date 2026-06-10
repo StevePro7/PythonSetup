@@ -38,7 +38,7 @@ class ScreenManager:
             self.screens[self.currScreen].LoadContent()
 
             self.color = Colors.White
-            if self.currScreen in (ScreenType.Splash, ScreenType.Init):
+            if self.currScreen in (ScreenType.Splash, ScreenType.Unknown):
                 self.color = Colors.Black
 
         tempScreen = self.screens[self.currScreen].Update(deltaTime)
