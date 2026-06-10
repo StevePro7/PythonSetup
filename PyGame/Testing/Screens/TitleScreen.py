@@ -11,7 +11,6 @@ class TitleScreen(BaseScreen):
     def __init__(self):
         self.titleDelay: int = None
         self.flash: bool = None
-        self.globalCheat: bool = None
         self.localCheat: bool = None
         self.cheatCount: int = None
         self.flag: bool = None
@@ -30,9 +29,7 @@ class TitleScreen(BaseScreen):
 
     def LoadContent(self) -> None:
         super().LoadContent()
-        self.globalCheat = MyGame.Manager.ConfigManager.ConfigData.CheatMode
-        self.localCheat = self.globalCheat
-        MyGame.Manager.QuestionManager.SetCheatMode(self.localCheat)
+        self.localCheat = MyGame.Manager.QuestionManager.GetCheatMode()
 
         MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.TitleMusic)
         self.cheatCount = 0
@@ -64,10 +61,9 @@ class TitleScreen(BaseScreen):
                 fullScreen = MyGame.Manager.InputManager.FullScreen()
 
         if fullScreen:
-            MyGame.Manager.SoundManager.StopMusic()
+            MyGame.Manager.SoundManager.PauseMusic()
             MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Right)
             super().BlockOnSoundFX()
-
             return enumerations.ScreenType.Diff
 
         return None

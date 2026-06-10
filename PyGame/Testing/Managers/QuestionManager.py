@@ -37,7 +37,7 @@ class QuestionManager:
 
         self.answerList: list[int] = []
         self.QuestionList: list[Question] = []
-        self.cheatMode: bool = False
+        self.cheatMode: bool = MyGame.Manager.ConfigManager.ConfigData.CheatMode
 
 
     def LoadContent(self):
