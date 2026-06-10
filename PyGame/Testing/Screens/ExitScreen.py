@@ -20,11 +20,17 @@ class ExitScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        #test: bool = MyGame.Manager.InputManager.Advance()
         type: OptionType = MyGame.Manager.InputManager.GetOptionType()
         if type != OptionType.Invalid:
             print(type.value)
 
+        back: bool = MyGame.Manager.InputManager.Back()
+        if back:
+            print("Go BACK")
+
+        forward: bool = MyGame.Manager.InputManager.Forward()
+        if forward:
+            print("go forward")
         return None
 
 

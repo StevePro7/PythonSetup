@@ -22,11 +22,21 @@ class InputManager:
         self.mouse.Update(deltaTime)
 
 
-    def Advance(self) -> bool:
-        if self.mouse.ButtonClick():
+    # If press left mouse button OR right key OR space key then go forward.
+    def Forward(self) -> bool:
+        if self.mouse.ButtonHold(enumerations.MouseType.Left.value):
             return True
 
-        return self.keyboard.KeyHold(pygame.K_SPACE)
+        return self.keyboard.KeyHold(pygame.K_RIGHT) or self.keyboard.KeyHold(pygame.K_SPACE)
+
+
+    # If press right mouse button OR left key OR F12 key then go back.
+    def Back(self) -> bool:
+        if self.mouse.ButtonHold(enumerations.MouseType.Right.value):
+            return True
+        if self.keyboard.KeyHold(pygame.K_LEFT) or self.keyboard.KeyHold(pygame.K_F12):
+            return True
+        return False
 
 
     def FullScreen(self) -> bool:
@@ -54,8 +64,6 @@ class InputManager:
     def GetPosition(self) -> (int, int):
         return self.mouse.MousePosition()
 
-    # public Boolean LeftArrow()
-    # public Boolean RghtArrow()
 
     def VolumeIcon(self) -> bool:
         if not self.mouse.ButtonHold():
@@ -63,17 +71,20 @@ class InputManager:
 
         return MyGame.Manager.CollisionManager.VolumeIcon(self.mouse.CurrMouseX, self.mouse.CurrMouseY)
 
+
     def CheatMode(self) -> bool:
         if not self.mouse.ButtonHold():
             return False
 
         return MyGame.Manager.CollisionManager.CheatMode(self.mouse.CurrMouseX, self.mouse.CurrMouseY)
 
+
+    # If click on Actor or press Return
     def Character(self) -> bool:
         if self.mouse.ButtonHold():
             return MyGame.Manager.CollisionManager.Character(self.mouse.CurrMouseX, self.mouse.CurrMouseY)
 
-        if self.keyboard.KeyHold(pygame.K_RIGHT):
+        if self.keyboard.KeyHold(pygame.K_RETURN):
             return True
 
         return False

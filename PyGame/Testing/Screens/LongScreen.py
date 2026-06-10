@@ -44,7 +44,7 @@ class LongScreen(BaseScreen):
             self.Timer = 0
             self.flag = not self.flag
 
-        if MyGame.Manager.InputManager.Advance():
+        if MyGame.Manager.InputManager.Forward():
             MyGame.Manager.ScoreManager.Increment()
 
         return None

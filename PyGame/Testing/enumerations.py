@@ -67,6 +67,12 @@ class OptionType(ZeroBasedEnum):
     Invalid = auto()
 
 
+class MouseType(ZeroBasedEnum):
+    Left = auto()
+    Middle = auto()
+    Right = auto()
+
+
 class ActorType(ZeroBasedEnum):
     Bart1 = auto()
     Bart2 = auto()
