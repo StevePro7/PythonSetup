@@ -3,7 +3,7 @@ import pygame
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from enumerations import ScreenType
-from enumerations import SpriteType
+from enumerations import SpriteType, OptionType
 
 
 class ExitScreen(BaseScreen):
@@ -20,10 +20,10 @@ class ExitScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        # test: bool = MyGame.Manager.InputManager.Advance()
-        # if test:
-        #     self.actor += 1
-        #     self.voice = str(self.actor)
+        #test: bool = MyGame.Manager.InputManager.Advance()
+        type: OptionType = MyGame.Manager.InputManager.GetOptionType()
+        if type != OptionType.Invalid:
+            print(type.value)
 
         return None
 

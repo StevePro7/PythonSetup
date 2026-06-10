@@ -1,9 +1,10 @@
 FPS=50
-ScreenType="Splash"
+#ScreenType="Splash"
 #ScreenType="Title"
 #ScreenType="Diff"
 #ScreenType="Long"
 #ScreenType="Test"
+ScreenType="Exit"
 OptionType="A"
 DifficultyType="Easy"
 SplashDelay=3000
