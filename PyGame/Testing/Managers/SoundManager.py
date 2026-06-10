@@ -68,7 +68,19 @@ class SoundManager:
         if not self.audioEnable or not self.musicEnable:
             return
 
-        pygame.mixer.music.stop()               # adriana - test API
+        pygame.mixer.music.stop()
+
+    def PauseMusic(self):
+        if not self.audioEnable or not self.musicEnable:
+            return
+
+        pygame.mixer.music.pause()
+
+    def ResumeMusic(self):
+        if not self.audioEnable or not self.musicEnable:
+            return
+
+        pygame.mixer.music.unpause()
 
     def IsMusicPlaying(self) -> bool:
         if not self.audioEnable or not self.musicEnable:
