@@ -1,9 +1,5 @@
 class Globalize:
     SIMPSONS_TITLE: str = "Simpsons Trivia"
-
-    TITLE_LINE1: str = "PRESS"
-    TITLE_LINE2: str = "START"
-
     DIFF_TEXT: list[str] = ["EASY", "NORM", "HARD", "PRO!"]
 
     # Left arrow.

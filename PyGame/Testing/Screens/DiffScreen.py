@@ -1,15 +1,12 @@
 import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from Objects.TextData import TextData
 from enumerations import ScreenType
 
 
 class DiffScreen(BaseScreen):
 
     def __init__(self):
-        self.optionDelay: int = None
-        self.cheatMode: bool = None
         self.optionType: enumerations.OptionType = None
         self.nextScreen: enumerations.ScreenType = None
         self.flag: bool = None
@@ -18,15 +15,12 @@ class DiffScreen(BaseScreen):
     def Initialize(self) -> None:
         super().Initialize()
         super().InitScreenText()
-        self.optionDelay = MyGame.Manager.ConfigManager.ConfigData.OptionDelay
-
 
 
     def LoadContent(self) -> None:
         super().LoadContent()
         MyGame.Manager.SoundManager.ResumeMusic()
 
-        self.cheatMode = MyGame.Manager.QuestionManager.GetCheatMode()
         self.optionType: enumerations.OptionType = enumerations.OptionType.Invalid
         self.flag = False
         self.nextScreen = None
