@@ -10,37 +10,49 @@ class DiffScreen(BaseScreen):
     def __init__(self):
         self.optionDelay: int = None
         self.cheatMode: bool = None
+        self.optionType: enumerations.OptionType = None
+        self.nextScreen: enumerations.ScreenType = None
+        self.flag: bool = None
 
 
     def Initialize(self) -> None:
         super().Initialize()
         super().InitScreenText()
         self.optionDelay = MyGame.Manager.ConfigManager.ConfigData.OptionDelay
-        self.cheatMode = MyGame.Manager.QuestionManager.GetCheatMode()
+
 
 
     def LoadContent(self) -> None:
         super().LoadContent()
         MyGame.Manager.SoundManager.ResumeMusic()
 
+        self.cheatMode = MyGame.Manager.QuestionManager.GetCheatMode()
+        self.optionType: enumerations.OptionType = enumerations.OptionType.Invalid
+        self.flag = False
+        self.nextScreen = None
+
 
     def Update(self, deltaTime: int) -> ScreenType | None:
+        if self.flag:
+            super().BlockOnSoundFX()
+            return self.nextScreen
+
         icon: bool = super().UpdateVolumeIcon()
         if not icon:
-            optionType: enumerations.OptionType = MyGame.Manager.InputManager.GetOptionType()
-            if optionType != enumerations.OptionType.Invalid:
-                MyGame.Manager.QuestionManager.SetDifficulty(optionType)
+            self.optionType: enumerations.OptionType = MyGame.Manager.InputManager.GetOptionType()
+            if self.optionType != enumerations.OptionType.Invalid:
+                MyGame.Manager.QuestionManager.SetDifficulty(self.optionType)
                 MyGame.Manager.SoundManager.PauseMusic()
                 MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Right)
-                super().BlockOnSoundFX()
-                return enumerations.ScreenType.Long
+                self.nextScreen = ScreenType.Long
+                self.flag = True
             else:
                 back: bool = MyGame.Manager.InputManager.Back()
                 if back:
                     MyGame.Manager.SoundManager.PauseMusic()
                     MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Wrong)
-                    super().BlockOnSoundFX()
-                    return enumerations.ScreenType.Title
+                    self.nextScreen = ScreenType.Title
+                    self.flag = True
 
         return None
 
@@ -52,3 +64,5 @@ class DiffScreen(BaseScreen):
         super().HideCheatMode()
 
         MyGame.Manager.SpriteManager.DrawSelectAll()
+        if self.flag:
+            MyGame.Manager.SpriteManager.DrawRight(self.optionType)

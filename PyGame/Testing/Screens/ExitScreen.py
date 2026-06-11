@@ -23,7 +23,8 @@ class ExitScreen(BaseScreen):
     def Update(self, deltaTime: int) -> ScreenType | None:
         full: bool = MyGame.Manager.InputManager.FullScreen()
         if full:
-            MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.TitleMusic)
+            MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
+            #MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.TitleMusic)
 
         stop: bool = MyGame.Manager.InputManager.VolumeIcon()
         if stop:
