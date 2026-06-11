@@ -1,3 +1,4 @@
+import time
 from abc import ABC, abstractmethod
 import pygame
 from enumerations import ScreenType
@@ -51,15 +52,24 @@ class BaseScreen(ABC):
     def DrawScreenText(self) -> None:
         MyGame.Manager.TextManager.DrawTextDataList(self.textDataList)
 
+
     def HideCheatMode(self) -> None:
         cheatMode: bool = MyGame.Manager.QuestionManager.GetCheatMode()
         if not cheatMode:
             MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[0])
             MyGame.Manager.SpriteManager.DrawWhite(self.CheatPositions[1])
 
+
     def BlockOnSoundFX(self) -> None:
-        while (MyGame.Manager.SoundManager.IsSoundPlaying()):
-            pass
+        soundEnable: bool = MyGame.Manager.SoundManager.SoundEnable
+        if not soundEnable:
+            delay: int = MyGame.Manager.ConfigManager.ConfigData.OptionDelay
+            timer = int(delay / 1000)
+            time.sleep(timer)
+        else:
+            while (MyGame.Manager.SoundManager.IsSoundPlaying()):
+                pass
+
 
     def __getBuildPosition(self) -> pygame.Vector2:
         return MyGame.Manager.TextManager.GetTextPosition(26, 23)

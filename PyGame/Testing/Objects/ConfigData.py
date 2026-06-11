@@ -11,6 +11,7 @@ class ConfigData:
     DifficultyType: DifficultyType
     SplashDelay: int
     TitleDelay: int
+    OptionDelay: int
     ReadyDelay: int
     DotsDelay: int
     OverDelay: int

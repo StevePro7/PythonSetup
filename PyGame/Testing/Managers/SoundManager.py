@@ -113,6 +113,10 @@ class SoundManager:
         pygame.mixer.music.set_volume(self.volume)
 
 
+    @property
+    def SoundEnable(self) -> bool:
+        return self.audioEnable and self.soundEnable
+
     def __getAudioFile(self, soundFile: str, extention: str) -> str:
         root: Path = get_project_root()
         file = f"{soundFile}.{extention}"
