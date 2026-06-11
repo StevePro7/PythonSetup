@@ -6,6 +6,7 @@ from enumerations import ScreenType, OptionType, DifficultyType
 class ConfigData:
     FPS: int
     ScreenType: ScreenType
+    Debugging: bool
     OptionType: OptionType
     DifficultyType: DifficultyType
     SplashDelay: int
