@@ -68,7 +68,15 @@ class ReadyScreen(BaseScreen):
         if not icon:
             pass
 
-        return None
+
+        MyGame.Manager.QuestionManager.Reset()
+        MyGame.Manager.QuestionManager.LoadQuestionList(self.difficultyType)
+
+        if MyGame.Manager.ConfigManager.ConfigData.RandomQuestions:
+            MyGame.Manager.QuestionManager.RandomizeAnswerList()
+
+        return ScreenType.Play
+        #return None
 
 
     def Draw(self) -> None:

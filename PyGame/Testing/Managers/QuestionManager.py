@@ -96,7 +96,40 @@ class QuestionManager:
 
     # public void RandomizeQuestionList()
     # public void RandomizeAnswerList(Byte index)
+
+    def RandomizeAnswerList(self, index: int) -> None:
+        # Get answer code first
+        #  Stored as 1-4 for A-D
+        q: Question = self.QuestionList[index]
+        self.answerCode: int = q.AnswerCode
+        self.answerCode -= 1
+
+        selects: int = const.NUMBER_SELECTS
+        for idx in range(selects):
+            self.answerList[idx] = 0
+
+        # Randomize answers for question.
+        # + record correct random option.
+        self.CorrectOptionType = enums.OptionType.Invalid
+        for idx in range(selects):
+            while True:
+                rnd: int = MyGame.Manager.RandomManager.Next(selects)
+                if 0 == self.answerList[rnd]:
+                    self.answerList[rnd] = idx
+                    break
+
+        # Set the correct option at end of loop.
+        for idx in range(selects):
+            val: int = self.answerList[idx]
+            if self.answerCode == val:
+                self.CorrectOptionType = enums.OptionType(idx)
+
+
+
     # public void DrawQuestion(Byte index)
+    def DrawQuestion(self, index: int) -> None:
+        pass
+
     # public void DrawQuestionNumber()
     # public void DrawQuestionTotal()
     # public void DrawQuizDiffText()
@@ -182,8 +215,30 @@ class QuestionManager:
         answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 23))
         return answerPosn
 
-    # private void RandomizeAnswerPosn()
 
+    def RandomizeAnswerPosn(self) -> None:
+        origin: pygame.Vector2 = []
+        for index in range(const.NUMBER_SELECTS):
+            match index:
+                case 0:
+                    origin = self.originAPosn
+                case 1:
+                    origin = self.originBPosn
+                case 2:
+                    origin = self.originCPosn
+                case 3:
+                    origin = self.originDPosn
+
+        value = self.answerList[index]
+        match value:
+            case 0:
+                self.answerAPosn = origin
+            case 1:
+                self.answerBPosn = origin
+            case 2:
+                self.answerCPosn = origin
+            case 3:
+                self.answerDPosn = origin
 
 
     def __getTextFile(self, type: enums.DifficultyType) -> str:
