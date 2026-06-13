@@ -30,7 +30,8 @@ class PlayScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        return None
+        super().UpdateVolumeIcon()
+        return ScreenType.Quiz
 
 
     def Draw(self) -> None:
