@@ -34,7 +34,20 @@ class ScoreScreen(BaseScreen):
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        super().UpdateTimer(deltaTime)
+        icon: bool = super().UpdateVolumeIcon()
+        if not icon:
+            actor: bool = MyGame.Manager.InputManager.Character()
+            if actor:
+                return ScreenType.Quiz
+
+        left: bool = MyGame.Manager.InputManager.Back()
+        if left:
+            return ScreenType.Over
+
+        rght: bool = MyGame.Manager.InputManager.Forward()
+        if rght:
+            return ScreenType.Quiz
+
         return None
 
 
