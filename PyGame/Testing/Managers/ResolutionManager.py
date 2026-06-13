@@ -1,14 +1,15 @@
 from MyGame import MyGame
 
+# adriana
 class ResolutionManager:
     def Initialize(self):
-        MyGame.Manager.LogManager.Write("MGR init")
+        pass
 
     def LoadContent(self):
-        MyGame.Manager.LogManager.Write("MGR Load")
+        pass
 
     def Update(self, deltaTime: int):
-        MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
+        pass
 
     def Draw(self):
-        MyGame.Manager.LogManager.Write("MGR Draw")
+        pass

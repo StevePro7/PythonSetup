@@ -14,24 +14,24 @@ class ReadyScreen(BaseScreen):
         self.dotsCount: int = None
         self.delay: int = None
         self.delay2: int = None
-        self.timer2: int = None
+        self.timer2: int = None         # adriana - do we need?
         self.diffText: str = None
         self.longText: str = None
         self.nextScreen: enumerations.ScreenType = None
         self.flag: bool = None
 
+
     def Initialize(self) -> None:
         super().Initialize()
         super().InitScreenText()
-
         self.quizPositions = self.__getQuizPositions()
-
 
 
     def LoadContent(self) -> None:
         super().LoadContent()
         MyGame.Manager.SoundManager.ResumeMusic()
 
+        # adriana move this code to DebugManager begin
         self.difficultyType = MyGame.Manager.QuestionManager.DifficultyType
         self.numberQuestion = MyGame.Manager.QuestionManager.NumberQuestion
         debugging: bool = MyGame.Manager.ConfigManager.ConfigData.Debugging
@@ -42,7 +42,7 @@ class ReadyScreen(BaseScreen):
         if self.numberQuestion is None or debugging:
             MyGame.Manager.QuestionManager.SetQuizLength(MyGame.Manager.ConfigManager.ConfigData.OptionType)
             self.numberQuestion = MyGame.Manager.ConfigManager.ConfigData.OptionType
-
+        # adriana move this code to DebugManager -end-
 
         self.difficultyType = MyGame.Manager.QuestionManager.DifficultyType
         self.numberQuestion = MyGame.Manager.QuestionManager.NumberQuestion
@@ -68,16 +68,13 @@ class ReadyScreen(BaseScreen):
         if not icon:
             pass
 
-
         MyGame.Manager.QuestionManager.Reset()
         MyGame.Manager.QuestionManager.LoadQuestionList(self.difficultyType)
 
         if MyGame.Manager.ConfigManager.ConfigData.RandomQuestions:
             MyGame.Manager.QuestionManager.RandomizeQuestionList()
-            #MyGame.Manager.QuestionManager.RandomizeAnswerList()
 
         return ScreenType.Play
-        #return None
 
 
     def Draw(self) -> None:
@@ -88,6 +85,7 @@ class ReadyScreen(BaseScreen):
 
         MyGame.Manager.TextManager.DrawTextPos(self.diffText, self.quizPositions[0])
         MyGame.Manager.TextManager.DrawTextPos(self.longText, self.quizPositions[1])
+
 
     def __getQuizPositions(self) -> list[pygame.Vector2]:
         positions: list[pygame.Vector2] = []

@@ -6,7 +6,6 @@ import pygame
 class CollisionManager:
     def __init__(self):
         self.fullScreenRect: pygame.Rect = None
-        #self.leftArrowRect: pygame.Rect = None; self.rghtArrowRect: pygame.Rect = None
         self.volumeIconRect: pygame.Rect = None
         self.cheatModeRect: pygame.Rect = None
         self.optionRect: list[pygame.Rect] = None
@@ -15,9 +14,6 @@ class CollisionManager:
 
     def LoadContent(self):
         self.fullScreenRect = pygame.Rect(0, 0, const.SCREEN_WIDE, const.SCREEN_HIGH)
-
-        #Vector2 leftArrowPos = BaseData.GetLeftArrowPos();
-        #Vector2 rghtArrowPos = BaseData.GetRghtArrowPos();
 
         volumeIconPos: pygame.Vector2 = MyGame.Manager.BaseManager.GetVolumeIconPos()
         self.volumeIconRect = pygame.Rect(volumeIconPos.x, volumeIconPos.y, const.SpriteSize, const.SpriteSize)
@@ -54,8 +50,6 @@ class CollisionManager:
 
         return enums.OptionType.Invalid
 
-    # def LeftArrow(self, x: int, y: int) -> bool:
-    # def RghtArrow(self, x: int, y: int) -> bool:
 
     def VolumeIcon(self, x: int, y: int) -> bool:
         return self.volumeIconRect.collidepoint(x, y)

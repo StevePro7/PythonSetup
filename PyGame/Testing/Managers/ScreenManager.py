@@ -4,8 +4,10 @@ import pkgutil
 import Screens
 from Screens.BaseScreen import BaseScreen
 from Static.Colors import Colors
-import constants as const
 from enumerations import ScreenType
+
+ENGINE_SCREENS: str = "Screens"
+ENGINE_SCREEN: str = "Screen"
 
 class ScreenManager:
 
@@ -28,7 +30,6 @@ class ScreenManager:
 
 
     def LoadContent(self):
-        MyGame.Manager.LogManager.Write("MGR Load")
         self.nextScreen = MyGame.Manager.ConfigManager.ConfigData.ScreenType
 
 
@@ -45,14 +46,11 @@ class ScreenManager:
         if tempScreen:
             self.nextScreen = tempScreen
 
-        #MyGame.Manager.LogManager.Write(f"MGR Update({deltaTime})")
-
 
     def Draw(self):
         MyGame.Manager.DisplayManager.Clear(self.color)
         self.screens[self.currScreen].Draw()
         MyGame.Manager.DisplayManager.Present()
-        #MyGame.Manager.LogManager.Write("MGR Draw")
 
 
     def _import_all_screens(self):
@@ -60,14 +58,14 @@ class ScreenManager:
             if module_name == "BaseScreen":
                 continue
 
-            importlib.import_module(f"{const.ENGINE_SCREENS}.{module_name}")
+            importlib.import_module(f"{ENGINE_SCREENS}.{module_name}")
 
     def _build_screen_map(self) -> dict[ScreenType, type[BaseScreen]]:
         screen_map: dict[ScreenType, type[BaseScreen]] = {}
 
         for screen_type in ScreenType:
-            class_name = f"{screen_type.name}{const.ENGINE_SCREEN}"
-            module = importlib.import_module(f"{const.ENGINE_SCREENS}.{class_name}")
+            class_name = f"{screen_type.name}{ENGINE_SCREEN}"
+            module = importlib.import_module(f"{ENGINE_SCREENS}.{class_name}")
 
             cls = getattr(module, class_name)
             screen_map[screen_type] = cls

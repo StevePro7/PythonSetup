@@ -42,14 +42,6 @@ class BaseManager:
         py: int = y * const.SpriteTile + const.OffsetSelect
         return pygame.Vector2(px, py)
 
-    # adriana
-    # def GetLeftArrowPos(self) -> pygame.Vector2:
-    #     arrowHigh: int = const.SCREEN_HIGH - const.SpriteSize + const.OffsetArrowY
-    #     return pygame.Vector2(0, arrowHigh)
-    #
-    # def GetRghtArrowPos(self) -> pygame.Vector2:
-    #     arrowHigh: int = const.SCREEN_HIGH - const.SpriteSize + const.OffsetArrowY
-    #     return pygame.Vector2(const.SCREEN_WIDE - const.SpriteSize, arrowHigh)
 
     def GetVolumeIconPos(self) -> pygame.Vector2:
         x: int = const.SCREEN_WIDE - const.SpriteSize - const.GameOffsetX

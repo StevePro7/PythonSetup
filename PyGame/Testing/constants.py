@@ -1,10 +1,8 @@
 ENGINE_MANAGERS: str = "Managers"
 ENGINE_MANAGER: str = "Manager"
 
-ENGINE_SCREENS: str = "Screens"
-ENGINE_SCREEN: str = "Screen"
-
-BUILD_VERSION: str = "V1.0.0"       # adriana - position in TitleScreen 25,22,V1.00
+# ENGINE_SCREENS: str = "Screens"
+# ENGINE_SCREEN: str = "Screen"
 
 SCREEN_WIDE = 640
 SCREEN_HIGH = 480

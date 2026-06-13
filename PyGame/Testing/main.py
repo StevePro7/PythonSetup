@@ -6,7 +6,6 @@
 # MyGame.Initialize()
 # #MyGame.LoadContent()
 # #MyGame.Update()
-# MyGame.Manager.LogManager.Write("test")
 
 
 print("hello")
