@@ -1,3 +1,4 @@
+import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from enumerations import ScreenType
@@ -6,30 +7,56 @@ from Objects.TextData import TextData
 
 class OverScreen(BaseScreen):
 
+    def __init__(self):
+        self.totalText: str = None
+        self.solveText: str = None
+        self.visorText: str = None
+        self.solveValu: int = None
+        self.visorValu: int = None
 
     def Initialize(self) -> None:
-        # self.X: int = 0
-        # self.Y: int = 0
         super().InitScreenText()
 
 
     def LoadContent(self) -> None:
-        pass
+        super().LoadContent()
+
+        self.totalText = MyGame.Manager.QuestionManager.QuizLengthText2
+        self.solveValu = MyGame.Manager.QuestionManager.QuestionNumber
+        self.solveText = MyGame.Manager.BaseManager.GetNumberSP(self.solveValu)
+
+        self.scoreValu = MyGame.Manager.ScoreManager.ScoreValu
+        self.visorValu = 0
+        if self.solveValu > 0:
+            self.visorValu = int(self.scoreValu / self.solveValu * 100)
+        self.visorText = MyGame.Manager.BaseManager.GetNumberSP(self.visorValu)
+        MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.HappyMusic)
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        # self.test: bool = MyGame.Manager.InputManager.GetOptionType()
-        # if self.test:
-        #     self.X, self.Y = MyGame.Manager.InputManager.GetPosition()
+        icon: bool = super().UpdateVolumeIcon()
+        if not icon:
+            actor: bool = MyGame.Manager.InputManager.Character()
+            if actor:
+                MyGame.Manager.SoundManager.StopMusic()
+                return ScreenType.Init
 
+        playing: bool = MyGame.Manager.SoundManager.IsMusicPlaying()
+        if not playing:
+            MyGame.Manager.SoundManager.StopMusic()
+            return ScreenType.Init
+        
         return None
 
 
     def Draw(self) -> None:
-        # for i in range(24):
-        #     y = i * 20
-        #     MyGame.Manager.TextManager.DrawText("X", (0, y))
-        #
-        # MyGame.Manager.TextManager.DrawText("SPLAT", (self.X, self.Y))
+        #  Draw all text first.
         super().DrawScreenText()
+        MyGame.Manager.QuestionManager.DrawQuizDiffText()
+        MyGame.Manager.ScoreManager.DrawStats(self.totalText, self.solveText, self.visorText)
+
+        #  Draw all images next.
+        MyGame.Manager.ImageManager.DrawHeader()
+        MyGame.Manager.ImageManager.DrawCurrActor()
+        MyGame.Manager.SoundManager.DrawVolumeIcon()
 

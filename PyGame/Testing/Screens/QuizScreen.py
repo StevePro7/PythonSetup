@@ -1,3 +1,5 @@
+import time
+
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
 from enumerations import ScreenType
@@ -42,6 +44,9 @@ class QuizScreen(BaseScreen):
 
             qNo: int = self.questionNo + 1
             if qNo > self.noQuestion:
+                if MyGame.Manager.SoundManager.SoundEnable:
+                    # Slight pause before transition to Game Over
+                    time.sleep(1)
                 return ScreenType.Over
 
             return ScreenType.Play
