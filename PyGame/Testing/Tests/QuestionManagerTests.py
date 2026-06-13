@@ -48,6 +48,13 @@ questionManager.SetQuizLength(enums.OptionType.D)
 # print(test2)
 
 questionManager.Reset()
-questionManager.LoadQuestionList(enums.DifficultyType.Norm)
+questionManager.LoadQuestionList(enums.DifficultyType.Easy)
 #questionManager.RandomizeQuestionList()
-questionManager.PrintQuestionList()
+#questionManager.PrintQuestionList()
+
+index: int = 0
+#questionManager.PrintAnswerList(index)
+print("")
+
+questionManager.RandomizeAnswerList(index)
+#questionManager.PrintAnswerList(index)

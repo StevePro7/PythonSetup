@@ -24,7 +24,6 @@ class PlayScreen(BaseScreen):
         MyGame.Manager.QuestionManager.PlayQuestion(self.questionNo)
         if MyGame.Manager.ConfigManager.ConfigData.RandomAnswers:
             MyGame.Manager.QuestionManager.RandomizeAnswerList(self.questionNo)
-            MyGame.Manager.QuestionManager.RandomizeAnswerPosn()
 
         # Correct option is now set!
         self.optionType =  MyGame.Manager.QuestionManager.CorrectOptionType
@@ -35,5 +34,20 @@ class PlayScreen(BaseScreen):
 
 
     def Draw(self) -> None:
+        #  Draw all text first.
         super().DrawScreenText()
         MyGame.Manager.QuestionManager.DrawQuestion(self.questionNo)
+        MyGame.Manager.QuestionManager.DrawQuizDiffText()
+        MyGame.Manager.QuestionManager.DrawQuestionNumber()
+        MyGame.Manager.QuestionManager.DrawQuestionTotal()
+        MyGame.Manager.ScoreManager.DrawScore()
+
+        #  Draw all images next.
+        MyGame.Manager.ImageManager.DrawHeader()
+        MyGame.Manager.ImageManager.DrawCurrActor()
+        MyGame.Manager.SoundManager.DrawVolumeIcon()
+
+        if self.cheatMode:
+            MyGame.Manager.SpriteManager.DrawSelect(self.optionType)
+        else:
+            MyGame.Manager.SpriteManager.DrawSelectAll()

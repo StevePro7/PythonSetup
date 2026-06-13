@@ -119,9 +119,10 @@ class QuestionManager:
         self.answerCode: int = q.AnswerCode
         self.answerCode -= 1
 
+        self.answerList = []
         selects: int = const.NUMBER_SELECTS
         for idx in range(selects):
-            self.answerList[idx] = 0
+            self.answerList.append(0)
 
         # Randomize answers for question.
         # + record correct random option.
@@ -138,16 +139,39 @@ class QuestionManager:
             val: int = self.answerList[idx]
             if self.answerCode == val:
                 self.CorrectOptionType = enums.OptionType(idx)
+                break
+
+        self.RandomizeAnswerPosn()
 
 
-
-    # public void DrawQuestion(Byte index)
     def DrawQuestion(self, index: int) -> None:
-        pass
+        if index >= self.NumberQuestion:
+            return
 
-    # public void DrawQuestionNumber()
+        question: Question = self.QuestionList[index]
+        for line in range(const.NUMBER_LINES):
+            if line < len(question.QuestionText):
+                self.DrawLine(question.QuestionText[line], self.questionPosn[line])
+
+            if line < len(question.AnswerAText):
+                self.DrawLine(question.AnswerAText[line], self.answerAPosn[line])
+            if line < len(question.AnswerBText):
+                self.DrawLine(question.AnswerBText[line], self.answerBPosn[line])
+            if line < len(question.AnswerCText):
+                self.DrawLine(question.AnswerCText[line], self.answerCPosn[line])
+            if line < len(question.AnswerDText):
+                self.DrawLine(question.AnswerDText[line], self.answerDPosn[line])
+
+
+    def DrawQuestionNumber(self):
+        MyGame.Manager.TextManager.DrawTextPos(self.numberTxt, self.numberPos)
+
+    def DrawQuestionTotal(self):
+        MyGame.Manager.TextManager.DrawTextPos(self.QuizLengthText, self.totalPos)
     # public void DrawQuestionTotal()
     # public void DrawQuizDiffText()
+    def DrawQuizDiffText(self) -> None:
+        MyGame.Manager.TextManager.DrawTextPos(self.DifficultyText, self.diffPos)
 
     def SetDifficulty(self, optionType: enums.OptionType) -> None:
         if optionType == enums.OptionType.B:
@@ -190,10 +214,12 @@ class QuestionManager:
     def SetCheatMode(self, theCheatMode: bool) -> None:
         self.cheatMode = theCheatMode
 
+    def DrawLine(self, line: str, posn: pygame.Vector2) -> None:
+        if not line or len(line) == 0:
+            return
 
-    # public void SetCheatMode(Boolean theCheatMode)
+        MyGame.Manager.TextManager.DrawTextPos(line, posn)
 
-    # private static void DrawLine(String line, Vector2 posn)
 
     def GetQuestionPosn(self) -> list[pygame.Vector2]:
         positions: list[pygame.Vector2] = []
@@ -244,21 +270,28 @@ class QuestionManager:
                 case 3:
                     origin = self.originDPosn
 
-        value = self.answerList[index]
-        match value:
-            case 0:
-                self.answerAPosn = origin
-            case 1:
-                self.answerBPosn = origin
-            case 2:
-                self.answerCPosn = origin
-            case 3:
-                self.answerDPosn = origin
+            value: int = self.answerList[index]
+            match value:
+                case 0:
+                    self.answerAPosn = origin
+                case 1:
+                    self.answerBPosn = origin
+                case 2:
+                    self.answerCPosn = origin
+                case 3:
+                    self.answerDPosn = origin
 
 
-    def PrintQuestionList(self):
+    def PrintQuestionList(self) -> None:
         for question in self.QuestionList:
             print(question.QuestionText)
+
+    def PrintAnswerList(self, index: int) -> None:
+        question: Question = self.QuestionList[index]
+        print(question.AnswerAText)
+        print(question.AnswerBText)
+        print(question.AnswerCText)
+        print(question.AnswerDText)
 
 
     def __getTextFile(self, type: enums.DifficultyType) -> str:
