@@ -12,9 +12,7 @@ class ReadyScreen(BaseScreen):
         self.difficultyType: enumerations.DifficultyType = None
         self.numberQuestion: int = None
         self.dotsCount: int = None
-        self.delay: int = None
-        self.delay2: int = None
-        self.timer2: int = None         # adriana - do we need?
+        self.dotsDelay: int = None
         self.diffText: str = None
         self.longText: str = None
         self.nextScreen: enumerations.ScreenType = None
@@ -24,6 +22,8 @@ class ReadyScreen(BaseScreen):
     def Initialize(self) -> None:
         super().Initialize()
         super().InitScreenText()
+
+        self.dotsDelay = MyGame.Manager.ConfigManager.ConfigData.DotsDelay
         self.quizPositions = self.__getQuizPositions()
 
 
@@ -51,40 +51,67 @@ class ReadyScreen(BaseScreen):
 
         MyGame.Manager.ScoreManager.LoadContent()
         self.dotsCount = 0
-        self.timer2 = 0
         self.flag = False
         self.nextScreen = None
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
-        super().UpdateTimer(deltaTime)
-        self.timer2 += deltaTime
-
         if self.flag:
             super().BlockOnSoundFX()
             return self.nextScreen
 
+        super().UpdateTimer(deltaTime)
+        if self.Timer > self.dotsDelay:
+            self.Timer = 0
+            self.dotsCount += 1
+            if self.dotsCount > 3:
+                self.dotsCount = 0
+
+
         icon: bool = super().UpdateVolumeIcon()
         if not icon:
-            pass
+            rght: bool = MyGame.Manager.InputManager.Forward()
+            if rght:
+                MyGame.Manager.SoundManager.StopMusic()
+                MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
+                self.nextScreen = ScreenType.Play
+                self.flag = True
+            else:
+                left: bool = MyGame.Manager.InputManager.Back()
+                if left:
+                    MyGame.Manager.SoundManager.StopMusic()
+                    MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Wrong)
+                    self.nextScreen = ScreenType.Long
+                    self.flag = True
 
-        MyGame.Manager.QuestionManager.Reset()
-        MyGame.Manager.QuestionManager.LoadQuestionList(self.difficultyType)
+            if self.flag:
+                MyGame.Manager.QuestionManager.Reset()
+                MyGame.Manager.QuestionManager.LoadQuestionList(self.difficultyType)
 
-        if MyGame.Manager.ConfigManager.ConfigData.RandomQuestions:
-            MyGame.Manager.QuestionManager.RandomizeQuestionList()
+                if MyGame.Manager.ConfigManager.ConfigData.RandomQuestions:
+                    MyGame.Manager.QuestionManager.RandomizeQuestionList()
 
-        return ScreenType.Play
+        return None
 
 
     def Draw(self) -> None:
-        MyGame.Manager.ImageManager.DrawTitle()
-        MyGame.Manager.SoundManager.DrawVolumeIcon()
         super().DrawScreenText()
         super().HideCheatMode()
 
         MyGame.Manager.TextManager.DrawTextPos(self.diffText, self.quizPositions[0])
         MyGame.Manager.TextManager.DrawTextPos(self.longText, self.quizPositions[1])
+        MyGame.Manager.TextManager.DrawTextPos(" ", self.quizPositions[1])
+        self.DrawDots()
+
+        MyGame.Manager.ImageManager.DrawTitle()
+        MyGame.Manager.SoundManager.DrawVolumeIcon()
+
+
+    def DrawDots(self):
+        posn: int = 2
+        MyGame.Manager.TextManager.DrawTextPos("   ", self.quizPositions[posn])
+        for loop in range(self.dotsCount):
+            MyGame.Manager.TextManager.DrawTextPos(".", self.quizPositions[posn + loop])
 
 
     def __getQuizPositions(self) -> list[pygame.Vector2]:
