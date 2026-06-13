@@ -94,6 +94,21 @@ class QuestionManager:
         return Question(questionText, answerAText, answerBText, answerCText, answerDText, answerCode)
 
 
+    def RandomizeQuestionList(self):
+        list: list[Question] = self.QuestionList
+
+        # https://stackoverflow.com/questions/273313/randomize-a-listt
+        n: int = len(self.QuestionList)
+        while n > 1:
+            n -= 1
+            k: int = MyGame.Manager.RandomManager.Next(n + 1)
+            value: Question = list[k]
+            list[k] = list[n]
+            list[n] = value
+
+        self.QuestionList = list
+
+
     # public void RandomizeQuestionList()
     # public void RandomizeAnswerList(Byte index)
 
@@ -239,6 +254,11 @@ class QuestionManager:
                 self.answerCPosn = origin
             case 3:
                 self.answerDPosn = origin
+
+
+    def PrintQuestionList(self):
+        for question in self.QuestionList:
+            print(question.QuestionText)
 
 
     def __getTextFile(self, type: enums.DifficultyType) -> str:

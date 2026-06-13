@@ -31,12 +31,6 @@ class ScoreScreen(BaseScreen):
 
     def LoadContent(self) -> None:
         super().LoadContent()
-        # self.globalCheat = MyGame.Manager.ConfigManager.ConfigData.CheatMode
-        # self.localCheat = self.globalCheat
-        # MyGame.Manager.QuestionManager.SetCheatMode(self.localCheat)
-        #
-        # self.cheatCount = 0
-        # self.flag = False
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:

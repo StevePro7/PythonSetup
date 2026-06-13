@@ -1,4 +1,6 @@
 from Managers.QuestionManager import QuestionManager
+from Managers.ConfigManager import ConfigManager
+from Managers.RandomManager import RandomManager
 from bootstrap import build_game
 from Objects.Question import Question
 import enumerations as enums
@@ -6,11 +8,17 @@ import enumerations as enums
 
 registry = build_game()
 
+configManager = registry.get(ConfigManager.__name__)
+configManager.Initialize()
+configManager.LoadContent()
+
+randomManager = registry.get(RandomManager.__name__)
+randomManager.Initialize()
+
 questionManager = registry.get(QuestionManager.__name__)
 questionManager.Initialize()
 questionManager.LoadContent()
 
-questionManager.LoadQuestionList(enums.DifficultyType.Easy)
 
 #q: Question = questionManager.PlayQuestion(0)
 #print(q)
@@ -38,3 +46,8 @@ questionManager.SetQuizLength(enums.OptionType.D)
 # questionManager.SetCheatMode(True)
 # test2: bool = questionManager.GetCheatMode()
 # print(test2)
+
+questionManager.Reset()
+questionManager.LoadQuestionList(enums.DifficultyType.Norm)
+#questionManager.RandomizeQuestionList()
+questionManager.PrintQuestionList()

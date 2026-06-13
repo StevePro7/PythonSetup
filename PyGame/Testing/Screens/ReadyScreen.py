@@ -73,7 +73,8 @@ class ReadyScreen(BaseScreen):
         MyGame.Manager.QuestionManager.LoadQuestionList(self.difficultyType)
 
         if MyGame.Manager.ConfigManager.ConfigData.RandomQuestions:
-            MyGame.Manager.QuestionManager.RandomizeAnswerList()
+            MyGame.Manager.QuestionManager.RandomizeQuestionList()
+            #MyGame.Manager.QuestionManager.RandomizeAnswerList()
 
         return ScreenType.Play
         #return None
