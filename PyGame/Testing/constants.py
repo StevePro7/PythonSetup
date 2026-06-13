@@ -43,6 +43,7 @@ QUIZ_LONG: list[int] = [ 5, 10, 25, 50]
 
 SOUND_MAXIM: int = 3
 WRONG_DELTA: int = 4
+MAX_DOTS: int = 3
 
 # Device specific.
 GameOffsetX: int = 0

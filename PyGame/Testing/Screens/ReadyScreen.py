@@ -1,4 +1,6 @@
 import pygame
+
+import constants
 import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
@@ -53,6 +55,7 @@ class ReadyScreen(BaseScreen):
         self.dotsCount = 0
         self.flag = False
         self.nextScreen = None
+        MyGame.Manager.SoundManager.StopMusic()
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
@@ -64,33 +67,33 @@ class ReadyScreen(BaseScreen):
         if self.Timer > self.dotsDelay:
             self.Timer = 0
             self.dotsCount += 1
-            if self.dotsCount > 3:
-                self.dotsCount = 0
+            if self.dotsCount > constants.MAX_DOTS:
+                self.dotsCount = constants.MAX_DOTS
+                MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
+                self.nextScreen = ScreenType.Play
+                self.flag = True
 
-
-        icon: bool = super().UpdateVolumeIcon()
-        if not icon:
+        if not self.flag:
             rght: bool = MyGame.Manager.InputManager.Forward()
             if rght:
-                MyGame.Manager.SoundManager.StopMusic()
                 MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
                 self.nextScreen = ScreenType.Play
                 self.flag = True
             else:
                 left: bool = MyGame.Manager.InputManager.Back()
                 if left:
-                    MyGame.Manager.SoundManager.StopMusic()
                     MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Wrong)
                     self.nextScreen = ScreenType.Long
                     self.flag = True
 
-            if self.flag:
-                MyGame.Manager.QuestionManager.Reset()
-                MyGame.Manager.QuestionManager.LoadQuestionList(self.difficultyType)
+        if self.flag:
+            MyGame.Manager.QuestionManager.Reset()
+            MyGame.Manager.QuestionManager.LoadQuestionList(self.difficultyType)
 
-                if MyGame.Manager.ConfigManager.ConfigData.RandomQuestions:
-                    MyGame.Manager.QuestionManager.RandomizeQuestionList()
+            if MyGame.Manager.ConfigManager.ConfigData.RandomQuestions:
+                MyGame.Manager.QuestionManager.RandomizeQuestionList()
 
+        super().UpdateVolumeIcon()
         return None
 
 
