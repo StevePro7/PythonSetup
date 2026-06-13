@@ -23,23 +23,27 @@ class ExitScreen(BaseScreen):
     def Update(self, deltaTime: int) -> ScreenType | None:
         full: bool = MyGame.Manager.InputManager.FullScreen()
         if full:
-            MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
+            val = MyGame.Manager.RandomManager.Next(3)
+            val += 4
+            print(val)
+            sfx = enumerations.SoundType(val)
+            MyGame.Manager.SoundManager.PlaySound(sfx)
             #MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.TitleMusic)
 
-        stop: bool = MyGame.Manager.InputManager.VolumeIcon()
-        if stop:
-            MyGame.Manager.SoundManager.StopMusic()
-            print("stop")
-
-        back: bool = MyGame.Manager.InputManager.Back()
-        if back:
-            MyGame.Manager.SoundManager.PauseMusic()
-            print("pause")
-
-        forward: bool = MyGame.Manager.InputManager.Forward()
-        if forward:
-            MyGame.Manager.SoundManager.ResumeMusic()
-            print("resume")
+        # stop: bool = MyGame.Manager.InputManager.VolumeIcon()
+        # if stop:
+        #     MyGame.Manager.SoundManager.StopMusic()
+        #     print("stop")
+        #
+        # back: bool = MyGame.Manager.InputManager.Back()
+        # if back:
+        #     MyGame.Manager.SoundManager.PauseMusic()
+        #     print("pause")
+        #
+        # forward: bool = MyGame.Manager.InputManager.Forward()
+        # if forward:
+        #     MyGame.Manager.SoundManager.ResumeMusic()
+        #     print("resume")
 
         return None
 

@@ -16,11 +16,12 @@ class SoundManager:
         self.sound: dict[enums.SoundType, str] = {}
         self.currMusic = None
         self.currSound = None
+        self.prevSound = None
         self.volume: int = None
         self.channel: pygame.mixer.Channel = None
 
 
-    def Initialize(self):
+    def Initialize(self) -> None:
         self.audioEnable = pygame.mixer.get_init() is not None
         if self.audioEnable:
             pygame.mixer.init()
@@ -33,9 +34,10 @@ class SoundManager:
         else:
             self.musicEnable = False
             self.soundEnable = False
+        self.prevSound = -1
 
 
-    def LoadContent(self):
+    def LoadContent(self) -> None:
         if not self.audioEnable:
             return
 
@@ -49,7 +51,7 @@ class SoundManager:
             self.sound[type] = sfx
 
 
-    def PlaySound(self, type: enums.SoundType):
+    def PlaySound(self, type: enums.SoundType) -> None:
         if not self.audioEnable or not self.soundEnable:
             return
 
@@ -58,7 +60,33 @@ class SoundManager:
         self.channel: pygame.mixer.Channel = sfx.play()
 
 
-    def PlayMusic(self, type: enums.MusicType):
+    def PlayRightSound(self) -> None:
+        self.PlayMultiSound(0)
+
+    def PlayWrongSound(self) -> None:
+        self.PlayMultiSound(const.WRONG_DELTA)
+        # while True:
+        #     value = MyGame.Manager.RandomManager.Next(const.SOUND_MAXIM)
+        #     if value != self.prevSound:
+        #         value = self.prevSound
+        #         break
+        #
+        # type: enums.SoundType = enums.SoundType(value)
+        # MyGame.Manager.SoundManager.PlaySound(type)
+
+    def PlayMultiSound(self, delta: int = 0) -> None:
+        while True:
+            value = MyGame.Manager.RandomManager.Next(const.SOUND_MAXIM)
+            value += delta
+            if value != self.prevSound:
+                self.prevSound = value
+                break
+
+        type: enums.SoundType = enums.SoundType(value)
+        self.PlaySound(type)
+
+
+    def PlayMusic(self, type: enums.MusicType) -> None:
         if not self.audioEnable or not self.musicEnable:
             return
 
@@ -67,19 +95,19 @@ class SoundManager:
         pygame.mixer.music.load(song)
         pygame.mixer.music.play()
 
-    def StopMusic(self):
+    def StopMusic(self) -> None:
         if not self.audioEnable or not self.musicEnable:
             return
 
         pygame.mixer.music.stop()
 
-    def PauseMusic(self):
+    def PauseMusic(self) -> None:
         if not self.audioEnable or not self.musicEnable:
             return
 
         pygame.mixer.music.pause()
 
-    def ResumeMusic(self):
+    def ResumeMusic(self) -> None:
         if not self.audioEnable or not self.musicEnable:
             return
 
@@ -100,9 +128,6 @@ class SoundManager:
     def AlternateSound(self) -> None:
         self.soundEnable = not self.soundEnable
         self.SetVolume()
-
-    # public void SetPlaySound(Boolean playSound)
-    # public Boolean PlaySound { get; private set; }
 
     def DrawVolumeIcon(self) -> None:
         if self.soundEnable:

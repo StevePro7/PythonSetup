@@ -41,6 +41,8 @@ CheatModeOffsetY: int = 260
 
 QUIZ_LONG: list[int] = [ 1, 10, 25, 50]
 
+SOUND_MAXIM: int = 3
+WRONG_DELTA: int = 4
 
 # Device specific.
 GameOffsetX: int = 0

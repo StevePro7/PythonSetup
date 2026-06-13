@@ -62,9 +62,9 @@ class QuizScreen(BaseScreen):
                 self.correctAns = self.selectOption == self.answerOption
                 if self.correctAns:
                     MyGame.Manager.ScoreManager.Increment()
-                    MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Right_01)
+                    MyGame.Manager.SoundManager.PlayRightSound()
                 else:
-                    MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Wrong_01)
+                    MyGame.Manager.SoundManager.PlayWrongSound()
 
                 self.flag = True
 

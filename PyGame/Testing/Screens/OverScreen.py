@@ -45,7 +45,7 @@ class OverScreen(BaseScreen):
         if not playing:
             MyGame.Manager.SoundManager.StopMusic()
             return ScreenType.Init
-        
+
         return None
 
 
