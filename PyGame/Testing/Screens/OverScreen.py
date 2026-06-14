@@ -37,7 +37,8 @@ class OverScreen(BaseScreen):
         icon: bool = super().UpdateVolumeIcon()
         if not icon:
             actor: bool = MyGame.Manager.InputManager.Character()
-            if actor:
+            back: bool = MyGame.Manager.InputManager.Back()
+            if actor or back:
                 MyGame.Manager.SoundManager.StopMusic()
                 return ScreenType.Init
 
