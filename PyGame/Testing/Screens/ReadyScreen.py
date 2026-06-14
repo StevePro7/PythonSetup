@@ -63,37 +63,38 @@ class ReadyScreen(BaseScreen):
                 MyGame.Manager.SoundManager.StopMusic()
             return self.nextScreen
 
-        super().UpdateTimer(deltaTime)
-        if self.Timer > self.dotsDelay:
-            self.Timer = 0
-            self.dotsCount += 1
-            if self.dotsCount > constants.MAX_DOTS:
-                self.dotsCount = constants.MAX_DOTS
-                MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
-                self.nextScreen = ScreenType.Play
-                self.flag = True
-
-        if not self.flag:
-            rght: bool = MyGame.Manager.InputManager.Forward()
-            if rght:
-                MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
-                self.nextScreen = ScreenType.Play
-                self.flag = True
-            else:
-                left: bool = MyGame.Manager.InputManager.Back()
-                if left:
-                    MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Wrong)
-                    self.nextScreen = ScreenType.Long
+        icon: bool = super().UpdateVolumeIcon()
+        if not icon:
+            super().UpdateTimer(deltaTime)
+            if self.Timer > self.dotsDelay:
+                self.Timer = 0
+                self.dotsCount += 1
+                if self.dotsCount > constants.MAX_DOTS:
+                    self.dotsCount = constants.MAX_DOTS
+                    MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
+                    self.nextScreen = ScreenType.Play
                     self.flag = True
 
-        if self.flag:
-            MyGame.Manager.QuestionManager.Reset()
-            MyGame.Manager.QuestionManager.LoadQuestionList(self.difficultyType)
+            if not self.flag:
+                rght: bool = MyGame.Manager.InputManager.Forward()
+                if rght:
+                    MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
+                    self.nextScreen = ScreenType.Play
+                    self.flag = True
+                else:
+                    left: bool = MyGame.Manager.InputManager.Back()
+                    if left:
+                        MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Wrong)
+                        self.nextScreen = ScreenType.Long
+                        self.flag = True
 
-            if MyGame.Manager.ConfigManager.ConfigData.RandomQuestions:
-                MyGame.Manager.QuestionManager.RandomizeQuestionList()
+            if self.flag:
+                MyGame.Manager.QuestionManager.Reset()
+                MyGame.Manager.QuestionManager.LoadQuestionList(self.difficultyType)
 
-        super().UpdateVolumeIcon()
+                if MyGame.Manager.ConfigManager.ConfigData.RandomQuestions:
+                    MyGame.Manager.QuestionManager.RandomizeQuestionList()
+
         return None
 
 
