@@ -13,9 +13,7 @@ class ConfigData:
     TitleDelay: int
     OptionDelay: int
     DotsDelay: int
-    BlankSplash: bool
     FlashTitle: bool
-    MusicEnable: bool   # adriana
     SoundEnable: bool
     CheatMode: bool
     RandomQuestions: bool

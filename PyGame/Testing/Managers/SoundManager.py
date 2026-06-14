@@ -10,7 +10,6 @@ import enumerations as enums
 class SoundManager:
     def __init__(self):
         self.audioEnable = False
-        self.musicEnable = False
         self.soundEnable = False
         self.music: dict[enums.MusicType, str] = {}
         self.sound: dict[enums.SoundType, str] = {}
@@ -28,11 +27,9 @@ class SoundManager:
             devices = get_audio_device_names(True)
             MyGame.Manager.LogManager.Debug(devices)
 
-            self.musicEnable = MyGame.Manager.ConfigManager.ConfigData.MusicEnable
             self.soundEnable = MyGame.Manager.ConfigManager.ConfigData.SoundEnable
             self.SetVolume()
         else:
-            self.musicEnable = False
             self.soundEnable = False
         self.prevSound = -1
 
@@ -87,7 +84,7 @@ class SoundManager:
 
 
     def PlayMusic(self, type: enums.MusicType) -> None:
-        if not self.audioEnable or not self.musicEnable:
+        if not self.audioEnable:
             return
 
         song = self.music[type]
@@ -96,25 +93,25 @@ class SoundManager:
         pygame.mixer.music.play()
 
     def StopMusic(self) -> None:
-        if not self.audioEnable or not self.musicEnable:
+        if not self.audioEnable:
             return
 
         pygame.mixer.music.stop()
 
     def PauseMusic(self) -> None:
-        if not self.audioEnable or not self.musicEnable:
+        if not self.audioEnable:
             return
 
         pygame.mixer.music.pause()
 
     def ResumeMusic(self) -> None:
-        if not self.audioEnable or not self.musicEnable:
+        if not self.audioEnable:
             return
 
         pygame.mixer.music.unpause()
 
     def IsMusicPlaying(self) -> bool:
-        if not self.audioEnable or not self.musicEnable:
+        if not self.audioEnable:
             return False
 
         return pygame.mixer.music.get_busy() and self.currMusic is not None
