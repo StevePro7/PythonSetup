@@ -83,7 +83,7 @@ class DisplayManager:
     def GetMousePosition(self) -> tuple:
         mouse_x, mouse_y = pygame.mouse.get_pos()
 
-        # Remove offset (center position
+        # Remove offset (center position)
         x = mouse_x - self.offset[0]
         y = mouse_y - self.offset[1]
 

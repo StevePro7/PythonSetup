@@ -73,6 +73,11 @@ class MouseType(ZeroBasedEnum):
     Right = auto()
 
 
+class AxisType(ZeroBasedEnum):
+    X = auto()
+    Y = auto()
+
+
 class ActorType(ZeroBasedEnum):
     Bart1 = auto()
     Bart2 = auto()
