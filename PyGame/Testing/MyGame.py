@@ -57,7 +57,6 @@ class MyGame:
 
     @staticmethod
     def Update(deltaTime: int):
-        MyGame.Manager.LogManager.Write(f"DT={deltaTime}")
         MyGame.Manager.InputManager.Update(deltaTime)
         MyGame.Manager.ScreenManager.Update(deltaTime)
 

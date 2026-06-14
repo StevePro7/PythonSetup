@@ -31,7 +31,6 @@ class ReadyScreen(BaseScreen):
 
     def LoadContent(self) -> None:
         super().LoadContent()
-        MyGame.Manager.SoundManager.ResumeMusic()
 
         # adriana move this code to DebugManager begin
         self.difficultyType = MyGame.Manager.QuestionManager.DifficultyType
@@ -55,12 +54,13 @@ class ReadyScreen(BaseScreen):
         self.dotsCount = 0
         self.flag = False
         self.nextScreen = None
-        MyGame.Manager.SoundManager.StopMusic()
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:
         if self.flag:
             super().BlockOnSoundFX()
+            if self.nextScreen != ScreenType.Long:
+                MyGame.Manager.SoundManager.StopMusic()
             return self.nextScreen
 
         super().UpdateTimer(deltaTime)
