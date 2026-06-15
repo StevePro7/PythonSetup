@@ -55,7 +55,7 @@ class ScreenManager:
 
     def _import_all_screens(self):
         for _, module_name, _ in pkgutil.iter_modules(Screens.__path__):
-            if module_name == "BaseScreen":
+            if module_name == BaseScreen.__name__:
                 continue
 
             importlib.import_module(f"{ENGINE_SCREENS}.{module_name}")

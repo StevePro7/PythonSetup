@@ -4,7 +4,6 @@ from pathlib import Path
 from MyGame import MyGame
 from Static.Assets import Assets
 import constants as const
-import utils
 
 
 class ContentManager:
@@ -28,8 +27,8 @@ class ContentManager:
         Assets.SpritesheetTexture: pygame.Surface = self._LoadTexture("Spritesheet.png")
         Assets.IconTexture: pygame.Surface = self._LoadTexture("DonutIcon.png")
 
+
     def _LoadTexture(self, assetName: str) -> pygame.Surface:
         file: Path = self.texturesRoot  / assetName
-        #texture = pygame.image.load(file).convert_alpha()
         texture = pygame.image.load(file)
         return texture

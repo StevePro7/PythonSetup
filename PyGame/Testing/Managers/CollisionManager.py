@@ -4,6 +4,7 @@ import enumerations as enums
 import pygame
 
 class CollisionManager:
+
     def __init__(self):
         self.fullScreenRect: pygame.Rect = None
         self.volumeIconRect: pygame.Rect = None
@@ -68,5 +69,3 @@ class CollisionManager:
         collSize: int = const.SpriteSize - (2 * const.OffsetSelect)
         pos: pygame.Vector2 = self.optionPos[option]
         return pygame.Rect(pos.x + offset, pos.y + offset, collSize, collSize)
-
-

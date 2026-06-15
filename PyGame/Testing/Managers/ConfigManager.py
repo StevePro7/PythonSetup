@@ -25,6 +25,4 @@ class ConfigManager:
 
 
     def DumpConfig(self):
-        msg: str = asdict(self.ConfigData)
-        #print(msg) # adriana
         MyGame.Manager.LogManager.Debug(asdict(self.ConfigData))
