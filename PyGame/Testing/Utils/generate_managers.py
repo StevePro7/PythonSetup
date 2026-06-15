@@ -1,7 +1,7 @@
 from pathlib import Path
 
 # Source template file
-template_file = "../Managers/FooManager.py"
+template_file = "../Managers/BaseManager.py"
 
 # List of manager names
 managers = []
@@ -17,7 +17,7 @@ for manager in managers:
     if manager.startswith("#"):
         continue
 
-    new_text = template_text.replace("FooManager", manager)
+    new_text = template_text.replace("BaseManager", manager)
 
     output_file = f"../Managers/{manager}.py"
     Path(output_file).write_text(new_text)

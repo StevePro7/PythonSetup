@@ -30,7 +30,6 @@ GameManger.cs
 public interface IGameManager
 {
 	IBarManager BarManager { get; }
-	IFooManager FooManager { get; }
 	ILogger Logger { get; }
 }
 
@@ -40,17 +39,14 @@ public class GameManager : IGameManager
 	public GameManager
 	(
 		IBarManager barManager,
-		IFooManager fooManager,		
 		ILogger logger
 	)
 	{
 		BarManager = barManager;
-		FooManager = fooManager;
 		Logger = logger;
 	}
 
 	public IBarManager BarManager { get; private set; }
-	public IFooManager FooManager { get; private set; }
 	public ILogger Logger { get; private set; }
 }	
 
