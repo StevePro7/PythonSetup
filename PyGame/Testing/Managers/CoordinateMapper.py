@@ -1,6 +1,6 @@
 class CoordinateMapper:
     def __init__(self):
-        self.scale: float = 1.0
+        self.scale = 1.0
         self.offset = (0, 0)
         self.game_size = (0, 0)
 
@@ -9,7 +9,7 @@ class CoordinateMapper:
         self.offset = offset
         self.game_size = game_size
 
-    def ScreenToGame(self, pos: tuple[int, int]) -> tuple[int, int]:
+    def ScreenToGame(self, pos):
         x, y = pos
 
         # Remove offset

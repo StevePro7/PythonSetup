@@ -6,7 +6,7 @@ from Static.Assets import Assets
 from Static.Colors import Colors
 from Static.Globalize import Globalize
 import constants as const
-#import enumerations as enums
+import enumerations as enums
 
 # Window ownership
 class DisplayManager:
@@ -66,7 +66,7 @@ class DisplayManager:
 
 
     def Present(self):
-        scaled_surface = pygame.transform.scale(
+        scaled_surface = pygame.transform.smoothscale(
             self.game_surface,
             (int(self.size[0] * self.scale), int(self.size[1] * self.scale))
         )
@@ -74,7 +74,6 @@ class DisplayManager:
         self.screen.fill((0, 0, 0))
 
         self.screen.blit(scaled_surface, self.offset)
-
         pygame.display.flip()
 
 

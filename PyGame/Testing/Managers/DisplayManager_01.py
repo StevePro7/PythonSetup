@@ -6,7 +6,7 @@ from Static.Assets import Assets
 from Static.Colors import Colors
 from Static.Globalize import Globalize
 import constants as const
-#import enumerations as enums
+import enumerations as enums
 
 # Window ownership
 class DisplayManager:

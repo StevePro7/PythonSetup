@@ -6,8 +6,8 @@ class ResolutionManager:
         self.scale: float = 1.0
         self.offset: tuple = (0, 0)
 
-        self.game_size: tuple = (0, 0)          # e.g. (640, 480)
-        self.screen_size: tuple = (0, 0)        # fullscreen size
+        self.game_size: tuple = (0, 0)      # e.g. (640, 480)
+        self.screen_size: tuple = (0, 0)    # fullscreen size
 
 
     def Configure(self, game_size: tuple, screen_size: tuple, scale: float, offset: tuple):
@@ -36,7 +36,7 @@ class ResolutionManager:
         return (int(x / self.scale), int(y / self.scale))
 
 
-    #  Game (640x480) to Screen (fullscreen)
+    # Game (640x480) to Screen (fullscreen)
     def GameToScreen(self, pos: tuple[int, int]) -> tuple[int, int]:
         x, y = pos
 
@@ -46,7 +46,7 @@ class ResolutionManager:
         return (x, y)
 
 
-    # Check if a screen-space coordinate is inside the viewport
+    # Check if a screen-space coordinate is inside the game viewport
     def IsInsideGame(self, pos: tuple[int, int]) -> bool:
         x, y = pos
 
