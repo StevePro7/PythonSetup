@@ -6,8 +6,8 @@ class ResolutionManager:
         self.scale: float = 1.0
         self.offset: tuple = (0, 0)
 
-        self.game_size: tuple = (0, 0)      # e.g. (640, 480)
-        self.screen_size: tuple = (0, 0)    # fullscreen size
+        self.game_size: tuple = (0, 0)     # e.g. (640, 480)
+        self.screen_size: tuple = (0, 0)   # fullscreen size
 
 
     def Configure(self, game_size: tuple, screen_size: tuple, scale: float, offset: tuple):
@@ -41,7 +41,7 @@ class ResolutionManager:
         x, y = pos
 
         x = int(x * self.scale + self.offset[0])
-        y = int(x * self.scale + self.offset[1])
+        y = int(y * self.scale + self.offset[1])
 
         return (x, y)
 
