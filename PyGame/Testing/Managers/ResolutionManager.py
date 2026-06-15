@@ -1,6 +1,3 @@
-from MyGame import MyGame
-
-# adriana
 class ResolutionManager:
     def __init__(self):
         self.scale: float = 1.0

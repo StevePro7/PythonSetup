@@ -19,9 +19,7 @@ from Managers.ScoreManager import ScoreManager
 from Managers.ScreenManager import ScreenManager
 from Managers.SoundManager import SoundManager
 from Managers.SpriteManager import SpriteManager
-from Managers.StorageManager import StorageManager
 from Managers.TextManager import TextManager
-from Managers.ThreadManager import ThreadManager
 
 
 class MyGame:
@@ -63,6 +61,4 @@ class MyGame:
         ScreenManager: ScreenManager
         SoundManager: SoundManager
         SpriteManager: SpriteManager
-        StorageManager: StorageManager
         TextManager: TextManager
-        ThreadManager: ThreadManager

@@ -23,7 +23,6 @@ class ContentManager:
 
         # Load images
         Assets.SplashTexture: pygame.Surface = self._LoadTexture("Splash.bmp")
-        Assets.SplashTexture: pygame.Surface = self._LoadTexture("StevePro.bmp")   # adriana
         Assets.SpritesheetTexture: pygame.Surface = self._LoadTexture("Spritesheet.png")
         Assets.IconTexture: pygame.Surface = self._LoadTexture("DonutIcon.png")
 

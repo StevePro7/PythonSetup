@@ -32,7 +32,6 @@ class MyGame:
         MyGame.Manager.ScreenManager.Initialize()
         MyGame.Manager.SoundManager.Initialize()
 
-        # MyGame.Manager.ButtonManager.Initialize()
         MyGame.Manager.LogManager.Write("Init complete")
 
 

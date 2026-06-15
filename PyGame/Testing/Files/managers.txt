@@ -3,7 +3,6 @@
 # FileManager
 # DisplayManager
 # GraphicsManager
-# ButtonManager
 # CollisionManager
 # ConfigManager
 # ContentManager
@@ -17,6 +16,4 @@
 # ScreenManager
 # SoundManager
 # SpriteManager
-# StorageManager
 # TextManager
-# ThreadManager
