@@ -1,4 +1,6 @@
 import pygame
+from MyGame import MyGame
+
 
 class MouseInput:
     def __init__(self):
@@ -13,7 +15,12 @@ class MouseInput:
         self.prev_buttons = self.curr_buttons
 
         self.curr_buttons = pygame.mouse.get_pressed()
-        self.curr_x, self.curr_y = pygame.mouse.get_pos()
+
+        raw_x, raw_y = pygame.mouse.get_pos()
+
+        self.curr_x, self.curr_y = MyGame.Manager.ResolutionManager.ScreenToGame(
+            (raw_x, raw_y)
+        )
 
 
     @property
@@ -41,3 +48,6 @@ class MouseInput:
 
     def MousePosition(self) -> (int, int):
         return (self.CurrMouseX, self.CurrMouseY)
+
+    def IsInBounds(self) -> bool:
+        return self.curr_x >= 0 and self.curr_y >= 0
