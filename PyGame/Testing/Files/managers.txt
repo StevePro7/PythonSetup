@@ -1,7 +1,6 @@
 # BaseManager
 # DebugManager
 # FileManager
-# FontManager
 # DisplayManager
 # GraphicsManager
 # ButtonManager

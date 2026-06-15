@@ -7,7 +7,6 @@ from Managers.DebugManager import DebugManager
 from Managers.DisplayManager import DisplayManager
 from Managers.EventManager import EventManager
 from Managers.FileManager import FileManager
-from Managers.FontManager import FontManager
 from Managers.FooManager import FooManager
 from Managers.GraphicsManager import GraphicsManager
 from Managers.ImageManager import ImageManager
@@ -53,7 +52,6 @@ class MyGame:
         DisplayManager: DisplayManager
         EventManager: EventManager
         FileManager: FileManager
-        FontManager: FontManager
         FooManager: FooManager
         GraphicsManager: GraphicsManager
         ImageManager: ImageManager
