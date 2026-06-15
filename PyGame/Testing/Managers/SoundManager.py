@@ -67,14 +67,6 @@ class SoundManager:
 
     def PlayWrongSound(self) -> None:
         self.PlayMultiSound(const.WRONG_DELTA)
-        # while True:
-        #     value = MyGame.Manager.RandomManager.Next(const.SOUND_MAXIM)
-        #     if value != self.prevSound:
-        #         value = self.prevSound
-        #         break
-        #
-        # type: enums.SoundType = enums.SoundType(value)
-        # MyGame.Manager.SoundManager.PlaySound(type)
 
     def PlayMultiSound(self, delta: int = 0) -> None:
         while True:
