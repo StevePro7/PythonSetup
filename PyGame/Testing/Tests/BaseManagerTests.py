@@ -15,3 +15,6 @@ baseManager = registry.get(BaseManager.__name__)
 #vec = baseManager.GetRghtArrowPos()
 vec = baseManager.GetVolumeIconPos()
 print(vec)
+
+root = baseManager.GetProjectRoot()
+print(root)

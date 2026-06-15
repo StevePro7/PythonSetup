@@ -296,6 +296,6 @@ class QuestionManager:
 
     def __getTextFile(self, type: enums.DifficultyType) -> str:
         name: str = f"{type.name}.txt"
-        root: Path = utils.get_project_root()
+        root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
         file: Path = root / const.LEVELS_DIRECTORY / name
         return file

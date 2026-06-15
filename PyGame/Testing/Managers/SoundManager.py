@@ -1,7 +1,6 @@
 import pygame
 from pygame._sdl2 import get_audio_device_names
 from MyGame import MyGame
-from utils import get_project_root
 from pathlib import Path
 import constants as const
 import enumerations as enums
@@ -140,7 +139,7 @@ class SoundManager:
         return self.audioEnable and self.soundEnable
 
     def __getAudioFile(self, soundFile: str, extention: str) -> str:
-        root: Path = get_project_root()
+        root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
         file = f"{soundFile}.{extention}"
         path: Path = root / const.SOUND_DIRECTORY / file
         return path

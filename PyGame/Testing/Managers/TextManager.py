@@ -2,7 +2,6 @@ from MyGame import MyGame
 from Objects.TextData import TextData
 from Static.Assets import Assets
 from Static.Colors import Colors
-from utils import get_project_root
 from pathlib import Path
 import constants as const
 
@@ -63,6 +62,6 @@ class TextManager:
 
 
     def __getTextFile(self, textFile: str) -> str:
-        root: Path = get_project_root()
+        root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
         file: Path = root / "Data" / textFile
         return file

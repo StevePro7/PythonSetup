@@ -14,7 +14,7 @@ class ConfigManager:
 
 
     def LoadContent(self):
-        root: Path = utils.get_project_root()
+        root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
         file: Path = root / const.FILES_DIRECTORY / "config.toml"
         text = file.read_text()
         data: ConfigData = tomllib.loads(text)
