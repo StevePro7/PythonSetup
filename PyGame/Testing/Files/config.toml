@@ -14,6 +14,7 @@ SplashDelay=3000
 TitleDelay=800
 OptionDelay=1000
 DotsDelay=1000
+OverDelay=25000
 FlashTitle=true
 SoundEnable=true
 #CheatMode=true

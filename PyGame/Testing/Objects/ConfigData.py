@@ -13,6 +13,7 @@ class ConfigData:
     TitleDelay: int
     OptionDelay: int
     DotsDelay: int
+    OverDelay: int
     FlashTitle: bool
     SoundEnable: bool
     CheatMode: bool

@@ -16,6 +16,7 @@ class OverScreen(BaseScreen):
 
     def Initialize(self) -> None:
         super().InitScreenText()
+        self.overDelay = MyGame.Manager.ConfigManager.ConfigData.OverDelay
 
 
     def LoadContent(self) -> None:
@@ -42,8 +43,11 @@ class OverScreen(BaseScreen):
                 MyGame.Manager.SoundManager.StopMusic()
                 return ScreenType.Init
 
+        super().UpdateTimer(deltaTime)
+        complete: bool = self.Timer > self.overDelay
+
         playing: bool = MyGame.Manager.SoundManager.IsMusicPlaying()
-        if not playing:
+        if complete and not playing:
             MyGame.Manager.SoundManager.StopMusic()
             return ScreenType.Init
 
