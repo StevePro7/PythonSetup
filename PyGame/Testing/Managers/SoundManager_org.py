@@ -27,13 +27,8 @@ class SoundManager:
             devices = get_audio_device_names(True)
             MyGame.Manager.LogManager.Debug(devices)
 
-            # Edge case where pygame may "detect" device but list is empty
-            if len(devices) == 0:
-                self.audioEnable = False
-                self.soundEnable = False
-            else:
-                self.soundEnable = MyGame.Manager.ConfigManager.ConfigData.SoundEnable
-                self.SetVolume()
+            self.soundEnable = MyGame.Manager.ConfigManager.ConfigData.SoundEnable
+            self.SetVolume()
         else:
             self.soundEnable = False
         self.prevSound = -1
