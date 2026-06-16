@@ -4,6 +4,7 @@ from Managers.RandomManager import RandomManager
 from bootstrap import build_game
 import pygame
 
+
 registry = build_game()
 
 pygame.init()

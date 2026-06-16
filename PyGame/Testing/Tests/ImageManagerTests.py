@@ -3,7 +3,6 @@ from Managers.RandomManager import RandomManager
 from bootstrap import build_game
 
 
-
 registry = build_game()
 
 imageManager = registry.get(ImageManager.__name__)

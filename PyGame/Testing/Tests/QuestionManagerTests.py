@@ -4,6 +4,7 @@ from Managers.RandomManager import RandomManager
 from bootstrap import build_game
 from Static import Enumerations as enums
 
+
 registry = build_game()
 
 configManager = registry.get(ConfigManager.__name__)

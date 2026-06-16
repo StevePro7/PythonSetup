@@ -1,6 +1,7 @@
 from Managers.ScoreManager import ScoreManager
 from bootstrap import build_game
 
+
 registry = build_game()
 
 scoreManager = registry.get(ScoreManager.__name__)

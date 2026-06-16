@@ -1,6 +1,6 @@
 from Managers.BaseManager import BaseManager
 from bootstrap import build_game
-import pygame
+
 
 registry = build_game()
 
