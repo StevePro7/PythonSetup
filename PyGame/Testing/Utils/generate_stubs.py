@@ -2,8 +2,7 @@ import os
 import importlib
 import inspect
 from ServiceRegistry import ServiceRegistry
-import constants as const
-
+from Static import Constants as const
 
 OUTPUT_FILE = "MyGame.pyi"
 

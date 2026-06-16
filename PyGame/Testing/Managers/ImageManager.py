@@ -1,5 +1,5 @@
 import pygame
-import constants as const
+from Static import Constants as const
 from Static.Assets import Assets
 from MyGame import MyGame
 

@@ -1,5 +1,5 @@
 from MyGame import MyGame
-import constants as const
+from Static import Constants as const
 import enumerations as enums
 import pygame
 

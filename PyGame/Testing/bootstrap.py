@@ -2,7 +2,7 @@ from pathlib import Path
 import importlib
 
 from ServiceRegistry import ServiceRegistry
-import constants as const
+from Static import Constants as const
 
 
 def build_game():

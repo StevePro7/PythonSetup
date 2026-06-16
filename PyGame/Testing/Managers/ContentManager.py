@@ -3,7 +3,7 @@ from pathlib import Path
 
 from MyGame import MyGame
 from Static.Assets import Assets
-import constants as const
+from Static import Constants as const
 
 
 class ContentManager:

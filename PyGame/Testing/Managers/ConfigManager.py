@@ -2,7 +2,7 @@ from MyGame import MyGame
 from Objects.ConfigData import ConfigData
 from pathlib import Path
 from dataclasses import asdict
-import constants as const
+from Static import Constants as const
 from enumerations import ScreenType, OptionType, DifficultyType
 import tomllib
 

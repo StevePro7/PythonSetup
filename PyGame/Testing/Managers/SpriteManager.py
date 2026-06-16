@@ -1,7 +1,6 @@
 from MyGame import MyGame
 from Static.Assets import Assets
-from Static.Colors import Colors
-import constants as const
+from Static import Constants as const
 import enumerations as enums
 import pygame
 

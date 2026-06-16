@@ -1,6 +1,4 @@
-ENGINE_MANAGERS: str = "Managers"
-ENGINE_MANAGER: str = "Manager"
-
+# Constants
 SCREEN_WIDE = 640
 SCREEN_HIGH = 480
 
@@ -15,6 +13,8 @@ FILES_DIRECTORY: str = "Files"
 SOUND_DIRECTORY: str = "Sound"
 TEXTURES_DIRECTORY: str = "Textures"
 
+ENGINE_MANAGERS: str = "Managers"
+ENGINE_MANAGER: str = "Manager"
 
 NUMBER_OPTIONS: int = 5
 NUMBER_SELECTS: int = 4

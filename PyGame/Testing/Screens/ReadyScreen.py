@@ -1,6 +1,6 @@
 import pygame
 
-import constants
+from Static import Constants
 import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen

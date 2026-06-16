@@ -1,6 +1,6 @@
 import pygame
 from pathlib import Path
-import constants as const
+from Static import Constants as const
 import enumerations as enums
 
 

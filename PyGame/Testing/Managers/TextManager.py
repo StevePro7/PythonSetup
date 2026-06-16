@@ -3,7 +3,7 @@ from Objects.TextData import TextData
 from Static.Assets import Assets
 from Static.Colors import Colors
 from pathlib import Path
-import constants as const
+from Static import Constants as const
 
 
 class TextManager:

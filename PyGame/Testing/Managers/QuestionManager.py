@@ -3,7 +3,7 @@ from pathlib import Path
 from MyGame import MyGame
 from Objects.Question import Question
 from Static.Globalize import Globalize
-import constants as const
+from Static import Constants as const
 import enumerations as enums
 
 

@@ -2,7 +2,7 @@ import pygame
 from pygame._sdl2 import get_audio_device_names
 from MyGame import MyGame
 from pathlib import Path
-import constants as const
+from Static import Constants as const
 import enumerations as enums
 
 

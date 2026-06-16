@@ -5,8 +5,8 @@ from MyGame import MyGame
 from Static.Assets import Assets
 from Static.Colors import Colors
 from Static.Globalize import Globalize
-import constants as const
-import enumerations as enums
+from Static import Constants as const
+
 
 # Window ownership
 class DisplayManager:
