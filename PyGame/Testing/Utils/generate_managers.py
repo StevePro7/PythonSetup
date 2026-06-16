@@ -6,7 +6,7 @@ template_file = "../Managers/BaseManager.py"
 # List of manager names
 managers = []
 
-with open("../Files/managers.txt", "r") as file:
+with open("managers.txt", "r") as file:
     managers = [line.strip() for line in file if line.strip()]
 
 # Read the template content

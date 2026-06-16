@@ -11,7 +11,7 @@ OUTPUT_FILE = "MyGame.pyi"
 def discover_managers():
     managers = {}
 
-    for file in os.listdir(const.ENGINE_MANAGERS):
+    for file in os.listdir(f"../{const.ENGINE_MANAGERS}"):
         if not file.endswith(".py") or file.startswith("__"):
             continue
 
