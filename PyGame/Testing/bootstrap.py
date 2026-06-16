@@ -26,4 +26,4 @@ def build_game():
             manager_class()
         )
 
-    return ServiceRegistry  # 👈 key improvement
+    return ServiceRegistry
