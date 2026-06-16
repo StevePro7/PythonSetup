@@ -8,6 +8,8 @@ from Static import Enumerations as enums
 
 class SoundManager:
     def __init__(self):
+        self.contentRoot: Path = None
+        self.soundRoot: Path = None
         self.audioEnable = False
         self.soundEnable = False
         self.music: dict[enums.MusicType, str] = {}
@@ -20,6 +22,9 @@ class SoundManager:
 
 
     def Initialize(self) -> None:
+        self.contentRoot = MyGame.Manager.BaseManager.GetContentRoot()
+        self.soundRoot = self.contentRoot / const.SOUND_DIRECTORY
+
         self.audioEnable = pygame.mixer.get_init() is not None
         if self.audioEnable:
             pygame.mixer.init()
@@ -139,7 +144,6 @@ class SoundManager:
         return self.audioEnable and self.soundEnable
 
     def __getAudioFile(self, soundFile: str, extention: str) -> str:
-        root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
         file = f"{soundFile}.{extention}"
-        path: Path = root / const.SOUND_DIRECTORY / file
+        path: Path = self.soundRoot / file
         return path

@@ -3,6 +3,7 @@ SCREEN_WIDE = 640
 SCREEN_HIGH = 480
 
 
+ASSETS_DIRECTORY: str = "Assets"
 DATA_DIRECTORY: str = "Data"
 CONFIG_DIRECTORY: str = "Config"
 LEVELS_DIRECTORY: str = "Levels"

@@ -8,12 +8,13 @@ from Static import Constants as const
 
 class ContentManager:
     def __init__(self):
+        self.contentRoot: Path = None
         self.texturesRoot: Path = None
 
 
     def Initialize(self):
         self.contentRoot = MyGame.Manager.BaseManager.GetContentRoot()
-        self.texturesRoot: Path = self.contentRoot / const.TEXTURES_DIRECTORY
+        self.texturesRoot = self.contentRoot / const.TEXTURES_DIRECTORY
 
 
     def LoadContent(self):
@@ -28,6 +29,6 @@ class ContentManager:
 
 
     def _LoadTexture(self, assetName: str) -> pygame.Surface:
-        file: Path = self.texturesRoot  / assetName
+        file: Path = self.texturesRoot / assetName
         texture = pygame.image.load(file)
         return texture
