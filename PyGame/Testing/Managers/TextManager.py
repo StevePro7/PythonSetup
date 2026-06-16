@@ -63,5 +63,5 @@ class TextManager:
 
     def __getTextFile(self, textFile: str) -> str:
         root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
-        file: Path = root / const.DATA_DIRECTORY / textFile
+        file: Path = root / const.TEXTS_DIRECTORY / textFile
         return file
