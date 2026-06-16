@@ -5,7 +5,6 @@ from dataclasses import asdict
 import constants as const
 from enumerations import ScreenType, OptionType, DifficultyType
 import tomllib
-import utils
 
 
 class ConfigManager:

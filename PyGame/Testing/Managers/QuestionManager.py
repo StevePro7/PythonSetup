@@ -5,7 +5,6 @@ from Objects.Question import Question
 from Static.Globalize import Globalize
 import constants as const
 import enumerations as enums
-import utils
 
 
 class QuestionManager:
