@@ -8,9 +8,13 @@ from Static import Constants as const
 
 class TextManager:
     def __init__(self):
+        self.contentRoot: Path = None
+        self.textsRoot: Path = None
         self.DELIM = ","
 
     def Initialize(self):
+        self.contentRoot = MyGame.Manager.BaseManager.GetContentRoot()
+        self.textsRoot = self.contentRoot / const.DATA_DIRECTORY / const.TEXTS_DIRECTORY
         self.color = Colors.Black
 
 
@@ -62,6 +66,5 @@ class TextManager:
 
 
     def __getTextFile(self, textFile: str) -> str:
-        root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
-        file: Path = root / const.TEXTS_DIRECTORY / textFile
+        file: Path = self.textsRoot / textFile
         return file

@@ -9,13 +9,17 @@ from Static.Enumerations import ScreenType, OptionType, DifficultyType
 
 
 class ConfigManager:
+    def __init__(self):
+        self.contentRoot: Path = None
+        self.configRoot: Path = None
+
     def Initialize(self):
-        pass
+        self.contentRoot = MyGame.Manager.BaseManager.GetContentRoot()
+        self.configRoot = self.contentRoot / const.DATA_DIRECTORY / const.CONFIG_DIRECTORY
 
 
     def LoadContent(self):
-        root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
-        file: Path = root / const.CONFIG_DIRECTORY / "GlobalConfig.toml"
+        file: Path = self.configRoot / "GlobalConfig.toml"
         text = file.read_text()
         data: ConfigData = tomllib.loads(text)
         data[ScreenType.__name__] = ScreenType[data[ScreenType.__name__]]

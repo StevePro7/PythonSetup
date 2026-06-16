@@ -10,6 +10,9 @@ from Static import Enumerations as enums
 class QuestionManager:
 
     def __init__(self):
+        self.contentRoot: Path = None
+        self.levelsRoot: Path = None
+
         # Private members.
         self.questionPosn: list[pygame.Vector2] = None
         self.answerAPosn: list[pygame.Vector2] = None; self.answerBPosn: list[pygame.Vector2] = None; self.answerCPosn: list[pygame.Vector2] = None; self.answerDPosn: list[pygame.Vector2] = None
@@ -31,6 +34,9 @@ class QuestionManager:
 
 
     def Initialize(self):
+        self.contentRoot = MyGame.Manager.BaseManager.GetContentRoot()
+        self.levelsRoot = self.contentRoot / const.DATA_DIRECTORY / const.LEVELS_DIRECTORY
+
         self.semicolon = ";"
         self.pipe = "|"
 
@@ -295,6 +301,5 @@ class QuestionManager:
 
     def __getTextFile(self, type: enums.DifficultyType) -> str:
         name: str = f"{type.name}.txt"
-        root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
-        file: Path = root / const.LEVELS_DIRECTORY / name
+        file: Path = self.levelsRoot / name
         return file

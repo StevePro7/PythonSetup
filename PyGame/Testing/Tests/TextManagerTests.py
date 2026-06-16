@@ -1,4 +1,5 @@
 from Managers.TextManager import TextManager
+from Managers.BaseManager import BaseManager
 from Screens.DiffScreen import DiffScreen
 from bootstrap import build_game
 from Objects.TextData import TextData
@@ -6,7 +7,12 @@ from Objects.TextData import TextData
 
 registry = build_game()
 
+baseManager = registry.get(BaseManager.__name__)
+baseManager.Initialize()
+
 textManager = registry.get(TextManager.__name__)
+textManager.Initialize()
+
 screen: str = DiffScreen.__name__
 lines: list[TextData] = textManager.InitTextData(screen)
 print(lines)

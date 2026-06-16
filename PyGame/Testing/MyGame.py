@@ -13,9 +13,10 @@ class MyGame:
     def Initialize():
         MyGame.Manager.PyGameManager.Initialize()
         MyGame.Manager.LogManager.Initialize()
-        MyGame.Manager.RandomManager.Initialize()
-
         MyGame.Manager.BaseManager.Initialize()
+        MyGame.Manager.RandomManager.Initialize()
+        MyGame.Manager.TextManager.Initialize()
+
         MyGame.Manager.ConfigManager.Initialize()
         MyGame.Manager.ConfigManager.LoadContent()
         MyGame.Manager.ConfigManager.DumpConfig()
@@ -31,6 +32,7 @@ class MyGame:
         MyGame.Manager.SpriteManager.Initialize()
         MyGame.Manager.ScreenManager.Initialize()
         MyGame.Manager.SoundManager.Initialize()
+
 
         MyGame.Manager.LogManager.Write("Init complete")
 

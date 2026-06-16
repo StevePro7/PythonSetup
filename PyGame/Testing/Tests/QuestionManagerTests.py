@@ -1,4 +1,5 @@
 from Managers.QuestionManager import QuestionManager
+from Managers.BaseManager import BaseManager
 from Managers.ConfigManager import ConfigManager
 from Managers.RandomManager import RandomManager
 from bootstrap import build_game
@@ -6,6 +7,9 @@ from Static import Enumerations as enums
 
 
 registry = build_game()
+
+baseManager = registry.get(BaseManager.__name__)
+baseManager.Initialize()
 
 configManager = registry.get(ConfigManager.__name__)
 configManager.Initialize()
