@@ -65,13 +65,13 @@ class DisplayManager:
         self.game_surface.fill(color)
 
 
-    def Present(self):
+    def Present(self, color: Colors.Black):
         scaled_surface = pygame.transform.smoothscale(
             self.game_surface,
             (int(self.size[0] * self.scale), int(self.size[1] * self.scale))
         )
 
-        self.screen.fill((0, 0, 0))
+        self.screen.fill(color)
 
         self.screen.blit(scaled_surface, self.offset)
         pygame.display.flip()

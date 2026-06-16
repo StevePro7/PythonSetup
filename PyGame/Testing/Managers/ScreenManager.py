@@ -50,7 +50,7 @@ class ScreenManager:
     def Draw(self):
         MyGame.Manager.DisplayManager.Clear(self.color)
         self.screens[self.currScreen].Draw()
-        MyGame.Manager.DisplayManager.Present()
+        MyGame.Manager.DisplayManager.Present(self.color)
 
 
     def _import_all_screens(self):
