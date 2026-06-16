@@ -8,7 +8,6 @@ from Static import Constants as const
 from Static.Enumerations import ScreenType, OptionType, DifficultyType
 
 
-
 class ConfigManager:
     def Initialize(self):
         pass
@@ -16,7 +15,7 @@ class ConfigManager:
 
     def LoadContent(self):
         root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
-        file: Path = root / const.FILES_DIRECTORY / "config.toml"
+        file: Path = root / const.CONFIG_DIRECTORY / "GlobalConfig.toml"
         text = file.read_text()
         data: ConfigData = tomllib.loads(text)
         data[ScreenType.__name__] = ScreenType[data[ScreenType.__name__]]
