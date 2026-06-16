@@ -1,11 +1,11 @@
 import pygame
-
-import enumerations
 from MyGame import MyGame
-from Screens.BaseScreen import BaseScreen
 from Static.Assets import Assets
+from Screens.BaseScreen import BaseScreen
 from Static import Constants as const
-from enumerations import ScreenType
+from Static import Enumerations as enums
+from Static.Enumerations import ScreenType
+
 
 class SplashScreen(BaseScreen):
 
@@ -29,11 +29,11 @@ class SplashScreen(BaseScreen):
     def Update(self, deltaTime: int) -> ScreenType | None:
         super().UpdateTimer(deltaTime)
         if self.Timer > self.splashDelay:
-            return enumerations.ScreenType.Init
+            return enums.ScreenType.Init
 
         fullScreen: bool = MyGame.Manager.InputManager.FullScreen()
         if fullScreen:
-            return enumerations.ScreenType.Init
+            return enums.ScreenType.Init
 
         return None
 

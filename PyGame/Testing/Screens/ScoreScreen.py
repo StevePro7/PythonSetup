@@ -1,8 +1,6 @@
-import pygame
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from Objects.TextData import TextData
-from enumerations import ScreenType
+from Static.Enumerations import ScreenType
 
 
 class ScoreScreen(BaseScreen):

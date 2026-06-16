@@ -1,7 +1,7 @@
 import time
 from abc import ABC, abstractmethod
 import pygame
-from enumerations import ScreenType
+from Static.Enumerations import ScreenType
 from Objects.TextData import TextData
 from MyGame import MyGame
 

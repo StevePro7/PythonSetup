@@ -1,6 +1,6 @@
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from enumerations import ScreenType
+from Static.Enumerations import ScreenType
 from Static import Constants as const
 
 

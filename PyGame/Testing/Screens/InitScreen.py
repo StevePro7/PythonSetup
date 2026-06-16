@@ -1,7 +1,7 @@
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-import enumerations
-from enumerations import ScreenType
+from Static.Enumerations import ScreenType
+from Static import Enumerations as enums
 
 
 class InitScreen(BaseScreen):
@@ -13,7 +13,7 @@ class InitScreen(BaseScreen):
 
 
     def LoadContent(self) -> None:
-        MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.TitleMusic)
+        MyGame.Manager.SoundManager.PlayMusic(enums.MusicType.TitleMusic)
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:

@@ -1,14 +1,14 @@
-import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from enumerations import ScreenType
+from Static.Enumerations import ScreenType
+from Static import Enumerations as enums
 
 
 class LongScreen(BaseScreen):
 
     def __init__(self):
-        self.optionType: enumerations.OptionType = None
-        self.nextScreen: enumerations.ScreenType = None
+        self.optionType: enums.OptionType = None
+        self.nextScreen: enums.ScreenType = None
         self.flag: bool = None
 
 
@@ -21,7 +21,7 @@ class LongScreen(BaseScreen):
         super().LoadContent()
         MyGame.Manager.SoundManager.ResumeMusic()
 
-        self.optionType: enumerations.OptionType = enumerations.OptionType.Invalid
+        self.optionType: enums.OptionType = enums.OptionType.Invalid
         self.flag = False
         self.nextScreen = None
 
@@ -33,18 +33,18 @@ class LongScreen(BaseScreen):
 
         icon: bool = super().UpdateVolumeIcon()
         if not icon:
-            self.optionType: enumerations.OptionType = MyGame.Manager.InputManager.GetOptionType()
-            if self.optionType != enumerations.OptionType.Invalid:
+            self.optionType: enums.OptionType = MyGame.Manager.InputManager.GetOptionType()
+            if self.optionType != enums.OptionType.Invalid:
                 MyGame.Manager.QuestionManager.SetQuizLength(self.optionType)
                 MyGame.Manager.SoundManager.PauseMusic()
-                MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Right)
+                MyGame.Manager.SoundManager.PlaySound(enums.SoundType.Right)
                 self.nextScreen = ScreenType.Ready
                 self.flag = True
             else:
                 back: bool = MyGame.Manager.InputManager.Back()
                 if back:
                     MyGame.Manager.SoundManager.PauseMusic()
-                    MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Wrong)
+                    MyGame.Manager.SoundManager.PlaySound(enums.SoundType.Wrong)
                     self.nextScreen = ScreenType.Diff
                     self.flag = True
 

@@ -1,10 +1,10 @@
 import pygame
-
-from Static import Constants
-import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from enumerations import ScreenType
+from Static.Enumerations import ScreenType
+import Static.Constants as const
+from Static import Enumerations as enums
+
 
 class TitleScreen(BaseScreen):
 
@@ -54,11 +54,11 @@ class TitleScreen(BaseScreen):
             if cheatMode:
                 if not self.localCheat:
                     self.cheatCount += 1
-                    if self.cheatCount >= constants.NUMBER_CHEATS:
+                    if self.cheatCount >= const.NUMBER_CHEATS:
                         #  Tap Lisa head enough times to enable cheat!
                         self.localCheat = True
                         MyGame.Manager.QuestionManager.SetCheatMode(self.localCheat)
-                        MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Cheat)
+                        MyGame.Manager.SoundManager.PlaySound(enums.SoundType.Cheat)
                 else:
                     foward = MyGame.Manager.InputManager.Forward()
             else:
@@ -66,9 +66,9 @@ class TitleScreen(BaseScreen):
 
         if foward:
             MyGame.Manager.SoundManager.PauseMusic()
-            MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Right)
+            MyGame.Manager.SoundManager.PlaySound(enums.SoundType.Right)
             super().BlockOnSoundFX()
-            return enumerations.ScreenType.Diff
+            return enums.ScreenType.Diff
 
         return None
 

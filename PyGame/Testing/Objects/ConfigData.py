@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from enumerations import ScreenType, OptionType, DifficultyType
+from Static.Enumerations import ScreenType, OptionType, DifficultyType
 
 
 @dataclass(frozen=True)

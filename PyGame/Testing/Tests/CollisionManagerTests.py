@@ -1,6 +1,5 @@
 from Managers.CollisionManager import CollisionManager
 from bootstrap import build_game
-import enumerations as enums
 
 registry = build_game()
 

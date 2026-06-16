@@ -1,6 +1,5 @@
 from Managers.ScoreManager import ScoreManager
 from bootstrap import build_game
-import enumerations as enums
 
 registry = build_game()
 

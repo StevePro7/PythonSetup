@@ -1,5 +1,6 @@
 from Screens.BaseScreen import BaseScreen
-from enumerations import ScreenType
+from Static.Enumerations import ScreenType
+
 
 class UnknownScreen(BaseScreen):
 

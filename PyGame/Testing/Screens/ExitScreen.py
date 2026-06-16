@@ -1,10 +1,9 @@
 import pygame
-
-import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from enumerations import ScreenType
-from enumerations import SpriteType, OptionType
+from Static.Enumerations import ScreenType
+from Static.Enumerations import SpriteType
+from Static import Enumerations as enums
 
 
 class ExitScreen(BaseScreen):
@@ -26,9 +25,8 @@ class ExitScreen(BaseScreen):
             val = MyGame.Manager.RandomManager.Next(3)
             val += 4
             print(val)
-            sfx = enumerations.SoundType(val)
+            sfx = enums.SoundType(val)
             MyGame.Manager.SoundManager.PlaySound(sfx)
-            #MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.TitleMusic)
 
         # stop: bool = MyGame.Manager.InputManager.VolumeIcon()
         # if stop:

@@ -1,8 +1,8 @@
+from pathlib import Path
 from MyGame import MyGame
 from Objects.TextData import TextData
 from Static.Assets import Assets
 from Static.Colors import Colors
-from pathlib import Path
 from Static import Constants as const
 
 

@@ -1,8 +1,7 @@
-import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from enumerations import ScreenType
-from Objects.TextData import TextData
+from Static.Enumerations import ScreenType
+from Static import Enumerations as enums
 
 
 class OverScreen(BaseScreen):
@@ -31,7 +30,7 @@ class OverScreen(BaseScreen):
         if self.solveValu > 0:
             self.visorValu = int(self.scoreValu / self.solveValu * 100)
         self.visorText = MyGame.Manager.BaseManager.GetNumberSP(self.visorValu)
-        MyGame.Manager.SoundManager.PlayMusic(enumerations.MusicType.HappyMusic)
+        MyGame.Manager.SoundManager.PlayMusic(enums.MusicType.HappyMusic)
 
 
     def Update(self, deltaTime: int) -> ScreenType | None:

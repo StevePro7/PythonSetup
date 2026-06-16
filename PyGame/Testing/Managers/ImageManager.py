@@ -1,8 +1,7 @@
 import pygame
-from Static import Constants as const
-from Static.Assets import Assets
 from MyGame import MyGame
-
+from Static.Assets import Assets
+from Static import Constants as const
 
 
 class ImageManager:

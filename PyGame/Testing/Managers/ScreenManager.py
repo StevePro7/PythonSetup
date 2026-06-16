@@ -4,7 +4,7 @@ import pkgutil
 import Screens
 from Screens.BaseScreen import BaseScreen
 from Static.Colors import Colors
-from enumerations import ScreenType
+from Static.Enumerations import ScreenType
 
 ENGINE_SCREENS: str = "Screens"
 ENGINE_SCREEN: str = "Screen"

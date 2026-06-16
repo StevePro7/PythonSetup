@@ -1,7 +1,7 @@
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from enumerations import ScreenType
-import enumerations
+from Static.Enumerations import ScreenType
+from Static import Enumerations as enums
 
 
 class PlayScreen(BaseScreen):
@@ -9,7 +9,7 @@ class PlayScreen(BaseScreen):
     def __init__(self):
         self.questionNo: int = None
         self.cheatMode: bool = None
-        self.optionType: enumerations.OptionType = None
+        self.optionType: enums.OptionType = None
 
 
     def Initialize(self) -> None:

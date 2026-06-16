@@ -2,9 +2,7 @@ from Managers.QuestionManager import QuestionManager
 from Managers.ConfigManager import ConfigManager
 from Managers.RandomManager import RandomManager
 from bootstrap import build_game
-from Objects.Question import Question
-import enumerations as enums
-
+from Static import Enumerations as enums
 
 registry = build_game()
 

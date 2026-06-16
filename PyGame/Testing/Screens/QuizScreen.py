@@ -1,9 +1,8 @@
 import time
-
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from enumerations import ScreenType
-import enumerations
+from Static.Enumerations import ScreenType
+from Static import Enumerations as enums
 
 
 class QuizScreen(BaseScreen):
@@ -12,9 +11,9 @@ class QuizScreen(BaseScreen):
         self.noQuestion: int = None
         self.questionNo: int = None
         self.cheatMode: bool = None
-        self.answerOption: enumerations.OptionType = None
-        self.selectOption: enumerations.OptionType = None
-        self.nextScreen: enumerations.ScreenType = None
+        self.answerOption: enums.OptionType = None
+        self.selectOption: enums.OptionType = None
+        self.nextScreen: enums.ScreenType = None
         self.correctAns: bool = None
         self.flag: bool = None
 
@@ -58,7 +57,7 @@ class QuizScreen(BaseScreen):
                 return ScreenType.Score
 
             self.selectOption = MyGame.Manager.InputManager.GetOptionType()
-            if self.selectOption != enumerations.OptionType.Invalid:
+            if self.selectOption != enums.OptionType.Invalid:
                 self.correctAns = self.selectOption == self.answerOption
                 if self.correctAns:
                     MyGame.Manager.ScoreManager.Increment()

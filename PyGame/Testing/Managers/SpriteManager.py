@@ -1,8 +1,8 @@
+import pygame
 from MyGame import MyGame
 from Static.Assets import Assets
 from Static import Constants as const
-import enumerations as enums
-import pygame
+from Static import Enumerations as enums
 
 
 class SpriteManager:

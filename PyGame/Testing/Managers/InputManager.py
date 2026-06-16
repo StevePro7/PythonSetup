@@ -1,10 +1,9 @@
 import pygame
 
-import enumerations
 from MyGame import MyGame
 from Inputs.KeyboardInput import KeyboardInput
 from Inputs.MouseInput import MouseInput
-#from JoystickInput
+import Static.Enumerations as enums
 
 
 class InputManager:
@@ -24,7 +23,7 @@ class InputManager:
 
     # If press left mouse button OR right key OR space key then go forward.
     def Forward(self) -> bool:
-        if self.mouse.ButtonHold(enumerations.MouseType.Left.value):
+        if self.mouse.ButtonHold(enums.MouseType.Left.value):
             return True
 
         return self.keyboard.KeyHold(pygame.K_RIGHT) or self.keyboard.KeyHold(pygame.K_SPACE)
@@ -32,7 +31,7 @@ class InputManager:
 
     # If press right mouse button OR left key OR F12 key then go back.
     def Back(self) -> bool:
-        if self.mouse.ButtonHold(enumerations.MouseType.Right.value):
+        if self.mouse.ButtonHold(enums.MouseType.Right.value):
             return True
         if self.keyboard.KeyHold(pygame.K_LEFT) or self.keyboard.KeyHold(pygame.K_F12):
             return True
@@ -46,19 +45,19 @@ class InputManager:
         return MyGame.Manager.CollisionManager.FullScreen(self.mouse.CurrMouseX, self.mouse.CurrMouseY)
 
 
-    def GetOptionType(self) -> enumerations.OptionType:
+    def GetOptionType(self) -> enums.OptionType:
         if self.mouse.ButtonHold():
             return MyGame.Manager.CollisionManager.GetOptionType(self.mouse.CurrMouseX, self.mouse.CurrMouseY)
 
         if self.keyboard.KeyHold(pygame.K_a) or self.keyboard.KeyHold(pygame.K_1) or self.keyboard.KeyHold(pygame.K_KP1):
-            return enumerations.OptionType.A
+            return enums.OptionType.A
         if self.keyboard.KeyHold(pygame.K_b) or self.keyboard.KeyHold(pygame.K_2) or self.keyboard.KeyHold(pygame.K_KP2):
-            return enumerations.OptionType.B
+            return enums.OptionType.B
         if self.keyboard.KeyHold(pygame.K_c) or self.keyboard.KeyHold(pygame.K_3) or self.keyboard.KeyHold(pygame.K_KP3):
-            return enumerations.OptionType.C
+            return enums.OptionType.C
         if self.keyboard.KeyHold(pygame.K_d) or self.keyboard.KeyHold(pygame.K_4) or self.keyboard.KeyHold(pygame.K_KP4):
-            return enumerations.OptionType.D
-        return enumerations.OptionType.Invalid
+            return enums.OptionType.D
+        return enums.OptionType.Invalid
 
 
     def GetPosition(self) -> (int, int):

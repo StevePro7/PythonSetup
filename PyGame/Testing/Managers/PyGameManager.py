@@ -1,5 +1,6 @@
 import pygame
 
+
 class PyGameManager:
     def Initialize(self):
         pygame.init()

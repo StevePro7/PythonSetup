@@ -4,7 +4,7 @@ from MyGame import MyGame
 from Objects.Question import Question
 from Static.Globalize import Globalize
 from Static import Constants as const
-import enumerations as enums
+from Static import Enumerations as enums
 
 
 class QuestionManager:

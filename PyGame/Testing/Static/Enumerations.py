@@ -8,7 +8,7 @@ class ZeroBasedEnum(Enum):
 
 
 class ScreenType(ZeroBasedEnum):
-    Splash = auto()     # 0
+    Splash = auto()
     Init = auto()
     Title = auto()
     Diff = auto()
@@ -19,7 +19,7 @@ class ScreenType(ZeroBasedEnum):
     Score = auto()
     Over = auto()
     Exit = auto()
-    Test = auto()       # 11
+    Test = auto()
     Unknown = auto()
 
 

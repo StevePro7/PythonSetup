@@ -1,10 +1,12 @@
-from MyGame import MyGame
-from Objects.ConfigData import ConfigData
 from pathlib import Path
 from dataclasses import asdict
-from Static import Constants as const
-from enumerations import ScreenType, OptionType, DifficultyType
+from MyGame import MyGame
 import tomllib
+
+from Objects.ConfigData import ConfigData
+from Static import Constants as const
+from Static.Enumerations import ScreenType, OptionType, DifficultyType
+
 
 
 class ConfigManager:

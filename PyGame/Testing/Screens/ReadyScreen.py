@@ -1,23 +1,22 @@
 import pygame
-
-from Static import Constants
-import enumerations
 from MyGame import MyGame
 from Screens.BaseScreen import BaseScreen
-from enumerations import ScreenType
+from Static.Enumerations import ScreenType
+from Static import Constants as const
+from Static import Enumerations as enums
 
 
 class ReadyScreen(BaseScreen):
 
     def __init__(self):
         self.quizPositions: list[pygame.Vector2] = None
-        self.difficultyType: enumerations.DifficultyType = None
+        self.difficultyType: enums.DifficultyType = None
         self.numberQuestion: int = None
         self.dotsCount: int = None
         self.dotsDelay: int = None
         self.diffText: str = None
         self.longText: str = None
-        self.nextScreen: enumerations.ScreenType = None
+        self.nextScreen: enums.ScreenType = None
         self.flag: bool = None
 
 
@@ -69,22 +68,22 @@ class ReadyScreen(BaseScreen):
             if self.Timer > self.dotsDelay:
                 self.Timer = 0
                 self.dotsCount += 1
-                if self.dotsCount > constants.MAX_DOTS:
-                    self.dotsCount = constants.MAX_DOTS
-                    MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
+                if self.dotsCount > const.MAX_DOTS:
+                    self.dotsCount = const.MAX_DOTS
+                    MyGame.Manager.SoundManager.PlaySound(enums.SoundType.Ready)
                     self.nextScreen = ScreenType.Play
                     self.flag = True
 
             if not self.flag:
                 rght: bool = MyGame.Manager.InputManager.Forward()
                 if rght:
-                    MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Ready)
+                    MyGame.Manager.SoundManager.PlaySound(enums.SoundType.Ready)
                     self.nextScreen = ScreenType.Play
                     self.flag = True
                 else:
                     left: bool = MyGame.Manager.InputManager.Back()
                     if left:
-                        MyGame.Manager.SoundManager.PlaySound(enumerations.SoundType.Wrong)
+                        MyGame.Manager.SoundManager.PlaySound(enums.SoundType.Wrong)
                         self.nextScreen = ScreenType.Long
                         self.flag = True
 

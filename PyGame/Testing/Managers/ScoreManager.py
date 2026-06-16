@@ -1,6 +1,7 @@
 import pygame
 from MyGame import MyGame
 
+
 class ScoreManager:
 
     def __init__(self):
