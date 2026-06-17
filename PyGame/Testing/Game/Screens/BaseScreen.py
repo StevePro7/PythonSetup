@@ -71,6 +71,14 @@ class BaseScreen(ABC):
                 pass
 
 
+    def GetTextPositions(self, coordinates: list[tuple]) -> list[pygame.Vector2]:
+        positions: list[pygame.Vector2] = []
+        for x, y in coordinates:
+            positions.append(MyGame.Manager.TextManager.GetTextPosition(x, y))
+
+        return positions
+
+
     def __getBuildPosition(self) -> pygame.Vector2:
         return MyGame.Manager.TextManager.GetTextPosition(26, 23)
 

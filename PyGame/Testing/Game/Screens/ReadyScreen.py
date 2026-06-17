@@ -117,11 +117,12 @@ class ReadyScreen(BaseScreen):
 
 
     def __getQuizPositions(self) -> list[pygame.Vector2]:
-        positions: list[pygame.Vector2] = []
-        positions.append(MyGame.Manager.TextManager.GetTextPosition(2, 7))
-        positions.append(MyGame.Manager.TextManager.GetTextPosition(2, 12))
-
-        positions.append(MyGame.Manager.TextManager.GetTextPosition(7, 18))
-        positions.append(MyGame.Manager.TextManager.GetTextPosition(8, 18))
-        positions.append(MyGame.Manager.TextManager.GetTextPosition(9, 18))
+        coordinates: list[tuple] = [
+            (2, 7),
+            (2, 12),
+            (7, 18),
+            (8, 18),
+            (9, 18),
+        ]
+        positions: list[pygame.Vector2] = super().GetTextPositions(coordinates)
         return positions
