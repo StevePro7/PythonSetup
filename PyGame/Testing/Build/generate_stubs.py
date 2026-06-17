@@ -4,7 +4,7 @@ import inspect
 from Engine.ServiceRegistry import ServiceRegistry
 from Static import Constants as const
 
-OUTPUT_FILE = "MyGame.pyi"
+OUTPUT_FILE = "../MyGame.pyi"
 
 
 def discover_managers():
