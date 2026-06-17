@@ -1,6 +1,6 @@
 from Managers.FileManager import FileManager
 from MyGame import MyGame
-from bootstrap import build_game
+from Engine.Bootstrap import build_game
 import Static.Constants as const
 from pathlib import Path
 
@@ -9,6 +9,6 @@ registry = build_game()
 
 fileManager = registry.get(FileManager.__name__)
 root: Path = MyGame.Manager.BaseManager.GetProjectRoot()
-file: Path = root / const.DATA_DIRECTORY / "DiffScreen.txt"
+file: Path = root / const.ASSETS_DIRECTORY / const.DATA_DIRECTORY / const.TEXTS_DIRECTORY / "DiffScreen.txt"
 lines: list[str] = fileManager.LoadTxt(file)
 print(lines)

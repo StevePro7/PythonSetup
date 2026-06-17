@@ -1,7 +1,7 @@
 from pathlib import Path
 import importlib
 
-from ServiceRegistry import ServiceRegistry
+from Engine.ServiceRegistry import ServiceRegistry
 from Static import Constants as const
 
 
@@ -9,7 +9,7 @@ def build_game():
 
     ServiceRegistry.clear()
 
-    base_dir = Path(__file__).resolve().parent
+    base_dir = Path(__file__).resolve().parent.parent
     managers_path = base_dir / const.ENGINE_MANAGERS
 
     for file in managers_path.glob(f"*{const.ENGINE_MANAGER}.py"):

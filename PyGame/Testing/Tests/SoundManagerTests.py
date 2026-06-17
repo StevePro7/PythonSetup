@@ -1,13 +1,17 @@
 from Managers.SoundManager import SoundManager
 from Managers.ConfigManager import ConfigManager
+from Managers.BaseManager import BaseManager
 from Managers.RandomManager import RandomManager
-from bootstrap import build_game
+from Engine.Bootstrap import build_game
 import pygame
 
 
 registry = build_game()
 
 pygame.init()
+baseManager = registry.get(BaseManager.__name__)
+baseManager.Initialize()
+
 configManager = registry.get(ConfigManager.__name__)
 configManager.Initialize()
 configManager.LoadContent()

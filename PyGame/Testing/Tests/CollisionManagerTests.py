@@ -1,5 +1,5 @@
 from Managers.CollisionManager import CollisionManager
-from bootstrap import build_game
+from Engine.Bootstrap import build_game
 
 registry = build_game()
 

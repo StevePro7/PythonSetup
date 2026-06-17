@@ -1,4 +1,4 @@
-from ServiceRegistry import ServiceRegistry
+from Engine.ServiceRegistry import ServiceRegistry
 
 
 class MyGame:

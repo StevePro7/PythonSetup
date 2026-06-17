@@ -1,4 +1,4 @@
-from bootstrap import build_game
+from Engine.Bootstrap import build_game
 from MyGame import MyGame
 
 class AnGame:

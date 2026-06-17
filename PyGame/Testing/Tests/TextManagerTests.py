@@ -1,7 +1,7 @@
 from Managers.TextManager import TextManager
 from Managers.BaseManager import BaseManager
 from Screens.DiffScreen import DiffScreen
-from bootstrap import build_game
+from Engine.Bootstrap import build_game
 from Objects.TextData import TextData
 
 

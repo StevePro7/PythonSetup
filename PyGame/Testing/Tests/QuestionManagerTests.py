@@ -2,7 +2,7 @@ from Managers.QuestionManager import QuestionManager
 from Managers.BaseManager import BaseManager
 from Managers.ConfigManager import ConfigManager
 from Managers.RandomManager import RandomManager
-from bootstrap import build_game
+from Engine.Bootstrap import build_game
 from Static import Enumerations as enums
 
 
