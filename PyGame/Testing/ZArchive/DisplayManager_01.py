@@ -1,11 +1,11 @@
 import pygame
 from pathlib import Path
 
-from MyGame import MyGame
-from Static.Assets import Assets
-from Static.Colors import Colors
-from Static.Globalize import Globalize
-from Static import Constants as const
+from Game.MyGame import MyGame
+from Game.Static.Assets import Assets
+from Game.Static.Colors import Colors
+from Game.Static.Globalize import Globalize
+from Game.Static import Constants as const
 
 
 # Window ownership

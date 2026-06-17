@@ -1,7 +1,7 @@
-from Managers.FileManager import FileManager
-from MyGame import MyGame
+from Game.Managers.FileManager import FileManager
+from Game.MyGame import MyGame
 from Engine.Bootstrap import build_game
-import Static.Constants as const
+import Game.Static.Constants as const
 from pathlib import Path
 
 

@@ -1,4 +1,4 @@
-from Managers.BaseManager import BaseManager
+from Game.Managers.BaseManager import BaseManager
 from Engine.Bootstrap import build_game
 
 

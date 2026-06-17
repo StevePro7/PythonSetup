@@ -1,7 +1,7 @@
-from Managers.SoundManager import SoundManager
-from Managers.ConfigManager import ConfigManager
-from Managers.BaseManager import BaseManager
-from Managers.RandomManager import RandomManager
+from Game.Managers.SoundManager import SoundManager
+from Game.Managers.ConfigManager import ConfigManager
+from Game.Managers.BaseManager import BaseManager
+from Game.Managers.RandomManager import RandomManager
 from Engine.Bootstrap import build_game
 import pygame
 

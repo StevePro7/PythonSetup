@@ -1,4 +1,4 @@
-from AnGame import AnGame
+from Game.AnGame import AnGame
 
 
 def main():

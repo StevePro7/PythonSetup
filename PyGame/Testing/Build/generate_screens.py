@@ -1,7 +1,7 @@
 from pathlib import Path
 import textwrap
 
-template_file = "../Screens/BaseScreen.py"
+template_file = "../Game/Screens/BaseScreen.py"
 
 screens = [
     "DiffScreen",
@@ -44,7 +44,7 @@ for screen in screens:
     # 4. Final cleanup (removes accidental indentation drift)
     new_text = textwrap.dedent(new_text).rstrip() + "\n"
 
-    output_file = f"../Screens/{screen}.py"
+    output_file = f"../Game/Screens/{screen}.py"
     Path(output_file).write_text(new_text)
 
     print(f"Created: {output_file}")

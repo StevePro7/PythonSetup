@@ -1,8 +1,8 @@
-from Managers.TextManager import TextManager
-from Managers.BaseManager import BaseManager
-from Screens.DiffScreen import DiffScreen
+from Game.Managers.TextManager import TextManager
+from Game.Managers.BaseManager import BaseManager
+from Game.Screens.DiffScreen import DiffScreen
 from Engine.Bootstrap import build_game
-from Objects.TextData import TextData
+from Game.Objects.TextData import TextData
 
 
 registry = build_game()

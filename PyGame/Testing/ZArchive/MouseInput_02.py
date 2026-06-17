@@ -1,5 +1,5 @@
 import pygame
-from MyGame import MyGame
+from Game.MyGame import MyGame
 
 
 class MouseInput:

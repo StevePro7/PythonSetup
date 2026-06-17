@@ -1,5 +1,5 @@
-from Managers.ConfigManager import ConfigManager
-from Managers.BaseManager import BaseManager
+from Game.Managers.ConfigManager import ConfigManager
+from Game.Managers.BaseManager import BaseManager
 from Engine.Bootstrap import build_game
 
 

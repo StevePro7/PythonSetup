@@ -1,10 +1,9 @@
-from Managers.QuestionManager import QuestionManager
-from Managers.BaseManager import BaseManager
-from Managers.ConfigManager import ConfigManager
-from Managers.RandomManager import RandomManager
+from Game.Managers.QuestionManager import QuestionManager
+from Game.Managers.BaseManager import BaseManager
+from Game.Managers.ConfigManager import ConfigManager
+from Game.Managers.RandomManager import RandomManager
 from Engine.Bootstrap import build_game
-from Static import Enumerations as enums
-
+from Game.Static import Enumerations as enums
 
 registry = build_game()
 

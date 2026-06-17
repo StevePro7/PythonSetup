@@ -2,9 +2,9 @@ import os
 import importlib
 import inspect
 from Engine.ServiceRegistry import ServiceRegistry
-from Static import Constants as const
+from Game.Static import Constants as const
 
-OUTPUT_FILE = "../MyGame.pyi"
+OUTPUT_FILE = "../Game/MyGame.pyi"
 
 
 def discover_managers():

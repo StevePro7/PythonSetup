@@ -1,4 +1,4 @@
-from Managers.ScoreManager import ScoreManager
+from Game.Managers.ScoreManager import ScoreManager
 from Engine.Bootstrap import build_game
 
 

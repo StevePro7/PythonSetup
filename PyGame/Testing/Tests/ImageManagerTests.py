@@ -1,5 +1,5 @@
-from Managers.ImageManager import ImageManager
-from Managers.RandomManager import RandomManager
+from Game.Managers.ImageManager import ImageManager
+from Game.Managers.RandomManager import RandomManager
 from Engine.Bootstrap import build_game
 
 

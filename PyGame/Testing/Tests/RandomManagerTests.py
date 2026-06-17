@@ -1,4 +1,4 @@
-from Managers.RandomManager import RandomManager
+from Game.Managers.RandomManager import RandomManager
 from Engine.Bootstrap import build_game
 
 

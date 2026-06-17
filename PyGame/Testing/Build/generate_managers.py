@@ -1,7 +1,7 @@
 from pathlib import Path
 
 # Source template file
-template_file = "../Managers/BaseManager.py"
+template_file = "../Game/Managers/BaseManager.py"
 
 # List of manager names
 managers = []
@@ -19,7 +19,7 @@ for manager in managers:
 
     new_text = template_text.replace("BaseManager", manager)
 
-    output_file = f"../Managers/{manager}.py"
+    output_file = f"../Game/Managers/{manager}.py"
     Path(output_file).write_text(new_text)
 
     print(f"Created: {output_file}")
