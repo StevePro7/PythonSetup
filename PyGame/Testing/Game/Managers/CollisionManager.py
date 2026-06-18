@@ -26,13 +26,12 @@ class CollisionManager:
         characterPos: pygame.Vector2 = MyGame.Manager.BaseManager.GetCharacterPos()
         self.characterRect = pygame.Rect(characterPos.x, characterPos.y, const.imageWide, const.imageHigh)
 
-        # adriana - stream line
         self.optionPos: list[pygame.Vector2] = MyGame.Manager.BaseManager.GetPositionsSelect()
-        self.optionRect = []
-        self.optionRect.append(self.__getOptionRect(enums.OptionType.A))
-        self.optionRect.append(self.__getOptionRect(enums.OptionType.B))
-        self.optionRect.append(self.__getOptionRect(enums.OptionType.C))
-        self.optionRect.append(self.__getOptionRect(enums.OptionType.D))
+        self.optionRect = [
+            self.__getOptionRect(option_type)
+            for option_type in enums.OptionType
+            if option_type is not enums.OptionType.Invalid
+        ]
 
 
     def FullScreen(self, x: int, y: int) -> bool:

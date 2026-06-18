@@ -2,14 +2,10 @@ from Game.MyGame import MyGame
 
 
 class DebugManager:
-    def Initialize(self):
-        pass
 
-    def LoadContent(self):
-        pass
+    def SetDebugSettings(self) -> None:
+        if MyGame.Manager.QuestionManager.DifficultyType is None:
+            MyGame.Manager.QuestionManager.SetDifficulty(MyGame.Manager.ConfigManager.ConfigData.DifficultyType)
 
-    def Update(self, deltaTime: int):
-        pass
-
-    def Draw(self):
-        pass
+        if MyGame.Manager.QuestionManager.NumberQuestion is None:
+            MyGame.Manager.QuestionManager.SetQuizLength(MyGame.Manager.ConfigManager.ConfigData.OptionType)
