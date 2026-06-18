@@ -1,6 +1,7 @@
 import pygame
 from Game.MyGame import MyGame
-from Game.Static import Enumerations as enums, Constants as const
+from Game.Static import Constants as const
+from Game.Static import Enumerations as enums
 
 
 class CollisionManager:
@@ -38,16 +39,13 @@ class CollisionManager:
         return self.fullScreenRect.collidepoint(x, y)
 
 
-    # adriana - stream line
     def GetOptionType(self, x: int, y: int) -> enums.OptionType:
-        if self.optionRect[enums.OptionType.A.value].collidepoint(x, y):
-            return enums.OptionType.A
-        elif self.optionRect[enums.OptionType.B.value].collidepoint(x, y):
-            return enums.OptionType.B
-        elif self.optionRect[enums.OptionType.C.value].collidepoint(x, y):
-            return enums.OptionType.C
-        elif self.optionRect[enums.OptionType.D.value].collidepoint(x, y):
-            return enums.OptionType.D
+        for option_type in enums.OptionType:
+            if option_type is enums.OptionType.Invalid:
+                continue
+
+            if self.optionRect[option_type.value].collidepoint(x, y):
+                return option_type
 
         return enums.OptionType.Invalid
 
