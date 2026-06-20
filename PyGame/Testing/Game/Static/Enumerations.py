@@ -18,7 +18,6 @@ class ScreenType(ZeroBasedEnum):
     Quiz = auto()
     Score = auto()
     Over = auto()
-    Exit = auto()
     Test = auto()
     Unknown = auto()
 

@@ -1,7 +1,5 @@
 import pygame
 
-from Game.MyGame import MyGame
-
 
 class KeyboardInput:
     def __init__(self):

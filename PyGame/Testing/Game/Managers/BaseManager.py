@@ -8,12 +8,10 @@ class BaseManager:
     def __init__(self):
         self.contentRoot: Path = None
 
-    # adriana
     def Initialize(self):
         root: Path = self.GetProjectRoot()
         self.contentRoot: Path = root / const.ASSETS_DIRECTORY
 
-    # adriana
     def GetContentRoot(self) -> Path:
         return self.contentRoot
 
