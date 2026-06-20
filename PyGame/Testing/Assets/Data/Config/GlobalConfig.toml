@@ -1,6 +1,6 @@
 FPS=50
-#ScreenType="Splash"
-ScreenType="Init"
+ScreenType="Splash"
+#ScreenType="Init"
 #ScreenType="Diff"
 #ScreenType="Long"
 #ScreenType="Ready"
@@ -21,4 +21,4 @@ SoundEnable=true
 CheatMode=false
 RandomQuestions=true
 RandomAnswers=true
-Fullscreen=false
+Fullscreen=true
