@@ -2,8 +2,12 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.git/
 .venv/
-.env/
+.git/
+.gitignore
 dist/
 build/
+assets/raw/
+*.zip
+*.mp3
+*.wav
