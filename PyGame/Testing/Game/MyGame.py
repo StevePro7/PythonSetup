@@ -57,3 +57,7 @@ class MyGame:
     @staticmethod
     def Draw():
         MyGame.Manager.ScreenManager.Draw()
+
+    @staticmethod
+    def ShutDown():
+        MyGame.Manager.PyGameManager.Quit()

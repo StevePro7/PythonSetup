@@ -28,7 +28,8 @@ class AnGame:
 
 
     def ShutDown(self):
-        MyGame.Manager.PyGameManager.Quit()
+        MyGame.ShutDown()
+
 
     def Run(self):
         self.Initialize()
@@ -42,7 +43,5 @@ class AnGame:
             deltaTime: int = MyGame.Manager.ClockManager.Update()
             self.Update(deltaTime)
             self.Draw()
-
-        self.ShutDown()
 
 
