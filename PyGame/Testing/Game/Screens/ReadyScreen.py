@@ -30,18 +30,8 @@ class ReadyScreen(BaseScreen):
     def LoadContent(self) -> None:
         super().LoadContent()
 
-        # adriana move this code to DebugManager begin
-        self.difficultyType = MyGame.Manager.QuestionManager.DifficultyType
-        self.numberQuestion = MyGame.Manager.QuestionManager.NumberQuestion
-        debugging: bool = MyGame.Manager.ConfigManager.ConfigData.Debugging
-
-        if self.difficultyType is None or debugging:
-            MyGame.Manager.QuestionManager.SetDifficulty(MyGame.Manager.ConfigManager.ConfigData.DifficultyType)
-            self.difficultyType = MyGame.Manager.QuestionManager.DifficultyType
-        if self.numberQuestion is None or debugging:
-            MyGame.Manager.QuestionManager.SetQuizLength(MyGame.Manager.ConfigManager.ConfigData.OptionType)
-            self.numberQuestion = MyGame.Manager.ConfigManager.ConfigData.OptionType
-        # adriana move this code to DebugManager -end-
+        # Check debug settings first!
+        MyGame.Manager.DebugManager.SetDebugSettings()
 
         self.difficultyType = MyGame.Manager.QuestionManager.DifficultyType
         self.numberQuestion = MyGame.Manager.QuestionManager.NumberQuestion

@@ -29,6 +29,10 @@ questionManager.LoadContent()
 # question: Question = questionManager.LoadQuestion(line)
 # assert question is not None
 
+questionManager.SetDebugDifficulty(enums.DifficultyType.Norm)
+print(questionManager.DifficultyType)
+print(questionManager.DifficultyText)
+
 #questionManager.SetDifficulty(enums.OptionType.D)
 #print(questionManager.QuestionList)
 #print(questionManager.QuestionNumber)

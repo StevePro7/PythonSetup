@@ -177,6 +177,13 @@ class QuestionManager:
     def DrawQuizDiffText(self) -> None:
         MyGame.Manager.TextManager.DrawTextPos(self.DifficultyText, self.diffPos)
 
+
+    def SetDebugDifficulty(self, difficultyType: enums.DifficultyType) -> None:
+        self.DifficultyType = difficultyType
+        index: int = difficultyType.value
+        self.DifficultyText = Globalize.DIFF_TEXT[index]
+
+
     def SetDifficulty(self, optionType: enums.OptionType) -> None:
         if optionType == enums.OptionType.B:
             self.DifficultyType = enums.DifficultyType.Norm

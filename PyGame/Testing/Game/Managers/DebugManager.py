@@ -4,8 +4,14 @@ from Game.MyGame import MyGame
 class DebugManager:
 
     def SetDebugSettings(self) -> None:
-        if MyGame.Manager.QuestionManager.DifficultyType is None:
-            MyGame.Manager.QuestionManager.SetDifficulty(MyGame.Manager.ConfigManager.ConfigData.DifficultyType)
+        debugging: bool = MyGame.Manager.ConfigManager.ConfigData.Debugging
 
-        if MyGame.Manager.QuestionManager.NumberQuestion is None:
-            MyGame.Manager.QuestionManager.SetQuizLength(MyGame.Manager.ConfigManager.ConfigData.OptionType)
+        difficultyType = MyGame.Manager.QuestionManager.DifficultyType
+        if difficultyType is None or debugging:
+            difficultyType = MyGame.Manager.ConfigManager.ConfigData.DifficultyType
+            MyGame.Manager.QuestionManager.SetDebugDifficulty(difficultyType)
+
+        numberQuestion = MyGame.Manager.QuestionManager.NumberQuestion
+        if numberQuestion is None or debugging:
+            numberQuestion = MyGame.Manager.ConfigManager.ConfigData.OptionType
+            MyGame.Manager.QuestionManager.SetQuizLength(numberQuestion)
