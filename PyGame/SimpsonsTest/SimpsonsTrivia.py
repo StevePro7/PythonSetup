@@ -1,3 +1,15 @@
-import pygame
+from Game.AnGame import AnGame
 
-print("hello world")
+
+def main():
+    try:
+        game = AnGame()
+        game.Run()
+    except KeyboardInterrupt:
+        game.Exit()
+    finally:
+        game.ShutDown()
+
+
+if __name__ == "__main__":
+    main()
