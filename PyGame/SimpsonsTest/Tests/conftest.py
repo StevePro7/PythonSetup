@@ -33,7 +33,6 @@ def contentManager(registry):
     return registry.get(ContentManager.__name__)
 
 
-
 @pytest.fixture
 def pyGameManager(registry):
     return registry.get(PyGameManager.__name__)
