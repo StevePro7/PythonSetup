@@ -23,6 +23,7 @@ which python
 uv lock
 uv sync
 
+uv add pygame
 uv add pytest
 
 
