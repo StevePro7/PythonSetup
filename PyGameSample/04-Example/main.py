@@ -11,7 +11,6 @@ def get_sprite(sheet, col, row, width=32, height=32):
     rect = pygame.Rect(col * width, row * height, width, height)
     return sheet.subsurface(rect)
 
-
 running = True
 while running:
     for event in pygame.event.get():
