@@ -38,3 +38,4 @@ uv run main.py
 ```
 
 OUTPUT
+![Example06](https://github.com/StevePro7/PythonSetup/blob/master/PyGameSetup/06-Example/Ex06.png)
