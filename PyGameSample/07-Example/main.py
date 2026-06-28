@@ -6,9 +6,12 @@ pygame.display.set_caption("Hello Music")
 
 font = pygame.font.Font(None, 48)  # Built-in default font
 
-text1 = font.render("Hello Music!", True, (255, 255, 255))
-text2 = font.render("Press Up - play music", True, (255, 255, 255))
-text3 = font.render("Press Down - stop music", True, (255, 255, 255))
+def render_text(text, color=(255, 255, 255)):
+    return font.render(text, False, color)
+
+text1 = render_text("Hello Music!" )
+text2 = render_text("Press Up - play music")
+text3 = render_text("Press Down - stop music")
 
 running = True
 while running:
@@ -17,9 +20,9 @@ while running:
             running = False
 
     screen.fill((0, 0, 0))
-    screen.blit(text1, (220, 220))
-    screen.blit(text2, (160, 260))
-    screen.blit(text3, (160, 300))
+    screen.blit(text1, (220, 140))
+    screen.blit(text2, (160, 180))
+    screen.blit(text3, (160, 220))
 
     # keys = pygame.key.get_pressed()
     # if keys[pygame.K_SPACE]:
