@@ -1,10 +1,13 @@
 import pygame
 pygame.init()
+pygame.mixer.init()
 
 screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption("Hello Sound")
 
 font = pygame.font.Font(None, 48)  # Built-in default font
+sound_01 = pygame.mixer.Sound("right.wav")
+sound_02 = pygame.mixer.Sound("wrong.wav")
 
 def render_text(text, color=(255, 255, 255)):
     return font.render(text, False, color)
@@ -24,10 +27,15 @@ while running:
     screen.blit(text2, (160, 180))
     screen.blit(text3, (160, 220))
 
-    # keys = pygame.key.get_pressed()
-    # if keys[pygame.K_SPACE]:
-    #     space = font.render("Space pressed!!", True, (255, 255, 255))
-    #     screen.blit(space, (200, 260))
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        sound_01.play()
+        space = font.render("Space pressed!!", True, (255, 255, 255))
+        screen.blit(space, (200, 260))
+    if keys[pygame.K_RIGHT]:
+        sound_02.play()
+        space = font.render("Space pressed??", True, (255, 255, 255))
+        screen.blit(space, (200, 260))
 
     pygame.display.flip()
 

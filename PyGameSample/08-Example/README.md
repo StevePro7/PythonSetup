@@ -1,12 +1,12 @@
-## Example VI
+## Example VIII
 #### 15-Sep-2026
 
-### Hello Sound
+### Hello Audio
 Launch PyCharm | New Project
 
 | KEY | VALUE           |
 | :---   |:----------------|
-| Location: | ~/HelloSound    |
+| Location: | ~/HelloAudio    |
 | Interpreter type: | uv              |
 | Python version: | 3.11            |
 | Path to uv: | ~/.local/bin/uv |
