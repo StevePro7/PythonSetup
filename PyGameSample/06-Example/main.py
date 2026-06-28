@@ -30,12 +30,8 @@ while running:
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
         sound_01.play()
-        space = font.render("Space pressed!!", True, (255, 255, 255))
-        screen.blit(space, (200, 260))
     if keys[pygame.K_RIGHT]:
         sound_02.play()
-        space = font.render("Space pressed??", True, (255, 255, 255))
-        screen.blit(space, (200, 260))
 
     pygame.display.flip()
 

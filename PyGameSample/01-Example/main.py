@@ -2,10 +2,10 @@ import pygame
 pygame.init()
 
 screen = pygame.display.set_mode((640, 480))
-pygame.display.set_caption("Hello Splash")
-sms_surface = pygame.Surface((640, 480))
+pygame.display.set_caption("Hello PyGame")
 
-splash = pygame.image.load("StevePro.bmp").convert()
+font = pygame.font.Font(None, 48)  # Built-in default font
+text = font.render("Hello PyGame!", True, (255, 255, 255))
 
 running = True
 while running:
@@ -13,13 +13,8 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    dest: tuple[float, float] = ((640 - splash.get_width()) / 2, (480 - splash.get_height()) / 2)
-    sms_surface.blit(splash, dest=dest)
-
     screen.fill((0, 0, 0))
-    scaled = pygame.transform.scale(sms_surface, (640, 480))
-    screen.blit(scaled, (0, 0))
-
+    screen.blit(text, (220, 220))
     pygame.display.flip()
 
 pygame.quit()
