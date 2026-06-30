@@ -1,0 +1,47 @@
+import pygame
+pygame.init()
+pygame.mixer.init()
+
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Hello Audio")
+
+font = pygame.font.Font(None, 48)  # Built-in default font
+sound_01 = pygame.mixer.Sound("right.wav")
+sound_02 = pygame.mixer.Sound("wrong.wav")
+pygame.mixer.music.load("music.mp3")
+
+def render_text(text, color=(255, 255, 255)):
+    return font.render(text, False, color)
+
+text1 = render_text("Hello Audio!" )
+text2 = render_text("Press Left - sound #1")
+text3 = render_text("Press Right - sound #2")
+text4 = render_text("Press Up - play music")
+text5 = render_text("Press Down - stop music")
+
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    screen.fill((0, 0, 0))
+    screen.blit(text1, (220, 140))
+    screen.blit(text2, (160, 180))
+    screen.blit(text3, (160, 220))
+    screen.blit(text4, (160, 260))
+    screen.blit(text5, (160, 300))
+
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        sound_01.play()
+    if keys[pygame.K_RIGHT]:
+        sound_02.play()
+    if keys[pygame.K_UP]:
+        pygame.mixer.music.play()
+    if keys[pygame.K_DOWN]:
+        pygame.mixer.music.stop()
+
+    pygame.display.flip()
+
+pygame.quit()
