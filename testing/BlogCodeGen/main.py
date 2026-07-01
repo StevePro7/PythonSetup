@@ -1,6 +1,6 @@
 import html
 
-file = "EX08.txt"
+file = "EX02.txt"
 
 # Read the Python file
 with open(file, "r", encoding="utf-8") as f:
