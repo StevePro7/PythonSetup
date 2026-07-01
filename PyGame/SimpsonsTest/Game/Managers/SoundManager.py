@@ -139,6 +139,10 @@ class SoundManager:
 
 
     @property
+    def AudioEnable(self) -> bool:
+        return self.audioEnable
+
+    @property
     def SoundEnable(self) -> bool:
         return self.audioEnable and self.soundEnable
 

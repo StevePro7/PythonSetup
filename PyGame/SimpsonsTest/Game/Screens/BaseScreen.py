@@ -41,7 +41,8 @@ class BaseScreen(ABC):
     def UpdateVolumeIcon(self) -> bool:
         volume: bool = MyGame.Manager.InputManager.VolumeIcon()
         if volume:
-            MyGame.Manager.SoundManager.AlternateSound()
+            if MyGame.Manager.SoundManager.AudioEnable:
+                MyGame.Manager.SoundManager.AlternateSound()
 
         return volume
 
