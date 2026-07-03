@@ -4,6 +4,7 @@ from Engine.Bootstrap import build_game
 from Game.Managers.BaseManager import BaseManager
 from Game.Managers.CollisionManager import CollisionManager
 from Game.Managers.ConfigManager import ConfigManager
+from Game.Managers.DebugManager import DebugManager
 from Game.Managers.FileManager import FileManager
 from Game.Managers.ImageManager import ImageManager
 from Game.Managers.PyGameManager import PyGameManager
@@ -48,6 +49,9 @@ def configManager(registry):
 def contentManager(registry):
     return registry.get(ContentManager.__name__)
 
+@pytest.fixture
+def debugManager(registry):
+    return registry.get(DebugManager.__name__)
 
 @pytest.fixture
 def fileManager(registry):

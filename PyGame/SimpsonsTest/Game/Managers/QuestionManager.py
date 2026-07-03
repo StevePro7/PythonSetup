@@ -73,8 +73,6 @@ class QuestionManager:
             self.QuestionList.append(question)
 
 
-    # ORG but can't overload LoadQuestion()
-    # public Question LoadQuestion(Byte index)
     def PlayQuestion(self, index: int) -> Question:
         q: Question = self.QuestionList[index]
         answerCode: int = q.AnswerCode
@@ -85,7 +83,7 @@ class QuestionManager:
         return q
 
 
-    def LoadQuestion(self, line: str):
+    def LoadQuestion(self, line: str) -> Question:
         texts: list[str] = line.split(self.semicolon)
 
         questionText: list[str] = texts[1].split(self.pipe)
@@ -112,9 +110,6 @@ class QuestionManager:
 
         self.QuestionList = list
 
-
-    # public void RandomizeQuestionList()
-    # public void RandomizeAnswerList(Byte index)
 
     def RandomizeAnswerList(self, index: int) -> None:
         # Get answer code first
@@ -172,8 +167,7 @@ class QuestionManager:
 
     def DrawQuestionTotal(self):
         MyGame.Manager.TextManager.DrawTextPos(self.QuizLengthText, self.totalPos)
-    # public void DrawQuestionTotal()
-    # public void DrawQuizDiffText()
+
     def DrawQuizDiffText(self) -> None:
         MyGame.Manager.TextManager.DrawTextPos(self.DifficultyText, self.diffPos)
 
