@@ -63,4 +63,3 @@ class OverScreen(BaseScreen):
         MyGame.Manager.ImageManager.DrawHeader()
         MyGame.Manager.ImageManager.DrawCurrActor()
         MyGame.Manager.SoundManager.DrawVolumeIcon()
-

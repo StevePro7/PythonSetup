@@ -54,9 +54,11 @@ class MyGame:
         MyGame.Manager.InputManager.Update(deltaTime)
         MyGame.Manager.ScreenManager.Update(deltaTime)
 
+
     @staticmethod
     def Draw():
         MyGame.Manager.ScreenManager.Draw()
+
 
     @staticmethod
     def ShutDown():

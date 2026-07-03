@@ -227,39 +227,20 @@ class QuestionManager:
 
 
     def GetQuestionPosn(self) -> list[pygame.Vector2]:
-        positions: list[pygame.Vector2] = []
-        positions.append(MyGame.Manager.TextManager.GetTextPosition(2, 5))
-        positions.append(MyGame.Manager.TextManager.GetTextPosition(2, 6))
-        positions.append(MyGame.Manager.TextManager.GetTextPosition(2, 7))
-        return positions
+        return self.__getTextPositions(2, 5)
 
     def GetAnswerAPosn(self) -> list[pygame.Vector2]:
-        answerPosn: list[pygame.Vector2] = []
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 9))
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 10))
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 11))
-        return answerPosn
+        return self.__getTextPositions(4, 9)
 
     def GetAnswerBPosn(self) -> list[pygame.Vector2]:
-        answerPosn: list[pygame.Vector2] = []
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 13))
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 14))
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 15))
-        return answerPosn
+        return self.__getTextPositions(4, 13)
 
     def GetAnswerCPosn(self) -> list[pygame.Vector2]:
-        answerPosn: list[pygame.Vector2] = []
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 17))
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 18))
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 19))
-        return answerPosn
+        return self.__getTextPositions(4, 17)
 
     def GetAnswerDPosn(self) -> list[pygame.Vector2]:
-        answerPosn: list[pygame.Vector2] = []
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 21))
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 22))
-        answerPosn.append(MyGame.Manager.TextManager.GetTextPosition(4, 23))
-        return answerPosn
+        return self.__getTextPositions(4, 21)
+    
 
 
     def RandomizeAnswerPosn(self) -> None:
@@ -287,19 +268,13 @@ class QuestionManager:
                     self.answerDPosn = origin
 
 
-    def PrintQuestionList(self) -> None:
-        for question in self.QuestionList:
-            print(question.QuestionText)
-
-    def PrintAnswerList(self, index: int) -> None:
-        question: Question = self.QuestionList[index]
-        print(question.AnswerAText)
-        print(question.AnswerBText)
-        print(question.AnswerCText)
-        print(question.AnswerDText)
-
-
     def __getTextFile(self, type: enums.DifficultyType) -> str:
         name: str = f"{type.name}.txt"
         file: Path = self.levelsRoot / name
         return file
+    
+    def __getTextPositions(self, x: int, start_y: int, count: int = 3) -> list[pygame.Vector2]:
+        return [
+            MyGame.Manager.TextManager.GetTextPosition(x, y)
+            for y in range(start_y, start_y + count)
+        ]

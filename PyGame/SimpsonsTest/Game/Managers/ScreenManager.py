@@ -75,4 +75,3 @@ class ScreenManager:
             screen_map[screen_type] = cls
 
         return screen_map
-

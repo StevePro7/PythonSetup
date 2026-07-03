@@ -43,5 +43,3 @@ class AnGame:
             deltaTime: int = MyGame.Manager.ClockManager.Update()
             self.Update(deltaTime)
             self.Draw()
-
-

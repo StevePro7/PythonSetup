@@ -8,7 +8,6 @@ class KeyboardInput:
 
 
     def Update(self, deltaTime: int):
-        # snapshot previous
         self.prev_keys = self.curr_keys
         self.curr_keys = pygame.key.get_pressed()
 
