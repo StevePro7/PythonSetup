@@ -1,7 +1,7 @@
 [project]
-name = "SimpsonsTest"
-version = "0.1.0"
-description = "Add your description here"
+name = "SimpsonsTrivia"
+version = "1.0.0"
+description = "Simpsons Trivia Game. Woohoo!"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
